@@ -10,11 +10,31 @@ export default function LoadingScreen() {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const logoRef = useRef<HTMLDivElement | null>(null);
   const barRef = useRef<HTMLDivElement | null>(null);
+  const tlRef = useRef<gsap.core.Timeline | null>(null);
+
+  const dismiss = () => {
+    const container = containerRef.current;
+    if (!container) return;
+    tlRef.current?.kill();
+    document.body.style.overflow = "";
+    gsap.to(container, {
+      opacity: 0,
+      duration: 0.35,
+      ease: "power2.inOut",
+      onComplete: () => {
+        setMounted(false);
+        requestAnimationFrame(() => {
+          try {
+            ScrollTrigger.refresh();
+          } catch {}
+        });
+      },
+    });
+  };
 
   useEffect(() => {
     if (!containerRef.current || !logoRef.current || !barRef.current) return;
 
-    // Bloquear scroll mientras carga
     document.body.style.overflow = "hidden";
 
     const tl = gsap.timeline({
@@ -22,6 +42,8 @@ export default function LoadingScreen() {
         document.body.style.overflow = "";
       },
     });
+
+    tlRef.current = tl;
 
     tl.fromTo(
       logoRef.current,
@@ -42,8 +64,6 @@ export default function LoadingScreen() {
           ease: "power2.inOut",
           onComplete: () => {
             setMounted(false);
-            // Refrescar ScrollTrigger una vez que el loader desmonta
-            // para que recalcule las medidas finales del layout
             requestAnimationFrame(() => {
               try {
                 ScrollTrigger.refresh();
@@ -65,6 +85,7 @@ export default function LoadingScreen() {
   return (
     <div
       ref={containerRef}
+      onClick={dismiss}
       style={{
         position: "fixed",
         inset: 0,
@@ -75,6 +96,7 @@ export default function LoadingScreen() {
         alignItems: "center",
         justifyContent: "center",
         gap: 32,
+        cursor: "pointer",
       }}
     >
       <div
@@ -124,6 +146,17 @@ export default function LoadingScreen() {
       >
         Iluminando · Cargando · Energizando
       </div>
+      <p
+        style={{
+          color: "var(--text-muted)",
+          fontSize: 10,
+          letterSpacing: "0.12em",
+          opacity: 0.5,
+          marginTop: 24,
+        }}
+      >
+        Click para saltar
+      </p>
     </div>
   );
 }

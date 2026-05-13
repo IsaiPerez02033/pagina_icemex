@@ -106,24 +106,35 @@ function useThemeMode(): "dark" | "light" {
 function useIsMobile() {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
-    const check = () => setMobile(window.innerWidth < 768);
+    let timeout: ReturnType<typeof setTimeout>;
+    const check = () => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        setMobile(window.innerWidth < 768);
+      }, 150);
+    };
     check();
     window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
+    return () => {
+      window.removeEventListener("resize", check);
+      clearTimeout(timeout);
+    };
   }, []);
   return mobile;
 }
 
-// Hook que conecta el progreso del scroll global a un valor 0..1.
-// Usa el contenedor #hero-scroll (400vh) como trigger; el sticky child
-// de 100vh queda pinneado mientras se scrollea dentro del contenedor.
+// Hook que conecta el progreso del scroll global a 0..1.
+// Usa ref internamente para Three.js (sin re-render) y
+// throttlea el state de React para el HUD a ~30fps.
 function useScrollProgress() {
+  const progressRef = useRef(0);
   const [progress, setProgress] = useState(0);
+  const lastSet = useRef(0);
+
   useEffect(() => {
     if (typeof window === "undefined") return;
     gsap.registerPlugin(ScrollTrigger);
 
-    // Esperar al siguiente frame para asegurar que el layout esté listo
     let st: ScrollTrigger | null = null;
     const raf = requestAnimationFrame(() => {
       const trigger =
@@ -134,10 +145,15 @@ function useScrollProgress() {
         end: "bottom bottom",
         scrub: true,
         invalidateOnRefresh: true,
-        onUpdate: (self) => setProgress(self.progress),
+        onUpdate: (self) => {
+          progressRef.current = self.progress;
+          const now = Date.now();
+          if (now - lastSet.current > 50 || self.progress >= 1) {
+            lastSet.current = now;
+            setProgress(self.progress);
+          }
+        },
       });
-      // Forzar un refresh por si la imagen del logo o el canvas
-      // todavía no calculaban su tamaño final
       ScrollTrigger.refresh();
     });
 
@@ -150,7 +166,7 @@ function useScrollProgress() {
       if (st) st.kill();
     };
   }, []);
-  return progress;
+  return { progress, progressRef };
 }
 
 function clamp01(v: number) {
@@ -163,13 +179,13 @@ function smoothstep(edge0: number, edge1: number, x: number) {
 }
 
 /* --- ETAPA 1: Suelo + grid + línea central --- */
-function Ground({ progress, palette, isMobile }: { progress: number; palette: Palette; isMobile: boolean }) {
+function Ground({ progressRef, palette, isMobile }: { progressRef: React.RefObject<number>; palette: Palette; isMobile: boolean }) {
   const lineRef = useRef<THREE.Mesh | null>(null);
-  const stage = smoothstep(0, 0.1, progress);
 
   useFrame(() => {
+    const s = smoothstep(0, 0.1, progressRef.current);
     if (lineRef.current) {
-      lineRef.current.scale.x = stage;
+      lineRef.current.scale.x = s;
     }
   });
 
@@ -228,26 +244,24 @@ function Ground({ progress, palette, isMobile }: { progress: number; palette: Pa
 
 /* --- ETAPA 2: Construcción del poste --- */
 function Pole({
-  progress,
+  progressRef,
   baseRef,
   fusteRef,
   palette,
 }: {
-  progress: number;
+  progressRef: React.RefObject<number>;
   baseRef: React.RefObject<THREE.Mesh | null>;
   fusteRef: React.RefObject<THREE.Mesh | null>;
   palette: Palette;
 }) {
-  // Base aparece casi de inmediato (5-15%), fuste sube de 10-40%
-  const baseStage = smoothstep(0.05, 0.15, progress);
-  const fusteStage = smoothstep(0.1, 0.4, progress);
-
   useFrame(() => {
+    const p = progressRef.current;
+    const baseStage = smoothstep(0.05, 0.15, p);
+    const fusteStage = smoothstep(0.1, 0.4, p);
     if (baseRef.current) {
       baseRef.current.position.y = THREE.MathUtils.lerp(-3, 0.12, baseStage);
     }
     if (fusteRef.current) {
-      // Fuste mide 3.0, pivot al centro → posición y final = 1.5 ⇒ tope y=3.0
       fusteRef.current.position.y = THREE.MathUtils.lerp(-3, 1.5, fusteStage);
     }
   });
@@ -268,9 +282,8 @@ function Pole({
 }
 
 /* --- ETAPA 2: Puntos cyan flotantes --- */
-function FloatingDots({ progress, palette, isMobile }: { progress: number; palette: Palette; isMobile: boolean }) {
+function FloatingDots({ progressRef, palette, isMobile }: { progressRef: React.RefObject<number>; palette: Palette; isMobile: boolean }) {
   const pointsRef = useRef<THREE.Points | null>(null);
-  const stage = smoothstep(0.15, 0.45, progress);
   const count = isMobile ? 15 : 40;
 
   const geometry = useMemo(() => {
@@ -290,10 +303,10 @@ function FloatingDots({ progress, palette, isMobile }: { progress: number; palet
   }, [count]);
 
   useFrame(({ clock }) => {
+    const stage = smoothstep(0.15, 0.45, progressRef.current);
     if (pointsRef.current) {
       const m = pointsRef.current.material as THREE.PointsMaterial;
       m.opacity = stage * 0.9;
-      // pequeña oscilación
       pointsRef.current.rotation.y = clock.getElapsedTime() * 0.05;
     }
   });
@@ -316,11 +329,11 @@ function FloatingDots({ progress, palette, isMobile }: { progress: number; palet
 
 /* --- ETAPA 3: Luminaria (brazo + carcasa + flash) --- */
 function Luminaire({
-  progress,
+  progressRef,
   flashRef,
   palette,
 }: {
-  progress: number;
+  progressRef: React.RefObject<number>;
   flashRef: React.RefObject<THREE.PointLight | null>;
   palette: Palette;
 }) {
@@ -328,21 +341,19 @@ function Luminaire({
   const housingRef = useRef<THREE.Mesh | null>(null);
   const flashedRef = useRef(false);
 
-  // Brazo rota 35-55%, carcasa desciende 45-65%
-  const armStage = smoothstep(0.35, 0.55, progress);
-  const housingStage = smoothstep(0.45, 0.65, progress);
-
-  // Fuste altura 4.5, pivot al centro, posición y = 2.25 ⇒ tope y = 4.5
   const TOP_Y = 3.0;
 
   useFrame(() => {
+    const p = progressRef.current;
+    const armStage = smoothstep(0.35, 0.55, p);
+    const housingStage = smoothstep(0.45, 0.65, p);
     if (armRef.current) {
       // brazo más corto centrado en x=0.6, longitud 1.2 ⇒ extremo en x=1.2
       armRef.current.position.set(0.6, TOP_Y, 0);
       armRef.current.rotation.z = THREE.MathUtils.lerp(-1.5, 0, armStage);
       // Solo aparece cuando el poste ya está completamente erguido
       // y comienza la fase de instalación del brazo (>= 30% de progreso).
-      armRef.current.visible = progress >= 0.3;
+      armRef.current.visible = p >= 0.3;
     }
 
     if (housingRef.current) {
@@ -425,14 +436,13 @@ function Luminaire({
 }
 
 /* --- ETAPA 4: Encendido --- */
-function PowerOn({ progress, palette }: { progress: number; palette: Palette }) {
-  // Encendido empieza al 65% para que se sienta inmediato tras la instalación
-  const stage = smoothstep(0.65, 1, progress);
+function PowerOn({ progressRef, palette }: { progressRef: React.RefObject<number>; palette: Palette }) {
   const lightRef = useRef<THREE.PointLight | null>(null);
   const circleRef = useRef<THREE.Mesh | null>(null);
   const TOP_Y = 3.0;
 
   useFrame(() => {
+    const stage = smoothstep(0.65, 1, progressRef.current);
     if (lightRef.current) {
       lightRef.current.intensity = stage * 4;
     }
@@ -452,7 +462,6 @@ function PowerOn({ progress, palette }: { progress: number; palette: Palette }) 
         intensity={0}
         distance={10}
         decay={2}
-        castShadow
       />
 
       {/* Halo emisivo bajo el poste */}
@@ -476,15 +485,16 @@ function PowerOn({ progress, palette }: { progress: number; palette: Palette }) 
 }
 
 /* --- Cámara con pull-back --- */
-function CameraRig({ progress }: { progress: number }) {
+function CameraRig({ progressRef }: { progressRef: React.RefObject<number> }) {
   const { camera } = useThree();
-  const stage = smoothstep(0.65, 1, progress);
 
   useFrame(() => {
+    const p = progressRef.current;
+    const stage = smoothstep(0.65, 1, p);
     // Cámara alejada y centrada para que TODO el poste de 3m quepa en frame
     camera.position.x = 0;
     camera.position.z = THREE.MathUtils.lerp(8, 10, stage);
-    camera.position.y = THREE.MathUtils.lerp(1.5, 1.9, smoothstep(0, 1, progress));
+    camera.position.y = THREE.MathUtils.lerp(1.5, 1.9, smoothstep(0, 1, p));
     // LookAt al centro del conjunto (mitad del fuste)
     camera.lookAt(0.5, 1.5, 0);
   });
@@ -493,14 +503,14 @@ function CameraRig({ progress }: { progress: number }) {
 }
 
 /* --- Escena interna --- */
-function Scene({ progress, palette, isMobile }: { progress: number; palette: Palette; isMobile: boolean }) {
+function Scene({ progressRef, palette, isMobile }: { progressRef: React.RefObject<number>; palette: Palette; isMobile: boolean }) {
   const baseRef = useRef<THREE.Mesh | null>(null);
   const fusteRef = useRef<THREE.Mesh | null>(null);
   const flashRef = useRef<THREE.PointLight | null>(null);
 
   return (
     <>
-      <CameraRig progress={progress} />
+      <CameraRig progressRef={progressRef} />
 
       <ambientLight intensity={palette.ambient} />
       <directionalLight
@@ -515,16 +525,16 @@ function Scene({ progress, palette, isMobile }: { progress: number; palette: Pal
         color={palette.fill}
       />
 
-      <Ground progress={progress} palette={palette} isMobile={isMobile} />
+      <Ground progressRef={progressRef} palette={palette} isMobile={isMobile} />
       <Pole
-        progress={progress}
+        progressRef={progressRef}
         baseRef={baseRef}
         fusteRef={fusteRef}
         palette={palette}
       />
-      <FloatingDots progress={progress} palette={palette} isMobile={isMobile} />
-      <Luminaire progress={progress} flashRef={flashRef} palette={palette} />
-      <PowerOn progress={progress} palette={palette} />
+      <FloatingDots progressRef={progressRef} palette={palette} isMobile={isMobile} />
+      <Luminaire progressRef={progressRef} flashRef={flashRef} palette={palette} />
+      <PowerOn progressRef={progressRef} palette={palette} />
 
       <fog attach="fog" args={[palette.fog, 14, 28]} />
     </>
@@ -532,7 +542,7 @@ function Scene({ progress, palette, isMobile }: { progress: number; palette: Pal
 }
 
 export default function HeroScene() {
-  const progress = useScrollProgress();
+  const { progress, progressRef } = useScrollProgress();
   const mode = useThemeMode();
   const isMobile = useIsMobile();
   const palette = PALETTES[mode];
@@ -561,7 +571,7 @@ export default function HeroScene() {
           background: "transparent",
         }}
       >
-        <Scene progress={progress} palette={palette} isMobile={isMobile} />
+        <Scene progressRef={progressRef} palette={palette} isMobile={isMobile} />
         {!isMobile && (
           <EffectComposer>
             <Bloom

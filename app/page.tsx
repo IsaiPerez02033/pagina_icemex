@@ -1,26 +1,24 @@
+import dynamic from "next/dynamic";
 import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import BrandsSection from "@/components/BrandsSection";
-import ProductsSection from "@/components/ProductsSection";
-import ServicesTeaser from "@/components/ServicesTeaser";
-import ProjectsCollage from "@/components/ProjectsCollage";
-import CertificationsBanner from "@/components/CertificationsBanner";
-import ContactSection from "@/components/ContactSection";
+
+const AboutSection = dynamic(() => import("@/components/AboutSection"));
+const BrandsSection = dynamic(() => import("@/components/BrandsSection"));
+const ProductsSection = dynamic(() => import("@/components/ProductsSection"));
+const ServicesTeaser = dynamic(() => import("@/components/ServicesTeaser"));
+const ProjectsCollage = dynamic(() => import("@/components/ProjectsCollage"));
+const CertificationsBanner = dynamic(
+  () => import("@/components/CertificationsBanner")
+);
+const ContactSection = dynamic(() => import("@/components/ContactSection"));
 
 export default function HomePage() {
   return (
     <>
-      {/*
-        Contenedor scrubeable del hero:
-        - Altura total 400vh (100vh visible + 300vh de "scroll para animar")
-        - El section sticky de 100vh queda pinneado mientras el usuario scrollea
-          dentro del contenedor → ScrollTrigger lo usa como trigger
-      */}
       <div
         id="hero-scroll"
         style={{
           position: "relative",
-          height: "300vh",
+          height: "300dvh",
           width: "100%",
         }}
       >
@@ -30,7 +28,7 @@ export default function HomePage() {
             position: "sticky",
             top: 0,
             width: "100%",
-            height: "100vh",
+            height: "100dvh",
             overflow: "hidden",
           }}
         >
@@ -38,7 +36,6 @@ export default function HomePage() {
         </section>
       </div>
 
-      {/* Las secciones de contenido vienen DESPUÉS del scroll del hero */}
       <div style={{ position: "relative", background: "var(--bg-primary)" }}>
         <AboutSection />
         <BrandsSection />
