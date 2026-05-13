@@ -4,9 +4,17 @@ import IcemexLogo from "@/components/IcemexLogo";
 import CertificationsBanner from "@/components/CertificationsBanner";
 
 export const metadata: Metadata = {
-  title: "Nosotros · ICEMEX — 20+ años iluminando México",
+  title: "Nosotros",
   description:
-    "ICEMEX S.A. de C.V. — Empresa especializada en fabricación, distribución y comercialización de material eléctrico, herrajes y luminarias LED. Más de 20 años de experiencia.",
+    "ICEMEX S.A. de C.V. — Empresa mexicana con más de 20 años fabricando y distribuyendo luminarias LED, postes, herrajes y material eléctrico. Historia, misión, visión, valores y certificaciones ISO 9001, 14001, 45001, NOM-013-ENER.",
+  keywords: [
+    "ICEMEX historia", "empresa de iluminación México", "fabricante de postes", "certificaciones ISO", "NOM-013-ENER", "material eléctrico México",
+  ],
+  openGraph: {
+    title: "Nosotros · ICEMEX — 20+ años iluminando México",
+    description:
+      "Más de 20 años fabricando, distribuyendo y comercializando material eléctrico, herrajes y luminarias LED en México. Certificados ISO 9001, 14001, 45001.",
+  },
 };
 
 const milestones = [

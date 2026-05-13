@@ -3,9 +3,17 @@ import { products, lineNames } from "@/lib/products";
 import LeadMagnetForm from "@/components/LeadMagnetForm";
 
 export const metadata: Metadata = {
-  title: "Catálogo PDF · ICEMEX 2026",
+  title: "Catálogo PDF 2026",
   description:
-    "Descarga el catálogo oficial ICEMEX 2026 con 176 páginas de fichas técnicas: alumbrado público, solar, postes, reflectores y herrajes.",
+    "Descarga gratis el catálogo oficial ICEMEX 2026: 176 páginas con fichas técnicas de luminarias LED, postes, reflectores, iluminación solar, herrajes y material eléctrico. Especificaciones, certificaciones y aplicaciones.",
+  keywords: [
+    "catálogo iluminación", "fichas técnicas LED", "catálogo postes", "catálogo ICEMEX", "descargar catálogo iluminación", "especificaciones luminarias", "PDF iluminación pública",
+  ],
+  openGraph: {
+    title: "Catálogo PDF 2026 · ICEMEX",
+    description:
+      "176 páginas con fichas técnicas de alumbrado público, iluminación solar, postes, reflectores, luminarios comerciales y herrajes. Descarga gratuita.",
+  },
 };
 
 const lineCounts = Object.entries(

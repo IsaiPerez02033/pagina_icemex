@@ -3,9 +3,17 @@ import Link from "next/link";
 import { buildWhatsAppUrlProyectos } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "Servicios · ICEMEX — Asesoría, levantamiento, instalación y mantenimiento",
+  title: "Servicios",
   description:
-    "Más allá del suministro: asesoría luminotécnica, levantamiento de obra, instalación con grúa HIAB y mantenimiento preventivo. Proveedor integral de iluminación pública para vialidades, parques e industria.",
+    "Asesoría luminotécnica, levantamiento de obra, suministro directo de fábrica, instalación con grúa HIAB propia y mantenimiento preventivo/correctivo. Proveedor integral de iluminación pública, vialidades, parques y naves industriales en México.",
+  keywords: [
+    "asesoría luminotécnica", "instalación de postes", "grúa HIAB", "mantenimiento de alumbrado", "suministro eléctrico", "levantamiento de obra", "iluminación México", "proveedor integral iluminación",
+  ],
+  openGraph: {
+    title: "Servicios · ICEMEX — Asesoría, instalación y mantenimiento",
+    description:
+      "Más que un proveedor: asesoría luminotécnica, levantamiento en sitio, suministro, instalación con grúa HIAB propia y mantenimiento preventivo. Todo el ciclo en un solo equipo.",
+  },
 };
 
 const services = [
