@@ -86,9 +86,8 @@ export default function BrandsSection() {
                 <Image
                   src={b.src}
                   alt={b.alt}
-                  width={200}
-                  height={80}
-                  sizes="(max-width: 720px) 140px, 200px"
+                  fill
+                  sizes="(max-width: 720px) 130px, 180px"
                   style={{ objectFit: "contain" }}
                 />
               </div>
