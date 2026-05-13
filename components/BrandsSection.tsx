@@ -19,6 +19,8 @@ const brands = [
   { src: "/marcas/tork.jpg", alt: "Tork" },
 ];
 
+const doubledBrands = [...brands, ...brands];
+
 export default function BrandsSection() {
   const ref = useRef<HTMLElement | null>(null);
 
@@ -79,15 +81,15 @@ export default function BrandsSection() {
         <div className="brands-marquee" aria-label="Marcas distribuidas por ICEMEX">
           {/* Duplicamos la lista para que el loop sea sin saltos */}
           <div className="brands-track">
-            {[...brands, ...brands].map((b, i) => (
+            {doubledBrands.map((b, i) => (
               <div key={`${b.src}-${i}`} className="brand-logo">
                 <Image
                   src={b.src}
                   alt={b.alt}
-                  fill
+                  width={200}
+                  height={80}
                   sizes="(max-width: 720px) 140px, 200px"
                   style={{ objectFit: "contain" }}
-                  unoptimized
                 />
               </div>
             ))}

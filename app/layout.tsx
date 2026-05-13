@@ -1,12 +1,22 @@
 import type { Metadata, Viewport } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import GSAPProvider from "@/components/GSAPProvider";
 import LoadingScreen from "@/components/LoadingScreen";
-import CustomCursor from "@/components/CustomCursor";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
-import ChatWidget from "@/components/ChatWidget";
+import dynamic from "next/dynamic";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const CustomCursor = dynamic(() => import("@/components/CustomCursor"));
+const WhatsAppButton = dynamic(() => import("@/components/WhatsAppButton"));
+const ChatWidget = dynamic(() => import("@/components/ChatWidget"));
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://icemex.mx"),
@@ -108,7 +118,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning className={inter.variable}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootstrap }} />
         <script
