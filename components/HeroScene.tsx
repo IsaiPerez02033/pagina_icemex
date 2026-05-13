@@ -102,6 +102,18 @@ function useThemeMode(): "dark" | "light" {
   return mode;
 }
 
+/** Detecta dispositivo móvil para reducir carga de GPU. */
+function useIsMobile() {
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+  return mobile;
+}
+
 // Hook que conecta el progreso del scroll global a un valor 0..1.
 // Usa el contenedor #hero-scroll (400vh) como trigger; el sticky child
 // de 100vh queda pinneado mientras se scrollea dentro del contenedor.
@@ -151,9 +163,8 @@ function smoothstep(edge0: number, edge1: number, x: number) {
 }
 
 /* --- ETAPA 1: Suelo + grid + línea central --- */
-function Ground({ progress, palette }: { progress: number; palette: Palette }) {
+function Ground({ progress, palette, isMobile }: { progress: number; palette: Palette; isMobile: boolean }) {
   const lineRef = useRef<THREE.Mesh | null>(null);
-  // Línea central se dibuja muy rápido al inicio (0-10%)
   const stage = smoothstep(0, 0.1, progress);
 
   useFrame(() => {
@@ -162,10 +173,9 @@ function Ground({ progress, palette }: { progress: number; palette: Palette }) {
     }
   });
 
-  // Grid lines
+  const divisions = isMobile ? 10 : 20;
   const gridGeo = useMemo(() => {
     const size = 20;
-    const divisions = 20;
     const step = size / divisions;
     const half = size / 2;
     const positions: number[] = [];
@@ -175,9 +185,12 @@ function Ground({ progress, palette }: { progress: number; palette: Palette }) {
       positions.push(v, 0.001, -half, v, 0.001, half);
     }
     const g = new THREE.BufferGeometry();
-    g.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+    g.setAttribute(
+      "position",
+      new THREE.Float32BufferAttribute(positions, 3)
+    );
     return g;
-  }, []);
+  }, [divisions]);
 
   return (
     <group>
@@ -255,14 +268,14 @@ function Pole({
 }
 
 /* --- ETAPA 2: Puntos cyan flotantes --- */
-function FloatingDots({ progress, palette }: { progress: number; palette: Palette }) {
+function FloatingDots({ progress, palette, isMobile }: { progress: number; palette: Palette; isMobile: boolean }) {
   const pointsRef = useRef<THREE.Points | null>(null);
-  // Puntos cyan visibles desde el 15% hasta el 45%
   const stage = smoothstep(0.15, 0.45, progress);
+  const count = isMobile ? 15 : 40;
 
   const geometry = useMemo(() => {
     const positions: number[] = [];
-    for (let i = 0; i < 40; i++) {
+    for (let i = 0; i < count; i++) {
       const angle = Math.random() * Math.PI * 2;
       const r = 0.8 + Math.random() * 1.4;
       const x = Math.cos(angle) * r;
@@ -274,7 +287,7 @@ function FloatingDots({ progress, palette }: { progress: number; palette: Palett
     const g = new THREE.BufferGeometry();
     g.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
     return g;
-  }, []);
+  }, [count]);
 
   useFrame(({ clock }) => {
     if (pointsRef.current) {
@@ -480,7 +493,7 @@ function CameraRig({ progress }: { progress: number }) {
 }
 
 /* --- Escena interna --- */
-function Scene({ progress, palette }: { progress: number; palette: Palette }) {
+function Scene({ progress, palette, isMobile }: { progress: number; palette: Palette; isMobile: boolean }) {
   const baseRef = useRef<THREE.Mesh | null>(null);
   const fusteRef = useRef<THREE.Mesh | null>(null);
   const flashRef = useRef<THREE.PointLight | null>(null);
@@ -494,7 +507,7 @@ function Scene({ progress, palette }: { progress: number; palette: Palette }) {
         position={[8, 12, 6]}
         intensity={palette.sunIntensity}
         color={palette.sun}
-        castShadow
+        castShadow={!isMobile}
       />
       <directionalLight
         position={[-6, 4, -4]}
@@ -502,14 +515,14 @@ function Scene({ progress, palette }: { progress: number; palette: Palette }) {
         color={palette.fill}
       />
 
-      <Ground progress={progress} palette={palette} />
+      <Ground progress={progress} palette={palette} isMobile={isMobile} />
       <Pole
         progress={progress}
         baseRef={baseRef}
         fusteRef={fusteRef}
         palette={palette}
       />
-      <FloatingDots progress={progress} palette={palette} />
+      <FloatingDots progress={progress} palette={palette} isMobile={isMobile} />
       <Luminaire progress={progress} flashRef={flashRef} palette={palette} />
       <PowerOn progress={progress} palette={palette} />
 
@@ -521,6 +534,7 @@ function Scene({ progress, palette }: { progress: number; palette: Palette }) {
 export default function HeroScene() {
   const progress = useScrollProgress();
   const mode = useThemeMode();
+  const isMobile = useIsMobile();
   const palette = PALETTES[mode];
   const stage4 = smoothstep(0.75, 1, progress);
 
@@ -537,25 +551,27 @@ export default function HeroScene() {
     >
       <Canvas
         key={mode}
-        shadows="percentage"
-        dpr={[1, 2]}
+        shadows={isMobile ? false : "percentage"}
+        dpr={isMobile ? [1, 1] : [1, 2]}
         camera={{ position: [0, 1.5, 8], fov: 50, near: 0.1, far: 100 }}
-        gl={{ antialias: true, alpha: true }}
+        gl={{ antialias: !isMobile, alpha: true }}
         style={{
           width: "100%",
           height: "100%",
           background: "transparent",
         }}
       >
-        <Scene progress={progress} palette={palette} />
-        <EffectComposer>
-          <Bloom
-            intensity={palette.bloomBase + stage4 * palette.bloomScroll}
-            luminanceThreshold={0.2}
-            luminanceSmoothing={0.9}
-            mipmapBlur
-          />
-        </EffectComposer>
+        <Scene progress={progress} palette={palette} isMobile={isMobile} />
+        {!isMobile && (
+          <EffectComposer>
+            <Bloom
+              intensity={palette.bloomBase + stage4 * palette.bloomScroll}
+              luminanceThreshold={0.2}
+              luminanceSmoothing={0.9}
+              mipmapBlur
+            />
+          </EffectComposer>
+        )}
       </Canvas>
 
       {/* Overlay HUD */}
