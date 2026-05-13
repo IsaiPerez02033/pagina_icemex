@@ -278,6 +278,29 @@ export default function Footer() {
         </p>
       </div>
 
+      <div style={{ maxWidth: 1400, margin: "16px auto 0", textAlign: "center" }}>
+        <a
+          href="https://portafolio-chi-tawny-37.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: "var(--text-muted)",
+            fontSize: 11,
+            letterSpacing: "0.08em",
+            textDecoration: "none",
+            transition: "color 0.25s ease",
+          }}
+          onMouseEnter={(e) => {
+            (e.currentTarget as HTMLAnchorElement).style.color = "var(--accent-cyan)";
+          }}
+          onMouseLeave={(e) => {
+            (e.currentTarget as HTMLAnchorElement).style.color = "var(--text-muted)";
+          }}
+        >
+          Creado por Aram Perez
+        </a>
+      </div>
+
       <style dangerouslySetInnerHTML={{ __html: styles }} />
     </footer>
   );
