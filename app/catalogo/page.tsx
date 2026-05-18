@@ -25,7 +25,21 @@ const lineCounts = Object.entries(
 
 export default function CatalogoPage() {
   return (
-    <div style={{ paddingTop: 140, minHeight: "100vh" }}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Inicio", item: "https://icemex.mx" },
+              { "@type": "ListItem", position: 2, name: "Catálogo PDF 2026" },
+            ],
+          }),
+        }}
+      />
+      <div style={{ paddingTop: 140, minHeight: "100vh" }}>
       <div
         style={{
           maxWidth: 1200,
@@ -335,5 +349,6 @@ export default function CatalogoPage() {
         }}
       />
     </div>
+    </>
   );
 }
