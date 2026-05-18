@@ -64,22 +64,25 @@ export default async function ProductoPage({
     name: p.name,
     description: p.description,
     sku: p.code,
+    image: "https://icemex.mx/logo_icemex.png",
     brand: { "@type": "Brand", name: "ICEMEX" },
     category: lineNames[p.line],
     offers: {
-      "@type": "Offer",
+      "@type": "AggregateOffer",
+      priceCurrency: "MXN",
+      lowPrice: "0",
+      highPrice: "0",
+      offerCount: "1",
       availability: "https://schema.org/InStock",
-      priceSpecification: {
-        "@type": "PriceSpecification",
-        priceCurrency: "MXN",
-        description: "Cotizar para precio exacto",
-      },
+      description: "Cotizar para precio exacto",
     },
-    additionalProperty: p.specs.map((s) => ({
-      "@type": "PropertyValue",
-      name: s.label,
-      value: s.value,
-    })),
+    ...(p.specs.length > 0 && {
+      additionalProperty: p.specs.map((s) => ({
+        "@type": "PropertyValue",
+        name: s.label,
+        value: s.value,
+      })),
+    }),
   };
 
   return (
