@@ -62,6 +62,26 @@ export default function ChatWidget() {
     }
   }, [open]);
 
+  // En mobile, guarda/restaura el scroll al abrir/cerrar el chat fullscreen
+  useEffect(() => {
+    const isMobile = typeof window !== "undefined" && window.innerWidth <= 480;
+    if (!isMobile) return;
+    if (open) {
+      const scrollY = window.scrollY;
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
+    } else {
+      const top = document.body.style.top;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.width = "";
+      if (top) {
+        window.scrollTo(0, parseInt(top) * -1);
+      }
+    }
+  }, [open]);
+
   // Close with Escape
   useEffect(() => {
     if (!open) return;
