@@ -125,17 +125,19 @@ function useIsMobile() {
 
 // Hook que conecta el progreso del scroll global a 0..1.
 // Usa ref internamente para Three.js (sin re-render) y
-// throttlea el state de React para el HUD a ~30fps.
+// throttlea el state de React para el HUD a ~20fps.
 function useScrollProgress() {
   const progressRef = useRef(0);
   const [progress, setProgress] = useState(0);
   const lastSet = useRef(0);
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
   useEffect(() => {
     if (typeof window === "undefined") return;
     gsap.registerPlugin(ScrollTrigger);
 
     let st: ScrollTrigger | null = null;
+    let resizeTimer: ReturnType<typeof setTimeout>;
     const raf = requestAnimationFrame(() => {
       const trigger =
         document.getElementById("hero-scroll") ?? document.body;
@@ -143,7 +145,7 @@ function useScrollProgress() {
         trigger,
         start: "top top",
         end: "bottom bottom",
-        scrub: true,
+        scrub: isMobile ? 0.5 : true,
         invalidateOnRefresh: true,
         onUpdate: (self) => {
           progressRef.current = self.progress;
@@ -157,15 +159,23 @@ function useScrollProgress() {
       ScrollTrigger.refresh();
     });
 
-    const onResize = () => ScrollTrigger.refresh();
+    const onResize = () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        if (!ScrollTrigger.isScrolling()) {
+          ScrollTrigger.refresh();
+        }
+      }, 250);
+    };
     window.addEventListener("resize", onResize);
 
     return () => {
       cancelAnimationFrame(raf);
       window.removeEventListener("resize", onResize);
+      clearTimeout(resizeTimer);
       if (st) st.kill();
     };
-  }, []);
+  }, [isMobile]);
   return { progress, progressRef };
 }
 
@@ -553,7 +563,7 @@ export default function HeroScene() {
       style={{
         position: "relative",
         width: "100%",
-        height: "100vh",
+        height: "100dvh",
         overflow: "hidden",
         background: palette.bgGradient,
         transition: "background 0.6s ease",
