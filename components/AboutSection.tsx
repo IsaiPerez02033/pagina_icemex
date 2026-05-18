@@ -82,17 +82,19 @@ export default function AboutSection() {
         }}
       >
         <div className="about-text">
-          <p
+          <h2
+            id="empresa"
             style={{
               color: "var(--accent-cyan)",
               fontSize: 12,
               letterSpacing: "0.32em",
               textTransform: "uppercase",
               marginBottom: 16,
+              fontWeight: 400,
             }}
           >
             01 — Empresa
-          </p>
+          </h2>
           <h2
             style={{
               fontSize: "clamp(28px, 4vw, 52px)",

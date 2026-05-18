@@ -100,7 +100,21 @@ const diferenciadores = [
 
 export default function ServiciosPage() {
   return (
-    <div style={{ paddingTop: 140, minHeight: "100vh" }}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Inicio", item: "https://icemex.mx" },
+              { "@type": "ListItem", position: 2, name: "Servicios" },
+            ],
+          }),
+        }}
+      />
+      <div style={{ paddingTop: 140, minHeight: "100vh" }}>
       {/* Hero */}
       <header style={{ padding: "60px 32px 100px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
@@ -638,5 +652,6 @@ export default function ServiciosPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

@@ -12,6 +12,7 @@ const inter = Inter({
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
   variable: "--font-inter",
+  preload: true,
 });
 
 const CustomCursor = dynamic(() => import("@/components/CustomCursor"));
@@ -58,10 +59,10 @@ export const metadata: Metadata = {
       "Fabricación, distribución y comercialización de material eléctrico, herrajes, postería y luminarias LED. +20 años iluminando México.",
     images: [
       {
-        url: "/logo_icemex.png",
-        width: 560,
-        height: 190,
-        alt: "ICEMEX logo",
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "ICEMEX — Iluminación pública y material eléctrico",
       },
     ],
   },
