@@ -588,7 +588,7 @@ export default function HeroScene() {
               intensity={palette.bloomBase + stage4 * palette.bloomScroll}
               luminanceThreshold={0.2}
               luminanceSmoothing={0.9}
-              mipmapBlur
+              resolution={256}
             />
           </EffectComposer>
         )}

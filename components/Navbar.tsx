@@ -66,7 +66,6 @@ export default function Navbar() {
             <IcemexLogo
               width={560}
               height={190}
-              priority
               style={{
                 objectFit: "contain",
                 height: "100%",
