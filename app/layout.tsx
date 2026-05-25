@@ -201,6 +201,19 @@ export default function RootLayout({
             }}
           />
         )}
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}',{send_page_view:true});`,
+              }}
+            />
+          </>
+        )}
       </head>
       <body>
         <GSAPProvider>
@@ -213,6 +226,11 @@ export default function RootLayout({
           <ChatWidget />
         </GSAPProvider>
         <Analytics />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `fetch("/api/events",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({path:location.pathname})}).catch(()=>{})`,
+          }}
+        />
       </body>
     </html>
   );

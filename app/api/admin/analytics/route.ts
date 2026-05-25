@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
-import { getVercelAnalytics } from "@/lib/admin/vercel-analytics";
+import { getMetrics, getRealtimeCount, getEventCounts } from "@/lib/admin/kv-store";
 import {
   getDashboardMetrics,
   getTrafficData,
@@ -17,43 +17,47 @@ export async function GET() {
     return NextResponse.json({ error: "No autorizado" }, { status: 401 });
   }
 
-  // Intentar datos reales de Vercel Analytics
-  const vercel = await getVercelAnalytics();
+  // Intentar datos reales de Vercel KV
+  try {
+    const kvMetrics = await getMetrics(30);
+    const realtime = await getRealtimeCount();
+    const eventCounts = await getEventCounts(30);
 
-  // Si hay datos de Vercel, mapearlos. Si no, usar mock data.
-  const realTopPages = vercel?.topPages?.length
-    ? vercel.topPages.map((p) => ({
-        page: p.path,
-        views: p.views,
-        avgTime: "—",
-        bounceRate: "—",
-      }))
-    : getTopPages();
-
-  const realMetrics = vercel
-    ? [
-        { label: "Visitantes (30d)", value: vercel.visitors.toLocaleString(), change: 0, icon: "users" },
-        { label: "Páginas vistas", value: vercel.pageViews.toLocaleString(), change: 0, icon: "activity" },
-        { label: "Tasa de rebote", value: `${(vercel.bounceRate * 100).toFixed(1)}%`, change: 0, icon: "trending-down" },
-        { label: "Tpo. promedio", value: formatDuration(vercel.avgDuration), change: 0, icon: "check-circle" },
-      ]
-    : getDashboardMetrics();
+    if (kvMetrics && kvMetrics.visitors > 0) {
+      return NextResponse.json({
+        metrics: [
+          { label: "Visitantes (30d)", value: kvMetrics.visitors.toLocaleString(), change: 0, icon: "users" },
+          { label: "Páginas vistas", value: kvMetrics.pageViews.toLocaleString(), change: 0, icon: "activity" },
+          { label: "Tasa de rebote", value: "—", change: 0, icon: "trending-down" },
+          { label: "Tpo. promedio", value: "—", change: 0, icon: "check-circle" },
+        ],
+        traffic: getTrafficData(30),
+        devices: kvMetrics.devices.length > 0
+          ? kvMetrics.devices.map((d) => ({ name: d.device, value: d.percentage }))
+          : getDeviceData(),
+        topPages: kvMetrics.topPages.length > 0
+          ? kvMetrics.topPages.map((p) => ({ page: p.path, views: p.views, avgTime: "—", bounceRate: "—" }))
+          : getTopPages(),
+        countries: kvMetrics.countries,
+        events: eventCounts.length > 0
+          ? eventCounts.map((e) => ({ name: e.name, count: e.count, trend: 0 }))
+          : getEvents(),
+        realtime: realtime || getRealtimeUsers(),
+        source: "kv",
+      });
+    }
+  } catch {
+    // KV no configurado — usar mock data
+  }
 
   return NextResponse.json({
-    metrics: realMetrics,
+    metrics: getDashboardMetrics(),
     traffic: getTrafficData(30),
     devices: getDeviceData(),
-    topPages: realTopPages,
+    topPages: getTopPages(),
     countries: getCountries(),
     events: getEvents(),
     realtime: getRealtimeUsers(),
-    source: vercel ? "vercel_analytics" : "mock",
+    source: "mock",
   });
-}
-
-function formatDuration(seconds: number) {
-  if (!seconds || seconds === 0) return "—";
-  const m = Math.floor(seconds / 60);
-  const s = Math.floor(seconds % 60);
-  return `${m}m ${s.toString().padStart(2, "0")}s`;
 }

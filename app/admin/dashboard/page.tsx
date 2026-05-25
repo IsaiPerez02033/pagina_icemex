@@ -30,26 +30,27 @@ const eventIcons: Record<string, React.ComponentType<{ size?: number }>> = {
 export default function DashboardPage() {
   const [range, setRange] = useState<DateRange>("30d");
   const [loading, setLoading] = useState(true);
-  const [dataSource, setDataSource] = useState<"mock" | "vercel">("mock");
+  const [dataSource, setDataSource] = useState<"mock" | "kv">("mock");
 
-  // Fetch real data from API, fallback to mock
   const [metrics, setMetrics] = useState<MetricCardData[]>(getDashboardMetrics());
   const [traffic, setTraffic] = useState<TrafficPoint[]>(getTrafficData(30));
   const [devices, setDevices] = useState<DeviceData[]>(getDeviceData());
   const [pages, setPages] = useState<TopPage[]>(getTopPages());
-  const events = getEvents();
-  const realtime = getRealtimeUsers();
+  const [events, setEvents] = useState(getEvents());
+  const [realtime, setRealtime] = useState(getRealtimeUsers());
 
   useEffect(() => {
     fetch("/api/admin/analytics")
       .then((res) => res.json())
       .then((data) => {
-        if (data?.source === "vercel_analytics" || data?.metrics) {
-          setDataSource(data.source || "vercel");
+        if (data?.source === "kv") {
+          setDataSource("kv");
           if (data.metrics) setMetrics(data.metrics);
           if (data.topPages) setPages(data.topPages);
           if (data.devices) setDevices(data.devices);
           if (data.traffic) setTraffic(data.traffic);
+          if (data.events) setEvents(data.events);
+          if (data.realtime) setRealtime(data.realtime);
         }
       })
       .catch(() => {})
@@ -77,7 +78,7 @@ export default function DashboardPage() {
             )}
           </h2>
           <p style={{ color: "var(--text-muted)", fontSize: 13, letterSpacing: "0.04em" }}>
-            {dataSource === "vercel" ? "Datos de Vercel Analytics" : "Datos simulados"} · {range === "today" ? "hoy" : `últimos ${range === "7d" ? "7" : range === "30d" ? "30" : "90"} días`}
+            {dataSource === "kv" ? "Datos reales" : "Datos simulados"} · {range === "today" ? "hoy" : `últimos ${range === "7d" ? "7" : range === "30d" ? "30" : "90"} días`}
           </p>
         </div>
         <DateRangePicker value={range} onChange={setRange} />
