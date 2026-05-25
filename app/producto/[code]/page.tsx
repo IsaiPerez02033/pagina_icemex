@@ -70,8 +70,8 @@ export default async function ProductoPage({
     offers: {
       "@type": "AggregateOffer",
       priceCurrency: "MXN",
-      lowPrice: "0",
-      highPrice: "0",
+      lowPrice: 0,
+      highPrice: 0,
       offerCount: "1",
       availability: "https://schema.org/InStock",
       description: "Cotizar para precio exacto",
