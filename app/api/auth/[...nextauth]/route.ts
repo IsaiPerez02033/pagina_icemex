@@ -1,12 +1,18 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
-const siteUrl =
-  process.env.VERCEL_URL
+// NextAuth v4 lee process.env.NEXTAUTH_URL internamente. Si no está configurada
+// en Vercel, la auto-detectamos desde VERCEL_URL (que Vercel siempre expone).
+if (!process.env.NEXTAUTH_URL) {
+  process.env.NEXTAUTH_URL = process.env.VERCEL_URL
     ? `https://${process.env.VERCEL_URL}`
-    : process.env.NEXTAUTH_URL || "http://localhost:3000";
+    : "http://localhost:3000";
+}
+
+const isHttps = process.env.NEXTAUTH_URL.startsWith("https://");
 
 const handler = NextAuth({
+  useSecureCookies: isHttps,
   providers: [
     CredentialsProvider({
       name: "ICEMEX Admin",
