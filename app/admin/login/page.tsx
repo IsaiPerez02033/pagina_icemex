@@ -40,7 +40,7 @@ function LoginForm() {
     if (result?.error) {
       setError("Credenciales inválidas. Verifica tu email y contraseña.");
     } else if (result?.ok) {
-      router.push(callbackUrl);
+      window.location.href = callbackUrl;
     }
   };
 
