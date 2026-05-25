@@ -112,7 +112,6 @@ export default function LoadingScreen() {
           fill
           sizes="(max-width: 768px) 70vw, 420px"
           style={{ objectFit: "contain" }}
-          priority
         />
       </div>
 
