@@ -582,7 +582,7 @@ export default function HeroScene() {
         }}
       >
         <Scene progressRef={progressRef} palette={palette} isMobile={isMobile} />
-        {!isMobile && (
+        {!isMobile && progress > 0.65 && (
           <EffectComposer>
             <Bloom
               intensity={palette.bloomBase + stage4 * palette.bloomScroll}
