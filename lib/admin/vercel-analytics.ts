@@ -5,6 +5,7 @@
 const VERCEL_API = "https://api.vercel.com";
 const TOKEN = process.env.VERCEL_API_TOKEN;
 const PROJECT_ID = process.env.VERCEL_PROJECT_ID;
+const TEAM_ID = process.env.VERCEL_TEAM_ID;
 
 async function fetchVercel(endpoint: string) {
   if (!TOKEN) {
@@ -14,7 +15,10 @@ async function fetchVercel(endpoint: string) {
   const res = await fetch(`${VERCEL_API}${endpoint}`, {
     headers: { Authorization: `Bearer ${TOKEN}` },
   });
-  if (!res.ok) return null;
+  if (!res.ok) {
+    console.warn(`[Vercel Analytics] API error ${res.status}: ${endpoint}`);
+    return null;
+  }
   return res.json();
 }
 
@@ -29,17 +33,15 @@ export interface VercelAnalyticsData {
 }
 
 export async function getVercelAnalytics(): Promise<VercelAnalyticsData | null> {
-  if (!TOKEN || !PROJECT_ID) return null;
+  if (!TOKEN || !PROJECT_ID || !TEAM_ID) return null;
 
   try {
-    // Obtener métricas de audiencia (últimos 30 días)
     const audience = await fetchVercel(
-      `/v1/web-insights/${PROJECT_ID}/audience?from=${daysAgo(30)}&to=today&limit=1`
+      `/v1/web/insights/${TEAM_ID}/${PROJECT_ID}/audience?from=${daysAgo(30)}&to=${today()}`
     );
 
-    // Obtener top pages
     const topPages = await fetchVercel(
-      `/v1/web-insights/${PROJECT_ID}/pages?from=${daysAgo(7)}&to=today&limit=7`
+      `/v1/web/insights/${TEAM_ID}/${PROJECT_ID}/pages?from=${daysAgo(7)}&to=${today()}&limit=7`
     );
 
     return {
