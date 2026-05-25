@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import { motion } from "framer-motion";
 import MetricCard from "@/components/dashboard/MetricCard";
@@ -8,7 +8,7 @@ import TrafficChart from "@/components/dashboard/TrafficChart";
 import DeviceChart from "@/components/dashboard/DeviceChart";
 import VisitorsTable from "@/components/dashboard/VisitorsTable";
 import DateRangePicker from "@/components/dashboard/DateRangePicker";
-import { Zap, MessageCircle, FileText, Bot } from "lucide-react";
+import { Zap, MessageCircle, FileText, Bot, Loader2 } from "lucide-react";
 import {
   getDashboardMetrics,
   getTrafficData,
@@ -17,6 +17,7 @@ import {
   getEvents,
   getRealtimeUsers,
 } from "@/lib/admin/mock-data";
+import type { MetricCardData, TrafficPoint, DeviceData, TopPage } from "@/lib/admin/types";
 import type { DateRange } from "@/lib/admin/types";
 
 const eventIcons: Record<string, React.ComponentType<{ size?: number }>> = {
@@ -28,12 +29,32 @@ const eventIcons: Record<string, React.ComponentType<{ size?: number }>> = {
 
 export default function DashboardPage() {
   const [range, setRange] = useState<DateRange>("30d");
-  const metrics = getDashboardMetrics();
-  const traffic = getTrafficData(range === "today" ? 1 : range === "7d" ? 7 : range === "30d" ? 30 : 90);
-  const devices = getDeviceData();
-  const pages = getTopPages();
+  const [loading, setLoading] = useState(true);
+  const [dataSource, setDataSource] = useState<"mock" | "vercel">("mock");
+
+  // Fetch real data from API, fallback to mock
+  const [metrics, setMetrics] = useState<MetricCardData[]>(getDashboardMetrics());
+  const [traffic, setTraffic] = useState<TrafficPoint[]>(getTrafficData(30));
+  const [devices, setDevices] = useState<DeviceData[]>(getDeviceData());
+  const [pages, setPages] = useState<TopPage[]>(getTopPages());
   const events = getEvents();
   const realtime = getRealtimeUsers();
+
+  useEffect(() => {
+    fetch("/api/admin/analytics")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data?.source === "vercel_analytics" || data?.metrics) {
+          setDataSource(data.source || "vercel");
+          if (data.metrics) setMetrics(data.metrics);
+          if (data.topPages) setPages(data.topPages);
+          if (data.devices) setDevices(data.devices);
+          if (data.traffic) setTraffic(data.traffic);
+        }
+      })
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }, []);
 
   return (
     <div style={{ maxWidth: 1400 }}>
@@ -49,9 +70,14 @@ export default function DashboardPage() {
             }}
           >
             Dashboard
+            {loading && (
+              <span style={{ marginLeft: 12, display: "inline-flex", alignItems: "center" }}>
+                <Loader2 size={16} style={{ animation: "spin 1s linear infinite", color: "var(--text-muted)" }} />
+              </span>
+            )}
           </h2>
           <p style={{ color: "var(--text-muted)", fontSize: 13, letterSpacing: "0.04em" }}>
-            Métricas de {range === "today" ? "hoy" : `los últimos ${range === "7d" ? "7" : range === "30d" ? "30" : "90"} días`}
+            {dataSource === "vercel" ? "Datos de Vercel Analytics" : "Datos simulados"} · {range === "today" ? "hoy" : `últimos ${range === "7d" ? "7" : range === "30d" ? "30" : "90"} días`}
           </p>
         </div>
         <DateRangePicker value={range} onChange={setRange} />
