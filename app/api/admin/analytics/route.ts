@@ -23,12 +23,13 @@ export async function GET() {
     const realtime = await getRealtimeCount();
     const eventCounts = await getEventCounts(30);
 
-    if (kvMetrics && kvMetrics.visitors > 0) {
+    // Mostrar KV aunque tenga 0 visitantes (está conectado pero sin datos aún)
+    if (kvMetrics) {
       return NextResponse.json({
         metrics: [
           { label: "Visitantes (30d)", value: kvMetrics.visitors.toLocaleString(), change: 0, icon: "users" },
           { label: "Páginas vistas", value: kvMetrics.pageViews.toLocaleString(), change: 0, icon: "activity" },
-          { label: "Tasa de rebote", value: "—", change: 0, icon: "trending-down" },
+          { label: "Tasa de rebote", value: kvMetrics.visitors > 0 ? "—" : "—", change: 0, icon: "trending-down" },
           { label: "Tpo. promedio", value: "—", change: 0, icon: "check-circle" },
         ],
         traffic: getTrafficData(30),
@@ -44,12 +45,25 @@ export async function GET() {
           : getEvents(),
         realtime: realtime || getRealtimeUsers(),
         source: "kv",
+        kvConnected: true,
       });
     }
-  } catch {
-    // KV no configurado — usar mock data
+  } catch (e) {
+    console.error("[Analytics] KV error:", e);
+    return NextResponse.json({
+      metrics: getDashboardMetrics(),
+      traffic: getTrafficData(30),
+      devices: getDeviceData(),
+      topPages: getTopPages(),
+      countries: getCountries(),
+      events: getEvents(),
+      realtime: getRealtimeUsers(),
+      source: "kv_error",
+      kvConnected: false,
+    });
   }
 
+  // KV no responde (retorna null)
   return NextResponse.json({
     metrics: getDashboardMetrics(),
     traffic: getTrafficData(30),
@@ -59,5 +73,6 @@ export async function GET() {
     events: getEvents(),
     realtime: getRealtimeUsers(),
     source: "mock",
+    kvConnected: false,
   });
 }

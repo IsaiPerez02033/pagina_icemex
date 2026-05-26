@@ -30,7 +30,7 @@ const eventIcons: Record<string, React.ComponentType<{ size?: number }>> = {
 export default function DashboardPage() {
   const [range, setRange] = useState<DateRange>("30d");
   const [loading, setLoading] = useState(true);
-  const [dataSource, setDataSource] = useState<"mock" | "kv">("mock");
+  const [dataSource, setDataSource] = useState<"mock" | "kv" | "kv_error">("mock");
 
   const [metrics, setMetrics] = useState<MetricCardData[]>(getDashboardMetrics());
   const [traffic, setTraffic] = useState<TrafficPoint[]>(getTrafficData(30));
@@ -51,6 +51,8 @@ export default function DashboardPage() {
           if (data.traffic) setTraffic(data.traffic);
           if (data.events) setEvents(data.events);
           if (data.realtime) setRealtime(data.realtime);
+        } else if (data?.source === "kv_error") {
+          setDataSource("kv_error");
         }
       })
       .catch(() => {})
@@ -78,7 +80,7 @@ export default function DashboardPage() {
             )}
           </h2>
           <p style={{ color: "var(--text-muted)", fontSize: 13, letterSpacing: "0.04em" }}>
-            {dataSource === "kv" ? "Datos reales" : "Datos simulados"} · {range === "today" ? "hoy" : `últimos ${range === "7d" ? "7" : range === "30d" ? "30" : "90"} días`}
+            {dataSource === "kv" ? "Datos reales" : dataSource === "kv_error" ? "KV error — verificar conexión Redis" : "Datos simulados"} · {range === "today" ? "hoy" : `últimos ${range === "7d" ? "7" : range === "30d" ? "30" : "90"} días`}
           </p>
         </div>
         <DateRangePicker value={range} onChange={setRange} />

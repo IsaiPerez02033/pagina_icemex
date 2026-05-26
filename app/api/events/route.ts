@@ -1,13 +1,25 @@
 import { NextRequest, NextResponse } from "next/server";
 import { recordPageView, recordEvent } from "@/lib/admin/kv-store";
 
+function cors() {
+  return {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+  };
+}
+
+export async function OPTIONS() {
+  return NextResponse.json({}, { headers: cors() });
+}
+
 export async function POST(req: NextRequest) {
   const body = await req.json().catch(() => ({}));
 
   try {
     if (body.type === "event") {
       await recordEvent(body.name);
-      return NextResponse.json({ ok: true });
+      return NextResponse.json({ ok: true }, { headers: cors() });
     }
 
     // Page view tracking
@@ -25,9 +37,9 @@ export async function POST(req: NextRequest) {
       country,
     });
 
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true }, { headers: cors() });
   } catch (e) {
     console.error("[events] Error recording:", e);
-    return NextResponse.json({ ok: false }, { status: 500 });
+    return NextResponse.json({ ok: false }, { status: 500, headers: cors() });
   }
 }
