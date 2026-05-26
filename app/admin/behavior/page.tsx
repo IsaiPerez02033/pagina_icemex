@@ -1,7 +1,9 @@
 "use client";
 
-import { Eye, Clock, ArrowDown } from "lucide-react";
+import { Eye, Clock, ArrowDown, ExternalLink, BadgeCheck } from "lucide-react";
 import MetricCard from "@/components/dashboard/MetricCard";
+
+const clarityProjectId = "wwuskpkf16";
 
 export default function BehaviorPage() {
   return (
@@ -11,7 +13,7 @@ export default function BehaviorPage() {
           Comportamiento de usuarios
         </h2>
         <p style={{ color: "var(--text-muted)", fontSize: 13 }}>
-          Heatmaps, grabaciones y profundidad de scroll
+          Heatmaps, grabaciones y profundidad de scroll · Microsoft Clarity
         </p>
       </div>
 
@@ -25,8 +27,8 @@ export default function BehaviorPage() {
       <div
         style={{
           padding: 48,
-          background: "rgba(var(--card-rgb), 0.6)",
-          border: "1px solid rgba(var(--cyan-rgb), 0.1)",
+          background: "linear-gradient(135deg, rgba(var(--card-rgb), 0.7), rgba(var(--card-rgb), 0.5))",
+          border: "1px solid rgba(34, 197, 94, 0.2)",
           borderRadius: 16,
           textAlign: "center",
         }}
@@ -36,34 +38,73 @@ export default function BehaviorPage() {
             width: 64,
             height: 64,
             borderRadius: "50%",
-            background: "rgba(var(--cyan-rgb), 0.08)",
+            background: "rgba(34, 197, 94, 0.12)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             margin: "0 auto 20px",
-            color: "var(--accent-cyan)",
+            color: "#22c55e",
           }}
         >
-          <Eye size={28} />
+          <BadgeCheck size={32} />
         </div>
         <h3 style={{ color: "var(--text-primary)", fontSize: 18, fontWeight: 400, marginBottom: 8 }}>
-          Microsoft Clarity · Próximamente
+          Microsoft Clarity · Conectado
         </h3>
-        <p style={{ color: "var(--text-muted)", fontSize: 14, maxWidth: 480, margin: "0 auto", lineHeight: 1.7 }}>
-          La integración con Microsoft Clarity está preparada para activarse. Conecta tu cuenta para ver heatmaps, grabaciones de sesiones y mapas de scroll en tiempo real.
+        <p style={{ color: "var(--text-muted)", fontSize: 14, maxWidth: 520, margin: "0 auto", lineHeight: 1.7 }}>
+          Clarity está activo y recolectando heatmaps, grabaciones de sesión y mapas de scroll de todos los visitantes de icemex.mx.
         </p>
 
-        <div style={{ display: "flex", justifyContent: "center", gap: 40, marginTop: 32, flexWrap: "wrap" }}>
+        <a
+          href={`https://clarity.microsoft.com/projects/view/${clarityProjectId}/`}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 8,
+            marginTop: 24,
+            padding: "12px 24px",
+            background: "var(--accent-cyan)",
+            color: "var(--bg-primary)",
+            fontSize: 12,
+            fontWeight: 600,
+            letterSpacing: "0.12em",
+            textTransform: "uppercase",
+            borderRadius: 999,
+            textDecoration: "none",
+            transition: "transform 0.2s ease",
+          }}
+        >
+          Ver dashboard de Clarity
+          <ExternalLink size={14} />
+        </a>
+
+        <div style={{ display: "flex", justifyContent: "center", gap: 40, marginTop: 40, flexWrap: "wrap" }}>
           {[
-            { icon: Eye, label: "Heatmaps", desc: "Mapas de calor" },
-            { icon: ArrowDown, label: "Scroll depth", desc: "Profundidad de scroll" },
-            { icon: Clock, label: "Session recordings", desc: "Grabaciones de sesión" },
+            { icon: Eye, label: "Heatmaps", desc: "Mapas de calor en vivo" },
+            { icon: ArrowDown, label: "Scroll depth", desc: "Profundidad de scroll por página" },
+            { icon: Clock, label: "Session recordings", desc: "Grabaciones de sesiones reales" },
           ].map((f) => (
             <div key={f.label} style={{ textAlign: "center" }}>
-              <div style={{ width: 48, height: 48, borderRadius: 12, background: "rgba(var(--cyan-rgb), 0.06)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 10px", color: "var(--text-muted)" }}>
+              <div
+                style={{
+                  width: 48,
+                  height: 48,
+                  borderRadius: 12,
+                  background: "rgba(34, 197, 94, 0.08)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "0 auto 10px",
+                  color: "#22c55e",
+                }}
+              >
                 <f.icon size={20} />
               </div>
-              <div style={{ color: "var(--text-primary)", fontSize: 13, fontWeight: 500, marginBottom: 4 }}>{f.label}</div>
+              <div style={{ color: "var(--text-primary)", fontSize: 13, fontWeight: 500, marginBottom: 4 }}>
+                {f.label}
+              </div>
               <div style={{ color: "var(--text-muted)", fontSize: 11 }}>{f.desc}</div>
             </div>
           ))}
