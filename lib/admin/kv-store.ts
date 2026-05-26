@@ -1,11 +1,12 @@
 // Vercel KV — almacenamiento serverless para métricas del dashboard.
 // Requiere: Vercel KV activado en el proyecto (Settings → Storage → Connect KV)
 
-import { createClient } from "@vercel/kv";
+import { Redis } from "@upstash/redis";
 
-const kvClient = createClient({
-  url: process.env.KV_REST_API_URL || process.env.KV_URL || process.env.REDIS_URL || "",
-  token: process.env.KV_REST_API_TOKEN || process.env.KV_REST_API_READ_ONLY_TOKEN || "",
+const redis = new Redis({
+  url: process.env.REDIS_URL || process.env.KV_URL || "",
+  token: process.env.KV_REST_API_TOKEN || "",
+  enableAutoPipelining: true,
 });
 
 const PREFIX = "icemex:";
@@ -24,33 +25,33 @@ export async function recordPageView(data: {
 
   const p = data.path === "/" ? "/" : data.path;
 
-  await kvClient.incr(`${PREFIX}pv:${today}:${p}`);
-  await kvClient.expire(`${PREFIX}pv:${today}:${p}`, RETENTION_DAYS * 24 * 3600);
+  await redis.incr(`${PREFIX}pv:${today}:${p}`);
+  await redis.expire(`${PREFIX}pv:${today}:${p}`, RETENTION_DAYS * 24 * 3600);
 
   if (data.ip) {
     const visitorKey = `${PREFIX}visitor:${today}:${hashIP(data.ip)}`;
-    await kvClient.set(visitorKey, ts, { ex: RETENTION_DAYS * 24 * 3600 });
+    await redis.set(visitorKey, ts, { ex: RETENTION_DAYS * 24 * 3600 });
   }
 
   if (data.country) {
-    await kvClient.incr(`${PREFIX}country:${today}:${data.country}`);
-    await kvClient.expire(`${PREFIX}country:${today}:${data.country}`, RETENTION_DAYS * 24 * 3600);
+    await redis.incr(`${PREFIX}country:${today}:${data.country}`);
+    await redis.expire(`${PREFIX}country:${today}:${data.country}`, RETENTION_DAYS * 24 * 3600);
   }
 
   if (data.userAgent) {
     const device = detectDevice(data.userAgent);
-    await kvClient.incr(`${PREFIX}device:${today}:${device}`);
-    await kvClient.expire(`${PREFIX}device:${today}:${device}`, RETENTION_DAYS * 24 * 3600);
+    await redis.incr(`${PREFIX}device:${today}:${device}`);
+    await redis.expire(`${PREFIX}device:${today}:${device}`, RETENTION_DAYS * 24 * 3600);
   }
 
   const realtimeKey = `${PREFIX}realtime:${hour}:${hashIP(data.ip || "unknown")}`;
-  await kvClient.set(realtimeKey, ts, { ex: 300 });
+  await redis.set(realtimeKey, ts, { ex: 300 });
 }
 
 export async function recordEvent(name: string) {
   const today = new Date().toISOString().split("T")[0];
-  await kvClient.incr(`${PREFIX}event:${today}:${name}`);
-  await kvClient.expire(`${PREFIX}event:${today}:${name}`, RETENTION_DAYS * 24 * 3600);
+  await redis.incr(`${PREFIX}event:${today}:${name}`);
+  await redis.expire(`${PREFIX}event:${today}:${name}`, RETENTION_DAYS * 24 * 3600);
 }
 
 export async function getMetrics(days = 30) {
@@ -68,9 +69,9 @@ export async function getMetrics(days = 30) {
   const devices: Record<string, number> = {};
 
   for (const date of dates) {
-    const pvKeys = await kvClient.keys(`${PREFIX}pv:${date}:*`);
+    const pvKeys = await redis.keys(`${PREFIX}pv:${date}:*`);
     for (const key of pvKeys) {
-      const count = await kvClient.get<number>(key);
+      const count = await redis.get<number>(key);
       if (count) {
         totalPageViews += count;
         const path = key.replace(`${PREFIX}pv:${date}:`, "");
@@ -78,21 +79,21 @@ export async function getMetrics(days = 30) {
       }
     }
 
-    const visitorKeys = await kvClient.keys(`${PREFIX}visitor:${date}:*`);
+    const visitorKeys = await redis.keys(`${PREFIX}visitor:${date}:*`);
     uniqueVisitors += visitorKeys.length;
 
-    const countryKeys = await kvClient.keys(`${PREFIX}country:${date}:*`);
+    const countryKeys = await redis.keys(`${PREFIX}country:${date}:*`);
     for (const key of countryKeys) {
-      const count = await kvClient.get<number>(key);
+      const count = await redis.get<number>(key);
       if (count) {
         const country = key.replace(`${PREFIX}country:${date}:`, "");
         countries[country] = (countries[country] || 0) + count;
       }
     }
 
-    const deviceKeys = await kvClient.keys(`${PREFIX}device:${date}:*`);
+    const deviceKeys = await redis.keys(`${PREFIX}device:${date}:*`);
     for (const key of deviceKeys) {
-      const count = await kvClient.get<number>(key);
+      const count = await redis.get<number>(key);
       if (count) {
         const device = key.replace(`${PREFIX}device:${date}:`, "");
         devices[device] = (devices[device] || 0) + count;
@@ -120,7 +121,7 @@ export async function getMetrics(days = 30) {
 
 export async function getRealtimeCount() {
   const hour = new Date().getHours();
-  const keys = await kvClient.keys(`${PREFIX}realtime:${hour}:*`);
+  const keys = await redis.keys(`${PREFIX}realtime:${hour}:*`);
   return keys.length;
 }
 
@@ -134,9 +135,9 @@ export async function getEventCounts(days = 30) {
 
   const events: Record<string, number> = {};
   for (const date of dates) {
-    const keys = await kvClient.keys(`${PREFIX}event:${date}:*`);
+    const keys = await redis.keys(`${PREFIX}event:${date}:*`);
     for (const key of keys) {
-      const count = await kvClient.get<number>(key);
+      const count = await redis.get<number>(key);
       if (count) {
         const name = key.replace(`${PREFIX}event:${date}:`, "");
         events[name] = (events[name] || 0) + count;
