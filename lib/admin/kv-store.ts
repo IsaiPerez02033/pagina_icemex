@@ -1,5 +1,5 @@
 // Vercel KV — almacenamiento serverless para métricas del dashboard.
-// Requiere: KV_REST_API_URL y KV_REST_API_TOKEN en Vercel env vars (desde Upstash)
+// Requiere: UPSTASH_REDIS_REST_URL y UPSTASH_REDIS_REST_TOKEN en Vercel env vars
 
 import { createClient } from "@vercel/kv";
 
@@ -19,6 +19,17 @@ function getRedis() {
   return _redis;
 }
 
+async function scanKeys(redis: ReturnType<typeof createClient>, pattern: string): Promise<string[]> {
+  const all: string[] = [];
+  let cursor: string | null = "0";
+  do {
+    const [nextCursor, found] = await redis.scan(cursor === null ? 0 : cursor, { match: pattern, count: 100 });
+    all.push(...found);
+    cursor = nextCursor === "0" ? null : nextCursor;
+  } while (cursor !== null);
+  return all;
+}
+
 export async function recordPageView(data: {
   path: string;
   referrer?: string;
@@ -30,7 +41,6 @@ export async function recordPageView(data: {
   const today = new Date().toISOString().split("T")[0];
   const hour = new Date().getHours();
   const ts = Date.now();
-
   const p = data.path === "/" ? "/" : data.path;
 
   await redis.incr(`${PREFIX}pv:${today}:${p}`);
@@ -79,7 +89,7 @@ export async function getMetrics(days = 30) {
   const devices: Record<string, number> = {};
 
   for (const date of dates) {
-    const pvKeys = await redis.keys(`${PREFIX}pv:${date}:*`);
+    const pvKeys = await scanKeys(redis, `${PREFIX}pv:${date}:*`);
     for (const key of pvKeys) {
       const count = await redis.get<number>(key);
       if (count) {
@@ -89,10 +99,10 @@ export async function getMetrics(days = 30) {
       }
     }
 
-    const visitorKeys = await redis.keys(`${PREFIX}visitor:${date}:*`);
+    const visitorKeys = await scanKeys(redis, `${PREFIX}visitor:${date}:*`);
     uniqueVisitors += visitorKeys.length;
 
-    const countryKeys = await redis.keys(`${PREFIX}country:${date}:*`);
+    const countryKeys = await scanKeys(redis, `${PREFIX}country:${date}:*`);
     for (const key of countryKeys) {
       const count = await redis.get<number>(key);
       if (count) {
@@ -101,7 +111,7 @@ export async function getMetrics(days = 30) {
       }
     }
 
-    const deviceKeys = await redis.keys(`${PREFIX}device:${date}:*`);
+    const deviceKeys = await scanKeys(redis, `${PREFIX}device:${date}:*`);
     for (const key of deviceKeys) {
       const count = await redis.get<number>(key);
       if (count) {
@@ -132,7 +142,7 @@ export async function getMetrics(days = 30) {
 export async function getRealtimeCount() {
   const redis = getRedis();
   const hour = new Date().getHours();
-  const keys = await redis.keys(`${PREFIX}realtime:${hour}:*`);
+  const keys = await scanKeys(redis, `${PREFIX}realtime:${hour}:*`);
   return keys.length;
 }
 
@@ -147,7 +157,7 @@ export async function getEventCounts(days = 30) {
 
   const events: Record<string, number> = {};
   for (const date of dates) {
-    const keys = await redis.keys(`${PREFIX}event:${date}:*`);
+    const keys = await scanKeys(redis, `${PREFIX}event:${date}:*`);
     for (const key of keys) {
       const count = await redis.get<number>(key);
       if (count) {

@@ -32,6 +32,7 @@ export default function DashboardPage() {
   const [loading, setLoading] = useState(true);
   const [dataSource, setDataSource] = useState<"mock" | "kv" | "kv_error">("mock");
   const [ga4Id, setGa4Id] = useState<string | null>(null);
+  const [kvErrorMsg, setKvErrorMsg] = useState<string | null>(null);
 
   const [metrics, setMetrics] = useState<MetricCardData[]>(getDashboardMetrics());
   const [traffic, setTraffic] = useState<TrafficPoint[]>(getTrafficData(30));
@@ -58,6 +59,7 @@ export default function DashboardPage() {
           setDataSource("kv");
         } else if (data?.source === "kv_error") {
           setDataSource("kv_error");
+          setKvErrorMsg(data?.kvError || null);
         }
         setGa4Id(data?.ga4Id || null);
         if (data.metrics) setMetrics(data.metrics);
@@ -95,7 +97,7 @@ export default function DashboardPage() {
             {dataSource === "kv"
               ? "Datos reales"
               : dataSource === "kv_error"
-              ? "KV error"
+              ? `KV error${kvErrorMsg ? " — " + kvErrorMsg : ""}`
               : "Datos simulados"}{" "}
             · {range === "today" ? "hoy" : `últimos ${range === "7d" ? "7" : range === "30d" ? "30" : "90"} días`}
             {ga4Id && (
