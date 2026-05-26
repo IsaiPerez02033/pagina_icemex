@@ -23,7 +23,8 @@ async function scanKeys(redis: ReturnType<typeof createClient>, pattern: string)
   const all: string[] = [];
   let cursor: string | null = "0";
   do {
-    const [nextCursor, found] = await redis.scan(cursor === null ? 0 : cursor, { match: pattern, count: 100 });
+    const result: [string, string[]] = await redis.scan(cursor === null ? 0 : cursor, { match: pattern, count: 100 });
+    const [nextCursor, found] = result;
     all.push(...found);
     cursor = nextCursor === "0" ? null : nextCursor;
   } while (cursor !== null);
