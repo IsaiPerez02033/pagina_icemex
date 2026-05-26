@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Redis } from "@upstash/redis";
+import { createClient } from "@vercel/kv";
 
 function cors() {
   return {
@@ -21,10 +21,10 @@ export async function POST(req: NextRequest) {
     const token = process.env.KV_REST_API_TOKEN || "";
 
     if (!url || !token) {
-      return NextResponse.json({ ok: false, error: "KV_REST_API_URL or KV_REST_API_TOKEN not found" }, { headers: cors() });
+      return NextResponse.json({ ok: false, error: "Missing KV_REST_API_URL or KV_REST_API_TOKEN" }, { headers: cors() });
     }
 
-    const redis = new Redis({ url, token });
+    const redis = createClient({ url, token });
 
     if (body.type === "event") {
       await redis.incr(`icemex:event:${today()}:${body.name}`);

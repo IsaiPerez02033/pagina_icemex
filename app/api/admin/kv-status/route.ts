@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
-import { Redis } from "@upstash/redis";
+import { createClient } from "@vercel/kv";
 
 export async function GET() {
   const session = await getServerSession();
@@ -14,10 +14,10 @@ export async function GET() {
   };
 
   try {
-    const client = new Redis({
+    const client = createClient({
       url: process.env.KV_REST_API_URL || "",
       token: process.env.KV_REST_API_TOKEN || "",
-    } as any);
+    });
 
     const testKey = "icemex:diagnostic:test";
     await client.set(testKey, Date.now().toString(), { ex: 60 });

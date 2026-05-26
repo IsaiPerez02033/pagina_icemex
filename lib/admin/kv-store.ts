@@ -1,9 +1,9 @@
 // Vercel KV — almacenamiento serverless para métricas del dashboard.
 // Requiere: Vercel KV activado en el proyecto (Settings → Storage → Connect KV)
 
-import { Redis } from "@upstash/redis";
+import { createClient } from "@vercel/kv";
 
-const redis = new Redis({
+const redis = createClient({
   url: process.env.KV_REST_API_URL || "",
   token: process.env.KV_REST_API_TOKEN || "",
 });
