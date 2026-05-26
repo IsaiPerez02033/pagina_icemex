@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { projects, type Project } from "@/lib/projects";
 import { buildWhatsAppUrlProyectos } from "@/lib/whatsapp";
+import { sendEvent } from "@/lib/events";
 
 // Cada item define posición y tamaño en grid 12 cols × 8 rows = collage asimétrico
 type Layout = {
@@ -251,6 +252,7 @@ export default function ProjectsCollage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-modal-cta interactive"
+                onClick={() => sendEvent("whatsapp_click")}
               >
                 Cotizar proyecto similar →
               </a>

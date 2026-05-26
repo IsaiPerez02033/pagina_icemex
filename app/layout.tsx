@@ -200,7 +200,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Analytics />
         <script
           dangerouslySetInnerHTML={{
-            __html: `fetch("/api/events",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({path:location.pathname})}).catch(()=>{})`,
+            __html: `fetch("/api/events",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({path:location.pathname})}).catch(()=>{});document.addEventListener('click',function(e){var a=e.target.closest('a[href*="wa.me"]');if(a){fetch("/api/events",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({type:"event",name:"whatsapp_click"})}).catch(()=>{})}})`,
           }}
         />
       </body>

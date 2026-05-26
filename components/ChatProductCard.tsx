@@ -1,6 +1,7 @@
 "use client";
 
 import { buildWhatsAppUrlProyectos } from "@/lib/whatsapp";
+import { sendEvent } from "@/lib/events";
 
 type Specs = { label: string; value: string }[];
 
@@ -240,6 +241,7 @@ export default function ProductCard({
           )}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => sendEvent("whatsapp_click")}
           style={{
             display: "inline-flex",
             alignItems: "center",

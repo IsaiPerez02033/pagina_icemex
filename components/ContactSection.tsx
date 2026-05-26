@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { buildWhatsAppUrlProyectos } from "@/lib/whatsapp";
+import { sendEvent } from "@/lib/events";
 
 export default function ContactSection() {
   const ref = useRef<HTMLElement | null>(null);
@@ -120,6 +121,7 @@ export default function ContactSection() {
             target="_blank"
             rel="noopener noreferrer"
             className="interactive"
+            onClick={() => sendEvent("whatsapp_click")}
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -226,6 +228,7 @@ export default function ContactSection() {
         <form
           onSubmit={(e) => {
             e.preventDefault();
+            sendEvent("form_submit");
             const lines = [
               `*Nueva solicitud de cotización ICEMEX*`,
               ``,

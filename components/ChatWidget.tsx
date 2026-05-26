@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useEffect, useState, useCallback } from "react";
+import { sendEvent } from "@/lib/events";
 
 type Role = "user" | "assistant";
 
@@ -94,6 +95,8 @@ export default function ChatWidget() {
 
   const sendMessage = useCallback(async (text: string) => {
     if (!text.trim() || isLoading) return;
+
+    if (!hasInteracted) sendEvent("chatbot_conversation");
 
     const userMsg: Message = {
       id: genId(),
