@@ -3,20 +3,10 @@
 
 import { Redis } from "@upstash/redis";
 
-function parseRedisUrl(raw: string) {
-  // Formato: redis://default:TOKEN@HOST.db.redis.io:PORT
-  try {
-    const u = new URL(raw);
-    const token = u.password || "";
-    const host = u.hostname.replace(".db.redis.io", ".upstash.io");
-    return { url: `https://${host}`, token };
-  } catch {
-    return { url: raw, token: "" };
-  }
-}
-
-const parsed = parseRedisUrl(process.env.REDIS_URL || process.env.KV_URL || "");
-const redis = new Redis(parsed as any);
+const redis = new Redis({
+  url: process.env.KV_REST_API_URL || "",
+  token: process.env.KV_REST_API_TOKEN || "",
+});
 
 const PREFIX = "icemex:";
 const RETENTION_DAYS = 30;

@@ -1,17 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Redis } from "@upstash/redis";
 
-function parseRedisUrl(raw: string) {
-  try {
-    const u = new URL(raw);
-    const token = u.password || "";
-    const host = u.hostname.replace(".db.redis.io", ".upstash.io");
-    return { url: `https://${host}`, token };
-  } catch {
-    return { url: raw, token: "" };
-  }
-}
-
 function cors() {
   return {
     "Access-Control-Allow-Origin": "*",
@@ -28,17 +17,18 @@ export async function POST(req: NextRequest) {
   const body = await req.json().catch(() => ({}));
 
   try {
-    const redisUrl = process.env.REDIS_URL || process.env.KV_URL || "";
-    if (!redisUrl) {
-      return NextResponse.json({ ok: false, error: "REDIS_URL not found in env" }, { headers: cors() });
+    const url = process.env.KV_REST_API_URL || "";
+    const token = process.env.KV_REST_API_TOKEN || "";
+
+    if (!url || !token) {
+      return NextResponse.json({ ok: false, error: "KV_REST_API_URL or KV_REST_API_TOKEN not found" }, { headers: cors() });
     }
 
-    const parsed = parseRedisUrl(redisUrl);
-    const redis = new Redis({ url: parsed.url, token: parsed.token });
+    const redis = new Redis({ url, token });
 
     if (body.type === "event") {
       await redis.incr(`icemex:event:${today()}:${body.name}`);
-      return NextResponse.json({ ok: true, url: parsed.url.substring(0, 30) + "..." }, { headers: cors() });
+      return NextResponse.json({ ok: true }, { headers: cors() });
     }
 
     const ip =

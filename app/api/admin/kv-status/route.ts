@@ -2,17 +2,6 @@ import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
 import { Redis } from "@upstash/redis";
 
-function parseRedisUrl(raw: string) {
-  try {
-    const u = new URL(raw);
-    const token = u.password || "";
-    const host = u.hostname.replace(".db.redis.io", ".upstash.io");
-    return { url: `https://${host}`, token };
-  } catch {
-    return { url: raw, token: "" };
-  }
-}
-
 export async function GET() {
   const session = await getServerSession();
   if (!session) {
@@ -20,14 +9,15 @@ export async function GET() {
   }
 
   const status = {
-    hasRedisUrl: !!process.env.REDIS_URL,
-    hasUrl: !!process.env.KV_URL,
     hasRestUrl: !!process.env.KV_REST_API_URL,
+    hasToken: !!process.env.KV_REST_API_TOKEN,
   };
 
   try {
-    const parsed = parseRedisUrl(process.env.REDIS_URL || process.env.KV_URL || "");
-    const client = new Redis(parsed as any);
+    const client = new Redis({
+      url: process.env.KV_REST_API_URL || "",
+      token: process.env.KV_REST_API_TOKEN || "",
+    } as any);
 
     const testKey = "icemex:diagnostic:test";
     await client.set(testKey, Date.now().toString(), { ex: 60 });
