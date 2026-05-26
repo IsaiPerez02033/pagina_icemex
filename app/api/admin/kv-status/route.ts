@@ -8,15 +8,25 @@ export async function GET() {
     return NextResponse.json({ error: "No autorizado" }, { status: 401 });
   }
 
-  const status = {
-    hasRestUrl: !!process.env.KV_REST_API_URL,
-    hasToken: !!process.env.KV_REST_API_TOKEN,
+  const envVars = {
+    KV_REST_API_URL: process.env.KV_REST_API_URL ? "presente ✅" : "FALTA ❌",
+    KV_REST_API_TOKEN: process.env.KV_REST_API_TOKEN ? "presente ✅" : "FALTA ❌",
+    KV_URL: process.env.KV_URL ? "presente" : "ausente",
+    REDIS_URL: process.env.REDIS_URL ? "presente" : "ausente",
   };
+
+  if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) {
+    return NextResponse.json({
+      connected: false,
+      message: "Variables de entorno KV no configuradas en Vercel. Agrégalas en Settings → Environment Variables.",
+      envVars,
+    });
+  }
 
   try {
     const client = createClient({
-      url: process.env.KV_REST_API_URL || "",
-      token: process.env.KV_REST_API_TOKEN || "",
+      url: process.env.KV_REST_API_URL,
+      token: process.env.KV_REST_API_TOKEN,
     });
 
     const testKey = "icemex:diagnostic:test";
@@ -25,10 +35,23 @@ export async function GET() {
     await client.del(testKey);
 
     if (value) {
-      return NextResponse.json({ ...status, connected: true, message: "KV conectado correctamente" });
+      return NextResponse.json({
+        connected: true,
+        message: "KV conectado y funcionando correctamente",
+        envVars,
+      });
     }
-    return NextResponse.json({ ...status, connected: false, message: "KV escribio pero no leyo" });
+    return NextResponse.json({
+      connected: false,
+      message: "KV escribió pero no leyó el valor de vuelta",
+      envVars,
+    });
   } catch (e: any) {
-    return NextResponse.json({ ...status, connected: false, message: "Error conexion KV", error: String(e?.message || e) });
+    return NextResponse.json({
+      connected: false,
+      message: "Error de conexión con KV",
+      error: String(e?.message || e),
+      envVars,
+    });
   }
 }

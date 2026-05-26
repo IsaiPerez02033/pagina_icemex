@@ -1,15 +1,23 @@
 // Vercel KV — almacenamiento serverless para métricas del dashboard.
-// Requiere: Vercel KV activado en el proyecto (Settings → Storage → Connect KV)
+// Requiere: KV_REST_API_URL y KV_REST_API_TOKEN en Vercel env vars (desde Upstash)
 
 import { createClient } from "@vercel/kv";
 
-const redis = createClient({
-  url: process.env.KV_REST_API_URL || "",
-  token: process.env.KV_REST_API_TOKEN || "",
-});
-
 const PREFIX = "icemex:";
 const RETENTION_DAYS = 30;
+
+let _redis: ReturnType<typeof createClient> | null = null;
+
+function getRedis() {
+  if (_redis) return _redis;
+  const url = process.env.KV_REST_API_URL || "";
+  const token = process.env.KV_REST_API_TOKEN || "";
+  if (!url || !token) {
+    throw new Error("KV_REST_API_URL y KV_REST_API_TOKEN no configurados en Vercel");
+  }
+  _redis = createClient({ url, token });
+  return _redis;
+}
 
 export async function recordPageView(data: {
   path: string;
@@ -18,6 +26,7 @@ export async function recordPageView(data: {
   ip?: string;
   country?: string;
 }) {
+  const redis = getRedis();
   const today = new Date().toISOString().split("T")[0];
   const hour = new Date().getHours();
   const ts = Date.now();
@@ -48,12 +57,14 @@ export async function recordPageView(data: {
 }
 
 export async function recordEvent(name: string) {
+  const redis = getRedis();
   const today = new Date().toISOString().split("T")[0];
   await redis.incr(`${PREFIX}event:${today}:${name}`);
   await redis.expire(`${PREFIX}event:${today}:${name}`, RETENTION_DAYS * 24 * 3600);
 }
 
 export async function getMetrics(days = 30) {
+  const redis = getRedis();
   const dates: string[] = [];
   for (let i = days; i >= 0; i--) {
     const d = new Date();
@@ -119,12 +130,14 @@ export async function getMetrics(days = 30) {
 }
 
 export async function getRealtimeCount() {
+  const redis = getRedis();
   const hour = new Date().getHours();
   const keys = await redis.keys(`${PREFIX}realtime:${hour}:*`);
   return keys.length;
 }
 
 export async function getEventCounts(days = 30) {
+  const redis = getRedis();
   const dates: string[] = [];
   for (let i = days; i >= 0; i--) {
     const d = new Date();
