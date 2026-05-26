@@ -2,11 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
-import GSAPProvider from "@/components/GSAPProvider";
-import LoadingScreen from "@/components/LoadingScreen";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import dynamic from "next/dynamic";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,10 +10,6 @@ const inter = Inter({
   variable: "--font-inter",
   preload: true,
 });
-
-const CustomCursor = dynamic(() => import("@/components/CustomCursor"));
-const WhatsAppButton = dynamic(() => import("@/components/WhatsAppButton"));
-const ChatWidget = dynamic(() => import("@/components/ChatWidget"));
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://icemex.mx"),
@@ -95,8 +86,6 @@ export const viewport: Viewport = {
   themeColor: "#060910",
 };
 
-// Script inline que se ejecuta antes del render para aplicar el tema
-// guardado o el del sistema. Evita el "flash" de modo oscuro->claro al cargar.
 const themeBootstrap = `
 (function() {
   try {
@@ -114,11 +103,7 @@ const themeBootstrap = `
 })();
 `;
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es" suppressHydrationWarning className={inter.variable}>
       <head>
@@ -150,13 +135,7 @@ export default function RootLayout({
               },
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
-                dayOfWeek: [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                ],
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
                 opens: "09:00",
                 closes: "18:00",
               },
@@ -203,10 +182,7 @@ export default function RootLayout({
         )}
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
           <>
-            <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-            />
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
             <script
               dangerouslySetInnerHTML={{
                 __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}',{send_page_view:true});`,
@@ -216,15 +192,7 @@ export default function RootLayout({
         )}
       </head>
       <body>
-        <GSAPProvider>
-          <LoadingScreen />
-          <CustomCursor />
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-          <WhatsAppButton />
-          <ChatWidget />
-        </GSAPProvider>
+        {children}
         <Analytics />
         <script
           dangerouslySetInnerHTML={{
