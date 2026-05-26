@@ -3,11 +3,8 @@
 
 import { Redis } from "@upstash/redis";
 
-const redis = new Redis({
-  url: process.env.REDIS_URL || process.env.KV_URL || "",
-  token: process.env.KV_REST_API_TOKEN || "",
-  enableAutoPipelining: true,
-});
+const redisUrl = process.env.REDIS_URL || process.env.KV_URL || "";
+const redis = new Redis({ url: redisUrl, enableAutoPipelining: true });
 
 const PREFIX = "icemex:";
 const RETENTION_DAYS = 30;

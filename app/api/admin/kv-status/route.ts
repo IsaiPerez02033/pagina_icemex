@@ -16,10 +16,7 @@ export async function GET() {
   };
 
   try {
-    const client = new Redis({
-      url: process.env.REDIS_URL || process.env.KV_URL || "",
-      token: process.env.KV_REST_API_TOKEN || "",
-    });
+    const client = new Redis({ url: process.env.REDIS_URL || process.env.KV_URL || "" });
 
     const testKey = "icemex:diagnostic:test";
     await client.set(testKey, Date.now().toString(), { ex: 60 });
