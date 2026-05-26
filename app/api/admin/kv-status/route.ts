@@ -9,6 +9,7 @@ export async function GET() {
   }
 
   const status = {
+    hasRedisUrl: !!process.env.REDIS_URL,
     hasUrl: !!process.env.KV_URL,
     hasRestUrl: !!process.env.KV_REST_API_URL,
     hasToken: !!process.env.KV_REST_API_TOKEN,
@@ -17,7 +18,7 @@ export async function GET() {
 
   try {
     const client = createClient({
-      url: process.env.KV_REST_API_URL || process.env.KV_URL || "",
+      url: process.env.KV_REST_API_URL || process.env.KV_URL || process.env.REDIS_URL || "",
       token: process.env.KV_REST_API_TOKEN || process.env.KV_REST_API_READ_ONLY_TOKEN || "",
     });
 
