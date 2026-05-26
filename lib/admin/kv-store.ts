@@ -10,10 +10,10 @@ let _redis: ReturnType<typeof createClient> | null = null;
 
 function getRedis() {
   if (_redis) return _redis;
-  const url = process.env.KV_REST_API_URL || "";
-  const token = process.env.KV_REST_API_TOKEN || "";
+  const url = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL || "";
+  const token = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN || "";
   if (!url || !token) {
-    throw new Error("KV_REST_API_URL y KV_REST_API_TOKEN no configurados en Vercel");
+    throw new Error("UPSTASH_REDIS_REST_URL y UPSTASH_REDIS_REST_TOKEN no configurados");
   }
   _redis = createClient({ url, token });
   return _redis;

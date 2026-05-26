@@ -9,24 +9,25 @@ export async function GET() {
   }
 
   const envVars = {
-    KV_REST_API_URL: process.env.KV_REST_API_URL ? "presente ✅" : "FALTA ❌",
-    KV_REST_API_TOKEN: process.env.KV_REST_API_TOKEN ? "presente ✅" : "FALTA ❌",
-    KV_URL: process.env.KV_URL ? "presente" : "ausente",
+    UPSTASH_REDIS_REST_URL: process.env.UPSTASH_REDIS_REST_URL ? "presente ✅" : "FALTA ❌",
+    UPSTASH_REDIS_REST_TOKEN: process.env.UPSTASH_REDIS_REST_TOKEN ? "presente ✅" : "FALTA ❌",
+    KV_REST_API_URL: process.env.KV_REST_API_URL ? "presente" : "FALTA",
+    KV_REST_API_TOKEN: process.env.KV_REST_API_TOKEN ? "presente" : "FALTA",
     REDIS_URL: process.env.REDIS_URL ? "presente" : "ausente",
   };
 
-  if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) {
+  if (!process.env.UPSTASH_REDIS_REST_URL || !process.env.UPSTASH_REDIS_REST_TOKEN) {
     return NextResponse.json({
       connected: false,
-      message: "Variables de entorno KV no configuradas en Vercel. Agrégalas en Settings → Environment Variables.",
+      message: "UPSTASH_REDIS_REST_URL y UPSTASH_REDIS_REST_TOKEN no configuradas en Vercel",
       envVars,
     });
   }
 
   try {
     const client = createClient({
-      url: process.env.KV_REST_API_URL,
-      token: process.env.KV_REST_API_TOKEN,
+      url: process.env.UPSTASH_REDIS_REST_URL,
+      token: process.env.UPSTASH_REDIS_REST_TOKEN,
     });
 
     const testKey = "icemex:diagnostic:test";

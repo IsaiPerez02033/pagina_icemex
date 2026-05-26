@@ -17,11 +17,11 @@ export async function POST(req: NextRequest) {
   const body = await req.json().catch(() => ({}));
 
   try {
-    const url = process.env.KV_REST_API_URL || "";
-    const token = process.env.KV_REST_API_TOKEN || "";
+    const url = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL || "";
+    const token = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN || "";
 
     if (!url || !token) {
-      return NextResponse.json({ ok: false, error: "Missing KV_REST_API_URL or KV_REST_API_TOKEN" }, { headers: cors() });
+      return NextResponse.json({ ok: false, error: "UPSTASH_REDIS_REST_URL or UPSTASH_REDIS_REST_TOKEN not found" }, { headers: cors() });
     }
 
     const redis = createClient({ url, token });
