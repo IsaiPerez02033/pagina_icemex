@@ -38,8 +38,8 @@ export async function POST(req: NextRequest) {
     });
 
     return NextResponse.json({ ok: true }, { headers: cors() });
-  } catch (e) {
+  } catch (e: any) {
     console.error("[events] Error recording:", e);
-    return NextResponse.json({ ok: false }, { status: 500, headers: cors() });
+    return NextResponse.json({ ok: false, error: String(e?.message || e) }, { status: 500, headers: cors() });
   }
 }

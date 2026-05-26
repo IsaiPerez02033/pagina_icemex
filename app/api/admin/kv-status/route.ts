@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
-import { kv } from "@vercel/kv";
+import { createClient } from "@vercel/kv";
 
 export async function GET() {
   const session = await getServerSession();
@@ -16,10 +16,15 @@ export async function GET() {
   };
 
   try {
+    const client = createClient({
+      url: process.env.KV_REST_API_URL || process.env.KV_URL || "",
+      token: process.env.KV_REST_API_TOKEN || process.env.KV_REST_API_READ_ONLY_TOKEN || "",
+    });
+
     const testKey = "icemex:diagnostic:test";
-    await kv.set(testKey, Date.now().toString(), { ex: 60 });
-    const value = await kv.get(testKey);
-    await kv.del(testKey);
+    await client.set(testKey, Date.now().toString(), { ex: 60 });
+    const value = await client.get(testKey);
+    await client.del(testKey);
 
     if (value) {
       return NextResponse.json({
@@ -33,12 +38,12 @@ export async function GET() {
       connected: false,
       message: "KV escribio pero no leyo",
     });
-  } catch (e) {
+  } catch (e: any) {
     return NextResponse.json({
       ...status,
       connected: false,
       message: "Error al conectar con KV",
-      error: String(e),
+      error: String(e?.message || e),
     });
   }
 }

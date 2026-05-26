@@ -1,7 +1,12 @@
 // Vercel KV — almacenamiento serverless para métricas del dashboard.
-// Requiere: Vercel KV activado en el proyecto (Settings → Integrations → KV)
+// Requiere: Vercel KV activado en el proyecto (Settings → Storage → Connect KV)
 
-import { kv } from "@vercel/kv";
+import { createClient } from "@vercel/kv";
+
+const kvClient = createClient({
+  url: process.env.KV_REST_API_URL || process.env.KV_URL || "",
+  token: process.env.KV_REST_API_TOKEN || process.env.KV_REST_API_READ_ONLY_TOKEN || "",
+});
 
 const PREFIX = "icemex:";
 const RETENTION_DAYS = 30;
@@ -19,39 +24,33 @@ export async function recordPageView(data: {
 
   const p = data.path === "/" ? "/" : data.path;
 
-  // Page view counter per day per path
-  await kv.incr(`${PREFIX}pv:${today}:${p}`);
-  // Set TTL (auto-expire after retention period)
-  await kv.expire(`${PREFIX}pv:${today}:${p}`, RETENTION_DAYS * 24 * 3600);
+  await kvClient.incr(`${PREFIX}pv:${today}:${p}`);
+  await kvClient.expire(`${PREFIX}pv:${today}:${p}`, RETENTION_DAYS * 24 * 3600);
 
-  // Unique visitors per day (use truncated IP hash for privacy)
   if (data.ip) {
     const visitorKey = `${PREFIX}visitor:${today}:${hashIP(data.ip)}`;
-    await kv.set(visitorKey, ts, { ex: RETENTION_DAYS * 24 * 3600 });
+    await kvClient.set(visitorKey, ts, { ex: RETENTION_DAYS * 24 * 3600 });
   }
 
-  // Country counter
   if (data.country) {
-    await kv.incr(`${PREFIX}country:${today}:${data.country}`);
-    await kv.expire(`${PREFIX}country:${today}:${data.country}`, RETENTION_DAYS * 24 * 3600);
+    await kvClient.incr(`${PREFIX}country:${today}:${data.country}`);
+    await kvClient.expire(`${PREFIX}country:${today}:${data.country}`, RETENTION_DAYS * 24 * 3600);
   }
 
-  // Device type from user agent
   if (data.userAgent) {
     const device = detectDevice(data.userAgent);
-    await kv.incr(`${PREFIX}device:${today}:${device}`);
-    await kv.expire(`${PREFIX}device:${today}:${device}`, RETENTION_DAYS * 24 * 3600);
+    await kvClient.incr(`${PREFIX}device:${today}:${device}`);
+    await kvClient.expire(`${PREFIX}device:${today}:${device}`, RETENTION_DAYS * 24 * 3600);
   }
 
-  // Realtime counter (expires in 5 min)
   const realtimeKey = `${PREFIX}realtime:${hour}:${hashIP(data.ip || "unknown")}`;
-  await kv.set(realtimeKey, ts, { ex: 300 });
+  await kvClient.set(realtimeKey, ts, { ex: 300 });
 }
 
 export async function recordEvent(name: string) {
   const today = new Date().toISOString().split("T")[0];
-  await kv.incr(`${PREFIX}event:${today}:${name}`);
-  await kv.expire(`${PREFIX}event:${today}:${name}`, RETENTION_DAYS * 24 * 3600);
+  await kvClient.incr(`${PREFIX}event:${today}:${name}`);
+  await kvClient.expire(`${PREFIX}event:${today}:${name}`, RETENTION_DAYS * 24 * 3600);
 }
 
 export async function getMetrics(days = 30) {
@@ -62,7 +61,6 @@ export async function getMetrics(days = 30) {
     dates.push(d.toISOString().split("T")[0]);
   }
 
-  // Aggregate page views
   let totalPageViews = 0;
   const topPages: Record<string, number> = {};
   let uniqueVisitors = 0;
@@ -70,9 +68,9 @@ export async function getMetrics(days = 30) {
   const devices: Record<string, number> = {};
 
   for (const date of dates) {
-    const pvKeys = await kv.keys(`${PREFIX}pv:${date}:*`);
+    const pvKeys = await kvClient.keys(`${PREFIX}pv:${date}:*`);
     for (const key of pvKeys) {
-      const count = await kv.get<number>(key);
+      const count = await kvClient.get<number>(key);
       if (count) {
         totalPageViews += count;
         const path = key.replace(`${PREFIX}pv:${date}:`, "");
@@ -80,21 +78,21 @@ export async function getMetrics(days = 30) {
       }
     }
 
-    const visitorKeys = await kv.keys(`${PREFIX}visitor:${date}:*`);
+    const visitorKeys = await kvClient.keys(`${PREFIX}visitor:${date}:*`);
     uniqueVisitors += visitorKeys.length;
 
-    const countryKeys = await kv.keys(`${PREFIX}country:${date}:*`);
+    const countryKeys = await kvClient.keys(`${PREFIX}country:${date}:*`);
     for (const key of countryKeys) {
-      const count = await kv.get<number>(key);
+      const count = await kvClient.get<number>(key);
       if (count) {
         const country = key.replace(`${PREFIX}country:${date}:`, "");
         countries[country] = (countries[country] || 0) + count;
       }
     }
 
-    const deviceKeys = await kv.keys(`${PREFIX}device:${date}:*`);
+    const deviceKeys = await kvClient.keys(`${PREFIX}device:${date}:*`);
     for (const key of deviceKeys) {
-      const count = await kv.get<number>(key);
+      const count = await kvClient.get<number>(key);
       if (count) {
         const device = key.replace(`${PREFIX}device:${date}:`, "");
         devices[device] = (devices[device] || 0) + count;
@@ -122,7 +120,7 @@ export async function getMetrics(days = 30) {
 
 export async function getRealtimeCount() {
   const hour = new Date().getHours();
-  const keys = await kv.keys(`${PREFIX}realtime:${hour}:*`);
+  const keys = await kvClient.keys(`${PREFIX}realtime:${hour}:*`);
   return keys.length;
 }
 
@@ -136,9 +134,9 @@ export async function getEventCounts(days = 30) {
 
   const events: Record<string, number> = {};
   for (const date of dates) {
-    const keys = await kv.keys(`${PREFIX}event:${date}:*`);
+    const keys = await kvClient.keys(`${PREFIX}event:${date}:*`);
     for (const key of keys) {
-      const count = await kv.get<number>(key);
+      const count = await kvClient.get<number>(key);
       if (count) {
         const name = key.replace(`${PREFIX}event:${date}:`, "");
         events[name] = (events[name] || 0) + count;
