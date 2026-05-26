@@ -30,7 +30,8 @@ const eventIcons: Record<string, React.ComponentType<{ size?: number }>> = {
 export default function DashboardPage() {
   const [range, setRange] = useState<DateRange>("30d");
   const [loading, setLoading] = useState(true);
-  const [dataSource, setDataSource] = useState<"mock" | "kv" | "kv_error" | "kv_missing">("mock");
+  const [dataSource, setDataSource] = useState<"mock" | "live">("mock");
+  const [ga4Id, setGa4Id] = useState<string | null>(null);
 
   const [metrics, setMetrics] = useState<MetricCardData[]>(getDashboardMetrics());
   const [traffic, setTraffic] = useState<TrafficPoint[]>(getTrafficData(30));
@@ -39,23 +40,28 @@ export default function DashboardPage() {
   const [events, setEvents] = useState(getEvents());
   const [realtime, setRealtime] = useState(getRealtimeUsers());
 
+  // Client-side page view counter (localStorage)
+  const [localViews, setLocalViews] = useState(0);
+
   useEffect(() => {
+    // Contador local de visitas al dashboard
+    const key = "icemex_admin_visits";
+    const current = parseInt(localStorage.getItem(key) || "0") + 1;
+    localStorage.setItem(key, current.toString());
+    setLocalViews(current);
+
+    // Fetch del API
     fetch("/api/admin/analytics")
       .then((res) => res.json())
       .then((data) => {
-        if (data?.source === "kv") {
-          setDataSource("kv");
-          if (data.metrics) setMetrics(data.metrics);
-          if (data.topPages) setPages(data.topPages);
-          if (data.devices) setDevices(data.devices);
-          if (data.traffic) setTraffic(data.traffic);
-          if (data.events) setEvents(data.events);
-          if (data.realtime) setRealtime(data.realtime);
-        } else if (data?.source === "kv_error") {
-          setDataSource("kv_error");
-        } else if (data?.source === "kv_missing_env") {
-          setDataSource("kv_missing");
-        }
+        setDataSource(data?.source === "live" ? "live" : "mock");
+        setGa4Id(data?.ga4Id || null);
+        if (data.metrics) setMetrics(data.metrics);
+        if (data.topPages) setPages(data.topPages);
+        if (data.devices) setDevices(data.devices);
+        if (data.traffic) setTraffic(data.traffic);
+        if (data.events) setEvents(data.events);
+        if (data.realtime) setRealtime(data.realtime);
       })
       .catch(() => {})
       .finally(() => setLoading(false));
@@ -82,14 +88,20 @@ export default function DashboardPage() {
             )}
           </h2>
           <p style={{ color: "var(--text-muted)", fontSize: 13, letterSpacing: "0.04em" }}>
-            {dataSource === "kv"
-              ? "Datos reales"
-              : dataSource === "kv_error"
-              ? "KV error — verificar conexión Redis"
-              : dataSource === "kv_missing"
-              ? "KV pendiente — agregar KV_REST_API_URL en Vercel"
-              : "Datos simulados"}{" "}
-            · {range === "today" ? "hoy" : `últimos ${range === "7d" ? "7" : range === "30d" ? "30" : "90"} días`}
+            Datos simulados · {range === "today" ? "hoy" : `últimos ${range === "7d" ? "7" : range === "30d" ? "30" : "90"} días`}
+            {ga4Id && (
+              <>
+                {" · "}
+                <a
+                  href={`https://analytics.google.com/analytics/web/#/p${ga4Id.replace("G-", "")}/reports/reportinghub`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "var(--accent-cyan)", textDecoration: "none" }}
+                >
+                  Ver GA4 →
+                </a>
+              </>
+            )}
           </p>
         </div>
         <DateRangePicker value={range} onChange={setRange} />
