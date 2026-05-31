@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
-import { getMetrics, getRealtimeCount, getEventCounts } from "@/lib/admin/kv-store";
+import { getMetrics, getRealtimeCount, getEventCounts, getDailyTraffic } from "@/lib/admin/kv-store";
 import {
   getDashboardMetrics,
   getTrafficData,
@@ -37,6 +37,7 @@ export async function GET() {
     const kvMetrics = await getMetrics(30);
     const realtime = await getRealtimeCount();
     const eventCounts = await getEventCounts(30);
+    const kvTraffic = await getDailyTraffic(30);
 
     return NextResponse.json({
       metrics: [
@@ -45,7 +46,7 @@ export async function GET() {
         { label: "Tasa de rebote", value: "—", change: 0, icon: "trending-down" },
         { label: "Tpo. promedio", value: "—", change: 0, icon: "check-circle" },
       ],
-      traffic: getTrafficData(30),
+      traffic: kvTraffic.length > 0 ? kvTraffic : getTrafficData(30),
       devices: kvMetrics.devices.length > 0
         ? kvMetrics.devices.map((d) => ({ name: d.device, value: d.percentage }))
         : getDeviceData(),

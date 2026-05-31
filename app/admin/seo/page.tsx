@@ -3,6 +3,7 @@
 import MetricCard from "@/components/dashboard/MetricCard";
 import { getKeywords } from "@/lib/admin/mock-data";
 import type { KeywordData } from "@/lib/admin/types";
+import { AlertCircle } from "lucide-react";
 
 export default function SeoPage() {
   const keywords = getKeywords();
@@ -16,6 +17,26 @@ export default function SeoPage() {
       <div style={{ marginBottom: 32 }}>
         <h2 style={{ color: "var(--text-primary)", fontSize: 24, fontWeight: 400, letterSpacing: "0.02em", marginBottom: 4 }}>SEO</h2>
         <p style={{ color: "var(--text-muted)", fontSize: 13 }}>Google Search Console · keywords, impresiones y posición</p>
+      </div>
+
+      <div
+        style={{
+          padding: "14px 18px",
+          marginBottom: 24,
+          background: "rgba(var(--cyan-rgb), 0.06)",
+          border: "1px solid rgba(var(--cyan-rgb), 0.15)",
+          borderRadius: 12,
+          display: "flex",
+          alignItems: "center",
+          gap: 10,
+          fontSize: 12,
+          color: "var(--text-muted)",
+        }}
+      >
+        <AlertCircle size={16} style={{ color: "var(--accent-cyan)", flexShrink: 0 }} />
+        <span>
+          Datos simulados. Para métricas SEO reales, conecta la API de Google Search Console. La Service Account (<code>icemex-ga4@adept-primacy-453922-u6.iam.gserviceaccount.com</code>) ya está creada — solo falta agregarla como usuario en Search Console. Ve a las propiedades verificadas y agrega el email del Service Account.
+        </span>
       </div>
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16, marginBottom: 32 }}>

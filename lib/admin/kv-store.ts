@@ -171,6 +171,30 @@ export async function getEventCounts(days = 30) {
   return Object.entries(events).map(([name, count]) => ({ name, count }));
 }
 
+export async function getDailyTraffic(days = 30) {
+  const redis = getRedis();
+  const dates: string[] = [];
+  for (let i = days; i >= 0; i--) {
+    const d = new Date();
+    d.setDate(d.getDate() - i);
+    dates.push(d.toISOString().split("T")[0]);
+  }
+
+  const traffic: { date: string; visitors: number; pageViews: number }[] = [];
+  for (const date of dates) {
+    const dayName = new Date(date).toLocaleDateString("es-MX", { weekday: "short", day: "numeric" });
+    const pvKeys = await scanKeys(redis, `${PREFIX}pv:${date}:*`);
+    let pageViews = 0;
+    for (const key of pvKeys) {
+      const count = await redis.get<number>(key);
+      if (count) pageViews += count;
+    }
+    const visitorKeys = await scanKeys(redis, `${PREFIX}visitor:${date}:*`);
+    traffic.push({ date: dayName, visitors: visitorKeys.length, pageViews });
+  }
+  return traffic;
+}
+
 function hashIP(ip: string) {
   let hash = 0;
   for (let i = 0; i < ip.length; i++) {
