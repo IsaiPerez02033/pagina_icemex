@@ -13,11 +13,12 @@ export async function GET() {
     VERCEL_API_TOKEN: mask(process.env.VERCEL_API_TOKEN),
     VERCEL_PROJECT_ID: process.env.VERCEL_PROJECT_ID || "FALTA",
     VERCEL_TEAM_ID: process.env.VERCEL_TEAM_ID || "FALTA",
-    KV_REST_API_URL: process.env.KV_REST_API_URL
-      ? process.env.KV_REST_API_URL.substring(0, 35) + "..."
+    UPSTASH_REDIS_REST_URL: process.env.UPSTASH_REDIS_REST_URL
+      ? process.env.UPSTASH_REDIS_REST_URL.substring(0, 35) + "..."
       : "FALTA",
-    KV_REST_API_TOKEN: mask(process.env.KV_REST_API_TOKEN),
-    REDIS_URL: process.env.REDIS_URL ? "presente ✅" : "ausente",
+    UPSTASH_REDIS_REST_TOKEN: mask(process.env.UPSTASH_REDIS_REST_TOKEN),
+    KV_REST_API_URL: process.env.KV_REST_API_URL ? "presente" : "FALTA",
+    KV_REST_API_TOKEN: process.env.KV_REST_API_TOKEN ? "presente" : "FALTA",
     NEXT_PUBLIC_GA_MEASUREMENT_ID: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "FALTA",
     NEXTAUTH_URL: process.env.NEXTAUTH_URL || "FALTA",
     GROQ_API_KEY: mask(process.env.GROQ_API_KEY),
@@ -47,10 +48,12 @@ export async function GET() {
   }
 
   // Test 2: Upstash KV REST API
-  if (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) {
+  const upstashUrl = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL;
+  const upstashToken = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
+  if (upstashUrl && upstashToken) {
     try {
-      const res = await fetch(`${process.env.KV_REST_API_URL}/ping`, {
-        headers: { Authorization: `Bearer ${process.env.KV_REST_API_TOKEN}` },
+      const res = await fetch(`${upstashUrl}/ping`, {
+        headers: { Authorization: `Bearer ${upstashToken}` },
       });
       if (res.ok) {
         const data = await res.json();
