@@ -56,7 +56,7 @@ export default function BehaviorPage() {
         </p>
 
         <a
-          href={`https://clarity.microsoft.com/projects/view/${clarityProjectId}/`}
+          href={`https://clarity.microsoft.com/projects/view/${clarityProjectId}/dashboard`}
           target="_blank"
           rel="noopener noreferrer"
           style={{
