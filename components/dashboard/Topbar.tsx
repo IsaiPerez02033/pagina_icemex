@@ -113,7 +113,7 @@ export default function Topbar({ onMenuClick }: Props) {
           {showDropdown && (
             <div
               style={{
-                position: "absolute", top: 44, right: 0, width: 320,
+                position: "absolute", top: 44, right: 0,                 width: "clamp(260px, 90vw, 320px)",
                 background: "var(--bg-secondary)", border: "1px solid rgba(var(--cyan-rgb), 0.15)",
                 borderRadius: 14, boxShadow: "0 16px 48px rgba(0,0,0,0.4)",
                 zIndex: 9200, overflow: "hidden",
