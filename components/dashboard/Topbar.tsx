@@ -1,9 +1,10 @@
 "use client";
 
 import { useSession } from "next-auth/react";
-import { Bell, Zap } from "lucide-react";
+import { Bell } from "lucide-react";
 import { format } from "date-fns";
 import { es } from "date-fns/locale";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Topbar() {
   const { data: session } = useSession();
@@ -63,6 +64,7 @@ export default function Topbar() {
         >
           <Bell size={16} />
         </button>
+        <ThemeToggle />
 
         <div
           style={{
