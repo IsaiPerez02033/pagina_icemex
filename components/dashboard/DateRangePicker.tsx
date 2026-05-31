@@ -17,7 +17,7 @@ export default function DateRangePicker({
   onChange: (r: DateRange) => void;
 }) {
   return (
-    <div style={{ display: "flex", gap: 4, background: "rgba(var(--card-rgb), 0.6)", borderRadius: 10, padding: 3, border: "1px solid rgba(var(--cyan-rgb), 0.08)" }}>
+    <div style={{ display: "flex", gap: 4, background: "rgba(var(--card-rgb), 0.6)", borderRadius: 10, padding: 3, border: "1px solid rgba(var(--cyan-rgb), 0.08)", overflowX: "auto" }}>
       {options.map((o) => (
         <button
           key={o.value}

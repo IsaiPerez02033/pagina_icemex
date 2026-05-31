@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   LayoutDashboard,
   BarChart3,
@@ -12,6 +12,8 @@ import {
   ChevronRight,
   LogOut,
   Activity,
+  X,
+  Menu,
 } from "lucide-react";
 import { signOut } from "next-auth/react";
 
@@ -23,21 +25,44 @@ const links = [
   { href: "/admin/diagnostics", label: "Diagnóstico", icon: Activity },
 ];
 
-export default function Sidebar() {
+interface Props {
+  mobileOpen: boolean;
+  onClose: () => void;
+}
+
+export default function Sidebar({ mobileOpen, onClose }: Props) {
   const [collapsed, setCollapsed] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const pathname = usePathname();
 
-  return (
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  useEffect(() => {
+    if (!isMobile) onClose();
+  }, [isMobile, onClose]);
+
+  const shared = (
     <aside
       style={{
-        width: collapsed ? 64 : 240,
+        width: isMobile ? 260 : collapsed ? 64 : 240,
         minHeight: "100dvh",
         background: "var(--bg-secondary)",
         borderRight: "1px solid rgba(var(--cyan-rgb), 0.08)",
         display: "flex",
         flexDirection: "column",
-        transition: "width 0.25s ease",
+        transition: "width 0.25s ease, transform 0.3s ease",
         flexShrink: 0,
+        position: isMobile ? "fixed" : "relative",
+        top: 0,
+        left: 0,
+        bottom: 0,
+        zIndex: isMobile ? 9100 : "auto",
+        boxShadow: isMobile ? "10px 0 40px rgba(0,0,0,0.4)" : "none",
       }}
     >
       {/* Logo */}
@@ -68,7 +93,7 @@ export default function Sidebar() {
         >
           I
         </div>
-        {!collapsed && (
+        {(isMobile || !collapsed) && (
           <span
             style={{
               color: "var(--text-primary)",
@@ -79,10 +104,39 @@ export default function Sidebar() {
             }}
           >
             ICEMEX
-            <span style={{ color: "var(--text-muted)", fontWeight: 400, fontSize: 10, display: "block", letterSpacing: "0.12em" }}>
+            <span
+              style={{
+                color: "var(--text-muted)",
+                fontWeight: 400,
+                fontSize: 10,
+                display: "block",
+                letterSpacing: "0.12em",
+              }}
+            >
               Admin
             </span>
           </span>
+        )}
+        {isMobile && (
+          <button
+            onClick={onClose}
+            style={{
+              marginLeft: "auto",
+              background: "transparent",
+              border: "1px solid rgba(var(--cyan-rgb), 0.2)",
+              borderRadius: "50%",
+              width: 32,
+              height: 32,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "var(--text-muted)",
+              cursor: "pointer",
+              flexShrink: 0,
+            }}
+          >
+            <X size={16} />
+          </button>
         )}
       </div>
 
@@ -94,6 +148,7 @@ export default function Sidebar() {
             <Link
               key={l.href}
               href={l.href}
+              onClick={isMobile ? onClose : undefined}
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -111,7 +166,7 @@ export default function Sidebar() {
               }}
             >
               <l.icon size={18} />
-              {!collapsed && l.label}
+              {(isMobile || !collapsed) && l.label}
             </Link>
           );
         })}
@@ -127,27 +182,29 @@ export default function Sidebar() {
           gap: 2,
         }}
       >
-        <button
-          onClick={() => setCollapsed((c) => !c)}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 10,
-            padding: "10px 12px",
-            borderRadius: 10,
-            background: "transparent",
-            border: "none",
-            color: "var(--text-muted)",
-            cursor: "pointer",
-            fontSize: 13,
-            transition: "color 0.2s ease",
-            overflow: "hidden",
-            whiteSpace: "nowrap",
-          }}
-        >
-          {collapsed ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
-          {!collapsed && "Colapsar"}
-        </button>
+        {!isMobile && (
+          <button
+            onClick={() => setCollapsed((c) => !c)}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 10,
+              padding: "10px 12px",
+              borderRadius: 10,
+              background: "transparent",
+              border: "none",
+              color: "var(--text-muted)",
+              cursor: "pointer",
+              fontSize: 13,
+              transition: "color 0.2s ease",
+              overflow: "hidden",
+              whiteSpace: "nowrap",
+            }}
+          >
+            {collapsed ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
+            {!collapsed && "Colapsar"}
+          </button>
+        )}
 
         <button
           onClick={() => signOut({ callbackUrl: "/" })}
@@ -168,9 +225,31 @@ export default function Sidebar() {
           }}
         >
           <LogOut size={18} />
-          {!collapsed && "Cerrar sesión"}
+          {(isMobile || !collapsed) && "Cerrar sesión"}
         </button>
       </div>
     </aside>
   );
+
+  if (isMobile) {
+    return (
+      <>
+        {mobileOpen && (
+          <div
+            onClick={onClose}
+            style={{
+              position: "fixed",
+              inset: 0,
+              background: "rgba(0,0,0,0.5)",
+              zIndex: 9099,
+              backdropFilter: "blur(2px)",
+            }}
+          />
+        )}
+        {mobileOpen && shared}
+      </>
+    );
+  }
+
+  return shared;
 }
