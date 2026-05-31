@@ -27,7 +27,12 @@ export async function POST(req: NextRequest) {
     const redis = createClient({ url, token });
 
     if (body.type === "event") {
-      await redis.incr(`icemex:event:${today()}:${body.name}`);
+      const name = body.name;
+      await redis.incr(`icemex:event:${today()}:${name}`);
+      // Timeline para notificaciones (últimos 20 eventos)
+      await redis.lpush(`icemex:timeline`, JSON.stringify({ name, ts: Date.now() }));
+      await redis.ltrim(`icemex:timeline`, 0, 19);
+      await redis.expire(`icemex:timeline`, 30 * 24 * 3600);
       return NextResponse.json({ ok: true }, { headers: cors() });
     }
 
