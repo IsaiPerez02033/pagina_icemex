@@ -16,13 +16,15 @@ export async function GET() {
   if (!process.env.GOOGLE_REFRESH_TOKEN) missing.push("GOOGLE_REFRESH_TOKEN");
 
   // Intentar datos reales de Google Search Console
-  const realData = await getSearchConsoleData();
-
-  if (realData) {
-    return NextResponse.json({
-      ...realData,
-      source: "search_console",
-    });
+  let realError: string | null = null;
+  try {
+    const realData = await getSearchConsoleData();
+    if (realData) {
+      return NextResponse.json({ ...realData, source: "search_console" });
+    }
+  } catch (e: any) {
+    realError = String(e?.message || e);
+    console.error("[SearchConsole Route]", realError);
   }
 
   // Fallback a mock data con diagnóstico
@@ -36,9 +38,10 @@ export async function GET() {
     source: "mock",
     diagnostics: {
       missingEnvVars: missing,
-      hint: missing.length > 0
-        ? `Faltan variables en Vercel: ${missing.join(", ")}. Agrégalas en Settings → Environment Variables y haz redeploy.`
-        : "Variables OK pero la API de Search Console no respondió. Verifica que el refresh token sea válido y que tengas acceso a la propiedad icemex.mx.",
+      scError: realError,
+      hint: realError || (missing.length > 0
+        ? `Faltan variables en Vercel: ${missing.join(", ")}.`
+        : "Variables OK pero la API de Search Console no respondió."),
     },
   });
 }

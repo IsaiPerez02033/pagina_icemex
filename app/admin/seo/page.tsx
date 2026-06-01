@@ -29,7 +29,7 @@ export default function SeoPage() {
           setKeywords(data.keywords || []);
         } else {
           setIsRealData(false);
-          setErrorMsg(data?.diagnostics?.hint || null);
+          setErrorMsg(data?.diagnostics?.scError || data?.diagnostics?.hint || null);
           const mock = getKeywords();
           setKeywords(mock);
           setTotalImpressions(mock.reduce((s, k) => s + k.impressions, 0));

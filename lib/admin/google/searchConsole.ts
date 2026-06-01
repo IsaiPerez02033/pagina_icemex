@@ -65,7 +65,8 @@ export async function getSearchConsoleData(): Promise<{
 
     return { keywords, totalImpressions, totalClicks, avgCtr, avgPosition };
   } catch (e: any) {
-    console.error("[SearchConsole] API error:", e?.message || e);
-    return null;
+    const msg = e?.errors?.[0]?.message || e?.message || String(e);
+    console.error("[SearchConsole] API error:", msg);
+    throw new Error(`Google Search Console: ${msg}`);
   }
 }
