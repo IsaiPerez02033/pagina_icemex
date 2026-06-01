@@ -93,30 +93,40 @@ export default function SeoPage() {
 
       <div style={{ padding: "20px", background: "rgba(var(--card-rgb), 0.6)", border: "1px solid rgba(var(--cyan-rgb), 0.1)", borderRadius: 16 }}>
         <h3 style={{ color: "var(--text-primary)", fontSize: 14, fontWeight: 500, letterSpacing: "0.04em", marginBottom: 16 }}>Top Keywords</h3>
-        <div style={{ overflowX: "auto" }}>
-          <table style={{ width: "100%", borderCollapse: "collapse" }}>
-            <thead>
-              <tr>
-                {["Keyword", "Impresiones", "Clics", "CTR", "Posición"].map((h) => (
-                  <th key={h} style={{ textAlign: "left", padding: "10px 12px", fontSize: 10, color: "var(--text-muted)", letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 500, borderBottom: "1px solid rgba(var(--cyan-rgb), 0.08)" }}>{h}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {keywords.map((k: KeywordData) => (
-                <tr key={k.query} style={{ borderBottom: "1px solid rgba(var(--cyan-rgb), 0.04)" }}>
-                  <td style={{ padding: "10px 12px", color: "var(--text-primary)", fontSize: 13, maxWidth: 220, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{k.query}</td>
-                  <td style={{ padding: "10px 12px", color: "var(--text-muted)", fontSize: 13, fontVariantNumeric: "tabular-nums" }}>{k.impressions.toLocaleString()}</td>
-                  <td style={{ padding: "10px 12px", color: "var(--accent-cyan)", fontSize: 13, fontWeight: 500, fontVariantNumeric: "tabular-nums" }}>{k.clicks.toLocaleString()}</td>
-                  <td style={{ padding: "10px 12px", color: "var(--text-muted)", fontSize: 13 }}>{k.ctr}%</td>
-                  <td style={{ padding: "10px 12px", color: k.position < 10 ? "#22c55e" : "var(--text-muted)", fontSize: 13, fontWeight: k.position < 10 ? 500 : 400 }}>
-                    {k.position.toFixed(1)}
-                  </td>
+        {isRealData && keywords.length === 0 ? (
+          <div style={{ textAlign: "center", padding: "32px 16px" }}>
+            <p style={{ color: "var(--text-muted)", fontSize: 13, lineHeight: 1.7, maxWidth: 440, margin: "0 auto" }}>
+              Aún no hay keywords registradas para <code style={{ color: "var(--accent-cyan)" }}>icemex.mx</code>.
+              Google Search Console puede tardar de 2 a 4 semanas en mostrar datos de búsqueda después de la indexación inicial.
+              Vuelve a consultar esta sección más adelante.
+            </p>
+          </div>
+        ) : (
+          <div style={{ overflowX: "auto" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse" }}>
+              <thead>
+                <tr>
+                  {["Keyword", "Impresiones", "Clics", "CTR", "Posición"].map((h) => (
+                    <th key={h} style={{ textAlign: "left", padding: "10px 12px", fontSize: 10, color: "var(--text-muted)", letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 500, borderBottom: "1px solid rgba(var(--cyan-rgb), 0.08)" }}>{h}</th>
+                  ))}
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {keywords.map((k: KeywordData) => (
+                  <tr key={k.query} style={{ borderBottom: "1px solid rgba(var(--cyan-rgb), 0.04)" }}>
+                    <td style={{ padding: "10px 12px", color: "var(--text-primary)", fontSize: 13, maxWidth: 220, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{k.query}</td>
+                    <td style={{ padding: "10px 12px", color: "var(--text-muted)", fontSize: 13, fontVariantNumeric: "tabular-nums" }}>{k.impressions.toLocaleString()}</td>
+                    <td style={{ padding: "10px 12px", color: "var(--accent-cyan)", fontSize: 13, fontWeight: 500, fontVariantNumeric: "tabular-nums" }}>{k.clicks.toLocaleString()}</td>
+                    <td style={{ padding: "10px 12px", color: "var(--text-muted)", fontSize: 13 }}>{k.ctr}%</td>
+                    <td style={{ padding: "10px 12px", color: k.position < 10 ? "#22c55e" : "var(--text-muted)", fontSize: 13, fontWeight: k.position < 10 ? 500 : 400 }}>
+                      {k.position.toFixed(1)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
 
       <style dangerouslySetInnerHTML={{ __html: "@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}" }} />
