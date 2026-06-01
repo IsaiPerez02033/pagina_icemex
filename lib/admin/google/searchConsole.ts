@@ -1,10 +1,10 @@
-// Google Search Console API — Service account integration
-// Requiere: GOOGLE_CLIENT_EMAIL, GOOGLE_PRIVATE_KEY, SEARCH_CONSOLE_SITE_URL
+// Google Search Console API — OAuth 2.0 con cuenta Gmail
+// Requiere: GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REFRESH_TOKEN, SEARCH_CONSOLE_SITE_URL
 //
-// Pasos:
-// 1. Agrega icemex-ga4@adept-primacy-453922-u6.iam.gserviceaccount.com como usuario en Search Console
-// 2. Ve a https://search.google.com/search-console → Settings → Users and permissions → Add user
-// 3. Pega el email del Service Account y asigna rol "Full" o "Restricted"
+// Setup:
+// 1. Crear OAuth Client ID tipo Desktop en Google Cloud Console
+// 2. Generar refresh token con el script scripts/oauth-token.js
+// 3. Agregar las 3 vars en Vercel
 
 import { google } from "googleapis";
 
@@ -23,23 +23,19 @@ export async function getSearchConsoleData(): Promise<{
   avgCtr: number;
   avgPosition: number;
 } | null> {
-  const clientEmail = process.env.GOOGLE_CLIENT_EMAIL;
-  const privateKey = process.env.GOOGLE_PRIVATE_KEY;
+  const clientId = process.env.GOOGLE_CLIENT_ID;
+  const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
+  const refreshToken = process.env.GOOGLE_REFRESH_TOKEN;
   const siteUrl = process.env.SEARCH_CONSOLE_SITE_URL || "https://icemex.mx";
 
-  if (!clientEmail || !privateKey) {
-    console.warn("[SearchConsole] GOOGLE_CLIENT_EMAIL o GOOGLE_PRIVATE_KEY no configurados");
+  if (!clientId || !clientSecret || !refreshToken) {
+    console.warn("[SearchConsole] Falta GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET o GOOGLE_REFRESH_TOKEN");
     return null;
   }
 
   try {
-    const auth = new google.auth.GoogleAuth({
-      credentials: {
-        client_email: clientEmail,
-        private_key: privateKey.replace(/\\n/g, "\n"),
-      },
-      scopes: ["https://www.googleapis.com/auth/webmasters.readonly"],
-    });
+    const auth = new google.auth.OAuth2(clientId, clientSecret, "http://localhost");
+    auth.setCredentials({ refresh_token: refreshToken });
 
     const searchConsole = google.webmasters({ version: "v3", auth });
 
