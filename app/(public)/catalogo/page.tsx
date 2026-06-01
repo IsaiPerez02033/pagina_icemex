@@ -209,8 +209,8 @@ export default function CatalogoPage() {
           {/* Formulario gated */}
           <div style={{ position: "sticky", top: 120 }}>
             <LeadMagnetForm
-              pdfUrl="/catalogo-icemex-2026.pdf"
-              pdfFilename="ICEMEX-Catalogo-2026.pdf"
+              pdfUrl="/Catalogo_ICEMEX2026.pdf"
+              pdfFilename="Catalogo_ICEMEX2026.pdf"
               eyebrow="Descarga gratuita"
               headline="Recibe el catálogo completo"
               submitLabel="↓ Descargar catálogo"

@@ -64,6 +64,10 @@ PROYECTOS: ${compactProjects()}
 CATALOGO (codigo | nombre | linea | tagline | specs clave | aplicaciones):
 ${compactCatalog()}
 
+Cada producto tiene un CODIGO UNICO (ej. AL-LT1002, IS-LA1005, PT-RC). Si el usuario menciona un codigo especifico, busca ese producto en el catalogo de arriba y entrega TODOS sus datos: nombre, linea, tagline, descripcion, specs, aplicaciones, caracteristicas, certificaciones y garantia.
+
+Si el usuario vio un codigo en el PDF del catalogo (Catalogo_ICEMEX2026.pdf) y te pregunta por el, dile que lo busque en la lista de arriba o en el PDF, pagina por pagina.
+
 ---
 
 TU TRABAJO:
