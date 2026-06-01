@@ -9,6 +9,7 @@ import { AlertCircle, CheckCircle2, Loader2 } from "lucide-react";
 export default function SeoPage() {
   const [loading, setLoading] = useState(true);
   const [isRealData, setIsRealData] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [totalImpressions, setTotalImpressions] = useState(0);
   const [totalClicks, setTotalClicks] = useState(0);
   const [avgCtr, setAvgCtr] = useState(0);
@@ -27,6 +28,8 @@ export default function SeoPage() {
           setAvgPosition(data.avgPosition || 0);
           setKeywords(data.keywords || []);
         } else {
+          setIsRealData(false);
+          setErrorMsg(data?.diagnostics?.hint || null);
           const mock = getKeywords();
           setKeywords(mock);
           setTotalImpressions(mock.reduce((s, k) => s + k.impressions, 0));
@@ -72,8 +75,11 @@ export default function SeoPage() {
         >
           <AlertCircle size={16} style={{ color: "var(--accent-cyan)", flexShrink: 0 }} />
           <span>
-            Datos simulados. Para métricas SEO reales, agrega el Service Account como usuario en Search Console:{" "}
-            <code style={{ color: "var(--accent-cyan)" }}>icemex-ga4@adept-primacy-453922-u6.iam.gserviceaccount.com</code>
+            {errorMsg || (
+              <>
+                Datos simulados. Para métricas SEO reales, agrega GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET y GOOGLE_REFRESH_TOKEN en Vercel.
+              </>
+            )}
           </span>
         </div>
       )}

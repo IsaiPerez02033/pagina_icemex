@@ -9,6 +9,12 @@ export async function GET() {
     return NextResponse.json({ error: "No autorizado" }, { status: 401 });
   }
 
+  // Diagnóstico de variables faltantes
+  const missing: string[] = [];
+  if (!process.env.GOOGLE_CLIENT_ID) missing.push("GOOGLE_CLIENT_ID");
+  if (!process.env.GOOGLE_CLIENT_SECRET) missing.push("GOOGLE_CLIENT_SECRET");
+  if (!process.env.GOOGLE_REFRESH_TOKEN) missing.push("GOOGLE_REFRESH_TOKEN");
+
   // Intentar datos reales de Google Search Console
   const realData = await getSearchConsoleData();
 
@@ -19,7 +25,7 @@ export async function GET() {
     });
   }
 
-  // Fallback a mock data
+  // Fallback a mock data con diagnóstico
   const keywords = getKeywords();
   return NextResponse.json({
     keywords,
@@ -28,5 +34,11 @@ export async function GET() {
     avgCtr: keywords.length > 0 ? keywords.reduce((s, k) => s + k.ctr, 0) / keywords.length : 0,
     avgPosition: keywords.length > 0 ? keywords.reduce((s, k) => s + k.position, 0) / keywords.length : 0,
     source: "mock",
+    diagnostics: {
+      missingEnvVars: missing,
+      hint: missing.length > 0
+        ? `Faltan variables en Vercel: ${missing.join(", ")}. Agrégalas en Settings → Environment Variables y haz redeploy.`
+        : "Variables OK pero la API de Search Console no respondió. Verifica que el refresh token sea válido y que tengas acceso a la propiedad icemex.mx.",
+    },
   });
 }

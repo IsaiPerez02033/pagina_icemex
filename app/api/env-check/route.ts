@@ -17,6 +17,10 @@ export async function GET() {
     VERCEL_TEAM_ID: process.env.VERCEL_TEAM_ID || "FALTA",
     GROQ_API_KEY: process.env.GROQ_API_KEY ? "presente" : "FALTA",
     ADMIN_EMAIL: process.env.ADMIN_EMAIL ? "presente" : "FALTA",
+    GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID ? "presente" : "FALTA",
+    GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET ? "presente" : "FALTA",
+    GOOGLE_REFRESH_TOKEN: process.env.GOOGLE_REFRESH_TOKEN ? "presente" : "FALTA",
+    SEARCH_CONSOLE_SITE_URL: process.env.SEARCH_CONSOLE_SITE_URL || "FALTA",
     totalEnvKeys: Object.keys(process.env).length,
     allKeys: Object.keys(process.env)
       .filter((k) =>
@@ -25,7 +29,11 @@ export async function GET() {
         k.toLowerCase().includes("upstash") ||
         k.toLowerCase().includes("vercel") ||
         k.toLowerCase().includes("admin") ||
-        k.toLowerCase().includes("next")
+        k.toLowerCase().includes("next") ||
+        k.toLowerCase().includes("google") ||
+        k.toLowerCase().includes("oauth") ||
+        k.toLowerCase().includes("refresh") ||
+        k.toLowerCase().includes("search_console")
       )
       .sort(),
   });
