@@ -36,6 +36,7 @@ export async function getSearchConsoleData(): Promise<{
   try {
     const auth = new google.auth.OAuth2(clientId, clientSecret, "http://localhost");
     auth.setCredentials({ refresh_token: refreshToken });
+    await auth.getAccessToken();
 
     const searchConsole = google.webmasters({ version: "v3", auth });
 
