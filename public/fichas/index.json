@@ -1,0 +1,1057 @@
+[
+ {
+  "codigo": "AL-LC1001",
+  "nombre": "Luminaria Cobra",
+  "archivo": "AL-LC1001.pdf",
+  "paginas": [
+   5
+  ]
+ },
+ {
+  "codigo": "AL-CO1016",
+  "nombre": "Cobra 150W",
+  "archivo": "AL-CO1016.pdf",
+  "paginas": [
+   6
+  ]
+ },
+ {
+  "codigo": "IS-LF1016",
+  "nombre": "Luminaria solar tipo Cobra",
+  "archivo": "IS-LF1016.pdf",
+  "paginas": [
+   7
+  ]
+ },
+ {
+  "codigo": "AL-LT1002",
+  "nombre": "Luminaria Titan",
+  "archivo": "AL-LT1002.pdf",
+  "paginas": [
+   8,
+   9,
+   10,
+   11
+  ]
+ },
+ {
+  "codigo": "AL-LU1003",
+  "nombre": "Luminaria Urban Cosmos",
+  "archivo": "AL-LU1003.pdf",
+  "paginas": [
+   12
+  ]
+ },
+ {
+  "codigo": "AL-SL1004",
+  "nombre": "Street Light",
+  "archivo": "AL-SL1004.pdf",
+  "paginas": [
+   13
+  ]
+ },
+ {
+  "codigo": "AL-SL1204",
+  "nombre": "Street Light 1204",
+  "archivo": "AL-SL1204.pdf",
+  "paginas": [
+   14
+  ]
+ },
+ {
+  "codigo": "AL-UL1005",
+  "nombre": "Urban LED",
+  "archivo": "AL-UL1005.pdf",
+  "paginas": [
+   15
+  ]
+ },
+ {
+  "codigo": "AL-LVI006",
+  "nombre": "Luminaria AD100 100W",
+  "archivo": "AL-LVI006.pdf",
+  "paginas": [
+   16
+  ]
+ },
+ {
+  "codigo": "AL-LW1007",
+  "nombre": "LEDway",
+  "archivo": "AL-LW1007.pdf",
+  "paginas": [
+   17
+  ]
+ },
+ {
+  "codigo": "AL-LO1008",
+  "nombre": "LED Omega",
+  "archivo": "AL-LO1008.pdf",
+  "paginas": [
+   18
+  ]
+ },
+ {
+  "codigo": "AL-LVI1009",
+  "nombre": "Luminario Vial ICEMEX 02V-100",
+  "archivo": "AL-LVI1009.pdf",
+  "paginas": [
+   19
+  ]
+ },
+ {
+  "codigo": "AL-LS1010",
+  "nombre": "Luminaria Suburbana",
+  "archivo": "AL-LS1010.pdf",
+  "paginas": [
+   20
+  ]
+ },
+ {
+  "codigo": "AL-LVI1011",
+  "nombre": "Luminaria de Vialidad",
+  "archivo": "AL-LVI1011.pdf",
+  "paginas": [
+   21
+  ]
+ },
+ {
+  "codigo": "AL-LA1012",
+  "nombre": "Luminaria LED Epistar 30-90W",
+  "archivo": "AL-LA1012.pdf",
+  "paginas": [
+   22
+  ]
+ },
+ {
+  "codigo": "IS-AO1001",
+  "nombre": "Sistema Solar All in One",
+  "archivo": "IS-AO1001.pdf",
+  "paginas": [
+   24,
+   25
+  ]
+ },
+ {
+  "codigo": "IS-SL1002",
+  "nombre": "Luminaria Solar SL-1",
+  "archivo": "IS-SL1002.pdf",
+  "paginas": [
+   26
+  ]
+ },
+ {
+  "codigo": "IS-LS1003",
+  "nombre": "Luminario de LED Solar 125W-200W",
+  "archivo": "IS-LS1003.pdf",
+  "paginas": [
+   27
+  ]
+ },
+ {
+  "codigo": "IS-LS1004",
+  "nombre": "Suburbana 200W con Panel Solar Inteligente",
+  "archivo": "IS-LS1004.pdf",
+  "paginas": [
+   28
+  ]
+ },
+ {
+  "codigo": "IS-LS1005",
+  "nombre": "Luminario de LED Solar",
+  "archivo": "IS-LS1005.pdf",
+  "paginas": [
+   29
+  ]
+ },
+ {
+  "codigo": "IS-LS1006",
+  "nombre": "Lampara Solar con Sensor PIR",
+  "archivo": "IS-LS1006.pdf",
+  "paginas": [
+   30
+  ]
+ },
+ {
+  "codigo": "IS-LS1007",
+  "nombre": "Lampara Solar con Sensor PIR II",
+  "archivo": "IS-LS1007.pdf",
+  "paginas": [
+   31
+  ]
+ },
+ {
+  "codigo": "IS-LS1008",
+  "nombre": "Suburbana 500W con Panel Solar y Sensor",
+  "archivo": "IS-LS1008.pdf",
+  "paginas": [
+   32
+  ]
+ },
+ {
+  "codigo": "IS-LA1009",
+  "nombre": "All in One 400W",
+  "archivo": "IS-LA1009.pdf",
+  "paginas": [
+   33,
+   34,
+   35
+  ]
+ },
+ {
+  "codigo": "IS-LA1010",
+  "nombre": "All in One 500W",
+  "archivo": "IS-LA1010.pdf",
+  "paginas": [
+   36,
+   37,
+   38
+  ]
+ },
+ {
+  "codigo": "IS-LA1011",
+  "nombre": "All in One 500W II",
+  "archivo": "IS-LA1011.pdf",
+  "paginas": [
+   39,
+   40
+  ]
+ },
+ {
+  "codigo": "IS-LA1012",
+  "nombre": "All in One 500W III",
+  "archivo": "IS-LA1012.pdf",
+  "paginas": [
+   41,
+   42,
+   43
+  ]
+ },
+ {
+  "codigo": "IS-LA1013",
+  "nombre": "All in One 400W II",
+  "archivo": "IS-LA1013.pdf",
+  "paginas": [
+   44,
+   45,
+   46
+  ]
+ },
+ {
+  "codigo": "IS-LA1014",
+  "nombre": "FORLED 100W",
+  "archivo": "IS-LA1014.pdf",
+  "paginas": [
+   47,
+   48
+  ]
+ },
+ {
+  "codigo": "IS-LA1015",
+  "nombre": "FORLED 100W II",
+  "archivo": "IS-LA1015.pdf",
+  "paginas": [
+   49,
+   50
+  ]
+ },
+ {
+  "codigo": "IS-AO1016",
+  "nombre": "URBLED 200W Solar",
+  "archivo": "IS-AO1016.pdf",
+  "paginas": [
+   51
+  ]
+ },
+ {
+  "codigo": "IS-AO1017",
+  "nombre": "URBLED 500W Solar",
+  "archivo": "IS-AO1017.pdf",
+  "paginas": [
+   52
+  ]
+ },
+ {
+  "codigo": "IS-AO1018",
+  "nombre": "SUBLED 200W Solar",
+  "archivo": "IS-AO1018.pdf",
+  "paginas": [
+   53
+  ]
+ },
+ {
+  "codigo": "IS-AO1019",
+  "nombre": "All in One 500W Solar",
+  "archivo": "IS-AO1019.pdf",
+  "paginas": [
+   54
+  ]
+ },
+ {
+  "codigo": "IS-AO1020",
+  "nombre": "All in One 300W Solar",
+  "archivo": "IS-AO1020.pdf",
+  "paginas": [
+   55
+  ]
+ },
+ {
+  "codigo": "IS-LA1021",
+  "nombre": "Suburbana Solar 300W",
+  "archivo": "IS-LA1021.pdf",
+  "paginas": [
+   56
+  ]
+ },
+ {
+  "codigo": "IS-LA1022",
+  "nombre": "Luminaria Solar L-9",
+  "archivo": "IS-LA1022.pdf",
+  "paginas": [
+   57
+  ]
+ },
+ {
+  "codigo": "IS-LP1023",
+  "nombre": "Luminaria Solar con Panel 180W-240W",
+  "archivo": "IS-LP1023.pdf",
+  "paginas": [
+   58
+  ]
+ },
+ {
+  "codigo": "IS-VS1024",
+  "nombre": "Luminaria Viena con Sistema Fotovoltaico",
+  "archivo": "IS-VS1024.pdf",
+  "paginas": [
+   59
+  ]
+ },
+ {
+  "codigo": "IS-SP1025",
+  "nombre": "Sistema Solar Fotovoltaico 50W Titan",
+  "archivo": "IS-SP1025.pdf",
+  "paginas": [
+   60
+  ]
+ },
+ {
+  "codigo": "IS-AO1026",
+  "nombre": "All in One 100W",
+  "archivo": "IS-AO1026.pdf",
+  "paginas": [
+   61,
+   62
+  ]
+ },
+ {
+  "codigo": "IS-AO1027",
+  "nombre": "Luminaria Solar A-P9F 70W-120W",
+  "archivo": "IS-AO1027.pdf",
+  "paginas": [
+   63,
+   64,
+   65,
+   66,
+   67
+  ]
+ },
+ {
+  "codigo": "IS-AO1028",
+  "nombre": "Luminaria Solar PF 50W",
+  "archivo": "IS-AO1028.pdf",
+  "paginas": [
+   68,
+   69,
+   70,
+   71
+  ]
+ },
+ {
+  "codigo": "IS-AO1029",
+  "nombre": "Luminaria Solar SFS",
+  "archivo": "IS-AO1029.pdf",
+  "paginas": [
+   72,
+   73
+  ]
+ },
+ {
+  "codigo": "IS-AO1030",
+  "nombre": "AD-50W Vialidades",
+  "archivo": "IS-AO1030.pdf",
+  "paginas": [
+   74,
+   75,
+   76,
+   77
+  ]
+ },
+ {
+  "codigo": "PP-LU1001",
+  "nombre": "Urban Punta de Poste",
+  "archivo": "PP-LU1001.pdf",
+  "paginas": [
+   79
+  ]
+ },
+ {
+  "codigo": "AL-LU1102",
+  "nombre": "Urban Cosmos Punta de Poste",
+  "archivo": "AL-LU1102.pdf",
+  "paginas": [
+   80
+  ]
+ },
+ {
+  "codigo": "PP-UL1003",
+  "nombre": "Urban LED Punta de Poste",
+  "archivo": "PP-UL1003.pdf",
+  "paginas": [
+   81
+  ]
+ },
+ {
+  "codigo": "PP-UL1004",
+  "nombre": "Agata",
+  "archivo": "PP-UL1004.pdf",
+  "paginas": [
+   82
+  ]
+ },
+ {
+  "codigo": "PP-PL1005",
+  "nombre": "Punta de Poste con Fotocelda 100W",
+  "archivo": "PP-PL1005.pdf",
+  "paginas": [
+   83
+  ]
+ },
+ {
+  "codigo": "PP-LP1006",
+  "nombre": "Punta de Poste 60W",
+  "archivo": "PP-LP1006.pdf",
+  "paginas": [
+   84
+  ]
+ },
+ {
+  "codigo": "PP-EA1007",
+  "nombre": "Edge Area Round",
+  "archivo": "PP-EA1007.pdf",
+  "paginas": [
+   85
+  ]
+ },
+ {
+  "codigo": "PP-TL1008",
+  "nombre": "Turquesa",
+  "archivo": "PP-TL1008.pdf",
+  "paginas": [
+   86
+  ]
+ },
+ {
+  "codigo": "PP-ZL1009",
+  "nombre": "Zafiro",
+  "archivo": "PP-ZL1009.pdf",
+  "paginas": [
+   87
+  ]
+ },
+ {
+  "codigo": "PP-EL1010",
+  "nombre": "Esmeralda",
+  "archivo": "PP-EL1010.pdf",
+  "paginas": [
+   88
+  ]
+ },
+ {
+  "codigo": "PP-LO1011",
+  "nombre": "Onix",
+  "archivo": "PP-LO1011.pdf",
+  "paginas": [
+   89
+  ]
+ },
+ {
+  "codigo": "PP-LI1012",
+  "nombre": "Inglesa",
+  "archivo": "PP-LI1012.pdf",
+  "paginas": [
+   90
+  ]
+ },
+ {
+  "codigo": "PP-LI1013",
+  "nombre": "Imperial",
+  "archivo": "PP-LI1013.pdf",
+  "paginas": [
+   91
+  ]
+ },
+ {
+  "codigo": "PP-LA1014",
+  "nombre": "Alameda",
+  "archivo": "PP-LA1014.pdf",
+  "paginas": [
+   92
+  ]
+ },
+ {
+  "codigo": "PP-LR1015",
+  "nombre": "Residencial",
+  "archivo": "PP-LR1015.pdf",
+  "paginas": [
+   93
+  ]
+ },
+ {
+  "codigo": "PP-LC1016",
+  "nombre": "Chapultepec",
+  "archivo": "PP-LC1016.pdf",
+  "paginas": [
+   94
+  ]
+ },
+ {
+  "codigo": "PP-LB1017",
+  "nombre": "Barroco",
+  "archivo": "PP-LB1017.pdf",
+  "paginas": [
+   95
+  ]
+ },
+ {
+  "codigo": "PP-LF1018",
+  "nombre": "Futura",
+  "archivo": "PP-LF1018.pdf",
+  "paginas": [
+   96
+  ]
+ },
+ {
+  "codigo": "PP-LC1019",
+  "nombre": "Contemporanea",
+  "archivo": "PP-LC1019.pdf",
+  "paginas": [
+   97
+  ]
+ },
+ {
+  "codigo": "PP-LV1020",
+  "nombre": "Venus",
+  "archivo": "PP-LV1020.pdf",
+  "paginas": [
+   98
+  ]
+ },
+ {
+  "codigo": "PP-LE1021",
+  "nombre": "Eclipse",
+  "archivo": "PP-LE1021.pdf",
+  "paginas": [
+   99
+  ]
+ },
+ {
+  "codigo": "PP-SX1022",
+  "nombre": "Siglo XXI",
+  "archivo": "PP-SX1022.pdf",
+  "paginas": [
+   100
+  ]
+ },
+ {
+  "codigo": "PP-LPE1023",
+  "nombre": "Prisma Esfera",
+  "archivo": "PP-LPE1023.pdf",
+  "paginas": [
+   101
+  ]
+ },
+ {
+  "codigo": "PP-LCM1024",
+  "nombre": "Colonial Mexicano",
+  "archivo": "PP-LCM1024.pdf",
+  "paginas": [
+   102
+  ]
+ },
+ {
+  "codigo": "PP-LCH1025",
+  "nombre": "Colonial Hacienda",
+  "archivo": "PP-LCH1025.pdf",
+  "paginas": [
+   103
+  ]
+ },
+ {
+  "codigo": "LU-BT1001",
+  "nombre": "Bolardo Triangular 75W",
+  "archivo": "LU-BT1001.pdf",
+  "paginas": [
+   105,
+   107
+  ]
+ },
+ {
+  "codigo": "LU-BT1002",
+  "nombre": "Bolardo 120W",
+  "archivo": "LU-BT1002.pdf",
+  "paginas": [
+   106
+  ]
+ },
+ {
+  "codigo": "LU-DO1003",
+  "nombre": "Poste D-P",
+  "archivo": "LU-DO1003.pdf",
+  "paginas": [
+   108,
+   109
+  ]
+ },
+ {
+  "codigo": "LU-F4100",
+  "nombre": "Luminario LED Bolard Circular 75W",
+  "archivo": "LU-F4100.pdf",
+  "paginas": [
+   110,
+   111
+  ]
+ },
+ {
+  "codigo": "LU-F4M1005",
+  "nombre": "Bolard AP",
+  "archivo": "LU-F4M1005.pdf",
+  "paginas": [
+   112,
+   113
+  ]
+ },
+ {
+  "codigo": "ICELUM-3W",
+  "nombre": "ICELUM 3W Solar",
+  "archivo": "ICELUM-3W.pdf",
+  "paginas": [
+   114
+  ]
+ },
+ {
+  "codigo": "LU-F4M1003",
+  "nombre": "Bolardo Solar 10W",
+  "archivo": "LU-F4M1003.pdf",
+  "paginas": [
+   115
+  ]
+ },
+ {
+  "codigo": "LU-LM1006",
+  "nombre": "Bolardo Montpellier",
+  "archivo": "LU-LM1006.pdf",
+  "paginas": [
+   116
+  ]
+ },
+ {
+  "codigo": "LU-LP1007",
+  "nombre": "Bolardo Urbano",
+  "archivo": "LU-LP1007.pdf",
+  "paginas": [
+   117,
+   118
+  ]
+ },
+ {
+  "codigo": "LU-LH1008",
+  "nombre": "Hades",
+  "archivo": "LU-LH1008.pdf",
+  "paginas": [
+   119
+  ]
+ },
+ {
+  "codigo": "LU-LF1009",
+  "nombre": "Fornax",
+  "archivo": "LU-LF1009.pdf",
+  "paginas": [
+   120
+  ]
+ },
+ {
+  "codigo": "LU-LAR1010",
+  "nombre": "Ares",
+  "archivo": "LU-LAR1010.pdf",
+  "paginas": [
+   121
+  ]
+ },
+ {
+  "codigo": "LU-LAT1011",
+  "nombre": "Atenas",
+  "archivo": "LU-LAT1011.pdf",
+  "paginas": [
+   122
+  ]
+ },
+ {
+  "codigo": "LU-LZ1012",
+  "nombre": "Zeus",
+  "archivo": "LU-LZ1012.pdf",
+  "paginas": [
+   123
+  ]
+ },
+ {
+  "codigo": "LU-LP1013",
+  "nombre": "Pathway",
+  "archivo": "LU-LP1013.pdf",
+  "paginas": [
+   124
+  ]
+ },
+ {
+  "codigo": "BOLARD-F4A1",
+  "nombre": "Bolard F4 A1",
+  "archivo": "BOLARD-F4A1.pdf",
+  "paginas": [
+   125
+  ]
+ },
+ {
+  "codigo": "RF-SC1001",
+  "nombre": "Series CPY",
+  "archivo": "RF-SC1001.pdf",
+  "paginas": [
+   127
+  ]
+ },
+ {
+  "codigo": "RF-LW1002",
+  "nombre": "Wallpack",
+  "archivo": "RF-LW1002.pdf",
+  "paginas": [
+   128
+  ]
+ },
+ {
+  "codigo": "RF-RE1003",
+  "nombre": "Reflector LED Estadio 300W",
+  "archivo": "RF-RE1003.pdf",
+  "paginas": [
+   129
+  ]
+ },
+ {
+  "codigo": "RF-RE1004",
+  "nombre": "Flood Plano Gris 400W",
+  "archivo": "RF-RE1004.pdf",
+  "paginas": [
+   130
+  ]
+ },
+ {
+  "codigo": "RF-RE1005",
+  "nombre": "Reflector Plano 400W",
+  "archivo": "RF-RE1005.pdf",
+  "paginas": [
+   131
+  ]
+ },
+ {
+  "codigo": "RF-LL1006",
+  "nombre": "Reflector LL-149-151",
+  "archivo": "RF-LL1006.pdf",
+  "paginas": [
+   132
+  ]
+ },
+ {
+  "codigo": "RF-UFO1007",
+  "nombre": "Luminaria Industrial UFO",
+  "archivo": "RF-UFO1007.pdf",
+  "paginas": [
+   133
+  ]
+ },
+ {
+  "codigo": "FL-LT1022",
+  "nombre": "Foco de LED",
+  "archivo": "FL-LT1022.pdf",
+  "paginas": [
+   135
+  ]
+ },
+ {
+  "codigo": "LC-CR1001",
+  "nombre": "CR Troffers",
+  "archivo": "LC-CR1001.pdf",
+  "paginas": [
+   136
+  ]
+ },
+ {
+  "codigo": "LC-GMO1002",
+  "nombre": "Gabinete con Mica Opalina 54W",
+  "archivo": "LC-GMO1002.pdf",
+  "paginas": [
+   137
+  ]
+ },
+ {
+  "codigo": "LC-WS1003",
+  "nombre": "Series WS",
+  "archivo": "LC-WS1003.pdf",
+  "paginas": [
+   138
+  ]
+ },
+ {
+  "codigo": "LC-AP1004",
+  "nombre": "Apolo",
+  "archivo": "LC-AP1004.pdf",
+  "paginas": [
+   139
+  ]
+ },
+ {
+  "codigo": "LC-GC1005",
+  "nombre": "GC11 Comodin Bajo Peralte",
+  "archivo": "LC-GC1005.pdf",
+  "paginas": [
+   140
+  ]
+ },
+ {
+  "codigo": "LC-GE1006",
+  "nombre": "GSMA Marco Abatible",
+  "archivo": "LC-GE1006.pdf",
+  "paginas": [
+   141
+  ]
+ },
+ {
+  "codigo": "LC-CD1007",
+  "nombre": "GC Canal Doble",
+  "archivo": "LC-CD1007.pdf",
+  "paginas": [
+   142
+  ]
+ },
+ {
+  "codigo": "LC-GEM1008",
+  "nombre": "GEMA Marco Abatible",
+  "archivo": "LC-GEM1008.pdf",
+  "paginas": [
+   143
+  ]
+ },
+ {
+  "codigo": "LC-GEM1009",
+  "nombre": "GEMA CAPCE Piramidal",
+  "archivo": "LC-GEM1009.pdf",
+  "paginas": [
+   144
+  ]
+ },
+ {
+  "codigo": "LC-ME1010",
+  "nombre": "GAME Malla Electrosoldada",
+  "archivo": "LC-ME1010.pdf",
+  "paginas": [
+   145
+  ]
+ },
+ {
+  "codigo": "LC-GIN1011",
+  "nombre": "GIN Industrial",
+  "archivo": "LC-GIN1011.pdf",
+  "paginas": [
+   146
+  ]
+ },
+ {
+  "codigo": "LC-GINH1012",
+  "nombre": "GINHB Industrial High Bay",
+  "archivo": "LC-GINH1012.pdf",
+  "paginas": [
+   147
+  ]
+ },
+ {
+  "codigo": "LC-LN1013",
+  "nombre": "Series LN",
+  "archivo": "LC-LN1013.pdf",
+  "paginas": [
+   148
+  ]
+ },
+ {
+  "codigo": "FL-LT1023",
+  "nombre": "Foco de LED 70W",
+  "archivo": "FL-LT1023.pdf",
+  "paginas": [
+   149
+  ]
+ },
+ {
+  "codigo": "LC-LR1014",
+  "nombre": "LR Troffers",
+  "archivo": "LC-LR1014.pdf",
+  "paginas": [
+   150
+  ]
+ },
+ {
+  "codigo": "LC-LRD1015",
+  "nombre": "LR Downlights",
+  "archivo": "LC-LRD1015.pdf",
+  "paginas": [
+   151
+  ]
+ },
+ {
+  "codigo": "LC-ES1016",
+  "nombre": "Essentia",
+  "archivo": "LC-ES1016.pdf",
+  "paginas": [
+   152
+  ]
+ },
+ {
+  "codigo": "POSTES-RC-CC",
+  "nombre": "Postes Recto y Conico Circular",
+  "archivo": "POSTES-RC-CC.pdf",
+  "paginas": [
+   154,
+   155,
+   156,
+   157
+  ]
+ },
+ {
+  "codigo": "POSTES-ESPECIALES",
+  "nombre": "Postes Especiales (Cisne, Gaviota, Queretaro, London, Cordova, Puebla, Alameda)",
+  "archivo": "POSTES-ESPECIALES.pdf",
+  "paginas": [
+   159,
+   160,
+   161
+  ]
+ },
+ {
+  "codigo": "BRAZOS",
+  "nombre": "Brazos (Aleron, Percha, Canada, Cordova, Centro Historico, Vigilancia, Escuadra, Z, Matias Romero)",
+  "archivo": "BRAZOS.pdf",
+  "paginas": [
+   166,
+   167
+  ]
+ },
+ {
+  "codigo": "ANCLAS-BRAZOS",
+  "nombre": "Anclas y Brazos",
+  "archivo": "ANCLAS-BRAZOS.pdf",
+  "paginas": [
+   169
+  ]
+ },
+ {
+  "codigo": "BAS-0010",
+  "nombre": "Base de Concreto para Luminaria",
+  "archivo": "BAS-0010.pdf",
+  "paginas": [
+   170
+  ]
+ },
+ {
+  "codigo": "BAS-0011",
+  "nombre": "Base de Concreto para Luminaria 60x40",
+  "archivo": "BAS-0011.pdf",
+  "paginas": [
+   171
+  ]
+ },
+ {
+  "codigo": "BASE-PIRAMIDAL",
+  "nombre": "Base de Concreto Piramidal y Rectangular",
+  "archivo": "BASE-PIRAMIDAL.pdf",
+  "paginas": [
+   172
+  ]
+ },
+ {
+  "codigo": "REJILLA-BROCAL",
+  "nombre": "Rejilla con Brocal Bisagra 70-50-7",
+  "archivo": "REJILLA-BROCAL.pdf",
+  "paginas": [
+   173
+  ]
+ },
+ {
+  "codigo": "BANCAS",
+  "nombre": "Rizos, Mensulas y Bancas (Espanola, Italiana, Francesa, Alemana)",
+  "archivo": "BANCAS.pdf",
+  "paginas": [
+   174
+  ]
+ },
+ {
+  "codigo": "ACCESORIOS",
+  "nombre": "Accesorios (Portalampara, Adaptadores, Fotocelda, Malla)",
+  "archivo": "ACCESORIOS.pdf",
+  "paginas": [
+   175
+  ]
+ },
+ {
+  "codigo": "ESFERAS-CRISTALES",
+  "nombre": "Esferas, Acrilicos y Cristales",
+  "archivo": "ESFERAS-CRISTALES.pdf",
+  "paginas": [
+   176
+  ]
+ },
+ {
+  "codigo": "PICOBA-P01",
+  "nombre": "PICOBA P-01 de Acero",
+  "archivo": "PICOBA-P01.pdf",
+  "paginas": [
+   177
+  ]
+ },
+ {
+  "codigo": "PICOBA-P02",
+  "nombre": "PICOBA P-02 de Acero",
+  "archivo": "PICOBA-P02.pdf",
+  "paginas": [
+   178,
+   179
+  ]
+ },
+ {
+  "codigo": "PICOBA-BSH",
+  "nombre": "PICOBA B-SH de Acero",
+  "archivo": "PICOBA-BSH.pdf",
+  "paginas": [
+   180
+  ]
+ },
+ {
+  "codigo": "LETREROS",
+  "nombre": "Letreros Imagen",
+  "archivo": "LETREROS.pdf",
+  "paginas": [
+   181
+  ]
+ },
+ {
+  "codigo": "SENALITICAS",
+  "nombre": "Senaliticas Industriales",
+  "archivo": "SENALITICAS.pdf",
+  "paginas": [
+   182
+  ]
+ }
+]
