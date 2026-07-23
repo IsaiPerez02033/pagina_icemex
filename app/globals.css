@@ -318,6 +318,85 @@ html[data-theme="light"] .navbar-open .navbar-inner {
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* === ESTILOS TEMA CLARO / OSCURO PARA LIMELIGHT NAV === */
+.limelight-nav-container {
+  background: rgba(13, 17, 23, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+html[data-theme="light"] .limelight-nav-container {
+  background: rgba(242, 244, 248, 0.88);
+  border: 1px solid rgba(0, 127, 163, 0.22);
+  box-shadow: 0 4px 20px rgba(0, 127, 163, 0.08);
+}
+
+.limelight-pill {
+  background: #ffffff;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.9), 0 0 22px rgba(0, 212, 255, 0.8);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+html[data-theme="light"] .limelight-pill {
+  background: var(--accent-cyan);
+  box-shadow: 0 0 12px rgba(0, 127, 163, 0.8), 0 0 20px rgba(0, 127, 163, 0.5);
+}
+
+.limelight-cone {
+  clip-path: polygon(22% 0%, 78% 0%, 100% 100%, 0% 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.38) 0%,
+    rgba(0, 212, 255, 0.18) 50%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  transition: background 0.4s ease;
+}
+
+html[data-theme="light"] .limelight-cone {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 127, 163, 0.35) 0%,
+    rgba(0, 127, 163, 0.15) 50%,
+    rgba(0, 127, 163, 0) 100%
+  );
+}
+
+.limelight-active-icon {
+  color: #ffffff;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9));
+  transform: scale(1.05);
+}
+
+html[data-theme="light"] .limelight-active-icon {
+  color: var(--accent-cyan);
+  filter: drop-shadow(0 0 6px rgba(0, 127, 163, 0.4));
+  transform: scale(1.05);
+}
+
+.limelight-active-label {
+  color: #ffffff;
+  font-weight: 600;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.7));
+}
+
+html[data-theme="light"] .limelight-active-label {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  filter: drop-shadow(0 0 4px rgba(0, 127, 163, 0.3));
+}
+
+.limelight-inactive-item {
+  color: var(--text-muted);
+  opacity: 0.6;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.limelight-inactive-item:hover {
+  color: var(--text-primary);
+  opacity: 0.95;
+}
+
 /* Wrapper del toggle en mobile (al lado de la hamburguesa) */
 .navbar-mobile-actions {
   display: none;

@@ -140,25 +140,18 @@ export const LimelightNav = ({
 
   return (
     <nav
-      className={`relative inline-flex items-center h-16 rounded-2xl bg-[#0D1117]/90 text-foreground border border-white/10 px-2 overflow-hidden backdrop-blur-md ${className}`}
+      className={`limelight-nav-container relative inline-flex items-center h-16 rounded-2xl px-2 overflow-hidden backdrop-blur-md ${className}`}
     >
       {/* Luz Spotlight activa */}
       <div
         ref={limelightRef}
-        className={`absolute top-0 z-10 w-12 h-[4px] rounded-full bg-white shadow-[0_0_12px_rgba(255,255,255,0.9),0_0_22px_rgba(0,212,255,0.8)] ${
+        className={`limelight-pill absolute top-0 z-10 w-12 h-[4px] rounded-full ${
           isReady ? "transition-[left] duration-300 ease-in-out" : ""
         } ${limelightClassName}`}
         style={{ left: "-999px" }}
       >
-        {/* Cono de luz en forma de trapecio con gradiente */}
-        <div
-          className="absolute left-1/2 -translate-x-1/2 top-[4px] w-20 h-14 pointer-events-none"
-          style={{
-            clipPath: "polygon(22% 0%, 78% 0%, 100% 100%, 0% 100%)",
-            background:
-              "linear-gradient(to bottom, rgba(255, 255, 255, 0.38) 0%, rgba(0, 212, 255, 0.18) 50%, rgba(0, 212, 255, 0) 100%)",
-          }}
-        />
+        {/* Cono de luz en forma de trapecio con gradiente adaptable a tema */}
+        <div className="limelight-cone absolute left-1/2 -translate-x-1/2 top-[4px] w-20 h-14 pointer-events-none" />
       </div>
 
       {items.map(({ id, icon, label, href, onClick }, index) => {
@@ -168,9 +161,7 @@ export const LimelightNav = ({
             {icon &&
               cloneElement(icon as React.ReactElement<{ className?: string }>, {
                 className: `w-5 h-5 transition-all duration-200 ease-in-out ${
-                  isActive
-                    ? "opacity-100 text-white drop-shadow-[0_0_6px_rgba(255,255,255,0.9)] scale-105"
-                    : "opacity-40 text-gray-300 hover:opacity-80"
+                  isActive ? "limelight-active-icon" : "limelight-inactive-item"
                 } ${icon.props?.className || ""} ${iconClassName}`,
               })}
             {label && (
@@ -178,9 +169,7 @@ export const LimelightNav = ({
                 className={`text-sm font-medium transition-all duration-200 ${
                   icon ? "ml-2" : ""
                 } ${
-                  isActive
-                    ? "text-white font-semibold drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
-                    : "text-gray-400 hover:text-gray-200 opacity-60"
+                  isActive ? "limelight-active-label" : "limelight-inactive-item"
                 }`}
               >
                 {label}

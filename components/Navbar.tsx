@@ -110,8 +110,7 @@ export default function Navbar() {
             <LimelightNav
               items={links}
               activeIndex={activeIndex}
-              className="bg-transparent border-none p-0 h-12 rounded-full backdrop-blur-md"
-              limelightClassName="bg-[var(--accent-cyan)] shadow-[0_20px_18px_var(--accent-cyan)]"
+              className="h-12 border-none bg-transparent shadow-none"
               iconContainerClassName="px-3 py-1 text-sm font-medium"
             />
             <div className="pl-2 border-l border-white/10 dark:border-white/10">
