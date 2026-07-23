@@ -1748,3 +1748,64 @@ html[data-theme="light"] .icemex-logo--light {
     width: 100%;
   }
 }
+
+/* === ANIMACIONES AMBIENTALES AURORA Y SHIMMER === */
+@keyframes aurora-slow {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(60px, 40px) scale(1.15);
+  }
+}
+
+@keyframes aurora-reverse {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-50px, -35px) scale(1.1);
+  }
+}
+
+.animate-aurora-slow {
+  animation: aurora-slow 18s ease-in-out infinite;
+}
+
+.animate-aurora-reverse {
+  animation: aurora-reverse 22s ease-in-out infinite;
+}
+
+/* Shimmer Light Sweep para botones CTA */
+.catalog-cta-primary,
+.project-modal-cta {
+  position: relative;
+  overflow: hidden;
+}
+
+.catalog-cta-primary::after,
+.project-modal-cta::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 70%
+  );
+  transform: rotate(25deg) translateX(-100%);
+  animation: shimmer-sweep 4s ease-in-out infinite;
+}
+
+@keyframes shimmer-sweep {
+  0% {
+    transform: rotate(25deg) translateX(-100%);
+  }
+  30%, 100% {
+    transform: rotate(25deg) translateX(100%);
+  }
+}

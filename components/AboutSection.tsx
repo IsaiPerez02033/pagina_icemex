@@ -4,11 +4,13 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import AnimatedCounter from "@/components/AnimatedCounter";
+
 const stats = [
-  { n: "+20", label: "Años de experiencia" },
-  { n: "176", label: "Productos en catálogo" },
-  { n: "07", label: "Líneas de producto" },
-  { n: "100%", label: "Tecnología LED" },
+  { val: 20, prefix: "+", suffix: "", label: "Años de experiencia" },
+  { val: 176, prefix: "", suffix: "", label: "Productos en catálogo" },
+  { val: 7, prefix: "0", suffix: "", label: "Líneas de producto" },
+  { val: 100, prefix: "", suffix: "%", label: "Tecnología LED" },
 ];
 
 const certifications = [
@@ -213,7 +215,7 @@ export default function AboutSection() {
                   lineHeight: 1,
                 }}
               >
-                {s.n}
+                <AnimatedCounter value={s.val} prefix={s.prefix} suffix={s.suffix} />
               </span>
               <span
                 style={{

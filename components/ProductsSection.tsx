@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { products, lineNames, type ProductLine } from "@/lib/products";
 import LineIllustration from "@/components/LineIllustrations";
+import SpotlightCard from "@/components/SpotlightCard";
 
 interface LineCard {
   line: ProductLine;
@@ -167,28 +168,29 @@ export default function ProductsSection() {
         >
           {lineCards.map((c) => {
             return (
-              <Link
-                key={c.line}
-                href="/catalogo"
-                className="line-card interactive"
-              >
-                <div className="line-card-illu" aria-hidden>
-                  <LineIllustration line={c.line} />
-                  <div className="line-card-illu-overlay" />
-                </div>
-
-                <div className="line-card-body">
-                  <div className="line-card-meta">
-                    <span>
-                      {c.n} · Línea {c.line}
-                    </span>
+              <SpotlightCard key={c.line} className="p-0 border-none bg-transparent">
+                <Link
+                  href="/catalogo"
+                  className="line-card interactive group block w-full h-full"
+                >
+                  <div className="line-card-illu" aria-hidden>
+                    <LineIllustration line={c.line} />
+                    <div className="line-card-illu-overlay" />
                   </div>
 
-                  <h3 className="line-card-title">{lineNames[c.line]}</h3>
+                  <div className="line-card-body">
+                    <div className="line-card-meta">
+                      <span>
+                        {c.n} · Línea {c.line}
+                      </span>
+                    </div>
 
-                  <p className="line-card-tagline">{c.tagline}</p>
-                </div>
-              </Link>
+                    <h3 className="line-card-title">{lineNames[c.line]}</h3>
+
+                    <p className="line-card-tagline">{c.tagline}</p>
+                  </div>
+                </Link>
+              </SpotlightCard>
             );
           })}
         </div>

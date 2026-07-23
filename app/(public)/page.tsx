@@ -25,11 +25,13 @@ const AboutSection = dynamic(() => import("@/components/AboutSection"));
 const BrandsSection = dynamic(() => import("@/components/BrandsSection"));
 const ProductsSection = dynamic(() => import("@/components/ProductsSection"));
 const ServicesTeaser = dynamic(() => import("@/components/ServicesTeaser"));
+const ComparisonSlider = dynamic(() => import("@/components/ComparisonSlider"));
 const ProjectsCollage = dynamic(() => import("@/components/ProjectsCollage"));
 const CertificationsBanner = dynamic(
   () => import("@/components/CertificationsBanner")
 );
 const ContactSection = dynamic(() => import("@/components/ContactSection"));
+const AmbientAurora = dynamic(() => import("@/components/AmbientAurora"));
 
 export default function HomePage() {
   return (
@@ -68,10 +70,12 @@ export default function HomePage() {
       </div>
 
       <div style={{ position: "relative", background: "var(--bg-primary)" }}>
+        <AmbientAurora />
         <AboutSection />
         <BrandsSection />
         <ProductsSection />
         <ServicesTeaser />
+        <ComparisonSlider />
         <ProjectsCollage />
         <CertificationsBanner />
         <ContactSection />
