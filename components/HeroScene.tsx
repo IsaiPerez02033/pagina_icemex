@@ -445,21 +445,27 @@ function Luminaire({
   );
 }
 
-/* --- ETAPA 4: Encendido --- */
+/* --- ETAPA 4: Encendido y Cono Volumétrico --- */
 function PowerOn({ progressRef, palette }: { progressRef: React.RefObject<number>; palette: Palette }) {
   const lightRef = useRef<THREE.PointLight | null>(null);
   const circleRef = useRef<THREE.Mesh | null>(null);
+  const coneRef = useRef<THREE.Mesh | null>(null);
   const TOP_Y = 3.0;
 
   useFrame(() => {
     const stage = smoothstep(0.65, 1, progressRef.current);
     if (lightRef.current) {
-      lightRef.current.intensity = stage * 4;
+      lightRef.current.intensity = stage * 4.5;
     }
     if (circleRef.current) {
       const m = circleRef.current.material as THREE.MeshStandardMaterial;
-      m.opacity = stage * 0.6;
-      (m as any).emissiveIntensity = stage * 1.6;
+      m.opacity = stage * 0.65;
+      (m as any).emissiveIntensity = stage * 1.8;
+    }
+    if (coneRef.current) {
+      const m = coneRef.current.material as THREE.MeshBasicMaterial;
+      m.opacity = stage * 0.28;
+      coneRef.current.visible = stage > 0.02;
     }
   });
 
@@ -473,6 +479,19 @@ function PowerOn({ progressRef, palette }: { progressRef: React.RefObject<number
         distance={10}
         decay={2}
       />
+
+      {/* Cono de Luz Volumétrica 3D que ilumina hacia abajo */}
+      <mesh ref={coneRef} position={[1.2, 1.45, 0]}>
+        <cylinderGeometry args={[0.25, 1.6, 2.9, 32, 1, true]} />
+        <meshBasicMaterial
+          color={palette.warmLight}
+          transparent
+          opacity={0}
+          side={THREE.DoubleSide}
+          depthWrite={false}
+          blending={THREE.AdditiveBlending}
+        />
+      </mesh>
 
       {/* Halo emisivo bajo el poste */}
       <mesh
@@ -494,19 +513,33 @@ function PowerOn({ progressRef, palette }: { progressRef: React.RefObject<number
   );
 }
 
-/* --- Cámara con pull-back --- */
+/* --- Cámara Cinemática Orbital con Parallax e Inercia de Puntero --- */
 function CameraRig({ progressRef }: { progressRef: React.RefObject<number> }) {
-  const { camera } = useThree();
+  const { camera, pointer } = useThree();
 
   useFrame(() => {
     const p = progressRef.current;
-    const stage = smoothstep(0.65, 1, p);
-    // Cámara alejada y centrada para que TODO el poste de 3m quepa en frame
-    camera.position.x = 0;
-    camera.position.z = THREE.MathUtils.lerp(8, 10, stage);
-    camera.position.y = THREE.MathUtils.lerp(1.5, 1.9, smoothstep(0, 1, p));
-    // LookAt al centro del conjunto (mitad del fuste)
-    camera.lookAt(0.5, 1.5, 0);
+    
+    // Inercia de puntero (mouse/touch)
+    const targetPointerX = pointer.x * 0.7;
+    const targetPointerY = pointer.y * 0.4;
+
+    // Órbita cinemática en espiral según el progreso del scroll (0..1)
+    const orbitAngle = p * Math.PI * 0.35; // Órbita suave de 60 grados
+    const baseRadius = THREE.MathUtils.lerp(8.2, 9.6, smoothstep(0.5, 1, p));
+    const camY = THREE.MathUtils.lerp(1.2, 2.3, smoothstep(0, 0.85, p));
+
+    const targetX = Math.sin(orbitAngle) * baseRadius * 0.35 + targetPointerX;
+    const targetZ = Math.cos(orbitAngle) * baseRadius + targetPointerY;
+
+    // Suavizado lerp ultra-fluido
+    camera.position.x = THREE.MathUtils.lerp(camera.position.x, targetX, 0.08);
+    camera.position.y = THREE.MathUtils.lerp(camera.position.y, camY + targetPointerY, 0.08);
+    camera.position.z = THREE.MathUtils.lerp(camera.position.z, targetZ, 0.08);
+
+    // LookAt dinámico que persigue la construcción del poste
+    const lookY = THREE.MathUtils.lerp(0.4, 1.7, p);
+    camera.lookAt(0.4, lookY, 0);
   });
 
   return null;
@@ -753,8 +786,8 @@ export default function HeroScene() {
 }
 
 function stageLabel(p: number) {
-  if (p < 0.1) return "01";
-  if (p < 0.4) return "02";
-  if (p < 0.65) return "03";
-  return "04";
+  if (p < 0.25) return "01 · Cimentación & Anclas";
+  if (p < 0.5) return "02 · Elevación de Fuste";
+  if (p < 0.75) return "03 · Montaje de Luminaria LED";
+  return "04 · Encendido & Fotometría";
 }
