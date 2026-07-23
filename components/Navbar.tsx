@@ -110,12 +110,10 @@ export default function Navbar() {
             <LimelightNav
               items={links}
               activeIndex={activeIndex}
-              className="h-12 border-none bg-transparent shadow-none"
+              className="h-full border-none bg-transparent shadow-none"
               iconContainerClassName="px-3 py-1 text-sm font-medium"
             />
-            <div className="pl-2 border-l border-white/10 dark:border-white/10">
-              <ThemeToggle />
-            </div>
+            <ThemeToggle />
           </div>
 
           {/* Theme toggle mobile (junto a la hamburguesa) */}

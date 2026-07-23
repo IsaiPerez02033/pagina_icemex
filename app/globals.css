@@ -320,15 +320,16 @@ html[data-theme="light"] .navbar-open .navbar-inner {
 
 /* === ESTILOS TEMA CLARO / OSCURO PARA LIMELIGHT NAV === */
 .limelight-nav-container {
-  background: rgba(13, 17, 23, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: none;
 }
 
 html[data-theme="light"] .limelight-nav-container {
-  background: rgba(242, 244, 248, 0.88);
-  border: 1px solid rgba(0, 127, 163, 0.22);
-  box-shadow: 0 4px 20px rgba(0, 127, 163, 0.08);
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .limelight-pill {
