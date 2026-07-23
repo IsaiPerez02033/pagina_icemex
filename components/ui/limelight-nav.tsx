@@ -98,7 +98,7 @@ export const LimelightNav = ({
   const navItemRefs = useRef<(HTMLAnchorElement | HTMLDivElement | null)[]>([]);
   const limelightRef = useRef<HTMLDivElement | null>(null);
 
-  useIsomorphicLayoutEffect(() => {
+  const updateLimelightPosition = () => {
     if (items.length === 0) return;
 
     const limelight = limelightRef.current;
@@ -110,11 +110,21 @@ export const LimelightNav = ({
       limelight.style.left = `${newLeft}px`;
 
       if (!isReady) {
-        const timer = setTimeout(() => setIsReady(true), 50);
-        return () => clearTimeout(timer);
+        setTimeout(() => setIsReady(true), 50);
       }
     }
-  }, [activeIndex, isReady, items]);
+  };
+
+  useIsomorphicLayoutEffect(() => {
+    updateLimelightPosition();
+  }, [activeIndex, items]);
+
+  // Recalcular posición al cambiar tamaño de pantalla
+  useEffect(() => {
+    const handleResize = () => updateLimelightPosition();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [activeIndex, items]);
 
   if (items.length === 0) {
     return null;
@@ -130,26 +140,47 @@ export const LimelightNav = ({
 
   return (
     <nav
-      className={`relative inline-flex items-center h-16 rounded-lg bg-card text-foreground border px-2 ${className}`}
+      className={`relative inline-flex items-center h-16 rounded-2xl bg-[#0D1117]/90 text-foreground border border-white/10 px-2 overflow-hidden backdrop-blur-md ${className}`}
     >
+      {/* Luz Spotlight activa */}
+      <div
+        ref={limelightRef}
+        className={`absolute top-0 z-10 w-12 h-[4px] rounded-full bg-white shadow-[0_0_12px_rgba(255,255,255,0.9),0_0_22px_rgba(0,212,255,0.8)] ${
+          isReady ? "transition-[left] duration-300 ease-in-out" : ""
+        } ${limelightClassName}`}
+        style={{ left: "-999px" }}
+      >
+        {/* Cono de luz en forma de trapecio con gradiente */}
+        <div
+          className="absolute left-1/2 -translate-x-1/2 top-[4px] w-20 h-14 pointer-events-none"
+          style={{
+            clipPath: "polygon(22% 0%, 78% 0%, 100% 100%, 0% 100%)",
+            background:
+              "linear-gradient(to bottom, rgba(255, 255, 255, 0.38) 0%, rgba(0, 212, 255, 0.18) 50%, rgba(0, 212, 255, 0) 100%)",
+          }}
+        />
+      </div>
+
       {items.map(({ id, icon, label, href, onClick }, index) => {
         const isActive = activeIndex === index;
         const itemContent = (
           <>
             {icon &&
               cloneElement(icon as React.ReactElement<{ className?: string }>, {
-                className: `w-5 h-5 transition-opacity duration-100 ease-in-out ${
-                  isActive ? "opacity-100 text-primary" : "opacity-50 hover:opacity-80"
+                className: `w-5 h-5 transition-all duration-200 ease-in-out ${
+                  isActive
+                    ? "opacity-100 text-white drop-shadow-[0_0_6px_rgba(255,255,255,0.9)] scale-105"
+                    : "opacity-40 text-gray-300 hover:opacity-80"
                 } ${icon.props?.className || ""} ${iconClassName}`,
               })}
             {label && (
               <span
-                className={`text-sm font-medium transition-all duration-150 ${
+                className={`text-sm font-medium transition-all duration-200 ${
                   icon ? "ml-2" : ""
                 } ${
                   isActive
-                    ? "text-primary font-semibold"
-                    : "text-muted-foreground hover:text-foreground opacity-70"
+                    ? "text-white font-semibold drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
+                    : "text-gray-400 hover:text-gray-200 opacity-60"
                 }`}
               >
                 {label}
@@ -163,7 +194,7 @@ export const LimelightNav = ({
           ref: (el: HTMLAnchorElement | null) => {
             navItemRefs.current[index] = el;
           },
-          className: `relative z-20 flex h-full cursor-pointer items-center justify-center px-4 py-2 select-none transition-colors ${iconContainerClassName}`,
+          className: `relative z-20 flex h-full cursor-pointer items-center justify-center px-4 py-2 select-none transition-all ${iconContainerClassName}`,
           onClick: () => handleItemClick(index, onClick),
           "aria-label": label || `Nav item ${index + 1}`,
         };
@@ -182,16 +213,6 @@ export const LimelightNav = ({
           </a>
         );
       })}
-
-      <div
-        ref={limelightRef}
-        className={`absolute top-0 z-10 w-11 h-[5px] rounded-full bg-primary shadow-[0_50px_15px_var(--primary)] ${
-          isReady ? "transition-[left] duration-300 ease-in-out" : ""
-        } ${limelightClassName}`}
-        style={{ left: "-999px" }}
-      >
-        <div className="absolute left-[-30%] top-[5px] w-[160%] h-14 [clip-path:polygon(5%_100%,25%_0,75%_0,95%_100%)] bg-gradient-to-b from-primary/30 to-transparent pointer-events-none" />
-      </div>
     </nav>
   );
 };
