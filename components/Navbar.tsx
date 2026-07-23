@@ -106,7 +106,7 @@ export default function Navbar() {
           </Link>
 
           {/* Links desktop con efecto LimelightNav */}
-          <div className="navbar-links-desktop-wrapper flex items-center gap-3">
+          <div className="navbar-links-desktop-wrapper hidden md:flex items-center gap-3">
             <LimelightNav
               items={links}
               activeIndex={activeIndex}

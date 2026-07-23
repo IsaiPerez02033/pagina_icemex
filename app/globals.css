@@ -611,7 +611,7 @@ html[data-theme="light"] .limelight-active-label {
   }
   .navbar-links-desktop,
   .navbar-links-desktop-wrapper {
-    display: none;
+    display: none !important;
   }
   .navbar-burger {
     display: block;

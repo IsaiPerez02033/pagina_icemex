@@ -148,12 +148,9 @@ export default function WhatsAppButton() {
           transform: translateY(-50%) translateX(0);
         }
 
-        @media (max-width: 640px) {
+        @media (max-width: 768px) {
           .wa-fab {
-            bottom: 20px;
-            right: 20px;
-            width: 56px;
-            height: 56px;
+            display: none !important;
           }
           .wa-tooltip {
             display: none;

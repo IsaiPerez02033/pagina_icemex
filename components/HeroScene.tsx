@@ -104,7 +104,13 @@ function useThemeMode(): "dark" | "light" {
 
 /** Detecta dispositivo móvil para reducir carga de GPU. */
 function useIsMobile() {
-  const [mobile, setMobile] = useState(false);
+  const [mobile, setMobile] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth < 768;
+    }
+    return false;
+  });
+
   useEffect(() => {
     let timeout: ReturnType<typeof setTimeout>;
     const check = () => {
