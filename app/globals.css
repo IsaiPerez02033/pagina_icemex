@@ -599,15 +599,20 @@ html[data-theme="light"] .limelight-active-label {
 /* Tablet/mobile: hamburguesa visible, links ocultos */
 @media (max-width: 960px) {
   .navbar {
-    padding: 14px 14px 0;
+    padding: 12px 16px 0;
   }
   .navbar-inner {
-    padding: 8px 16px 8px 18px;
+    padding: 0;
     gap: 12px;
-    min-height: 60px;
+    min-height: 48px;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
   }
   .navbar-logo {
-    height: 44px;
+    height: 40px;
   }
   .navbar-links-desktop,
   .navbar-links-desktop-wrapper {
@@ -625,15 +630,18 @@ html[data-theme="light"] .limelight-active-label {
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 10px 10px 0;
+    padding: 10px 12px 0;
   }
   .navbar-logo {
-    height: 40px;
+    height: 36px;
   }
   .navbar-inner {
-    padding: 6px 12px 6px 14px;
-    min-height: 56px;
-    border-radius: 999px;
+    padding: 0;
+    min-height: 44px;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
   }
 }
 
