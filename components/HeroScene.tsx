@@ -558,8 +558,25 @@ export default function HeroScene() {
   const palette = PALETTES[mode];
   const stage4 = smoothstep(0.75, 1, progress);
 
+  const [isHeroVisible, setIsHeroVisible] = useState(true);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const el = document.getElementById("hero-scroll");
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        setIsHeroVisible(entry.isIntersecting);
+      },
+      { threshold: 0.02 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
   return (
     <div
+      id="hero-scroll"
       style={{
         position: "relative",
         width: "100%",
@@ -571,10 +588,11 @@ export default function HeroScene() {
     >
       <Canvas
         key={mode}
+        frameloop={isHeroVisible ? "always" : "never"}
         shadows={isMobile ? false : "percentage"}
-        dpr={isMobile ? [1, 1] : [1, 2]}
+        dpr={isMobile ? 1 : [1, 1.5]}
         camera={{ position: [0, 1.5, 8], fov: 50, near: 0.1, far: 100 }}
-        gl={{ antialias: !isMobile, alpha: true }}
+        gl={{ antialias: !isMobile, alpha: true, powerPreference: isMobile ? "low-power" : "high-performance" }}
         style={{
           width: "100%",
           height: "100%",

@@ -51,11 +51,7 @@ export default function HomePage() {
       </h1>
       <div
         id="hero-scroll"
-        style={{
-          position: "relative",
-          height: "300dvh",
-          width: "100%",
-        }}
+        className="hero-scroll-container"
       >
         <section
           id="inicio"

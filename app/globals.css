@@ -397,6 +397,39 @@ html[data-theme="light"] .limelight-active-label {
   opacity: 0.95;
 }
 
+/* === OPTIMIZACIONES MOBILE-FIRST Y ACELERACIÓN POR HARDWARE === */
+.hero-scroll-container {
+  position: relative;
+  height: 300dvh;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero-scroll-container {
+    height: 180dvh;
+  }
+}
+
+.hardware-accelerated,
+.line-card,
+.collage-item {
+  will-change: transform, opacity;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Wrapper del toggle en mobile (al lado de la hamburguesa) */
 .navbar-mobile-actions {
   display: none;
