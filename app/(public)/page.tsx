@@ -25,7 +25,6 @@ const AboutSection = dynamic(() => import("@/components/AboutSection"));
 const BrandsSection = dynamic(() => import("@/components/BrandsSection"));
 const ProductsSection = dynamic(() => import("@/components/ProductsSection"));
 const ServicesTeaser = dynamic(() => import("@/components/ServicesTeaser"));
-const ComparisonSlider = dynamic(() => import("@/components/ComparisonSlider"));
 const ProjectsCollage = dynamic(() => import("@/components/ProjectsCollage"));
 const CertificationsBanner = dynamic(
   () => import("@/components/CertificationsBanner")
@@ -75,7 +74,6 @@ export default function HomePage() {
         <BrandsSection />
         <ProductsSection />
         <ServicesTeaser />
-        <ComparisonSlider />
         <ProjectsCollage />
         <CertificationsBanner />
         <ContactSection />
