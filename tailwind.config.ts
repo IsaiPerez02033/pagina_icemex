@@ -17,6 +17,10 @@ const config: Config = {
         "text-muted": "var(--text-muted)",
         "grid-lines": "var(--grid-lines)",
         metal: "var(--metal)",
+        primary: "var(--accent-cyan)",
+        card: "rgba(var(--card-rgb), 0.85)",
+        foreground: "var(--text-primary)",
+        "muted-foreground": "var(--text-muted)",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],

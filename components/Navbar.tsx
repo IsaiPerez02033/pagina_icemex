@@ -1,21 +1,51 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
+import { usePathname } from "next/navigation";
 import IcemexLogo from "@/components/IcemexLogo";
 import ThemeToggle from "@/components/ThemeToggle";
+import { LimelightNav, NavItem } from "@/components/ui/limelight-nav";
+import { Home, Info, Briefcase, BookOpen, Mail } from "lucide-react";
 
-const links = [
-  { href: "/", label: "Inicio" },
-  { href: "/nosotros", label: "Nosotros" },
-  { href: "/servicios", label: "Servicios" },
-  { href: "/catalogo", label: "Catálogo" },
-  { href: "/#contacto", label: "Contacto" },
+const links: (NavItem & { href: string; label: string })[] = [
+  { id: "inicio", href: "/", label: "Inicio", icon: <Home className="w-4 h-4" /> },
+  { id: "nosotros", href: "/nosotros", label: "Nosotros", icon: <Info className="w-4 h-4" /> },
+  { id: "servicios", href: "/servicios", label: "Servicios", icon: <Briefcase className="w-4 h-4" /> },
+  { id: "catalogo", href: "/catalogo", label: "Catálogo", icon: <BookOpen className="w-4 h-4" /> },
+  { id: "contacto", href: "/#contacto", label: "Contacto", icon: <Mail className="w-4 h-4" /> },
 ];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const [activeHash, setActiveHash] = useState("");
+
+  // Detección de hash de la URL (por ejemplo para /#contacto)
+  useEffect(() => {
+    const updateHash = () => {
+      if (typeof window !== "undefined") {
+        setActiveHash(window.location.hash);
+      }
+    };
+    updateHash();
+    window.addEventListener("hashchange", updateHash);
+    return () => window.removeEventListener("hashchange", updateHash);
+  }, []);
+
+  // Calcular el índice del elemento activo según la ruta actual
+  const activeIndex = useMemo(() => {
+    if (pathname === "/" && activeHash === "#contacto") {
+      return 4; // Contacto
+    }
+    const idx = links.findIndex((l) => {
+      if (l.href === "/") return pathname === "/";
+      if (l.href.startsWith("/#")) return false;
+      return pathname.startsWith(l.href);
+    });
+    return idx !== -1 ? idx : 0;
+  }, [pathname, activeHash]);
 
   // Detección de scroll para cambiar la apariencia del navbar
   useEffect(() => {
@@ -75,21 +105,19 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Links desktop */}
-          <ul className="navbar-links-desktop">
-            {links.map((l) => (
-              <li key={l.href}>
-                <Link href={l.href} className="navlink">
-                  <span className="navlink-label">{l.label}</span>
-                  <span className="navlink-underline" aria-hidden />
-                  <span className="navlink-glow" aria-hidden />
-                </Link>
-              </li>
-            ))}
-            <li>
+          {/* Links desktop con efecto LimelightNav */}
+          <div className="navbar-links-desktop-wrapper flex items-center gap-3">
+            <LimelightNav
+              items={links}
+              activeIndex={activeIndex}
+              className="bg-transparent border-none p-0 h-12 rounded-full backdrop-blur-md"
+              limelightClassName="bg-[var(--accent-cyan)] shadow-[0_20px_18px_var(--accent-cyan)]"
+              iconContainerClassName="px-3 py-1 text-sm font-medium"
+            />
+            <div className="pl-2 border-l border-white/10 dark:border-white/10">
               <ThemeToggle />
-            </li>
-          </ul>
+            </div>
+          </div>
 
           {/* Theme toggle mobile (junto a la hamburguesa) */}
           <div className="navbar-mobile-actions">
@@ -111,8 +139,7 @@ export default function Navbar() {
         </nav>
       </header>
 
-      {/* Drawer mobile — fuera del header para evitar el bug del backdrop-filter
-          que crea un nuevo containing block para position: fixed */}
+      {/* Drawer mobile */}
       {open && (
         <div
           className="navbar-drawer"
@@ -131,10 +158,11 @@ export default function Navbar() {
               >
                 <Link
                   href={l.href}
-                  className="navlink-mobile interactive"
+                  className="navlink-mobile interactive flex items-center gap-2 justify-center"
                   onClick={() => setOpen(false)}
                 >
-                  {l.label}
+                  {l.icon}
+                  <span>{l.label}</span>
                 </Link>
               </li>
             ))}

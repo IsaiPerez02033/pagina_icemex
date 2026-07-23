@@ -475,7 +475,8 @@ html[data-theme="light"] .navbar-open .navbar-inner {
 
 /* === BREAKPOINTS NAVBAR === */
 /* Desktop por defecto: links visibles, hamburguesa oculta */
-.navbar-links-desktop {
+.navbar-links-desktop,
+.navbar-links-desktop-wrapper {
   display: flex;
 }
 .navbar-burger {
@@ -495,7 +496,8 @@ html[data-theme="light"] .navbar-open .navbar-inner {
   .navbar-logo {
     height: 44px;
   }
-  .navbar-links-desktop {
+  .navbar-links-desktop,
+  .navbar-links-desktop-wrapper {
     display: none;
   }
   .navbar-burger {
