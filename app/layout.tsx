@@ -5,7 +5,6 @@ import "./globals.css";
 import dynamic from "next/dynamic";
 
 const CustomCursor = dynamic(() => import("@/components/CustomCursor"));
-const MobileBottomBar = dynamic(() => import("@/components/MobileBottomBar"));
 
 const inter = Inter({
   subsets: ["latin"],
@@ -198,7 +197,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <CustomCursor />
         {children}
-        <MobileBottomBar />
         <Analytics />
         <script
           dangerouslySetInnerHTML={{
