@@ -411,11 +411,13 @@ html[data-theme="light"] .limelight-active-label {
   }
 }
 
+/* NOTA: no usamos `will-change` permanente aquí. Mantenerlo fijo crea capas
+   GPU que nunca se liberan e inflan la memoria en móvil (degradando el
+   scroll). GSAP ya activa/limpia `will-change` automáticamente durante cada
+   tween de reveal, que es cuando realmente se necesita. */
 .hardware-accelerated,
 .line-card,
 .collage-item {
-  will-change: transform, opacity;
-  transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -1774,6 +1776,26 @@ html[data-theme="light"] .icemex-logo--light {
 
 .animate-aurora-reverse {
   animation: aurora-reverse 22s ease-in-out infinite;
+}
+
+/* En móvil, un layer fijo + blur enorme animado repinta en cada frame de
+   scroll y traba el desplazamiento. Congelamos la animación y aligeramos el
+   blur; el efecto se conserva pero sin costo de recompositing continuo. */
+@media (max-width: 768px) {
+  .aurora-orb {
+    animation: none !important;
+    filter: blur(70px) !important;
+    transform: translateZ(0);
+  }
+  .ambient-aurora {
+    opacity: 0.28 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-orb {
+    animation: none !important;
+  }
 }
 
 /* Shimmer Light Sweep para botones CTA */

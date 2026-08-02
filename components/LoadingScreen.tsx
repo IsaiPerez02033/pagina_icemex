@@ -37,47 +37,54 @@ export default function LoadingScreen() {
 
     document.body.style.overflow = "hidden";
 
-    const tl = gsap.timeline({
-      onComplete: () => {
-        document.body.style.overflow = "";
-      },
-    });
+    // Tiempo mínimo de marca (para que no "parpadee") y tope máximo.
+    const MIN_MS = 450;
+    const MAX_MS = 1200;
+    const start = performance.now();
 
+    // Animación de entrada + barra corta. La barra se completa rápido; el
+    // cierre real depende de que la página esté lista (window load) o del tope.
+    const tl = gsap.timeline();
     tlRef.current = tl;
 
     tl.fromTo(
       logoRef.current,
-      { opacity: 0, scale: 0.9 },
-      { opacity: 1, scale: 1, duration: 0.6, ease: "power2.out" }
-    )
-      .fromTo(
-        barRef.current,
-        { width: "0%" },
-        { width: "100%", duration: 1.6, ease: "power2.inOut" },
-        "-=0.2"
-      )
-      .to(
-        containerRef.current,
-        {
-          opacity: 0,
-          duration: 0.5,
-          ease: "power2.inOut",
-          onComplete: () => {
-            setMounted(false);
-            requestAnimationFrame(() => {
-              try {
-                ScrollTrigger.refresh();
-              } catch {}
-            });
-          },
-        },
-        "+=0.15"
-      );
+      { opacity: 0, scale: 0.94 },
+      { opacity: 1, scale: 1, duration: 0.35, ease: "power2.out" }
+    ).fromTo(
+      barRef.current,
+      { width: "0%" },
+      { width: "100%", duration: 0.6, ease: "power2.inOut" },
+      "-=0.15"
+    );
+
+    let closeTimer: ReturnType<typeof setTimeout>;
+    let done = false;
+
+    const finish = () => {
+      if (done) return;
+      done = true;
+      const elapsed = performance.now() - start;
+      const wait = Math.max(0, MIN_MS - elapsed);
+      closeTimer = setTimeout(dismiss, wait);
+    };
+
+    // Cerrar en cuanto la ventana termine de cargar (o si ya cargó), con tope.
+    if (document.readyState === "complete") {
+      finish();
+    } else {
+      window.addEventListener("load", finish, { once: true });
+    }
+    const capTimer = setTimeout(finish, MAX_MS);
 
     return () => {
       tl.kill();
+      clearTimeout(closeTimer);
+      clearTimeout(capTimer);
+      window.removeEventListener("load", finish);
       document.body.style.overflow = "";
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (!mounted) return null;

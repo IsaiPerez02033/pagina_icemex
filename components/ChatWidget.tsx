@@ -263,7 +263,7 @@ export default function ChatWidget() {
           </svg>
         ) : (
           <img
-            src="/avatar_chatbot_icemex.png"
+            src="/avatar_chatbot_icemex.webp"
             alt="ICEMEXbot"
             style={{
               width: "100%",
@@ -328,7 +328,7 @@ export default function ChatWidget() {
             }}
           >
             <img
-              src="/avatar_chatbot_icemex.png"
+              src="/avatar_chatbot_icemex.webp"
               alt="ICEMEXbot"
               style={{
                 width: 36,

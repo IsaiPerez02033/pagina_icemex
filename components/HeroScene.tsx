@@ -551,6 +551,31 @@ function CameraRig({ progressRef }: { progressRef: React.RefObject<number> }) {
   return null;
 }
 
+/* --- Driver de frames bajo demanda ---
+   Con frameloop="demand" el canvas no renderiza salvo que lo pidamos. Este
+   loop invalida a un FPS acotado (30 en móvil, 60 en desktop) SOLO mientras el
+   hero está visible. Fuera del viewport no dibuja nada → no compite con el
+   scroll de las secciones y ahorra GPU/batería en móvil. */
+function FrameDriver({ active, fps }: { active: boolean; fps: number }) {
+  const invalidate = useThree((s) => s.invalidate);
+  useEffect(() => {
+    if (!active) return;
+    let raf = 0;
+    let last = 0;
+    const interval = 1000 / fps;
+    const loop = (t: number) => {
+      raf = requestAnimationFrame(loop);
+      if (t - last >= interval) {
+        last = t;
+        invalidate();
+      }
+    };
+    raf = requestAnimationFrame(loop);
+    return () => cancelAnimationFrame(raf);
+  }, [active, fps, invalidate]);
+  return null;
+}
+
 /* --- Escena interna --- */
 function Scene({ progressRef, palette, isMobile }: { progressRef: React.RefObject<number>; palette: Palette; isMobile: boolean }) {
   const baseRef = useRef<THREE.Mesh | null>(null);
@@ -627,7 +652,7 @@ export default function HeroScene() {
     >
       <Canvas
         key={mode}
-        frameloop={isHeroVisible ? "always" : "never"}
+        frameloop="demand"
         shadows={isMobile ? false : "percentage"}
         dpr={isMobile ? 1 : [1, 1.5]}
         camera={{ position: [0, 1.5, 8], fov: 50, near: 0.1, far: 100 }}
@@ -638,6 +663,7 @@ export default function HeroScene() {
           background: "transparent",
         }}
       >
+        <FrameDriver active={isHeroVisible} fps={isMobile ? 30 : 60} />
         <Scene progressRef={progressRef} palette={palette} isMobile={isMobile} />
         {!isMobile && progress > 0.65 && (
           <EffectComposer>
