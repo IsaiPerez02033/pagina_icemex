@@ -24,6 +24,12 @@ const highlights = [
     description:
       "Programa preventivo o correctivo para mantener tu inversión rindiendo años.",
   },
+  {
+    n: "04",
+    title: "Cámaras de seguridad",
+    description:
+      "Venta e instalación de videovigilancia CCTV/IP con acceso remoto desde tu celular.",
+  },
 ];
 
 export default function ServicesTeaser() {
@@ -129,9 +135,9 @@ export default function ServicesTeaser() {
               lineHeight: 1.7,
             }}
           >
-            Asesoramos, levantamos en sitio, instalamos con grúa HIAB propia y
-            damos mantenimiento. Un solo proveedor para todo el ciclo del
-            proyecto.
+            Asesoramos, levantamos en sitio, instalamos con grúa HIAB propia,
+            damos mantenimiento e instalamos cámaras de seguridad. Un solo
+            proveedor para todo el ciclo del proyecto.
           </p>
         </div>
 

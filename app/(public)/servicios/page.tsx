@@ -5,14 +5,15 @@ import { buildWhatsAppUrlProyectos } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "Servicios",
   description:
-    "Asesoría luminotécnica, levantamiento de obra, suministro directo de fábrica, instalación con grúa HIAB propia y mantenimiento preventivo/correctivo. Proveedor integral de iluminación pública, vialidades, parques y naves industriales en México.",
+    "Asesoría luminotécnica, levantamiento de obra, suministro directo de fábrica, instalación con grúa HIAB propia, mantenimiento preventivo/correctivo e instalación de cámaras de seguridad (CCTV / videovigilancia). Proveedor integral de iluminación y seguridad para vialidades, parques, naves industriales, comercios y residencias en México.",
   keywords: [
     "asesoría luminotécnica", "instalación de postes", "grúa HIAB", "mantenimiento de alumbrado", "suministro eléctrico", "levantamiento de obra", "iluminación México", "proveedor integral iluminación",
+    "cámaras de seguridad", "instalación de cámaras", "venta de cámaras", "cámaras de vigilancia", "CCTV", "videovigilancia", "sistemas de seguridad", "cámaras IP", "seguridad",
   ],
   openGraph: {
-    title: "Servicios · ICEMEX — Asesoría, instalación y mantenimiento",
+    title: "Servicios · ICEMEX — Iluminación, instalación y cámaras de seguridad",
     description:
-      "Más que un proveedor: asesoría luminotécnica, levantamiento en sitio, suministro, instalación con grúa HIAB propia y mantenimiento preventivo. Todo el ciclo en un solo equipo.",
+      "Más que un proveedor: asesoría luminotécnica, levantamiento en sitio, suministro, instalación con grúa HIAB propia, mantenimiento preventivo e instalación de cámaras de seguridad (CCTV). Todo el ciclo en un solo equipo.",
   },
 };
 
@@ -75,6 +76,18 @@ const services = [
       "Mantenimiento preventivo programado",
       "Atención correctiva 48h hábiles",
       "Reporte de estado del parque",
+    ],
+  },
+  {
+    n: "06",
+    title: "Cámaras de seguridad",
+    tagline: "CCTV y videovigilancia",
+    description:
+      "Venta e instalación de sistemas de videovigilancia CCTV e IP: cámaras, DVR/NVR, cableado estructurado y configuración de acceso remoto desde tu celular. Protege vialidades, obras, naves industriales, comercios y residencias con la misma cuadrilla que instala tu iluminación.",
+    deliverables: [
+      "Suministro de cámaras HD/IP, DVR y NVR",
+      "Instalación, cableado y acceso remoto (app móvil)",
+      "Mantenimiento y soporte del sistema",
     ],
   },
 ];
@@ -157,8 +170,8 @@ export default function ServiciosPage() {
           >
             Vendemos luminarias, postes y herrajes — pero también te asesoramos
             antes, levantamos la obra en sitio, instalamos con nuestra propia
-            grúa HIAB y damos mantenimiento después. Un solo interlocutor para
-            todo el ciclo.
+            grúa HIAB, damos mantenimiento después e instalamos tus cámaras de
+            seguridad. Un solo interlocutor para todo el ciclo.
           </p>
 
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
@@ -291,7 +304,7 @@ export default function ServiciosPage() {
               maxWidth: 720,
             }}
           >
-            Cinco frentes,
+            Seis frentes,
             <br />
             <span style={{ color: "var(--accent-cyan)" }}>un mismo equipo</span>
           </h2>

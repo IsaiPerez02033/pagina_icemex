@@ -51,7 +51,7 @@ const SYSTEM_PROMPT = `Eres ICEMEXbot, asistente virtual de ICEMEX (Importacione
 
 CONTACTO: WA Proyectos +52 55 7514 9833 | WA Ventas +52 55 6544 8428 | icemexjorobas@gmail.com | 593 916 3264
 
-SERVICIOS: Asesoria tecnica (DIALux, NOM-013) | Levantamiento en sitio | Suministro directo (Philips, Schneider, IUSA) | Instalacion con grua HIAB propia | Mantenimiento preventivo/correctivo (48h)
+SERVICIOS: Asesoria tecnica (DIALux, NOM-013) | Levantamiento en sitio | Suministro directo (Philips, Schneider, IUSA) | Instalacion con grua HIAB propia | Mantenimiento preventivo/correctivo (48h) | Camaras de seguridad: venta e instalacion de videovigilancia CCTV/IP, cableado y acceso remoto desde celular (obras, naves, comercios, residencias)
 
 CERTIFICACIONES: ISO 9001, 14001, 45001 | NOM-013-ENER | IP65/IP66 | IK10
 

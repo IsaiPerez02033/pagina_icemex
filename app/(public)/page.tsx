@@ -17,6 +17,12 @@ export const metadata: Metadata = {
     "proyectos de alumbrado",
     "iluminación solar México",
     "reflectores LED industriales",
+    "cámaras de seguridad",
+    "instalación de cámaras",
+    "venta de cámaras",
+    "CCTV",
+    "videovigilancia",
+    "seguridad",
   ],
   openGraph: { title: "ICEMEX — Iluminación pública, postes y material eléctrico" },
 };
