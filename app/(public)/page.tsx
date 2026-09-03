@@ -50,23 +50,7 @@ export default function HomePage() {
       >
         ICEMEX — Iluminación pública, postes y luminarias LED en México
       </h1>
-      <div
-        id="hero-scroll"
-        className="hero-scroll-container"
-      >
-        <section
-          id="inicio"
-          style={{
-            position: "sticky",
-            top: 0,
-            width: "100%",
-            height: "100dvh",
-            overflow: "hidden",
-          }}
-        >
-          <HeroSection />
-        </section>
-      </div>
+      <HeroSection />
 
       <div style={{ position: "relative", background: "var(--bg-primary)" }}>
         <AmbientAurora />

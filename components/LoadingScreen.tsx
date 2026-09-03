@@ -17,17 +17,22 @@ export default function LoadingScreen() {
     if (!container) return;
     tlRef.current?.kill();
     document.body.style.overflow = "";
+    const finalize = () => {
+      setMounted(false);
+      try {
+        ScrollTrigger.refresh();
+      } catch {}
+    };
+    // Fallback duro: si el rAF/gsap está pausado (p. ej. pestaña en segundo
+    // plano) la animación no completa; garantizamos el desmontaje igualmente.
+    const hard = setTimeout(finalize, 450);
     gsap.to(container, {
       opacity: 0,
       duration: 0.35,
       ease: "power2.inOut",
       onComplete: () => {
-        setMounted(false);
-        requestAnimationFrame(() => {
-          try {
-            ScrollTrigger.refresh();
-          } catch {}
-        });
+        clearTimeout(hard);
+        finalize();
       },
     });
   };

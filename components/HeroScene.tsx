@@ -640,7 +640,7 @@ export default function HeroScene() {
 
   return (
     <div
-      id="hero-scroll"
+      className="hero-canvas-stage"
       style={{
         position: "relative",
         width: "100%",

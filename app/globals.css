@@ -411,6 +411,146 @@ html[data-theme="light"] .limelight-active-label {
   }
 }
 
+/* === HERO ESTÁTICO (fallback sin WebGL / gama baja) === */
+.hero-static {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  background: radial-gradient(
+    ellipse at center,
+    var(--bg-secondary) 0%,
+    var(--bg-primary) 70%
+  );
+}
+
+.hero-static-stage {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Rejilla de piso sutil (una sola pintada, sin animación) */
+.hero-static-grid {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 42%;
+  background-image: linear-gradient(
+      to right,
+      rgba(var(--cyan-rgb), 0.14) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(var(--cyan-rgb), 0.14) 1px, transparent 1px);
+  background-size: 46px 46px;
+  -webkit-mask-image: linear-gradient(to top, #000 0%, transparent 100%);
+  mask-image: linear-gradient(to top, #000 0%, transparent 100%);
+  transform: perspective(520px) rotateX(62deg);
+  transform-origin: bottom center;
+  opacity: 0.5;
+}
+
+/* Poste metálico */
+.hero-static-pole {
+  position: absolute;
+  right: 26%;
+  bottom: 30%;
+  width: 6px;
+  height: 40%;
+  border-radius: 3px;
+  background: linear-gradient(
+    to right,
+    rgba(var(--text-rgb), 0.18),
+    rgba(var(--text-rgb), 0.5),
+    rgba(var(--text-rgb), 0.18)
+  );
+}
+
+/* Cono de luz cálida */
+.hero-static-cone {
+  position: absolute;
+  right: 12%;
+  bottom: 24%;
+  width: 34vw;
+  max-width: 380px;
+  height: 46%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 208, 128, 0.32),
+    rgba(255, 208, 128, 0)
+  );
+  clip-path: polygon(42% 0, 58% 0, 100% 100%, 0% 100%);
+  filter: blur(2px);
+}
+
+/* Charco de luz en el piso */
+.hero-static-pool {
+  position: absolute;
+  right: 8%;
+  bottom: 22%;
+  width: 40vw;
+  max-width: 440px;
+  height: 90px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 208, 128, 0.28) 0%,
+    rgba(255, 208, 128, 0) 70%
+  );
+}
+
+html[data-theme="light"] .hero-static-cone,
+html[data-theme="light"] .hero-static-pool {
+  filter: none;
+  opacity: 0.85;
+}
+
+.hero-static-hud {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  padding: clamp(110px, 14vw, 140px) clamp(20px, 4vw, 48px)
+    clamp(28px, 4vw, 48px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-static-copy {
+  max-width: 760px;
+}
+
+.hero-static-title {
+  font-size: clamp(32px, 4.6vw, 64px);
+  line-height: 1.06;
+  color: var(--text-primary);
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-static-title span {
+  color: var(--accent-cyan);
+}
+
+.hero-static-sub {
+  margin-top: 24px;
+  max-width: 480px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.hero-static-bottom {
+  color: var(--text-muted);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
 /* NOTA: no usamos `will-change` permanente aquí. Mantenerlo fijo crea capas
    GPU que nunca se liberan e inflan la memoria en móvil (degradando el
    scroll). GSAP ya activa/limpia `will-change` automáticamente durante cada
