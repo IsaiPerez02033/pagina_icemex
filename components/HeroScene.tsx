@@ -551,27 +551,47 @@ function CameraRig({ progressRef }: { progressRef: React.RefObject<number> }) {
   return null;
 }
 
-/* --- Driver de frames bajo demanda ---
-   Con frameloop="demand" el canvas no renderiza salvo que lo pidamos. Este
-   loop invalida a un FPS acotado (30 en móvil, 60 en desktop) SOLO mientras el
-   hero está visible. Fuera del viewport no dibuja nada → no compite con el
-   scroll de las secciones y ahorra GPU/batería en móvil. */
+/* Render only during interaction and while camera/scroll interpolation settles. */
 function FrameDriver({ active, fps }: { active: boolean; fps: number }) {
-  const invalidate = useThree((s) => s.invalidate);
+  const invalidate = useThree((state) => state.invalidate);
   useEffect(() => {
     if (!active) return;
     let raf = 0;
     let last = 0;
-    const interval = 1000 / fps;
-    const loop = (t: number) => {
-      raf = requestAnimationFrame(loop);
-      if (t - last >= interval) {
-        last = t;
+    let until = 0;
+    const loop = (time: number) => {
+      raf = 0;
+      if (document.hidden) return;
+      if (time - last >= 1000 / fps) {
+        last = time;
         invalidate();
       }
+      if (time < until) raf = requestAnimationFrame(loop);
     };
-    raf = requestAnimationFrame(loop);
-    return () => cancelAnimationFrame(raf);
+    const wake = () => {
+      if (document.hidden) return;
+      until = performance.now() + 1200;
+      if (!raf) raf = requestAnimationFrame(loop);
+    };
+    const visibility = () => {
+      if (document.hidden) { cancelAnimationFrame(raf); raf = 0; }
+      else wake();
+    };
+    window.addEventListener("scroll", wake, { passive: true });
+    window.addEventListener("pointermove", wake, { passive: true });
+    window.addEventListener("resize", wake);
+    document.addEventListener("visibilitychange", visibility);
+    const theme = new MutationObserver(wake);
+    theme.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+    wake();
+    return () => {
+      cancelAnimationFrame(raf);
+      theme.disconnect();
+      window.removeEventListener("scroll", wake);
+      window.removeEventListener("pointermove", wake);
+      window.removeEventListener("resize", wake);
+      document.removeEventListener("visibilitychange", visibility);
+    };
   }, [active, fps, invalidate]);
   return null;
 }
@@ -700,13 +720,7 @@ export default function HeroScene() {
               textTransform: "uppercase",
             }}
           >
-            Iluminamos
-            <br />
-            <span style={{ color: "var(--accent-cyan)" }}>tus sueños</span>,
-            <br />
-            materializamos
-            <br />
-            tus ideas
+            Iluminación que transforma.<br /><span style={{ color: "var(--accent-cyan)" }}>Seguridad que protege.</span>
           </h1>
           <p
             style={{
@@ -720,8 +734,9 @@ export default function HeroScene() {
           >
             Fabricación, distribución y comercialización de material eléctrico,
             herrajes, postería y luminarias LED. Más de 20 años iluminando
-            México.
+            México. Venta e instalación de cámaras de seguridad.
           </p>
+          <div className="hero-actions" style={{pointerEvents:"auto",display:"flex",gap:12,flexWrap:"wrap",marginTop:24}}><a className="action-primary" href="/productos">Explorar productos ↗</a><a className="action-secondary" href="/#contacto">Cotizar mi proyecto</a></div>
         </div>
 
         <div

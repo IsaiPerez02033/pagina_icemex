@@ -3,6 +3,7 @@ import Link from "next/link";
 import { buildWhatsAppUrlProyectos } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://icemex.mx/servicios" },
   title: "Servicios",
   description:
     "Asesoría luminotécnica, levantamiento de obra, suministro directo de fábrica, instalación con grúa HIAB propia, mantenimiento preventivo/correctivo e instalación de cámaras de seguridad (CCTV / videovigilancia). Proveedor integral de iluminación y seguridad para vialidades, parques, naves industriales, comercios y residencias en México.",
@@ -127,7 +128,7 @@ export default function ServiciosPage() {
           }),
         }}
       />
-      <div style={{ paddingTop: 140, minHeight: "100vh" }}>
+      <div style={{ paddingTop: 32, minHeight: "100vh" }}>
       {/* Hero */}
       <header style={{ padding: "60px 32px 100px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
@@ -229,7 +230,7 @@ export default function ServiciosPage() {
             maxWidth: 1200,
             margin: "0 auto",
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))",
             gap: 1,
             background: "rgba(var(--cyan-rgb), 0.1)",
             border: "1px solid rgba(var(--cyan-rgb), 0.1)",
@@ -312,7 +313,7 @@ export default function ServiciosPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 320px), 1fr))",
               gap: 20,
             }}
           >

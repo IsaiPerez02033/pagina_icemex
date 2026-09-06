@@ -58,6 +58,9 @@ function canRender3D(): boolean {
       canvas.getContext("webgl") ||
       canvas.getContext("experimental-webgl");
     if (!gl) return false;
+    (gl as WebGLRenderingContext)
+      .getExtension("WEBGL_lose_context")
+      ?.loseContext();
   } catch {
     return false;
   }

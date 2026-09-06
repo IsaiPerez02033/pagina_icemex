@@ -148,7 +148,7 @@ export default function CertificationsBanner() {
           className="cert-grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 260px), 1fr))",
             gap: 16,
             marginBottom: 80,
           }}

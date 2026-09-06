@@ -3,6 +3,7 @@ import { products, lineNames } from "@/lib/products";
 import LeadMagnetForm from "@/components/LeadMagnetForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://icemex.mx/catalogo" },
   title: "Catálogo PDF 2026",
   description:
     "Descarga gratis el catálogo oficial ICEMEX 2026: 176 páginas con fichas técnicas de luminarias LED, postes, reflectores, iluminación solar, herrajes y material eléctrico. Especificaciones, certificaciones y aplicaciones.",
@@ -39,7 +40,7 @@ export default function CatalogoPage() {
           }),
         }}
       />
-      <div style={{ paddingTop: 140, minHeight: "100vh" }}>
+      <div style={{ paddingTop: 32, minHeight: "100vh" }}>
       <div
         style={{
           maxWidth: 1200,
@@ -238,7 +239,7 @@ export default function CatalogoPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))",
               gap: 12,
             }}
           >
@@ -283,7 +284,7 @@ export default function CatalogoPage() {
         <section
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))",
             gap: 1,
             background: "rgba(var(--cyan-rgb), 0.1)",
             border: "1px solid rgba(var(--cyan-rgb), 0.1)",

@@ -144,7 +144,7 @@ export default function ServicesTeaser() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))",
             gap: 16,
             marginBottom: 48,
           }}
@@ -189,7 +189,7 @@ export default function ServicesTeaser() {
                   lineHeight: 1.2,
                 }}
               >
-                {h.title}
+                {h.title === "Cámaras de seguridad" ? <Link href="/servicios/camaras-de-seguridad">{h.title} ↗</Link> : h.title}
               </h3>
               <p
                 style={{

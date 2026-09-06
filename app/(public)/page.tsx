@@ -36,33 +36,17 @@ const CertificationsBanner = dynamic(
   () => import("@/components/CertificationsBanner")
 );
 const ContactSection = dynamic(() => import("@/components/ContactSection"));
-const AmbientAurora = dynamic(() => import("@/components/AmbientAurora"));
 
 export default function HomePage() {
   return (
     <>
-      <h1
-        style={{
-          position: "absolute",
-          width: 1,
-          height: 1,
-          padding: 0,
-          margin: -1,
-          overflow: "hidden",
-          clip: "rect(0,0,0,0)",
-          whiteSpace: "nowrap",
-          border: 0,
-        }}
-      >
-        ICEMEX — Iluminación pública, postes y luminarias LED en México
-      </h1>
       <HeroSection />
 
       <div style={{ position: "relative", background: "var(--bg-primary)" }}>
-        <AmbientAurora />
-        <AboutSection />
+
         <BrandsSection />
         <ProductsSection />
+        <AboutSection />
         <ServicesTeaser />
         <ProjectsCollage />
         <CertificationsBanner />

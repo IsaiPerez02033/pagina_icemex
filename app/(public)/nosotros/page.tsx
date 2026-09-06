@@ -4,6 +4,7 @@ import IcemexLogo from "@/components/IcemexLogo";
 import CertificationsBanner from "@/components/CertificationsBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://icemex.mx/nosotros" },
   title: "Nosotros",
   description:
     "ICEMEX S.A. de C.V. — Empresa mexicana con más de 20 años fabricando y distribuyendo luminarias LED, postes, herrajes y material eléctrico. Historia, misión, visión, valores y certificaciones ISO 9001, 14001, 45001, NOM-013-ENER.",
@@ -101,7 +102,7 @@ export default function NosotrosPage() {
           }),
         }}
       />
-      <div style={{ paddingTop: 140, minHeight: "100vh" }}>
+      <div style={{ paddingTop: 32, minHeight: "100vh" }}>
       {/* Hero */}
       <header style={{ padding: "60px 32px 100px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
@@ -166,7 +167,7 @@ export default function NosotrosPage() {
             maxWidth: 1200,
             margin: "0 auto",
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 360px), 1fr))",
             gap: 48,
           }}
         >
@@ -415,7 +416,7 @@ export default function NosotrosPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 260px), 1fr))",
               gap: 1,
               background: "rgba(var(--cyan-rgb), 0.1)",
               border: "1px solid rgba(var(--cyan-rgb), 0.1)",

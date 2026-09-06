@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function PrivacidadPage() {
   return (
-    <div style={{ paddingTop: 140, minHeight: "100vh", padding: "140px 32px 100px" }}>
+    <div style={{ paddingTop: 32, minHeight: "100vh", padding: "48px 24px 80px" }}>
       <div style={{ maxWidth: 800, margin: "0 auto" }}>
         <p
           style={{

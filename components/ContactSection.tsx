@@ -69,7 +69,7 @@ export default function ContactSection() {
           maxWidth: 1400,
           margin: "0 auto",
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))",
+          gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 360px), 1fr))",
           gap: 64,
           position: "relative",
         }}
@@ -111,7 +111,7 @@ export default function ContactSection() {
               maxWidth: 480,
             }}
           >
-            Cuéntanos sobre tu proyecto de iluminación. Nuestro equipo técnico
+            Cuéntanos sobre tu proyecto de iluminación o cámaras de seguridad. Nuestro equipo técnico
             te acompañará desde el dimensionamiento luminotécnico hasta la
             entrega en obra.
           </p>
@@ -280,7 +280,7 @@ export default function ContactSection() {
           <Field
             label="Tipo de proyecto"
             name="tipo"
-            placeholder="Vialidad, plaza, parque industrial..."
+            placeholder="Iluminación, cámaras, postes…"
             value={form.tipo}
             onChange={(v) => setForm({ ...form, tipo: v })}
           />
@@ -292,6 +292,7 @@ export default function ContactSection() {
             value={form.mensaje}
             onChange={(v) => setForm({ ...form, mensaje: v })}
           />
+          <p className="form-note">Al continuar se abrirá WhatsApp con tu solicitud. Tú decides cuándo enviarla. <a href="/privacidad">Aviso de privacidad</a>.</p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <button
               type="submit"
@@ -379,7 +380,7 @@ function Field({
     borderBottom: "1px solid rgba(var(--cyan-rgb), 0.18)",
     padding: "10px 0",
     color: "var(--text-primary)",
-    fontSize: 14,
+    fontSize: 16,
     outline: "none",
     width: "100%",
   };
@@ -408,6 +409,8 @@ function Field({
       ) : (
         <input
           name={name}
+          required={name === "nombre"}
+          autoComplete={name === "nombre" ? "name" : name === "email" ? "email" : name === "empresa" ? "organization" : "off"}
           type={type}
           placeholder={placeholder}
           value={value}

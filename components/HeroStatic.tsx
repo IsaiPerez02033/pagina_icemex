@@ -24,26 +24,24 @@ export default function HeroStatic({ id }: { id?: string }) {
       <div className="hero-hud hero-static-hud">
         <div className="hero-static-copy">
           <h1 className="hero-static-title">
-            Iluminamos
+            Iluminación que transforma.
             <br />
-            <span>tus sueños</span>,
-            <br />
-            materializamos
-            <br />
-            tus ideas
+            <span>Seguridad que protege.</span>
           </h1>
           <p className="hero-static-sub">
             Fabricación, distribución y comercialización de material eléctrico,
             herrajes, postería y luminarias LED. Más de 20 años iluminando
-            México.
+            México. Venta e instalación de cámaras de seguridad.
           </p>
         </div>
 
         <div className="hero-static-bottom">
-          <div className="scroll-hint">
-            <span style={{ color: "var(--accent-cyan)" }}>▍</span> Desliza para
-            explorar
-          </div>
+          <a className="action-primary" href="/productos">
+            Explorar productos ↗
+          </a>
+          <a className="action-secondary" href="/#contacto">
+            Cotizar mi proyecto
+          </a>
         </div>
       </div>
     </section>

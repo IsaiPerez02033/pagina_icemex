@@ -78,7 +78,7 @@ export default function AboutSection() {
           maxWidth: 1400,
           margin: "0 auto",
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))",
+          gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 360px), 1fr))",
           gap: 80,
           alignItems: "start",
         }}

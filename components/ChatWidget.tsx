@@ -15,7 +15,7 @@ interface Message {
 const SUGGESTIONS = [
   "Necesito alumbrar un parque, ¿qué me recomiendan?",
   "¿Qué opciones de iluminación solar tienen?",
-  "¿Qué certificaciones maneja ICEMEX?",
+  "Quiero cotizar cámaras de seguridad",
   "Quiero cotizar postes para una avenida",
 ];
 
@@ -53,34 +53,36 @@ export default function ChatWidget() {
 
   // Auto-scroll
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    messagesEndRef.current?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
   }, [messages, isLoading]);
 
   // Focus input on open
   useEffect(() => {
     if (open) {
-      setTimeout(() => inputRef.current?.focus(), 350);
+      const timer = setTimeout(() => inputRef.current?.focus(), 350);
+      return () => clearTimeout(timer);
     }
   }, [open]);
 
-  // En mobile, guarda/restaura el scroll al abrir/cerrar el chat fullscreen
+  // Restore page scroll on close, route changes and unmount.
   useEffect(() => {
-    const isMobile = typeof window !== "undefined" && window.innerWidth <= 480;
-    if (!isMobile) return;
-    if (open) {
-      const scrollY = window.scrollY;
+    if (!open) return;
+    document.body.dataset.chatOpen = "true";
+    const mobile = window.matchMedia("(max-width: 480px)").matches;
+    const scrollY = window.scrollY;
+    const previous = { top: document.body.style.top, position: document.body.style.position, width: document.body.style.width };
+    if (mobile) {
       document.body.style.top = `-${scrollY}px`;
       document.body.style.position = "fixed";
       document.body.style.width = "100%";
-    } else {
-      const top = document.body.style.top;
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.width = "";
-      if (top) {
-        window.scrollTo(0, parseInt(top) * -1);
-      }
     }
+    return () => {
+      delete document.body.dataset.chatOpen;
+      if (mobile) {
+        Object.assign(document.body.style, previous);
+        window.scrollTo(0, scrollY);
+      }
+    };
   }, [open]);
 
   // Close with Escape
@@ -295,6 +297,8 @@ export default function ChatWidget() {
       {/* Panel de chat */}
       {open && (
         <div
+          role="region"
+          aria-label="Asistente ICEMEX"
           className="chat-panel"
           style={{
             position: "fixed",

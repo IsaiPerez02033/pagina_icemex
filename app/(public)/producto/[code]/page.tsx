@@ -14,12 +14,12 @@ export function generateStaticParams() {
   return getAllCodes().map((code) => ({ code }));
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
   params: Promise<{ code: string }>;
-}): Metadata {
-  const { code } = params as unknown as { code: string };
+}): Promise<Metadata> {
+  const { code } = await params;
   const p = products.find((x) => x.code === code);
   if (!p) return { title: "Producto no encontrado" };
 
@@ -67,15 +67,6 @@ export default async function ProductoPage({
     image: "https://icemex.mx/logo_icemex.png",
     brand: { "@type": "Brand", name: "ICEMEX" },
     category: lineNames[p.line],
-    offers: {
-      "@type": "AggregateOffer",
-      priceCurrency: "MXN",
-      lowPrice: 0,
-      highPrice: 0,
-      offerCount: "1",
-      availability: "https://schema.org/InStock",
-      description: "Cotizar para precio exacto",
-    },
     ...(p.specs.length > 0 && {
       additionalProperty: p.specs.map((s) => ({
         "@type": "PropertyValue",
@@ -91,7 +82,7 @@ export default async function ProductoPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div style={{ paddingTop: 140, minHeight: "100vh" }}>
+      <div style={{ paddingTop: 32, minHeight: "100vh" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "40px 32px 100px" }}>
           {/* Breadcrumb */}
           <nav
@@ -217,7 +208,7 @@ export default async function ProductoPage({
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 340px), 1fr))",
               gap: 56,
             }}
           >

@@ -50,6 +50,8 @@ const navLinks = [
   { href: "/", label: "Inicio" },
   { href: "/nosotros", label: "Nosotros" },
   { href: "/servicios", label: "Servicios" },
+  { href: "/productos", label: "Explorar productos" },
+  { href: "/servicios/camaras-de-seguridad", label: "Cámaras de seguridad" },
   { href: "/catalogo", label: "Catálogo PDF" },
   { href: "/#contacto", label: "Contacto" },
 ];
@@ -84,7 +86,7 @@ export default function Footer() {
           maxWidth: 1400,
           margin: "0 auto",
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+          gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))",
           gap: 48,
         }}
       >
@@ -273,7 +275,7 @@ export default function Footer() {
             letterSpacing: "0.05em",
           }}
         >
-          © 2025 ICEMEX — Importaciones y Comercializaciones Eléctricas de
+          © {new Date().getFullYear()} ICEMEX — Importaciones y Comercializaciones Eléctricas de
           México S.A. de C.V.
         </p>
       </div>
