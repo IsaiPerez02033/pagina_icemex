@@ -37,9 +37,10 @@ export default function Navbar() {
       <header className="site-header">
         <Link href="/" aria-label="ICEMEX inicio" className="site-logo">
           <IcemexLogo
-            width={168}
-            height={58}
-            sizes="168px"
+            width={144}
+            height={54}
+            sizes="(max-width: 960px) 112px, 144px"
+            priority
             style={{ objectFit: "contain" }}
           />
         </Link>
@@ -73,6 +74,7 @@ export default function Navbar() {
       </header>
       <dialog
         id="mobile-menu"
+        aria-label="Menú principal"
         ref={dialog}
         className="mobile-menu"
         onCancel={() => setOpen(false)}

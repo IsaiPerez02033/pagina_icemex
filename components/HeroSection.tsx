@@ -53,10 +53,7 @@ function canRender3D(): boolean {
 
     // Soporte real de WebGL.
     const canvas = document.createElement("canvas");
-    const gl =
-      canvas.getContext("webgl2") ||
-      canvas.getContext("webgl") ||
-      canvas.getContext("experimental-webgl");
+    const gl = canvas.getContext("webgl2");
     if (!gl) return false;
     (gl as WebGLRenderingContext)
       .getExtension("WEBGL_lose_context")
@@ -86,7 +83,7 @@ export default function HeroSection() {
             position: "sticky",
             top: 0,
             width: "100%",
-            height: "100dvh",
+            height: "100svh",
             overflow: "hidden",
           }}
         >
