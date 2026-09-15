@@ -51,9 +51,15 @@ function canRender3D(): boolean {
       return false;
     }
 
-    // Soporte real de WebGL.
+    // Soporte real de WebGL. WebGL2 preferido, pero con fallback a WebGL1:
+    // algunos navegadores (p. ej. Brave con fingerprint protection, o equipos
+    // con aceleración por hardware limitada) no exponen WebGL2 pero sí WebGL1,
+    // y react-three-fiber renderiza igual sobre WebGL1.
     const canvas = document.createElement("canvas");
-    const gl = canvas.getContext("webgl2");
+    const gl =
+      canvas.getContext("webgl2") ||
+      canvas.getContext("webgl") ||
+      canvas.getContext("experimental-webgl");
     if (!gl) return false;
     (gl as WebGLRenderingContext)
       .getExtension("WEBGL_lose_context")
