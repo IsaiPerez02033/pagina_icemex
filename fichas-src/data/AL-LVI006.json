@@ -1,0 +1,200 @@
+{
+ "model": "AD100",
+ "kind": "Luminario vial LED ICEMEX",
+ "power": "100 W",
+ "variant": "120–240 V~",
+ "hero": "p1_x62",
+ "kpis": [
+  {
+   "v": "100",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "8,000",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "30,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "130°",
+   "u": "",
+   "l": "Ángulo de apertura"
+  },
+  {
+   "v": "8–10",
+   "u": "m",
+   "l": "Altura recomendada"
+  }
+ ],
+ "description": [
+  "El luminario vial ICEMEX AD100 es una luminaria LED de 100 W para alumbrado público, con cuerpo de aleación de aluminio fundido a presión. Entrega 8,000 lúmenes de luz blanca fría (6,500 K) con un ángulo de apertura de 130°.",
+  "Se recomienda instalar a una altura de 8 a 10 m, donde ilumina un área de 80 a 100 m². Opera de 120 a 240 V con un consumo de 1 A, cuenta con grado de protección IP65 y una vida útil de 30,000 horas."
+ ],
+ "features": [
+  {
+   "t": "Aluminio fundido a presión",
+   "d": "Cuerpo de aleación de aluminio para exteriores."
+  },
+  {
+   "t": "Fotosensor",
+   "d": "Encendido y apagado automático según la luz ambiente."
+  },
+  {
+   "t": "Luz blanca fría",
+   "d": "6,500 K con apertura de 130° para cubrir de 80 a 100 m²."
+  },
+  {
+   "t": "Amigable con el medio ambiente",
+   "d": "Tecnología LED sin mercurio y de bajo consumo."
+  }
+ ],
+ "certs": [
+  {
+   "c": "NOM",
+   "l": "Norma"
+  },
+  {
+   "c": "ANCE",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "100 W"
+    ],
+    [
+     "Flujo luminoso",
+     "8,000 lm"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "Ángulo de apertura",
+     "130°"
+    ],
+    [
+     "Altura de instalación recomendada",
+     "8–10 m"
+    ],
+    [
+     "Área de iluminación",
+     "80–100 m²"
+    ],
+    [
+     "Vida útil",
+     "30,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión de entrada",
+     "120–240 V~"
+    ],
+    [
+     "Corriente",
+     "1 A"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Aleación de aluminio fundido a presión"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ],
+    [
+     "Marca",
+     "ICEMEX"
+    ]
+   ]
+  }
+ ],
+ "photometry": "p1_x44",
+ "advantages": [
+  {
+   "t": "Iluminación eficiente",
+   "d": "8,000 lm con solo 100 W de consumo."
+  },
+  {
+   "t": "Encendido automático",
+   "d": "Fotosensor integrado."
+  },
+  {
+   "t": "Exteriores",
+   "d": "Grado de protección IP65."
+  },
+  {
+   "t": "Cobertura amplia",
+   "d": "Apertura de 130° para áreas de 80 a 100 m²."
+  },
+  {
+   "t": "Certificada",
+   "d": "NOM y ANCE."
+  },
+  {
+   "t": "Robusta",
+   "d": "Aleación de aluminio fundido a presión."
+  }
+ ],
+ "applications": [
+  "Estacionamientos",
+  "Calles pequeñas",
+  "Pasillos",
+  "Jardines",
+  "Parques",
+  "Escuelas",
+  "Patios",
+  "Fachadas"
+ ],
+ "dims": {
+  "img": "p1_x41",
+  "rows": [
+   [
+    "Largo",
+    "55 cm"
+   ],
+   [
+    "Ancho",
+    "25 cm"
+   ],
+   [
+    "Alto",
+    "4 cm"
+   ],
+   [
+    "Entrada",
+    "2\""
+   ]
+  ]
+ }
+}

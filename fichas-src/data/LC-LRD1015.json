@@ -1,0 +1,169 @@
+{
+ "model": "LR DOWNLIGHTS",
+ "kind": "Downlight LED de empotrar marca CREE",
+ "power": "LR6",
+ "variant": "277 V · Hecho en USA",
+ "hero": "p1_x22",
+ "photo2": "p1_x28",
+ "kpis": [
+  {
+   "v": "1,000",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "2,700",
+   "u": "K",
+   "l": "Luz cálida"
+  },
+  {
+   "v": ">70",
+   "u": "",
+   "l": "IRC"
+  },
+  {
+   "v": "10",
+   "u": "años",
+   "l": "Garantía"
+  }
+ ],
+ "description": [
+  "LR Downlights es un downlight LED de empotrar marca CREE, fabricado en Estados Unidos, para crear ambientes cálidos en tiendas, oficinas, pasillos, recepciones y universidades.",
+  "El modelo LR6, con base GU24, entrega 1,000 lúmenes de luz cálida de 2,700 K a 277 V con IRC mayor a 70. Incluye adaptador Edison GU24-E26 para instalarse en sockets de rosca E-26 y cuenta con 10 años de garantía."
+ ],
+ "features": [
+  {
+   "t": "Luz cálida",
+   "d": "2,700 K."
+  },
+  {
+   "t": "Adaptador E-26",
+   "d": "Se instala en sockets de rosca estándar."
+  },
+  {
+   "t": "Base GU24",
+   "d": "Conexión segura."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Con 10 años de garantía."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CREE",
+   "l": "Marca"
+  },
+  {
+   "c": "USA",
+   "l": "Fabricación"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Modelo",
+     "LR6"
+    ],
+    [
+     "Flujo luminoso",
+     "1,000 lm"
+    ],
+    [
+     "Temperatura de color",
+     "2,700 K"
+    ],
+    [
+     "IRC",
+     "> 70"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Voltaje",
+     "277 V"
+    ],
+    [
+     "Base",
+     "GU24 (adaptador Edison GU24-E26 incluido)"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Diámetro exterior",
+     "190 mm (7.46\")"
+    ],
+    [
+     "Diámetro del cuerpo",
+     "146 mm (5.74\")"
+    ],
+    [
+     "Alto",
+     "131 mm (5.17\")"
+    ],
+    [
+     "Fabricación",
+     "Estados Unidos"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  2700
+ ],
+ "advantages": [
+  {
+   "t": "Ambiente cálido",
+   "d": "2,700 K."
+  },
+  {
+   "t": "Fácil instalación",
+   "d": "Adaptador a rosca E-26."
+  },
+  {
+   "t": "Respaldo",
+   "d": "10 años de garantía."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Estándares CREE."
+  }
+ ],
+ "applications": [
+  "Andadores, patios, corredores y pasillos",
+  "Universidades",
+  "Centros y locales comerciales",
+  "Oficinas"
+ ],
+ "dims": {
+  "img": "p1_x25",
+  "rows": [
+   [
+    "Diámetro exterior",
+    "190 mm"
+   ],
+   [
+    "Diámetro del cuerpo",
+    "146 mm"
+   ],
+   [
+    "Alto",
+    "131 mm"
+   ]
+  ]
+ }
+}

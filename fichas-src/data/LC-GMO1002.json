@@ -1,0 +1,172 @@
+{
+ "model": "GABINETE CON MICA OPALINA",
+ "kind": "Gabinete LED de sobreponer",
+ "power": "54 W",
+ "variant": "85–265 V · 1,200 mm",
+ "hero": "p1_x16",
+ "kpis": [
+  {
+   "v": "54",
+   "u": "W",
+   "l": "Consumo"
+  },
+  {
+   "v": "5,400",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "30,000",
+   "u": "h",
+   "l": "Horas de vida"
+  },
+  {
+   "v": "1,200",
+   "u": "mm",
+   "l": "Longitud"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "6,500",
+   "u": "K",
+   "l": "Luz blanca fría"
+  },
+  {
+   "v": "80",
+   "u": "",
+   "l": "CRI"
+  }
+ ],
+ "description": [
+  "El Gabinete LED con mica opalina está diseñado para brindar una iluminación eficiente y uniforme en espacios interiores. Con 54 W entrega 5,400 lúmenes, una excelente relación de rendimiento energético, en luz blanca fría de 6,500 K con CRI de 80, ideal para ambientes laborales y comerciales.",
+  "Tiene acabado blanco, cuerpo de 1,200 mm de longitud y apertura de luz de 0 a 220° para una amplia cobertura. Opera de 85 a 265 V, con 30,000 horas de vida y grado de protección IP20 para interiores."
+ ],
+ "features": [
+  {
+   "t": "Mica opalina",
+   "d": "Luz uniforme y sin deslumbramiento."
+  },
+  {
+   "t": "Apertura de 220°",
+   "d": "Amplia cobertura lumínica."
+  },
+  {
+   "t": "5,400 lúmenes",
+   "d": "Con solo 54 W."
+  },
+  {
+   "t": "Multivoltaje",
+   "d": "85–265 V."
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP20",
+   "l": "Interiores"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Flujo luminoso",
+     "5,400 lm"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "CRI",
+     "80"
+    ],
+    [
+     "Apertura",
+     "0–220°"
+    ],
+    [
+     "Horas de vida",
+     "30,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Consumo",
+     "54 W"
+    ],
+    [
+     "Voltaje",
+     "85–265 V"
+    ],
+    [
+     "Factor de potencia",
+     "> 0.6"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Difusor",
+     "Mica opalina"
+    ],
+    [
+     "Acabado",
+     "Blanco"
+    ],
+    [
+     "Longitud",
+     "1,200 mm"
+    ],
+    [
+     "Protección",
+     "IP20 (interiores)"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Eficiente",
+   "d": "100 lm/W."
+  },
+  {
+   "t": "Luz uniforme",
+   "d": "Mica opalina."
+  },
+  {
+   "t": "Amplia cobertura",
+   "d": "Hasta 220°."
+  },
+  {
+   "t": "Instalación sencilla",
+   "d": "Gabinete de sobreponer."
+  }
+ ],
+ "applications": [
+  "Oficinas",
+  "Centros y locales comerciales",
+  "Escuelas y universidades",
+  "Bodegas y almacenes",
+  "Hospitales y clínicas",
+  "Estacionamientos techados"
+ ],
+ "dims": {
+  "img": "p1_x19",
+  "rows": [
+   [
+    "Longitud",
+    "1,200 mm"
+   ]
+  ]
+ }
+}

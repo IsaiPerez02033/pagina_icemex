@@ -1,0 +1,223 @@
+{
+ "model": "SUBURBANA 200W",
+ "kind": "Luminaria suburbana con panel solar inteligente",
+ "power": "200 W",
+ "variant": "Panel 6 V / 25 W",
+ "hero": "p1_x51",
+ "photo2": "p1_x48",
+ "kpis": [
+  {
+   "v": "200",
+   "u": "W",
+   "l": "Wattaje"
+  },
+  {
+   "v": "12",
+   "u": "h",
+   "l": "Tiempo de trabajo"
+  },
+  {
+   "v": "IP66",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "70",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "6,500",
+   "u": "K",
+   "l": "Temperatura de color"
+  }
+ ],
+ "description": [
+  "SUBURBANA 200W es una luminaria solar con panel inteligente para exteriores, con LED 3030 SMD Epistar, temperatura de color de 6,500 K, índice de color de 80 y ángulo de 150°. Su batería de litio LPF 32650 de 3.2 V / 25,000 mAh se carga con un panel de 6 V / 25 W en 6 a 8 horas.",
+  "Trabaja hasta 12 horas por noche con un perfil de atenuación (1 h al 100–75%, 2 h al 65% y de 9 a 12 h al 20%) para cuidar la batería. Fabricada en plástico ABS, aleación de aluminio y PC, con grado de protección IP66, clase energética A y sin mercurio; cuenta con certificaciones CE y RoHS."
+ ],
+ "features": [
+  {
+   "img": "p1_x48",
+   "t": "LED Epistar 3030 SMD",
+   "d": "Luz blanca de 6,500 K con CRI 80."
+  },
+  {
+   "img": "p1_x51",
+   "t": "Panel inteligente",
+   "d": "6 V / 25 W, carga en 6 a 8 horas."
+  },
+  {
+   "img": "p1_x37",
+   "t": "12 horas de trabajo",
+   "d": "Atenuación programada para toda la noche."
+  },
+  {
+   "img": "p1_x54",
+   "t": "CE y RoHS",
+   "d": "Sin mercurio, clase energética A.",
+   "light": false
+  }
+ ],
+ "warranty": [
+  {
+   "y": 6,
+   "unit": "meses",
+   "on": "de garantía"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CE",
+   "l": "Certificación"
+  },
+  {
+   "c": "RoHS",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP66",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Wattaje",
+     "200 W"
+    ],
+    [
+     "Eficacia",
+     "70 lm/W"
+    ],
+    [
+     "Fuente de luz",
+     "LED 3030 SMD Epistar"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "Índice de color (CRI)",
+     "80"
+    ],
+    [
+     "Ángulo de haz",
+     "150°"
+    ],
+    [
+     "Perfil de trabajo",
+     "1 h 100–75% · 2 h 65% · 9–12 h 20%"
+    ],
+    [
+     "Clase energética",
+     "A"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Batería",
+     "LPF 32650 / 3.2 V / 25,000 mAh"
+    ],
+    [
+     "Panel",
+     "6 V / 25 W"
+    ],
+    [
+     "Tiempo de carga",
+     "6–8 h"
+    ],
+    [
+     "Tiempo de trabajo",
+     "12 h"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Plástico ABS, aleación de aluminio, PC"
+    ],
+    [
+     "Acabado",
+     "Cuerpo gris, reflector de plástico transparente"
+    ],
+    [
+     "Base",
+     "A poste"
+    ],
+    [
+     "Hermeticidad",
+     "IP66"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-20 °C a 80 °C"
+    ],
+    [
+     "Contenido de mercurio",
+     "0"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Toda la noche",
+   "d": "Hasta 12 horas con atenuación programada."
+  },
+  {
+   "t": "Sin costo de energía",
+   "d": "Panel solar de 6 V / 25 W."
+  },
+  {
+   "t": "Hermética",
+   "d": "Grado de protección IP66."
+  },
+  {
+   "t": "Sin mercurio",
+   "d": "Clase energética A, certificaciones CE y RoHS."
+  },
+  {
+   "t": "Instalación sencilla",
+   "d": "Montaje a poste, sin cableado."
+  },
+  {
+   "t": "Amplio rango térmico",
+   "d": "Opera de -20 a 80 °C."
+  }
+ ],
+ "applications": [
+  "Jardines",
+  "Caminos rurales",
+  "Calles citadinas",
+  "Parques",
+  "Avenidas",
+  "Carreteras",
+  "Complejos comerciales e industriales"
+ ]
+}

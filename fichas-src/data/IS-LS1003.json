@@ -1,0 +1,162 @@
+{
+ "model": "LED SOLAR",
+ "kind": "Luminario LED solar para pared o poste",
+ "power": "125 – 200 W",
+ "variant": "6 V c.d.",
+ "hero": "p1_x25",
+ "kpis": [
+  {
+   "v": "125–200",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "8,750",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "6–8",
+   "u": "h",
+   "l": "Tiempo de descarga"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "4–5",
+   "u": "h",
+   "l": "Tiempo de carga"
+  },
+  {
+   "v": "4–5",
+   "u": "m",
+   "l": "Altura recomendada"
+  }
+ ],
+ "description": [
+  "Luminario LED solar de 125 a 200 W con panel independiente, que entrega 8,750 lúmenes de luz blanca fría (6,500 K) con un ángulo de apertura de 120°. Se instala en pared o en poste, a una altura recomendada de 4 a 5 m.",
+  "Opera a 6 V c.d.: se carga en 4 a 5 horas de sol y funciona de 6 a 8 horas por noche. Su grado de protección IP65 lo hace apto para exteriores como pasillos, estacionamientos, escuelas, patios, jardines, fachadas y calles."
+ ],
+ "features": [
+  {
+   "t": "Panel independiente",
+   "d": "Se orienta al sol de forma separada de la lámpara."
+  },
+  {
+   "t": "Pared o poste",
+   "d": "Instalación flexible a 4–5 m de altura."
+  },
+  {
+   "t": "Apertura de 120°",
+   "d": "Cobertura amplia de luz blanca de 6,500 K."
+  },
+  {
+   "t": "Carga rápida",
+   "d": "4 a 5 horas de sol para 6 a 8 horas de luz."
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "125–200 W"
+    ],
+    [
+     "Flujo luminoso",
+     "8,750 lm"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "Ángulo de apertura",
+     "120°"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Voltaje",
+     "6 V c.d."
+    ],
+    [
+     "Tiempo de carga",
+     "4–5 h"
+    ],
+    [
+     "Tiempo de descarga",
+     "6–8 h"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Instalación",
+     "Pared o poste"
+    ],
+    [
+     "Altura de instalación recomendada",
+     "4–5 m"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Sin costo de energía",
+   "d": "Funciona solo con energía solar."
+  },
+  {
+   "t": "Instalación sencilla",
+   "d": "En pared o poste, sin cableado a la red."
+  },
+  {
+   "t": "Carga rápida",
+   "d": "4 a 5 horas de sol."
+  },
+  {
+   "t": "Exteriores",
+   "d": "Grado de protección IP65."
+  },
+  {
+   "t": "Luz amplia",
+   "d": "8,750 lm con apertura de 120°."
+  },
+  {
+   "t": "Versátil",
+   "d": "Para fachadas, patios, pasillos y calles."
+  }
+ ],
+ "applications": [
+  "Pasillos",
+  "Estacionamientos",
+  "Escuelas",
+  "Patios",
+  "Jardines",
+  "Fachadas",
+  "Espacios públicos",
+  "Calles"
+ ]
+}

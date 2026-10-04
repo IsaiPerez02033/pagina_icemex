@@ -1,0 +1,155 @@
+{
+ "model": "LL-149 · LL-150 · LL-151",
+ "kind": "Campana LED industrial tipo UFO",
+ "power": "100 – 300 W",
+ "variant": "Aleación de aluminio y magnesio",
+ "hero": "p1_x25",
+ "kpis": [
+  {
+   "v": "100–300",
+   "u": "W",
+   "l": "Potencias"
+  },
+  {
+   "v": "140",
+   "u": "lm/W",
+   "l": "Eficacia máx."
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  },
+  {
+   "v": "10",
+   "u": "kV",
+   "l": "Supresor máx."
+  }
+ ],
+ "description": [
+  "La serie LL-149, LL-150 y LL-151 es una campana LED industrial tipo UFO de 100, 200 y 300 W. Su disipador hueco aumenta el flujo de aire para una mejor disipación del calor, y el cuerpo de aleación de aluminio y magnesio de alta calidad resiste la corrosión.",
+  "Usa LED de alto lumen con eficacia de 90–100 o 130–140 lm/W y 50,000 horas de vida, lente óptica importada con eficiencia de hasta 95% y reflector con acabado de cara de diamante que mejora el brillo. Factor de potencia mayor a 0.9 y protección contra sobretensiones de 6 a 10 kV según el modelo."
+ ],
+ "features": [
+  {
+   "t": "Disipador hueco",
+   "d": "Más flujo de aire, menor temperatura."
+  },
+  {
+   "t": "Lente óptica importada",
+   "d": "Eficiencia de hasta 95%."
+  },
+  {
+   "t": "Reflector cara de diamante",
+   "d": "Mejora el brillo de la iluminación."
+  },
+  {
+   "t": "Aluminio y magnesio",
+   "d": "Anticorrosión."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Modelos",
+   "rows": [
+    [
+     "LL-149",
+     "100 W · Ø 270 × 91 mm · SPD > 6 kV"
+    ],
+    [
+     "LL-150",
+     "200 W · Ø 330 × 103 mm · SPD > 8 kV"
+    ],
+    [
+     "LL-151",
+     "300 W · Ø 371.9 × 108.4 mm · SPD > 10 kV"
+    ]
+   ]
+  },
+  {
+   "name": "Desempeño",
+   "rows": [
+    [
+     "Eficacia",
+     "90–100 / 130–140 lm/W"
+    ],
+    [
+     "Eficiencia de la lente",
+     "Hasta 95%"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ],
+    [
+     "Factor de potencia",
+     "> 0.9"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Aleación de aluminio y magnesio"
+    ],
+    [
+     "Disipador",
+     "Hueco, de alto flujo de aire"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Alta eficacia",
+   "d": "Hasta 140 lm/W."
+  },
+  {
+   "t": "Larga vida",
+   "d": "50,000 horas."
+  },
+  {
+   "t": "Protegida",
+   "d": "Supresor de hasta 10 kV."
+  },
+  {
+   "t": "Anticorrosiva",
+   "d": "Aleación de aluminio y magnesio."
+  },
+  {
+   "t": "Tres potencias",
+   "d": "100, 200 y 300 W."
+  },
+  {
+   "t": "Mejor disipación",
+   "d": "Diseño hueco."
+  }
+ ],
+ "applications": [
+  "Naves industriales",
+  "Bodegas y almacenes",
+  "Fábricas",
+  "Talleres",
+  "Centros comerciales",
+  "Gimnasios"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "LL-149 (100 W)",
+    "Ø 270 × 91 mm"
+   ],
+   [
+    "LL-150 (200 W)",
+    "Ø 330 × 103 mm"
+   ],
+   [
+    "LL-151 (300 W)",
+    "Ø 371.9 × 108.4 mm"
+   ]
+  ]
+ }
+}

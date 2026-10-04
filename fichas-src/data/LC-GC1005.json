@@ -1,0 +1,204 @@
+{
+ "model": "GC11 COMODÍN BAJO PERALTE",
+ "kind": "Gabinete y panel LED de bajo peralte",
+ "power": "9 – 40 W por tubo",
+ "variant": "T8 LED · Panel 100–277 V",
+ "hero": "p1_x25",
+ "kpis": [
+  {
+   "v": "5,000",
+   "u": "lm",
+   "l": "Panel LED"
+  },
+  {
+   "v": "100",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "40,000",
+   "u": "h",
+   "l": "Vida útil"
+  },
+  {
+   "v": "7.5",
+   "u": "cm",
+   "l": "Peralte"
+  }
+ ],
+ "description": [
+  "GC11 Comodín es una línea de gabinetes de bajo peralte (7.5 cm) para sobreponer, con lámparas LED T8 de 9 a 40 W en formatos de 61, 122 y 244 cm, ideal para oficinas, comercios, escuelas y bodegas donde el plafón tiene poco espacio.",
+  "La línea incluye el Panel LED CAPCE de 30 × 120 cm (clave CFLCP-225-2L-65K), para sobreponer o empotrar: entrega 5,000 lúmenes con 100 lm/W en blanco neutro (4,100 K) o blanco frío (6,500 K) con IRC de 80, haz de 115°, encendido instantáneo, factor de potencia de 0.9, operación de 100 a 277 V y 40,000 horas de vida."
+ ],
+ "features": [
+  {
+   "t": "Bajo peralte",
+   "d": "Solo 7.5 cm de altura."
+  },
+  {
+   "t": "Panel CAPCE",
+   "d": "Sobreponer o empotrar, 30 × 120 cm."
+  },
+  {
+   "t": "Encendido instantáneo",
+   "d": "Menos de 1 segundo."
+  },
+  {
+   "t": "Dos tonos de luz",
+   "d": "Blanco neutro o blanco frío."
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP40",
+   "l": "Panel"
+  },
+  {
+   "c": "Clase II",
+   "l": "Aislamiento"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Gabinetes de sobreponer (cm)",
+   "rows": [
+    [
+     "GC114-49",
+     "4 × T8 9 W · G-13 · 30 × 61 × 7.5"
+    ],
+    [
+     "GC11-218",
+     "2 × T8 25 W · G-13 · 17 × 122 × 7.5"
+    ],
+    [
+     "GC116-218",
+     "2 × T8 18 W · G-13 · 17 × 122 × 7.5"
+    ],
+    [
+     "GC116-418",
+     "4 × T8 18 W · G-13 · 30 × 122 × 7.5"
+    ],
+    [
+     "GC115-440",
+     "4 × T8 40 W · Fa8 · 30 × 244 × 7.5"
+    ]
+   ]
+  },
+  {
+   "name": "Panel LED CAPCE",
+   "rows": [
+    [
+     "Clave",
+     "CFLCP-225-2L-65K"
+    ],
+    [
+     "Dimensión",
+     "30 × 120 cm"
+    ],
+    [
+     "Tensión nominal",
+     "100–277 V (máx. 100–305 V)"
+    ],
+    [
+     "Corriente",
+     "0.53 A máx."
+    ],
+    [
+     "Frecuencia",
+     "50/60 Hz"
+    ],
+    [
+     "Factor de potencia",
+     "0.9"
+    ],
+    [
+     "Consumo de energía",
+     "50 Wh"
+    ],
+    [
+     "Protección",
+     "IP40, aislamiento clase II"
+    ],
+    [
+     "Atenuable",
+     "No"
+    ]
+   ]
+  },
+  {
+   "name": "Fotometría del panel",
+   "rows": [
+    [
+     "Flujo luminoso",
+     "5,000 lm"
+    ],
+    [
+     "Eficacia",
+     "100 lm/W"
+    ],
+    [
+     "Temperatura de color",
+     "4,100 K / 6,500 K"
+    ],
+    [
+     "IRC",
+     "80"
+    ],
+    [
+     "Ángulo de haz",
+     "115°"
+    ],
+    [
+     "Encendido",
+     "Instantáneo (< 1 s)"
+    ],
+    [
+     "Temperatura de operación",
+     "-20 °C a 35 °C"
+    ],
+    [
+     "Vida útil",
+     "40,000 h"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  4100,
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Poco espacio",
+   "d": "Bajo peralte de 7.5 cm."
+  },
+  {
+   "t": "Cinco formatos",
+   "d": "De 61 a 244 cm."
+  },
+  {
+   "t": "Eficiente",
+   "d": "Panel de 100 lm/W."
+  },
+  {
+   "t": "Larga vida",
+   "d": "40,000 horas."
+  },
+  {
+   "t": "Universal",
+   "d": "Cualquier posición de operación."
+  },
+  {
+   "t": "Instalación flexible",
+   "d": "Sobreponer o empotrar."
+  }
+ ],
+ "applications": [
+  "Oficinas",
+  "Centros y locales comerciales",
+  "Escuelas y universidades",
+  "Bodegas y almacenes",
+  "Hospitales y clínicas",
+  "Estacionamientos techados"
+ ]
+}

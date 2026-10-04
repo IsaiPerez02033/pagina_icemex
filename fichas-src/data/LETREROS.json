@@ -1,0 +1,116 @@
+{
+ "is_lum": false,
+ "model": "LETREROS IMAGEN",
+ "kind": "Señalización urbana personalizada",
+ "power": "Diseño a medida",
+ "variant": "Pintura electrostática y reflejante",
+ "hero": "p1_x25",
+ "photo2": "p1_x34",
+ "kpis": [
+  {
+   "v": "100",
+   "u": "%",
+   "l": "Personalizado"
+  },
+  {
+   "v": "Reflejante",
+   "u": "",
+   "l": "Grado estandarizado"
+  },
+  {
+   "v": "Electrostática",
+   "u": "",
+   "l": "Pintura"
+  },
+  {
+   "v": "Urbana",
+   "u": "",
+   "l": "Señalización"
+  }
+ ],
+ "description": [
+  "Letreros de imagen urbana para orientar a ciudadanos y visitantes: señales turísticas y culturales que indican monumentos históricos, museos o rutas, y señales que ubican edificios municipales, parques, bibliotecas, centros de salud y otros lugares de interés.",
+  "El diseño es personalizado según las necesidades del cliente y el uso del producto, con acabado en pintura electrostática y material reflejante de grado estandarizado. Se integran a postes de alumbrado o se instalan en su propio soporte, como en los programas de senderos seguros."
+ ],
+ "features": [
+  {
+   "img": "p1_x28",
+   "t": "Senderos seguros",
+   "d": "Señales para rutas peatonales."
+  },
+  {
+   "img": "p1_x31",
+   "t": "Montaje en poste",
+   "d": "Se integran al alumbrado."
+  },
+  {
+   "img": "p1_x34",
+   "t": "Corte personalizado",
+   "d": "Formas y logotipos a medida."
+  },
+  {
+   "img": "p1_x36",
+   "t": "Identidad municipal",
+   "d": "Diseño con la imagen del cliente."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Tipos de señal",
+   "rows": [
+    [
+     "Turísticas y culturales",
+     "Monumentos, museos y rutas turísticas"
+    ],
+    [
+     "De ubicación",
+     "Edificios municipales, parques, bibliotecas, centros de salud"
+    ]
+   ]
+  },
+  {
+   "name": "Fabricación",
+   "rows": [
+    [
+     "Diseño",
+     "Personalizado según el proyecto"
+    ],
+    [
+     "Acabado",
+     "Pintura electrostática"
+    ],
+    [
+     "Vista",
+     "Reflejante grado estandarizado"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "A la medida",
+   "d": "Diseño según cada proyecto."
+  },
+  {
+   "t": "Visible de noche",
+   "d": "Material reflejante."
+  },
+  {
+   "t": "Durable",
+   "d": "Pintura electrostática."
+  },
+  {
+   "t": "Imagen urbana",
+   "d": "Refuerza la identidad del municipio."
+  }
+ ],
+ "applications": [
+  "Centros históricos",
+  "Rutas turísticas",
+  "Edificios municipales",
+  "Parques",
+  "Senderos seguros",
+  "Espacios públicos"
+ ]
+}

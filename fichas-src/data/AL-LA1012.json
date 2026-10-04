@@ -1,0 +1,160 @@
+{
+ "model": "EPISTAR LED",
+ "kind": "Luminario LED para alumbrado público",
+ "power": "30 – 100 W",
+ "variant": "120–277 V · 12/24 V",
+ "hero": "p1_x16",
+ "kpis": [
+  {
+   "v": "30–100",
+   "u": "W",
+   "l": "Potencias disponibles"
+  },
+  {
+   "v": "110",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "120°",
+   "u": "",
+   "l": "Ángulo de apertura"
+  },
+  {
+   "v": "4",
+   "u": "años",
+   "l": "Garantía"
+  }
+ ],
+ "description": [
+  "Luminario para alumbrado público con sistema LED Epistar de 30, 45, 50, 60, 90 y 100 W y driver Meanwell, con una eficacia de 110 lúmenes por watt (1 W por LED: de 30 a 100 LED según la potencia).",
+  "El cuerpo es de acero y fundición de aluminio, con acabado de pintura poliéster aplicada electrostáticamente y horneada. Funciona en alumbrado público de 120–277 V o en sistemas fotovoltaicos de 12/24 V, con temperaturas de color de 4,100 y 6,000 K, e incluye fotocontrol automatizado (socket para fotocelda)."
+ ],
+ "features": [
+  {
+   "t": "LED Epistar",
+   "d": "110 lm/W, 1 W por LED."
+  },
+  {
+   "t": "Driver Meanwell",
+   "d": "Fuente de alimentación de marca reconocida."
+  },
+  {
+   "t": "Uso solar o red",
+   "d": "12/24 V fotovoltaico o 120–277 V."
+  },
+  {
+   "t": "Fotocontrol incluido",
+   "d": "Socket para fotocelda y encendido automático."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 4,
+   "on": "en luminaria"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencias",
+     "30, 45, 50, 60, 90 y 100 W"
+    ],
+    [
+     "LED",
+     "Epistar, 1 W por LED (30 a 100 LED)"
+    ],
+    [
+     "Eficacia",
+     "110 lm/W"
+    ],
+    [
+     "Temperatura de color",
+     "4,100 K y 6,000 K"
+    ],
+    [
+     "Ángulo de apertura",
+     "120°"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión de operación",
+     "120–277 V, 60 Hz · 12/24 V c.d."
+    ],
+    [
+     "Driver",
+     "Meanwell"
+    ],
+    [
+     "Control",
+     "Fotocontrol automatizado (socket fotocelda)"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Acero y fundición de aluminio"
+    ],
+    [
+     "Acabado",
+     "Pintura poliéster electrostática horneada"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de funcionamiento",
+     "60 °C"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  4100,
+  6000
+ ],
+ "photometry": "p1_x19",
+ "advantages": [
+  {
+   "t": "Doble aplicación",
+   "d": "Red eléctrica de 120–277 V o sistemas solares de 12/24 V."
+  },
+  {
+   "t": "Eficiente",
+   "d": "110 lm/W con LED Epistar."
+  },
+  {
+   "t": "Encendido automático",
+   "d": "Fotocontrol incluido."
+  },
+  {
+   "t": "Seis potencias",
+   "d": "De 30 a 100 W."
+  },
+  {
+   "t": "Respaldo",
+   "d": "4 años de garantía en condiciones normales de uso."
+  },
+  {
+   "t": "Acabado duradero",
+   "d": "Pintura poliéster electrostática horneada."
+  }
+ ],
+ "applications": [
+  "Alumbrado público",
+  "Sistemas fotovoltaicos",
+  "Calles y avenidas",
+  "Estacionamientos"
+ ]
+}

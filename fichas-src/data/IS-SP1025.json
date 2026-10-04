@@ -1,0 +1,144 @@
+{
+ "model": "TITAN SOLAR 50W",
+ "kind": "Sistema solar fotovoltaico para alumbrado público",
+ "power": "50 W",
+ "variant": "Philips Fast Flex 12 V",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "50",
+   "u": "W",
+   "l": "Luminario"
+  },
+  {
+   "v": "6,000",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "150",
+   "u": "W",
+   "l": "Módulo solar"
+  },
+  {
+   "v": "6",
+   "u": "m",
+   "l": "Altura de poste"
+  }
+ ],
+ "description": [
+  "Sistema solar fotovoltaico completo de 50 W para alumbrado público, listo para instalar: incluye poste cónico circular de 6 m, brazo de 1 m, estructura para el módulo solar y luminario TITAN con LED Philips Fast Flex a 12 V que entrega 6,000 lúmenes.",
+  "El sistema se compone de un módulo solar multicristalino SW150 de 150 W, dos baterías de 12 V / 115 Ah libres de mantenimiento (vida útil de 3 a 5 años), controlador de 20 A 12/24 V con microprocesador e indicadores LED, y gabinete para 2 baterías de lámina cal. 14 con pintura electrostática."
+ ],
+ "features": [
+  {
+   "img": "p1_x24@0.25,0.7,0.72,0.96",
+   "t": "2 baterías 12 V / 115 Ah",
+   "d": "Libres de mantenimiento, vida útil de 3 a 5 años."
+  },
+  {
+   "img": "p1_x24@0.6,0.85,0.8,0.95",
+   "t": "Controlador 20 A",
+   "d": "12/24 V con microprocesador e indicadores LED."
+  },
+  {
+   "img": "p1_x24@0.8,0.76,0.96,1.0",
+   "t": "Módulo SW150",
+   "d": "Multicristalino de 150 W."
+  },
+  {
+   "img": "p1_x24@0.0,0.0,0.5,0.3",
+   "t": "Luminario TITAN",
+   "d": "LED Philips Fast Flex a 12 V, 6,000 lm."
+  }
+ ],
+ "specs": [
+  {
+   "name": "Sistema fotovoltaico",
+   "rows": [
+    [
+     "Módulo solar",
+     "1 módulo SW150 multicristalino de 150 W"
+    ],
+    [
+     "Banco de baterías",
+     "2 baterías 12 V / 115 Ah, libres de mantenimiento (vida útil 3–5 años)"
+    ],
+    [
+     "Controlador",
+     "20 A, 12/24 V, microprocesador con indicadores LED"
+    ],
+    [
+     "Gabinete",
+     "Para 2 baterías, lámina cal. 14, pintura electrostática"
+    ]
+   ]
+  },
+  {
+   "name": "Luminario",
+   "rows": [
+    [
+     "Modelo",
+     "TITAN con equipo de 50 W"
+    ],
+    [
+     "LED",
+     "Philips Fast Flex a 12 V"
+    ],
+    [
+     "Flujo luminoso",
+     "6,000 lm"
+    ]
+   ]
+  },
+  {
+   "name": "Poste y estructura",
+   "rows": [
+    [
+     "Poste",
+     "Cónico circular de 6 m, pintura electrostática anticorrosiva"
+    ],
+    [
+     "Brazo",
+     "1 m, tubo de 1½\" diámetro nominal, pintura anticorrosiva"
+    ],
+    [
+     "Estructura para celda",
+     "Para un módulo solar, pintura anticorrosiva"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Sistema completo",
+   "d": "Poste, brazo, panel, baterías, controlador y luminario."
+  },
+  {
+   "t": "Autónomo",
+   "d": "Funciona aunque no haya red eléctrica."
+  },
+  {
+   "t": "Componentes Philips",
+   "d": "Luminario TITAN con LED Fast Flex."
+  },
+  {
+   "t": "Doble batería",
+   "d": "2 × 115 Ah para mayor respaldo."
+  },
+  {
+   "t": "Anticorrosivo",
+   "d": "Poste, brazo y estructura con pintura anticorrosiva."
+  },
+  {
+   "t": "Listo para instalar",
+   "d": "Configuración para alumbrado público."
+  }
+ ],
+ "applications": [
+  "Alumbrado público",
+  "Caminos rurales",
+  "Parques",
+  "Comunidades sin red eléctrica"
+ ]
+}

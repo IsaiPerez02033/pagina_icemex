@@ -1,0 +1,156 @@
+{
+ "model": "SOLAR 180–240W",
+ "kind": "Luminaria solar con panel independiente",
+ "power": "180 / 240 W",
+ "variant": "14,400 lm",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "180/240",
+   "u": "W",
+   "l": "Potencias"
+  },
+  {
+   "v": "14,400",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP66",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "8",
+   "u": "h",
+   "l": "Tiempo de carga"
+  }
+ ],
+ "description": [
+  "Luminaria solar con panel independiente en potencias de 180 y 240 W, ideal donde se necesita orientar el panel para una exposición solar óptima. Entrega 14,400 lúmenes de luz blanca fría (6,500 K).",
+  "Su grado de protección IP66 la protege contra polvo y chorros de agua, y su tiempo promedio de carga es de 8 horas. Es apta para hogares, parques, zonas rurales, jardines, calles y áreas recreativas."
+ ],
+ "features": [
+  {
+   "img": "p1_x24",
+   "t": "Panel independiente",
+   "d": "Se orienta para captar más sol."
+  },
+  {
+   "img": "p1_x37",
+   "t": "Cuatro módulos LED",
+   "d": "14,400 lm de luz blanca.",
+   "mode": "drawing"
+  },
+  {
+   "img": "p1_x32",
+   "t": "Panel de 530 × 350 mm",
+   "d": "Carga promedio de 8 horas.",
+   "mode": "drawing"
+  },
+  {
+   "img": "p1_x27",
+   "t": "Múltiples aplicaciones",
+   "d": "Hogar, parques, zonas rurales y calles.",
+   "light": false
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP66",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencias",
+     "180 W y 240 W"
+    ],
+    [
+     "Flujo luminoso",
+     "14,400 lm"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Panel",
+     "Independiente, 530 × 350 mm"
+    ],
+    [
+     "Tiempo promedio de carga",
+     "8 h"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Luminaria",
+     "495 × 220 mm"
+    ],
+    [
+     "Hermeticidad",
+     "IP66"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Panel orientable",
+   "d": "Máxima captación solar."
+  },
+  {
+   "t": "Alto flujo",
+   "d": "14,400 lúmenes."
+  },
+  {
+   "t": "Hermética",
+   "d": "Grado de protección IP66."
+  },
+  {
+   "t": "Sin costo de energía",
+   "d": "100% solar."
+  },
+  {
+   "t": "Dos potencias",
+   "d": "180 W o 240 W."
+  },
+  {
+   "t": "Versátil",
+   "d": "Para hogares, parques y calles."
+  }
+ ],
+ "applications": [
+  "Hogar",
+  "Parques",
+  "Zonas rurales",
+  "Jardines",
+  "Calles",
+  "Áreas recreativas"
+ ],
+ "dims": {
+  "img": "p1_x37",
+  "rows": [
+   [
+    "Luminaria (alto × ancho)",
+    "495 × 220 mm"
+   ],
+   [
+    "Panel (alto × ancho)",
+    "530 × 350 mm"
+   ]
+  ]
+ }
+}

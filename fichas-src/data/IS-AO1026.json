@@ -1,0 +1,242 @@
+{
+ "model": "SOLAR-LZ 100W",
+ "kind": "Luminaria solar «All in One» para alumbrado público",
+ "power": "100 W",
+ "variant": "Serie LZ · ICEMEX",
+ "hero": "p1_x38",
+ "kpis": [
+  {
+   "v": "100",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "160",
+   "u": "lm/W",
+   "l": "Eficiencia nominal"
+  },
+  {
+   "v": "2",
+   "u": "días",
+   "l": "Autonomía"
+  },
+  {
+   "v": "100,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "9–10",
+   "u": "m",
+   "l": "Altura de montaje"
+  }
+ ],
+ "description": [
+  "SOLAR-LZ es una luminaria solar «All in One» de 100 W marca ICEMEX para alumbrado público, urbano, comercial e industrial. Integra LEDs de alto desempeño, batería de litio de 12.8 V / 60 Ah, panel monocristalino de 18 V / 100 W y regulador de carga, en un cuerpo de aluminio y policarbonato en acabado negro.",
+  "Está preconfigurada para iluminar 12 horas por noche con un perfil programado que ahorra energía (30% de 0 a 2 h, 100% de 2 a 6 h, 70% de 6 a 8 h, 50% de 8 a 10 h y 30% de 10 a 12 h). Se monta en punta de poste o brazo tipo L, a una altura de 9 a 10 m."
+ ],
+ "features": [
+  {
+   "img": "p1_x38",
+   "t": "Panel monocristalino",
+   "d": "18 V / 100 W integrado."
+  },
+  {
+   "img": "p1_x41",
+   "t": "Batería de litio",
+   "d": "12.8 V / 60 Ah, 2 días de autonomía.",
+   "mode": "drawing"
+  },
+  {
+   "img": "p1_x30",
+   "t": "Encendido automático",
+   "d": "Enciende al anochecer y apaga al amanecer.",
+   "light": false
+  },
+  {
+   "img": "p2_x232",
+   "t": "Óptica asimétrica 2M",
+   "d": "Distribución para vialidades.",
+   "light": false
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  },
+  {
+   "y": 5,
+   "on": "en batería"
+  },
+  {
+   "y": 20,
+   "on": "en panel solar"
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "100 W"
+    ],
+    [
+     "Fuente luminosa",
+     "LED"
+    ],
+    [
+     "Eficiencia nominal",
+     "160 lm/W"
+    ],
+    [
+     "Óptica",
+     "Asimétrica 2M"
+    ],
+    [
+     "Temperatura de color",
+     "6,000 K"
+    ],
+    [
+     "IRC",
+     "70"
+    ],
+    [
+     "Vida útil",
+     "100,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Panel solar",
+     "Silicio monocristalino 18 V / 100 W"
+    ],
+    [
+     "Batería",
+     "Litio 12.8 V / 60 Ah"
+    ],
+    [
+     "Autonomía",
+     "2 días"
+    ],
+    [
+     "Programación",
+     "0–2 h 30% · 2–6 h 100% · 6–8 h 70% · 8–10 h 50% · 10–12 h 30%"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Aluminio / policarbonato"
+    ],
+    [
+     "Acabado",
+     "Negro"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ],
+    [
+     "Dimensiones",
+     "1780 × 550 × 150 mm"
+    ],
+    [
+     "Peso",
+     "20 kg"
+    ],
+    [
+     "Montaje",
+     "Punta de poste o brazo tipo L"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-30 °C a 40 °C"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6000
+ ],
+ "photometry": "p2_x232",
+ "advantages": [
+  {
+   "t": "Garantía extendida",
+   "d": "10 años luminaria, 5 años batería y 20 años panel."
+  },
+  {
+   "t": "Ahorro programado",
+   "d": "Perfil de 12 horas que optimiza la batería."
+  },
+  {
+   "t": "Alta eficiencia",
+   "d": "160 lm/W."
+  },
+  {
+   "t": "Opera aunque falle la red",
+   "d": "2 días de autonomía."
+  },
+  {
+   "t": "Sin cableado",
+   "d": "Instalación sin zanjas ni tendido eléctrico."
+  },
+  {
+   "t": "Marca ICEMEX",
+   "d": "Soporte técnico y refacciones en México."
+  }
+ ],
+ "applications": [
+  "Alumbrado público",
+  "Alumbrado urbano",
+  "Áreas comerciales",
+  "Áreas industriales"
+ ],
+ "dims": {
+  "img": "p1_x41",
+  "rows": [
+   [
+    "Largo",
+    "1780 mm"
+   ],
+   [
+    "Ancho",
+    "550 mm"
+   ],
+   [
+    "Alto",
+    "150 mm"
+   ],
+   [
+    "Peso",
+    "20 kg"
+   ]
+  ]
+ },
+ "mount": "Montaje tipo punta de poste o mediante brazo tipo «L», a una altura recomendada de 9 a 10 m. Se recomienda limpiar periódicamente el panel solar."
+}

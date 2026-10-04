@@ -1,0 +1,272 @@
+{
+ "model": "A-P9F",
+ "kind": "Luminaria LED solar para vialidades",
+ "power": "70 – 120 W",
+ "variant": "LT",
+ "badge": "Diseño patentado",
+ "hero": "p1_x37",
+ "photo2": "p2_x106",
+ "kpis": [
+  {
+   "v": "70–120",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "22,800",
+   "u": "lm",
+   "l": "Flujo LED máx."
+  },
+  {
+   "v": "190",
+   "u": "lm/W",
+   "l": "Eficacia del LED"
+  },
+  {
+   "v": "150,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "12",
+   "u": "h",
+   "l": "Al 100% sin atenuación"
+  },
+  {
+   "v": "205",
+   "u": "km/h",
+   "l": "Resistencia al viento"
+  }
+ ],
+ "description": [
+  "A-P9F es una luminaria LED solar para vialidades de diseño patentado que ilumina al 100% durante toda la noche, sin atenuación, gracias a su controlador MPPT patentado y su batería de alta capacidad. Se ofrece en 70, 100 y 120 W, con LED de 190 lm/W y temperaturas de color de 3,000, 4,000 y 5,700 K.",
+  "Su sistema patentado de gestión de celdas equilibra la carga y descarga de la batería, que alcanza 3,000 ciclos (16 años de rendimiento y después 80% de su capacidad). La carcasa de fundición a presión, con tornillería de acero inoxidable grado marino y lente anti-UV, está certificada para vientos de hasta 205 km/h (huracán categoría 5)."
+ ],
+ "features": [
+  {
+   "img": "p2_x101",
+   "t": "Controlador MPPT patentado",
+   "d": "Máxima luminosidad sin interrupciones."
+  },
+  {
+   "img": "p2_x109",
+   "t": "Gestión de celdas patentada",
+   "d": "Equilibra la carga y prolonga la vida de la batería."
+  },
+  {
+   "img": "p2_x145",
+   "t": "Viento hasta 205 km/h",
+   "d": "Certificado para huracán categoría 5."
+  },
+  {
+   "img": "p2_x154",
+   "t": "Instalación precisa",
+   "d": "Nivel de burbuja y soporte doble con ángulos bloqueables."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "ISO 9001",
+   "l": "Calidad"
+  },
+  {
+   "c": "ISO 14001",
+   "l": "Ambiental"
+  },
+  {
+   "c": "ISO 45001",
+   "l": "Seguridad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "70 / 100 / 120 W"
+    ],
+    [
+     "Eficacia del LED",
+     "190 lm/W"
+    ],
+    [
+     "Flujo luminoso del LED",
+     "13,300 / 19,000 / 22,800 lm"
+    ],
+    [
+     "Eficacia del sistema",
+     "110 lm/W"
+    ],
+    [
+     "Flujo luminoso del sistema",
+     "7,700 / 11,000 / 13,200 lm"
+    ],
+    [
+     "Distribución fotométrica",
+     "Tipo II corta (TII S)"
+    ],
+    [
+     "Temperatura de color",
+     "3,000 / 4,000 / 5,700 K"
+    ],
+    [
+     "CRI",
+     "≥ 70"
+    ],
+    [
+     "Vida útil",
+     "150,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Panel mono PV",
+     "90 W / 125 W / 145 W, 18 V"
+    ],
+    [
+     "Batería de litio",
+     "576 / 768 / 960 Wh, 3,000 ciclos"
+    ],
+    [
+     "Tiempo de carga",
+     "6 h"
+    ],
+    [
+     "Tiempo de descarga",
+     "2 noches"
+    ],
+    [
+     "Ciclo de funcionamiento",
+     "12 h al 100%"
+    ],
+    [
+     "Controlador",
+     "MPPT patentado con cubierta de aluminio"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Carcasa de fundición a presión con pintura poliéster electrostática anticorrosiva, tornillería de acero inoxidable grado marino A316L y lente de policarbonato anti-UV"
+    ],
+    [
+     "Dimensiones (L × A × H)",
+     "70 W: 1200 × 460 × 280 mm · 100 W: 1500 × 460 × 280 mm · 120 W: 1700 × 460 × 280 mm"
+    ],
+    [
+     "Peso",
+     "19 / 23 / 26 kg"
+    ],
+    [
+     "Resistencia al viento",
+     "Hasta 205 km/h"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-25 °C a +65 °C"
+    ],
+    [
+     "Temperatura de almacenaje",
+     "-20 °C a +40 °C"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  3000,
+  4000,
+  5700
+ ],
+ "photometry": "p4_x589",
+ "code_parts": {
+  "parts": [
+   {
+    "v": "A",
+    "l": "Código de luminaria"
+   },
+   {
+    "v": "P9F",
+    "l": "Modelo"
+   },
+   {
+    "v": "XXX W",
+    "l": "Potencia en watts"
+   },
+   {
+    "v": "AF",
+    "l": "Código de asesor de ventas"
+   }
+  ],
+  "example": "A-P9F-100W-AF"
+ },
+ "advantages": [
+  {
+   "t": "Toda la noche al 100%",
+   "d": "12 horas sin atenuación."
+  },
+  {
+   "t": "Batería de 16 años",
+   "d": "3,000 ciclos; después sigue al 80%."
+  },
+  {
+   "t": "Resiste huracanes",
+   "d": "Viento de hasta 205 km/h."
+  },
+  {
+   "t": "Antivandálica",
+   "d": "Fundición a presión y tornillería A316L."
+  },
+  {
+   "t": "Hágalo usted mismo",
+   "d": "Instalación fácil, rápida y de bajo costo."
+  },
+  {
+   "t": "Energía limpia",
+   "d": "Libre de mantenimiento, ideal para un futuro sostenible."
+  }
+ ],
+ "applications": [
+  "Vialidades",
+  "Avenidas",
+  "Carreteras",
+  "Caminos rurales"
+ ],
+ "dims": {
+  "img": "p5_x729",
+  "rows": [
+   [
+    "70 W",
+    "1200 × 460 × 280 mm · 19 kg"
+   ],
+   [
+    "100 W",
+    "1500 × 460 × 280 mm · 23 kg"
+   ],
+   [
+    "120 W",
+    "1700 × 460 × 280 mm · 26 kg"
+   ]
+  ]
+ },
+ "mount": "Ajustable en vertical u horizontal sobre poste o brazo de 2\" a 2½\" de diámetro exterior, con tornillos y tuercas de sujeción (no incluye poste ni brazo). Debe tener acceso pleno al sol: no instalar bajo árboles, edificios o estructuras que den sombra, ni bajo la luz directa de otras luminarias."
+}

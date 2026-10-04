@@ -1,0 +1,147 @@
+{
+ "model": "BARROCO",
+ "kind": "Farol de punta de poste estilo barroco",
+ "power": "150 – 175 W",
+ "variant": "VSAP / Aditivo metálico",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "150–175",
+   "u": "W",
+   "l": "Potencia máx."
+  },
+  {
+   "v": "150",
+   "u": "W",
+   "l": "VSAP"
+  },
+  {
+   "v": "E39",
+   "u": "",
+   "l": "Portalámpara mogul"
+  },
+  {
+   "v": "2½",
+   "u": "in",
+   "l": "Punta de poste"
+  }
+ ],
+ "description": [
+  "BARROCO es un farol ornamental de punta de poste con cuerpo de aluminio puro fundido y moldeado en arena y soportes de lámina de fierro. Su refractor de cristales planos termo templados, transparentes o biselados, resiste el impacto y los cambios de temperatura; el reflector interior de aluminio anodizado aumenta la reflectancia.",
+  "Opera con lámparas de vapor de sodio de alta presión (VSAP) de 150 W o de aditivo metálico de 150 a 175 W, en 110–220 V, con portalámpara de porcelana tipo mogul E39. El recubrimiento de pintura poliéster aplicada electrostáticamente le da mayor resistencia a la corrosión en exteriores."
+ ],
+ "features": [
+  {
+   "t": "Cristal transparente o biselado",
+   "d": "Dos acabados de refractor."
+  },
+  {
+   "t": "Cristales templados",
+   "d": "Resistentes al impacto y a cambios de temperatura."
+  },
+  {
+   "t": "Aluminio fundido en arena",
+   "d": "Con soportes de lámina de fierro."
+  },
+  {
+   "t": "Reflector anodizado",
+   "d": "Aumenta la reflectancia."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Balastro VSAP",
+     "150 W · 110–220 V"
+    ],
+    [
+     "Balastro aditivo metálico",
+     "175 W · 110–220 V / 150 W · 220 V"
+    ],
+    [
+     "Portalámpara",
+     "Porcelana, tipo mogul E39"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Aluminio puro fundido, moldeado en arena"
+    ],
+    [
+     "Soportes",
+     "Lámina de fierro"
+    ],
+    [
+     "Acabado",
+     "Pintura tipo poliéster electrostática"
+    ],
+    [
+     "Refractor",
+     "Cristales planos termo templados, transparentes o biselados"
+    ],
+    [
+     "Reflector",
+     "Lámina de aluminio anodizada"
+    ],
+    [
+     "Montaje",
+     "Punta de poste de 2½\""
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Diseño barroco",
+   "d": "Estética que se integra a calles, plazas y zonas residenciales."
+  },
+  {
+   "t": "Resistente a la corrosión",
+   "d": "Aluminio con pintura poliéster electrostática."
+  },
+  {
+   "t": "Refractor a elegir",
+   "d": "Cristal transparente o biselado."
+  },
+  {
+   "t": "Mejor reflectancia",
+   "d": "Reflector de aluminio anodizado."
+  },
+  {
+   "t": "Opciones de lámpara",
+   "d": "VSAP o aditivo metálico, en 110–220 V."
+  },
+  {
+   "t": "Instalación sencilla",
+   "d": "Entrada para punta de poste de 2½\"."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Estacionamientos",
+  "Cotos y zonas residenciales",
+  "Áreas recreativas"
+ ],
+ "dims": {
+  "img": "p1_x27",
+  "rows": [
+   [
+    "Ancho",
+    "450 mm"
+   ],
+   [
+    "Alto",
+    "1,100 mm"
+   ]
+  ]
+ }
+}

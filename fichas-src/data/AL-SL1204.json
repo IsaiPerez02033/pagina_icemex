@@ -1,0 +1,201 @@
+{
+ "model": "STREET LIGHT 1204",
+ "kind": "Luminaria LED para alumbrado público vial",
+ "power": "50 – 200 W",
+ "variant": "100–277 V c.a.",
+ "hero": "p1_x22",
+ "photo2": "p1_x28",
+ "kpis": [
+  {
+   "v": "50–200",
+   "u": "W",
+   "l": "Potencias disponibles"
+  },
+  {
+   "v": "24,000",
+   "u": "lm",
+   "l": "Flujo luminoso máx."
+  },
+  {
+   "v": "120",
+   "u": "lm/W",
+   "l": "Eficiencia lumínica"
+  },
+  {
+   "v": "30,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "IP67",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "Ra>80",
+   "u": "",
+   "l": "Índice de color"
+  }
+ ],
+ "description": [
+  "STREET LIGHT 1204 es una luminaria LED para alumbrado público con tecnología LED SMD y una eficiencia de 120 lm/W, que permite hasta 80% de ahorro en consumo de energía. Su diseño ultradelgado favorece la disipación del calor.",
+  "Fabricada en aluminio fundido a presión anticorrosión, con lente óptico de alta refracción, fotocelda de ojillo y driver integrado con protección contra corto circuito y sobrecarga. Se ofrece en 50, 100, 150 y 200 W, con grado de protección IP67 e índice de color Ra > 80."
+ ],
+ "features": [
+  {
+   "t": "Diseño ultradelgado",
+   "d": "Favorece la disipación del calor."
+  },
+  {
+   "img": "p1_x28",
+   "t": "Aluminio anticorrosión",
+   "d": "Cuerpo de aluminio fundido a presión."
+  },
+  {
+   "t": "Fotocelda de ojillo",
+   "d": "Control de luz para encendido automático."
+  },
+  {
+   "t": "Driver protegido",
+   "d": "Integrado, con protección contra corto circuito y sobrecarga."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 2,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "NOM",
+   "l": "Norma"
+  },
+  {
+   "c": "CE",
+   "l": "Certificación"
+  },
+  {
+   "c": "RoHS",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP67",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencias",
+     "50 / 100 / 150 / 200 W"
+    ],
+    [
+     "Flujo luminoso",
+     "6,000 / 12,000 / 18,000 / 24,000 lm"
+    ],
+    [
+     "Eficiencia lumínica",
+     "120 lm/W"
+    ],
+    [
+     "Temperatura de color",
+     "6500 K"
+    ],
+    [
+     "Índice de color (CRI)",
+     "Ra > 80"
+    ],
+    [
+     "Ángulo de haz",
+     "180° × 75°"
+    ],
+    [
+     "Área iluminada",
+     "40 / 50 / 75 / 100 m²"
+    ],
+    [
+     "Vida útil",
+     "30,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Alimentación",
+     "100–277 V c.a."
+    ],
+    [
+     "Factor de potencia",
+     "> 0.90"
+    ],
+    [
+     "Driver",
+     "Integrado, con protección contra corto circuito y sobrecarga"
+    ],
+    [
+     "Control de luz",
+     "Fotocelda de ojillo"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Aluminio fundido a presión, anticorrosión"
+    ],
+    [
+     "Lente",
+     "Óptico de alta refracción"
+    ],
+    [
+     "Hermeticidad",
+     "IP67"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Hasta 80% de ahorro",
+   "d": "LED SMD de 120 lm/W."
+  },
+  {
+   "t": "Cuatro potencias",
+   "d": "De 50 a 200 W, hasta 24,000 lm."
+  },
+  {
+   "t": "Hermética",
+   "d": "Grado de protección IP67."
+  },
+  {
+   "t": "Colores más fieles",
+   "d": "Índice de reproducción de color Ra > 80."
+  },
+  {
+   "t": "Encendido automático",
+   "d": "Fotocelda de ojillo integrada."
+  },
+  {
+   "t": "Respaldo",
+   "d": "Certificaciones NOM, CE y RoHS; 2 años de garantía."
+  }
+ ],
+ "applications": [
+  "Calles",
+  "Carreteras",
+  "Parques",
+  "Estacionamientos"
+ ]
+}

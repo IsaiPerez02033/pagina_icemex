@@ -1,0 +1,118 @@
+{
+ "model": "APOLO",
+ "kind": "Gabinete LED de sobreponer o colgante",
+ "power": "LED",
+ "variant": "120/277 V",
+ "hero": "p1_x17",
+ "kpis": [
+  {
+   "v": "120/277",
+   "u": "V",
+   "l": "Tensión"
+  },
+  {
+   "v": "Cal. 26",
+   "u": "",
+   "l": "Lámina rolada en frío"
+  },
+  {
+   "v": "1 o 2",
+   "u": "",
+   "l": "Tubos"
+  },
+  {
+   "v": "120 / 244",
+   "u": "cm",
+   "l": "Longitudes"
+  }
+ ],
+ "description": [
+  "APOLO es un gabinete LED para oficinas, comercios y áreas de trabajo, fabricado en lámina negra rolada en frío calibre 26 con pintura de aplicación electrostática curada al horno y difusor de acrílico opalino que distribuye la luz de forma uniforme y sin deslumbramiento.",
+  "Opera a 120/277 V y se puede sobreponer o colgar. Se ofrece en longitudes de 120 y 244 cm, para uno o dos tubos LED."
+ ],
+ "features": [
+  {
+   "t": "Difusor opalino",
+   "d": "Luz uniforme sin deslumbramiento."
+  },
+  {
+   "t": "Pintura horneada",
+   "d": "Aplicación electrostática."
+  },
+  {
+   "t": "Dos longitudes",
+   "d": "120 y 244 cm."
+  },
+  {
+   "t": "Sobreponer o colgar",
+   "d": "Se adapta a cada techo."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Fuente de luz",
+     "LED, 1 o 2 tubos"
+    ],
+    [
+     "Voltaje",
+     "120/277 V"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Gabinete",
+     "Lámina negra rolada en frío cal. 26"
+    ],
+    [
+     "Acabado",
+     "Pintura electrostática curada al horno"
+    ],
+    [
+     "Difusor",
+     "Acrílico opalino"
+    ],
+    [
+     "Longitudes",
+     "120 cm y 244 cm, para 1 y 2 tubos"
+    ],
+    [
+     "Montaje",
+     "Sobreponer o colgante"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Versátil",
+   "d": "Sobreponer o colgante."
+  },
+  {
+   "t": "Luz confortable",
+   "d": "Difusor opalino."
+  },
+  {
+   "t": "Durable",
+   "d": "Pintura horneada."
+  },
+  {
+   "t": "Dos tamaños",
+   "d": "120 o 244 cm."
+  }
+ ],
+ "applications": [
+  "Oficinas",
+  "Centros y locales comerciales",
+  "Escuelas y universidades",
+  "Bodegas y almacenes",
+  "Hospitales y clínicas",
+  "Estacionamientos techados"
+ ]
+}

@@ -1,0 +1,136 @@
+{
+ "model": "BOLARD AP",
+ "kind": "Postes y bolardos LED para jardín",
+ "power": "10 – 40 W",
+ "variant": "127–220 V",
+ "hero": "p1_x289",
+ "photo2": "p2_x604",
+ "kpis": [
+  {
+   "v": "10–40",
+   "u": "W",
+   "l": "Poste"
+  },
+  {
+   "v": "12",
+   "u": "W",
+   "l": "Bolard AP"
+  },
+  {
+   "v": "127–220",
+   "u": "V",
+   "l": "Tensión"
+  },
+  {
+   "v": "1",
+   "u": "m",
+   "l": "Altura bolard"
+  }
+ ],
+ "description": [
+  "Familia de postes y bolardos LED para iluminación peatonal. El poste se fabrica en tubo de aluminio de 4\" o 6\" de diámetro, con placa base al piso de aluminio y difusor de acrílico opalino o transparente, en potencias de 10, 20, 30 y 40 W a 127–220 V.",
+  "El Bolard AP es un bolardo de 1 m fabricado en acero de 4½\" exterior cédula 30, con luminaria LED de 12 W de luz cálida a 127–220 V. Ambos llevan acabado en pintura electrostática tipo poliéster para exteriores."
+ ],
+ "features": [
+  {
+   "t": "Tubo de 4\" o 6\"",
+   "d": "Aluminio con placa base al piso."
+  },
+  {
+   "t": "Difusor a elegir",
+   "d": "Acrílico opalino o transparente."
+  },
+  {
+   "t": "Bolard AP",
+   "d": "Acero cédula 30 de 4½\", 1 m."
+  },
+  {
+   "t": "Luz cálida",
+   "d": "Ambiente confortable."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Poste",
+   "rows": [
+    [
+     "Potencia",
+     "10, 20, 30 y 40 W"
+    ],
+    [
+     "Tensión",
+     "127–220 V"
+    ],
+    [
+     "Tubo",
+     "Aluminio de 4\" o 6\" de diámetro"
+    ],
+    [
+     "Placa base",
+     "Aluminio, al piso"
+    ],
+    [
+     "Difusor",
+     "Acrílico opalino o transparente"
+    ]
+   ]
+  },
+  {
+   "name": "Bolard AP",
+   "rows": [
+    [
+     "Potencia",
+     "12 W, luz cálida"
+    ],
+    [
+     "Tensión",
+     "127–220 V"
+    ],
+    [
+     "Cuerpo",
+     "Acero de 4½\" exterior, cédula 30"
+    ],
+    [
+     "Altura",
+     "1 m"
+    ]
+   ]
+  },
+  {
+   "name": "Acabado",
+   "rows": [
+    [
+     "Pintura",
+     "Electrostática tipo poliéster"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Cuatro potencias",
+   "d": "De 10 a 40 W."
+  },
+  {
+   "t": "Dos diámetros",
+   "d": "Tubo de 4\" o 6\"."
+  },
+  {
+   "t": "Robusto",
+   "d": "Bolard AP en acero cédula 30."
+  },
+  {
+   "t": "Exteriores",
+   "d": "Pintura electrostática poliéster."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Cotos y zonas residenciales",
+  "Áreas recreativas",
+  "Universidades",
+  "Andadores, patios, corredores y pasillos"
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "is_lum": false,
+ "model": "ACCESORIOS",
+ "kind": "Refacciones y accesorios para alumbrado",
+ "power": "E26 · E39 · PGZ12",
+ "variant": "127 / 220 V",
+ "hero": "p1_x25",
+ "kpis": [
+  {
+   "v": "E26/E39",
+   "u": "",
+   "l": "Portalámparas"
+  },
+  {
+   "v": "PGZ12",
+   "u": "",
+   "l": "Adaptador"
+  },
+  {
+   "v": "127/220",
+   "u": "V",
+   "l": "Fotocelda"
+  },
+  {
+   "v": "Malla",
+   "u": "",
+   "l": "Antivandálica"
+  }
+ ],
+ "description": [
+  "Refacciones y accesorios para instalar, adaptar y dar mantenimiento a luminarias de alumbrado público y ornamental: portalámparas E39 y E26, adaptadores E39 a E26, E26 a E39 y E39/E26 a PGZ12, fotoceldas de 127 y 220 V con su base, y malla antivandálica.",
+  "También incluye luminarios Génova y Roma, bases para esfera Bari y Bolonia, abrazaderas, crucetas y plato para campana de acrílico, para completar o renovar instalaciones existentes."
+ ],
+ "features": [
+  {
+   "t": "Portalámparas",
+   "d": "E39 y E26."
+  },
+  {
+   "t": "Adaptadores",
+   "d": "E39 ↔ E26 y a PGZ12."
+  },
+  {
+   "t": "Fotoceldas",
+   "d": "127 y 220 V, con base."
+  },
+  {
+   "t": "Malla antivandálica",
+   "d": "Protege el luminario."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Eléctricos",
+   "rows": [
+    [
+     "Portalámpara",
+     "E39 / E26"
+    ],
+    [
+     "Adaptadores",
+     "E39 a E26, E26 a E39, E39/E26 a PGZ12"
+    ],
+    [
+     "Fotocelda",
+     "127 V / 220 V"
+    ],
+    [
+     "Base para fotocelda",
+     "Sí"
+    ]
+   ]
+  },
+  {
+   "name": "Montaje y protección",
+   "rows": [
+    [
+     "Malla",
+     "Antivandálica"
+    ],
+    [
+     "Bases para esfera",
+     "Bari y Bolonia"
+    ],
+    [
+     "Herrajes",
+     "Abrazaderas y crucetas"
+    ],
+    [
+     "Plato",
+     "Para campana de acrílico"
+    ]
+   ]
+  },
+  {
+   "name": "Luminarios",
+   "rows": [
+    [
+     "Modelos",
+     "Génova y Roma"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Todo en un proveedor",
+   "d": "Refacciones para cada luminario."
+  },
+  {
+   "t": "Adaptación",
+   "d": "Cambia de tecnología sin cambiar el equipo."
+  },
+  {
+   "t": "Encendido automático",
+   "d": "Fotoceldas de 127 y 220 V."
+  },
+  {
+   "t": "Protección",
+   "d": "Malla antivandálica."
+  }
+ ],
+ "applications": [
+  "Mantenimiento de alumbrado público",
+  "Modernización a LED",
+  "Parques y plazas",
+  "Fraccionamientos",
+  "Instalaciones municipales"
+ ]
+}

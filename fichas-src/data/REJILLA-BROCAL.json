@@ -1,0 +1,126 @@
+{
+ "is_lum": false,
+ "model": "REJILLA CON BROCAL",
+ "kind": "Rejilla con brocal y bisagra",
+ "power": "70 × 50 × 7 cm",
+ "variant": "Uso pesado",
+ "hero": "p1_x20",
+ "kpis": [
+  {
+   "v": "70×50",
+   "u": "cm",
+   "l": "Medidas"
+  },
+  {
+   "v": "7",
+   "u": "cm",
+   "l": "Altura"
+  },
+  {
+   "v": "90",
+   "u": "kg",
+   "l": "Peso aprox."
+  },
+  {
+   "v": "10",
+   "u": "",
+   "l": "Respiraderos"
+  }
+ ],
+ "description": [
+  "Rejilla con brocal y bisagra de 70 × 50 × 7 cm para registros y drenaje pluvial en banquetas, estacionamientos, plazas y áreas verdes, diseñada para uso pesado.",
+  "Su tapa abatible con bisagra facilita el acceso al registro, cuenta con 10 respiraderos de desagüe y sistema de sujeción tipo asa. Pesa aproximadamente 90 kg y se fabrica con tolerancia de ±0.3 cm."
+ ],
+ "features": [
+  {
+   "t": "Uso pesado",
+   "d": "Para áreas con tránsito."
+  },
+  {
+   "t": "Bisagra",
+   "d": "Tapa abatible de fácil acceso."
+  },
+  {
+   "t": "10 respiraderos",
+   "d": "Desagüe eficiente."
+  },
+  {
+   "t": "Sujeción tipo asa",
+   "d": "Manejo seguro."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Dimensiones",
+   "rows": [
+    [
+     "Largo",
+     "70 cm"
+    ],
+    [
+     "Ancho",
+     "50 cm"
+    ],
+    [
+     "Altura",
+     "7 cm"
+    ],
+    [
+     "Peso aproximado",
+     "90 kg"
+    ],
+    [
+     "Tolerancia",
+     "±0.3 cm"
+    ]
+   ]
+  },
+  {
+   "name": "Características",
+   "rows": [
+    [
+     "Uso",
+     "Pesado"
+    ],
+    [
+     "Desagüe",
+     "10 respiraderos"
+    ],
+    [
+     "Accesorios",
+     "Sistema de sujeción tipo asa"
+    ],
+    [
+     "Apertura",
+     "Bisagra"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Resistente",
+   "d": "Para uso pesado."
+  },
+  {
+   "t": "Fácil acceso",
+   "d": "Tapa con bisagra."
+  },
+  {
+   "t": "Buen desagüe",
+   "d": "10 respiraderos."
+  },
+  {
+   "t": "Precisión",
+   "d": "Tolerancia de ±0.3 cm."
+  }
+ ],
+ "applications": [
+  "Banquetas",
+  "Estacionamientos",
+  "Plazas",
+  "Áreas verdes",
+  "Registros eléctricos y pluviales"
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "is_lum": false,
+ "model": "PICOBA P-01 DE ACERO",
+ "kind": "Bolardo de acero personalizado",
+ "power": "Acero",
+ "variant": "Personalizado con logotipo",
+ "hero": "p1_x28",
+ "photo2": "p1_x31",
+ "kpis": [
+  {
+   "v": "Acero",
+   "u": "",
+   "l": "Material"
+  },
+  {
+   "v": "Logo",
+   "u": "",
+   "l": "En relieve"
+  },
+  {
+   "v": "100",
+   "u": "%",
+   "l": "Personalizable"
+  },
+  {
+   "v": "Negro",
+   "u": "",
+   "l": "Acabado"
+  }
+ ],
+ "description": [
+  "Picoba P-01 de acero es un bolardo de acero personalizado para delimitar banquetas, plazas, accesos y cruces peatonales, proteger al peatón y ordenar el estacionamiento en la vía pública.",
+  "Su tapa superior lleva en relieve el escudo o logotipo del cliente, y el cuerpo puede llevar también el logotipo grabado, para reforzar la identidad de la ciudad o el desarrollo."
+ ],
+ "features": [
+  {
+   "t": "Tapa en relieve",
+   "d": "Escudo o logotipo del cliente."
+  },
+  {
+   "t": "Cuerpo grabado",
+   "d": "Logotipo en el tubo."
+  },
+  {
+   "t": "Acero",
+   "d": "Alta resistencia al impacto."
+  },
+  {
+   "t": "Acabado negro",
+   "d": "Elegante y discreto."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Acero"
+    ],
+    [
+     "Tapa",
+     "Con escudo o logotipo en relieve"
+    ],
+    [
+     "Acabado",
+     "Pintura negra"
+    ],
+    [
+     "Personalización",
+     "Logotipo en tapa y cuerpo"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Identidad",
+   "d": "Escudo o logotipo del cliente."
+  },
+  {
+   "t": "Protección peatonal",
+   "d": "Delimita banquetas y accesos."
+  },
+  {
+   "t": "Robusto",
+   "d": "Tubo de acero de alta resistencia."
+  },
+  {
+   "t": "Diseño urbano",
+   "d": "Se integra a la imagen de la ciudad."
+  }
+ ],
+ "applications": [
+  "Banquetas",
+  "Cruces peatonales",
+  "Plazas y explanadas",
+  "Accesos vehiculares",
+  "Edificios públicos",
+  "Ciclovías"
+ ]
+}

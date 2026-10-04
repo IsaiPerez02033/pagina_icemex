@@ -1,0 +1,120 @@
+{
+ "is_lum": false,
+ "model": "PICOBA B-SH DE ACERO",
+ "kind": "Bolardo de acero personalizado",
+ "power": "Acero",
+ "variant": "Personalizado con logotipo",
+ "hero": "p1_x34",
+ "photo2": "p1_x25",
+ "kpis": [
+  {
+   "v": "85",
+   "u": "cm",
+   "l": "Altura"
+  },
+  {
+   "v": "6",
+   "u": "in",
+   "l": "Tubo de acero"
+  },
+  {
+   "v": "17",
+   "u": "cm",
+   "l": "Tapa de aluminio"
+  },
+  {
+   "v": "Logo",
+   "u": "",
+   "l": "En relieve"
+  }
+ ],
+ "description": [
+  "Picoba B-Sh de acero es un bolardo de acero personalizado para delimitar banquetas, plazas, accesos y cruces peatonales, proteger al peatón y ordenar el estacionamiento en la vía pública.",
+  "Se fabrica en tubo de acero de 6\" con remate superior de 12.5 cm y tapa de aluminio de 17 cm con el escudo o logotipo en relieve, para una altura total de 85 cm."
+ ],
+ "features": [
+  {
+   "t": "Tapa de aluminio",
+   "d": "17 cm con logotipo en relieve."
+  },
+  {
+   "t": "Remate torneado",
+   "d": "Diseño ornamental."
+  },
+  {
+   "t": "Tubo de 6\"",
+   "d": "Acero resistente al impacto."
+  },
+  {
+   "t": "85 cm",
+   "d": "Altura para banquetas."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Tubo",
+     "Acero de 6\""
+    ],
+    [
+     "Altura",
+     "85 cm"
+    ],
+    [
+     "Remate",
+     "12.5 cm"
+    ],
+    [
+     "Tapa",
+     "Aluminio de 17 cm con logotipo en relieve"
+    ],
+    [
+     "Detalle del remate",
+     "12 × 5 cm"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Identidad",
+   "d": "Escudo o logotipo del cliente."
+  },
+  {
+   "t": "Protección peatonal",
+   "d": "Delimita banquetas y accesos."
+  },
+  {
+   "t": "Robusto",
+   "d": "Tubo de acero de alta resistencia."
+  },
+  {
+   "t": "Diseño urbano",
+   "d": "Se integra a la imagen de la ciudad."
+  }
+ ],
+ "applications": [
+  "Banquetas",
+  "Cruces peatonales",
+  "Plazas y explanadas",
+  "Accesos vehiculares",
+  "Edificios públicos",
+  "Ciclovías"
+ ],
+ "dims": {
+  "img": "p1_x31",
+  "rows": [
+   [
+    "Altura",
+    "85 cm"
+   ],
+   [
+    "Tapa",
+    "Aluminio de 17 cm con logotipo en relieve"
+   ]
+  ]
+ }
+}

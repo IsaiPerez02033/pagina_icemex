@@ -1,0 +1,154 @@
+{
+ "model": "VIENA SOLAR",
+ "kind": "Conjunto ornamental con sistema fotovoltaico",
+ "power": "6,000 lm",
+ "variant": "Philips Fast Flex 12 V",
+ "hero": "p1_x30",
+ "photo2": "p1_x24",
+ "kpis": [
+  {
+   "v": "160",
+   "u": "W",
+   "l": "Módulo solar"
+  },
+  {
+   "v": "6,000",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "115",
+   "u": "Ah",
+   "l": "Batería 12 V"
+  },
+  {
+   "v": "4",
+   "u": "in",
+   "l": "Caña de poste"
+  }
+ ],
+ "description": [
+  "Conjunto de alumbrado ornamental con luminario tipo Viena y sistema fotovoltaico autónomo. Incluye base de pedestal, brazo ornamental tipo laurel rizo para una luminaria y caña de poste de acero de 4\" de diámetro, con recubrimiento electrostático curado al horno.",
+  "El sistema solar se compone de un módulo multicristalino SW160 de 160 W, batería de 12 V / 115 Ah libre de mantenimiento (vida útil de 3 a 5 años), controlador de 10 A 12/24 V con microprocesador e indicadores LED, y luminario Viena con LED Philips Fast Flex a 12 V de 6,000 lúmenes. El gabinete para batería es de lámina cal. 14 con pintura electrostática."
+ ],
+ "features": [
+  {
+   "img": "p1_x24",
+   "t": "Luminario Viena",
+   "d": "LED Philips Fast Flex a 12 V, 6,000 lm."
+  },
+  {
+   "img": "p1_x27",
+   "t": "Batería y controlador",
+   "d": "12 V / 115 Ah y controlador de 10 A con microprocesador."
+  },
+  {
+   "img": "p1_x30",
+   "t": "Brazo laurel rizo",
+   "d": "Diseño ornamental para plazas y jardines."
+  },
+  {
+   "img": "r1:0.62,0.72,0.95,0.97",
+   "t": "Base FIRENZE",
+   "d": "Pedestal de aluminio liga 380 en una sola pieza.",
+   "light": false
+  }
+ ],
+ "specs": [
+  {
+   "name": "Sistema fotovoltaico",
+   "rows": [
+    [
+     "Módulo solar",
+     "1 módulo SW160 multicristalino de 160 W"
+    ],
+    [
+     "Batería",
+     "1 batería 12 V / 115 Ah, libre de mantenimiento (vida útil 3–5 años)"
+    ],
+    [
+     "Controlador",
+     "10 A, 12/24 V, microprocesador con indicadores LED"
+    ],
+    [
+     "Luminario",
+     "1 luminario Viena, LED Philips Fast Flex a 12 V"
+    ],
+    [
+     "Flujo luminoso",
+     "6,000 lm"
+    ],
+    [
+     "Gabinete",
+     "Para una batería, lámina cal. 14, pintura electrostática"
+    ]
+   ]
+  },
+  {
+   "name": "Poste y fijación",
+   "rows": [
+    [
+     "Fabricación",
+     "Base de pedestal, brazo ornamental tipo laurel rizo, caña de acero de 4\""
+    ],
+    [
+     "Fijación",
+     "Base de acero de ⅜ × 18 cm para anclaje de 31 cm entre centros"
+    ],
+    [
+     "Acabado",
+     "Recubrimiento electrostático curado al horno"
+    ]
+   ]
+  },
+  {
+   "name": "Base de pedestal BP FRENZ / FIRENZE",
+   "rows": [
+    [
+     "Fabricación",
+     "Aluminio liga 380 fundido, en una sola pieza"
+    ],
+    [
+     "Fijación",
+     "Barrenos interiores ocultos o 4 taquetes de expansión de ¾\"; base cuadrada para anclaje exterior; o faldón para poste recto de 3\" y 5\" o cónico a medida"
+    ],
+    [
+     "Acabado",
+     "Pintura electrostática"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Autónomo",
+   "d": "Ilumina sin conexión a la red eléctrica."
+  },
+  {
+   "t": "Estética ornamental",
+   "d": "Luminario Viena y brazo laurel rizo."
+  },
+  {
+   "t": "Componentes Philips",
+   "d": "LED Fast Flex de 6,000 lm."
+  },
+  {
+   "t": "Batería libre de mantenimiento",
+   "d": "12 V / 115 Ah."
+  },
+  {
+   "t": "Acabado durable",
+   "d": "Electrostático curado al horno."
+  },
+  {
+   "t": "Base a elegir",
+   "d": "Anclaje oculto, exterior o faldón."
+  }
+ ],
+ "applications": [
+  "Plazas",
+  "Jardines",
+  "Parques",
+  "Explanadas"
+ ]
+}

@@ -1,0 +1,256 @@
+{
+ "model": "STREET LIGHT",
+ "kind": "Luminaria LED para alumbrado público vial",
+ "power": "60 – 150 W",
+ "variant": "100–277 V c.a.",
+ "hero": "p1_x21",
+ "photo2": "p1_x35",
+ "kpis": [
+  {
+   "v": "60–150",
+   "u": "W",
+   "l": "Potencias disponibles"
+  },
+  {
+   "v": "21,000",
+   "u": "lm",
+   "l": "Flujo luminoso máx."
+  },
+  {
+   "v": "140",
+   "u": "lm/W",
+   "l": "Eficiencia lumínica"
+  },
+  {
+   "v": "40,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "IP67",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "IK09",
+   "u": "",
+   "l": "Resistencia al impacto"
+  }
+ ],
+ "description": [
+  "STREET LIGHT es una luminaria LED para alumbrado público con tecnología LED SMD 3030 y una eficiencia de 140 lm/W, que permite hasta 80% de ahorro en consumo de energía. Su diseño ultradelgado favorece la disipación del calor y cuenta con apertura para el equipo eléctrico y su mantenimiento.",
+  "El cuerpo es de aluminio fundido a presión con óptica de policarbonato y lente de alta transmisión de luz. Incluye receptáculo y fotocelda de 3 pines, driver integrado con protección contra corto circuito y sobrecarga y supresor de picos de 4 kV, con grado de protección IP67 e IK09."
+ ],
+ "features": [
+  {
+   "img": "p1_x21",
+   "t": "Mantenimiento sencillo",
+   "d": "Apertura para acceso al equipo eléctrico."
+  },
+  {
+   "img": "p1_x35",
+   "t": "Fotocelda incluida",
+   "d": "Receptáculo y fotocelda de 3 pines para encendido automático."
+  },
+  {
+   "img": "p1_x51",
+   "t": "LED SMD 3030",
+   "d": "140 lm/W con índice de color Ra > 70.",
+   "light": false
+  },
+  {
+   "img": "p1_x45",
+   "t": "NOM-031-ENER y FIDE",
+   "d": "Certificaciones de eficiencia y seguridad.",
+   "light": false
+  }
+ ],
+ "warranty": [
+  {
+   "y": 5,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "NOM-031",
+   "l": "Norma"
+  },
+  {
+   "c": "FIDE",
+   "l": "Sello"
+  },
+  {
+   "c": "CE",
+   "l": "Certificación"
+  },
+  {
+   "c": "RoHS",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP67",
+   "l": "Hermeticidad"
+  },
+  {
+   "c": "IK09",
+   "l": "Impacto"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencias",
+     "60 / 100 / 150 W"
+    ],
+    [
+     "Flujo luminoso",
+     "8,400 / 14,000 / 21,000 lm"
+    ],
+    [
+     "Eficiencia lumínica",
+     "140 lm/W"
+    ],
+    [
+     "Tipo de LED",
+     "LED SMD 3030"
+    ],
+    [
+     "Temperatura de color",
+     "6500 K"
+    ],
+    [
+     "Índice de color (CRI)",
+     "Ra > 70"
+    ],
+    [
+     "Ángulo de haz",
+     "180° × 75°"
+    ],
+    [
+     "Tipo de curva",
+     "II media asimétrica"
+    ],
+    [
+     "Área iluminada",
+     "55 / 70 / 85 m²"
+    ],
+    [
+     "Vida útil",
+     "40,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión de entrada",
+     "100–277 V c.a., 50/60 Hz"
+    ],
+    [
+     "Corriente de operación",
+     "200–450 / 400–950 / 600–1,600 mA"
+    ],
+    [
+     "Factor de potencia",
+     "> 0.95"
+    ],
+    [
+     "Supresor de picos",
+     "4 kV"
+    ],
+    [
+     "Driver",
+     "Integrado, con protección contra corto circuito y sobrecarga"
+    ],
+    [
+     "Control de luz",
+     "Receptáculo y fotocelda de 3 pines (incluidos)"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Aluminio fundido a presión"
+    ],
+    [
+     "Óptica",
+     "Policarbonato"
+    ],
+    [
+     "Lente",
+     "Alta transmisión de luz"
+    ],
+    [
+     "Hermeticidad",
+     "IP67"
+    ],
+    [
+     "Resistencia al impacto",
+     "IK09"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "photometry": "p1_x27",
+ "advantages": [
+  {
+   "t": "Hasta 80% de ahorro",
+   "d": "Tecnología LED SMD de 140 lm/W frente a tecnologías convencionales."
+  },
+  {
+   "t": "Máxima hermeticidad",
+   "d": "IP67 e IK09: resiste agua, polvo e impactos."
+  },
+  {
+   "t": "Encendido automático",
+   "d": "Fotocelda de 3 pines incluida."
+  },
+  {
+   "t": "Protección eléctrica",
+   "d": "Supresor de picos de 4 kV y driver con protección contra sobrecarga."
+  },
+  {
+   "t": "Respaldo",
+   "d": "5 años de garantía por defectos de fabricación."
+  },
+  {
+   "t": "Mejor disipación",
+   "d": "Diseño ultradelgado de aluminio fundido."
+  }
+ ],
+ "applications": [
+  "Calles",
+  "Autopistas",
+  "Parques",
+  "Estacionamientos"
+ ],
+ "dims": {
+  "img": "p1_x39",
+  "rows": [
+   [
+    "Largo",
+    "476 mm"
+   ],
+   [
+    "Ancho",
+    "194 mm"
+   ],
+   [
+    "Alto",
+    "74 mm"
+   ]
+  ]
+ }
+}

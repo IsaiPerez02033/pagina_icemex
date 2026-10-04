@@ -1,0 +1,122 @@
+{
+ "model": "GIN INDUSTRIAL",
+ "kind": "Gabinete industrial para tubos LED",
+ "power": "32 – 54 W",
+ "variant": "T8 / T5",
+ "hero": "p1_x17",
+ "kpis": [
+  {
+   "v": "1–2",
+   "u": "",
+   "l": "Tubos"
+  },
+  {
+   "v": "122–244",
+   "u": "cm",
+   "l": "Longitudes"
+  },
+  {
+   "v": "28",
+   "u": "cm",
+   "l": "Ancho"
+  },
+  {
+   "v": "9",
+   "u": "cm",
+   "l": "Peralte"
+  }
+ ],
+ "description": [
+  "GIN es un gabinete industrial abierto de sobreponer, con reflector superior que dirige la luz hacia el área de trabajo. Su diseño sencillo y robusto facilita la instalación y el cambio de tubos en bodegas, talleres, estacionamientos y naves.",
+  "Se ofrece en 122 cm para un tubo T8 de 32 W y en 244 cm para dos tubos T5 de 54 W, ambos con base G-13, 28 cm de ancho y 9 cm de peralte."
+ ],
+ "features": [
+  {
+   "t": "Reflector superior",
+   "d": "Dirige la luz al área de trabajo."
+  },
+  {
+   "t": "Abierto",
+   "d": "Cambio de tubos rápido."
+  },
+  {
+   "t": "Dos longitudes",
+   "d": "122 y 244 cm."
+  },
+  {
+   "t": "Robusto",
+   "d": "Para uso industrial."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Modelos (cm)",
+   "rows": [
+    [
+     "GIN3-132",
+     "1 × T8 32 W · G-13 · 28 × 122 × 9"
+    ],
+    [
+     "GIN3-254",
+     "2 × T5 54 W · G-13 · 28 × 244 × 9"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Tipo",
+     "Industrial abierto con reflector"
+    ],
+    [
+     "Montaje",
+     "Sobreponer"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Económico",
+   "d": "Solución práctica para áreas de trabajo."
+  },
+  {
+   "t": "Fácil mantenimiento",
+   "d": "Diseño abierto."
+  },
+  {
+   "t": "Robusto",
+   "d": "Uso industrial."
+  },
+  {
+   "t": "Dos tamaños",
+   "d": "122 o 244 cm."
+  }
+ ],
+ "applications": [
+  "Naves industriales",
+  "Bodegas y almacenes",
+  "Talleres",
+  "Centros comerciales",
+  "Gimnasios",
+  "Estacionamientos"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Ancho",
+    "28 cm"
+   ],
+   [
+    "Largo",
+    "122 / 244 cm"
+   ],
+   [
+    "Alto",
+    "9 cm"
+   ]
+  ]
+ }
+}

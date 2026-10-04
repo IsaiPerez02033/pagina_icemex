@@ -1,0 +1,58 @@
+{
+  "model": "TURQUESA",
+  "kind": "Luminario de punta de poste para alumbrado público",
+  "power": "150 – 175 W",
+  "variant": "VSAP / Aditivo metálico",
+  "hero": "p1_x24",
+  "kpis": [
+    {"v": "150–175", "u": "W", "l": "Potencia máx."},
+    {"v": "IP66", "u": "", "l": "Conjunto óptico"},
+    {"v": "E39", "u": "", "l": "Portalámpara mogul"},
+    {"v": "2½", "u": "in", "l": "Punta de poste"}
+  ],
+  "kpis2": [
+    {"v": "150–175", "u": "W", "l": "Potencia máx."},
+    {"v": "IP66", "u": "", "l": "Conjunto óptico"},
+    {"v": "E39", "u": "", "l": "Portalámpara mogul"},
+    {"v": "2½", "u": "in", "l": "Punta de poste"},
+    {"v": "620", "u": "mm", "l": "Diámetro"},
+    {"v": "910", "u": "mm", "l": "Altura"}
+  ],
+  "description": [
+    "TURQUESA es un luminario decorativo de punta de poste para alumbrado público, con un diseño de domo que combina estética urbana y desempeño. Su carcasa de aluminio puro inyectado a presión, con pintura tipo poliéster aplicada electrostáticamente, ofrece mayor resistencia a la corrosión.",
+    "El conjunto óptico IP66 está completamente sellado para evitar la entrada de contaminantes; integra un refractor plano de cristal termo templado resistente al impacto y un reflector de aluminio hidroformado y anodizado a alta brillantez. Opera con lámparas de vapor de sodio de alta presión (VSAP) o aditivo metálico (AM) en portalámpara de porcelana mogul E39."
+  ],
+  "features": [
+    {"t": "Carcasa de aluminio inyectado", "d": "Aluminio puro inyectado a presión con pintura poliéster electrostática, resistente a la corrosión."},
+    {"t": "Conjunto óptico IP66", "d": "Completamente sellado para evitar la entrada de polvo, agua y contaminantes."},
+    {"t": "Refractor de cristal templado", "d": "Refractor plano transparente, termo templado y resistente al impacto."},
+    {"t": "Reflector hidroformado", "d": "Lámina de aluminio hidroformada y anodizada a alta brillantez."}
+  ],
+  "certs": [{"c": "IP66", "l": "Hermeticidad"}],
+  "specs": [
+    {"name": "Sistema eléctrico", "rows": [
+      ["Balastro VSAP", "150 W · 110–220 V"],
+      ["Balastro aditivo metálico", "175 W · 110–220 V / 150 W · 220 V"],
+      ["Portalámpara", "Porcelana, tipo mogul E39"]
+    ]},
+    {"name": "Construcción", "rows": [
+      ["Carcasa", "Aluminio puro inyectado a presión"],
+      ["Acabado", "Pintura tipo poliéster aplicada electrostáticamente"],
+      ["Refractor", "Cristal transparente plano, termo templado, resistente al impacto"],
+      ["Reflector", "Lámina de aluminio hidroformada, anodizada a alta brillantez"],
+      ["Hermeticidad", "IP66 (conjunto óptico sellado)"],
+      ["Montaje", "Punta de poste de 2½\""]
+    ]}
+  ],
+  "advantages": [
+    {"t": "Diseño urbano", "d": "Silueta de domo que se integra a calles, parques, plazas y zonas residenciales."},
+    {"t": "Resistente a la corrosión", "d": "Aluminio inyectado con pintura poliéster electrostática para exteriores."},
+    {"t": "Óptica sellada IP66", "d": "Sin entrada de polvo ni agua: mantiene el rendimiento y reduce mantenimiento."},
+    {"t": "Mejor aprovechamiento de la luz", "d": "Reflector de aluminio anodizado a alta brillantez."},
+    {"t": "Opciones de lámpara", "d": "Vapor de sodio (VSAP) o aditivo metálico, en 110–220 V."},
+    {"t": "Instalación sencilla", "d": "Se monta directamente en punta de poste de 2½\"."}
+  ],
+  "applications": ["Calles y avenidas", "Parques y jardines", "Plazas y explanadas", "Estacionamientos", "Áreas recreativas", "Cotos y zonas residenciales", "Universidades"],
+  "dims": {"img": "p1_x27", "rows": [["Diámetro", "620 mm"], ["Altura", "910 mm"], ["Acoplamiento", "76 mm"]]},
+  "mount": "Montaje directo en punta de poste de 2½\"."
+}

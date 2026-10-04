@@ -1,0 +1,238 @@
+{
+ "model": "WALLPACK",
+ "kind": "Luminario de muro para exteriores",
+ "power": "40 – 70 W LED",
+ "variant": "127–277 V c.a.",
+ "hero": "p1_x25",
+ "kpis": [
+  {
+   "v": "70",
+   "u": "W",
+   "l": "Potencia máx. LED"
+  },
+  {
+   "v": "7,700",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "10",
+   "u": "kA",
+   "l": "Supresor"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "110",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "5,700",
+   "u": "K",
+   "l": "Temperatura de color"
+  }
+ ],
+ "description": [
+  "WALLPACK es un luminario de muro para uso comercial con alta emisión lumínica, ideal para proyectos en exteriores. Su cuerpo de aluminio liga 380 inyectado a presión lleva empaque de silicón que impide la entrada de contaminantes (IP65), y el conjunto óptico combina un reflector de aluminio martillado hammertone con un cristal de borosilicato resistente al impacto.",
+  "La versión LED usa módulos Philips Fast Flex de 40 a 70 W que entregan hasta 7,700 lúmenes (110 lm/W) a 5,700 K, con factor de potencia mayor a 0.95 y protección contra descargas de hasta 10 kA. También se ofrece con vapor de sodio o aditivo metálico de 100 a 400 W, City White de 70 a 150 W y Cosmopolis de 60 a 140 W."
+ ],
+ "features": [
+  {
+   "t": "LED Philips Fast Flex",
+   "d": "40 a 70 W, hasta 7,700 lm."
+  },
+  {
+   "t": "Cristal de borosilicato",
+   "d": "Resistente al impacto."
+  },
+  {
+   "t": "Reflector hammertone",
+   "d": "Aluminio martillado para luz uniforme."
+  },
+  {
+   "t": "Supresor de 10 kA",
+   "d": "Protección contra descargas."
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  },
+  {
+   "c": "10 kA",
+   "l": "Sobretensión"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Versión LED",
+   "rows": [
+    [
+     "Módulos",
+     "Philips Fast Flex, 40–70 W"
+    ],
+    [
+     "Flujo luminoso",
+     "Hasta 7,700 lm"
+    ],
+    [
+     "Eficacia",
+     "110 lm/W"
+    ],
+    [
+     "Temperatura de color",
+     "5,700 K"
+    ],
+    [
+     "IRC",
+     "> 70"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Voltaje de operación",
+     "127–277 V c.a. ±10%"
+    ],
+    [
+     "Frecuencia",
+     "50–60 Hz"
+    ],
+    [
+     "Corriente",
+     "0.314 / 0.551 A máx."
+    ],
+    [
+     "Factor de potencia",
+     "> 0.95"
+    ],
+    [
+     "Protección contra descargas",
+     "Hasta 10 kA"
+    ]
+   ]
+  },
+  {
+   "name": "Otras tecnologías",
+   "rows": [
+    [
+     "Vapor de sodio",
+     "100–400 W"
+    ],
+    [
+     "Aditivo metálico",
+     "100–400 W"
+    ],
+    [
+     "City White",
+     "70–150 W"
+    ],
+    [
+     "Cosmopolis",
+     "60–140 W"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Aluminio liga 380 inyectado a presión"
+    ],
+    [
+     "Empaque",
+     "Silicón"
+    ],
+    [
+     "Reflector",
+     "Aluminio martillado hammertone"
+    ],
+    [
+     "Cristal",
+     "Borosilicato resistente al impacto"
+    ],
+    [
+     "Acabado",
+     "Pintura electrostática horneada, resistente a UV"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ],
+    [
+     "Peso",
+     "8 kg"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  5700
+ ],
+ "advantages": [
+  {
+   "t": "Alta emisión",
+   "d": "Hasta 7,700 lm con 70 W."
+  },
+  {
+   "t": "Hermético",
+   "d": "IP65 con empaque de silicón."
+  },
+  {
+   "t": "Resistente",
+   "d": "Cristal de borosilicato y aluminio 380."
+  },
+  {
+   "t": "Protegido",
+   "d": "Hasta 10 kA contra descargas."
+  },
+  {
+   "t": "Varias tecnologías",
+   "d": "LED, VSAP, AM, City White o Cosmopolis."
+  },
+  {
+   "t": "Acabado durable",
+   "d": "Pintura horneada resistente a UV."
+  }
+ ],
+ "applications": [
+  "Estacionamientos",
+  "Fachadas",
+  "Espectaculares",
+  "Construcciones",
+  "Patios de maniobras",
+  "Monumentos",
+  "Andadores"
+ ],
+ "dims": {
+  "img": "p1_x28",
+  "rows": [
+   [
+    "Ancho",
+    "370 mm (14⅝\")"
+   ],
+   [
+    "Alto",
+    "242 mm (9½\")"
+   ],
+   [
+    "Fondo",
+    "197 mm (7¾\")"
+   ],
+   [
+    "Peso",
+    "8 kg"
+   ]
+  ]
+ }
+}

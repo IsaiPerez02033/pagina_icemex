@@ -1,8 +1,8 @@
 import { createOpenAICompatible } from "@ai-sdk/openai-compatible";
 import { streamText } from "ai";
-import { products, lineNames, tagNames } from "@/lib/products";
+import { lineNames, tagNames } from "@/lib/products";
 import { projects } from "@/lib/projects";
-import { standaloneFichas } from "@/lib/fichas";
+import { catalogProducts, standaloneFichas } from "@/lib/fichas";
 import { getClientIp, hashIp, isSameOrigin, rateLimit } from "@/lib/security";
 
 export const runtime = "nodejs";
@@ -21,7 +21,7 @@ const groq = createOpenAICompatible({
 });
 
 function compactCatalog() {
-  return products
+  return catalogProducts
     .map((p) => {
       const power = p.specs.find((s) =>
         s.label.toLowerCase().includes("potencia")

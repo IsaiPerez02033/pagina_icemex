@@ -1,0 +1,214 @@
+{
+ "model": "02V-100",
+ "kind": "Luminario vial LED ICEMEX",
+ "power": "100 W",
+ "variant": "100–277 V~",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "100",
+   "u": "W",
+   "l": "Consumo de potencia"
+  },
+  {
+   "v": "14,000",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "IK09",
+   "u": "",
+   "l": "Resistencia al impacto"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "5,500",
+   "u": "K",
+   "l": "Temperatura de color"
+  },
+  {
+   "v": "15",
+   "u": "kV",
+   "l": "Protección contra sobretensión"
+  }
+ ],
+ "description": [
+  "El luminario vial ICEMEX 02V-100 es una luminaria LED de 100 W para vialidades que entrega 14,000 lúmenes con una curva de distribución asimétrica de 70 × 140°, ideal para dirigir la luz sobre el arroyo vehicular.",
+  "Tiene cuerpo de acero en acabado gris, pantalla de policarbonato, grado de protección IP65 e IK09 y protección contra sobretensión de 15 kV. Se monta en poste de 2.5\" y opera de 100 a 277 V, con temperatura de operación de -10 a 45 °C."
+ ],
+ "features": [
+  {
+   "t": "Distribución asimétrica",
+   "d": "Ángulo de 70 × 140° para vialidades."
+  },
+  {
+   "t": "Protección 15 kV",
+   "d": "Resistente a sobretensiones de la red."
+  },
+  {
+   "t": "IP65 e IK09",
+   "d": "Sellada contra polvo y agua, resistente a impactos."
+  },
+  {
+   "t": "Fotocelda",
+   "d": "Receptáculo para control automático de encendido."
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  },
+  {
+   "c": "IK09",
+   "l": "Impacto"
+  },
+  {
+   "c": "15 kV",
+   "l": "Sobretensión"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Consumo de potencia",
+     "100 W"
+    ],
+    [
+     "Flujo luminoso",
+     "14,000 lm"
+    ],
+    [
+     "Temperatura de color",
+     "5,500 K"
+    ],
+    [
+     "Ángulo",
+     "70 × 140°"
+    ],
+    [
+     "Curva de distribución",
+     "Asimétrica"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión nominal",
+     "100–277 V~"
+    ],
+    [
+     "Protección contra sobretensión",
+     "15 kV"
+    ],
+    [
+     "Frecuencia",
+     "50/60 Hz"
+    ],
+    [
+     "Consumo de corriente",
+     "1.18 – 0.32 A"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Acero (Fe)"
+    ],
+    [
+     "Acabado",
+     "Gris"
+    ],
+    [
+     "Pantalla",
+     "Policarbonato"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ],
+    [
+     "Resistencia al impacto",
+     "IK09"
+    ],
+    [
+     "Montaje",
+     "Poste de 2.5\""
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-10 a 45 °C"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  5500
+ ],
+ "photometry": "p1_x27",
+ "advantages": [
+  {
+   "t": "Alto flujo luminoso",
+   "d": "14,000 lm con 100 W."
+  },
+  {
+   "t": "Luz dirigida",
+   "d": "Curva asimétrica para iluminar la vialidad, no los alrededores."
+  },
+  {
+   "t": "Resistente",
+   "d": "IP65 e IK09 para uso intensivo."
+  },
+  {
+   "t": "Protección eléctrica",
+   "d": "Hasta 15 kV de protección contra sobretensión."
+  },
+  {
+   "t": "Amplio rango de voltaje",
+   "d": "100 a 277 V."
+  },
+  {
+   "t": "Instalación estándar",
+   "d": "Montaje en poste de 2.5\"."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Vialidades primarias y secundarias",
+  "Estacionamientos"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Largo",
+    "637 mm"
+   ],
+   [
+    "Ancho",
+    "211 mm"
+   ],
+   [
+    "Alto",
+    "123 mm"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,172 @@
+{
+ "model": "EDGE AREA ROUND",
+ "kind": "Luminaria LED de área marca CREE",
+ "power": "46 – 133 W",
+ "variant": "120/277 V",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "46–133",
+   "u": "W",
+   "l": "Potencias"
+  },
+  {
+   "v": "5,600",
+   "u": "K",
+   "l": "Temperatura de color"
+  },
+  {
+   "v": "10",
+   "u": "años",
+   "l": "Garantía"
+  },
+  {
+   "v": "USA",
+   "u": "",
+   "l": "Hecho en"
+  }
+ ],
+ "description": [
+  "Edge Area Round es una luminaria LED de área marca CREE, fabricada en Estados Unidos, con tecnología BetaLED® y ópticas NanoOptic® de alta precisión e índice de reproducción de color mayor a 70.",
+  "Se ofrece de 46 a 133 W a 120/277 V, en luz de 5,600 K, con ópticas tipo II corta, III media, IV media y V media para adaptarse a cada espacio. Cuenta con 10 años de garantía."
+ ],
+ "features": [
+  {
+   "t": "Tecnología BetaLED®",
+   "d": "Plataforma LED de CREE."
+  },
+  {
+   "t": "Ópticas NanoOptic®",
+   "d": "Tipos II, III, IV y V."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Manufactura estadounidense."
+  },
+  {
+   "t": "10 años de garantía",
+   "d": "Respaldo del fabricante."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CREE",
+   "l": "Marca"
+  },
+  {
+   "c": "USA",
+   "l": "Fabricación"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencias",
+     "46, 66, 70, 90, 101 y 133 W"
+    ],
+    [
+     "Tecnología",
+     "CREE BetaLED®"
+    ],
+    [
+     "Ópticas",
+     "NanoOptic® II corta, III media, IV media, V media"
+    ],
+    [
+     "Temperatura de color",
+     "5,600 K"
+    ],
+    [
+     "IRC",
+     "> 70"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Voltaje",
+     "120/277 V"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Alto total",
+     "544 mm (21.4\")"
+    ],
+    [
+     "Diámetro",
+     "584 mm (23.0\")"
+    ],
+    [
+     "Fabricación",
+     "Estados Unidos"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  5600
+ ],
+ "advantages": [
+  {
+   "t": "10 años de garantía",
+   "d": "Respaldo de fabricante."
+  },
+  {
+   "t": "Óptica de precisión",
+   "d": "NanoOptic® para cada tipo de área."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Estándares CREE."
+  },
+  {
+   "t": "Seis potencias",
+   "d": "De 46 a 133 W."
+  },
+  {
+   "t": "Diseño redondo",
+   "d": "Estética para plazas y explanadas."
+  },
+  {
+   "t": "Versátil",
+   "d": "Calles, parques y estacionamientos."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Estacionamientos",
+  "Áreas recreativas",
+  "Cotos y zonas residenciales",
+  "Universidades",
+  "Centros y locales comerciales"
+ ],
+ "dims": {
+  "img": "p1_x27",
+  "rows": [
+   [
+    "Alto total",
+    "544 mm"
+   ],
+   [
+    "Diámetro",
+    "584 mm"
+   ]
+  ]
+ }
+}

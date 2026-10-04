@@ -1,0 +1,189 @@
+{
+ "model": "LED OMEGA",
+ "kind": "Luminaria LED para alumbrado público",
+ "power": "40 – 100 W",
+ "variant": "120–277 V c.a.",
+ "hero": "p1_x71",
+ "kpis": [
+  {
+   "v": "40–100",
+   "u": "W",
+   "l": "Potencia de operación"
+  },
+  {
+   "v": "10,500",
+   "u": "lm",
+   "l": "Flujo luminoso máx."
+  },
+  {
+   "v": ">105",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "96",
+   "u": "%",
+   "l": "Eficiencia óptica"
+  },
+  {
+   "v": "10",
+   "u": "kA",
+   "l": "Supresor de picos"
+  }
+ ],
+ "description": [
+  "LED OMEGA es una luminaria para alumbrado público con cuerpo de aluminio resistente a radiación UV y corrosión, excelente eficiencia lumínica y un agradable diseño modernista.",
+  "Utiliza módulos LED Philips Fast Flex y drivers Philips Xitanium LED Xtreme de gran protección a la intemperie, con eficiencia óptica de 96%. Opera a 120–277 V c.a. o 12–24 V c.d., con eficacia mayor a 105 lm/W, hasta 10,500 lm y supresor de picos de 10 kA."
+ ],
+ "features": [
+  {
+   "img": "p1_x47",
+   "t": "LED Philips Fast Flex",
+   "d": "Eficiencia óptica de 96%."
+  },
+  {
+   "img": "p1_x28",
+   "t": "Driver Philips Xitanium",
+   "d": "Driver LED Xtreme de 100 W con gran protección a la intemperie."
+  },
+  {
+   "img": "p1_x50",
+   "t": "Opción 12–24 V c.d.",
+   "d": "Drivers de 40 W y 70 W para sistemas de 12–24 V."
+  },
+  {
+   "img": "p1_x25",
+   "t": "Supresor de picos 10 kA",
+   "d": "Protección contra descargas atmosféricas."
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  },
+  {
+   "c": "10 kA",
+   "l": "Sobretensión"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia de operación",
+     "40–100 W máx. (±10%)"
+    ],
+    [
+     "Tipo de LED",
+     "Philips Fast Flex"
+    ],
+    [
+     "Eficiencia óptica",
+     "96%"
+    ],
+    [
+     "Eficacia",
+     "> 105 lm/W"
+    ],
+    [
+     "Flujo luminoso",
+     "3,000 – 10,500 lm máx."
+    ],
+    [
+     "Temperatura de color",
+     "3,000 / 4,000 / 5,700 K (±10%)"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión de operación",
+     "120–277 V c.a. (±10%) · 12–24 V c.d."
+    ],
+    [
+     "Frecuencia",
+     "50–60 Hz"
+    ],
+    [
+     "Corriente de operación",
+     "0.1–0.78 A máx. (±10%)"
+    ],
+    [
+     "Factor de potencia",
+     "> 0.95"
+    ],
+    [
+     "Driver",
+     "Philips Xitanium LED Xtreme"
+    ],
+    [
+     "Supresor de picos",
+     "10 kA"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Aluminio resistente a radiación UV y corrosión"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  3000,
+  4000,
+  5700
+ ],
+ "advantages": [
+  {
+   "t": "Alta eficiencia",
+   "d": "Más de 105 lm/W con óptica de 96%."
+  },
+  {
+   "t": "Componentes Philips",
+   "d": "Módulos Fast Flex y drivers Xitanium."
+  },
+  {
+   "t": "Protección eléctrica",
+   "d": "Supresor de picos de 10 kA."
+  },
+  {
+   "t": "Doble alimentación",
+   "d": "120–277 V c.a. o 12–24 V c.d."
+  },
+  {
+   "t": "Tres temperaturas de color",
+   "d": "3,000, 4,000 y 5,700 K."
+  },
+  {
+   "t": "Exteriores",
+   "d": "Grado de protección IP65 y aluminio resistente a UV."
+  }
+ ],
+ "applications": [
+  "Parques",
+  "Vía pública",
+  "Avenidas",
+  "Estacionamientos",
+  "Escuelas",
+  "Centros comerciales"
+ ]
+}

@@ -1,0 +1,179 @@
+{
+ "model": "URBAN LED",
+ "kind": "Luminaria MultiLED para vialidades",
+ "power": "40 – 100 W",
+ "variant": "85–265 V",
+ "hero": "p1_x25",
+ "kpis": [
+  {
+   "v": "40–100",
+   "u": "W",
+   "l": "Potencias disponibles"
+  },
+  {
+   "v": "80",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "6,500",
+   "u": "K",
+   "l": "Temperatura de color"
+  },
+  {
+   "v": ">70",
+   "u": "",
+   "l": "IRC"
+  }
+ ],
+ "description": [
+  "URBAN LED es una luminaria MultiLED para vialidades urbanas y carreteras, con eficacia de 80 lm/W, óptica tipo II media e índice de reproducción de color mayor a 70.",
+  "Se ofrece en 40, 60 y 100 W, con alimentación de 85 a 265 V (50–60 Hz), temperatura de color de 6,500 K, grado de protección IP65 y vida útil de 50,000 horas."
+ ],
+ "features": [
+  {
+   "t": "Tecnología MultiLED",
+   "d": "Múltiples LED distribuidos para una luz uniforme."
+  },
+  {
+   "t": "Óptica tipo II media",
+   "d": "Distribución diseñada para vialidades."
+  },
+  {
+   "t": "Amplio rango de voltaje",
+   "d": "85–265 V, 50–60 Hz."
+  },
+  {
+   "t": "Tres potencias",
+   "d": "40, 60 y 100 W."
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencias disponibles",
+     "40, 60 y 100 W"
+    ],
+    [
+     "Tecnología",
+     "MultiLED"
+    ],
+    [
+     "Eficacia",
+     "80 lm/W"
+    ],
+    [
+     "Óptica",
+     "Tipo II media"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "IRC",
+     "> 70"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión de entrada",
+     "85–265 V"
+    ],
+    [
+     "Frecuencia",
+     "50–60 Hz"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Hermeticidad",
+     "IP65"
+    ],
+    [
+     "Marca",
+     "ICEMEX"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Para vialidades",
+   "d": "Óptica tipo II media para calles, carreteras y libramientos."
+  },
+  {
+   "t": "Larga vida útil",
+   "d": "50,000 horas de operación."
+  },
+  {
+   "t": "Exteriores",
+   "d": "Grado de protección IP65."
+  },
+  {
+   "t": "Tolerante a la red",
+   "d": "Opera de 85 a 265 V."
+  },
+  {
+   "t": "Tres potencias",
+   "d": "40, 60 y 100 W según la vialidad."
+  },
+  {
+   "t": "Luz blanca",
+   "d": "6,500 K con IRC mayor a 70."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Periféricos, vías rápidas y ejes viales",
+  "Carreteras y libramientos",
+  "Caminos rurales",
+  "Cotos y zonas residenciales"
+ ],
+ "dims": {
+  "img": "p1_x28",
+  "rows": [
+   [
+    "40 W (ancho × largo)",
+    "210 × 500 mm"
+   ],
+   [
+    "60 W (ancho × largo)",
+    "260 × 590 mm"
+   ]
+  ]
+ }
+}

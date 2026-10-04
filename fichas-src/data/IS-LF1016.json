@@ -1,0 +1,223 @@
+{
+ "model": "LEAFLED",
+ "kind": "Luminaria LED tipo cobra",
+ "power": "150 W",
+ "variant": "85–265 V",
+ "hero": "p1_x266",
+ "kpis": [
+  {
+   "v": "150",
+   "u": "W",
+   "l": "Consumo de potencia"
+  },
+  {
+   "v": "12,000",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "130°",
+   "u": "",
+   "l": "Ángulo de apertura"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "25,000",
+   "u": "h",
+   "l": "Vida útil"
+  },
+  {
+   "v": "80",
+   "u": "",
+   "l": "CRI"
+  }
+ ],
+ "description": [
+  "LEAFLED (LED STL 150W) es una luminaria LED tipo cobra para alumbrado público, con carcasa de aleación de aluminio y policarbonato en acabado gris y pantalla de policarbonato. Entrega 12,000 lúmenes de luz blanca con un ángulo de apertura de 130°.",
+  "Opera de 85 a 265 V con factor de potencia de 0.95, temperatura de operación de -20 a 50 °C y grado de protección IP65. Cuenta con certificación NOM-003 y 3 años de garantía."
+ ],
+ "features": [
+  {
+   "t": "Carcasa de aluminio + PC",
+   "d": "Aleación de aluminio con policarbonato en acabado gris."
+  },
+  {
+   "t": "12,000 lúmenes",
+   "d": "Alto flujo luminoso con 150 W de consumo."
+  },
+  {
+   "t": "Apertura de 130°",
+   "d": "Cobertura amplia para calles y áreas abiertas."
+  },
+  {
+   "t": "Formato compacto",
+   "d": "500 × 196.3 × 76 mm."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 3,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "NOM-003",
+   "l": "Norma"
+  },
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Consumo de potencia",
+     "150 W"
+    ],
+    [
+     "Flujo luminoso",
+     "12,000 lm"
+    ],
+    [
+     "Color de luz",
+     "Blanca"
+    ],
+    [
+     "Ángulo de apertura",
+     "130°"
+    ],
+    [
+     "CRI",
+     "80"
+    ],
+    [
+     "Atenuable",
+     "No"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión nominal",
+     "85–265 V"
+    ],
+    [
+     "Frecuencia",
+     "50/60 Hz"
+    ],
+    [
+     "Corriente",
+     "1,200 mA"
+    ],
+    [
+     "Factor de potencia",
+     "0.95"
+    ],
+    [
+     "Calibre del conductor",
+     "3 × 0.75 mm² (18 AWG)"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Carcasa",
+     "Aleación de aluminio + PC"
+    ],
+    [
+     "Acabado",
+     "Gris"
+    ],
+    [
+     "Pantalla",
+     "Policarbonato"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ],
+    [
+     "Dimensiones",
+     "500 × 196.3 × 76 mm"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-20 a 50 °C"
+    ],
+    [
+     "Vida útil",
+     "25,000 h"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Alto flujo",
+   "d": "12,000 lúmenes para vialidades y espacios abiertos."
+  },
+  {
+   "t": "Respaldo",
+   "d": "3 años de garantía y certificación NOM-003."
+  },
+  {
+   "t": "Exteriores",
+   "d": "IP65 y operación de -20 a 50 °C."
+  },
+  {
+   "t": "Red eléctrica estable",
+   "d": "Factor de potencia de 0.95."
+  },
+  {
+   "t": "Cobertura amplia",
+   "d": "Apertura de 130° para una distribución uniforme."
+  },
+  {
+   "t": "Ligera y compacta",
+   "d": "Perfil de solo 76 mm de alto."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Cotos y zonas residenciales",
+  "Áreas recreativas",
+  "Universidades",
+  "Andadores, patios, corredores y pasillos"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Largo",
+    "500 mm"
+   ],
+   [
+    "Ancho",
+    "196.3 mm"
+   ],
+   [
+    "Alto",
+    "76 mm"
+   ]
+  ]
+ }
+}

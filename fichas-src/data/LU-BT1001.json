@@ -1,0 +1,209 @@
+{
+ "model": "BOLARDO TRIANGULAR",
+ "kind": "Bolardo LED de sección triangular",
+ "power": "75 W",
+ "variant": "4,000 K · Hecho en México",
+ "hero": "p1_x27",
+ "photo2": "p1_x25",
+ "kpis": [
+  {
+   "v": "75",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "13,200",
+   "u": "lm",
+   "l": "Flujo promedio"
+  },
+  {
+   "v": "80",
+   "u": "",
+   "l": "IRC mínimo"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "4,000",
+   "u": "K",
+   "l": "Temperatura de color"
+  },
+  {
+   "v": "744",
+   "u": "h",
+   "l": "Cámara salina"
+  }
+ ],
+ "description": [
+  "El Bolardo Triangular es una columna luminosa de diseño arquitectónico, fabricada en México en acero galvanizado de una sola pieza sin soldadura aparente, con tornillería de acero inoxidable y logotipos grabados con corte láser a solicitud del cliente.",
+  "Su fuente luminosa de cuatro tubos LED de 18 W suma 75 W y entrega en promedio 13,200 lúmenes a 4,000 K con IRC mayor a 80 y 50,000 horas de vida. El difusor de acrílico 100% opalino, con transmitancia superior al 90%, mantiene el deslumbramiento bajo (< 17.9%). Se ofrece también una versión de tres tubos de 30 W a 6,500 K con tapa superior iluminada, logotipo y luz indirecta RGB.",
+  "El acabado es de pintura en polvo poliéster microtexturizada, aplicada electrostáticamente y horneada, color gris oxford, probada 744 horas en cámara salina."
+ ],
+ "features": [
+  {
+   "t": "Una sola pieza",
+   "d": "Acero galvanizado sin soldadura aparente."
+  },
+  {
+   "t": "Logotipo en corte láser",
+   "d": "Personalizable para cada proyecto."
+  },
+  {
+   "t": "Acrílico opalino",
+   "d": "Transmitancia > 90%, deslumbramiento < 17.9%."
+  },
+  {
+   "t": "Opción RGB",
+   "d": "Tapa superior, logo y luz indirecta."
+  }
+ ],
+ "certs": [
+  {
+   "c": "MX",
+   "l": "Hecho en México"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Versión 75 W",
+   "rows": [
+    [
+     "Fuente luminosa",
+     "4 tubos LED de 18 W"
+    ],
+    [
+     "Potencia",
+     "75 W"
+    ],
+    [
+     "Temperatura de color",
+     "4,000 K"
+    ],
+    [
+     "IRC",
+     "> 80"
+    ],
+    [
+     "Flujo luminoso",
+     "13,200 lm promedio"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Versión de 3 tubos",
+   "rows": [
+    [
+     "Fuente luminosa",
+     "3 tubos LED integrales de 30 W, 100 lm/W c/u"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "Extras",
+     "Tapa triangular superior, logo y luz indirecta RGB"
+    ],
+    [
+     "Voltaje",
+     "100–277 V"
+    ],
+    [
+     "Supresor de picos",
+     "10 kV"
+    ],
+    [
+     "Vida útil",
+     "25,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Gabinete",
+     "Acero galvanizado, una sola pieza; lámina cal. 18 con corte láser"
+    ],
+    [
+     "Tornillería",
+     "Acero inoxidable"
+    ],
+    [
+     "Óptica",
+     "Acrílico opalino 100% (transmitancia > 90%)"
+    ],
+    [
+     "Placa base",
+     "Acero circular de 30 cm × 3/16\", barrenos a 19 cm entre centros para anclas de 3/4\""
+    ]
+   ]
+  },
+  {
+   "name": "Acabado",
+   "rows": [
+    [
+     "Pintura",
+     "Polvo poliéster electrostático, microtexturizado, horneado"
+    ],
+    [
+     "Color",
+     "Gris oxford"
+    ],
+    [
+     "Cámara salina",
+     "744 h"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  4000,
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Diseño de autor",
+   "d": "Columna triangular con identidad de marca."
+  },
+  {
+   "t": "Personalizable",
+   "d": "Logotipo del cliente en corte láser."
+  },
+  {
+   "t": "Luz confortable",
+   "d": "Difusor opalino de bajo deslumbramiento."
+  },
+  {
+   "t": "Anticorrosivo",
+   "d": "Galvanizado y 744 h en cámara salina."
+  },
+  {
+   "t": "Hecho en México",
+   "d": "Fabricación nacional."
+  },
+  {
+   "t": "Opción RGB",
+   "d": "Luz indirecta para efectos arquitectónicos."
+  }
+ ],
+ "applications": [
+  "Jardines",
+  "Calles",
+  "Plazas",
+  "Andadores",
+  "Parques",
+  "Avenidas",
+  "Espacios urbanos"
+ ],
+ "mount": "Placa base de acero circular de 30 cm por 3/16\" de espesor, con barrenos a 19 cm entre centros para anclas de 3/4\". No se recomienda en ambientes salinos o costas."
+}

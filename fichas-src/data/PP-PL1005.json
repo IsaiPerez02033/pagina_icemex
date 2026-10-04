@@ -1,0 +1,207 @@
+{
+ "model": "PUNTA DE POSTE 100W",
+ "kind": "Punta de poste LED con fotocelda",
+ "power": "100 W",
+ "variant": "AC 85–305 V",
+ "hero": "p1_x24",
+ "photo2": "p1_x27",
+ "kpis": [
+  {
+   "v": "100",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "100",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "6,500",
+   "u": "K",
+   "l": "Temperatura de color"
+  },
+  {
+   "v": "80",
+   "u": "",
+   "l": "CRI"
+  }
+ ],
+ "description": [
+  "Punta de poste LED de 100 W para alumbrado público, de sólida construcción en plástico ABS, aleación de aluminio y PC, para jardines, caminos rurales, calles, parques, avenidas y carreteras. Con LED Epistar entrega 100 lm/W de luz blanca fría (6,500 K) con CRI de 80. Disponible en versiones de 60, 80, 100, 120 y 150 W.",
+  "Opera en AC 85–305 V, 50/60 Hz, con factor de potencia de 0.9, e incluye fotocelda de 1,000 W para encendido automático. Grado de protección IP65, operación de -20 a 40 °C, sin mercurio, con certificaciones CE y RoHS."
+ ],
+ "features": [
+  {
+   "t": "Fotocelda incluida",
+   "d": "Encendido y apagado automático."
+  },
+  {
+   "t": "LED Epistar",
+   "d": "100 lm/W de luz blanca fría."
+  },
+  {
+   "t": "Rango amplio de voltaje",
+   "d": "AC 85–305 V."
+  },
+  {
+   "t": "IP65",
+   "d": "Para interiores y exteriores."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 2,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CE",
+   "l": "Certificación"
+  },
+  {
+   "c": "RoHS",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "100 W (versiones de 60, 80, 100, 120 y 150 W)"
+    ],
+    [
+     "Eficacia",
+     "100 lm/W"
+    ],
+    [
+     "Fuente de luz",
+     "LED Epistar"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "CRI",
+     "80"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Voltaje",
+     "AC 85–305 V"
+    ],
+    [
+     "Frecuencia",
+     "50/60 Hz"
+    ],
+    [
+     "Factor de potencia",
+     "0.9"
+    ],
+    [
+     "Fotocelda",
+     "1,000 W tungsteno, 120–277 V c.a."
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Plástico ABS, aleación de aluminio, PC"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ],
+    [
+     "Dimensiones",
+     "466 × 565 mm"
+    ],
+    [
+     "Peso",
+     "5.6 kg"
+    ],
+    [
+     "Empaque",
+     "600 × 520 × 135 mm, 6.87 kg"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-20 °C a 40 °C"
+    ],
+    [
+     "Contenido de mercurio",
+     "0"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Encendido automático",
+   "d": "Fotocelda incluida."
+  },
+  {
+   "t": "Eficiente",
+   "d": "100 lm/W."
+  },
+  {
+   "t": "Tolerante a la red",
+   "d": "AC 85–305 V."
+  },
+  {
+   "t": "Certificada",
+   "d": "CE y RoHS, sin mercurio."
+  },
+  {
+   "t": "Exteriores",
+   "d": "IP65."
+  },
+  {
+   "t": "Varias potencias",
+   "d": "60, 80, 100, 120 y 150 W."
+  }
+ ],
+ "applications": [
+  "Áreas exteriores citadinas",
+  "Plazas",
+  "Complejos comerciales e industriales",
+  "Carreteras y caminos",
+  "Jardines y parques"
+ ]
+}

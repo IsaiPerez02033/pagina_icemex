@@ -1,0 +1,206 @@
+{
+ "is_lum": false,
+ "model": "POSTES RECTO Y CÓNICO CIRCULAR",
+ "kind": "Postes metálicos para alumbrado",
+ "power": "3 – 15 m",
+ "variant": "Acero ASTM A-36",
+ "hero": "p1_x25",
+ "photo2": "p1_x31",
+ "kpis": [
+  {
+   "v": "3–15",
+   "u": "m",
+   "l": "Alturas"
+  },
+  {
+   "v": "A-36",
+   "u": "",
+   "l": "Acero ASTM"
+  },
+  {
+   "v": "Cal. 12",
+   "u": "",
+   "l": "Poste cónico 8 m"
+  },
+  {
+   "v": "63",
+   "u": "kg",
+   "l": "Poste cónico 8 m"
+  }
+ ],
+ "description": [
+  "ICEMEX fabrica postes metálicos rectos y cónicos circulares para alumbrado público, vialidades, parques y fraccionamientos, en acero ASTM A-36 con placa base, anillo de refuerzo y registro para la conexión eléctrica. Se entregan listos para recibir luminarias LED, solares o de punta de poste, y pueden pintarse en el color del proyecto.",
+  "El poste cónico circular de 8 m, por ejemplo, es de calibre 12, con diámetro de corona de 75 mm y de base de 160 mm, placa base de 250 × 250 × 10 mm con barrenos a 190 mm entre centros, anillo de refuerzo de 76 × 5 mm, registro de 120 × 300 mm y un peso de 63 kg. También se integran conjuntos completos con luminaria solar y pendón, como los de Teoloyucan y Apaxco."
+ ],
+ "features": [
+  {
+   "img": "p1_x31",
+   "t": "Producción propia",
+   "d": "Postes rectos y cónicos listos para entrega."
+  },
+  {
+   "img": "p1_x33",
+   "t": "Acabado a elegir",
+   "d": "Galvanizado o pintado al color del proyecto."
+  },
+  {
+   "img": "p1_x35",
+   "t": "Entrega en obra",
+   "d": "Logística para proyectos municipales."
+  },
+  {
+   "img": "p2_x72",
+   "t": "Conjuntos completos",
+   "d": "Poste, luminaria solar y pendón."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Poste cónico circular 8 m",
+   "rows": [
+    [
+     "Material",
+     "Poste metálico ASTM A-36"
+    ],
+    [
+     "Calibre",
+     "12"
+    ],
+    [
+     "Diámetro de corona",
+     "75 mm"
+    ],
+    [
+     "Diámetro de base",
+     "160 mm"
+    ],
+    [
+     "Placa base",
+     "250 × 250 × 10 mm"
+    ],
+    [
+     "Distancia entre centros",
+     "190 mm"
+    ],
+    [
+     "Anillo de refuerzo",
+     "76 × 5 mm"
+    ],
+    [
+     "Registro",
+     "120 × 300 mm"
+    ],
+    [
+     "Peso",
+     "63 kg"
+    ]
+   ]
+  },
+  {
+   "name": "Circular recto (3 a 6 m)",
+   "rows": [
+    [
+     "Alturas",
+     "3.00, 3.50, 4.00, 4.50, 5.00, 5.50 y 6.00 m"
+    ],
+    [
+     "Diámetro",
+     "89 mm"
+    ],
+    [
+     "Placa base",
+     "25 cm × 9.5 mm"
+    ],
+    [
+     "Distancia entre orificios",
+     "19 cm"
+    ]
+   ]
+  },
+  {
+   "name": "Cónico circular (4 a 15 m)",
+   "rows": [
+    [
+     "4.00 – 4.50 m",
+     "Base 110–114 mm · corona 62 mm · placa 27 cm × 10 mm"
+    ],
+    [
+     "5.00 – 6.00 m",
+     "Base 130–142 mm · corona 70 mm · placa 27 cm × 10 mm"
+    ],
+    [
+     "7.00 – 7.50 m",
+     "Base 158–166 mm · corona 74–76 mm · placa 27 cm × 10 mm"
+    ],
+    [
+     "8.00 – 9.00 m",
+     "Base 175–178 mm · corona 76 mm · placa 27 cm × 11 mm"
+    ],
+    [
+     "10.00 – 12.00 m",
+     "Base 188–212 mm · corona 80 mm · placa 33 cm × 12 mm · barrenos a 23 cm"
+    ],
+    [
+     "15.00 m",
+     "Base 305 mm · corona 102 mm · placa 50 cm × 20 mm · barrenos a 40 cm"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Fabricación nacional",
+   "d": "Tiempos de entrega cortos."
+  },
+  {
+   "t": "Acero estructural",
+   "d": "ASTM A-36."
+  },
+  {
+   "t": "Alturas de 3 a 15 m",
+   "d": "Para cada tipo de vialidad."
+  },
+  {
+   "t": "Listos para instalar",
+   "d": "Placa base, registro y anillo de refuerzo."
+  },
+  {
+   "t": "Personalizables",
+   "d": "Color, brazos y accesorios."
+  },
+  {
+   "t": "Conjuntos llave en mano",
+   "d": "Poste, luminaria y base."
+  }
+ ],
+ "applications": [
+  "Alumbrado público",
+  "Vialidades",
+  "Parques y jardines",
+  "Fraccionamientos",
+  "Estacionamientos",
+  "Proyectos municipales"
+ ],
+ "dims": {
+  "img": "p3_x109",
+  "rows": [
+   [
+    "Altura",
+    "8.00 m"
+   ],
+   [
+    "Corona",
+    "75 mm"
+   ],
+   [
+    "Base",
+    "160 mm"
+   ],
+   [
+    "Placa base",
+    "250 × 250 × 10 mm"
+   ]
+  ]
+ }
+}

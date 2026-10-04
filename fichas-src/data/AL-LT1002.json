@@ -1,0 +1,79 @@
+{
+  "model": "TITAN",
+  "kind": "Luminaria LED para alumbrado público",
+  "power": "30 – 150 W",
+  "variant": "120–277 V c.a.",
+  "hero": "p3_x149",
+  "photo2": "p2_x51",
+  "kpis": [
+    {"v": "30–150", "u": "W", "l": "Potencias disponibles"},
+    {"v": "10,500", "u": "lm", "l": "Flujo luminoso máx."},
+    {"v": ">105", "u": "lm/W", "l": "Eficacia"},
+    {"v": "100,000", "u": "h", "l": "Vida útil"}
+  ],
+  "kpis2": [
+    {"v": "30–150", "u": "W", "l": "Potencias disponibles"},
+    {"v": "10,500", "u": "lm", "l": "Flujo luminoso máx."},
+    {"v": ">105", "u": "lm/W", "l": "Eficacia"},
+    {"v": "100,000", "u": "h", "l": "Vida útil"},
+    {"v": "IP65", "u": "", "l": "Hermeticidad"},
+    {"v": "10", "u": "kA", "l": "Protección contra descargas"}
+  ],
+  "description": [
+    "TITAN es una luminaria LED para alumbrado público con diseño modernista y alta eficiencia lumínica. Integra módulos LED Philips Fast Flex con eficiencia óptica de 96% y drivers Philips Xitanium LED Xtreme, diseñados para operar a la intemperie, con una vida útil de 100,000 horas.",
+    "Su cuerpo de aluminio inyectado a presión con 13 vetas disipa el calor de forma eficiente, mientras que el cristal templado de 3 mm, las grapas de acero inoxidable y los empaques de silicón la sellan contra agua y polvo (IP65). Se ofrece en diez potencias, de 30 a 150 W, y en tres temperaturas de color."
+  ],
+  "features": [
+    {"img": "p3_x143", "t": "LED Philips Fast Flex", "d": "Módulos LED de alta eficiencia con eficiencia óptica de 96%."},
+    {"img": "p3_x137", "t": "Driver Philips Xitanium", "d": "Driver LED Xtreme con gran protección a la intemperie; versiones de 40 W y 70 W para 12–24 V c.d."},
+    {"img": "p3_x134", "t": "Supresor de picos 10 kA", "d": "Protege la luminaria contra descargas atmosféricas de hasta 10 kA."},
+    {"img": "p2_x54", "t": "Disipación con 13 vetas", "d": "Cuerpo de aluminio inyectado con canaleta para desahogo de agua."}
+  ],
+  "warranty": [{"y": 3, "on": "en luminaria"}],
+  "certs": [
+    {"c": "IP65", "l": "Hermeticidad"},
+    {"c": "10 kA", "l": "Sobretensión"}
+  ],
+  "specs": [
+    {"name": "Desempeño lumínico", "rows": [
+      ["Potencias disponibles", "30, 40, 50, 60, 70, 80, 90, 100, 120 y 150 W"],
+      ["Potencia de operación", "40–100 W máx. (±10%)"],
+      ["Tipo de LED", "Philips Fast Flex"],
+      ["Eficiencia óptica", "96%"],
+      ["Eficacia", ">105 lm/W"],
+      ["Flujo luminoso", "3,000 – 10,500 lm máx."],
+      ["Temperatura de color", "3000 / 4000 / 5700 K (±10%)"],
+      ["Vida útil", "100,000 h"]
+    ]},
+    {"name": "Sistema eléctrico", "rows": [
+      ["Tensión de entrada", "120–277 V c.a. (±10%) · 12–24 V c.d."],
+      ["Frecuencia", "50–60 Hz"],
+      ["Corriente de operación", "0.1 – 0.78 A máx. (±10%)"],
+      ["Factor de potencia", ">0.95"],
+      ["Driver", "Philips Xitanium LED Xtreme"],
+      ["Protección contra sobretensión", "Hasta 10 kA"]
+    ]},
+    {"name": "Construcción", "rows": [
+      ["Carcasa", "Aluminio inyectado a presión, resistente a radiación UV y corrosión"],
+      ["Disipación", "13 vetas y canaleta para desahogo de agua"],
+      ["Acabado", "Pintura electrostática horneada de alta adherencia, resistente a rayos UV"],
+      ["Lente", "Cristal templado de 3 mm, alta resistencia al impacto"],
+      ["Sellado", "Grapas de acero inoxidable y empaques de silicón"],
+      ["Hermeticidad", "IP65"],
+      ["Peso", "6.22 kg"]
+    ]}
+  ],
+  "temps": [3000, 4000, 5700],
+  "photometry": "p3_x155",
+  "advantages": [
+    {"t": "Alta eficiencia", "d": "Más de 105 lm/W: más luz por cada watt consumido y menor costo de energía."},
+    {"t": "Larga vida útil", "d": "100,000 horas de operación reducen reemplazos y costos de mantenimiento."},
+    {"t": "Protección eléctrica", "d": "Supresor de picos de 10 kA para zonas con tormentas y variaciones de voltaje."},
+    {"t": "Hermética", "d": "Grado IP65: cristal templado y empaques de silicón contra polvo y agua."},
+    {"t": "Mejor disipación", "d": "Las 13 vetas del cuerpo de aluminio mantienen el LED a menor temperatura."},
+    {"t": "Versátil", "d": "Diez potencias, tres temperaturas de color y alimentación de 120–277 V c.a. o 12–24 V c.d."}
+  ],
+  "applications": ["Parques", "Vía pública", "Avenidas primarias y secundarias", "Estacionamientos"],
+  "dims": {"img": "p2_x83", "rows": [["Largo (L)", "550 mm"], ["Ancho (A)", "245 mm"], ["Alto (H)", "100 mm"], ["Peso", "6.22 kg"]]},
+  "mount": "Montaje en brazo de 1½\" de diámetro interior por 75 mm de profundidad, con sistema de sujeción mediante opresores allen de acero inoxidable."
+}

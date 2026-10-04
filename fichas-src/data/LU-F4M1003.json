@@ -1,0 +1,120 @@
+{
+ "model": "BOLARDO SOLAR 10W",
+ "kind": "Bolardo LED solar de jardín",
+ "power": "10 W",
+ "variant": "Solar",
+ "hero": "p1_x25",
+ "photo2": "p1_x28",
+ "kpis": [
+  {
+   "v": "10",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "80",
+   "u": "cm",
+   "l": "Altura"
+  },
+  {
+   "v": "5×5",
+   "u": "in",
+   "l": "Sección"
+  },
+  {
+   "v": "Cal. 16",
+   "u": "",
+   "l": "Lámina galvanizada"
+  }
+ ],
+ "description": [
+  "El Bolardo Solar de 10 W es una luminaria autónoma para jardines, andadores y accesos: se alimenta con su propio panel solar en la parte superior, sin cableado ni consumo de la red eléctrica.",
+  "Su cuerpo de sección cuadrada de 5 × 5\" y 80 cm de altura se fabrica en lámina galvanizada calibre 16, con difusor de acrílico y acabado en pintura electrostática, para resistir la intemperie."
+ ],
+ "features": [
+  {
+   "t": "Energía solar",
+   "d": "Panel integrado en la parte superior."
+  },
+  {
+   "t": "Lámina galvanizada",
+   "d": "Calibre 16, resistente a la intemperie."
+  },
+  {
+   "t": "Difusor de acrílico",
+   "d": "Luz uniforme en las cuatro caras."
+  },
+  {
+   "t": "Sin cableado",
+   "d": "Instalación rápida."
+  }
+ ],
+ "certs": [
+  {
+   "c": "Solar",
+   "l": "Autónomo"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Sistema",
+   "rows": [
+    [
+     "Potencia",
+     "10 W"
+    ],
+    [
+     "Alimentación",
+     "Solar"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Lámina galvanizada cal. 16"
+    ],
+    [
+     "Medidas",
+     "80 cm × 5\" × 5\""
+    ],
+    [
+     "Difusor",
+     "Acrílico"
+    ],
+    [
+     "Acabado",
+     "Pintura electrostática"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Cero consumo eléctrico",
+   "d": "Energía solar."
+  },
+  {
+   "t": "Sin obra civil",
+   "d": "No requiere cableado."
+  },
+  {
+   "t": "Resistente",
+   "d": "Lámina galvanizada cal. 16."
+  },
+  {
+   "t": "Diseño limpio",
+   "d": "Sección cuadrada para jardines modernos."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Cotos y zonas residenciales",
+  "Áreas recreativas",
+  "Universidades",
+  "Andadores, patios, corredores y pasillos"
+ ]
+}

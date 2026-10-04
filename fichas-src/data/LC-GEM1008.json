@@ -1,0 +1,122 @@
+{
+ "model": "GEMA MARCO ABATIBLE",
+ "kind": "Gabinete LED de empotrar con marco abatible",
+ "power": "2 × 18 W",
+ "variant": "T8 LED · 30 × 122 / 244 cm",
+ "hero": "p1_x25",
+ "kpis": [
+  {
+   "v": "2",
+   "u": "",
+   "l": "Tubos T8 LED"
+  },
+  {
+   "v": "18",
+   "u": "W",
+   "l": "Por tubo"
+  },
+  {
+   "v": "30",
+   "u": "cm",
+   "l": "Ancho"
+  },
+  {
+   "v": "9",
+   "u": "cm",
+   "l": "Peralte"
+  }
+ ],
+ "description": [
+  "GEMA es un gabinete de empotrar de 30 cm de ancho con marco abatible, que se abre para dar mantenimiento o cambiar los tubos sin desmontar el equipo del plafón. Su difusor distribuye la luz de manera uniforme sobre el plano de trabajo.",
+  "Usa dos tubos LED T8 de 18 W y se ofrece en largo de 122 cm (base G-13) o 244 cm (base Fa8), con 9 cm de peralte. Ideal para oficinas, pasillos, escuelas y comercios."
+ ],
+ "features": [
+  {
+   "t": "Marco abatible",
+   "d": "Mantenimiento sin desmontar."
+  },
+  {
+   "t": "Dos tubos T8 LED",
+   "d": "18 W cada uno."
+  },
+  {
+   "t": "Dos longitudes",
+   "d": "122 o 244 cm."
+  },
+  {
+   "t": "Bajo peralte",
+   "d": "Solo 9 cm."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Modelos (cm)",
+   "rows": [
+    [
+     "GEMA3-218",
+     "2 × T8 LED 18 W · G-13 · 30 × 122 × 9"
+    ],
+    [
+     "GEMA5-240",
+     "2 × T8 LED 18 W · Fa8 · 30 × 244 × 9"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Marco",
+     "Abatible"
+    ],
+    [
+     "Montaje",
+     "Empotrar"
+    ]
+   ]
+  }
+ ],
+ "photometry": "p1_x34",
+ "advantages": [
+  {
+   "t": "Fácil mantenimiento",
+   "d": "Marco abatible."
+  },
+  {
+   "t": "Tubos estándar",
+   "d": "T8 de fácil reposición."
+  },
+  {
+   "t": "Dos tamaños",
+   "d": "122 o 244 cm."
+  },
+  {
+   "t": "Empotrado limpio",
+   "d": "Al ras del plafón."
+  }
+ ],
+ "applications": [
+  "Oficinas",
+  "Centros y locales comerciales",
+  "Escuelas y universidades",
+  "Bodegas y almacenes",
+  "Hospitales y clínicas"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Ancho",
+    "30 cm"
+   ],
+   [
+    "Largo",
+    "122 / 244 cm"
+   ],
+   [
+    "Alto",
+    "9 cm"
+   ]
+  ]
+ }
+}

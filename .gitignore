@@ -37,3 +37,7 @@ next-env.d.ts
 /Redes sociales ICEMEX/
 /Triptico ICEMEX/
 /.claude/
+
+# fichas: imágenes intermedias del build
+/fichas-src/build/
+/fichas-src/_*.html

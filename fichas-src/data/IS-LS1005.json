@@ -1,0 +1,244 @@
+{
+ "model": "SL-35",
+ "kind": "Lámpara suburbana con panel solar",
+ "power": "500 W",
+ "variant": "Panel 5 V / 45 W",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "500",
+   "u": "W",
+   "l": "Wattaje"
+  },
+  {
+   "v": "130–140",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "12–14",
+   "u": "h",
+   "l": "Tiempo de trabajo"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  },
+  {
+   "v": "150",
+   "u": "LED",
+   "l": "Módulo"
+  }
+ ],
+ "description": [
+  "La lámpara suburbana SL-35 de 500 W es una luminaria solar tipo servicio de fija para exteriores, con un módulo de 150 LED de 130–140 lm/W, luz blanca de 6,500 K, índice de color de 80 y ángulo de 70 × 150°.",
+  "Su batería de 3.2 V / 40,000 mAh se carga con un panel de 5 V / 45 W en 6 a 8 horas y trabaja de 12 a 14 horas por noche. Tiene cuerpo de aleación de aluminio en acabado gris, grado de protección IP65, clase energética A, sin mercurio, y certificaciones CE, RoHS y NOM."
+ ],
+ "features": [
+  {
+   "t": "Módulo de 150 LED",
+   "d": "130–140 lm/W de luz blanca."
+  },
+  {
+   "t": "Panel 5 V / 45 W",
+   "d": "Carga en 6 a 8 horas de sol."
+  },
+  {
+   "t": "12 a 14 horas",
+   "d": "Batería de 3.2 V / 40,000 mAh."
+  },
+  {
+   "t": "Aleación de aluminio",
+   "d": "Cuerpo gris con reflector transparente."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 1,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "NOM",
+   "l": "Norma"
+  },
+  {
+   "c": "CE",
+   "l": "Certificación"
+  },
+  {
+   "c": "RoHS",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Wattaje",
+     "500 W"
+    ],
+    [
+     "Eficacia",
+     "130–140 lm/W"
+    ],
+    [
+     "Fuente de luz",
+     "1 módulo de 150 LED"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "Índice de color (CRI)",
+     "80"
+    ],
+    [
+     "Ángulo de haz",
+     "70° × 150°"
+    ],
+    [
+     "Clase energética",
+     "A"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Batería",
+     "3.2 V / 40,000 mAh"
+    ],
+    [
+     "Panel",
+     "5 V / 45 W (policristalino)"
+    ],
+    [
+     "Tiempo de carga",
+     "6–8 h"
+    ],
+    [
+     "Tiempo de trabajo",
+     "12–14 h"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Aleación de aluminio"
+    ],
+    [
+     "Acabado",
+     "Cuerpo gris, reflector de plástico transparente"
+    ],
+    [
+     "Base",
+     "A poste (agarradera incluida)"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ],
+    [
+     "Dimensiones",
+     "730 × 430 × 135 mm"
+    ],
+    [
+     "Peso",
+     "12 kg"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-20 °C a 45 °C"
+    ],
+    [
+     "Contenido de mercurio",
+     "0"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Alta eficacia",
+   "d": "130–140 lm/W con 150 LED."
+  },
+  {
+   "t": "Más horas de luz",
+   "d": "12 a 14 horas por noche."
+  },
+  {
+   "t": "Certificada",
+   "d": "NOM, CE y RoHS."
+  },
+  {
+   "t": "Exteriores",
+   "d": "Grado de protección IP65."
+  },
+  {
+   "t": "Lista para instalar",
+   "d": "Incluye agarradera a poste y tornillería."
+  },
+  {
+   "t": "Sin mercurio",
+   "d": "Clase energética A."
+  }
+ ],
+ "applications": [
+  "Jardines",
+  "Caminos rurales",
+  "Calles citadinas",
+  "Parques",
+  "Avenidas",
+  "Carreteras",
+  "Complejos comerciales e industriales"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Alto",
+    "730 mm"
+   ],
+   [
+    "Ancho",
+    "430 mm"
+   ],
+   [
+    "Profundidad",
+    "135 mm"
+   ],
+   [
+    "Peso",
+    "12 kg"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,142 @@
+{
+ "model": "GEMA CAPCE PIRAMIDAL",
+ "kind": "Luminario LED piramidal con marco abatible",
+ "power": "2 – 4 × 18 W",
+ "variant": "6,000 K · 127/277 V",
+ "hero": "p1_x25",
+ "photo2": "p1_x41",
+ "kpis": [
+  {
+   "v": "3,200",
+   "u": "lm",
+   "l": "Flujo (2 tubos)"
+  },
+  {
+   "v": "6,000",
+   "u": "K",
+   "l": "Luz blanca"
+  },
+  {
+   "v": "127/277",
+   "u": "V",
+   "l": "Driver multivoltaje"
+  },
+  {
+   "v": "Cal. 26",
+   "u": "",
+   "l": "Lámina rolada en frío"
+  }
+ ],
+ "description": [
+  "GEMA CAPCE es un luminario LED tipo piramidal con marco abatible desmontable, fabricado en lámina negra rolada en frío calibre 26 con pintura electrostática curada al horno y difusor de acrílico tipo K12 plano.",
+  "Con dos tubos LED entrega 3,200 lúmenes totales a 6,000 K, con driver multivoltaje de 127 a 277 V. Se ofrece para empotrar o sobreponer con 2, 3 o 4 tubos T8 LED de 18 W, y se fabrica tanto en tipo piramidal como en tipo cajón."
+ ],
+ "features": [
+  {
+   "t": "Marco desmontable",
+   "d": "Abatible para mantenimiento."
+  },
+  {
+   "t": "Difusor K12",
+   "d": "Acrílico plano prismático."
+  },
+  {
+   "t": "Driver multivoltaje",
+   "d": "127–277 V."
+  },
+  {
+   "t": "Piramidal o cajón",
+   "d": "Dos formatos de gabinete."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Modelos (cm)",
+   "rows": [
+    [
+     "GEMA6-218",
+     "2 × T8 LED 18 W · G-13 · 30 × 122 × 6"
+    ],
+    [
+     "GEMA6-318",
+     "3 × T8 LED 18 W · G-13 · 30 × 122 × 6"
+    ],
+    [
+     "GEMA6-418",
+     "4 × T8 LED 18 W · G-13 · 60 × 122 × 6"
+    ]
+   ]
+  },
+  {
+   "name": "Desempeño",
+   "rows": [
+    [
+     "Flujo luminoso",
+     "3,200 lm (2 tubos)"
+    ],
+    [
+     "Temperatura de color",
+     "6,000 K"
+    ],
+    [
+     "Driver",
+     "Multivoltaje 127/277 V"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Gabinete",
+     "Lámina negra rolada en frío cal. 26"
+    ],
+    [
+     "Difusor",
+     "Acrílico tipo K12 plano"
+    ],
+    [
+     "Acabado",
+     "Pintura electrostática curada al horno"
+    ],
+    [
+     "Formato",
+     "Piramidal o cajón"
+    ],
+    [
+     "Montaje",
+     "Empotrar o sobreponer"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6000
+ ],
+ "advantages": [
+  {
+   "t": "Fácil mantenimiento",
+   "d": "Marco abatible desmontable."
+  },
+  {
+   "t": "Configurable",
+   "d": "2, 3 o 4 tubos."
+  },
+  {
+   "t": "Multivoltaje",
+   "d": "127–277 V."
+  },
+  {
+   "t": "Dos montajes",
+   "d": "Empotrar o sobreponer."
+  }
+ ],
+ "applications": [
+  "Oficinas",
+  "Centros y locales comerciales",
+  "Escuelas y universidades",
+  "Bodegas y almacenes",
+  "Hospitales y clínicas"
+ ]
+}

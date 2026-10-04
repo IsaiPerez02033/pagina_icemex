@@ -1,0 +1,245 @@
+{
+ "model": "POSEIDÓN",
+ "kind": "Columna luminosa urbana",
+ "power": "18 – 54 W",
+ "variant": "T8 LED · 85–264 V",
+ "hero": "p1_x23",
+ "photo2": "p2_x106",
+ "kpis": [
+  {
+   "v": "18–54",
+   "u": "W",
+   "l": "Potencia LED"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Conjunto óptico"
+  },
+  {
+   "v": "3–4",
+   "u": "m",
+   "l": "Altura"
+  },
+  {
+   "v": "2",
+   "u": "años",
+   "l": "Garantía"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "77",
+   "u": "lm/W",
+   "l": "Eficiencia"
+  },
+  {
+   "v": "30,000",
+   "u": "h",
+   "l": "Horas de vida"
+  }
+ ],
+ "description": [
+  "POSEIDÓN es una columna luminosa urbana de acero con excelentes acabados y resistencia. Su conjunto óptico IP65 está formado por un difusor transparente de alta resistencia con louvers interiores de aluminio anodizado; la tapa y el poste llevan pintura poliéster aplicada electrostáticamente y la tornillería es de acero inoxidable.",
+  "Se ofrece en diámetros de 4\" y 6\" (louvers solo en 6\"), con altura de poste y difusor a la medida del proyecto (estándar 3 o 4 m), en acabado negro, gris o blanco. La versión LED usa lámparas T8 de 9 o 18 W, de 18 a 54 W, 77 lm/W a 6,500 K con IRC de 80 y driver integrado de 85–264 V; también admite equipos de fluorescente, VSAP, aditivo metálico o lámpara ahorradora."
+ ],
+ "features": [
+  {
+   "t": "A la medida",
+   "d": "Altura de poste y difusor según el proyecto."
+  },
+  {
+   "t": "Louvers de aluminio",
+   "d": "Anodizados, en la versión de 6\"."
+  },
+  {
+   "t": "Conjunto óptico IP65",
+   "d": "Difusor transparente de alta resistencia."
+  },
+  {
+   "t": "Tornillería inoxidable",
+   "d": "Interior y exterior."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 2,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Conjunto óptico"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Versión LED",
+   "rows": [
+    [
+     "Tecnología",
+     "T8 LED (9 / 18 W)"
+    ],
+    [
+     "Potencia",
+     "18, 27, 36 y 54 W"
+    ],
+    [
+     "Eficiencia",
+     "77 lm/W"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "IRC",
+     "80"
+    ],
+    [
+     "Óptica",
+     "Difusa"
+    ],
+    [
+     "Equipo",
+     "Driver integrado 85–264 V"
+    ],
+    [
+     "Factor de potencia",
+     "≥ 0.95"
+    ],
+    [
+     "Distorsión armónica",
+     "< 20%"
+    ],
+    [
+     "Horas de vida",
+     "30,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Otros equipos (120/220 V)",
+   "rows": [
+    [
+     "Fluorescente",
+     "1×54 W o 2×25 W (4\")"
+    ],
+    [
+     "VSAP",
+     "2×150 W (6\" y 8\")"
+    ],
+    [
+     "Aditivo metálico",
+     "2×175 W (6\" y 8\")"
+    ],
+    [
+     "Aditivo metálico cerámico",
+     "2×150 W (6\" y 8\")"
+    ],
+    [
+     "Lámpara ahorradora",
+     "45 W"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Acero / difusor transparente"
+    ],
+    [
+     "Diámetro",
+     "4\" o 6\" (8\" en HID)"
+    ],
+    [
+     "Altura",
+     "3,000 o 4,000 mm (a la medida)"
+    ],
+    [
+     "Acabado",
+     "Negro, gris o blanco, pintura poliéster electrostática"
+    ],
+    [
+     "Tornillería",
+     "Acero inoxidable"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ],
+    [
+     "Montaje",
+     "Piso"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Hecha a la medida",
+   "d": "Altura y difusor según el proyecto."
+  },
+  {
+   "t": "Varias tecnologías",
+   "d": "LED T8, fluorescente o HID."
+  },
+  {
+   "t": "Exteriores",
+   "d": "Conjunto óptico IP65."
+  },
+  {
+   "t": "Tres acabados",
+   "d": "Negro, gris o blanco."
+  },
+  {
+   "t": "Durable",
+   "d": "Acero y tornillería inoxidable."
+  },
+  {
+   "t": "Respaldo",
+   "d": "2 años de garantía."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Cotos y zonas residenciales",
+  "Estacionamientos",
+  "Áreas recreativas",
+  "Universidades",
+  "Centros y locales comerciales"
+ ],
+ "dims": {
+  "img": "p1_x29",
+  "rows": [
+   [
+    "Altura",
+    "4,000 mm"
+   ],
+   [
+    "Difusor",
+    "1,000 mm"
+   ],
+   [
+    "Placa 4\"",
+    "200 mm, barrenos a 140 mm"
+   ],
+   [
+    "Placa 6\"",
+    "250 mm, barrenos a 190 mm"
+   ],
+   [
+    "Placa 8\"",
+    "320 mm, barrenos a 230 mm"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,192 @@
+{
+ "model": "LEDWAY",
+ "kind": "Luminaria LED para vialidades, marca CREE",
+ "power": "20 – 120 W",
+ "variant": "120–277 V",
+ "hero": "p1_x25",
+ "photo2": "p1_x28",
+ "kpis": [
+  {
+   "v": "20–120",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": ">70",
+   "u": "",
+   "l": "IRC"
+  },
+  {
+   "v": "10",
+   "u": "años",
+   "l": "Garantía"
+  },
+  {
+   "v": "USA",
+   "u": "",
+   "l": "Hecho en"
+  }
+ ],
+ "description": [
+  "LEDway es una luminaria LED para vialidades de la marca CREE, fabricada en Estados Unidos, con tecnología BetaLED® y ópticas NanoOptic® que dirigen la luz con precisión hacia la vialidad.",
+  "Se ofrece de 20 a 120 W, con ópticas tipo II media y III media, temperaturas de color de 4,000 y 5,700 K, índice de reproducción de color mayor a 70 y alimentación de 120 a 277 V. Cuenta con 10 años de garantía."
+ ],
+ "features": [
+  {
+   "img": "p1_x25",
+   "t": "Tecnología BetaLED®",
+   "d": "Plataforma LED de CREE para alumbrado exterior."
+  },
+  {
+   "img": "p1_x28",
+   "t": "Ópticas NanoOptic®",
+   "d": "Distribución tipo II media o III media."
+  },
+  {
+   "img": "p1_x31",
+   "t": "Mantenimiento sin herramienta",
+   "d": "Cubierta con broches de acceso (tool-less entry).",
+   "mode": "drawing"
+  },
+  {
+   "img": "p1_x34",
+   "t": "Para poste y brazo",
+   "d": "Diseñada para alumbrado de vialidades."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CREE",
+   "l": "Marca"
+  },
+  {
+   "c": "USA",
+   "l": "Fabricación"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "20 a 120 W"
+    ],
+    [
+     "Tecnología",
+     "CREE BetaLED®"
+    ],
+    [
+     "Óptica",
+     "NanoOptic® tipo II media y III media"
+    ],
+    [
+     "Temperatura de color",
+     "4,000 K y 5,700 K"
+    ],
+    [
+     "IRC",
+     "> 70"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión de entrada",
+     "120–277 V"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Peso",
+     "5.9 a 12.7 kg según número de LED"
+    ],
+    [
+     "Largo (dim. A)",
+     "443 a 842 mm según versión"
+    ],
+    [
+     "Ancho",
+     "275 mm"
+    ],
+    [
+     "Alto",
+     "121 mm"
+    ],
+    [
+     "Fabricación",
+     "Estados Unidos"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  4000,
+  5700
+ ],
+ "advantages": [
+  {
+   "t": "Garantía de 10 años",
+   "d": "Respaldo de fabricante para proyectos de largo plazo."
+  },
+  {
+   "t": "Óptica de precisión",
+   "d": "NanoOptic® dirige la luz a la vialidad y reduce desperdicio."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Luminaria CREE con estándares de manufactura estadounidenses."
+  },
+  {
+   "t": "Escalable",
+   "d": "De 20 a 120 W y en varias longitudes según el número de LED."
+  },
+  {
+   "t": "Dos temperaturas de color",
+   "d": "4,000 K neutra o 5,700 K fría."
+  },
+  {
+   "t": "Mantenimiento ágil",
+   "d": "Acceso al equipo sin herramientas."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Periféricos, vías rápidas y ejes viales",
+  "Carreteras y libramientos",
+  "Caminos rurales",
+  "Cotos y zonas residenciales"
+ ],
+ "dims": {
+  "img": "p1_x31",
+  "rows": [
+   [
+    "Largo (A)",
+    "443–842 mm"
+   ],
+   [
+    "Ancho",
+    "275 mm"
+   ],
+   [
+    "Alto",
+    "121 mm"
+   ],
+   [
+    "Peso",
+    "5.9–12.7 kg"
+   ]
+  ]
+ }
+}

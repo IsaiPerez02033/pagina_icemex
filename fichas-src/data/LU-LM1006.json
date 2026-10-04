@@ -1,0 +1,147 @@
+{
+ "model": "MONTPELLIER · NANTES",
+ "kind": "Bolardos de aluminio para jardín",
+ "power": "25 – 70 W",
+ "variant": "VSAP / AM / LA",
+ "hero": "p1_x22",
+ "kpis": [
+  {
+   "v": "100",
+   "u": "cm",
+   "l": "Altura"
+  },
+  {
+   "v": "4 o 6",
+   "u": "in",
+   "l": "Diámetro"
+  },
+  {
+   "v": "70",
+   "u": "W",
+   "l": "VSAP / AM"
+  },
+  {
+   "v": "25",
+   "u": "W",
+   "l": "Lámpara ahorradora"
+  }
+ ],
+ "description": [
+  "Montpellier y Nantes son bolardos ornamentales de tubo de aluminio de 4\" o 6\" de diámetro y 100 cm de altura, con placa base al piso de aluminio, difusor de acrílico opalino o transparente y acabado en pintura electrostática. Montpellier tiene un remate cilíndrico; Nantes, un remate tipo domo con celosía.",
+  "Aceptan balastro de vapor de sodio de alta presión (VSAP) o aditivo metálico de 70 W a 110/220 V, o lámpara ahorradora de 25 W a 120 V. Se ofrecen tres tipos de tapa (domo, plana o piramidal)."
+ ],
+ "features": [
+  {
+   "t": "Dos diseños",
+   "d": "Montpellier y Nantes."
+  },
+  {
+   "t": "Tres tapas",
+   "d": "Domo, plana o piramidal."
+  },
+  {
+   "t": "Difusor a elegir",
+   "d": "Acrílico opalino o transparente."
+  },
+  {
+   "t": "Aluminio",
+   "d": "Tubo y placa base resistentes a la corrosión."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Balastro VSAP",
+     "70 W · 110/220 V"
+    ],
+    [
+     "Balastro aditivo metálico",
+     "70 W · 110/220 V"
+    ],
+    [
+     "Lámpara ahorradora",
+     "25 W · 120 V"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Tubo",
+     "Aluminio de 4\" o 6\" de diámetro"
+    ],
+    [
+     "Placa base",
+     "Aluminio, al piso"
+    ],
+    [
+     "Difusor",
+     "Acrílico opalino o transparente, 4\" o 6\""
+    ],
+    [
+     "Acabado",
+     "Pintura electrostática"
+    ],
+    [
+     "Tapas",
+     "Domo, plana o piramidal"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Dos estilos",
+   "d": "Montpellier o Nantes."
+  },
+  {
+   "t": "Configurable",
+   "d": "Diámetro, tapa y difusor a elegir."
+  },
+  {
+   "t": "Aluminio",
+   "d": "Ligero y resistente a la corrosión."
+  },
+  {
+   "t": "Opciones de lámpara",
+   "d": "VSAP, aditivo metálico o ahorradora."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Cotos y zonas residenciales",
+  "Áreas recreativas",
+  "Universidades",
+  "Andadores, patios, corredores y pasillos"
+ ],
+ "dims": {
+  "img": "p1_x25",
+  "rows": [
+   [
+    "Altura",
+    "100 cm"
+   ],
+   [
+    "Remate",
+    "20 cm"
+   ],
+   [
+    "Placa 4\"",
+    "Ø 150 mm, barrenos a 110 mm"
+   ],
+   [
+    "Placa 6\"",
+    "Ø 210 mm, barrenos a 160 mm"
+   ],
+   [
+    "Anclas",
+    "Ø ½\""
+   ]
+  ]
+ }
+}

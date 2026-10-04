@@ -1,0 +1,147 @@
+{
+ "model": "CONTEMPORÁNEA",
+ "kind": "Luminario de punta de poste estilo contemporáneo",
+ "power": "150 – 175 W",
+ "variant": "VSAP / Aditivo metálico",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "150–175",
+   "u": "W",
+   "l": "Potencia máx."
+  },
+  {
+   "v": "150",
+   "u": "W",
+   "l": "VSAP"
+  },
+  {
+   "v": "E39",
+   "u": "",
+   "l": "Portalámpara mogul"
+  },
+  {
+   "v": "2½",
+   "u": "in",
+   "l": "Punta de poste"
+  }
+ ],
+ "description": [
+  "CONTEMPORÁNEA es un luminario de punta de poste con sombrerete amplio, porta balastro y base de aluminio puro inyectado a presión con finos acabados. Su refractor con prismas mejora la eficiencia lumínica y el reflector en forma de tapa, anodizado por dentro, aumenta los niveles de reflectancia.",
+  "Opera con lámparas de vapor de sodio de alta presión (VSAP) de 150 W o de aditivo metálico de 150 a 175 W, en 110–220 V, con portalámpara de porcelana tipo mogul E39. El recubrimiento de pintura poliéster aplicada electrostáticamente le da mayor resistencia a la corrosión en exteriores."
+ ],
+ "features": [
+  {
+   "t": "Sombrerete de 600 mm",
+   "d": "Diseño contemporáneo que controla el deslumbramiento."
+  },
+  {
+   "t": "Refractor prismático",
+   "d": "Mejor eficiencia lumínica."
+  },
+  {
+   "t": "Reflector en tapa",
+   "d": "Anodizado interior para más reflectancia."
+  },
+  {
+   "t": "Aluminio inyectado",
+   "d": "Finos acabados."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Balastro VSAP",
+     "150 W · 110–220 V"
+    ],
+    [
+     "Balastro aditivo metálico",
+     "175 W · 110–220 V / 150 W · 220 V"
+    ],
+    [
+     "Portalámpara",
+     "Porcelana, tipo mogul E39"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Porta balastro y base",
+     "Aluminio puro inyectado a presión"
+    ],
+    [
+     "Acabado",
+     "Pintura tipo poliéster electrostática"
+    ],
+    [
+     "Refractor",
+     "Prismático"
+    ],
+    [
+     "Reflector",
+     "Tapa de lámina de aluminio anodizada interiormente, pintada por el exterior"
+    ],
+    [
+     "Montaje",
+     "Punta de poste de 2½\""
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Diseño contemporáneo",
+   "d": "Estética que se integra a calles, plazas y zonas residenciales."
+  },
+  {
+   "t": "Resistente a la corrosión",
+   "d": "Aluminio con pintura poliéster electrostática."
+  },
+  {
+   "t": "Refractor prismático",
+   "d": "Aprovecha mejor la luz de la lámpara."
+  },
+  {
+   "t": "Mejor reflectancia",
+   "d": "Reflector de aluminio anodizado."
+  },
+  {
+   "t": "Opciones de lámpara",
+   "d": "VSAP o aditivo metálico, en 110–220 V."
+  },
+  {
+   "t": "Instalación sencilla",
+   "d": "Entrada para punta de poste de 2½\"."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Estacionamientos",
+  "Cotos y zonas residenciales",
+  "Áreas recreativas"
+ ],
+ "dims": {
+  "img": "p1_x27",
+  "rows": [
+   [
+    "Ancho",
+    "600 mm"
+   ],
+   [
+    "Alto",
+    "620 mm"
+   ],
+   [
+    "Acoplamiento",
+    "90 mm"
+   ]
+  ]
+ }
+}

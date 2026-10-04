@@ -1,0 +1,248 @@
+{
+ "model": "POSTE D-P",
+ "kind": "Poste LED de diseño minimalista",
+ "power": "150 W",
+ "variant": "120–277 V c.a.",
+ "hero": "p1_x25",
+ "kpis": [
+  {
+   "v": "150",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "15,750",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "105",
+   "u": "lm/W",
+   "l": "Eficiencia"
+  },
+  {
+   "v": "IK08",
+   "u": "",
+   "l": "Resistencia al impacto"
+  }
+ ],
+ "description": [
+  "El Poste D-P es una luminaria tipo poste de estilo minimalista y estilizado, con gran capacidad de iluminación gracias a su amplio difusor de acrílico opalino de 1.40 m. Se fabrica en tubo de acero de caña recta circular de 6\" u 8\", en alturas de 3 a 5 metros, con pintura termoconvertible y opción de galvanizado.",
+  "Con 150 W entrega 15,750 lúmenes (105 lm/W) a 6,500 K con CRI de 80 y óptica tipo V, y opera de 120 a 277 V con factor de potencia mayor a 0.90, distorsión armónica menor a 10% y supresor de picos de 10 kV / 10 kA. Su grado de protección es IP65 / IK08 y cuenta con reportes de laboratorio NOM-003-SCFI-2014. Admite logotipo personalizado en corte láser."
+ ],
+ "features": [
+  {
+   "img": "p1_x34",
+   "t": "Diseño personalizado",
+   "d": "Logotipo en corte láser horizontal o vertical."
+  },
+  {
+   "img": "p1_x31",
+   "t": "Óptica tipo V",
+   "d": "Distribución circular simétrica.",
+   "mode": "drawing"
+  },
+  {
+   "img": "p2_x96",
+   "t": "Difusor de 1.40 m",
+   "d": "Acrílico opalino de gran superficie.",
+   "mode": "drawing"
+  },
+  {
+   "img": "p2_x99",
+   "t": "Instalación sencilla",
+   "d": "Placa base de 24 × 24 cm con anclas."
+  }
+ ],
+ "certs": [
+  {
+   "c": "NOM-003",
+   "l": "SCFI-2014"
+  },
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  },
+  {
+   "c": "IK08",
+   "l": "Impacto"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "150 W"
+    ],
+    [
+     "Flujo luminoso",
+     "15,750 lm"
+    ],
+    [
+     "Eficiencia",
+     "105 lm/W"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "CRI",
+     "80"
+    ],
+    [
+     "Óptica",
+     "Tipo V"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión de alimentación",
+     "120–277 V c.a."
+    ],
+    [
+     "Frecuencia",
+     "60 Hz"
+    ],
+    [
+     "Factor de potencia",
+     "> 0.90"
+    ],
+    [
+     "Distorsión armónica",
+     "< 10%"
+    ],
+    [
+     "Supresor de picos",
+     "10 kV / 10 kA"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Poste",
+     "Tubo de acero caña recta circular de 6\" u 8\""
+    ],
+    [
+     "Altura",
+     "3 a 5 m"
+    ],
+    [
+     "Difusor",
+     "Acrílico opalino"
+    ],
+    [
+     "Grado IP / IK",
+     "IP65 / IK08"
+    ],
+    [
+     "Acabado",
+     "Pintura termoconvertible negra (opción galvanizado)"
+    ],
+    [
+     "Peso aproximado",
+     "32 kg"
+    ],
+    [
+     "Diseño",
+     "Opción de logo con corte láser"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-40 °C a 50 °C"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "photometry": "p1_x31",
+ "advantages": [
+  {
+   "t": "Diseño minimalista",
+   "d": "Columna estilizada con difusor de 1.40 m."
+  },
+  {
+   "t": "Alto flujo",
+   "d": "15,750 lm con 150 W."
+  },
+  {
+   "t": "Protección",
+   "d": "IP65, IK08 y supresor de 10 kV / 10 kA."
+  },
+  {
+   "t": "Personalizable",
+   "d": "Logotipo en corte láser."
+  },
+  {
+   "t": "Tres a cinco metros",
+   "d": "Altura según proyecto."
+  },
+  {
+   "t": "Respaldo de laboratorio",
+   "d": "Reportes NOM-003-SCFI-2014."
+  }
+ ],
+ "applications": [
+  "Vialidades",
+  "Parques y jardines",
+  "Centros históricos",
+  "Zonas urbanas peatonales",
+  "Estacionamientos",
+  "Andadores"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Altura",
+    "3 a 5 m (estándar 3 m)"
+   ],
+   [
+    "Difusor",
+    "1.40 m"
+   ],
+   [
+    "Diámetro",
+    "6\" u 8\""
+   ],
+   [
+    "Placa base",
+    "24 × 24 cm"
+   ],
+   [
+    "Peso",
+    "32 kg aprox."
+   ]
+  ]
+ },
+ "mount": "Placa base de 24 × 24 cm con anclas. Color estándar negro, con opción de acabado galvanizado."
+}

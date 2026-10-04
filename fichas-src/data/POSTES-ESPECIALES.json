@@ -1,0 +1,150 @@
+{
+ "is_lum": false,
+ "model": "POSTES ESPECIALES",
+ "kind": "Postes ornamentales de uno y dos brazos",
+ "power": "3 – 15 m",
+ "variant": "Recto, cónico circular, octagonal o cuadrado",
+ "hero": "p1_x25",
+ "photo2": "p2_x95",
+ "kpis": [
+  {
+   "v": "10",
+   "u": "",
+   "l": "Modelos"
+  },
+  {
+   "v": "1–2",
+   "u": "",
+   "l": "Brazos"
+  },
+  {
+   "v": "3–15",
+   "u": "m",
+   "l": "Alturas"
+  },
+  {
+   "v": "4",
+   "u": "",
+   "l": "Tipos de caña"
+  }
+ ],
+ "description": [
+  "La línea de postes especiales de ICEMEX reúne diseños ornamentales para dar identidad a calles, plazas, parques y fraccionamientos: Cisne de uno y dos brazos, Gaviota de uno y dos brazos, Querétaro, Puebla de uno y dos brazos, Alameda, London y Córdova.",
+  "Cada modelo se fabrica sobre caña circular recta (3 a 6 m), cónica circular (4 a 15 m), cónica octagonal (5 a 9 m) o cónica cuadrada (7 a 12 m), con placa base y distancia entre orificios según la altura, y se termina en el color del proyecto."
+ ],
+ "features": [
+  {
+   "t": "Cisne y Gaviota",
+   "d": "Brazos curvos de uno o dos lados."
+  },
+  {
+   "t": "Querétaro y Puebla",
+   "d": "Diseños de uno o dos brazos."
+  },
+  {
+   "t": "Alameda",
+   "d": "Poste con cruceta para dos luminarias."
+  },
+  {
+   "t": "London y Córdova",
+   "d": "Estilo clásico para centros históricos."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Circular recto",
+   "rows": [
+    [
+     "Alturas",
+     "3.00 a 6.00 m"
+    ],
+    [
+     "Diámetro",
+     "89 mm"
+    ],
+    [
+     "Placa base",
+     "25 cm × 9.5 mm, orificios a 19 cm"
+    ]
+   ]
+  },
+  {
+   "name": "Cónico circular",
+   "rows": [
+    [
+     "4.00 – 9.00 m",
+     "Base 110–178 mm · placa 27 cm × 10–11 mm · orificios a 19 cm"
+    ],
+    [
+     "10.00 – 12.00 m",
+     "Base 188–212 mm · placa 33 cm × 12 mm · orificios a 23 cm"
+    ],
+    [
+     "15.00 m",
+     "Base 305 mm · placa 50 cm × 20 mm · orificios a 40 cm"
+    ]
+   ]
+  },
+  {
+   "name": "Cónico octagonal",
+   "rows": [
+    [
+     "5.00 – 9.00 m",
+     "Base 139–189 mm · placa 27 cm × 10 mm · orificios a 19 cm"
+    ]
+   ]
+  },
+  {
+   "name": "Cónico cuadrado",
+   "rows": [
+    [
+     "7.00 m",
+     "Lado base 152 mm · placa 29 cm × 11 mm · orificios a 21 cm"
+    ],
+    [
+     "8.00 – 9.00 m",
+     "Lado base 190 mm · placa 35 cm × 11 mm · orificios a 27 cm"
+    ],
+    [
+     "10.00 – 12.00 m",
+     "Lado base 225 mm · placa 35 cm × 13 mm · orificios a 27 cm"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Identidad urbana",
+   "d": "Diseños ornamentales reconocibles."
+  },
+  {
+   "t": "Uno o dos brazos",
+   "d": "Para banquetas o camellones."
+  },
+  {
+   "t": "Cuatro tipos de caña",
+   "d": "Recta, circular, octagonal o cuadrada."
+  },
+  {
+   "t": "Hasta 15 m",
+   "d": "Para avenidas y vialidades primarias."
+  },
+  {
+   "t": "Color a elegir",
+   "d": "Acabado del proyecto."
+  },
+  {
+   "t": "Compatibles",
+   "d": "Con luminarias LED y solares ICEMEX."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Cotos y zonas residenciales",
+  "Estacionamientos",
+  "Centros históricos"
+ ]
+}

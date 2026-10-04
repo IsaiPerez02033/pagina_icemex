@@ -1,0 +1,186 @@
+{
+ "model": "PATHWAY",
+ "kind": "Bolardo LED marca CREE",
+ "power": "22 – 34 W",
+ "variant": "120/277 V · Hecho en USA",
+ "hero": "p1_x22",
+ "photo2": "p1_x34",
+ "kpis": [
+  {
+   "v": "22–34",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": ">70",
+   "u": "",
+   "l": "IRC"
+  },
+  {
+   "v": "10",
+   "u": "años",
+   "l": "Garantía"
+  },
+  {
+   "v": "USA",
+   "u": "",
+   "l": "Hecho en"
+  }
+ ],
+ "description": [
+  "PATHWAY es una familia de bolardos LED marca CREE, fabricados en Estados Unidos con tecnología BetaLED® y ópticas NanoOptic® de alta precisión, con índice de reproducción de color mayor a 70 y 10 años de garantía.",
+  "Con óptica tipo II media, se ofrece en 22 y 34 W a 120/277 V, en 4,000 o 5,700 K. Hay cuatro alturas: Landscape P0 (330 mm) y P1 (457 mm), Pathway P3 (914 mm) y Pedestrian P8 (2,438 mm), para iluminar desde jardineras hasta andadores peatonales."
+ ],
+ "features": [
+  {
+   "t": "Tecnología BetaLED®",
+   "d": "Plataforma LED de CREE."
+  },
+  {
+   "t": "Óptica NanoOptic®",
+   "d": "Tipo II media de alta precisión."
+  },
+  {
+   "t": "Cuatro alturas",
+   "d": "De 330 a 2,438 mm."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Con 10 años de garantía."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CREE",
+   "l": "Marca"
+  },
+  {
+   "c": "USA",
+   "l": "Fabricación"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Tecnología",
+     "CREE BetaLED®"
+    ],
+    [
+     "Óptica",
+     "NanoOptic® tipo II media"
+    ],
+    [
+     "Potencia",
+     "22 W y 34 W"
+    ],
+    [
+     "Temperatura de color",
+     "4,000 K o 5,700 K"
+    ],
+    [
+     "IRC",
+     "> 70"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Voltaje",
+     "120/277 V"
+    ]
+   ]
+  },
+  {
+   "name": "Modelos",
+   "rows": [
+    [
+     "Landscape P0",
+     "330 mm · 5.8 kg"
+    ],
+    [
+     "Landscape P1",
+     "457 mm · 6.0 kg"
+    ],
+    [
+     "Pathway P3",
+     "914 mm · 8.1 kg"
+    ],
+    [
+     "Pedestrian P8",
+     "2,438 mm"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  4000,
+  5700
+ ],
+ "advantages": [
+  {
+   "t": "10 años de garantía",
+   "d": "Respaldo de fabricante."
+  },
+  {
+   "t": "Óptica de precisión",
+   "d": "NanoOptic®."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Estándares CREE."
+  },
+  {
+   "t": "Cuatro alturas",
+   "d": "Para cada tipo de espacio."
+  },
+  {
+   "t": "Dos temperaturas",
+   "d": "4,000 o 5,700 K."
+  },
+  {
+   "t": "Versátil",
+   "d": "Jardines, andadores y plazas."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Cotos y zonas residenciales",
+  "Estacionamientos",
+  "Áreas recreativas",
+  "Universidades",
+  "Centros y locales comerciales"
+ ],
+ "dims": {
+  "img": "p1_x25",
+  "rows": [
+   [
+    "Diámetro de la cabeza",
+    "254 mm (10\")"
+   ],
+   [
+    "Alto de la cabeza",
+    "177 mm (7\")"
+   ],
+   [
+    "Diámetro del poste",
+    "102 mm (4\")"
+   ],
+   [
+    "Altura \"A\"",
+    "330 / 457 / 914 / 2,438 mm"
+   ]
+  ]
+ }
+}

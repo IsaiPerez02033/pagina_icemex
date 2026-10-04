@@ -1,9 +1,10 @@
 // Fichas técnicas del Catálogo ICEMEX 2026 (127 PDFs en public/fichas).
-// Los datos se generan con `python3 scripts/build-fichas.py`.
+// Los PDF y las fotos se generan con `fichas-src/build.py` y los datos para
+// la web con `python3 scripts/build-fichas.py` (ambos leen fichas-src/data).
 
 import raw from "./fichas-data.json";
 import legacyCodes from "./legacy-codes.json";
-import { products, type ProductLine, type ProductTag } from "./products";
+import { products, type Product, type ProductLine, type ProductTag } from "./products";
 
 export interface FichaImage {
   src: string;
@@ -11,18 +12,46 @@ export interface FichaImage {
   height: number;
 }
 
+export interface FichaKpi {
+  v: string;
+  u: string;
+  l: string;
+}
+
 export interface Ficha {
   code: string;
   name: string;
   line: ProductLine;
   tags: ProductTag[];
+  /** Páginas del Catálogo ICEMEX 2026 donde aparece. */
   pages: number[];
   pdf: string;
+  /** Foto del producto (fondo transparente). */
   image: FichaImage;
   thumb: FichaImage;
+  /** Portada de la ficha PDF (vista previa y redes sociales). */
+  cover: FichaImage;
+  coverThumb: FichaImage;
+  model: string;
+  kind: string;
+  power: string;
+  variant: string;
   summary: string;
-  blocks: { h?: string; t?: string }[];
+  description: string[];
+  kpis: FichaKpi[];
+  features: { t: string; d: string }[];
+  advantages: { t: string; d: string }[];
+  specs: { name: string; rows: [string, string][] }[];
+  applications: string[];
+  warranty: string[];
+  certs: { c: string; l: string }[];
+  dims: [string, string][];
+  mount: string;
+  isLuminaire: boolean;
 }
+
+/** Valor de un KPI con su unidad: "150 W", "IP65", "4 in". */
+export const kpiValue = (k: FichaKpi) => (k.u ? `${k.v} ${k.u}` : k.v);
 
 export const fichas = raw as Ficha[];
 
@@ -52,11 +81,69 @@ export function fichaForProduct(code: string): Ficha | undefined {
   return getFicha(FICHA_FOR_PRODUCT[code] ?? code);
 }
 
-const covered = new Set(
-  products
-    .map((p) => fichaForProduct(p.code)?.code)
-    .filter((c): c is string => !!c)
-);
+const productsPerFicha = new Map<string, number>();
+for (const p of products) {
+  const c = fichaForProduct(p.code)?.code;
+  if (c) productsPerFicha.set(c, (productsPerFicha.get(c) ?? 0) + 1);
+}
+const covered = new Set(productsPerFicha.keys());
+
+/**
+ * Ficha que describe exactamente a este producto. Los postes que comparten
+ * una ficha de familia (p. ej. los 5 postes especiales) no la usan como
+ * contenido propio, solo como PDF descargable.
+ */
+export function ownFicha(code: string): Ficha | undefined {
+  const f = fichaForProduct(code);
+  return f && productsPerFicha.get(f.code) === 1 ? f : undefined;
+}
+
+const pageForFicha = new Map<string, string>();
+for (const p of products) {
+  const c = fichaForProduct(p.code)?.code;
+  if (c && !pageForFicha.has(c)) pageForFicha.set(c, p.code);
+}
+
+/** URL de la página de una ficha (la del producto del sitio si la cubre). */
+export const fichaHref = (f: Ficha) => `/producto/${pageForFicha.get(f.code) ?? f.code}`;
+
+/** Datos clave de una ficha como lista plana (indicadores + tablas). */
+export function fichaSpecs(f: Ficha): Product["specs"] {
+  const seen = new Set<string>();
+  const out: Product["specs"] = [];
+  const add = (label: string, value: string) => {
+    const key = label.toLowerCase();
+    if (seen.has(key)) return;
+    seen.add(key);
+    out.push({ label, value });
+  };
+  f.kpis.forEach((k) => add(k.l, kpiValue(k)));
+  f.specs.forEach((g) => g.rows.forEach(([l, v]) => add(l, v)));
+  return out;
+}
+
+/**
+ * Producto del sitio con el contenido de su ficha técnica (descripción,
+ * especificaciones, aplicaciones…). El nombre, la línea y las etiquetas
+ * curadas se conservan.
+ */
+export function withFicha(p: Product): Product {
+  const f = ownFicha(p.code);
+  if (!f) return p;
+  return {
+    ...p,
+    tagline: f.kind,
+    description: f.description.join("\n\n"),
+    applications: f.applications.length ? f.applications : p.applications,
+    specs: fichaSpecs(f),
+    features: [...f.features, ...f.advantages].map((x) => `${x.t}: ${x.d}`),
+    certifications: f.certs.map((c) => c.c),
+    warranty: f.warranty.join(" · ") || undefined,
+  };
+}
+
+/** Todos los productos del sitio, enriquecidos con su ficha. */
+export const catalogProducts = products.map(withFicha);
 
 /** Fichas que no tienen un producto del sitio: cada una lleva página propia. */
 export const standaloneFichas = fichas.filter((f) => !covered.has(f.code));

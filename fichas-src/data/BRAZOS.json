@@ -1,0 +1,124 @@
+{
+ "is_lum": false,
+ "model": "BRAZOS",
+ "kind": "Brazos para poste de alumbrado",
+ "power": "60 – 240 cm",
+ "variant": "Tubo de 1½\" y 2\"",
+ "hero": "p1_x28",
+ "photo2": "p2_x97",
+ "kpis": [
+  {
+   "v": "10",
+   "u": "",
+   "l": "Modelos"
+  },
+  {
+   "v": "60–240",
+   "u": "cm",
+   "l": "Longitudes"
+  },
+  {
+   "v": "1½–2",
+   "u": "in",
+   "l": "Diámetro"
+  },
+  {
+   "v": "Galv.",
+   "u": "",
+   "l": "Opción galvanizada"
+  }
+ ],
+ "description": [
+  "ICEMEX fabrica brazos para montar luminarias en postes metálicos y de concreto, en diseños funcionales y ornamentales: brazo galvanizado para poste de concreto, con alerón, para percha, Canadá, Córdova, Centro Histórico I y II, Vigilancia, Escuadra, Z y Matías Romero.",
+  "Se fabrican en tubo de 1½\" o 2\" de diámetro, en longitudes de 60 a 240 cm, galvanizados o pintados, para luminarias de vialidad, ornamentales o de vigilancia."
+ ],
+ "features": [
+  {
+   "img": "p1_x28",
+   "t": "Galvanizado",
+   "d": "Para poste de concreto."
+  },
+  {
+   "img": "p2_x88",
+   "t": "Centro Histórico",
+   "d": "Herrería ornamental en dos versiones."
+  },
+  {
+   "img": "p2_x97",
+   "t": "Escuadra",
+   "d": "Ménsula decorativa para muro o poste."
+  },
+  {
+   "img": "p2_x103",
+   "t": "Matías Romero",
+   "d": "Brazo con alerón perforado."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Modelos",
+   "rows": [
+    [
+     "Funcionales",
+     "Galvanizado para poste de concreto, con alerón, para percha, Z"
+    ],
+    [
+     "Ornamentales",
+     "Canadá, Córdova, Centro Histórico I y II, Escuadra, Matías Romero"
+    ],
+    [
+     "Seguridad",
+     "Vigilancia"
+    ]
+   ]
+  },
+  {
+   "name": "Medidas",
+   "rows": [
+    [
+     "Longitudes",
+     "60, 100, 120, 150, 180, 200 y 240 cm"
+    ],
+    [
+     "Diámetro",
+     "Tubo de 1½\" (3.81 cm) o 2\" (5.08 cm)"
+    ]
+   ]
+  },
+  {
+   "name": "Acabado",
+   "rows": [
+    [
+     "Opciones",
+     "Galvanizado o pintado"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Diez diseños",
+   "d": "Funcionales y ornamentales."
+  },
+  {
+   "t": "Siete longitudes",
+   "d": "De 60 a 240 cm."
+  },
+  {
+   "t": "Para concreto y metal",
+   "d": "Se adaptan a cada poste."
+  },
+  {
+   "t": "Galvanizados",
+   "d": "Protección contra la corrosión."
+  }
+ ],
+ "applications": [
+  "Alumbrado público",
+  "Calles y avenidas",
+  "Centros históricos",
+  "Fachadas",
+  "Vigilancia perimetral"
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "model": "COLONIAL MEXICANO",
+ "kind": "Farol de punta de poste estilo colonial",
+ "power": "150 – 175 W",
+ "variant": "VSAP / Aditivo metálico",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "150–175",
+   "u": "W",
+   "l": "Potencia máx."
+  },
+  {
+   "v": "150",
+   "u": "W",
+   "l": "VSAP"
+  },
+  {
+   "v": "E39",
+   "u": "",
+   "l": "Portalámpara mogul"
+  },
+  {
+   "v": "2½",
+   "u": "in",
+   "l": "Punta de poste"
+  }
+ ],
+ "description": [
+  "COLONIAL MEXICANO es un farol de punta de poste con cuerpo de aluminio puro inyectado a presión y sellado herméticamente para evitar la entrada de contaminantes. Su refractor de policarbonato con prismas mejora la eficiencia lumínica, y el reflector de aluminio puro anodizado aumenta la reflectancia.",
+  "Opera con lámparas de vapor de sodio de alta presión (VSAP) de 150 W o de aditivo metálico de 150 a 175 W, en 110–220 V, con portalámpara de porcelana tipo mogul E39. El recubrimiento de pintura poliéster aplicada electrostáticamente le da mayor resistencia a la corrosión en exteriores."
+ ],
+ "features": [
+  {
+   "t": "Sellado hermético",
+   "d": "Evita la entrada de contaminantes."
+  },
+  {
+   "t": "Refractor prismático",
+   "d": "Policarbonato de alta eficiencia."
+  },
+  {
+   "t": "Reflector anodizado",
+   "d": "Aluminio puro para más reflectancia."
+  },
+  {
+   "t": "Estilo colonial",
+   "d": "Para centros históricos y plazas."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Balastro VSAP",
+     "150 W · 110–220 V"
+    ],
+    [
+     "Balastro aditivo metálico",
+     "175 W · 110–220 V / 150 W · 220 V"
+    ],
+    [
+     "Portalámpara",
+     "Porcelana, tipo mogul E39"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Aluminio puro inyectado a presión"
+    ],
+    [
+     "Acabado",
+     "Pintura tipo poliéster electrostática"
+    ],
+    [
+     "Refractor",
+     "Policarbonato con prismas"
+    ],
+    [
+     "Reflector",
+     "Aluminio puro anodizado"
+    ],
+    [
+     "Hermeticidad",
+     "Luminario sellado herméticamente"
+    ],
+    [
+     "Montaje",
+     "Punta de poste de 2½\""
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Diseño colonial",
+   "d": "Estética que se integra a calles, plazas y zonas residenciales."
+  },
+  {
+   "t": "Resistente a la corrosión",
+   "d": "Aluminio con pintura poliéster electrostática."
+  },
+  {
+   "t": "Sellado hermético",
+   "d": "Protegido contra contaminantes."
+  },
+  {
+   "t": "Mejor reflectancia",
+   "d": "Reflector de aluminio anodizado."
+  },
+  {
+   "t": "Opciones de lámpara",
+   "d": "VSAP o aditivo metálico, en 110–220 V."
+  },
+  {
+   "t": "Instalación sencilla",
+   "d": "Entrada para punta de poste de 2½\"."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Periféricos, vías rápidas y ejes viales",
+  "Carreteras y libramientos",
+  "Caminos rurales",
+  "Cotos y zonas residenciales"
+ ],
+ "dims": {
+  "img": "p1_x27",
+  "rows": [
+   [
+    "Ancho",
+    "450 mm"
+   ],
+   [
+    "Alto",
+    "660 mm"
+   ]
+  ]
+ }
+}

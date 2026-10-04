@@ -1,0 +1,155 @@
+{
+ "model": "COBRA",
+ "kind": "Luminaria LED para alumbrado público vial",
+ "power": "60 – 150 W",
+ "variant": "85–265 V",
+ "hero": "p1_x16",
+ "photo2": "p1_x19",
+ "kpis": [
+  {
+   "v": "60–150",
+   "u": "W",
+   "l": "Potencias disponibles"
+  },
+  {
+   "v": "106",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "120°",
+   "u": "",
+   "l": "Óptica"
+  },
+  {
+   "v": "85–265",
+   "u": "V",
+   "l": "Tensión de entrada"
+  }
+ ],
+ "description": [
+  "COBRA es una luminaria LED de diseño tipo cobra para alumbrado público vial. Con tecnología LED SMD y una eficacia de 106 lm/W, entrega una iluminación uniforme y eficiente para calles, avenidas y vías rápidas.",
+  "Se ofrece en tres potencias (60, 100 y 150 W), con óptica de 120° y alimentación de 85 a 265 V. Su grado de protección IP65 y su vida útil de 50,000 horas la hacen una opción confiable para operar a la intemperie con bajo mantenimiento."
+ ],
+ "features": [
+  {
+   "img": "p1_x13",
+   "t": "Tecnología LED SMD",
+   "d": "Eficacia de 106 lm/W para iluminar más con menos energía."
+  },
+  {
+   "img": "p1_x16",
+   "t": "Tres potencias",
+   "d": "Versiones de 60, 100 y 150 W para distintos anchos de vialidad."
+  },
+  {
+   "img": "p1_x19",
+   "t": "Óptica de 120°",
+   "d": "Apertura amplia para una distribución uniforme sobre la calle."
+  },
+  {
+   "img": "p1_x22",
+   "t": "Uso vial",
+   "d": "Pensada para calles, avenidas, periféricos y caminos rurales."
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencias disponibles",
+     "60, 100 y 150 W"
+    ],
+    [
+     "Tipo de LED",
+     "LED SMD"
+    ],
+    [
+     "Eficacia",
+     "106 lm/W"
+    ],
+    [
+     "Óptica",
+     "120°"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión de entrada",
+     "85–265 V"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Hermeticidad",
+     "IP65"
+    ],
+    [
+     "Marca",
+     "ICEMEX"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Eficiencia energética",
+   "d": "106 lm/W: más luz por watt y menor costo de operación."
+  },
+  {
+   "t": "Larga vida útil",
+   "d": "50,000 horas de operación con mantenimiento mínimo."
+  },
+  {
+   "t": "Lista para exteriores",
+   "d": "Grado IP65 contra polvo y chorros de agua."
+  },
+  {
+   "t": "Amplio rango de voltaje",
+   "d": "Opera de 85 a 265 V, tolerante a variaciones de la red."
+  },
+  {
+   "t": "Varias potencias",
+   "d": "60, 100 y 150 W para ajustar el nivel de iluminación."
+  },
+  {
+   "t": "Diseño probado",
+   "d": "Formato cobra, estándar en alumbrado público vial."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Periféricos, vías rápidas y ejes viales",
+  "Caminos rurales",
+  "Cotos y zonas residenciales"
+ ]
+}

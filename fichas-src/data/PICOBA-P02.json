@@ -1,0 +1,124 @@
+{
+ "is_lum": false,
+ "model": "PICOBA P-02 DE ACERO",
+ "kind": "Bolardo de acero personalizado",
+ "power": "Acero",
+ "variant": "Personalizado con logotipo",
+ "hero": "p1_x25",
+ "photo2": "p1_x34",
+ "kpis": [
+  {
+   "v": "100",
+   "u": "cm",
+   "l": "Altura"
+  },
+  {
+   "v": "168.3",
+   "u": "mm",
+   "l": "Diámetro"
+  },
+  {
+   "v": "Céd. 30",
+   "u": "",
+   "l": "Tubo de acero"
+  },
+  {
+   "v": "Reflejante",
+   "u": "",
+   "l": "Cinta"
+  }
+ ],
+ "description": [
+  "Picoba P-02 de acero es un bolardo de acero personalizado para delimitar banquetas, plazas, accesos y cruces peatonales, proteger al peatón y ordenar el estacionamiento en la vía pública.",
+  "Se fabrica en tubo de acero de 6.62\" (168.3 mm) de diámetro exterior cédula 30, de 100 cm de altura, con logotipo en la tapa y cinta reflejante perimetral que lo hace visible de noche."
+ ],
+ "features": [
+  {
+   "t": "Cinta reflejante",
+   "d": "Visible de noche."
+  },
+  {
+   "t": "Logotipo en tapa",
+   "d": "Identidad del proyecto."
+  },
+  {
+   "t": "Tubo cédula 30",
+   "d": "6.62\" de diámetro exterior."
+  },
+  {
+   "t": "100 cm",
+   "d": "Altura ideal para banquetas."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Tubo",
+     "Acero de 6.62\" (168.3 mm) diámetro exterior, cédula 30"
+    ],
+    [
+     "Altura",
+     "100 cm"
+    ],
+    [
+     "Diámetro",
+     "168.3 mm"
+    ],
+    [
+     "Tapa",
+     "Con logotipo"
+    ],
+    [
+     "Visibilidad",
+     "Cinta reflejante perimetral"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Identidad",
+   "d": "Escudo o logotipo del cliente."
+  },
+  {
+   "t": "Protección peatonal",
+   "d": "Delimita banquetas y accesos."
+  },
+  {
+   "t": "Robusto",
+   "d": "Tubo de acero de alta resistencia."
+  },
+  {
+   "t": "Diseño urbano",
+   "d": "Se integra a la imagen de la ciudad."
+  }
+ ],
+ "applications": [
+  "Banquetas",
+  "Cruces peatonales",
+  "Plazas y explanadas",
+  "Accesos vehiculares",
+  "Edificios públicos",
+  "Ciclovías"
+ ],
+ "dims": {
+  "img": "p1_x37",
+  "rows": [
+   [
+    "Altura",
+    "100 cm"
+   ],
+   [
+    "Diámetro",
+    "168.3 mm"
+   ],
+   [
+    "Tapa",
+    "Con logotipo"
+   ]
+  ]
+ }
+}

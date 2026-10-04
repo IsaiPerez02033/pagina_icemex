@@ -1,0 +1,115 @@
+{
+ "is_lum": false,
+ "model": "RIZOS, MÉNSULAS Y BANCAS",
+ "kind": "Mobiliario urbano ornamental",
+ "power": "4 modelos de banca",
+ "variant": "Española · Italiana · Francesa · Alemana",
+ "hero": "p1_x25",
+ "kpis": [
+  {
+   "v": "4",
+   "u": "",
+   "l": "Modelos de banca"
+  },
+  {
+   "v": "Rizos",
+   "u": "",
+   "l": "Ornamentos"
+  },
+  {
+   "v": "Ménsulas",
+   "u": "",
+   "l": "Decorativas"
+  },
+  {
+   "v": "Color",
+   "u": "",
+   "l": "A elegir"
+  }
+ ],
+ "description": [
+  "Mobiliario urbano ornamental para complementar proyectos de alumbrado en parques, plazas y centros históricos: bancas en cuatro estilos (Española, Italiana, Francesa y Alemana), además de rizos y ménsulas decorativas para postes, brazos y fachadas.",
+  "Las bancas combinan estructura de herrería ornamental con asiento y respaldo de tablones, y se fabrican en el color del proyecto para integrarse con los postes y luminarias de la misma línea."
+ ],
+ "features": [
+  {
+   "t": "Banca Española",
+   "d": "Herrería clásica con tablones."
+  },
+  {
+   "t": "Banca Italiana",
+   "d": "Diseño ornamental de líneas curvas."
+  },
+  {
+   "t": "Banca Francesa",
+   "d": "Respaldo con herrería decorativa."
+  },
+  {
+   "t": "Banca Alemana",
+   "d": "Estilo sobrio y robusto."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Bancas",
+   "rows": [
+    [
+     "Modelos",
+     "Española, Italiana, Francesa y Alemana"
+    ],
+    [
+     "Estructura",
+     "Herrería ornamental"
+    ],
+    [
+     "Asiento y respaldo",
+     "Tablones"
+    ],
+    [
+     "Acabado",
+     "Color a elegir"
+    ]
+   ]
+  },
+  {
+   "name": "Ornamentos",
+   "rows": [
+    [
+     "Rizos",
+     "Para postes y brazos"
+    ],
+    [
+     "Ménsulas",
+     "Para muros y fachadas"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Proyecto integral",
+   "d": "Mobiliario a juego con el alumbrado."
+  },
+  {
+   "t": "Cuatro estilos",
+   "d": "Para cada tipo de espacio."
+  },
+  {
+   "t": "Ornamentos",
+   "d": "Rizos y ménsulas decorativas."
+  },
+  {
+   "t": "Color a elegir",
+   "d": "Integrado a la imagen urbana."
+  }
+ ],
+ "applications": [
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Centros históricos",
+  "Andadores",
+  "Fraccionamientos",
+  "Espacios públicos"
+ ]
+}

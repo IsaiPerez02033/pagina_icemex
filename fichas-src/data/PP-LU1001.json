@@ -1,0 +1,155 @@
+{
+ "model": "URBAN",
+ "kind": "Luminaria LED de punta de poste",
+ "power": "60 – 150 W",
+ "variant": "120–277 V c.a.",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "60–150",
+   "u": "W",
+   "l": "Presentaciones"
+  },
+  {
+   "v": "96",
+   "u": "%",
+   "l": "Eficiencia óptica"
+  },
+  {
+   "v": "100,000",
+   "u": "h",
+   "l": "Vida útil"
+  },
+  {
+   "v": "10",
+   "u": "kA",
+   "l": "Supresor de picos"
+  }
+ ],
+ "description": [
+  "URBAN punta de poste es un luminario LED para alumbrado público de excelente eficiencia lumínica y agradable diseño modernista. Usa módulos LED Philips Fast Flex y drivers Philips Xitanium LED Xtreme de gran protección a la intemperie, con eficiencia óptica de 96% y vida útil de 100,000 horas.",
+  "Su cuerpo de aluminio inyectado a presión, resistente a la radiación UV y la corrosión, tiene 13 vetas para mejor disipación de calor y canaleta para desahogo de agua, con pintura electrostática horneada de alta adherencia. Se ofrece en 60, 80, 90, 100 y 150 W a 120–277 V."
+ ],
+ "features": [
+  {
+   "img": "p1_x49",
+   "t": "LED Philips Fast Flex",
+   "d": "Eficiencia óptica de 96%."
+  },
+  {
+   "img": "p1_x30",
+   "t": "Driver Philips Xitanium",
+   "d": "LED Xtreme de gran protección a la intemperie."
+  },
+  {
+   "img": "p1_x27",
+   "t": "Supresor de picos 10 kA",
+   "d": "Protección contra descargas."
+  },
+  {
+   "img": "p1_x52",
+   "t": "Opción 12–24 V",
+   "d": "Drivers de 40 W y 70 W."
+  }
+ ],
+ "certs": [
+  {
+   "c": "10 kA",
+   "l": "Sobretensión"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Presentaciones",
+     "60, 80, 90, 100 y 150 W"
+    ],
+    [
+     "Tipo de LED",
+     "Philips Fast Flex"
+    ],
+    [
+     "Eficiencia óptica",
+     "96%"
+    ],
+    [
+     "Vida útil",
+     "100,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión",
+     "120–277 V"
+    ],
+    [
+     "Driver",
+     "Philips Xitanium LED Xtreme (opción 40/70 W para 12–24 V)"
+    ],
+    [
+     "Supresor de picos",
+     "10 kA"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Aluminio inyectado a presión, resistente a UV y corrosión"
+    ],
+    [
+     "Disipación",
+     "13 vetas y canaleta para desahogo de agua"
+    ],
+    [
+     "Acabado",
+     "Pintura electrostática horneada, resistente a rayos UV"
+    ],
+    [
+     "Montaje",
+     "Opresores allen de acero inoxidable; brazo de 1½\" interior × 75 mm"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Componentes Philips",
+   "d": "Módulos Fast Flex y drivers Xitanium."
+  },
+  {
+   "t": "Larga vida útil",
+   "d": "100,000 horas."
+  },
+  {
+   "t": "Protección eléctrica",
+   "d": "Supresor de picos de 10 kA."
+  },
+  {
+   "t": "Mejor disipación",
+   "d": "13 vetas en el cuerpo de aluminio."
+  },
+  {
+   "t": "Cinco potencias",
+   "d": "De 60 a 150 W."
+  },
+  {
+   "t": "Diseño modernista",
+   "d": "Estética urbana para vía pública y parques."
+  }
+ ],
+ "applications": [
+  "Parques",
+  "Vía pública",
+  "Avenidas primarias y secundarias",
+  "Estacionamientos"
+ ],
+ "mount": "Sistema de sujeción mediante opresores allen de acero inoxidable, con montaje en brazo de 1½\" interior por 75 mm de profundidad."
+}

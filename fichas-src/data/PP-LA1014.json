@@ -1,0 +1,143 @@
+{
+ "model": "ALAMEDA",
+ "kind": "Farol de punta de poste estilo colonial",
+ "power": "150 – 175 W",
+ "variant": "VSAP / Aditivo metálico",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "150–175",
+   "u": "W",
+   "l": "Potencia máx."
+  },
+  {
+   "v": "150",
+   "u": "W",
+   "l": "VSAP"
+  },
+  {
+   "v": "E39",
+   "u": "",
+   "l": "Portalámpara mogul"
+  },
+  {
+   "v": "2½",
+   "u": "in",
+   "l": "Punta de poste"
+  }
+ ],
+ "description": [
+  "ALAMEDA es un farol de punta de poste con cuerpo y tapa de aluminio puro fundido y moldeado en arena, con finos acabados. Su refractor de cuatro cristales planos termo templados resiste el impacto, y el reflector interior de aluminio anodizado a alta brillantez aprovecha mejor la luz.",
+  "Opera con lámparas de vapor de sodio de alta presión (VSAP) de 150 W o de aditivo metálico de 150 a 175 W, en 110–220 V, con portalámpara de porcelana tipo mogul E39. Su construcción en aluminio con pintura poliéster aplicada electrostáticamente le da mayor resistencia a la corrosión en exteriores."
+ ],
+ "features": [
+  {
+   "t": "Cuatro cristales templados",
+   "d": "Refractor resistente al impacto."
+  },
+  {
+   "t": "Aluminio fundido en arena",
+   "d": "Finos acabados y alta durabilidad."
+  },
+  {
+   "t": "Reflector anodizado",
+   "d": "Alta brillantez."
+  },
+  {
+   "t": "Estilo colonial",
+   "d": "Ideal para plazas y centros históricos."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Balastro VSAP",
+     "150 W · 110–220 V"
+    ],
+    [
+     "Balastro aditivo metálico",
+     "175 W · 110–220 V / 150 W · 220 V"
+    ],
+    [
+     "Portalámpara",
+     "Porcelana, tipo mogul E39"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo y tapa",
+     "Aluminio puro fundido, moldeado en arena"
+    ],
+    [
+     "Acabado",
+     "Pintura tipo poliéster electrostática"
+    ],
+    [
+     "Refractor",
+     "Cuatro cristales planos termo templados"
+    ],
+    [
+     "Reflector",
+     "Lámina de aluminio anodizada a alta brillantez"
+    ],
+    [
+     "Montaje",
+     "Punta de poste de 2½\""
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Diseño colonial",
+   "d": "Estética que se integra a calles, plazas y zonas residenciales."
+  },
+  {
+   "t": "Resistente a la corrosión",
+   "d": "Aluminio con pintura poliéster electrostática."
+  },
+  {
+   "t": "Cristales templados",
+   "d": "Cuatro caras resistentes al impacto."
+  },
+  {
+   "t": "Mejor reflectancia",
+   "d": "Reflector de aluminio anodizado a alta brillantez."
+  },
+  {
+   "t": "Opciones de lámpara",
+   "d": "VSAP o aditivo metálico, en 110–220 V."
+  },
+  {
+   "t": "Instalación sencilla",
+   "d": "Entrada para punta de poste de 2½\"."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Estacionamientos",
+  "Áreas recreativas",
+  "Cotos y zonas residenciales"
+ ],
+ "dims": {
+  "img": "p1_x27",
+  "rows": [
+   [
+    "Ancho",
+    "417 mm"
+   ],
+   [
+    "Alto",
+    "562 mm"
+   ]
+  ]
+ }
+}

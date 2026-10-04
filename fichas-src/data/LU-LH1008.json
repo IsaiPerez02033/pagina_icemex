@@ -1,0 +1,141 @@
+{
+ "model": "HADES",
+ "kind": "Columna luminosa urbana",
+ "power": "2 × 45 – 2 × 54 W",
+ "variant": "120/220 V",
+ "hero": "p1_x23",
+ "kpis": [
+  {
+   "v": "2×54",
+   "u": "W",
+   "l": "Fluorescente"
+  },
+  {
+   "v": "2×45",
+   "u": "W",
+   "l": "Ahorradora"
+  },
+  {
+   "v": "2.5",
+   "u": "m",
+   "l": "Altura"
+  },
+  {
+   "v": "4",
+   "u": "in",
+   "l": "Diámetro"
+  }
+ ],
+ "description": [
+  "HADES es una columna luminosa urbana de 2.5 m con difusor transparente de policarbonato de alta resistencia y 1.20 m de longitud, con louvers interiores de aluminio anodizado. La tapa y el poste son de acero con pintura aplicada electrostáticamente para mayor resistencia a la corrosión, y toda la tornillería es de acero inoxidable.",
+  "Opera con dos lámparas fluorescentes de 54 W o dos lámparas ahorradoras de 45 W a 120/220 V, en diámetro de 4\". Su perfil esbelto ilumina andadores, plazas y accesos con una luz difusa y uniforme."
+ ],
+ "features": [
+  {
+   "t": "Difusor de 1.20 m",
+   "d": "Policarbonato transparente de alta resistencia."
+  },
+  {
+   "t": "Louvers anodizados",
+   "d": "Controlan el deslumbramiento."
+  },
+  {
+   "t": "Tornillería inoxidable",
+   "d": "Interior y exterior."
+  },
+  {
+   "t": "Acero con pintura electrostática",
+   "d": "Resistente a la corrosión."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Fluorescente",
+     "2 × 54 W"
+    ],
+    [
+     "Lámpara ahorradora",
+     "2 × 45 W"
+    ],
+    [
+     "Voltaje",
+     "120/220 V"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Tapa y poste",
+     "Acero con pintura electrostática"
+    ],
+    [
+     "Difusor",
+     "Policarbonato transparente de alta resistencia"
+    ],
+    [
+     "Louvers",
+     "Aluminio anodizado"
+    ],
+    [
+     "Tornillería",
+     "Acero inoxidable"
+    ],
+    [
+     "Diámetro",
+     "4\""
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Perfil esbelto",
+   "d": "Columna de 2.5 m."
+  },
+  {
+   "t": "Luz difusa",
+   "d": "Difusor de 1.20 m con louvers."
+  },
+  {
+   "t": "Durable",
+   "d": "Tornillería de acero inoxidable."
+  },
+  {
+   "t": "Anticorrosiva",
+   "d": "Pintura electrostática."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Cotos y zonas residenciales",
+  "Estacionamientos",
+  "Áreas recreativas",
+  "Universidades",
+  "Centros y locales comerciales"
+ ],
+ "dims": {
+  "img": "p1_x26",
+  "rows": [
+   [
+    "Altura",
+    "250 cm"
+   ],
+   [
+    "Difusor",
+    "120 cm"
+   ],
+   [
+    "Diámetro",
+    "4\""
+   ]
+  ]
+ }
+}

@@ -1,0 +1,150 @@
+{
+ "model": "SUBURBANO",
+ "kind": "Luminario suburbano para alumbrado público",
+ "power": "150 – 250 W",
+ "variant": "VSAP / AM / AMC",
+ "hero": "p1_x25",
+ "is_lum": true,
+ "kpis": [
+  {
+   "v": "250",
+   "u": "W",
+   "l": "Potencia máx."
+  },
+  {
+   "v": "12",
+   "u": "in",
+   "l": "Refractor prismático"
+  },
+  {
+   "v": "E39",
+   "u": "",
+   "l": "Portalámpara"
+  },
+  {
+   "v": "1½",
+   "u": "in",
+   "l": "Entrada de brazo"
+  }
+ ],
+ "description": [
+  "SUBURBANO es un luminario para alumbrado público con carcasa de lámina de aluminio rechazada y moldeada en frío, anodizada por dentro y por fuera a alto brillo, lo que le da resistencia a la corrosión, mayor reflectancia y duración.",
+  "Su porta brazo y porta socket son de aluminio puro inyectado a presión, y el refractor de acrílico prismático de 12\" ofrece una distribución simétrica tipo V. Acepta lámparas de vapor de sodio, aditivo metálico o aditivo metálico cerámico, con portalámpara de porcelana E39 o E26 y entrada de brazo de 1½\"."
+ ],
+ "features": [
+  {
+   "t": "Aluminio anodizado",
+   "d": "Lámina rechazada en frío, anodizada a alto brillo."
+  },
+  {
+   "t": "Refractor prismático de 12\"",
+   "d": "Acrílico con distribución simétrica tipo V."
+  },
+  {
+   "t": "Aluminio inyectado",
+   "d": "Porta brazo y porta socket de aluminio puro."
+  },
+  {
+   "t": "Portalámpara E39 o E26",
+   "d": "De porcelana, para varias lámparas."
+  }
+ ],
+ "specs": [
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Balastro VSAP",
+     "250 W · 110/220 V"
+    ],
+    [
+     "Balastro aditivo metálico",
+     "250 W · 110/220 V"
+    ],
+    [
+     "Balastro AM cerámico",
+     "150 W · 220 V"
+    ],
+    [
+     "Portalámpara",
+     "Porcelana E39 o E26"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Carcasa",
+     "Lámina de aluminio rechazada y moldeada en frío"
+    ],
+    [
+     "Acabado",
+     "Anodizado exterior e interior a alto brillo"
+    ],
+    [
+     "Porta brazo / porta socket",
+     "Aluminio puro inyectado a presión"
+    ],
+    [
+     "Refractor",
+     "Acrílico prismático de 12\", distribución simétrica tipo V"
+    ],
+    [
+     "Entrada de brazo",
+     "1½\""
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Resistente a la corrosión",
+   "d": "Aluminio anodizado por dentro y por fuera."
+  },
+  {
+   "t": "Mayor reflectancia",
+   "d": "Anodizado a alto brillo para aprovechar la luz."
+  },
+  {
+   "t": "Distribución uniforme",
+   "d": "Refractor prismático simétrico tipo V."
+  },
+  {
+   "t": "Versátil",
+   "d": "VSAP, aditivo metálico o AM cerámico."
+  },
+  {
+   "t": "Durable",
+   "d": "Componentes de aluminio inyectado a presión."
+  },
+  {
+   "t": "Instalación estándar",
+   "d": "Entrada de brazo de 1½\"."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Estacionamientos",
+  "Andadores, patios, corredores y pasillos"
+ ],
+ "dims": {
+  "img": "p1_x49",
+  "rows": [
+   [
+    "Diámetro",
+    "305 mm"
+   ],
+   [
+    "Alto",
+    "454 mm"
+   ],
+   [
+    "Porta brazo",
+    "158 mm"
+   ]
+  ]
+ }
+}

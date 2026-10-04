@@ -1,0 +1,165 @@
+{
+ "model": "SERIES LN",
+ "kind": "Luminaria LED lineal suspendida marca CREE",
+ "power": "31 W",
+ "variant": "120–277 V · Hecho en USA",
+ "hero": "p1_x22",
+ "photo2": "p1_x28",
+ "kpis": [
+  {
+   "v": "31",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "3,400",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": ">90",
+   "u": "",
+   "l": "IRC TrueWhite®"
+  },
+  {
+   "v": "10",
+   "u": "años",
+   "l": "Garantía"
+  }
+ ],
+ "description": [
+  "Series LN es una luminaria LED lineal para suspender, marca CREE, fabricada en Estados Unidos con tecnología TrueWhite® e índice de reproducción de color mayor a 90. Su perfil arquitectónico con alas difusoras ilumina oficinas abiertas, salas de juntas, aeropuertos y hospitales con luz directa e indirecta muy confortable.",
+  "El modelo LN4 entrega 3,400 lúmenes con 31 W a 120–277 V, en 3,500 o 4,000 K, es dimeable 0–10 V y cuenta con 10 años de garantía."
+ ],
+ "features": [
+  {
+   "t": "TrueWhite®",
+   "d": "IRC mayor a 90."
+  },
+  {
+   "t": "Dimeable 0–10 V",
+   "d": "Control de intensidad."
+  },
+  {
+   "t": "Alta eficacia",
+   "d": "3,400 lm con 31 W."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Con 10 años de garantía."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CREE",
+   "l": "Marca"
+  },
+  {
+   "c": "USA",
+   "l": "Fabricación"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Modelo",
+     "LN4"
+    ],
+    [
+     "Flujo luminoso",
+     "3,400 lm"
+    ],
+    [
+     "Tecnología",
+     "CREE TrueWhite®"
+    ],
+    [
+     "IRC",
+     "> 90"
+    ],
+    [
+     "Temperatura de color",
+     "3,500 o 4,000 K"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Potencia",
+     "31 W"
+    ],
+    [
+     "Voltaje",
+     "120–277 V"
+    ],
+    [
+     "Control",
+     "Dimeable 0–10 V"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Montaje",
+     "Suspendido con cable"
+    ],
+    [
+     "Fabricación",
+     "Estados Unidos"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  3500,
+  4000
+ ],
+ "advantages": [
+  {
+   "t": "Color excepcional",
+   "d": "IRC > 90."
+  },
+  {
+   "t": "Eficiente",
+   "d": "Más de 100 lm/W."
+  },
+  {
+   "t": "Atenuable",
+   "d": "0–10 V."
+  },
+  {
+   "t": "Respaldo",
+   "d": "10 años de garantía."
+  },
+  {
+   "t": "Diseño arquitectónico",
+   "d": "Luz directa e indirecta."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Estándares CREE."
+  }
+ ],
+ "applications": [
+  "Oficinas",
+  "Aeropuertos",
+  "Hospitales",
+  "Universidades",
+  "Centros y locales comerciales"
+ ],
+ "dims": {
+  "img": "p1_x25"
+ }
+}

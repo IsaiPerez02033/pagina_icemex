@@ -1,0 +1,278 @@
+{
+ "model": "SOLAR-PF",
+ "kind": "Luminaria LED solar para vialidades",
+ "power": "50 W",
+ "variant": "LT",
+ "badge": "Producto patentado",
+ "hero": "p2_x83",
+ "photo2": "p1_x16",
+ "kpis": [
+  {
+   "v": "50",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "9,500",
+   "u": "lm",
+   "l": "Flujo luminoso del LED"
+  },
+  {
+   "v": "190",
+   "u": "lm/W",
+   "l": "Eficacia del LED"
+  },
+  {
+   "v": "150,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "IP66",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "IK10",
+   "u": "",
+   "l": "Antivandálica"
+  }
+ ],
+ "description": [
+  "SOLAR-PF es una luminaria LED solar para vialidades de 50 W, producto patentado que ilumina al 100% durante toda la noche, sin interrupciones ni pérdidas de energía. Usa 60 LED SMD 5050 de 190 lm/W y un controlador MPPT patentado de última generación con indicadores de estado de carga.",
+  "Su batería LiFePO4 clase A supera los 3,000 ciclos (más de 16 años, y después funciona al 80%), con respaldo de 2 noches, algo único en México. Es antivandálica (IK10) y hermética (IP66), con carcasa de aluminio resistente al viento y a la corrosión, y soporte horizontal o vertical ajustable ±15°."
+ ],
+ "features": [
+  {
+   "img": "p2_x110",
+   "t": "Controlador MPPT patentado",
+   "d": "Con indicadores de estado de carga."
+  },
+  {
+   "img": "p1_x41",
+   "t": "Toda la noche, toda la luz",
+   "d": "100% durante 12 horas, respaldo de 2 noches."
+  },
+  {
+   "img": "p2_x120",
+   "t": "Antivandálica IK10",
+   "d": "Carcasa de aluminio resistente al viento y la corrosión."
+  },
+  {
+   "img": "p1_x16",
+   "t": "Hermética IP66",
+   "d": "Lente de policarbonato anti-UV."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  },
+  {
+   "y": 6,
+   "on": "en batería"
+  }
+ ],
+ "certs": [
+  {
+   "c": "ISO 9001",
+   "l": "Calidad"
+  },
+  {
+   "c": "ISO 14001",
+   "l": "Ambiental"
+  },
+  {
+   "c": "ISO 45001",
+   "l": "Seguridad"
+  },
+  {
+   "c": "IP66",
+   "l": "Hermeticidad"
+  },
+  {
+   "c": "IK10",
+   "l": "Impacto"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "50 W"
+    ],
+    [
+     "LED",
+     "SMD 5050 (5.0 × 5.0 mm), 60 pzas"
+    ],
+    [
+     "Eficacia del LED",
+     "190 lm/W"
+    ],
+    [
+     "Flujo luminoso del LED",
+     "9,500 lm"
+    ],
+    [
+     "Eficacia del sistema",
+     "110 lm/W"
+    ],
+    [
+     "Flujo luminoso del sistema",
+     "5,500 lm"
+    ],
+    [
+     "Distribución fotométrica",
+     "Tipo II corta (TII S)"
+    ],
+    [
+     "Temperatura de color",
+     "3,000 / 4,000 / 5,700 K"
+    ],
+    [
+     "CRI",
+     "≥ 70"
+    ],
+    [
+     "Vida útil",
+     "150,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Panel",
+     "Monocristalino 60 W / 18 V"
+    ],
+    [
+     "Batería",
+     "Litio LiFePO4 384 Wh, más de 3,000 ciclos"
+    ],
+    [
+     "Tiempo de carga",
+     "6 h"
+    ],
+    [
+     "Respaldo",
+     "2 noches"
+    ],
+    [
+     "Ciclo de funcionamiento",
+     "12 h al 100%"
+    ],
+    [
+     "Controlador",
+     "MPPT patentado con cubierta de aluminio"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Carcasa de fundición a presión con pintura poliéster electrostática anticorrosiva, tornillería de acero inoxidable grado marino A316L y lente de policarbonato anti-UV"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-25 °C a +65 °C"
+    ],
+    [
+     "Temperatura de almacenaje",
+     "-20 °C a +40 °C"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  3000,
+  4000,
+  5700
+ ],
+ "code_parts": {
+  "parts": [
+   {
+    "v": "SOLAR",
+    "l": "Código de luminaria"
+   },
+   {
+    "v": "PF",
+    "l": "Modelo"
+   },
+   {
+    "v": "XXX W",
+    "l": "Potencia en watts"
+   },
+   {
+    "v": "LT",
+    "l": "Código de asesor de ventas"
+   }
+  ],
+  "example": "SOLAR-PF-050W-LT"
+ },
+ "advantages": [
+  {
+   "t": "Toda la noche, toda la luz",
+   "d": "12 horas al 100% de flujo, con respaldo de 2 noches."
+  },
+  {
+   "t": "Batería de 16 años",
+   "d": "LiFePO4 de más de 3,000 ciclos; después sigue al 80% de su capacidad."
+  },
+  {
+   "t": "Controlador MPPT patentado",
+   "d": "Cubierta de aluminio que mejora la disipación y la estabilidad."
+  },
+  {
+   "t": "Gestión de celdas",
+   "d": "Sistema patentado que equilibra la carga y descarga."
+  },
+  {
+   "t": "Resiste huracanes",
+   "d": "Certificado de resistencia al viento de hasta 205 km/h."
+  },
+  {
+   "t": "Instalación versátil",
+   "d": "Soporte horizontal o vertical con ángulo ajustable ±15°."
+  }
+ ],
+ "applications": [
+  "Vialidades",
+  "Calles y avenidas",
+  "Caminos rurales",
+  "Estacionamientos"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Largo (L)",
+    "1100 mm"
+   ],
+   [
+    "Ancho (A)",
+    "390 mm"
+   ],
+   [
+    "Alto (H)",
+    "105 mm"
+   ]
+  ]
+ },
+ "logistics": {
+  "c20": 300,
+  "c40": 810
+ },
+ "mount": "Soporte horizontal o vertical con ángulo ajustable ±15° para adaptar la luminaria a cada vialidad."
+}

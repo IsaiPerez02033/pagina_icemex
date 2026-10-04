@@ -1,0 +1,134 @@
+{
+ "model": "GSMA MARCO ABATIBLE",
+ "kind": "Gabinete LED de 60 × 122 cm",
+ "power": "2 – 4 × 18 W",
+ "variant": "T8 LED · G-13",
+ "hero": "p1_x26",
+ "kpis": [
+  {
+   "v": "60×122",
+   "u": "cm",
+   "l": "Formato"
+  },
+  {
+   "v": "2–4",
+   "u": "",
+   "l": "Tubos T8 LED"
+  },
+  {
+   "v": "18",
+   "u": "W",
+   "l": "Por tubo"
+  },
+  {
+   "v": "9",
+   "u": "cm",
+   "l": "Peralte"
+  }
+ ],
+ "description": [
+  "GSMA es un gabinete de 60 × 122 cm con marco abatible, que permite abrirlo para dar mantenimiento o cambiar tubos sin desmontar el equipo del plafón. Se ofrece en versión para empotrar (GEMA6) y para sobreponer, con 9 cm de peralte.",
+  "Usa dos, tres o cuatro tubos LED T8 de 18 W con base G-13, para oficinas, escuelas, comercios y clínicas que requieren buen nivel de iluminación general."
+ ],
+ "features": [
+  {
+   "t": "Marco abatible",
+   "d": "Mantenimiento sin desmontar."
+  },
+  {
+   "t": "Empotrar o sobreponer",
+   "d": "Mismo formato de 60 × 122 cm."
+  },
+  {
+   "t": "2, 3 o 4 tubos",
+   "d": "T8 LED de 18 W."
+  },
+  {
+   "t": "Base G-13",
+   "d": "Tubos estándar de fácil reposición."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Modelos",
+   "rows": [
+    [
+     "GEMA6-218",
+     "2 × T8 LED 18 W"
+    ],
+    [
+     "GEMA6-318",
+     "3 × T8 LED 18 W"
+    ],
+    [
+     "GEMA6-418",
+     "4 × T8 LED 18 W"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Base",
+     "G-13"
+    ],
+    [
+     "Dimensión para empotrar",
+     "60 × 122 × 9 cm"
+    ],
+    [
+     "Dimensión para sobreponer",
+     "60 × 122 × 9 cm"
+    ],
+    [
+     "Marco",
+     "Abatible"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Fácil mantenimiento",
+   "d": "Marco abatible."
+  },
+  {
+   "t": "Configurable",
+   "d": "De 2 a 4 tubos."
+  },
+  {
+   "t": "Dos montajes",
+   "d": "Empotrar o sobreponer."
+  },
+  {
+   "t": "Tubos estándar",
+   "d": "T8 G-13."
+  }
+ ],
+ "applications": [
+  "Oficinas",
+  "Centros y locales comerciales",
+  "Escuelas y universidades",
+  "Bodegas y almacenes",
+  "Hospitales y clínicas",
+  "Estacionamientos techados"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Ancho",
+    "60 cm"
+   ],
+   [
+    "Largo",
+    "122 cm"
+   ],
+   [
+    "Alto",
+    "9 cm"
+   ]
+  ]
+ }
+}

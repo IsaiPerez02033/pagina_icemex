@@ -1,0 +1,224 @@
+{
+ "model": "URBLED 200W",
+ "kind": "Luminaria LED solar para vialidades",
+ "power": "200 W",
+ "variant": "18,000 lm",
+ "hero": "p1_x266",
+ "photo2": "p1_x272",
+ "kpis": [
+  {
+   "v": "200",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "18,000",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP67",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "12",
+   "u": "h",
+   "l": "Sin atenuación"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "240",
+   "u": "LED",
+   "l": "Cantidad de LED"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "description": [
+  "URBLED-200W es una luminaria LED 100% solar que ilumina 12 horas continuas sin atenuación. Con 240 LED entrega 18,000 lúmenes de luz blanca fría (6,000 K) con apertura de 120°, en un cuerpo de aluminio de 85 × 35 × 11 cm con grado de protección IP67.",
+  "Se enciende automáticamente al anochecer y se apaga al amanecer. Su control remoto permite programar 3, 5 u 8 horas de trabajo o el modo AUTO toda la noche, y activar o desactivar el sensor de movimiento. Se instala en 5 minutos, sin cableado, a una altura de 6 a 8 m; cuenta con certificaciones CE y RoHS."
+ ],
+ "features": [
+  {
+   "img": "p1_x266",
+   "t": "240 LED · 18,000 lm",
+   "d": "Luz blanca fría de 6,000 K con apertura de 120°."
+  },
+  {
+   "img": "p1_x269",
+   "t": "Control remoto",
+   "d": "Programa 3, 5, 8 h o modo AUTO; activa el sensor de movimiento."
+  },
+  {
+   "img": "p1_x272",
+   "t": "Instalación en 5 minutos",
+   "d": "Sin cableado; entrada para poste de 6 cm."
+  },
+  {
+   "img": "p1_x266",
+   "t": "IP67",
+   "d": "Impermeable, resistente a lluvia y polvo."
+  }
+ ],
+ "certs": [
+  {
+   "c": "CE",
+   "l": "Certificación"
+  },
+  {
+   "c": "RoHS",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP67",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "200 W"
+    ],
+    [
+     "Flujo luminoso",
+     "18,000 lm"
+    ],
+    [
+     "Cantidad de LED",
+     "240"
+    ],
+    [
+     "Temperatura de color",
+     "6,000 K (blanco frío)"
+    ],
+    [
+     "Ángulo",
+     "120°"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Batería",
+     "Litio 3.2 V / 40,000 mAh"
+    ],
+    [
+     "Horas de carga",
+     "6 a 7 h"
+    ],
+    [
+     "Tiempo de trabajo",
+     "10 a 12 h por noche"
+    ],
+    [
+     "Operación",
+     "Encendido al anochecer y apagado al amanecer automáticos"
+    ],
+    [
+     "Control",
+     "Remoto: 3, 5, 8 h o AUTO; sensor de movimiento"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Aluminio"
+    ],
+    [
+     "Dimensiones",
+     "85 × 35 × 11 cm"
+    ],
+    [
+     "Hermeticidad",
+     "IP67"
+    ],
+    [
+     "Entrada para poste",
+     "6 cm"
+    ],
+    [
+     "Altura de instalación",
+     "6 a 8 m"
+    ],
+    [
+     "Marca",
+     "Solar Light"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6000
+ ],
+ "advantages": [
+  {
+   "t": "Cero gastos de electricidad",
+   "d": "100% solar."
+  },
+  {
+   "t": "Libre de mantenimiento",
+   "d": "Larga vida útil de 50,000 h."
+  },
+  {
+   "t": "Instalación en 5 minutos",
+   "d": "Sin cableado ni obra civil."
+  },
+  {
+   "t": "Seguridad",
+   "d": "Sin riesgo de descargas eléctricas o incendios."
+  },
+  {
+   "t": "Resistente",
+   "d": "IP67 contra lluvia y polvo, apta para diversos climas."
+  },
+  {
+   "t": "No contamina",
+   "d": "Energía limpia y diseño adaptable a cualquier espacio."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Cotos y zonas residenciales",
+  "Áreas recreativas",
+  "Universidades",
+  "Andadores, patios, corredores y pasillos"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Largo",
+    "85 cm"
+   ],
+   [
+    "Ancho",
+    "35 cm"
+   ],
+   [
+    "Alto",
+    "11 cm"
+   ],
+   [
+    "Entrada para poste",
+    "6 cm"
+   ]
+  ]
+ }
+}

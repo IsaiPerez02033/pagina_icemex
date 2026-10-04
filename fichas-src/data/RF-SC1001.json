@@ -1,0 +1,184 @@
+{
+ "model": "SERIES CPY",
+ "kind": "Luminaria LED para marquesina marca CREE",
+ "power": "43 – 140 W",
+ "variant": "120–277 V · Hecho en USA",
+ "hero": "p1_x22",
+ "photo2": "p1_x28",
+ "kpis": [
+  {
+   "v": "43–140",
+   "u": "W",
+   "l": "Potencias"
+  },
+  {
+   "v": ">70",
+   "u": "",
+   "l": "IRC"
+  },
+  {
+   "v": "10",
+   "u": "años",
+   "l": "Garantía"
+  },
+  {
+   "v": "USA",
+   "u": "",
+   "l": "Hecho en"
+  }
+ ],
+ "description": [
+  "Series CPY es una luminaria LED de bajo perfil marca CREE, diseñada para marquesinas de gasolineras, accesos cubiertos, estacionamientos techados y pórticos comerciales. Fabricada en Estados Unidos con tecnología BetaLED® y ópticas NanoOptic® de alta precisión, ofrece IRC mayor a 70 y 10 años de garantía.",
+  "Se ofrece en 43, 82, 120 y 140 W a 120–277 V, en 4,000 o 5,700 K. Se instala empotrada en el plafón de la marquesina con empaque sellador y cuatro tornillos autorroscantes incluidos, con lente de cristal plano o lente descolgado."
+ ],
+ "features": [
+  {
+   "t": "Tecnología BetaLED®",
+   "d": "Plataforma LED de CREE."
+  },
+  {
+   "t": "Óptica NanoOptic®",
+   "d": "Distribución precisa bajo la marquesina."
+  },
+  {
+   "t": "Bajo perfil",
+   "d": "Lente plano de cristal o lente descolgado."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Con 10 años de garantía."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CREE",
+   "l": "Marca"
+  },
+  {
+   "c": "USA",
+   "l": "Fabricación"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Tecnología",
+     "CREE BetaLED®"
+    ],
+    [
+     "Óptica",
+     "NanoOptic®"
+    ],
+    [
+     "Potencias",
+     "43, 82, 120 y 140 W"
+    ],
+    [
+     "Temperatura de color",
+     "4,000 K o 5,700 K"
+    ],
+    [
+     "IRC",
+     "> 70"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Voltaje",
+     "120–277 V"
+    ],
+    [
+     "Entrada",
+     "Conduit de 3/4\" NPT"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Medidas",
+     "382 × 382 mm (15\" × 15\")"
+    ],
+    [
+     "Lente",
+     "Cristal plano o descolgado (23 mm)"
+    ],
+    [
+     "Montaje",
+     "Empotrado en marquesina, con empaque y 4 tornillos autorroscantes"
+    ],
+    [
+     "Fabricación",
+     "Estados Unidos"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  4000,
+  5700
+ ],
+ "advantages": [
+  {
+   "t": "10 años de garantía",
+   "d": "Respaldo de fabricante."
+  },
+  {
+   "t": "Óptica de precisión",
+   "d": "NanoOptic®."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Estándares CREE."
+  },
+  {
+   "t": "Cuatro potencias",
+   "d": "De 43 a 140 W."
+  },
+  {
+   "t": "Instalación limpia",
+   "d": "Empotrada al ras de la marquesina."
+  },
+  {
+   "t": "Dos temperaturas",
+   "d": "4,000 o 5,700 K."
+  }
+ ],
+ "applications": [
+  "Gasolineras",
+  "Marquesinas y accesos cubiertos",
+  "Estacionamientos techados",
+  "Centros y locales comerciales",
+  "Universidades",
+  "Plazas y explanadas"
+ ],
+ "dims": {
+  "img": "p1_x25",
+  "rows": [
+   [
+    "Ancho",
+    "382 mm (15\")"
+   ],
+   [
+    "Corte en marquesina",
+    "183 × 279 mm"
+   ],
+   [
+    "Lente descolgado",
+    "23 mm"
+   ]
+  ]
+ }
+}

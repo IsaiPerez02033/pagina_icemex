@@ -1,0 +1,172 @@
+{
+ "model": "SUBLED 200W",
+ "kind": "Luminaria LED solar suburbana",
+ "power": "200 W",
+ "variant": "20,000 lm",
+ "hero": "p1_x266",
+ "photo2": "p1_x275",
+ "kpis": [
+  {
+   "v": "200",
+   "u": "W",
+   "l": "Consumo"
+  },
+  {
+   "v": "20,000",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "12",
+   "u": "h",
+   "l": "Sin atenuación"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "84",
+   "u": "LED",
+   "l": "Cantidad de LED"
+  },
+  {
+   "v": "30,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "description": [
+  "SUBLED-200W es una luminaria LED 100% solar que ilumina 12 horas continuas sin atenuación. Con 84 LED de alta potencia entrega 20,000 lúmenes de luz blanca (6,500 K) con apertura de 0 a 140° e índice de color de 70.",
+  "Sin gastos de electricidad, libre de mantenimiento e instalada en 5 minutos sin cableado. No contamina, elimina riesgos de descargas eléctricas o incendios y resiste diversos climas con grado de protección IP65."
+ ],
+ "features": [
+  {
+   "img": "p1_x266",
+   "t": "84 LED",
+   "d": "20,000 lúmenes de luz blanca."
+  },
+  {
+   "img": "p1_x269",
+   "t": "Panel solar",
+   "d": "Cero gastos de electricidad."
+  },
+  {
+   "img": "p1_x272",
+   "t": "Detalles de calidad",
+   "d": "Componentes resistentes a diversos climas."
+  },
+  {
+   "img": "p1_x275",
+   "t": "Instalación en 5 minutos",
+   "d": "Sin cableado ni obra civil."
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Consumo",
+     "200 W"
+    ],
+    [
+     "Flujo luminoso",
+     "20,000 lm"
+    ],
+    [
+     "Cantidad de LED",
+     "84"
+    ],
+    [
+     "Apertura de luz",
+     "0–140°"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "CRI",
+     "70"
+    ],
+    [
+     "Horas de vida",
+     "30,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Factor de potencia",
+     "> 0.8"
+    ],
+    [
+     "Alimentación",
+     "100% solar"
+    ],
+    [
+     "Operación",
+     "12 h continuas sin atenuación"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Hermeticidad",
+     "IP65"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Cero gastos de electricidad",
+   "d": "100% solar."
+  },
+  {
+   "t": "Toda la noche al 100%",
+   "d": "12 horas continuas sin atenuación."
+  },
+  {
+   "t": "Instalación en 5 minutos",
+   "d": "Sin cableado."
+  },
+  {
+   "t": "Seguridad",
+   "d": "Sin riesgo de descargas o incendios."
+  },
+  {
+   "t": "Libre de mantenimiento",
+   "d": "Larga vida útil."
+  },
+  {
+   "t": "No contamina",
+   "d": "Energía limpia y diseño adaptable."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Cotos y zonas residenciales",
+  "Áreas recreativas",
+  "Universidades",
+  "Andadores, patios, corredores y pasillos"
+ ]
+}

@@ -1,0 +1,237 @@
+{
+ "model": "ALL IN ONE 500W",
+ "kind": "Lámpara solar «All in One» suburbana",
+ "power": "500 W",
+ "variant": "Modelo LA-12",
+ "hero": "p1_x16",
+ "photo2": "p1_x23",
+ "kpis": [
+  {
+   "v": "500",
+   "u": "W",
+   "l": "Wattaje"
+  },
+  {
+   "v": "100",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "IP66",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "12",
+   "u": "h",
+   "l": "Tiempo de trabajo"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "150",
+   "u": "LED",
+   "l": "Módulo"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "description": [
+  "La lámpara solar ALL IN ONE 500W (modelo LA-12) es una luminaria suburbana con panel solar integrado, interruptor frontal y sensor PIR de proximidad, para exteriores. Su módulo de 150 LED ofrece 100 lm/W de luz blanca (7,500 K), índice de color de 80 y ángulo de 70 × 150°.",
+  "La batería LPF 32650 de 60,000 mAh se carga con un panel de 6 V / 80 W en 6 a 8 horas y trabaja 12 horas por noche. Cuerpo de aleación de aluminio en acabado gris con reflector transparente, grado de protección IP66, clase energética A, sin mercurio y con certificaciones CE y RoHS."
+ ],
+ "features": [
+  {
+   "t": "Panel integrado",
+   "d": "Panel de 6 V / 80 W, carga en 6 a 8 horas."
+  },
+  {
+   "t": "150 LED",
+   "d": "100 lm/W de luz blanca."
+  },
+  {
+   "t": "Sensor PIR",
+   "d": "Detecta presencia para aumentar la luz."
+  },
+  {
+   "t": "IP66",
+   "d": "Sellada contra polvo y chorros de agua."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 1,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CE",
+   "l": "Certificación"
+  },
+  {
+   "c": "RoHS",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP66",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Wattaje",
+     "500 W"
+    ],
+    [
+     "Eficacia",
+     "100 lm/W"
+    ],
+    [
+     "Fuente de luz",
+     "1 módulo de 150 LED"
+    ],
+    [
+     "Temperatura de color",
+     "7,500 K"
+    ],
+    [
+     "Índice de color (CRI)",
+     "80"
+    ],
+    [
+     "Ángulo de haz",
+     "70° × 150°"
+    ],
+    [
+     "Clase energética",
+     "A"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Batería",
+     "LPF 32650 / 60,000 mAh"
+    ],
+    [
+     "Panel",
+     "6 V / 80 W"
+    ],
+    [
+     "Tiempo de carga",
+     "6–8 h"
+    ],
+    [
+     "Tiempo de trabajo",
+     "12 h"
+    ],
+    [
+     "Sensor",
+     "PIR de proximidad"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Aleación de aluminio"
+    ],
+    [
+     "Acabado",
+     "Cuerpo gris, reflector de plástico transparente"
+    ],
+    [
+     "Base",
+     "A poste"
+    ],
+    [
+     "Hermeticidad",
+     "IP66"
+    ],
+    [
+     "Dimensiones",
+     "1320 × 364 × 50 mm"
+    ],
+    [
+     "Peso",
+     "12 kg"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-20 °C a 40 °C"
+    ],
+    [
+     "Contenido de mercurio",
+     "0"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Todo en uno",
+   "d": "Panel, batería y LED en un solo cuerpo."
+  },
+  {
+   "t": "Toda la noche",
+   "d": "12 horas de trabajo por carga."
+  },
+  {
+   "t": "Hermética",
+   "d": "Grado de protección IP66."
+  },
+  {
+   "t": "Sin costo de energía",
+   "d": "No requiere conexión eléctrica."
+  },
+  {
+   "t": "Sin mercurio",
+   "d": "Clase energética A, CE y RoHS."
+  },
+  {
+   "t": "Instalación sencilla",
+   "d": "Montaje directo a poste."
+  }
+ ],
+ "applications": [
+  "Jardines",
+  "Caminos rurales",
+  "Calles citadinas",
+  "Parques",
+  "Avenidas",
+  "Carreteras",
+  "Complejos comerciales e industriales"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Dimensiones (alto × ancho × prof.)",
+    "1320 × 364 × 50 mm"
+   ],
+   [
+    "Peso",
+    "12 kg"
+   ]
+  ]
+ }
+}

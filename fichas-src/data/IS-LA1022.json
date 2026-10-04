@@ -1,0 +1,194 @@
+{
+ "model": "L-9",
+ "kind": "Luminaria solar «All in One» con control remoto",
+ "power": "120 W",
+ "variant": "280 LED",
+ "hero": "p1_x40",
+ "kpis": [
+  {
+   "v": "120",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "280",
+   "u": "LED",
+   "l": "Cantidad de LED"
+  },
+  {
+   "v": "IP66",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "12",
+   "u": "h",
+   "l": "Tiempo de trabajo"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "150°",
+   "u": "",
+   "l": "Ángulo de haz"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "description": [
+  "L-9 es una luminaria solar «All in One» de 120 W con 280 LED, ángulo de haz de 150° y luz blanca de 7,500 K, en cuerpo de ABS de 73.5 × 26.6 × 6 cm con grado de protección IP66.",
+  "Su batería de 20 Ah se carga con un panel de 20 W / 6 V en 4 a 6 horas y trabaja 12 horas por noche. Incluye control remoto, tiene una vida de servicio de 50,000 horas y cuenta con 3 años de garantía."
+ ],
+ "features": [
+  {
+   "t": "280 LED",
+   "d": "Ángulo de haz de 150°."
+  },
+  {
+   "t": "Carga rápida",
+   "d": "4 a 6 horas de sol para 12 horas de luz."
+  },
+  {
+   "t": "Control remoto",
+   "d": "Incluido."
+  },
+  {
+   "t": "IP66",
+   "d": "Sellada contra polvo y chorros de agua."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 3,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP66",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "120 W"
+    ],
+    [
+     "Cantidad de LED",
+     "280"
+    ],
+    [
+     "Ángulo de haz",
+     "150°"
+    ],
+    [
+     "Temperatura de color",
+     "7,500 K"
+    ],
+    [
+     "Vida de servicio",
+     "50,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Batería",
+     "20 Ah"
+    ],
+    [
+     "Panel solar",
+     "20 W / 6 V"
+    ],
+    [
+     "Carga",
+     "4–6 h"
+    ],
+    [
+     "Trabajo",
+     "12 h"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "ABS"
+    ],
+    [
+     "Dimensiones",
+     "73.5 × 26.6 × 6 cm"
+    ],
+    [
+     "Hermeticidad",
+     "IP66"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  7500
+ ],
+ "advantages": [
+  {
+   "t": "Respaldo",
+   "d": "3 años de garantía."
+  },
+  {
+   "t": "Carga rápida",
+   "d": "4 a 6 horas de sol."
+  },
+  {
+   "t": "Toda la noche",
+   "d": "12 horas de trabajo."
+  },
+  {
+   "t": "Hermética",
+   "d": "Grado de protección IP66."
+  },
+  {
+   "t": "Control remoto",
+   "d": "Manejo sencillo."
+  },
+  {
+   "t": "Ligera y compacta",
+   "d": "Perfil de 6 cm."
+  }
+ ],
+ "applications": [
+  "Jardines",
+  "Caminos rurales",
+  "Calles citadinas",
+  "Parques",
+  "Avenidas",
+  "Carreteras",
+  "Complejos comerciales e industriales"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Largo",
+    "73.5 cm"
+   ],
+   [
+    "Ancho",
+    "26.6 cm"
+   ],
+   [
+    "Alto",
+    "6 cm"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "model": "GC CANAL DOBLE",
+ "kind": "Gabinete de canal para dos tubos",
+ "power": "17 – 59 W",
+ "variant": "T8 / T5",
+ "hero": "p1_x17",
+ "kpis": [
+  {
+   "v": "2",
+   "u": "",
+   "l": "Tubos"
+  },
+  {
+   "v": "60–244",
+   "u": "cm",
+   "l": "Longitudes"
+  },
+  {
+   "v": "8×5",
+   "u": "cm",
+   "l": "Sección"
+  },
+  {
+   "v": "T8 / T5",
+   "u": "",
+   "l": "Lámparas"
+  }
+ ],
+ "description": [
+  "GC Canal Doble es un gabinete tipo canal para dos tubos, fabricado en lámina de acero rolada en frío con pintura blanca electrostática secada al horno. Su sección compacta de 8 × 5 cm lo hace ideal para bodegas, pasillos, cocheras, áreas de servicio y comercios.",
+  "Se ofrece en longitudes de 60, 122 y 244 cm, para tubos T8 o T5 de 17, 32 y 59 W con bases G-13 o Fa8."
+ ],
+ "features": [
+  {
+   "t": "Dos tubos",
+   "d": "T8 o T5."
+  },
+  {
+   "t": "Sección compacta",
+   "d": "8 × 5 cm."
+  },
+  {
+   "t": "Acero rolado en frío",
+   "d": "Pintura blanca horneada."
+  },
+  {
+   "t": "Tres longitudes",
+   "d": "60, 122 y 244 cm."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Modelos (cm)",
+   "rows": [
+    [
+     "GC4-217",
+     "2 × T8/T5 17 W · G-13 · 8 × 60 × 5"
+    ],
+    [
+     "GC3-232",
+     "2 × T8/T5 32 W · G-13 · 8 × 122 × 5"
+    ],
+    [
+     "GC5-259",
+     "2 × T8/T5 59 W · Fa8 · 8 × 244 × 5"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Lámina de acero rolada en frío"
+    ],
+    [
+     "Acabado",
+     "Pintura blanca electrostática, secada al horno"
+    ],
+    [
+     "Montaje",
+     "Sobreponer"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Compacto",
+   "d": "Sección de 8 × 5 cm."
+  },
+  {
+   "t": "Económico",
+   "d": "Solución práctica para áreas de servicio."
+  },
+  {
+   "t": "Durable",
+   "d": "Pintura horneada."
+  },
+  {
+   "t": "Tres tamaños",
+   "d": "De 60 a 244 cm."
+  }
+ ],
+ "applications": [
+  "Bodegas y almacenes",
+  "Pasillos",
+  "Cocheras",
+  "Áreas de servicio",
+  "Comercios",
+  "Talleres"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Ancho",
+    "8 cm"
+   ],
+   [
+    "Alto",
+    "5 cm"
+   ],
+   [
+    "Longitud",
+    "60 / 122 / 244 cm"
+   ]
+  ]
+ }
+}

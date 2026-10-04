@@ -1,0 +1,210 @@
+{
+ "model": "REFLECTOR PLANO 400W",
+ "kind": "Reflector LED de alta potencia",
+ "power": "200 – 600 W",
+ "variant": "AC 100–265 V",
+ "hero": "p1_x25",
+ "kpis": [
+  {
+   "v": "400",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "40,000",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Protección"
+  },
+  {
+   "v": "80",
+   "u": "%",
+   "l": "Ahorro de energía"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "100",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "90",
+   "u": "°",
+   "l": "Ángulo de haz"
+  }
+ ],
+ "description": [
+  "El Reflector Plano 400W es una solución portátil para iluminar con potencia en exteriores: anuncios, puentes, estacionamientos, fachadas y jardines. Con 480 LEDs SMD 2835 y difusor interior aluminizado de 8 secciones, entrega 40,000 lúmenes (100 lm/W) de luz blanca a 6,000–6,500 K con CRI de 80 y haz de 90°.",
+  "Ahorra hasta 80% de energía frente a tecnologías convencionales. Opera de 100 a 265 V con factor de potencia de 0.9, se conecta directo con cable a corriente y su base-asa ajustable favorece varios ángulos de iluminación. Grado IP65 y disponible en 200, 300, 400, 500 y 600 W."
+ ],
+ "features": [
+  {
+   "t": "480 LEDs SMD 2835",
+   "d": "40,000 lm de luz blanca."
+  },
+  {
+   "t": "8 secciones ópticas",
+   "d": "Difusor interior aluminizado."
+  },
+  {
+   "t": "Base-asa ajustable",
+   "d": "Varios ángulos de iluminación."
+  },
+  {
+   "t": "IP65",
+   "d": "Protegido contra polvo y chorros de agua."
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Protección"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Fuente de luz",
+     "480 LEDs SMD 2835"
+    ],
+    [
+     "Flujo luminoso",
+     "40,000 lm"
+    ],
+    [
+     "Eficacia",
+     "100 lm/W"
+    ],
+    [
+     "Temperatura de color",
+     "6,000–6,500 K"
+    ],
+    [
+     "CRI",
+     "80"
+    ],
+    [
+     "Ángulo de haz",
+     "90°"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Potencia",
+     "400 W (versiones de 200, 300, 500 y 600 W)"
+    ],
+    [
+     "Voltaje",
+     "AC 100–265 V"
+    ],
+    [
+     "Frecuencia",
+     "50/60 Hz"
+    ],
+    [
+     "Factor de potencia",
+     "0.9"
+    ],
+    [
+     "Conexión",
+     "Cable a corriente"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Aleación de aluminio, plástico y vidrio"
+    ],
+    [
+     "Acabado",
+     "Negro, difusor interior aluminizado de 8 secciones"
+    ],
+    [
+     "Base",
+     "Base-asa ajustable"
+    ],
+    [
+     "Medidas",
+     "520 × 350 mm"
+    ],
+    [
+     "Peso",
+     "3.72 kg"
+    ],
+    [
+     "Protección",
+     "IP65"
+    ],
+    [
+     "Origen",
+     "China"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Ahorro de energía",
+   "d": "Hasta 80%."
+  },
+  {
+   "t": "Alta potencia",
+   "d": "40,000 lm."
+  },
+  {
+   "t": "Portátil",
+   "d": "Base-asa y conexión directa."
+  },
+  {
+   "t": "Cinco potencias",
+   "d": "De 200 a 600 W."
+  },
+  {
+   "t": "Exteriores",
+   "d": "IP65."
+  },
+  {
+   "t": "Ecológico",
+   "d": "Tecnología LED."
+  }
+ ],
+ "applications": [
+  "Anuncios",
+  "Puentes",
+  "Estacionamientos",
+  "Fachadas",
+  "Jardines"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Alto",
+    "520 mm"
+   ],
+   [
+    "Ancho",
+    "350 mm"
+   ],
+   [
+    "Peso",
+    "3.72 kg"
+   ]
+  ]
+ }
+}

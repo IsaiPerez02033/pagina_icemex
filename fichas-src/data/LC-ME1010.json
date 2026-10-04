@@ -1,0 +1,139 @@
+{
+ "model": "GAME MALLA ELECTROSOLDADA",
+ "kind": "Gabinete LED con rejilla de malla",
+ "power": "9 – 40 W por tubo",
+ "variant": "T8 LED",
+ "hero": "p1_x25",
+ "kpis": [
+  {
+   "v": "1–2",
+   "u": "",
+   "l": "Tubos T8 LED"
+  },
+  {
+   "v": "9–40",
+   "u": "W",
+   "l": "Por tubo"
+  },
+  {
+   "v": "60–244",
+   "u": "cm",
+   "l": "Longitudes"
+  },
+  {
+   "v": "10.5×11",
+   "u": "cm",
+   "l": "Sección"
+  }
+ ],
+ "description": [
+  "GAME es un gabinete de sobreponer con rejilla de malla electrosoldada que protege los tubos contra golpes, ideal para gimnasios, escuelas, bodegas, talleres y áreas de servicio donde la luminaria puede recibir impactos.",
+  "Se ofrece para uno o dos tubos LED T8 de 9, 18 o 40 W, en longitudes de 60, 122 y 244 cm, con sección compacta de 10.5 × 11 cm."
+ ],
+ "features": [
+  {
+   "t": "Malla electrosoldada",
+   "d": "Protege los tubos contra impactos."
+  },
+  {
+   "t": "Uno o dos tubos",
+   "d": "T8 LED."
+  },
+  {
+   "t": "Tres longitudes",
+   "d": "60, 122 y 244 cm."
+  },
+  {
+   "t": "Sobreponer",
+   "d": "Instalación directa a techo."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Modelos (cm)",
+   "rows": [
+    [
+     "GAME4-19",
+     "1 × T8 9 W · G-13 · 10.5 × 60 × 11"
+    ],
+    [
+     "GAME4-29",
+     "2 × T8 9 W · G-13 · 10.5 × 60 × 11"
+    ],
+    [
+     "GAME3-118",
+     "1 × T8 18 W · G-13 · 10.5 × 122 × 11"
+    ],
+    [
+     "GAME3-218",
+     "2 × T8 18 W · G-13 · 10.5 × 122 × 11"
+    ],
+    [
+     "GAME5-140",
+     "1 × T8 40 W · Fa8 · 10.5 × 244 × 11"
+    ],
+    [
+     "GAME5-240",
+     "2 × T8 40 W · Fa8 · 10.5 × 244 × 11"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Protección",
+     "Rejilla de malla electrosoldada"
+    ],
+    [
+     "Montaje",
+     "Sobreponer"
+    ]
+   ]
+  }
+ ],
+ "photometry": "p1_x31",
+ "advantages": [
+  {
+   "t": "Antivandálico",
+   "d": "Malla contra impactos."
+  },
+  {
+   "t": "Seis modelos",
+   "d": "De 60 a 244 cm."
+  },
+  {
+   "t": "Tubos estándar",
+   "d": "T8 de fácil reposición."
+  },
+  {
+   "t": "Compacto",
+   "d": "10.5 × 11 cm de sección."
+  }
+ ],
+ "applications": [
+  "Gimnasios",
+  "Escuelas",
+  "Bodegas y almacenes",
+  "Talleres",
+  "Áreas de servicio",
+  "Estacionamientos techados"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Ancho",
+    "10.5 cm"
+   ],
+   [
+    "Alto",
+    "11 cm"
+   ],
+   [
+    "Longitud",
+    "60 / 122 / 244 cm"
+   ]
+  ]
+ }
+}

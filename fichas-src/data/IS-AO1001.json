@@ -1,0 +1,199 @@
+{
+ "model": "ALL IN ONE 80W",
+ "kind": "Luminaria solar autónoma «All in One»",
+ "power": "80 W",
+ "variant": "FORLED L-34",
+ "hero": "p2_x71",
+ "photo2": "p2_x77",
+ "kpis": [
+  {
+   "v": "80",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "150",
+   "u": "lm/W",
+   "l": "Eficiencia nominal"
+  },
+  {
+   "v": "2",
+   "u": "días",
+   "l": "Autonomía"
+  },
+  {
+   "v": "100,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "10–12",
+   "u": "h",
+   "l": "Iluminación por noche"
+  },
+  {
+   "v": "6–8",
+   "u": "m",
+   "l": "Altura de montaje"
+  }
+ ],
+ "description": [
+  "La luminaria autónoma solar ALL IN ONE 80W (código L-34, serie FORLED) está diseñada para alumbrado público, urbano, comercial e industrial. Integra LEDs de alto desempeño, batería de litio desarrollada para luminarias, panel de silicio monocristalino y regulador de carga en un solo cuerpo de aluminio y policarbonato.",
+  "Incluye sensores infrarrojos: al detectar movimiento eleva el flujo luminoso al 100% y lo atenúa cuando no hay presencia. Viene configurada para iluminar de 10 a 12 horas en condiciones normales y opera de forma autónoma aunque falle la red eléctrica, sin necesidad de excavaciones ni tendido de cable entre luminarias."
+ ],
+ "features": [
+  {
+   "img": "p2_x77",
+   "t": "Todo en uno",
+   "d": "LED, batería de litio, panel monocristalino y controlador integrados."
+  },
+  {
+   "img": "p2_x74",
+   "t": "Sensor de presencia",
+   "d": "Sube al 100% con movimiento y se atenúa sin presencia."
+  },
+  {
+   "img": "p1_x23",
+   "t": "Sin cableado",
+   "d": "No requiere zanjas ni tendido eléctrico entre luminarias.",
+   "mode": "drawing"
+  },
+  {
+   "img": "p2_x90",
+   "t": "Óptica asimétrica 2M",
+   "d": "Distribución diseñada para vialidades.",
+   "light": false
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  },
+  {
+   "y": 5,
+   "on": "en batería"
+  },
+  {
+   "y": 20,
+   "on": "en panel solar"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "80 W"
+    ],
+    [
+     "Fuente luminosa",
+     "LED"
+    ],
+    [
+     "Eficiencia nominal",
+     "150 lm/W"
+    ],
+    [
+     "Óptica",
+     "Asimétrica 2M"
+    ],
+    [
+     "Vida útil",
+     "100,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Panel solar",
+     "Silicio monocristalino 5 V / 80 W"
+    ],
+    [
+     "Batería",
+     "Litio 3.2 V / 60 Ah"
+    ],
+    [
+     "Autonomía",
+     "2 días"
+    ],
+    [
+     "Control",
+     "Sensor híbrido / atenuable"
+    ],
+    [
+     "Iluminación por noche",
+     "10 a 12 horas"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Aluminio / policarbonato"
+    ],
+    [
+     "Acabado",
+     "Negro"
+    ],
+    [
+     "Montaje",
+     "Punta de poste o brazo tipo L"
+    ],
+    [
+     "Altura de montaje recomendada",
+     "6 a 8 m"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-30 °C a 40 °C"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Cero costo de energía",
+   "d": "Funciona solo con energía solar, sin recibo de luz."
+  },
+  {
+   "t": "Instalación rápida",
+   "d": "Sin zanjas, cableado ni maquinaria pesada."
+  },
+  {
+   "t": "Opera aunque falle la red",
+   "d": "Sistema autónomo con 2 días de autonomía."
+  },
+  {
+   "t": "Ahorro inteligente",
+   "d": "Sensor de presencia que atenúa cuando no hay movimiento."
+  },
+  {
+   "t": "Garantía extendida",
+   "d": "10 años luminaria, 5 años batería y 20 años panel."
+  },
+  {
+   "t": "Alta eficiencia",
+   "d": "150 lm/W y vida útil de 100,000 horas."
+  }
+ ],
+ "applications": [
+  "Alumbrado público",
+  "Alumbrado urbano",
+  "Áreas comerciales",
+  "Áreas industriales"
+ ],
+ "mount": "Montaje tipo punta de poste o mediante brazo tipo «L», a una altura recomendada de 6 a 8 m. Se recomienda limpiar periódicamente el panel solar para evitar acumulación de residuos."
+}

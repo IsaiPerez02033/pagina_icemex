@@ -9,8 +9,8 @@ import {
   type ProductLine,
 } from "@/lib/products";
 import { buildWhatsAppUrlProyectos } from "@/lib/whatsapp";
-import { fichaForProduct, standaloneFichas } from "@/lib/fichas";
-import FichaPage, { FichaDownload, FichaText } from "@/components/FichaPage";
+import { fichaForProduct, ownFicha, standaloneFichas, type Ficha } from "@/lib/fichas";
+import FichaPage, { FichaDownload } from "@/components/FichaPage";
 
 const standalone = (code: string) =>
   standaloneFichas.find((f) => f.code === code);
@@ -20,6 +20,28 @@ export function generateStaticParams() {
   return [...getAllCodes(), ...standaloneFichas.map((f) => f.code)].map(
     (code) => ({ code })
   );
+}
+
+/** Metadatos de una página con ficha técnica completa. */
+function fichaMetadata(
+  f: Ficha,
+  name: string,
+  code: string,
+  line: ProductLine,
+  tags: string[]
+): Metadata {
+  const lead = f.summary || f.kind;
+  return {
+    title: `${name} (${code}) — ${lineNames[line]}`,
+    description: `${lead.replace(/[.…]?$/, ".")} Ficha técnica ${code} con especificaciones; cotiza por WhatsApp.`,
+    keywords: [name, code, f.kind, lineNames[line], ...tags, "ficha técnica", "ICEMEX", "cotizar"],
+    openGraph: {
+      title: `${name} · ${lineNames[line]}`,
+      description: f.kind,
+      images: [{ url: f.cover.src, width: f.cover.width, height: f.cover.height }],
+    },
+    alternates: { canonical: `https://icemex.mx/producto/${code}` },
+  };
 }
 
 export async function generateMetadata({
@@ -32,17 +54,10 @@ export async function generateMetadata({
   if (!p) {
     const f = standalone(code);
     if (!f) return { title: "Producto no encontrado" };
-    return {
-      title: `${f.name} (${f.code}) — ${lineNames[f.line]}`,
-      description: `${f.summary ? f.summary.replace(/\.?$/, ". ") : ""}Ficha técnica ${f.code} del Catálogo ICEMEX 2026: descarga el PDF y cotiza por WhatsApp.`,
-      keywords: [f.name, f.code, lineNames[f.line], ...f.tags.map((t) => tagNames[t]), "ficha técnica", "ICEMEX", "cotizar"],
-      openGraph: {
-        title: `${f.name} · ${lineNames[f.line]}`,
-        images: [{ url: f.image.src, width: f.image.width, height: f.image.height }],
-      },
-      alternates: { canonical: `https://icemex.mx/producto/${f.code}` },
-    };
+    return fichaMetadata(f, f.name, f.code, f.line, f.tags.map((t) => tagNames[t]));
   }
+  const own = ownFicha(p.code);
+  if (own) return fichaMetadata(own, p.name, p.code, p.line, p.tags.map((t) => tagNames[t]));
   const ficha = fichaForProduct(p.code);
 
   // El template del layout ya agrega " · ICEMEX".
@@ -68,7 +83,7 @@ export async function generateMetadata({
       title: `${p.name} · ${lineNames[p.line]}`,
       description: p.tagline,
       ...(ficha && {
-        images: [{ url: ficha.image.src, width: ficha.image.width, height: ficha.image.height }],
+        images: [{ url: ficha.cover.src, width: ficha.cover.width, height: ficha.cover.height }],
       }),
     },
     alternates: { canonical: `https://icemex.mx/producto/${p.code}` },
@@ -87,6 +102,9 @@ export default async function ProductoPage({
     if (!f) notFound();
     return <FichaPage ficha={f} />;
   }
+  const own = ownFicha(p.code);
+  if (own) return <FichaPage ficha={own} product={p} />;
+  // Postes que comparten la ficha de su familia: contenido curado + PDF.
   const ficha = fichaForProduct(p.code);
 
   const jsonLd = {
@@ -385,7 +403,6 @@ export default async function ProductoPage({
                 </div>
               </section>
 
-              {ficha && <FichaText ficha={ficha} />}
             </div>
 
             {/* Columna derecha: meta + CTA */}

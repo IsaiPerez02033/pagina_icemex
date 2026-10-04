@@ -1,0 +1,169 @@
+{
+ "model": "ESSENTIA",
+ "kind": "Luminaria LED cilíndrica marca CREE",
+ "power": "53 – 100 W",
+ "variant": "120/277 V · Hecho en USA",
+ "hero": "p1_x24",
+ "photo2": "p1_x27",
+ "kpis": [
+  {
+   "v": "53–100",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": ">80",
+   "u": "",
+   "l": "IRC"
+  },
+  {
+   "v": "10",
+   "u": "años",
+   "l": "Garantía"
+  },
+  {
+   "v": "USA",
+   "u": "",
+   "l": "Hecho en"
+  }
+ ],
+ "description": [
+  "Essentia es una luminaria LED cilíndrica marca CREE, fabricada en Estados Unidos, para montaje en pared, colgante o techo. Su diseño minimalista ilumina vestíbulos, pasillos, comercios y espacios con techos altos.",
+  "El modelo Essentia MD se ofrece en 53, 75 y 100 W a 120/277 V, en 2,700, 3,000, 3,500 o 4,000 K, con IRC mayor a 80 y 10 años de garantía. El cilindro mide 508 mm de alto por 254 mm de diámetro."
+ ],
+ "features": [
+  {
+   "t": "Tres montajes",
+   "d": "Pared, colgante o techo."
+  },
+  {
+   "t": "Cuatro temperaturas",
+   "d": "De 2,700 a 4,000 K."
+  },
+  {
+   "t": "Diseño cilíndrico",
+   "d": "Minimalista y arquitectónico."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Con 10 años de garantía."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CREE",
+   "l": "Marca"
+  },
+  {
+   "c": "USA",
+   "l": "Fabricación"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Modelo",
+     "Essentia MD"
+    ],
+    [
+     "IRC",
+     "> 80"
+    ],
+    [
+     "Temperatura de color",
+     "2,700, 3,000, 3,500 o 4,000 K"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Potencia",
+     "53, 75 o 100 W"
+    ],
+    [
+     "Voltaje",
+     "120/277 V"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Montaje",
+     "Pared, colgante o techo"
+    ],
+    [
+     "Cilindro",
+     "508 mm alto × 254 mm diámetro"
+    ],
+    [
+     "Brazo de pared",
+     "3 × 5\" (76 × 127 mm), 178 mm de proyección"
+    ],
+    [
+     "Fabricación",
+     "Estados Unidos"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  2700,
+  3000,
+  3500,
+  4000
+ ],
+ "advantages": [
+  {
+   "t": "Versátil",
+   "d": "Pared, colgante o techo."
+  },
+  {
+   "t": "Respaldo",
+   "d": "10 años de garantía."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Estándares CREE."
+  },
+  {
+   "t": "Tres potencias",
+   "d": "53, 75 y 100 W."
+  }
+ ],
+ "applications": [
+  "Vestíbulos y recepciones",
+  "Andadores, patios, corredores y pasillos",
+  "Universidades",
+  "Centros y locales comerciales",
+  "Oficinas"
+ ],
+ "dims": {
+  "img": "p1_x29",
+  "rows": [
+   [
+    "Alto del cilindro",
+    "508 mm"
+   ],
+   [
+    "Diámetro",
+    "254 mm"
+   ],
+   [
+    "Alto total (pared)",
+    "537 mm"
+   ]
+  ]
+ }
+}

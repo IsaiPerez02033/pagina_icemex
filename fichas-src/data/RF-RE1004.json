@@ -1,0 +1,240 @@
+{
+ "model": "FLOOD PLANO GRIS 400W",
+ "kind": "Reflector LED de alta potencia",
+ "power": "400 W",
+ "variant": "AC 85–265 V",
+ "hero": "p1_x25",
+ "photo2": "p1_x28",
+ "kpis": [
+  {
+   "v": "400",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "40,000",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP66",
+   "u": "",
+   "l": "Protección"
+  },
+  {
+   "v": "30,000",
+   "u": "h",
+   "l": "Vida promedio"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "100",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "6,500",
+   "u": "K",
+   "l": "Temperatura de color"
+  }
+ ],
+ "description": [
+  "El Flood Plano Gris es un reflector LED de 400 W para bodegas, almacenes, fábricas, talleres y áreas exteriores. Fabricado en aleación de aluminio con cubierta de vidrio gris, su reflector interior blanco distribuye de forma inteligente 800 LEDs SMD 2835 Epistar de alta luminosidad, y su diseño favorece la disipación del calor.",
+  "Entrega 40,000 lúmenes (100 lm/W) a 6,500 K con CRI de 80 y ángulo de 120°. Opera de 85 a 265 V con factor de potencia mayor a 0.9, grado IP66 (resiste fuertes chorros de agua), de -20 a 60 °C, sin mercurio y con certificaciones CE y RoHS. Su base ajustable permite varios ángulos de inclinación."
+ ],
+ "features": [
+  {
+   "t": "800 LEDs Epistar",
+   "d": "SMD 2835 de alta luminosidad."
+  },
+  {
+   "t": "Base ajustable",
+   "d": "Varios ángulos de inclinación."
+  },
+  {
+   "t": "IP66",
+   "d": "Resiste fuertes chorros de agua."
+  },
+  {
+   "t": "Disipación eficiente",
+   "d": "Aleación de aluminio."
+  }
+ ],
+ "certs": [
+  {
+   "c": "CE",
+   "l": "Certificación"
+  },
+  {
+   "c": "RoHS 2",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP66",
+   "l": "Protección"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Fuente de luz",
+     "800 LEDs SMD 2835 Epistar"
+    ],
+    [
+     "Flujo luminoso",
+     "40,000 lm"
+    ],
+    [
+     "Eficacia",
+     "100 lm/W"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "CRI",
+     "80"
+    ],
+    [
+     "Ángulo",
+     "120°"
+    ],
+    [
+     "Vida promedio",
+     "30,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Potencia",
+     "400 W"
+    ],
+    [
+     "Voltaje",
+     "AC 85–265 V"
+    ],
+    [
+     "Frecuencia",
+     "50/60 Hz"
+    ],
+    [
+     "Factor de potencia",
+     "> 0.9"
+    ],
+    [
+     "Fuente de poder",
+     "Driver trasero integrado"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Aleación de aluminio y vidrio"
+    ],
+    [
+     "Acabado",
+     "Gris, con cubierta de vidrio gris"
+    ],
+    [
+     "Medidas",
+     "330 × 525 × 43 mm"
+    ],
+    [
+     "Peso",
+     "5.03 kg"
+    ],
+    [
+     "Origen",
+     "China"
+    ]
+   ]
+  },
+  {
+   "name": "Ambiental",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-20 °C a 60 °C"
+    ],
+    [
+     "Protección",
+     "IP66"
+    ],
+    [
+     "Mercurio",
+     "0"
+    ],
+    [
+     "Uso",
+     "Interiores y exteriores"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Alta potencia",
+   "d": "40,000 lúmenes."
+  },
+  {
+   "t": "IP66",
+   "d": "Para exteriores exigentes."
+  },
+  {
+   "t": "Orientable",
+   "d": "Base ajustable."
+  },
+  {
+   "t": "Certificado",
+   "d": "CE y RoHS 2."
+  },
+  {
+   "t": "Sin mercurio",
+   "d": "Amigable con el ambiente."
+  },
+  {
+   "t": "Multivoltaje",
+   "d": "85–265 V."
+  }
+ ],
+ "applications": [
+  "Fábricas",
+  "Bodegas",
+  "Almacenes",
+  "Talleres",
+  "Patios exteriores"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Alto",
+    "330 mm"
+   ],
+   [
+    "Ancho",
+    "525 mm"
+   ],
+   [
+    "Fondo",
+    "43 mm"
+   ],
+   [
+    "Peso",
+    "5.03 kg"
+   ]
+  ]
+ }
+}

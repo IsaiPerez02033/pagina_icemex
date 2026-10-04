@@ -1,6 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
-import { products, lineNames, tagNames } from "@/lib/products";
-import { fichas, fichaForProduct, getFicha, LEGACY_CODES } from "@/lib/fichas";
+import { lineNames, tagNames } from "@/lib/products";
+import {
+  catalogProducts as products,
+  fichas,
+  fichaForProduct,
+  fichaSpecs,
+  getFicha,
+  LEGACY_CODES,
+} from "@/lib/fichas";
 
 // Versión ligera de cada ficha para consumidores externos (sin texto largo).
 const fichaSummary = (f: NonNullable<ReturnType<typeof getFicha>>) => ({
@@ -8,7 +15,8 @@ const fichaSummary = (f: NonNullable<ReturnType<typeof getFicha>>) => ({
   name: f.name,
   line: f.line,
   pdf: `https://icemex.mx${f.pdf}`,
-  image: `https://icemex.mx${f.image.src}`,
+  image: `https://icemex.mx${f.cover.src}`,
+  photo: `https://icemex.mx${f.image.src}`,
 });
 
 // Catálogo público de ICEMEX, consumido por el asistente de WhatsApp del
@@ -44,11 +52,13 @@ export async function GET(req: NextRequest) {
         name: ficha.name,
         line: ficha.line,
         tags: ficha.tags,
-        tagline: ficha.summary,
-        description: ficha.blocks.filter((b) => b.t).map((b) => b.t).join(" ").slice(0, 1200),
-        applications: [],
-        specs: [],
-        features: [],
+        tagline: ficha.kind,
+        description: ficha.description.join("\n\n"),
+        applications: ficha.applications,
+        specs: fichaSpecs(ficha),
+        features: [...ficha.features, ...ficha.advantages].map((x) => `${x.t}: ${x.d}`),
+        certifications: ficha.certs.map((c) => c.c),
+        warranty: ficha.warranty.join(" · ") || undefined,
       };
       return NextResponse.json(
         { producto: fromFicha, ficha: fichaSummary(ficha) },

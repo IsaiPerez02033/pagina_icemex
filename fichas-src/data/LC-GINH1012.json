@@ -1,0 +1,126 @@
+{
+ "model": "GINHB INDUSTRIAL HIGH BAY",
+ "kind": "Luminario industrial suspendido de 3, 4 o 6 tubos",
+ "power": "3 – 6 × 18 W",
+ "variant": "T8 LED · G-13",
+ "hero": "p1_x17",
+ "photo2": "p1_x35",
+ "kpis": [
+  {
+   "v": "3·4·6",
+   "u": "",
+   "l": "Tubos T8 LED"
+  },
+  {
+   "v": "18",
+   "u": "W",
+   "l": "Por tubo"
+  },
+  {
+   "v": "122",
+   "u": "cm",
+   "l": "Largo"
+  },
+  {
+   "v": "10",
+   "u": "cm",
+   "l": "Peralte"
+  }
+ ],
+ "description": [
+  "GINHB es un luminario industrial tipo high bay para suspender, con reflectores individuales por tubo que concentran la luz hacia el piso en naves, bodegas y gimnasios de techo alto.",
+  "Se ofrece con 3, 4 o 6 tubos LED T8 de 18 W con base G-13, en 122 cm de largo, 30 o 60 cm de ancho y 10 cm de peralte."
+ ],
+ "features": [
+  {
+   "t": "Reflectores por tubo",
+   "d": "Concentran la luz hacia el piso."
+  },
+  {
+   "t": "3, 4 o 6 tubos",
+   "d": "Según la altura de montaje."
+  },
+  {
+   "t": "Suspendido",
+   "d": "Para techos altos."
+  },
+  {
+   "t": "Tubos estándar",
+   "d": "T8 LED G-13."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Modelos (cm)",
+   "rows": [
+    [
+     "GSHB3-318",
+     "3 × T8 18 W · G-13 · 30 × 122 × 10"
+    ],
+    [
+     "GSHB4-418",
+     "4 × T8 18 W · G-13 · 30 × 122 × 10"
+    ],
+    [
+     "GSHB6-618",
+     "6 × T8 18 W · G-13 · 60 × 122 × 10"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Tipo",
+     "High bay con reflectores"
+    ],
+    [
+     "Montaje",
+     "Suspendido"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Para techos altos",
+   "d": "High bay suspendido."
+  },
+  {
+   "t": "Escalable",
+   "d": "De 3 a 6 tubos."
+  },
+  {
+   "t": "Bajo mantenimiento",
+   "d": "Tubos LED estándar."
+  },
+  {
+   "t": "Luz dirigida",
+   "d": "Reflector por tubo."
+  }
+ ],
+ "applications": [
+  "Naves industriales",
+  "Bodegas y almacenes",
+  "Talleres",
+  "Centros comerciales",
+  "Gimnasios"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Ancho",
+    "30 / 60 cm"
+   ],
+   [
+    "Largo",
+    "122 cm"
+   ],
+   [
+    "Alto",
+    "10 cm"
+   ]
+  ]
+ }
+}

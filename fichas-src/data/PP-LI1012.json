@@ -1,0 +1,134 @@
+{
+ "model": "INGLESA",
+ "kind": "Farol de punta de poste estilo inglés",
+ "power": "150 – 175 W",
+ "variant": "VSAP / Aditivo metálico",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "150–175",
+   "u": "W",
+   "l": "Potencia máx."
+  },
+  {
+   "v": "150",
+   "u": "W",
+   "l": "VSAP"
+  },
+  {
+   "v": "E39",
+   "u": "",
+   "l": "Portalámpara mogul"
+  },
+  {
+   "v": "2",
+   "u": "in",
+   "l": "Punta de poste"
+  }
+ ],
+ "description": [
+  "INGLESA es un farol ornamental de punta de poste con armadura y base de aluminio puro fundido y moldeado en arena, con finos y elegantes acabados. Su tapa es de aluminio puro rechazado y el refractor de acrílico claro resiste el impacto y los cambios de temperatura.",
+  "Opera con lámparas de vapor de sodio de alta presión (VSAP) de 150 W o de aditivo metálico de 150 a 175 W, en 110–220 V, con portalámpara de porcelana tipo mogul E39. Su construcción en aluminio con pintura poliéster aplicada electrostáticamente le da mayor resistencia a la corrosión en exteriores."
+ ],
+ "features": [
+  {
+   "t": "Estilo inglés",
+   "d": "Acabados finos para centros históricos y plazas."
+  },
+  {
+   "t": "Aluminio fundido en arena",
+   "d": "Armadura y base de alta resistencia."
+  },
+  {
+   "t": "Refractor de acrílico",
+   "d": "Resistente al impacto y a cambios de temperatura."
+  },
+  {
+   "t": "Reflector anodizado",
+   "d": "Alta brillantez para aprovechar la luz."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Balastro VSAP",
+     "150 W · 110–220 V"
+    ],
+    [
+     "Balastro aditivo metálico",
+     "175 W · 110–220 V / 150 W · 220 V"
+    ],
+    [
+     "Portalámpara",
+     "Porcelana, tipo mogul E39"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Armadura y base",
+     "Aluminio puro fundido, moldeado en arena"
+    ],
+    [
+     "Tapa",
+     "Aluminio puro rechazado"
+    ],
+    [
+     "Acabado",
+     "Pintura tipo poliéster electrostática"
+    ],
+    [
+     "Refractor",
+     "Acrílico claro, resistente al impacto y cambios de temperatura"
+    ],
+    [
+     "Reflector",
+     "Lámina de aluminio anodizada a alta brillantez"
+    ],
+    [
+     "Montaje",
+     "Punta de poste de 2\""
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Diseño clásico",
+   "d": "Estética que se integra a calles, plazas y zonas residenciales."
+  },
+  {
+   "t": "Resistente a la corrosión",
+   "d": "Aluminio con pintura poliéster electrostática."
+  },
+  {
+   "t": "Refractor resistente",
+   "d": "Acrílico claro que soporta impactos y cambios de temperatura."
+  },
+  {
+   "t": "Mejor reflectancia",
+   "d": "Reflector de aluminio anodizado a alta brillantez."
+  },
+  {
+   "t": "Opciones de lámpara",
+   "d": "VSAP o aditivo metálico, en 110–220 V."
+  },
+  {
+   "t": "Instalación sencilla",
+   "d": "Entrada para punta de poste de 2\"."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Estacionamientos",
+  "Áreas recreativas",
+  "Cotos y zonas residenciales"
+ ]
+}

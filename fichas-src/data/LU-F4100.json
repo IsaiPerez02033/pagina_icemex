@@ -1,0 +1,185 @@
+{
+ "model": "BOLARD CIRCULAR",
+ "kind": "Bolardo LED circular con fotocontrol",
+ "power": "35 – 75 W",
+ "variant": "LED Philips · 120–277 V",
+ "hero": "p2_x140",
+ "photo2": "p1_x22",
+ "kpis": [
+  {
+   "v": "3.10",
+   "u": "m",
+   "l": "Altura"
+  },
+  {
+   "v": "1.20",
+   "u": "m",
+   "l": "Pantalla de acrílico"
+  },
+  {
+   "v": "80",
+   "u": "",
+   "l": "CRI mínimo"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "description": [
+  "El Bolard Circular es una columna luminosa LED de 3.10 m de altura con pantalla de acrílico opalino de 1.20 m, fabricada en tubo de acero de 7\" exterior en calibre 3/16\" con placa base al piso de 3/8\" y acabado en pintura electrostática negra, blanca o gris.",
+  "Usa tecnología LED Philips para alumbrado público y exteriores, con máximo rendimiento lumínico, térmico y eléctrico, sin gases ni metales peligrosos y 50,000 horas de vida. Opera de 120 a 277 V ±10% con controlador electrónico, factor de potencia mayor a 0.9 y fotocontrol integrado. Se ofrece en 35, 50 y 75 W, en 3,000, 4,000 o 6,500 K."
+ ],
+ "features": [
+  {
+   "t": "LED Philips",
+   "d": "Máximo rendimiento lumínico, térmico y eléctrico."
+  },
+  {
+   "t": "Fotocontrol integrado",
+   "d": "Encendido y apagado automático."
+  },
+  {
+   "t": "Pantalla de 1.20 m",
+   "d": "Acrílico opalino de 2 mm."
+  },
+  {
+   "t": "Tres colores",
+   "d": "Pintura negra, blanca o gris."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Presentaciones",
+     "35, 50 y 75 W"
+    ],
+    [
+     "Tecnología",
+     "LED Philips"
+    ],
+    [
+     "Temperatura de color",
+     "3,000, 4,000 o 6,500 K"
+    ],
+    [
+     "CRI",
+     "80 mínimo"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión de entrada",
+     "120–277 V ±10%"
+    ],
+    [
+     "Controlador",
+     "Electrónico"
+    ],
+    [
+     "Factor de potencia",
+     "> 0.9"
+    ],
+    [
+     "Frecuencia",
+     "60 Hz"
+    ],
+    [
+     "Control",
+     "Fotocontrol"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Poste",
+     "Tubo de acero de 7\" exterior, cal. 3/16\""
+    ],
+    [
+     "Placa base",
+     "3/8\" de espesor"
+    ],
+    [
+     "Difusor",
+     "Acrílico opalino de 2 mm"
+    ],
+    [
+     "Acabado",
+     "Pintura electrostática negra, blanca o gris"
+    ],
+    [
+     "Montaje",
+     "Poste de 3.10 m"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  3000,
+  4000,
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Encendido automático",
+   "d": "Fotocontrol incluido."
+  },
+  {
+   "t": "Sin materiales peligrosos",
+   "d": "No usa gases ni metales pesados."
+  },
+  {
+   "t": "Larga vida",
+   "d": "50,000 horas."
+  },
+  {
+   "t": "Tres temperaturas",
+   "d": "Cálida, neutra o fría."
+  },
+  {
+   "t": "Robusto",
+   "d": "Tubo de acero de 7\" y placa de 3/8\"."
+  },
+  {
+   "t": "Multivoltaje",
+   "d": "120–277 V."
+  }
+ ],
+ "applications": [
+  "Alumbrado público",
+  "Zonas peatonales",
+  "Parques",
+  "Jardines",
+  "Estacionamientos"
+ ],
+ "dims": {
+  "img": "p2_x143",
+  "rows": [
+   [
+    "Altura",
+    "3.10 m"
+   ],
+   [
+    "Pantalla",
+    "1.20 m"
+   ],
+   [
+    "Tubo",
+    "7\" exterior"
+   ]
+  ]
+ }
+}

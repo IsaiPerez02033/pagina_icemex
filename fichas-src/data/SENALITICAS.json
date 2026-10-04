@@ -1,0 +1,114 @@
+{
+ "is_lum": false,
+ "model": "SEÑALÉTICAS",
+ "kind": "Señalización industrial y ayudas visuales",
+ "power": "PVC · Estireno · Acrílico",
+ "variant": "Vinil impreso o de corte",
+ "hero": "p1_x25",
+ "kpis": [
+  {
+   "v": "4",
+   "u": "",
+   "l": "Materiales rígidos"
+  },
+  {
+   "v": "Vinil",
+   "u": "",
+   "l": "Impreso o de corte"
+  },
+  {
+   "v": "Cama plana",
+   "u": "",
+   "l": "Impresión directa"
+  },
+  {
+   "v": "A medida",
+   "u": "",
+   "l": "Diseño"
+  }
+ ],
+ "description": [
+  "Elaboración de señalización industrial interna y ayudas visuales para plantas, bodegas, oficinas y edificios: rutas de evacuación, seguridad e higiene, áreas, servicios, señales viales y pictogramas de servicio.",
+  "Se fabrica en materiales rígidos como PVC, PVC-Foam, estireno y acrílico, con vinil autoadherible impreso o cortado por computadora, o con impresión directa en cama plana."
+ ],
+ "features": [
+  {
+   "img": "p1_x25",
+   "t": "Señales de área y seguridad",
+   "d": "Identificación de espacios y riesgos."
+  },
+  {
+   "img": "p1_x28",
+   "t": "Señales viales",
+   "d": "Restrictivas y preventivas."
+  },
+  {
+   "img": "p1_x31",
+   "t": "Pictogramas de servicio",
+   "d": "Orientación para usuarios."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Materiales",
+   "rows": [
+    [
+     "Soportes rígidos",
+     "PVC, PVC-Foam, estireno y acrílico"
+    ],
+    [
+     "Gráfico",
+     "Vinil autoadherible impreso o de corte por computadora"
+    ],
+    [
+     "Impresión",
+     "Directa en cama plana"
+    ]
+   ]
+  },
+  {
+   "name": "Tipos",
+   "rows": [
+    [
+     "Industrial interna",
+     "Áreas, seguridad, protección civil"
+    ],
+    [
+     "Ayudas visuales",
+     "Procesos y señalización de planta"
+    ],
+    [
+     "Viales y de servicio",
+     "Restrictivas, preventivas y pictogramas"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Cumplimiento",
+   "d": "Señalización de seguridad para tu planta."
+  },
+  {
+   "t": "Varios materiales",
+   "d": "Según el uso y el ambiente."
+  },
+  {
+   "t": "Alta calidad de impresión",
+   "d": "Cama plana o vinil."
+  },
+  {
+   "t": "A medida",
+   "d": "Diseño según el proyecto."
+  }
+ ],
+ "applications": [
+  "Plantas industriales",
+  "Bodegas y almacenes",
+  "Oficinas",
+  "Edificios públicos",
+  "Estacionamientos",
+  "Escuelas y hospitales"
+ ]
+}

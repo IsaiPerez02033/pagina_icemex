@@ -1,0 +1,192 @@
+{
+ "model": "URBANMEX",
+ "kind": "Luminaria para alumbrado público urbano",
+ "power": "60 – 140 W",
+ "variant": "220 V",
+ "hero": "p1_x22",
+ "kpis": [
+  {
+   "v": "60–140",
+   "u": "W",
+   "l": "Potencias disponibles"
+  },
+  {
+   "v": "100",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Conjunto óptico"
+  },
+  {
+   "v": "30,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "70",
+   "u": "",
+   "l": "IRC"
+  },
+  {
+   "v": "220",
+   "u": "V",
+   "l": "Tensión"
+  }
+ ],
+ "description": [
+  "LUM-URBANMEX es una luminaria para alumbrado público ligera, fuerte y confiable. Su carcasa de aluminio puro de alta duración está recubierta con pintura tipo poliéster aplicada electrostáticamente, lo que le brinda mayor resistencia a la corrosión.",
+  "El domo de aluminio embutido protege por completo la luminaria y el conjunto óptico sellado alcanza IP65. Funciona con tecnología Philips CosmoWhite (bulbo T19, base PGZ12) en 60, 90 y 140 W a 220 V, con curva tipo V simétrica y refractor de cristal templado."
+ ],
+ "features": [
+  {
+   "t": "Tecnología Philips CosmoWhite",
+   "d": "Lámpara de luz blanca de 100 lm/W, bulbo T19 con base PGZ12."
+  },
+  {
+   "t": "Domo de aluminio embutido",
+   "d": "Protección total de la luminaria."
+  },
+  {
+   "t": "Curva tipo V simétrica",
+   "d": "Refractor de cristal templado para una distribución uniforme."
+  },
+  {
+   "t": "Acabado grafito",
+   "d": "Pintura poliéster horneada, aplicada electrostáticamente."
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencias disponibles",
+     "60, 90 y 140 W"
+    ],
+    [
+     "Equipo",
+     "Tecnología Philips CosmoWhite"
+    ],
+    [
+     "Bulbo / base",
+     "T19 / PGZ12"
+    ],
+    [
+     "Eficacia",
+     "100 lm/W"
+    ],
+    [
+     "IRC",
+     "70"
+    ],
+    [
+     "Curva",
+     "Tipo V simétrica"
+    ],
+    [
+     "Vida útil",
+     "30,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión",
+     "220 V"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Aluminio puro de alta resistencia"
+    ],
+    [
+     "Domo",
+     "Aluminio embutido"
+    ],
+    [
+     "Refractor",
+     "Cristal templado"
+    ],
+    [
+     "Acabado",
+     "Pintura poliéster horneada electrostática, color grafito"
+    ],
+    [
+     "Hermeticidad",
+     "IP65 (conjunto óptico sellado)"
+    ],
+    [
+     "Montaje",
+     "Poste"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Resistente a la corrosión",
+   "d": "Aluminio puro con pintura poliéster electrostática."
+  },
+  {
+   "t": "Protección total",
+   "d": "Domo de aluminio embutido y conjunto óptico IP65."
+  },
+  {
+   "t": "Luz blanca eficiente",
+   "d": "Tecnología Philips CosmoWhite de 100 lm/W."
+  },
+  {
+   "t": "Distribución uniforme",
+   "d": "Curva tipo V simétrica con refractor templado."
+  },
+  {
+   "t": "Ligera y fuerte",
+   "d": "Fácil de instalar y confiable en operación."
+  },
+  {
+   "t": "Tres potencias",
+   "d": "60, 90 y 140 W según el área a iluminar."
+  }
+ ],
+ "applications": [
+  "Parques y jardines",
+  "Zonas urbanas",
+  "Andadores",
+  "Plazas"
+ ],
+ "dims": {
+  "img": "p1_x53",
+  "rows": [
+   [
+    "Diámetro del domo",
+    "460 mm"
+   ],
+   [
+    "Largo total",
+    "833 mm"
+   ],
+   [
+    "Alto",
+    "205 mm"
+   ]
+  ]
+ },
+ "mount": "Montaje en poste."
+}

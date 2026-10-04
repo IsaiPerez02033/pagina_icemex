@@ -1,0 +1,108 @@
+{
+ "is_lum": false,
+ "model": "ANCLAS Y BRAZOS",
+ "kind": "Anclas para cimentación y brazos para poste",
+ "power": "Anclas ¾\" y 1\"",
+ "variant": "Brazos de 60 a 240 cm",
+ "hero": "p1_x25",
+ "photo2": "p1_x34",
+ "kpis": [
+  {
+   "v": "¾ – 1",
+   "u": "in",
+   "l": "Diámetro del ancla"
+  },
+  {
+   "v": "50–100",
+   "u": "cm",
+   "l": "Largo del ancla"
+  },
+  {
+   "v": "10.5",
+   "u": "cm",
+   "l": "Rosca"
+  },
+  {
+   "v": "60–240",
+   "u": "cm",
+   "l": "Largo del brazo"
+  }
+ ],
+ "description": [
+  "Anclas de acero para cimentar postes de alumbrado en bases de concreto, con rosca de 10.5 cm y doblez de 10 cm para máxima sujeción, en diámetros de ¾\" y 1\" y largos de 50, 75 y 100 cm, armadas en canasta según la placa base del poste.",
+  "Incluye brazos de tubo de 1½\" o 2\" en longitudes de 60 a 240 cm, galvanizados o pintados, para montar luminarias en postes metálicos o de concreto."
+ ],
+ "features": [
+  {
+   "t": "Canasta armada",
+   "d": "Anclas listas para colar."
+  },
+  {
+   "t": "Rosca de 10.5 cm",
+   "d": "Ajuste de nivel del poste."
+  },
+  {
+   "t": "Doblez de 10 cm",
+   "d": "Mayor agarre en el concreto."
+  },
+  {
+   "t": "Brazos a medida",
+   "d": "De 60 a 240 cm."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Anclas",
+   "rows": [
+    [
+     "¾\" (19 mm)",
+     "Rosca 10.5 cm · largo 50, 75 o 100 cm · doblez 10 cm"
+    ],
+    [
+     "1\" (25.4 mm)",
+     "Rosca 10.5 cm · largo 100 cm · doblez 10 cm"
+    ]
+   ]
+  },
+  {
+   "name": "Brazos",
+   "rows": [
+    [
+     "60 – 180 cm",
+     "Tubo de 1½\" (3.81 cm), exterior 2\""
+    ],
+    [
+     "180 – 240 cm",
+     "Tubo de 2\" (5.08 cm)"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Cimentación segura",
+   "d": "Anclas con doblez y rosca."
+  },
+  {
+   "t": "Dos diámetros",
+   "d": "¾\" y 1\"."
+  },
+  {
+   "t": "Varias longitudes",
+   "d": "Según el poste."
+  },
+  {
+   "t": "Todo en un proveedor",
+   "d": "Poste, base, anclas y brazo."
+  }
+ ],
+ "applications": [
+  "Alumbrado público",
+  "Cimentación de postes",
+  "Parques y jardines",
+  "Estacionamientos",
+  "Fraccionamientos",
+  "Obra civil municipal"
+ ]
+}

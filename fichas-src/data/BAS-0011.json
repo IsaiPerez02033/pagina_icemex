@@ -1,0 +1,133 @@
+{
+ "is_lum": false,
+ "model": "BASE DE CONCRETO 60 × 40",
+ "kind": "Base prefabricada de concreto rectangular",
+ "power": "60 × 40 cm",
+ "variant": "f'c 200 kg/cm²",
+ "hero": "p1_x280",
+ "photo2": "p1_x278",
+ "kpis": [
+  {
+   "v": "200",
+   "u": "kg/cm²",
+   "l": "Resistencia"
+  },
+  {
+   "v": "60",
+   "u": "cm",
+   "l": "Altura"
+  },
+  {
+   "v": "40",
+   "u": "cm",
+   "l": "Lado"
+  },
+  {
+   "v": "4",
+   "u": "",
+   "l": "Anclas"
+  }
+ ],
+ "description": [
+  "Base prefabricada de concreto rectangular de 40 × 40 cm y 60 cm de altura para postes de alumbrado, con resistencia de 200 kg/cm², anclas roscadas para la placa base del poste y perforaciones para el paso de ductos al centro y al costado del elemento.",
+  "Su formato compacto es ideal para postes de baja y mediana altura en andadores, parques, estacionamientos y fraccionamientos, y permite instalar el poste el mismo día."
+ ],
+ "features": [
+  {
+   "t": "Prefabricada",
+   "d": "Sin colado en sitio."
+  },
+  {
+   "t": "Anclas integradas",
+   "d": "Lista para recibir el poste."
+  },
+  {
+   "t": "Paso de ductos",
+   "d": "Perforaciones al centro y al costado."
+  },
+  {
+   "t": "Formato compacto",
+   "d": "40 × 40 × 60 cm."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Medidas",
+   "rows": [
+    [
+     "Base",
+     "40 × 40 cm"
+    ],
+    [
+     "Altura",
+     "60 cm"
+    ],
+    [
+     "Peso aproximado",
+     "200 kg"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Concreto",
+     "Resistencia f'c = 200 kg/cm²"
+    ],
+    [
+     "Ductos",
+     "Tubo de 2\" lateral y 4\" al centro"
+    ],
+    [
+     "Armado",
+     "Alambrón de 1/4\" y redondo de 3/4\""
+    ],
+    [
+     "Anclas",
+     "Rosca de 3/4\""
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Instalación el mismo día",
+   "d": "Llega lista a la obra."
+  },
+  {
+   "t": "Compacta",
+   "d": "Para postes de baja altura."
+  },
+  {
+   "t": "Cableado listo",
+   "d": "Perforaciones para ductos."
+  },
+  {
+   "t": "Resistencia controlada",
+   "d": "f'c 200 kg/cm²."
+  }
+ ],
+ "applications": [
+  "Alumbrado público",
+  "Cimentación de postes",
+  "Parques y jardines",
+  "Estacionamientos",
+  "Fraccionamientos",
+  "Obra civil municipal"
+ ],
+ "dims": {
+  "img": "p1_x283",
+  "rows": [
+   [
+    "Lado",
+    "40 cm"
+   ],
+   [
+    "Altura",
+    "60 cm"
+   ]
+  ]
+ }
+}

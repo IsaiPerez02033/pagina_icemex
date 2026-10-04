@@ -1,0 +1,163 @@
+{
+ "model": "ATENAS",
+ "kind": "Luminario ornamental de poste con reflector indirecto",
+ "power": "150 – 175 W",
+ "variant": "VSAP / Aditivo metálico",
+ "hero": "p1_x26",
+ "photo2": "p1_x23",
+ "kpis": [
+  {
+   "v": "150–175",
+   "u": "W",
+   "l": "Potencia máx."
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Sistema óptico"
+  },
+  {
+   "v": "E26",
+   "u": "",
+   "l": "Portalámpara"
+  },
+  {
+   "v": "800",
+   "u": "mm",
+   "l": "Proyección"
+  }
+ ],
+ "description": [
+  "ATENAS es un luminario ornamental de poste con reflector indirecto de fibra de vidrio de alta reflectancia, que brinda mayor brillantez y mejor distribución lumínica. Su cubierta es de aluminio puro inyectado a presión y la base del poste de acero de 3\" lleva herraje decorativo a lo largo de su desarrollo.",
+  "Su sistema óptico IP65 se fija al poste mediante pernos y va sellado herméticamente para evitar la entrada de contaminantes. Opera con lámparas de vapor de sodio de alta presión (VSAP) de 150 W o de aditivo metálico de 150 a 175 W, en 110–220 V, con portalámpara de porcelana E26."
+ ],
+ "features": [
+  {
+   "t": "Reflector indirecto",
+   "d": "Fibra de vidrio que suaviza y distribuye la luz."
+  },
+  {
+   "t": "Cristal templado",
+   "d": "Sistema óptico sellado resistente al impacto."
+  },
+  {
+   "t": "Reflector anodizado",
+   "d": "Aluminio rechazado de alta reflectancia."
+  },
+  {
+   "t": "Sellado IP65",
+   "d": "Fijado con pernos, sin entrada de contaminantes."
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Sistema óptico"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Balastro VSAP",
+     "150 W · 110–220 V"
+    ],
+    [
+     "Balastro aditivo metálico",
+     "175 W · 110–220 V / 150 W · 220 V"
+    ],
+    [
+     "Portalámpara",
+     "Porcelana E26"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cubierta",
+     "Aluminio puro inyectado a presión"
+    ],
+    [
+     "Acabado",
+     "Pintura electrostática"
+    ],
+    [
+     "Cristal",
+     "Termo templado, resistente al impacto"
+    ],
+    [
+     "Reflector",
+     "Lámina de aluminio rechazada y anodizada"
+    ],
+    [
+     "Reflector indirecto",
+     "Fibra de vidrio de alta reflectancia"
+    ],
+    [
+     "Poste",
+     "Base de acero de 3\" con herraje a lo largo del desarrollo"
+    ],
+    [
+     "Hermeticidad",
+     "IP65, sellado hermético"
+    ],
+    [
+     "Placa base",
+     "270 × 190 mm"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Diseño clásico contemporáneo",
+   "d": "Escultórico, para espacios urbanos de alto valor."
+  },
+  {
+   "t": "Sellado hermético",
+   "d": "Sistema óptico IP65."
+  },
+  {
+   "t": "Resistente al impacto",
+   "d": "Cristal termo templado."
+  },
+  {
+   "t": "Anticorrosivo",
+   "d": "Aluminio y acero con pintura electrostática."
+  },
+  {
+   "t": "Opciones de lámpara",
+   "d": "VSAP o aditivo metálico."
+  },
+  {
+   "t": "Instalación firme",
+   "d": "Placa base de 270 × 190 mm."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Cotos y zonas residenciales",
+  "Estacionamientos",
+  "Áreas recreativas",
+  "Universidades",
+  "Centros y locales comerciales"
+ ],
+ "dims": {
+  "img": "p1_x29",
+  "rows": [
+   [
+    "Proyección del brazo",
+    "800 mm"
+   ],
+   [
+    "Placa base",
+    "270 × 190 mm"
+   ]
+  ]
+ }
+}

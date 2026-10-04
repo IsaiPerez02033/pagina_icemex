@@ -1,0 +1,250 @@
+{
+ "model": "SFS",
+ "kind": "Luminario solar para vialidades",
+ "power": "30 – 100 W",
+ "variant": "12.8 / 25.6 V c.d.",
+ "hero": "p1_x415",
+ "photo2": "p1_x282",
+ "kpis": [
+  {
+   "v": "30–100",
+   "u": "W",
+   "l": "Potencias disponibles"
+  },
+  {
+   "v": "190",
+   "u": "lm/W",
+   "l": "Eficiencia"
+  },
+  {
+   "v": "5",
+   "u": "días",
+   "l": "Autonomía"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "IK10",
+   "u": "",
+   "l": "Impacto"
+  }
+ ],
+ "description": [
+  "Las luminarias SFS están diseñadas para vialidades secundarias, residenciales o industriales, estacionamientos, jardines, centros turísticos, caminos rurales y lugares sin red eléctrica. Su cuerpo es de aluminio fundido a presión ADC12 de alta resistencia, con recubrimiento en polvo para entornos exteriores hostiles.",
+  "Cuentan con batería de litio de alta profundidad de descarga, módulo fotovoltaico monocristalino y controlador solar programable inteligente, con 5 días de autonomía. El panel gira e inclina para ajustarse a la latitud de la instalación. Disponibles en 30, 50, 80 y 100 W, con 190 lm/W, luz de día 5,700 K, óptica tipo II corta, IP65, IK10 e IRC 70."
+ ],
+ "features": [
+  {
+   "img": "p1_x195",
+   "t": "Panel giratorio",
+   "d": "Rotación e inclinación según la latitud."
+  },
+  {
+   "img": "p1_x282",
+   "t": "Dos modos de instalación",
+   "d": "Punta de poste o brazo de 64 mm."
+  },
+  {
+   "img": "p2_x452",
+   "t": "Accesorios",
+   "d": "Control remoto y sensor de movimiento.",
+   "mode": "drawing"
+  },
+  {
+   "img": "p1_x147",
+   "t": "DLC · RoHS · TÜV",
+   "d": "Certificaciones de desempeño y seguridad.",
+   "light": false
+  }
+ ],
+ "warranty": [
+  {
+   "y": 1,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "DLC",
+   "l": "Certificación"
+  },
+  {
+   "c": "RoHS",
+   "l": "Certificación"
+  },
+  {
+   "c": "TÜV",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  },
+  {
+   "c": "IK10",
+   "l": "Impacto"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencias",
+     "30 / 50 / 80 / 100 W"
+    ],
+    [
+     "Flujo luminoso",
+     "5,840 / 9,670 / 15,200 / 19,000 lm"
+    ],
+    [
+     "Eficiencia",
+     "190 lm/W"
+    ],
+    [
+     "LED",
+     "SMD de alto rendimiento"
+    ],
+    [
+     "Óptica",
+     "Tipo II corta (II-S); II-M, III-M y V sobre pedido"
+    ],
+    [
+     "Temperatura de color",
+     "Luz de día 5,700 K (3,000 y 4,000 K sobre pedido)"
+    ],
+    [
+     "IRC",
+     "70"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Voltaje de operación",
+     "12.8 V c.d. (30/50 W) · 25.6 V c.d. (80/100 W)"
+    ],
+    [
+     "Panel solar",
+     "50 / 90 / 120 / 2 × 120 W"
+    ],
+    [
+     "Batería de litio",
+     "18 / 30 / 48 / 48 Ah"
+    ],
+    [
+     "Autonomía",
+     "5 días"
+    ],
+    [
+     "Controlador",
+     "Solar programable inteligente"
+    ],
+    [
+     "Driver",
+     "Encendido instantáneo"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Aluminio fundido a presión ADC12, recubrimiento en polvo"
+    ],
+    [
+     "Montaje",
+     "Punta de poste o brazo de 64 mm"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ],
+    [
+     "Resistencia al impacto",
+     "IK10"
+    ],
+    [
+     "Aislamiento",
+     "Clase I"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-5 °C a +50 °C"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  5700
+ ],
+ "photometry": "p2_x455",
+ "advantages": [
+  {
+   "t": "5 días de autonomía",
+   "d": "Respaldo para días nublados."
+  },
+  {
+   "t": "Panel ajustable",
+   "d": "Gira e inclina según la latitud."
+  },
+  {
+   "t": "Robusta",
+   "d": "Aluminio ADC12, IK10 e IP65."
+  },
+  {
+   "t": "Configurable",
+   "d": "Ópticas, temperatura de color, sensor y control remoto."
+  },
+  {
+   "t": "Alta eficiencia",
+   "d": "190 lm/W."
+  },
+  {
+   "t": "Sin red eléctrica",
+   "d": "Ideal donde no hay infraestructura."
+  }
+ ],
+ "applications": [
+  "Vialidades secundarias, residenciales o industriales",
+  "Centros turísticos, fábricas y paisajes",
+  "Estacionamientos",
+  "Jardines",
+  "Escuelas"
+ ],
+ "dims": {
+  "img": "p2_x452",
+  "rows": [
+   [
+    "Montaje en brazo",
+    "64 mm"
+   ],
+   [
+    "Paneles",
+    "50, 90 y 120 W"
+   ]
+  ]
+ }
+}

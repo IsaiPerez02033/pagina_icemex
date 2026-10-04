@@ -1,11 +1,17 @@
 """
-Genera lib/fichas-data.json y las imágenes public/fichas/img/*.webp a partir
-de las fichas técnicas en public/fichas/*.pdf y su índice index.json.
+Genera lib/fichas-data.json (datos de las 127 fichas para el sitio) y las
+portadas public/fichas/img/*.webp a partir de:
 
-Uso (requiere pymupdf, pillow y pdftoppm de poppler):
-    python3 scripts/build-fichas.py
+  - fichas-src/data/<CODIGO>.json  → contenido de cada ficha (el mismo que
+    usa fichas-src/build.py para generar el PDF con la plantilla ICEMEX).
+  - public/fichas/index.json       → nombre, archivo y páginas del catálogo.
+  - public/productos/<CODIGO>.webp → foto del producto (la genera build.py).
 
-Volver a correrlo cada vez que se agreguen o cambien fichas PDF.
+Uso (requiere pillow y pdftoppm de poppler):
+    python3 fichas-src/build.py      # 1) PDFs + fotos
+    python3 scripts/build-fichas.py  # 2) datos para la web
+
+Volver a correrlo cada vez que se agreguen o cambien fichas.
 """
 
 import io
@@ -14,11 +20,12 @@ import re
 import subprocess
 from pathlib import Path
 
-import pymupdf
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
 FICHAS = ROOT / "public" / "fichas"
+PHOTOS = ROOT / "public" / "productos"
+DATA = ROOT / "fichas-src" / "data"
 IMG = FICHAS / "img"
 OUT = ROOT / "lib" / "fichas-data.json"
 
@@ -44,7 +51,6 @@ NAME_FIXES = {
         "Accesorios (Portalámpara, Adaptadores, Fotocelda, Malla)",
     "Esferas, Acrilicos y Cristales": "Esferas, Acrílicos y Cristales",
     "Senaliticas Industriales": "Señaléticas Industriales",
-    "Luminario Vial ICEMEX 02V-100": "Luminario Vial ICEMEX 02V-100",
 }
 
 # Etiquetas de aplicación inferidas del texto (mismas claves que tagNames).
@@ -59,110 +65,70 @@ TAG_RULES = {
     "residencial": r"\b(residencial(es)?|fraccionamientos?|cotos?|condominios?)\b",
 }
 
-# Bloques que se repiten en todas las fichas y no aportan.
-NOISE = re.compile(
-    r"^(fabricamos perfecci[oó]n.*|nunca imitaciones|certificaciones: iso.*|"
-    r"oficina \(593\).*|icemexjorobas@gmail\.com|www\..*)$",
-    re.I,
-)
+
+def img_info(path: Path, url: str) -> dict:
+    with Image.open(path) as im:
+        return {"src": url, "width": im.width, "height": im.height}
 
 
-def clean(text: str) -> str:
-    text = text.replace("﻿", "").replace("­", "")
-    text = re.sub(r"\s*\n\s*", " ", text)
-    text = re.sub(r"\s{2,}", " ", text)
-    return text.strip(" -•·")
-
-
-def is_heading(t: str) -> bool:
-    letters = re.sub(r"[^A-Za-zÁÉÍÓÚÑáéíóúñ]", "", t)
-    return 2 < len(t) <= 40 and letters.isupper() and len(t.split()) <= 5
-
-
-# "TECNOLOGÍA Tecnología Led Philips…" → encabezado + párrafo.
-LEADING_HEADING = re.compile(r"^([A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ ]{3,30})\s+([A-ZÁÉÍÓÚÑ][a-záéíóúñ].*)$")
-
-
-def is_table_noise(t: str) -> bool:
-    """Fragmentos de tablas de medidas: muchos números, comillas o unidades."""
-    digits = sum(c.isdigit() for c in t)
-    marks = t.count('"') + t.count("°") + t.count("*")
-    return digits / max(len(t), 1) > 0.3 or marks >= 4
-
-
-def extract_blocks(doc, code: str, name: str):
-    seen, blocks = set(), []
-    for page in doc:
-        for b in page.get_text("blocks", sort=True):
-            t = clean(b[4])
-            key = t.lower()
-            if (
-                len(t) < 3
-                or key in seen
-                or key == code.lower()
-                or key == name.lower()
-                or NOISE.match(t)
-                or is_table_noise(t)
-            ):
-                continue
-            seen.add(key)
-            m = LEADING_HEADING.match(t)
-            if m and not is_heading(t):
-                blocks.append({"h": m.group(1).strip().capitalize()})
-                t = m.group(2)
-            if is_heading(t):
-                blocks.append({"h": t.capitalize()})
-            elif len(t) >= 25 or ":" in t:
-                # Lo corto sin ":" suele ser un pedazo de tabla o etiqueta suelta.
-                blocks.append({"t": t})
-    # Encabezados seguidos (sin texto debajo) se descartan.
-    out = []
-    for i, b in enumerate(blocks):
-        if "h" in b and (i + 1 == len(blocks) or "h" in blocks[i + 1]):
-            continue
-        out.append(b)
-    # Fichas largas (5 páginas): se limita a ~2,400 caracteres.
-    total, trimmed = 0, []
-    for b in out:
-        total += len(b.get("t", b.get("h", "")))
-        if total > 2400:
-            break
-        trimmed.append(b)
-    return trimmed
-
-
-def render_page(pdf: Path, width: int) -> Image.Image:
+def render_cover(pdf: Path, code: str) -> tuple[dict, dict]:
+    """Portada de la ficha PDF (vista previa y imagen para redes)."""
     png = subprocess.run(
-        ["pdftoppm", "-f", "1", "-l", "1", "-scale-to-x", str(width),
+        ["pdftoppm", "-f", "1", "-l", "1", "-scale-to-x", "1000",
          "-scale-to-y", "-1", "-png", str(pdf)],
         capture_output=True, check=True,
     ).stdout
-    return Image.open(io.BytesIO(png)).convert("RGB")
+    big = Image.open(io.BytesIO(png)).convert("RGB")
+    big.save(IMG / f"{code}.webp", "WEBP", quality=74, method=6)
+    thumb = big.copy()
+    thumb.thumbnail((360, 10_000))
+    thumb.save(IMG / f"{code}-thumb.webp", "WEBP", quality=70, method=6)
+    return (
+        {"src": f"/fichas/img/{code}.webp", "width": big.width, "height": big.height},
+        {"src": f"/fichas/img/{code}-thumb.webp", "width": thumb.width, "height": thumb.height},
+    )
+
+
+def summary_of(paragraph: str, limit: int = 200) -> str:
+    """Primera(s) oración(es) del primer párrafo, sin cortar palabras."""
+    if len(paragraph) <= limit:
+        return paragraph
+    cut = paragraph[:limit]
+    end = cut.rfind(". ")
+    if end > 80:
+        return cut[: end + 1]
+    return cut[: cut.rfind(" ")].rstrip(",;:") + "…"
+
+
+def warranty_text(w: dict) -> str:
+    unit = w.get("unit") or ("año" if w["y"] == 1 else "años")
+    return f"{w['y']} {unit} {w['on']}".strip()
 
 
 def main():
     IMG.mkdir(exist_ok=True)
+    for old in IMG.glob("*.webp"):
+        old.unlink()
     index = json.loads((FICHAS / "index.json").read_text())
     data = []
     for entry in index:
         code = entry["codigo"]
-        pdf = FICHAS / entry["archivo"]
+        src = json.loads((DATA / f"{code}.json").read_text())
         name = NAME_FIXES.get(entry["nombre"], entry["nombre"])
         line = LINE_BY_PREFIX.get(code.split("-")[0], "AC")
-        doc = pymupdf.open(pdf)
-        blocks = extract_blocks(doc, code, name)
-        haystack = f"{name} {entry['texto']}".lower()
+        pdf = FICHAS / entry["archivo"]
+
+        description = src.get("description", [])
+        applications = src.get("applications", [])
+        haystack = " ".join([name, src.get("kind", ""), *description, *applications]).lower()
         tags = [tag for tag, rx in TAG_RULES.items() if re.search(rx, haystack)]
         if line == "IS" and "solar" not in tags:
             tags.append("solar")
 
-        big = render_page(pdf, 1000)
-        big.save(IMG / f"{code}.webp", "WEBP", quality=72, method=6)
-        thumb = big.copy()
-        thumb.thumbnail((360, 10_000))
-        thumb.save(IMG / f"{code}-thumb.webp", "WEBP", quality=68, method=6)
+        cover, cover_thumb = render_cover(pdf, code)
+        kpis = (src.get("kpis2") or src.get("kpis", []) + src.get("kpis_extra", []))[:6]
+        dims = (src.get("dims") or {}).get("rows", [])
 
-        summary = next((b["t"] for b in blocks if "t" in b and len(b["t"]) > 40), "")
         data.append({
             "code": code,
             "name": name,
@@ -170,12 +136,28 @@ def main():
             "tags": tags,
             "pages": entry["paginas"],
             "pdf": f"/fichas/{entry['archivo']}",
-            "image": {"src": f"/fichas/img/{code}.webp", "width": big.width, "height": big.height},
-            "thumb": {"src": f"/fichas/img/{code}-thumb.webp", "width": thumb.width, "height": thumb.height},
-            "summary": summary[:180],
-            "blocks": blocks,
+            "image": img_info(PHOTOS / f"{code}.webp", f"/productos/{code}.webp"),
+            "thumb": img_info(PHOTOS / f"{code}-thumb.webp", f"/productos/{code}-thumb.webp"),
+            "cover": cover,
+            "coverThumb": cover_thumb,
+            "model": src["model"],
+            "kind": src.get("kind", ""),
+            "power": src.get("power", ""),
+            "variant": src.get("variant", ""),
+            "summary": summary_of(description[0]) if description else "",
+            "description": description,
+            "kpis": [{"v": k["v"], "u": k.get("u", ""), "l": k["l"]} for k in kpis],
+            "features": [{"t": f["t"], "d": f["d"]} for f in src.get("features", [])],
+            "advantages": src.get("advantages", []),
+            "specs": src.get("specs", []),
+            "applications": applications,
+            "warranty": [warranty_text(w) for w in src.get("warranty", [])],
+            "certs": src.get("certs", []),
+            "dims": dims,
+            "mount": src.get("mount", ""),
+            "isLuminaire": src.get("is_lum", True),
         })
-        print(f"{code:18} {line}  {len(blocks):2} bloques  {','.join(tags)}")
+        print(f"{code:18} {line}  {','.join(tags)}")
 
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n")
     print(f"\n{len(data)} fichas → {OUT.relative_to(ROOT)}")

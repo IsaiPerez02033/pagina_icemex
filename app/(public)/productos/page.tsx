@@ -1,11 +1,10 @@
 import ProductExplorer, { type ExplorerItem } from "@/components/ProductExplorer";
 import type { Metadata } from "next";
-import { products } from "@/lib/products";
-import { fichaForProduct, standaloneFichas } from "@/lib/fichas";
+import { catalogProducts, fichaForProduct, kpiValue, standaloneFichas } from "@/lib/fichas";
 
 // Productos con ficha curada primero, luego el resto del catálogo 2026.
 const items: ExplorerItem[] = [
-  ...products.map((p) => ({
+  ...catalogProducts.map((p) => ({
     code: p.code,
     name: p.name,
     line: p.line,
@@ -19,8 +18,8 @@ const items: ExplorerItem[] = [
     name: f.name,
     line: f.line,
     tags: f.tags,
-    tagline: f.summary.length > 110 ? `${f.summary.slice(0, 107)}…` : f.summary,
-    specs: [],
+    tagline: f.kind,
+    specs: f.kpis.slice(0, 2).map((k) => ({ label: k.l, value: kpiValue(k) })),
     thumb: f.thumb,
   })),
 ];

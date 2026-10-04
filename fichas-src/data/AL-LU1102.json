@@ -1,0 +1,171 @@
+{
+ "model": "URBANMEX",
+ "kind": "Luminaria de punta de poste para alumbrado urbano",
+ "power": "60 – 140 W",
+ "variant": "Philips CosmoWhite",
+ "hero": "p1_x25",
+ "kpis": [
+  {
+   "v": "60–140",
+   "u": "W",
+   "l": "Potencias disponibles"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Conjunto óptico"
+  },
+  {
+   "v": "176",
+   "u": "lm/W",
+   "l": "Eficacia máx. opción LED"
+  },
+  {
+   "v": "≥70",
+   "u": "",
+   "l": "Reproducción de color"
+  }
+ ],
+ "description": [
+  "URBANMEX punta de poste es una luminaria urbana con carcasa de aluminio puro de alta duración, recubierta con pintura tipo poliéster aplicada electrostáticamente para mayor resistencia a la corrosión. Es ligera, fuerte y confiable, y su domo de aluminio embutido protege por completo la luminaria; el conjunto óptico sellado es IP65.",
+  "Funciona con tecnología Philips CosmoWhite en 60, 90 y 140 W, con curva tipo V simétrica y refractor de cristal templado. También admite módulos LED Philips Fortimo FastFlex, con eficacia de hasta 176 lm/W, reproducción de color ≥ 70 y temperaturas de color de 3,000 a 5,700 K."
+ ],
+ "features": [
+  {
+   "t": "Domo de aluminio embutido",
+   "d": "Protección total de la luminaria."
+  },
+  {
+   "t": "Curva tipo V simétrica",
+   "d": "Refractor de cristal templado."
+  },
+  {
+   "t": "Philips CosmoWhite",
+   "d": "60, 90 y 140 W de luz blanca."
+  },
+  {
+   "t": "Opción LED Fortimo FastFlex",
+   "d": "Hasta 176 lm/W, ópticas II, III, IV, V y High-Bay."
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Versión CosmoWhite",
+   "rows": [
+    [
+     "Equipo",
+     "Tecnología Philips CosmoWhite"
+    ],
+    [
+     "Potencias",
+     "60, 90 y 140 W"
+    ],
+    [
+     "Curva",
+     "Tipo V simétrica, refractor de cristal templado"
+    ]
+   ]
+  },
+  {
+   "name": "Opción LED Philips Fortimo FastFlex",
+   "rows": [
+    [
+     "Eficacia",
+     "Hasta 176 lm/W @ 350 mA"
+    ],
+    [
+     "Corriente máxima",
+     "Hasta 1,500 mA"
+    ],
+    [
+     "Reproducción de color",
+     "≥ 70"
+    ],
+    [
+     "Temperatura de color",
+     "3,000 a 5,700 K"
+    ],
+    [
+     "Ópticas",
+     "II, III, IV, V y High-Bay"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Aluminio puro de alta resistencia"
+    ],
+    [
+     "Domo",
+     "Aluminio embutido"
+    ],
+    [
+     "Acabado",
+     "Pintura poliéster electrostática"
+    ],
+    [
+     "Hermeticidad",
+     "IP65 (conjunto óptico sellado)"
+    ],
+    [
+     "Montaje",
+     "Punta de poste"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Resistente a la corrosión",
+   "d": "Aluminio puro con pintura poliéster electrostática."
+  },
+  {
+   "t": "Protección total",
+   "d": "Domo embutido y conjunto óptico IP65."
+  },
+  {
+   "t": "Dos tecnologías",
+   "d": "CosmoWhite o LED Fortimo FastFlex."
+  },
+  {
+   "t": "Alta eficacia LED",
+   "d": "Hasta 176 lm/W con la opción Fortimo."
+  },
+  {
+   "t": "Ópticas para cada uso",
+   "d": "Tipos II, III, IV, V y High-Bay."
+  },
+  {
+   "t": "Ligera y fuerte",
+   "d": "Fácil de instalar en punta de poste."
+  }
+ ],
+ "applications": [
+  "Iluminación de vialidades",
+  "Iluminación urbana",
+  "Grandes superficies",
+  "Túneles"
+ ],
+ "dims": {
+  "img": "p1_x50",
+  "rows": [
+   [
+    "Ancho",
+    "500 mm"
+   ],
+   [
+    "Alto",
+    "800 mm"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,244 @@
+{
+ "model": "SUBURBANA 100W PIR II",
+ "kind": "Luminaria suburbana solar con sensor de movimiento",
+ "power": "100 W",
+ "variant": "Panel 6 V / 60 W",
+ "hero": "p1_x46",
+ "kpis": [
+  {
+   "v": "100",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "180",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "IP66",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "12",
+   "u": "h",
+   "l": "Tiempo de trabajo"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "180",
+   "u": "LED",
+   "l": "3030 SMD Epistar"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "description": [
+  "Luminaria suburbana de 100 W con panel solar, interruptor frontal y sensor PIR de proximidad que detecta movimiento para aumentar la iluminación. Utiliza un módulo de 180 LED 3030 SMD Epistar de 180 lm/W, con temperatura de color de 7,500 K, índice de color de 80 y ángulo de 70° a 150°.",
+  "Su batería LiFePO4 32650 de 3.2 V / 50,000 mAh se carga con un panel de 6 V / 60 W en 6 a 8 horas y trabaja 12 horas por noche. El cuerpo es de aleación de aluminio en acabado gris con reflector transparente, grado de protección IP66, clase energética A, sin mercurio y con certificaciones CE y RoHS."
+ ],
+ "features": [
+  {
+   "t": "Sensor PIR",
+   "d": "Detecta presencia y aumenta la iluminación."
+  },
+  {
+   "t": "180 LED Epistar",
+   "d": "Módulo 3030 SMD de 180 lm/W."
+  },
+  {
+   "t": "Batería LiFePO4",
+   "d": "3.2 V / 50,000 mAh, 12 horas de trabajo."
+  },
+  {
+   "t": "Interruptor frontal",
+   "d": "Encendido y apagado manual."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 1,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CE",
+   "l": "Certificación"
+  },
+  {
+   "c": "RoHS",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP66",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "100 W"
+    ],
+    [
+     "Fuente de luz",
+     "1 módulo de 180 LED 3030 SMD Epistar"
+    ],
+    [
+     "Eficacia",
+     "180 lm/W"
+    ],
+    [
+     "Temperatura de color",
+     "7,500 K"
+    ],
+    [
+     "Índice de color (CRI)",
+     "80"
+    ],
+    [
+     "Ángulo de haz",
+     "70° a 150°"
+    ],
+    [
+     "Clase energética",
+     "A"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Batería",
+     "LiFePO4 32650 / 3.2 V / 50,000 mAh"
+    ],
+    [
+     "Panel",
+     "6 V / 60 W"
+    ],
+    [
+     "Tiempo de carga",
+     "6–8 h"
+    ],
+    [
+     "Tiempo de trabajo",
+     "12 h"
+    ],
+    [
+     "Sensor",
+     "PIR de proximidad"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Aleación de aluminio"
+    ],
+    [
+     "Acabado",
+     "Cuerpo gris, reflector de plástico transparente"
+    ],
+    [
+     "Base",
+     "A poste"
+    ],
+    [
+     "Hermeticidad",
+     "IP66"
+    ],
+    [
+     "Dimensiones",
+     "887 × 420 mm"
+    ],
+    [
+     "Peso",
+     "8 kg"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-20 °C a 40 °C"
+    ],
+    [
+     "Contenido de mercurio",
+     "0"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Ahorro con sensor",
+   "d": "Ilumina más solo cuando hay movimiento."
+  },
+  {
+   "t": "Alta eficacia",
+   "d": "180 lm/W con LED Epistar."
+  },
+  {
+   "t": "Hermética",
+   "d": "Grado de protección IP66."
+  },
+  {
+   "t": "Toda la noche",
+   "d": "12 horas de trabajo por carga."
+  },
+  {
+   "t": "Sin costo de energía",
+   "d": "Panel solar de 60 W."
+  },
+  {
+   "t": "Sin mercurio",
+   "d": "Clase energética A, CE y RoHS."
+  }
+ ],
+ "applications": [
+  "Jardines",
+  "Caminos rurales",
+  "Calles citadinas",
+  "Parques",
+  "Avenidas",
+  "Carreteras",
+  "Complejos comerciales e industriales"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Alto",
+    "887 mm"
+   ],
+   [
+    "Ancho",
+    "420 mm"
+   ],
+   [
+    "Peso",
+    "8 kg"
+   ],
+   [
+    "Empaque",
+    "900 × 420 × 300 mm, 9 kg"
+   ]
+  ]
+ }
+}

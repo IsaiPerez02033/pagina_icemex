@@ -1,0 +1,159 @@
+{
+ "model": "CR TROFFERS",
+ "kind": "Panel LED arquitectónico marca CREE",
+ "power": "22 – 50 W",
+ "variant": "120/277 V · Hecho en USA",
+ "hero": "p1_x22",
+ "photo2": "p1_x28",
+ "kpis": [
+  {
+   "v": ">90",
+   "u": "",
+   "l": "IRC TrueWhite®"
+  },
+  {
+   "v": "0–10",
+   "u": "V",
+   "l": "Dimeable"
+  },
+  {
+   "v": "10",
+   "u": "años",
+   "l": "Garantía"
+  },
+  {
+   "v": "USA",
+   "u": "",
+   "l": "Hecho en"
+  }
+ ],
+ "description": [
+  "CR Troffers es una familia de paneles LED arquitectónicos marca CREE para plafón, fabricados en Estados Unidos con tecnología TrueWhite®, que logra un índice de reproducción de color mayor a 90: los colores se ven naturales y la luz es confortable para jornadas largas.",
+  "Se ofrecen en tres formatos (CR14, CR22 y CR24) de 22 a 50 W a 120/277 V, en 3,000, 3,500, 4,000 o 5,000 K, todos dimeables 0–10 V y con 10 años de garantía. Son ideales para oficinas, aeropuertos, hospitales, universidades y comercios."
+ ],
+ "features": [
+  {
+   "t": "TrueWhite®",
+   "d": "IRC mayor a 90."
+  },
+  {
+   "t": "Dimeable 0–10 V",
+   "d": "Control de intensidad y ahorro."
+  },
+  {
+   "t": "Tres formatos",
+   "d": "CR14, CR22 y CR24."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Con 10 años de garantía."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CREE",
+   "l": "Marca"
+  },
+  {
+   "c": "USA",
+   "l": "Fabricación"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Modelos",
+   "rows": [
+    [
+     "CR14",
+     "22 W / 34 W"
+    ],
+    [
+     "CR22",
+     "22 W / 32 W"
+    ],
+    [
+     "CR24",
+     "40 W / 50 W"
+    ]
+   ]
+  },
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Tecnología",
+     "CREE TrueWhite®"
+    ],
+    [
+     "IRC",
+     "> 90"
+    ],
+    [
+     "Temperatura de color",
+     "3,000, 3,500, 4,000 o 5,000 K"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Voltaje",
+     "120/277 V"
+    ],
+    [
+     "Control",
+     "Dimeable 0–10 V"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  3000,
+  3500,
+  4000,
+  5000
+ ],
+ "advantages": [
+  {
+   "t": "Color excepcional",
+   "d": "IRC > 90."
+  },
+  {
+   "t": "Atenuable",
+   "d": "0–10 V."
+  },
+  {
+   "t": "Respaldo",
+   "d": "10 años de garantía."
+  },
+  {
+   "t": "Cuatro temperaturas",
+   "d": "De 3,000 a 5,000 K."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Estándares CREE."
+  },
+  {
+   "t": "Confort visual",
+   "d": "Luz uniforme para oficinas."
+  }
+ ],
+ "applications": [
+  "Oficinas",
+  "Aeropuertos",
+  "Hospitales",
+  "Universidades",
+  "Centros y locales comerciales"
+ ],
+ "dims": {
+  "img": "p1_x25"
+ }
+}

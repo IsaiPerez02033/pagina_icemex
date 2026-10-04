@@ -1,0 +1,234 @@
+{
+ "model": "REFLECTOR ESTADIO",
+ "kind": "Reflector LED modular de alta potencia",
+ "power": "120 – 480 W",
+ "variant": "Serie SMD · MZ-01V",
+ "hero": "p1_x26",
+ "photo2": "p1_x29",
+ "kpis": [
+  {
+   "v": "120–480",
+   "u": "W",
+   "l": "Potencias"
+  },
+  {
+   "v": "140",
+   "u": "lm/W",
+   "l": "Eficiencia"
+  },
+  {
+   "v": "IP67",
+   "u": "",
+   "l": "Protección"
+  },
+  {
+   "v": "5",
+   "u": "años",
+   "l": "Garantía"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "67,200",
+   "u": "lm",
+   "l": "Flujo máx."
+  },
+  {
+   "v": "40,000",
+   "u": "h",
+   "l": "Horas de vida"
+  }
+ ],
+ "description": [
+  "El Reflector LED Estadio (serie SMD, modelo MZ-01V) es un reflector modular de alta potencia para estadios deportivos, eventos, parques y almacenes. Cada módulo agrega 120 W y 16,800 lúmenes, con eficiencia de 140 lm/W a 6,500 K, CRI mayor a 80 y ángulo de 120°, para configuraciones de 120, 240, 360 y 480 W (hasta 67,200 lm).",
+  "Su cuerpo de aluminio inyectado a presión, a prueba de humedad y corrosión, tiene diseño slim ultradelgado y ligero que mejora la disipación de calor, con driver integrado, lente de PC y chips de alta calidad. El soporte giratorio da un mayor rango de orientación. Grado IP67, 40,000 horas de vida, hasta 80% de ahorro de energía, certificaciones NOM, CE y RoHS, y 5 años de garantía."
+ ],
+ "features": [
+  {
+   "img": "p1_x35",
+   "t": "Diseño modular",
+   "d": "Módulos de 120 W y 16,800 lm."
+  },
+  {
+   "img": "p1_x29",
+   "t": "Soporte giratorio",
+   "d": "Mayor rango de orientación."
+  },
+  {
+   "img": "p1_x32",
+   "t": "Disipación slim",
+   "d": "Aluminio inyectado ultradelgado y ligero."
+  },
+  {
+   "img": "p1_x26",
+   "t": "IP67",
+   "d": "A prueba de humedad y corrosión."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 5,
+   "on": "por defectos de fabricación"
+  }
+ ],
+ "certs": [
+  {
+   "c": "NOM",
+   "l": "Certificación"
+  },
+  {
+   "c": "CE",
+   "l": "Certificación"
+  },
+  {
+   "c": "RoHS",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP67",
+   "l": "Protección"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencias",
+     "120, 240, 360 y 480 W"
+    ],
+    [
+     "Flujo luminoso",
+     "16,800 / 33,600 / 50,400 / 67,200 lm"
+    ],
+    [
+     "Eficiencia",
+     "140 lm/W"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "CRI",
+     "Ra > 80"
+    ],
+    [
+     "Ángulo",
+     "120°"
+    ],
+    [
+     "Horas de vida",
+     "40,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión",
+     "100–277 V, 50/60 Hz"
+    ],
+    [
+     "Factor de potencia",
+     "> 0.9"
+    ],
+    [
+     "Driver",
+     "Integrado"
+    ],
+    [
+     "Ahorro de energía",
+     "Hasta 80%"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Aluminio inyectado a presión"
+    ],
+    [
+     "Lente",
+     "Policarbonato"
+    ],
+    [
+     "Soporte",
+     "Giratorio"
+    ],
+    [
+     "Protección",
+     "IP67"
+    ],
+    [
+     "Modelos",
+     "MZ-01V-0120/0240/0360/0480-01A"
+    ],
+    [
+     "Origen",
+     "China"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Alta eficiencia",
+   "d": "140 lm/W."
+  },
+  {
+   "t": "Escalable",
+   "d": "De 120 a 480 W en módulos."
+  },
+  {
+   "t": "IP67",
+   "d": "Para intemperie extrema."
+  },
+  {
+   "t": "Certificado",
+   "d": "NOM, CE y RoHS."
+  },
+  {
+   "t": "Ahorro",
+   "d": "Hasta 80% de energía."
+  },
+  {
+   "t": "Respaldo",
+   "d": "5 años de garantía."
+  }
+ ],
+ "applications": [
+  "Estadios deportivos",
+  "Eventos",
+  "Parques",
+  "Almacenes",
+  "Patios de maniobras",
+  "Canchas"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "120 W",
+    "330 × 140 mm"
+   ],
+   [
+    "240 W",
+    "330 × 300 mm"
+   ],
+   [
+    "360 W",
+    "330 × 430 mm"
+   ],
+   [
+    "480 W",
+    "330 × 575 mm"
+   ]
+  ]
+ }
+}

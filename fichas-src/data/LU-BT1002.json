@@ -1,0 +1,109 @@
+{
+ "model": "BOLARDO 120W",
+ "kind": "Columna luminosa LED de sección cuadrada",
+ "power": "120 W",
+ "variant": "Luz cálida",
+ "hero": "p1_x27",
+ "kpis": [
+  {
+   "v": "120",
+   "u": "W",
+   "l": "Potencia total"
+  },
+  {
+   "v": "4",
+   "u": "",
+   "l": "Tubos LED de 30 W"
+  },
+  {
+   "v": "4×4",
+   "u": "in",
+   "l": "PTR"
+  },
+  {
+   "v": "Cálida",
+   "u": "",
+   "l": "Luz"
+  }
+ ],
+ "description": [
+  "El Bolardo 120W es una columna luminosa de sección cuadrada fabricada en PTR de 4 × 4\", con cuatro tubos LED de 30 W que suman 120 W de luz cálida. Su diseño prismático, con ranuras luminosas a lo largo del cuerpo, aporta presencia arquitectónica y una iluminación ambiental agradable.",
+  "Es ideal para accesos, plazas, andadores y fachadas donde se busca un elemento vertical de diseño que ilumine y a la vez delimite el espacio."
+ ],
+ "features": [
+  {
+   "t": "Cuatro tubos LED",
+   "d": "30 W cada uno, 120 W en total."
+  },
+  {
+   "t": "Luz cálida",
+   "d": "Ambiente confortable para espacios peatonales."
+  },
+  {
+   "t": "PTR 4 × 4\"",
+   "d": "Estructura robusta de sección cuadrada."
+  },
+  {
+   "t": "Diseño prismático",
+   "d": "Ranuras luminosas a lo largo del cuerpo."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Fuente luminosa",
+     "4 tubos LED de 30 W"
+    ],
+    [
+     "Potencia total",
+     "120 W"
+    ],
+    [
+     "Tono de luz",
+     "Cálida"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Estructura",
+     "PTR de 4 × 4\""
+    ],
+    [
+     "Forma",
+     "Columna de sección cuadrada"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Presencia arquitectónica",
+   "d": "Elemento vertical de diseño."
+  },
+  {
+   "t": "Luz cálida",
+   "d": "Ambiente agradable."
+  },
+  {
+   "t": "Estructura robusta",
+   "d": "PTR de 4 × 4\"."
+  },
+  {
+   "t": "Alta potencia",
+   "d": "120 W en cuatro tubos."
+  }
+ ],
+ "applications": [
+  "Plazas",
+  "Accesos",
+  "Andadores",
+  "Parques y jardines",
+  "Fachadas"
+ ]
+}

@@ -1,0 +1,166 @@
+{
+ "model": "LR TROFFERS",
+ "kind": "Panel LED de 2 × 2 pies marca CREE",
+ "power": "34 W",
+ "variant": "120/277 V · Hecho en USA",
+ "hero": "p1_x22",
+ "photo2": "p1_x33",
+ "kpis": [
+  {
+   "v": "34",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "3,400",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": ">80",
+   "u": "",
+   "l": "IRC"
+  },
+  {
+   "v": "10",
+   "u": "años",
+   "l": "Garantía"
+  }
+ ],
+ "description": [
+  "LR Troffers es un panel LED de 2 × 2 pies (595 × 595 mm) marca CREE, fabricado en Estados Unidos, con difusor central que reparte la luz de forma suave y uniforme, ideal para oficinas, escuelas, comercios y pasillos.",
+  "El modelo LR22 entrega 3,400 lúmenes con 34 W a 120/277 V, en 3,500 o 4,000 K, con IRC mayor a 80. Su peralte de 91 mm facilita el empotrado en plafón reticular, y cuenta con 10 años de garantía."
+ ],
+ "features": [
+  {
+   "t": "Formato 2 × 2",
+   "d": "595 × 595 mm para plafón reticular."
+  },
+  {
+   "t": "Luz uniforme",
+   "d": "Difusor central sin deslumbramiento."
+  },
+  {
+   "t": "Eficiente",
+   "d": "100 lm/W."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Con 10 años de garantía."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CREE",
+   "l": "Marca"
+  },
+  {
+   "c": "USA",
+   "l": "Fabricación"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Modelo",
+     "LR22"
+    ],
+    [
+     "Flujo luminoso",
+     "3,400 lm"
+    ],
+    [
+     "IRC",
+     "> 80"
+    ],
+    [
+     "Temperatura de color",
+     "3,500 o 4,000 K"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Potencia",
+     "34 W"
+    ],
+    [
+     "Voltaje",
+     "120/277 V"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Medidas",
+     "595 × 595 mm (23.4\")"
+    ],
+    [
+     "Peralte",
+     "91 mm (3.6\")"
+    ],
+    [
+     "Fabricación",
+     "Estados Unidos"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  3500,
+  4000
+ ],
+ "advantages": [
+  {
+   "t": "Eficiente",
+   "d": "100 lm/W."
+  },
+  {
+   "t": "Respaldo",
+   "d": "10 años de garantía."
+  },
+  {
+   "t": "Hecho en USA",
+   "d": "Estándares CREE."
+  },
+  {
+   "t": "Confort visual",
+   "d": "Luz suave y uniforme."
+  }
+ ],
+ "applications": [
+  "Andadores, patios, corredores y pasillos",
+  "Universidades",
+  "Centros y locales comerciales",
+  "Oficinas"
+ ],
+ "dims": {
+  "img": "p1_x25",
+  "rows": [
+   [
+    "Ancho",
+    "595 mm"
+   ],
+   [
+    "Largo",
+    "595 mm"
+   ],
+   [
+    "Peralte",
+    "91 mm"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,243 @@
+{
+ "model": "SUBURBANA SOLAR 300W",
+ "kind": "Lámpara solar «All in One» suburbana",
+ "power": "300 W",
+ "variant": "3,400 lm",
+ "hero": "p1_x24",
+ "photo2": "p1_x30",
+ "kpis": [
+  {
+   "v": "300",
+   "u": "W",
+   "l": "Wattaje"
+  },
+  {
+   "v": "3,400",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP66",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "12",
+   "u": "h",
+   "l": "Tiempo de trabajo"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "432",
+   "u": "LED",
+   "l": "Cantidad de LED"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "description": [
+  "La SUBURBANA SOLAR 300W es una lámpara solar «All in One» con panel integrado e interruptor frontal, de aleación de aluminio y PC, para jardines, caminos rurales, calles, parques, avenidas y carreteras. Con 432 LED entrega 3,400 lúmenes de luz blanca (6,500–7,000 K), índice de color de 80 y ángulo de 150°.",
+  "Su batería de 3.2 V / 35,000 mAh se carga con un panel de 6 V / 40 W en 6 a 8 horas y trabaja 12 horas por noche con atenuación programada (1 h al 100–75%, 2 h al 65% y de 9 a 12 h al 20%). Grado de protección IP66, clase energética A, sin mercurio y con certificaciones CE y RoHS."
+ ],
+ "features": [
+  {
+   "img": "p1_x24",
+   "t": "Control remoto",
+   "d": "Incluido para manejar la lámpara a distancia."
+  },
+  {
+   "img": "p1_x27",
+   "t": "Para vialidades",
+   "d": "Caminos, calles y carreteras."
+  },
+  {
+   "img": "p1_x30",
+   "t": "Instalación a poste",
+   "d": "Panel integrado, sin cableado."
+  },
+  {
+   "img": "p1_x24",
+   "t": "432 LED",
+   "d": "Luz blanca con CRI 80."
+  }
+ ],
+ "certs": [
+  {
+   "c": "CE",
+   "l": "Certificación"
+  },
+  {
+   "c": "RoHS",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP66",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Wattaje",
+     "300 W"
+    ],
+    [
+     "Flujo luminoso",
+     "3,400 lm"
+    ],
+    [
+     "Cantidad de LED",
+     "432"
+    ],
+    [
+     "Temperatura de color",
+     "6,500–7,000 K"
+    ],
+    [
+     "Índice de color (CRI)",
+     "80"
+    ],
+    [
+     "Ángulo de haz",
+     "150°"
+    ],
+    [
+     "Perfil de trabajo",
+     "1 h 100–75% · 2 h 65% · 9–12 h 20%"
+    ],
+    [
+     "Clase energética",
+     "A"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Batería",
+     "3.2 V / 35,000 mAh"
+    ],
+    [
+     "Panel",
+     "6 V / 40 W"
+    ],
+    [
+     "Tiempo de carga",
+     "6–8 h"
+    ],
+    [
+     "Tiempo de trabajo",
+     "12 h"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Aleación de aluminio, PC"
+    ],
+    [
+     "Acabado",
+     "Cuerpo gris, reflector de plástico transparente"
+    ],
+    [
+     "Base",
+     "A poste"
+    ],
+    [
+     "Hermeticidad",
+     "IP66"
+    ],
+    [
+     "Dimensiones",
+     "630 × 235 × 90 mm"
+    ],
+    [
+     "Peso",
+     "5.5 kg"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-20 °C a 40 °C"
+    ],
+    [
+     "Contenido de mercurio",
+     "0"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Toda la noche",
+   "d": "12 horas con atenuación programada."
+  },
+  {
+   "t": "Sin costo de energía",
+   "d": "Panel de 40 W integrado."
+  },
+  {
+   "t": "Hermética",
+   "d": "Grado de protección IP66."
+  },
+  {
+   "t": "Ligera",
+   "d": "Solo 5.5 kg."
+  },
+  {
+   "t": "Sin mercurio",
+   "d": "Clase energética A, CE y RoHS."
+  },
+  {
+   "t": "Control remoto",
+   "d": "Manejo sencillo a distancia."
+  }
+ ],
+ "applications": [
+  "Jardines",
+  "Caminos rurales",
+  "Calles citadinas",
+  "Parques",
+  "Avenidas",
+  "Carreteras",
+  "Complejos comerciales e industriales"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Largo",
+    "630 mm"
+   ],
+   [
+    "Ancho",
+    "235 mm"
+   ],
+   [
+    "Alto",
+    "90 mm"
+   ],
+   [
+    "Peso",
+    "5.5 kg"
+   ]
+  ]
+ }
+}

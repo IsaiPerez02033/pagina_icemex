@@ -1,0 +1,234 @@
+{
+ "model": "AD-50W",
+ "kind": "Luminaria LED solar para vialidades",
+ "power": "50 W",
+ "variant": "NOM-013-ENER",
+ "badge": "Producto patentado",
+ "hero": "p1_x27",
+ "photo2": "p2_x87",
+ "kpis": [
+  {
+   "v": "50",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "9,500",
+   "u": "lm",
+   "l": "Flujo luminoso del LED"
+  },
+  {
+   "v": "190",
+   "u": "lm/W",
+   "l": "Eficacia del LED"
+  },
+  {
+   "v": "150,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "12",
+   "u": "h",
+   "l": "Al 100% sin atenuación"
+  },
+  {
+   "v": "205",
+   "u": "km/h",
+   "l": "Resistencia al viento"
+  }
+ ],
+ "description": [
+  "AD-50W es una luminaria LED solar para vialidades que ilumina al 100% durante toda la noche, sin interrupciones ni pérdidas de energía. Fue la primera en obtener la certificación NOM-013-ENER-2013, que asegura desempeño comprobado y cumplimiento con los estándares nacionales de eficiencia.",
+  "Usa 60 LED SMD 5050 de 190 lm/W, controlador MPPT patentado con indicadores de carga y un sistema patentado de gestión de celdas. Su batería supera los 3,000 ciclos (16 años de rendimiento y después 80% de capacidad) y está certificada para vientos de hasta 205 km/h (huracán categoría 5)."
+ ],
+ "features": [
+  {
+   "img": "p2_x97",
+   "t": "Controlador MPPT patentado",
+   "d": "Con indicadores de estado de carga."
+  },
+  {
+   "img": "p2_x102",
+   "t": "Toda la noche, toda la luz",
+   "d": "100% durante 12 horas."
+  },
+  {
+   "img": "p2_x138",
+   "t": "Resiste huracanes",
+   "d": "Viento de hasta 205 km/h."
+  },
+  {
+   "img": "p2_x151",
+   "t": "NOM-013-ENER",
+   "d": "Primera en obtener esta certificación.",
+   "light": false
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  },
+  {
+   "y": 6,
+   "on": "en batería"
+  }
+ ],
+ "certs": [
+  {
+   "c": "NOM-013",
+   "l": "Norma"
+  },
+  {
+   "c": "ISO 9001",
+   "l": "Calidad"
+  },
+  {
+   "c": "ISO 14001",
+   "l": "Ambiental"
+  },
+  {
+   "c": "ISO 45001",
+   "l": "Seguridad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "50 W"
+    ],
+    [
+     "LED",
+     "SMD 5050 (5.0 × 5.0 mm), 60 pzas"
+    ],
+    [
+     "Eficacia del LED",
+     "190 lm/W"
+    ],
+    [
+     "Flujo luminoso del LED",
+     "9,500 lm"
+    ],
+    [
+     "Eficacia del sistema",
+     "110 lm/W"
+    ],
+    [
+     "Flujo luminoso del sistema",
+     "5,500 lm"
+    ],
+    [
+     "Distribución fotométrica",
+     "Tipo II corta (TII S)"
+    ],
+    [
+     "Temperatura de color",
+     "3,000 / 4,000 / 5,700 K"
+    ],
+    [
+     "CRI",
+     "≥ 70"
+    ],
+    [
+     "Vida útil",
+     "150,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Panel",
+     "Monocristalino 60 W / 18 V"
+    ],
+    [
+     "Batería",
+     "Litio LiFePO4 384 Wh, más de 3,000 ciclos"
+    ],
+    [
+     "Tiempo de carga",
+     "6 h"
+    ],
+    [
+     "Respaldo",
+     "2 noches"
+    ],
+    [
+     "Ciclo de funcionamiento",
+     "12 h al 100%"
+    ],
+    [
+     "Controlador",
+     "MPPT patentado con cubierta de aluminio"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Carcasa de fundición a presión con pintura poliéster electrostática anticorrosiva, tornillería de acero inoxidable grado marino A316L y lente de policarbonato anti-UV"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-25 °C a +65 °C"
+    ],
+    [
+     "Temperatura de almacenaje",
+     "-20 °C a +40 °C"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  3000,
+  4000,
+  5700
+ ],
+ "photometry": "p3_x215",
+ "advantages": [
+  {
+   "t": "Toda la noche, toda la luz",
+   "d": "12 horas al 100% de flujo, con respaldo de 2 noches."
+  },
+  {
+   "t": "Batería de 16 años",
+   "d": "LiFePO4 de más de 3,000 ciclos; después sigue al 80% de su capacidad."
+  },
+  {
+   "t": "Controlador MPPT patentado",
+   "d": "Cubierta de aluminio que mejora la disipación y la estabilidad."
+  },
+  {
+   "t": "Gestión de celdas",
+   "d": "Sistema patentado que equilibra la carga y descarga."
+  },
+  {
+   "t": "Resiste huracanes",
+   "d": "Certificado de resistencia al viento de hasta 205 km/h."
+  },
+  {
+   "t": "Certificada NOM-013-ENER",
+   "d": "Desempeño comprobado en eficiencia."
+  }
+ ],
+ "applications": [
+  "Vialidades",
+  "Calles y avenidas",
+  "Caminos rurales",
+  "Estacionamientos"
+ ]
+}

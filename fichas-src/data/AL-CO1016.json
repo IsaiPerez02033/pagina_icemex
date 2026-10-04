@@ -1,0 +1,202 @@
+{
+ "model": "COBRA 150W",
+ "kind": "Luminaria LED para alumbrado público",
+ "power": "100 W",
+ "variant": "85–277 V",
+ "hero": "p1_x266",
+ "kpis": [
+  {
+   "v": "100",
+   "u": "W",
+   "l": "Consumo de potencia"
+  },
+  {
+   "v": "11,000",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "120°",
+   "u": "",
+   "l": "Ángulo de apertura"
+  },
+  {
+   "v": "6500",
+   "u": "K",
+   "l": "Temperatura de color"
+  }
+ ],
+ "description": [
+  "COBRA 150W (LED STL 150W) es una luminaria LED para alumbrado público con carcasa de aluminio en acabado gris y pantalla de policarbonato. Con un consumo de 100 W entrega 11,000 lúmenes de luz blanca fría (6500 K) con ángulo de apertura de 120°.",
+  "Opera de 85 a 277 V con factor de potencia de 0.95 y temperatura de operación de -20 a 50 °C. Cuenta con grado de protección IP65, vida útil de 50,000 horas, certificación NOM-030 y 3 años de garantía."
+ ],
+ "features": [
+  {
+   "t": "Carcasa de aluminio",
+   "d": "Cuerpo de aluminio en acabado gris para uso exterior."
+  },
+  {
+   "t": "Pantalla de policarbonato",
+   "d": "Protege el módulo LED y distribuye la luz a 120°."
+  },
+  {
+   "t": "Alto flujo luminoso",
+   "d": "11,000 lm con 100 W de consumo."
+  },
+  {
+   "t": "Amplio rango de voltaje",
+   "d": "85–277 V con factor de potencia de 0.95."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 3,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "NOM-030",
+   "l": "Norma"
+  },
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Consumo de potencia",
+     "100 W"
+    ],
+    [
+     "Flujo luminoso",
+     "11,000 lm"
+    ],
+    [
+     "Temperatura de color",
+     "6500 K"
+    ],
+    [
+     "Ángulo de apertura",
+     "120°"
+    ],
+    [
+     "CRI",
+     "80"
+    ],
+    [
+     "Atenuable",
+     "No"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión nominal",
+     "85–277 V~"
+    ],
+    [
+     "Frecuencia",
+     "50/60 Hz"
+    ],
+    [
+     "Corriente",
+     "0.76 A"
+    ],
+    [
+     "Factor de potencia",
+     "0.95"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Carcasa",
+     "Aluminio"
+    ],
+    [
+     "Acabado",
+     "Gris"
+    ],
+    [
+     "Pantalla",
+     "Policarbonato"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-20 a 50 °C"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Alto rendimiento",
+   "d": "11,000 lúmenes con solo 100 W de consumo."
+  },
+  {
+   "t": "Respaldo",
+   "d": "3 años de garantía y certificación NOM-030."
+  },
+  {
+   "t": "Exteriores",
+   "d": "IP65 y operación de -20 a 50 °C."
+  },
+  {
+   "t": "Red eléctrica estable",
+   "d": "Factor de potencia de 0.95 y rango de 85 a 277 V."
+  },
+  {
+   "t": "Larga vida útil",
+   "d": "50,000 horas de operación."
+  },
+  {
+   "t": "Buena reproducción de color",
+   "d": "CRI 80 para distinguir colores con claridad."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Cotos y zonas residenciales",
+  "Áreas recreativas",
+  "Universidades",
+  "Andadores, patios, corredores y pasillos"
+ ]
+}

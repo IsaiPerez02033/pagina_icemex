@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>{{ f.code }} · {{ f.model }} · Ficha técnica ICEMEX</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: "Inter", sans-serif; color: #1f2024; font-size: 8pt; line-height: 1.4; }
+  .page { width: 210mm; height: 297mm; position: relative; overflow: hidden; page-break-after: always; background: #fff; }
+  .page:last-child { page-break-after: auto; }
+  .display { font-family: "Archivo", sans-serif; font-style: italic; font-weight: 900; font-stretch: 125%; letter-spacing: -0.01em; text-transform: uppercase; }
+  .h { font-family: "Archivo", sans-serif; font-weight: 700; font-stretch: 112%; }
+
+  /* ---------- Portada ---------- */
+  .cover { background: #000 url(assets/portada-fondo.png) center / cover no-repeat; color: #fff; }
+  .cover .logo { position: absolute; left: 14mm; top: 13mm; width: 68mm; }
+  .cover .tag { position: absolute; right: 14mm; top: 21mm; text-align: right; }
+  .cover .tag small { display: block; color: #b9bbc0; font-size: 8pt; letter-spacing: 0.04em; }
+  .cover .tag b { font-family: "Archivo"; font-stretch: 125%; font-weight: 800; font-size: 12pt; letter-spacing: 0.04em; }
+  .cover .hero { position: absolute; left: 30mm; right: 12mm; top: 44mm; height: 126mm;
+    display: flex; align-items: center; justify-content: center;
+    background: radial-gradient(closest-side, rgba(170,28,34,.45), rgba(170,28,34,0)); }
+  .cover .hero img { width: 100%; height: 100%; min-width: 0; min-height: 0; object-fit: contain; filter: drop-shadow(0 18px 30px rgba(0,0,0,.6)); }
+  .cover .tblock { position: absolute; left: 14mm; right: 14mm; bottom: 80mm; }
+  .cover .kind { color: #d5d6da; font-size: 11pt; margin-bottom: 2.5mm; }
+  .cover h1 { margin-left: -1mm; font-size: {{ f.cover_size }}pt; line-height: 1; white-space: nowrap; }
+  .cover .sub { margin-top: 3mm; font-size: 13pt; font-weight: 700; }
+  .cover .sub em { font-style: normal; font-weight: 400; color: #fff; }
+  .sep { display: inline-block; width: 5px; height: 5px; background: #de0e20; transform: skewX(-20deg); margin: 0 3mm 2px; }
+  .badge { position: absolute; right: 14mm; bottom: 79mm; border: 1px solid #8e8f94; border-radius: 4px; padding: 2.2mm 3.4mm; font-size: 8pt; font-weight: 700; }
+  .cover .kpis { position: absolute; left: 14mm; right: 14mm; top: 225mm; border-top: 1px solid #4d4e53; display: grid; grid-template-columns: repeat(4, 1fr); }
+  .cover .kpis > div { padding: 4mm 0 0 0; border-left: 1px solid #36373b; padding-left: 5mm; height: 16mm; }
+  .cover .kpis > div:first-child { border-left: 0; padding-left: 0; }
+  .kv { font-family: "Archivo"; font-stretch: 112%; font-weight: 800; font-size: 19pt; line-height: 1; }
+  .kv small { font-family: "Inter"; font-weight: 400; font-size: 8.5pt; color: #c8c9cd; margin-left: 1mm; }
+  .kl { font-size: 7pt; color: #a9abb1; margin-top: 1.5mm; }
+  .cover .certs { position: absolute; left: 14mm; bottom: 16mm; width: 120mm; }
+  .cover .certs small { color: #9a9ca2; font-size: 7pt; display: block; margin-bottom: 1.5mm; }
+  .cover .certs b { font-size: 9pt; font-weight: 600; }
+  .stripes { position: absolute; right: -6mm; bottom: 0; width: 82mm; height: 30mm; }
+  /* Auto-ajuste: niveles de compactación cuando el contenido no cabe */
+  .page.fit1 { --gap: 5mm; --tgap: 3.5mm; --photo-h: 76mm; --fi-h: 25mm; --draw-h: 42mm; --desc-fs: 7.8pt; }
+  .page.fit2 { --gap: 4mm; --tgap: 3mm; --photo-h: 66mm; --fi-h: 21mm; --draw-h: 34mm; --desc-fs: 7.4pt; }
+  .page.fit2 .sg td, .page.fit2 .adv p, .page.fit2 .features p { font-size: 7pt; }
+  .page.fit3 { --gap: 3mm; --tgap: 2.5mm; --photo-h: 56mm; --fi-h: 17mm; --draw-h: 28mm; --desc-fs: 7pt; }
+  .page.fit3 .sg td, .page.fit3 .adv p, .page.fit3 .features p { font-size: 6.6pt; } .page.fit3 .sg td { padding: 1.4mm 0; }
+  .overflow-flag { position: absolute; left: 2mm; top: 2mm; color: red; font-size: 6pt; }
+  .stripes i { position: absolute; bottom: 0; width: 28mm; height: 100%; transform: skewX(-38deg); transform-origin: bottom left; }
+
+  /* ---------- Páginas interiores ---------- */
+  .top { height: 30mm; background: #000; color: #fff; position: relative; }
+  .top .logo { position: absolute; left: 14mm; top: 8mm; width: 40mm; }
+  .top .model { position: absolute; right: 14mm; top: 9mm; text-align: right; }
+  .top .model b { font-size: 13pt; }
+  .top .model small { display: block; color: #a6a8ae; font-size: 7.4pt; margin-top: 1.2mm; font-family: "Inter"; font-style: normal; }
+  .bar { height: 1.6mm; display: flex; }
+  .bar i { flex: 1; } .bar i:nth-child(1){background:#fdd35a} .bar i:nth-child(2){background:#ee7f0b} .bar i:nth-child(3){background:#de0e20; flex: 4}
+  .content { padding: 8mm 14mm 0; }
+  .foot { position: absolute; left: 14mm; right: 14mm; bottom: 9mm; border-top: 1px solid #e3e4e7; padding-top: 3.5mm; display: flex; justify-content: space-between; align-items: flex-end; font-size: 6.9pt; }
+  .foot .c1 b { display: block; font-weight: 600; }
+  .foot .c1 span, .foot .c2 { color: #8a8d95; }
+  .foot .c2 { color: #5a5d66; }
+  .foot .c3 { text-align: right; flex: none; padding-left: 4mm; } .foot .c3 b { display: block; white-space: nowrap; font-family: "Archivo"; font-stretch: 125%; font-weight: 800; font-size: 9pt; }
+  .foot .c3 span { color: #8a8d95; }
+
+  .title { margin: 0 0 var(--tgap, 4.5mm); }
+  .title h2 { font-size: 12.5pt; }
+  .title .acc { margin-top: 1.6mm; height: 1px; background: #e3e4e7; position: relative; }
+  .title .acc::before { content: ""; position: absolute; left: 0; top: -1px; width: 26mm; height: 3px;
+    background: repeating-linear-gradient(90deg, #de0e20 0 3mm, transparent 3mm 4mm) 0 0 / 12mm 3px no-repeat, linear-gradient(#de0e20,#de0e20) 13mm 0 / 13mm 3px no-repeat; transform: skewX(-30deg); }
+  section { margin-bottom: var(--gap, 7mm); }
+
+  /* Resumen (pág. 2) */
+  .overview { display: grid; grid-template-columns: 1fr 1.08fr; gap: 8mm; margin-bottom: var(--gap, 7mm); }
+  .overview .name h1 { font-size: {{ f.inner_size }}pt; color: #1f2024; line-height: 1; white-space: nowrap; }
+  .overview .name p { color: #aa1c22; font-size: 11pt; font-weight: 500; margin: 3mm 0 2mm; line-height: 1.3; }
+  .overview .name .pw { font-size: 11pt; font-weight: 700; } .overview .name .pw em { font-style: normal; font-weight: 400; color: #5a5d66; }
+  .kgrid { margin-top: 6mm; display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #d9dadd; }
+  .kgrid > div { padding: 3.5mm 0 3mm; border-bottom: 1px solid #d9dadd; }
+  .kgrid > div:nth-child(odd) { border-right: 1px solid #d9dadd; }
+  .kgrid > div:nth-child(even) { padding-left: 5mm; }
+  .kgrid .kv { font-size: 16pt; color: #1f2024; } .kgrid .kv small { color: #5a5d66; } .kgrid .kl { color: #5a5d66; }
+  .photo { background: radial-gradient(closest-side, #3a3b40, #1f2024 75%, #17181b); border-radius: 3mm; position: relative; display: flex; align-items: center; justify-content: center; padding: 7mm; height: var(--photo-h, 86mm); }
+  .photo img { width: 100%; height: 100%; min-width: 0; min-height: 0; object-fit: contain; filter: drop-shadow(0 10px 18px rgba(0,0,0,.55)); }
+  .photo .pbadge { position: absolute; left: 0; bottom: 4mm; background: #de0e20; color: #fff; font-weight: 700; font-size: 7.6pt; padding: 2mm 5mm; }
+
+  .features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; }
+  .features.n3 { grid-template-columns: repeat(3, 1fr); } .features.n2 { grid-template-columns: repeat(2, 1fr); }
+  .features .fi { height: var(--fi-h, 29mm); border-radius: 2mm; background: radial-gradient(closest-side, #3a3b40, #1f2024 80%); display: flex; align-items: center; justify-content: center; padding: 2.5mm; margin-bottom: 2.5mm; overflow: hidden; }
+  .features .fi img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .features .fi.light { background: #f3f3f5; }
+  .features b { font-size: 8.8pt; display: block; margin-bottom: 1mm; }
+  .features p { color: #5a5d66; font-size: 7.4pt; line-height: 1.45; }
+
+  .wc { display: flex; gap: 3.5mm; align-items: stretch; flex-wrap: wrap; }
+  .war { width: 32mm; height: 17mm; background: #000; color: #fff; border-radius: 2mm; position: relative; overflow: hidden; display: flex; align-items: center; padding-left: 4mm; gap: 2mm; }
+  .war b { font-family: "Archivo"; font-stretch: 125%; font-weight: 900; font-size: 21pt; }
+  .war span { font-size: 7.4pt; line-height: 1.15; } .war span em { font-style: normal; color: #b4b6bb; display: block; }
+  .war::after { content: ""; position: absolute; right: -3mm; bottom: -2mm; width: 8mm; height: 12mm; background: #de0e20; transform: skewX(-25deg); }
+  .chip { min-width: 17mm; height: 17mm; border: 1px solid #d9dadd; border-radius: 2mm; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 3mm; }
+  .chip b { font-family: "Archivo"; font-stretch: 112%; font-weight: 800; font-size: 8.6pt; }
+  .chip span { color: #8a8d95; font-size: 6.2pt; margin-top: 1mm; }
+
+  /* Especificaciones (pág. 3) */
+  .specs { display: grid; grid-template-columns: 1fr 1fr; gap: 0 9mm; align-items: start; }
+  .sg { margin-bottom: 6mm; }
+  .sg h3 { color: #aa1c22; font-size: 8.2pt; font-weight: 700; padding-bottom: 2mm; border-bottom: 1px solid #1f2024; }
+  .sg table { width: 100%; border-collapse: collapse; }
+  .sg td { padding: 2.1mm 0; border-bottom: 1px solid #e3e4e7; vertical-align: top; font-size: 7.9pt; }
+  .sg td:first-child { color: #5a5d66; width: 42%; padding-right: 3mm; }
+  .sg td:last-child { color: #1f2024; font-weight: 500; }
+  .temps { display: flex; flex-direction: column; gap: 3mm; }
+  .temps > div { display: flex; align-items: center; gap: 4mm; }
+  .temps i { width: 22mm; height: 10mm; border-radius: 1.5mm; display: block; background: #111; }
+  .temps b { font-family: "Archivo"; font-stretch: 112%; font-weight: 800; font-size: 10pt; display: block; }
+  .temps span { color: #5a5d66; font-size: 7.3pt; }
+  .photometry { background: #1f2024; border-radius: 2mm; padding: 3mm; text-align: center; }
+  .photometry img { max-width: 100%; max-height: 42mm; }
+  .cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 9mm; }
+
+  /* Ventajas, dimensiones, montaje (pág. 4) */
+  .adv { display: grid; grid-template-columns: 1fr 1fr; gap: 0 8mm; }
+  .adv > div { padding: 3mm 0 3mm 7mm; border-bottom: 1px solid #e3e4e7; position: relative; }
+  .adv > div::before { content: ""; position: absolute; left: 0; top: 4.2mm; width: 3mm; height: 2.4mm; background: #de0e20; transform: skewX(-20deg); }
+  .adv b { font-size: 8.7pt; display: block; } .adv p { color: #5a5d66; font-size: 7.7pt; margin-top: .6mm; }
+  .apps { display: flex; flex-wrap: wrap; gap: 2mm; }
+  .apps span { border: 1px solid #d9dadd; border-radius: 99px; padding: 1.4mm 3.2mm; font-size: 7.6pt; }
+  .dims { display: grid; grid-template-columns: 1.5fr 1fr; gap: 8mm; align-items: center; }
+  .dims .draw { text-align: center; } .dims .draw img { max-width: 100%; max-height: var(--draw-h, 50mm); }
+  .dims table { width: 100%; border-collapse: collapse; border-top: 2px solid #1f2024; }
+  .dims td { padding: 2.3mm 0; border-bottom: 1px solid #e3e4e7; font-size: 7.9pt; }
+  .dims td:last-child { text-align: right; font-weight: 700; }
+  .note { color: #8a8d95; font-size: 6.6pt; margin-top: 2mm; }
+  .mount { display: flex; gap: 6mm; align-items: center; }
+  .mount p { color: #5a5d66; font-size: 7.8pt; line-height: 1.5; }
+  .contact { position: absolute; left: 14mm; right: 14mm; bottom: 22mm; height: 30mm; background: #000; border-radius: 2.5mm; color: #fff; overflow: hidden; display: flex; align-items: center; padding: 0 9mm; }
+  .contact img { width: 42mm; } .contact .co { font-size: 6.6pt; color: #b4b6bb; margin-top: 1.5mm; width: 75mm; }
+  .contact .data { margin-left: 12mm; position: relative; z-index: 1; font-size: 8.4pt; font-weight: 600; line-height: 1.9; }
+  .contact .stripes { right: -10mm; width: 52mm; height: 100%; }
+  .code { display: flex; align-items: flex-start; gap: 2mm; }
+  .code > div { flex: 1; text-align: center; }
+  .code b { display: block; background: #000; color: #fff; font-family: "Archivo"; font-stretch: 112%; font-weight: 800; font-size: 10pt; padding: 3mm 1mm 2.4mm; border-radius: 1.5mm 1.5mm 0 0; border-bottom: 1mm solid #de0e20; }
+  .code > div:first-child b { border-bottom-color: #fdd35a; }
+  .code span { display: block; color: #5a5d66; font-size: 6.8pt; margin-top: 1.6mm; line-height: 1.3; }
+  .code i { font-style: normal; color: #8a8d95; padding-top: 3mm; }
+  .code-ex { margin-top: 4mm; font-size: 7.6pt; color: #5a5d66; } .code-ex b { color: #1f2024; }
+  .logi { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .logi > div { background: #f3f3f5; border-radius: 2mm; padding: 4mm 5mm; border-left: 1mm solid #ee7f0b; }
+  .logi > div + div { border-left-color: #de0e20; }
+  .logi b { font-family: "Archivo"; font-stretch: 112%; font-weight: 800; font-size: 20pt; display: block; line-height: 1; }
+  .logi span { font-size: 7.8pt; font-weight: 600; display: block; margin-top: 2mm; } .logi small { color: #8a8d95; font-size: 6.8pt; }
+  .desc { color: #3b3d43; font-size: var(--desc-fs, 8.2pt); line-height: 1.6; }
+  .desc p + p { margin-top: 2mm; }
+</style>
+</head>
+<body>
+{% set stripes %}<div class="stripes"><i style="left:0;background:#fdd35a"></i><i style="left:15mm;background:#ee7f0b"></i><i style="left:30mm;background:#de0e20"></i><i style="left:45mm;background:#aa1c22"></i></div>{% endset %}
+{% macro top() %}
+  <div class="top">
+    <img class="logo" src="assets/logo-blanco.png" alt="ICEMEX">
+    <div class="model"><b class="display">{{ f.model }}</b><small>{{ f.kind }}{% if f.power %} | {{ f.power }}{% endif %}</small></div>
+  </div>
+  <div class="bar"><i></i><i></i><i></i></div>
+{% endmacro %}
+{% macro foot(n) %}
+  <div class="foot">
+    <div class="c1"><b>Importaciones y Comercializaciones Eléctricas de México S.A. de C.V.</b><span>Especificaciones sujetas a cambio sin previo aviso.</span></div>
+    <div class="c2">55 6544 8428 &nbsp;|&nbsp; icemexjorobas@gmail.com &nbsp;|&nbsp; icemex.mx</div>
+    <div class="c3"><b>{{ f.code }}</b><span>{{ n }} / {{ total_pages }}</span></div>
+  </div>
+{% endmacro %}
+{% macro title(t) %}<div class="title"><h2 class="h">{{ t }}</h2><div class="acc"></div></div>{% endmacro %}
+
+<!-- 1. Portada -->
+<div class="page cover">
+  <img class="logo" src="assets/logo-blanco.png" alt="ICEMEX">
+  <div class="tag"><small>Ficha técnica</small><b>{{ f.code }}</b></div>
+  <div class="hero"><img src="{{ f.hero }}" alt=""></div>
+  <div class="tblock">
+    <div class="kind">{{ f.kind }}</div>
+    <h1 class="display">{{ f.model }}</h1>
+    {% if f.power or f.variant %}<div class="sub">{{ f.power }}{% if f.power and f.variant %}<span class="sep"></span>{% endif %}<em>{{ f.variant }}</em></div>{% endif %}
+  </div>
+  {% if f.badge %}<div class="badge">{{ f.badge }}</div>{% endif %}
+  {% if f.kpis %}<div class="kpis">{% for k in f.kpis[:4] %}<div><div class="kv">{{ k.v }}<small>{{ k.u }}</small></div><div class="kl">{{ k.l }}</div></div>{% endfor %}</div>{% endif %}
+  <div class="certs"><small>{% if f.certs %}Certificaciones{% else %}Aplicaciones{% endif %}</small><b>{% if f.certs %}{{ f.certs | map(attribute='c') | join(' · ') }}{% else %}{{ f.applications[:4] | join(' · ') }}{% endif %}</b></div>
+  {{ stripes }}
+</div>
+
+<!-- 2. Resumen + tecnología -->
+<div class="page">
+  {{ top() }}
+  <div class="content">
+    <div class="overview">
+      <div class="name">
+        <h1 class="display">{{ f.model }}</h1>
+        <p>{{ f.kind }}</p>
+        {% if f.power or f.variant %}<div class="pw">{{ f.power }}{% if f.power and f.variant %}<span class="sep"></span>{% endif %}<em>{{ f.variant }}</em></div>{% endif %}
+        {% if f.kpis2 %}<div class="kgrid">{% for k in f.kpis2[:6] %}<div><div class="kv">{{ k.v }}<small>{{ k.u }}</small></div><div class="kl">{{ k.l }}</div></div>{% endfor %}</div>
+        {% else %}<div class="desc" style="margin-top:6mm">{% for p in f.description %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
+      </div>
+      <div class="photo"><img src="{{ f.photo2 or f.hero }}" alt="">{% if f.badge %}<div class="pbadge">{{ f.badge }}</div>{% endif %}</div>
+    </div>
+    {% if f.kpis2 %}
+    <section>{{ title("Descripción") }}<div class="desc">{% for p in f.description %}<p>{{ p }}</p>{% endfor %}</div></section>
+    {% endif %}
+    {% if f.features %}
+    <section>
+      {{ title("Tecnología" if f.is_lum else "Características") }}
+      <div class="features n{{ f.features|length }}">
+        {% for x in f.features[:4] %}<div>{% if x.img %}<div class="fi{% if x.light %} light{% endif %}"><img src="{{ x.img }}" alt=""></div>{% endif %}<b>{{ x.t }}</b><p>{{ x.d }}</p></div>{% endfor %}
+      </div>
+    </section>
+    {% endif %}
+    {% if f.warranty or f.certs %}
+    <section>
+      {{ title("Garantía y certificaciones" if f.warranty else "Certificaciones y protección") }}
+      <div class="wc">
+        {% for w in f.warranty %}<div class="war"><b>{{ w.y }}</b><span>{{ w.unit or ("año" if w.y == 1 else "años") }}<em>{{ w.on }}</em></span></div>{% endfor %}
+        {% for c in f.certs %}<div class="chip"><b>{{ c.c }}</b><span>{{ c.l }}</span></div>{% endfor %}
+      </div>
+    </section>
+    {% endif %}
+    {% if f.applications and f.compact %}<section>{{ title("Aplicaciones") }}<div class="apps">{% for a in f.applications %}<span>{{ a }}</span>{% endfor %}</div></section>{% endif %}
+  </div>
+  {{ foot(2) }}
+</div>
+
+{% if f.spec_groups and not f.compact %}
+<!-- 3. Especificaciones -->
+<div class="page">
+  {{ top() }}
+  <div class="content">
+    <section>
+      {{ title("Especificaciones técnicas") }}
+      <div class="specs">
+        {% for col in f.spec_columns %}<div>{% for g in col %}<div class="sg"><h3>{{ g.name }}</h3><table>{% for r in g.rows %}<tr><td>{{ r[0] }}</td><td>{{ r[1] }}</td></tr>{% endfor %}</table></div>{% endfor %}</div>{% endfor %}
+      </div>
+    </section>
+    {% if f.temps or f.photometry or f.code_parts %}
+    <div class="cols2">
+      {% if f.temps %}<section>{{ title("Temperatura de color") }}<div class="temps">{% for t in f.temps %}<div><i style="background: radial-gradient(closest-side, {{ t.color }}, rgba(0,0,0,0) 85%), #111"></i><div><b>{{ t.k }}</b><span>{{ t.l }}</span></div></div>{% endfor %}</div></section>{% endif %}
+      {% if f.photometry %}<section>{{ title("Distribución fotométrica") }}<div class="photometry"><img src="{{ f.photometry }}" alt=""></div></section>{% endif %}
+      {% if f.code_parts %}<section>{{ title("Cómo leer el código") }}<div class="code">{% for p in f.code_parts.parts %}{% if not loop.first %}<i>–</i>{% endif %}<div><b>{{ p.v }}</b><span>{{ p.l }}</span></div>{% endfor %}</div>{% if f.code_parts.example %}<p class="code-ex">Ejemplo: <b>{{ f.code_parts.example }}</b></p>{% endif %}</section>{% endif %}
+    </div>
+    {% endif %}
+  </div>
+  {{ foot(3) }}
+</div>
+{% endif %}
+
+<!-- 4. Ventajas, aplicaciones, dimensiones, contacto -->
+<div class="page">
+  {{ top() }}
+  <div class="content">
+    {% if f.compact and f.spec_groups %}<section>{{ title("Especificaciones técnicas") }}<div class="specs">{% for col in f.spec_columns %}<div>{% for g in col %}<div class="sg"><h3>{{ g.name }}</h3><table>{% for r in g.rows %}<tr><td>{{ r[0] }}</td><td>{{ r[1] }}</td></tr>{% endfor %}</table></div>{% endfor %}</div>{% endfor %}</div></section>{% endif %}
+    {% if f.advantages %}<section>{{ title("Ventajas") }}<div class="adv">{% for a in f.advantages[:6] %}<div><b>{{ a.t }}</b><p>{{ a.d }}</p></div>{% endfor %}</div></section>{% endif %}
+    {% if f.applications and not f.compact %}<section>{{ title("Aplicaciones") }}<div class="apps">{% for a in f.applications %}<span>{{ a }}</span>{% endfor %}</div></section>{% endif %}
+    {% if f.dims %}
+    <section>{{ title("Dimensiones") }}
+      <div class="dims"{% if not f.dims.img %} style="grid-template-columns: 1fr 1fr"{% endif %}>
+        {% if f.dims.img %}<div class="draw"><img src="{{ f.dims.img }}" alt=""></div>{% endif %}
+        <div><table>{% for r in f.dims.rows %}<tr><td>{{ r[0] }}</td><td>{{ r[1] }}</td></tr>{% endfor %}</table><p class="note">Cotas en milímetros. Dibujo ilustrativo, no a escala.</p></div>
+      </div>
+    </section>
+    {% endif %}
+    {% if f.logistics or f.mount %}<div class="cols2">
+      {% if f.logistics %}<section>{{ title("Logística") }}<div class="logi"><div><b>{{ f.logistics.c20 }}</b><span>Contenedor 20 ft</span><small>unidades</small></div><div><b>{{ f.logistics.c40 }}</b><span>Contenedor 40 ft</span><small>unidades</small></div></div></section>{% endif %}
+      {% if f.mount %}<section>{{ title("Montaje") }}<div class="mount"><p>{{ f.mount }}</p></div></section>{% endif %}
+    </div>{% endif %}
+  </div>
+  <div class="contact">
+    <div><img src="assets/logo-blanco.png" alt="ICEMEX"><div class="co">Importaciones y Comercializaciones Eléctricas de México S.A. de C.V.</div></div>
+    <div class="data">55 6544 8428<br>icemexjorobas@gmail.com<br>icemex.mx</div>
+    {{ stripes }}
+  </div>
+  {{ foot(total_pages) }}
+</div>
+<script>
+  // Si el contenido de una página invade el pie (o el bloque de contacto),
+  // se compacta por niveles. Si ni así cabe, se marca para revisión.
+  async function autofit() {
+  await document.fonts.ready;
+  await Promise.all([...document.images].map((im) => im.complete ? 0 : new Promise((r) => { im.onload = im.onerror = r; })));
+  for (const page of document.querySelectorAll(".page:not(.cover)")) {
+    const content = page.querySelector(".content");
+    const limitEl = page.querySelector(".contact") || page.querySelector(".foot");
+    const fits = () => {
+      const limit = limitEl.getBoundingClientRect().top - 3;
+      return [...content.querySelectorAll("section, .overview")].every(
+        (el) => el.getBoundingClientRect().bottom <= limit);
+    };
+    for (const lvl of ["fit1", "fit2", "fit3"]) {
+      if (fits()) break;
+      page.classList.remove("fit1", "fit2");
+      page.classList.add(lvl);
+    }
+    if (!fits()) {
+      const flag = document.createElement("div");
+      flag.className = "overflow-flag";
+      flag.textContent = "__OVERFLOW__";
+      page.appendChild(flag);
+    }
+  }
+  }
+  autofit();
+</script>
+</body>
+</html>

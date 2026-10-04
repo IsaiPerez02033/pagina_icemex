@@ -1,0 +1,244 @@
+{
+ "model": "ALL IN ONE 500W",
+ "kind": "Luminaria solar «All in One» tipo servicio de fija",
+ "power": "300 – 500 W",
+ "variant": "Modelo LA",
+ "hero": "p1_x43",
+ "kpis": [
+  {
+   "v": "500",
+   "u": "W",
+   "l": "Wattaje"
+  },
+  {
+   "v": "6,000",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP66",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "12",
+   "u": "h",
+   "l": "Tiempo de trabajo"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "100",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "408",
+   "u": "LED",
+   "l": "2835 SMD Epistar"
+  }
+ ],
+ "description": [
+  "La luminaria solar ALL IN ONE 500W (modelo LA) integra panel solar, batería y 408 LED 2835 SMD Epistar en un solo cuerpo de plástico ABS, aleación de aluminio y PC. Entrega 6,000 lúmenes de luz blanca (7,500–8,000 K) con índice de color de 80 y ángulo de 70 × 120°. Disponible en 300, 400 y 500 W.",
+  "Su batería LPF 32650 de 3.2 V / 40,000 mAh se carga con un panel de 5 V / 40 W en 6 a 8 horas y trabaja 12 horas por noche. Incluye interruptor frontal, grado de protección IP66, clase energética A, sin mercurio, certificaciones CE y RoHS y 3 años de garantía."
+ ],
+ "features": [
+  {
+   "t": "Todo en uno",
+   "d": "Panel, batería y LED en un solo cuerpo."
+  },
+  {
+   "t": "408 LED Epistar",
+   "d": "2835 SMD de 100 lm/W."
+  },
+  {
+   "t": "12 horas de trabajo",
+   "d": "Batería de 3.2 V / 40,000 mAh."
+  },
+  {
+   "t": "Tres versiones",
+   "d": "300, 400 y 500 W."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 3,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CE",
+   "l": "Certificación"
+  },
+  {
+   "c": "RoHS",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP66",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Wattaje",
+     "500 W (también 300 y 400 W)"
+    ],
+    [
+     "Flujo luminoso",
+     "6,000 lm"
+    ],
+    [
+     "Eficacia",
+     "100 lm/W"
+    ],
+    [
+     "Fuente de luz",
+     "408 LED 2835 SMD Epistar"
+    ],
+    [
+     "Temperatura de color",
+     "7,500–8,000 K"
+    ],
+    [
+     "Índice de color (CRI)",
+     "80"
+    ],
+    [
+     "Ángulo de haz",
+     "70° × 120°"
+    ],
+    [
+     "Clase energética",
+     "A"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Batería",
+     "LPF 32650 / 3.2 V / 40,000 mAh"
+    ],
+    [
+     "Panel",
+     "5 V / 40 W"
+    ],
+    [
+     "Tiempo de carga",
+     "6–8 h"
+    ],
+    [
+     "Tiempo de trabajo",
+     "12 h"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Plástico ABS, aleación de aluminio, PC"
+    ],
+    [
+     "Acabado",
+     "Cuerpo gris, reflector de plástico transparente"
+    ],
+    [
+     "Base",
+     "A poste"
+    ],
+    [
+     "Hermeticidad",
+     "IP66"
+    ],
+    [
+     "Dimensiones",
+     "916 × 365 × 87 mm"
+    ],
+    [
+     "Peso",
+     "7 kg"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-20 °C a 40 °C"
+    ],
+    [
+     "Contenido de mercurio",
+     "0"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Instalación en minutos",
+   "d": "Todo integrado: solo se fija al poste."
+  },
+  {
+   "t": "Sin costo de energía",
+   "d": "Panel solar de 40 W integrado."
+  },
+  {
+   "t": "Hermética",
+   "d": "Grado de protección IP66."
+  },
+  {
+   "t": "Respaldo",
+   "d": "3 años de garantía, CE y RoHS."
+  },
+  {
+   "t": "Toda la noche",
+   "d": "12 horas de trabajo por carga."
+  },
+  {
+   "t": "Ligera",
+   "d": "Solo 7 kg."
+  }
+ ],
+ "applications": [
+  "Jardines",
+  "Caminos rurales",
+  "Calles citadinas",
+  "Parques",
+  "Avenidas",
+  "Carreteras",
+  "Complejos comerciales e industriales"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Alto",
+    "916 mm"
+   ],
+   [
+    "Ancho",
+    "365 mm"
+   ],
+   [
+    "Profundidad",
+    "87 mm"
+   ],
+   [
+    "Peso",
+    "7 kg"
+   ]
+  ]
+ }
+}

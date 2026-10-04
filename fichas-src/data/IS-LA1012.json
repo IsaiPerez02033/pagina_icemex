@@ -1,0 +1,244 @@
+{
+ "model": "ALL IN ONE 500W III",
+ "kind": "Luminaria solar autónoma «FORLED»",
+ "power": "500 W",
+ "variant": "LED Osram · 6,000 K",
+ "hero": "p1_x35",
+ "kpis": [
+  {
+   "v": "500",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "200",
+   "u": "lm/W",
+   "l": "Eficiencia nominal"
+  },
+  {
+   "v": "2",
+   "u": "días",
+   "l": "Autonomía"
+  },
+  {
+   "v": "100,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "10–12",
+   "u": "h",
+   "l": "Iluminación por noche"
+  },
+  {
+   "v": "8–10",
+   "u": "m",
+   "l": "Altura de montaje"
+  }
+ ],
+ "description": [
+  "La luminaria autónoma solar ALL IN ONE 500W está diseñada para alumbrado público, urbano, comercial e industrial. Integra LEDs Osram de alto desempeño, batería de litio desarrollada para luminarias, panel de silicio monocristalino de 5 V / 100 W y regulador de carga en un solo cuerpo de aluminio en acabado plata.",
+  "El sistema mantiene un brillo constante que se ajusta según la capacidad de la batería; un indicador de 4 LED muestra el nivel de carga. Viene configurada para iluminar de 10 a 12 horas por noche, con 2 días de autonomía, óptica asimétrica 2M y operación de -30 a 65 °C. Se recomienda instalar a 8–10 m."
+ ],
+ "features": [
+  {
+   "img": "p2_x81",
+   "t": "Indicador de batería",
+   "d": "4 LED muestran la carga: rojo 25–50%, azul 50–75%, verde 75–100%."
+  },
+  {
+   "img": "p2_x84",
+   "t": "Controlador integrado",
+   "d": "Regulador de carga y batería de litio en caja independiente."
+  },
+  {
+   "img": "p2_x90",
+   "t": "Panel LED ajustable",
+   "d": "Orienta el módulo LED hacia la zona a iluminar."
+  },
+  {
+   "img": "p2_x87",
+   "t": "Fácil instalación",
+   "d": "Punta de poste o brazo tipo L, sin cableado."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 3,
+   "on": "en luminaria"
+  },
+  {
+   "y": 5,
+   "on": "en batería"
+  },
+  {
+   "y": 20,
+   "on": "en panel solar"
+  }
+ ],
+ "certs": [
+  {
+   "c": "NOM-003",
+   "l": "Norma"
+  },
+  {
+   "c": "NOM-031",
+   "l": "Norma"
+  },
+  {
+   "c": "ISO 9001",
+   "l": "Sistema"
+  },
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "500 W"
+    ],
+    [
+     "Fuente luminosa",
+     "LED Osram"
+    ],
+    [
+     "Eficiencia nominal",
+     "200 lm/W"
+    ],
+    [
+     "Óptica",
+     "Asimétrica 2M"
+    ],
+    [
+     "Temperatura de color",
+     "6,000 K"
+    ],
+    [
+     "IRC",
+     "70"
+    ],
+    [
+     "Vida útil",
+     "100,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Panel solar",
+     "Silicio monocristalino 5 V / 100 W"
+    ],
+    [
+     "Batería",
+     "Litio 3.2 V"
+    ],
+    [
+     "Autonomía",
+     "2 días"
+    ],
+    [
+     "Control",
+     "Brillo constante, ajustable según la batería"
+    ],
+    [
+     "Iluminación por noche",
+     "10 a 12 h"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Aluminio"
+    ],
+    [
+     "Acabado",
+     "Plata"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ],
+    [
+     "Montaje",
+     "Punta de poste o brazo tipo L"
+    ],
+    [
+     "Altura de montaje recomendada",
+     "8–10 m"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-30 °C a 65 °C"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6000
+ ],
+ "advantages": [
+  {
+   "t": "Cero costo de energía",
+   "d": "100% solar: sin recibo de luz ni cableado."
+  },
+  {
+   "t": "Instalación rápida",
+   "d": "Sin zanjas ni maquinaria pesada."
+  },
+  {
+   "t": "Opera aunque falle la red",
+   "d": "2 días de autonomía."
+  },
+  {
+   "t": "Alta eficiencia",
+   "d": "LED Osram de 200 lm/W."
+  },
+  {
+   "t": "Garantía extendida",
+   "d": "3 años luminaria · 5 años batería · 20 años panel solar."
+  },
+  {
+   "t": "Certificada",
+   "d": "NOM-003, NOM-031 e ISO 9001."
+  }
+ ],
+ "applications": [
+  "Alumbrado público",
+  "Alumbrado urbano",
+  "Áreas comerciales",
+  "Áreas industriales",
+  "Calles y avenidas",
+  "Estacionamientos"
+ ],
+ "dims": {
+  "img": "p1_x32",
+  "rows": [
+   [
+    "Montaje",
+    "Punta de poste o brazo tipo L"
+   ],
+   [
+    "Altura recomendada",
+    "8–10 m"
+   ]
+  ]
+ },
+ "mount": "Montaje tipo punta de poste o mediante brazo tipo «L», a una altura recomendada de 8–10 m. Se recomienda limpiar periódicamente el panel solar para evitar acumulación de residuos."
+}

@@ -1,0 +1,142 @@
+{
+ "model": "PRISMA ESFERA",
+ "kind": "Luminario de punta de poste tipo esfera",
+ "power": "150 – 175 W",
+ "variant": "VSAP / Aditivo metálico",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "150–175",
+   "u": "W",
+   "l": "Potencia máx."
+  },
+  {
+   "v": "150",
+   "u": "W",
+   "l": "VSAP"
+  },
+  {
+   "v": "E39",
+   "u": "",
+   "l": "Portalámpara mogul"
+  },
+  {
+   "v": "2½",
+   "u": "in",
+   "l": "Punta de poste"
+  }
+ ],
+ "description": [
+  "PRISMA ESFERA es un luminario de punta de poste con porta balastro y base de aluminio puro inyectado a presión. Su refractor es una esfera opalina de acrílico de una sola pieza con estabilizador ultravioleta, de 6 mm de espesor para mayor resistencia al impacto, asegurada a la base de fundición.",
+  "Opera con lámparas de vapor de sodio de alta presión (VSAP) de 150 W o de aditivo metálico de 150 a 175 W, en 110–220 V, con portalámpara de porcelana tipo mogul E39. El recubrimiento de pintura poliéster aplicada electrostáticamente le da mayor resistencia a la corrosión en exteriores."
+ ],
+ "features": [
+  {
+   "t": "Esfera de una pieza",
+   "d": "Acrílico opalino asegurado a la base de fundición."
+  },
+  {
+   "t": "Estabilizador UV",
+   "d": "Evita el amarillamiento por el sol."
+  },
+  {
+   "t": "6 mm de espesor",
+   "d": "Mayor resistencia al impacto."
+  },
+  {
+   "t": "Luz difusa",
+   "d": "Iluminación uniforme a 360°."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Balastro VSAP",
+     "150 W · 110–220 V"
+    ],
+    [
+     "Balastro aditivo metálico",
+     "175 W · 110–220 V / 150 W · 220 V"
+    ],
+    [
+     "Portalámpara",
+     "Porcelana, tipo mogul E39"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Porta balastro y base",
+     "Aluminio puro inyectado a presión"
+    ],
+    [
+     "Acabado",
+     "Pintura tipo poliéster electrostática"
+    ],
+    [
+     "Refractor",
+     "Esfera opalina de acrílico de una pieza, con estabilizador UV"
+    ],
+    [
+     "Espesor de la esfera",
+     "6 mm"
+    ],
+    [
+     "Montaje",
+     "Punta de poste de 2½\""
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Diseño esférico",
+   "d": "Estética que se integra a calles, plazas y zonas residenciales."
+  },
+  {
+   "t": "Resistente a la corrosión",
+   "d": "Aluminio con pintura poliéster electrostática."
+  },
+  {
+   "t": "Esfera resistente",
+   "d": "6 mm de espesor con estabilizador UV."
+  },
+  {
+   "t": "Luz a 360°",
+   "d": "Esfera opalina de iluminación uniforme."
+  },
+  {
+   "t": "Opciones de lámpara",
+   "d": "VSAP o aditivo metálico, en 110–220 V."
+  },
+  {
+   "t": "Instalación sencilla",
+   "d": "Entrada para punta de poste de 2½\"."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Estacionamientos",
+  "Cotos y zonas residenciales"
+ ],
+ "dims": {
+  "img": "p1_x27",
+  "rows": [
+   [
+    "Diámetro",
+    "450 mm"
+   ],
+   [
+    "Alto",
+    "760 mm"
+   ]
+  ]
+ }
+}

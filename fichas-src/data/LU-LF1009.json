@@ -1,0 +1,223 @@
+{
+ "model": "FORNAX",
+ "kind": "Bolardo LED de aluminio",
+ "power": "30 W",
+ "variant": "100–277 V",
+ "hero": "p1_x23",
+ "kpis": [
+  {
+   "v": "30",
+   "u": "W",
+   "l": "Consumo"
+  },
+  {
+   "v": "2,344",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Protección"
+  },
+  {
+   "v": "5",
+   "u": "años",
+   "l": "Garantía"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "80",
+   "u": "",
+   "l": "IRC"
+  },
+  {
+   "v": "30,000",
+   "u": "h",
+   "l": "Horas de vida"
+  }
+ ],
+ "description": [
+  "FORNAX es un bolardo LED de aluminio en acabado negro, de 2.5 m de altura y 160 mm de diámetro, para sobreponer en piso. Su difusor de 570 mm entrega 2,344 lúmenes de luz cálida brillante con IRC de 80 y un consumo de solo 30 W.",
+  "Opera de 100 a 277 V, 50/60 Hz, con factor de potencia de 0.9, grado de protección IP65 y temperatura de operación de -40 a 40 °C. Tiene 30,000 horas de vida, certificación NOM-003 y 5 años de garantía. No es compatible con sensores IR, sensores de proximidad ni equipos con fotocelda."
+ ],
+ "features": [
+  {
+   "t": "Luz cálida brillante",
+   "d": "2,344 lm con IRC de 80."
+  },
+  {
+   "t": "Multivoltaje",
+   "d": "100–277 V, 50/60 Hz."
+  },
+  {
+   "t": "Aluminio negro",
+   "d": "Carcasa resistente a la intemperie."
+  },
+  {
+   "t": "Certificado NOM-003",
+   "d": "Con 5 años de garantía."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 5,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "NOM-003",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP65",
+   "l": "Protección"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Flujo luminoso",
+     "2,344 lm"
+    ],
+    [
+     "Temperatura de color",
+     "Luz cálida brillante"
+    ],
+    [
+     "IRC",
+     "80"
+    ],
+    [
+     "Horas de vida",
+     "30,000 h"
+    ],
+    [
+     "Atenuable",
+     "No"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Modelo",
+     "30HLED2500MV30N"
+    ],
+    [
+     "Tensión nominal",
+     "100–277 V"
+    ],
+    [
+     "Consumo",
+     "30 W"
+    ],
+    [
+     "Frecuencia",
+     "50/60 Hz"
+    ],
+    [
+     "Corriente",
+     "0.30–0.11 A"
+    ],
+    [
+     "Factor de potencia",
+     "0.9"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Carcasa",
+     "Aluminio"
+    ],
+    [
+     "Acabado",
+     "Negro"
+    ],
+    [
+     "Protección",
+     "IP65"
+    ],
+    [
+     "Montaje",
+     "Sobreponer en piso"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-40 °C a 40 °C"
+    ],
+    [
+     "Compatibilidad",
+     "No compatible con sensores IR, de proximidad ni fotocelda"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Bajo consumo",
+   "d": "30 W."
+  },
+  {
+   "t": "Certificado",
+   "d": "NOM-003."
+  },
+  {
+   "t": "Respaldo",
+   "d": "5 años de garantía."
+  },
+  {
+   "t": "Exteriores",
+   "d": "IP65 y -40 a 40 °C."
+  },
+  {
+   "t": "Multivoltaje",
+   "d": "100–277 V."
+  },
+  {
+   "t": "Diseño limpio",
+   "d": "Aluminio negro de 2.5 m."
+  }
+ ],
+ "applications": [
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Andadores",
+  "Cotos y zonas residenciales",
+  "Centros y locales comerciales"
+ ],
+ "dims": {
+  "img": "p1_x26",
+  "rows": [
+   [
+    "Altura",
+    "2,500 mm"
+   ],
+   [
+    "Difusor",
+    "570 mm"
+   ],
+   [
+    "Diámetro",
+    "160 mm"
+   ],
+   [
+    "Base",
+    "250 mm"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,197 @@
+{
+ "model": "AGATA",
+ "kind": "Luminaria LED de diseño clásico para punta de poste",
+ "power": "30 – 100 W",
+ "variant": "LED CREE · driver Philips",
+ "hero": "p1_x27",
+ "kpis": [
+  {
+   "v": "30–100",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "125",
+   "u": "lm/W",
+   "l": "Eficiencia nominal"
+  },
+  {
+   "v": "200,000",
+   "u": "h",
+   "l": "Horas de vida"
+  },
+  {
+   "v": "10",
+   "u": "años",
+   "l": "Garantía"
+  }
+ ],
+ "description": [
+  "AGATA es una luminaria de diseño clásico con cuerpo de aluminio puro inyectado a presión y excelentes acabados, cubierta con pintura tipo poliéster aplicada electrostáticamente para mayor resistencia a la corrosión. Su refractor de policarbonato ofrece una distribución lumínica eficiente y resiste el impacto.",
+  "Integra el sistema Plus LED Circular de CREE con óptica simétrica o asimétrica y driver programable Philips de 120–277 V con atenuación 0–10 V y supresor de picos de 10 kV. Eficiencia nominal de 125 lm/W, 200,000 horas de vida y 10 años de garantía."
+ ],
+ "features": [
+  {
+   "t": "Plus LED Circular CREE",
+   "d": "Óptica simétrica o asimétrica."
+  },
+  {
+   "t": "Driver programable Philips",
+   "d": "Atenuación 0–10 V."
+  },
+  {
+   "t": "Supresor de 10 kV",
+   "d": "Protección contra sobretensiones."
+  },
+  {
+   "t": "Refractor de policarbonato",
+   "d": "Resistente al impacto."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 10,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CREE",
+   "l": "LED"
+  },
+  {
+   "c": "Philips",
+   "l": "Driver"
+  },
+  {
+   "c": "10 kV",
+   "l": "Sobretensión"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "30–100 W"
+    ],
+    [
+     "Tecnología",
+     "Plus LED Circular / CREE"
+    ],
+    [
+     "Óptica",
+     "Simétrica / asimétrica"
+    ],
+    [
+     "Eficiencia nominal",
+     "125 lm/W"
+    ],
+    [
+     "Horas de vida",
+     "200,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Equipo",
+     "Driver programable Philips 120–277 V"
+    ],
+    [
+     "Control",
+     "Atenuable 0–10 V"
+    ],
+    [
+     "Supresor de picos",
+     "10 kV"
+    ],
+    [
+     "Distorsión armónica",
+     "< 20%"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Aluminio / policarbonato"
+    ],
+    [
+     "Acabado",
+     "Negro, pintura poliéster electrostática"
+    ],
+    [
+     "Montaje",
+     "Punta de poste / niple de 2.5\""
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-30 °C a 40 °C"
+    ]
+   ]
+  }
+ ],
+ "photometry": "p1_x33",
+ "advantages": [
+  {
+   "t": "Garantía de 10 años",
+   "d": "Respaldo para proyectos de largo plazo."
+  },
+  {
+   "t": "Vida de 200,000 h",
+   "d": "Mínimo mantenimiento."
+  },
+  {
+   "t": "Atenuable",
+   "d": "Control 0–10 V para ahorrar energía."
+  },
+  {
+   "t": "Componentes de marca",
+   "d": "LED CREE y driver Philips."
+  },
+  {
+   "t": "Protección eléctrica",
+   "d": "Supresor de picos de 10 kV."
+  },
+  {
+   "t": "Diseño clásico",
+   "d": "Para centros históricos, plazas y jardines."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Plazas y explanadas",
+  "Estacionamientos",
+  "Áreas recreativas",
+  "Cotos y zonas residenciales"
+ ],
+ "dims": {
+  "img": "p1_x30",
+  "rows": [
+   [
+    "Ancho",
+    "600 mm"
+   ],
+   [
+    "Alto",
+    "950 mm"
+   ],
+   [
+    "Acoplamiento",
+    "76 mm"
+   ]
+  ]
+ }
+}

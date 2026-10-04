@@ -1,0 +1,129 @@
+{
+ "model": "ICELUM-3W",
+ "kind": "Bolardo LED solar autónomo",
+ "power": "3 W",
+ "variant": "Solar · 12 h sin atenuación",
+ "hero": "p1_x17",
+ "photo2": "p1_x269",
+ "kpis": [
+  {
+   "v": "3",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "12",
+   "u": "h",
+   "l": "Sin atenuación"
+  },
+  {
+   "v": "100",
+   "u": "%",
+   "l": "Luz toda la noche"
+  },
+  {
+   "v": "70",
+   "u": "cm",
+   "l": "Altura"
+  }
+ ],
+ "description": [
+  "ICELUM-3W es un bolardo LED solar autónomo para jardines y andadores: se instala sin cableado ni consumo de la red eléctrica. Ilumina al 100% durante 12 horas continuas, toda la noche, sin atenuación, interrupciones ni pérdidas de energía.",
+  "Su sistema de gestión patentado monitorea y controla la carga y descarga de las celdas de forma equilibrada, optimizando el rendimiento y prolongando la vida útil de la batería. El panel solar está integrado en la tapa superior y el cuerpo lleva acabado en pintura electrostática."
+ ],
+ "features": [
+  {
+   "t": "12 horas al 100%",
+   "d": "Sin atenuación durante toda la noche."
+  },
+  {
+   "t": "Gestión patentada",
+   "d": "Carga y descarga equilibrada de las celdas."
+  },
+  {
+   "t": "Panel integrado",
+   "d": "En la tapa superior, sin cableado."
+  },
+  {
+   "t": "Pintura electrostática",
+   "d": "Para exteriores."
+  }
+ ],
+ "certs": [
+  {
+   "c": "Solar",
+   "l": "Autónomo"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Sistema",
+   "rows": [
+    [
+     "Potencia",
+     "3 W"
+    ],
+    [
+     "Alimentación",
+     "Solar, panel integrado"
+    ],
+    [
+     "Autonomía",
+     "12 h continuas al 100%"
+    ],
+    [
+     "Gestión de batería",
+     "Sistema patentado de carga y descarga equilibrada"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Altura",
+     "70 cm"
+    ],
+    [
+     "Acabado",
+     "Pintura electrostática"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Cero consumo eléctrico",
+   "d": "Energía 100% solar."
+  },
+  {
+   "t": "Sin obra civil",
+   "d": "No requiere cableado."
+  },
+  {
+   "t": "Luz constante",
+   "d": "12 horas sin atenuación."
+  },
+  {
+   "t": "Batería protegida",
+   "d": "Gestión patentada que prolonga su vida."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Parques y jardines",
+  "Cotos y zonas residenciales",
+  "Áreas recreativas",
+  "Universidades",
+  "Andadores, patios, corredores y pasillos"
+ ],
+ "dims": {
+  "img": "p1_x277",
+  "rows": [
+   [
+    "Altura",
+    "70 cm"
+   ]
+  ]
+ }
+}

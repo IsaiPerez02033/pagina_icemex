@@ -1,0 +1,160 @@
+{
+ "model": "BOLARD F4 A1",
+ "kind": "Bolardo LED ornamental",
+ "power": "30 W",
+ "variant": "127–220 V · Luz blanca",
+ "hero": "p1_x29",
+ "kpis": [
+  {
+   "v": "30",
+   "u": "W",
+   "l": "3 tubos de 10 W"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  },
+  {
+   "v": "50",
+   "u": "%",
+   "l": "Ahorro de energía"
+  },
+  {
+   "v": "4",
+   "u": "in",
+   "l": "Difusor"
+  }
+ ],
+ "description": [
+  "El Bolard F4 A1 es un bolardo LED ornamental de tubo de acero con difusor tubular de policarbonato de 4\" de diámetro exterior y guarda 100% de aluminio. Su fuente de luz blanca consta de tres tubos LED de 10 W (30 W en total) a 127–220 V.",
+  "Ofrece 50,000 horas de vida, alta eficiencia lumínica y hasta 50% de ahorro de energía, con gran ahorro en costos de mantenimiento y sin materiales contaminantes. El acabado es de pintura electrostática tipo poliéster resistente a los rayos UV, en gris claro, gris obscuro o colores especiales como Nu-Black."
+ ],
+ "features": [
+  {
+   "img": "p1_x29",
+   "t": "Tres tubos LED",
+   "d": "10 W cada uno, 30 W en total."
+  },
+  {
+   "img": "p1_x32",
+   "t": "Guarda de aluminio",
+   "d": "Protege el difusor de policarbonato."
+  },
+  {
+   "img": "p1_x35",
+   "t": "Tubo ornamental",
+   "d": "Acero con pintura poliéster UV.",
+   "mode": "drawing"
+  },
+  {
+   "img": "p1_x29@0,0,1,0.3",
+   "t": "Luz blanca",
+   "d": "Alta eficiencia lumínica."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Fuente de luz",
+     "3 tubos LED de 10 W"
+    ],
+    [
+     "Potencia total",
+     "30 W"
+    ],
+    [
+     "Tono de luz",
+     "Blanca"
+    ],
+    [
+     "Voltaje",
+     "127–220 V"
+    ],
+    [
+     "Vida útil",
+     "50,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Poste",
+     "Tubo de acero ornamental"
+    ],
+    [
+     "Difusor",
+     "Acrílico tubular de policarbonato, 4\" exterior"
+    ],
+    [
+     "Guarda",
+     "100% aluminio"
+    ],
+    [
+     "Acabado",
+     "Pintura electrostática poliéster resistente a UV"
+    ],
+    [
+     "Colores",
+     "Gris claro, gris obscuro, especiales (Nu-Black)"
+    ],
+    [
+     "Faldón ornamental",
+     "No incluido"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Larga vida",
+   "d": "50,000 horas."
+  },
+  {
+   "t": "Ahorro de energía",
+   "d": "Hasta 50%."
+  },
+  {
+   "t": "Bajo mantenimiento",
+   "d": "Gran ahorro en costos."
+  },
+  {
+   "t": "100% ecológico",
+   "d": "Sin materiales contaminantes."
+  },
+  {
+   "t": "Resistente a UV",
+   "d": "Pintura poliéster."
+  },
+  {
+   "t": "Colores a elegir",
+   "d": "Gris claro, obscuro o especiales."
+  }
+ ],
+ "applications": [
+  "Jardines",
+  "Plazas",
+  "Avenidas",
+  "Espacios urbanos",
+  "Áreas recreativas",
+  "Parques"
+ ],
+ "dims": {
+  "img": "p1_x35",
+  "rows": [
+   [
+    "Difusor",
+    "4\" exterior"
+   ],
+   [
+    "Altura de referencia",
+    "2.65 m"
+   ]
+  ]
+ }
+}

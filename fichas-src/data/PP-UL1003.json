@@ -1,0 +1,224 @@
+{
+ "model": "URBAN LED",
+ "kind": "Luminario ornamental LED de punta de poste",
+ "power": "80 W",
+ "variant": "7,900 lm",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "80",
+   "u": "W",
+   "l": "Consumo total"
+  },
+  {
+   "v": "7,900",
+   "u": "lm",
+   "l": "Flujo de salida"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "5",
+   "u": "años",
+   "l": "Garantía"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "85",
+   "u": "Ra",
+   "l": "IRC"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida promedio L70"
+  }
+ ],
+ "description": [
+  "URBAN LED (Urban City) es un luminario ornamental para punta de poste con cuerpo de aluminio inyectado, reflector de aluminio blanco de alta reflexión, curva tipo V y difusor de acrílico opalino, en acabado de pintura horneada micropulverizada color grafito.",
+  "Con tecnología LED y 80 W de consumo entrega 7,900 lúmenes a 4,000 K con IRC de 85 y apertura de 120°. Su driver electrónico multivoltaje integrado opera de 127 a 277 V, 60 Hz, con factor de potencia mayor a 0.94 y THD menor a 20%. Ideal para parques, ciclopistas y áreas peatonales."
+ ],
+ "features": [
+  {
+   "t": "Reflector de alta reflexión",
+   "d": "Aluminio blanco con curva tipo V."
+  },
+  {
+   "t": "Difusor opalino",
+   "d": "Luz uniforme y sin deslumbramiento."
+  },
+  {
+   "t": "Driver multivoltaje",
+   "d": "127–277 V, FP > 0.94, THD < 20%."
+  },
+  {
+   "t": "IRC 85",
+   "d": "Colores naturales a 4,000 K."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 5,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Consumo total",
+     "80 W"
+    ],
+    [
+     "Flujo de salida",
+     "7,900 lm"
+    ],
+    [
+     "Tecnología",
+     "LED"
+    ],
+    [
+     "Temperatura de color",
+     "4,000 K"
+    ],
+    [
+     "IRC",
+     "85 Ra"
+    ],
+    [
+     "Ángulo de apertura",
+     "120°"
+    ],
+    [
+     "Vida promedio",
+     "50,000 h (L70)"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Equipo",
+     "Driver electrónico multivoltaje integrado"
+    ],
+    [
+     "Voltaje de entrada",
+     "127–277 V~"
+    ],
+    [
+     "Frecuencia",
+     "60 Hz"
+    ],
+    [
+     "Factor de potencia",
+     "> 0.94"
+    ],
+    [
+     "Corriente de entrada",
+     "0.643–0.307 A"
+    ],
+    [
+     "THD",
+     "< 20%"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Aluminio inyectado"
+    ],
+    [
+     "Reflector",
+     "Aluminio blanco de alta reflexión, curva tipo V"
+    ],
+    [
+     "Difusor",
+     "Acrílico opalino"
+    ],
+    [
+     "Acabado",
+     "Pintura horneada micropulverizada, color grafito"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ],
+    [
+     "Instalación",
+     "Punta de poste"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "50 °C"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  4000
+ ],
+ "advantages": [
+  {
+   "t": "Luz confortable",
+   "d": "Difusor opalino e IRC de 85."
+  },
+  {
+   "t": "Respaldo",
+   "d": "5 años de garantía."
+  },
+  {
+   "t": "Multivoltaje",
+   "d": "127 a 277 V."
+  },
+  {
+   "t": "Calidad eléctrica",
+   "d": "FP > 0.94 y THD < 20%."
+  },
+  {
+   "t": "Exteriores",
+   "d": "Grado de protección IP65."
+  },
+  {
+   "t": "Diseño urbano",
+   "d": "Acabado grafito para espacios públicos."
+  }
+ ],
+ "applications": [
+  "Parques",
+  "Ciclopistas",
+  "Áreas peatonales"
+ ],
+ "dims": {
+  "img": "p1_x27",
+  "rows": [
+   [
+    "Ancho",
+    "520 mm"
+   ],
+   [
+    "Alto",
+    "836 mm"
+   ]
+  ]
+ }
+}

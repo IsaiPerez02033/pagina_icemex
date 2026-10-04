@@ -1,0 +1,213 @@
+{
+ "model": "URBLED 500W",
+ "kind": "Luminaria LED solar de alta potencia",
+ "power": "500 W",
+ "variant": "6,500 K",
+ "hero": "p1_x269",
+ "photo2": "p1_x272",
+ "kpis": [
+  {
+   "v": "500",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "50,000",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida útil"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": ">0.9",
+   "u": "",
+   "l": "Factor de potencia"
+  },
+  {
+   "v": "<20",
+   "u": "%",
+   "l": "THD"
+  }
+ ],
+ "description": [
+  "URBLED-500W es una luminaria LED solar de alta potencia con batería interna recargable y operación en bajo voltaje (3.2 V c.d.). Entrega 50,000 lúmenes de luz blanca (6,500 K) en un cuerpo de aleación metálica de 90 × 39 × 4.5 cm y solo 6.1 kg.",
+  "Se controla automáticamente por nivel de luz ambiental o con control remoto, con modos automáticos, temporizados o de encendido nocturno. Tiene grado de protección IP65, opera de -10 a 50 °C, con factor de potencia mayor a 0.9 y distorsión armónica total menor a 20%."
+ ],
+ "features": [
+  {
+   "img": "p1_x269",
+   "t": "Panel integrado",
+   "d": "Batería interna recargable, sin conexión eléctrica."
+  },
+  {
+   "img": "p1_x272",
+   "t": "Control remoto",
+   "d": "Modos automático, temporizado o encendido nocturno."
+  },
+  {
+   "img": "p1_x269",
+   "t": "Alta potencia lumínica",
+   "d": "50,000 lm para accesos, perímetros y áreas abiertas."
+  },
+  {
+   "img": "p1_x272",
+   "t": "Ligera",
+   "d": "90 × 39 × 4.5 cm y 6.1 kg."
+  }
+ ],
+ "certs": [
+  {
+   "c": "IP65",
+   "l": "Hermeticidad"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia",
+     "500 W"
+    ],
+    [
+     "Flujo luminoso",
+     "50,000 lm"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "Vida útil nominal",
+     "50,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Alimentación",
+     "Energía solar"
+    ],
+    [
+     "Voltaje de operación",
+     "3.2 V c.d. (bajo voltaje)"
+    ],
+    [
+     "Almacenamiento",
+     "Batería interna recargable"
+    ],
+    [
+     "Factor de potencia",
+     "> 0.9"
+    ],
+    [
+     "Distorsión armónica total (THD)",
+     "< 20%"
+    ],
+    [
+     "Control",
+     "Automático por nivel de luz ambiental / control remoto"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Aleación de metal"
+    ],
+    [
+     "Dimensiones",
+     "90 × 39 × 4.5 cm"
+    ],
+    [
+     "Peso",
+     "6.10 kg"
+    ],
+    [
+     "Hermeticidad",
+     "IP65"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-10 a 50 °C"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Sin conexión eléctrica",
+   "d": "100% solar, ideal para proyectos sustentables."
+  },
+  {
+   "t": "Iluminación potente",
+   "d": "50,000 lm para seguridad perimetral y accesos."
+  },
+  {
+   "t": "Modos de operación",
+   "d": "Automático, temporizado o encendido nocturno."
+  },
+  {
+   "t": "Calidad eléctrica",
+   "d": "FP > 0.9 y THD < 20%."
+  },
+  {
+   "t": "Exteriores",
+   "d": "IP65, de -10 a 50 °C."
+  },
+  {
+   "t": "Fácil de instalar",
+   "d": "Solo 6.1 kg."
+  }
+ ],
+ "applications": [
+  "Jardines, patios y fachadas",
+  "Accesos y estacionamientos",
+  "Pasillos, caminos y perímetros",
+  "Parques, terrazas y áreas comunes",
+  "Aplicaciones de seguridad",
+  "Proyectos sustentables"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Largo",
+    "90 cm"
+   ],
+   [
+    "Ancho",
+    "39 cm"
+   ],
+   [
+    "Alto",
+    "4.5 cm"
+   ],
+   [
+    "Peso",
+    "6.10 kg"
+   ]
+  ]
+ }
+}

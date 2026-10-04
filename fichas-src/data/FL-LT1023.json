@@ -1,0 +1,191 @@
+{
+ "model": "FOCO DE LED 70W",
+ "kind": "Lámpara LED retrofit de alta potencia",
+ "power": "70 – 100 W",
+ "variant": "E27 + adaptador E40 · 100–277 V",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "70–100",
+   "u": "W",
+   "l": "Potencias"
+  },
+  {
+   "v": "9,500",
+   "u": "lm",
+   "l": "Flujo máx."
+  },
+  {
+   "v": "85",
+   "u": "%",
+   "l": "Ahorro de energía"
+  },
+  {
+   "v": "3",
+   "u": "años",
+   "l": "Garantía"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "95",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "220",
+   "u": "°",
+   "l": "Apertura"
+  }
+ ],
+ "description": [
+  "El Foco de LED 70W es una solución retrofit para reemplazar lámparas fluorescentes compactas autobalastradas de alta potencia en bodegas, naves, comercios y áreas de trabajo. Su óptica integrada en un difusor opalino mantiene la uniformidad total en la emisión de luz, con apertura de 220°.",
+  "Se ofrece en 70 y 100 W con base E27 y adaptador a E40, de 6,600 a 9,500 lúmenes y eficacia de hasta 95 lm/W a 6,500 K, con factor de potencia de 0.9 y 25,000 horas de vida. El driver integrado multivoltaje de 100 a 277 V protege contra variaciones de tensión, y el cuerpo de policarbonato con disipador de aluminio asegura su durabilidad. Libre de mercurio, ahorra hasta 85% de energía y tiene 3 años de garantía."
+ ],
+ "features": [
+  {
+   "t": "Retrofit directo",
+   "d": "Sustituye fluorescentes compactas de alta potencia."
+  },
+  {
+   "t": "Difusor opalino",
+   "d": "Emisión uniforme a 220°."
+  },
+  {
+   "t": "Adaptador E40",
+   "d": "Base E27 con adaptador incluido."
+  },
+  {
+   "t": "Sin mercurio",
+   "d": "Tecnología LED limpia."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 3,
+   "on": "en condiciones normales de operación"
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Modelos",
+   "rows": [
+    [
+     "P507080",
+     "70 W · 6,600 lm · 94 lm/W"
+    ],
+    [
+     "P507081",
+     "100 W · 9,500 lm · 95 lm/W"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión de operación",
+     "100–277 V"
+    ],
+    [
+     "Factor de potencia",
+     "0.9"
+    ],
+    [
+     "Driver",
+     "Electrónico integrado"
+    ],
+    [
+     "Base",
+     "E27 + adaptador E40"
+    ]
+   ]
+  },
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "IRC",
+     "> 80"
+    ],
+    [
+     "Ángulo de apertura",
+     "220°"
+    ],
+    [
+     "Vida útil",
+     "25,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Material",
+     "Policarbonato con disipación de aluminio"
+    ],
+    [
+     "Temperatura de operación",
+     "-20 °C a 40 °C"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "photometry": "p1_x33",
+ "advantages": [
+  {
+   "t": "Ahorro de energía",
+   "d": "Hasta 85%."
+  },
+  {
+   "t": "Alta eficacia",
+   "d": "Hasta 95 lm/W."
+  },
+  {
+   "t": "Protegido",
+   "d": "Driver multivoltaje 100–277 V."
+  },
+  {
+   "t": "Libre de mercurio",
+   "d": "Más seguro y ecológico."
+  },
+  {
+   "t": "Luz uniforme",
+   "d": "Difusor opalino a 220°."
+  },
+  {
+   "t": "Respaldo",
+   "d": "3 años de garantía."
+  }
+ ],
+ "applications": [
+  "Reemplazo de lámparas incandescentes y fluorescentes",
+  "Iluminación general",
+  "Iluminación industrial",
+  "Comercios",
+  "Bodegas",
+  "Almacenes"
+ ],
+ "dims": {
+  "img": "p1_x27",
+  "rows": [
+   [
+    "70 W",
+    "225 × 120 mm · 0.664 kg"
+   ],
+   [
+    "100 W",
+    "245 × 140 mm · 1.03 kg"
+   ]
+  ]
+ }
+}

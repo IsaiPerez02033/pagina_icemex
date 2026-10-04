@@ -1,0 +1,175 @@
+{
+ "model": "SL-1",
+ "kind": "Luminaria solar para parques y espacios públicos",
+ "power": "400 W",
+ "variant": "4,800 lm",
+ "hero": "p1_x24",
+ "photo2": "p1_x38",
+ "kpis": [
+  {
+   "v": "4,800",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "41",
+   "u": "W",
+   "l": "Panel solar"
+  },
+  {
+   "v": "20",
+   "u": "Ah",
+   "l": "Batería LiFePO4"
+  },
+  {
+   "v": ">21.3",
+   "u": "%",
+   "l": "Eficiencia del panel"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "95",
+   "u": "%",
+   "l": "Profundidad de descarga"
+  },
+  {
+   "v": "13",
+   "u": "años",
+   "l": "Vida de la batería"
+  }
+ ],
+ "description": [
+  "SL-1 es una luminaria solar de diseño circular para parques, plazas y espacios públicos. Su panel solar grado A+ (cada uno con curva IV completa) tiene una eficiencia de conversión mayor a 21.3%, y su batería LiFePO4 alcanza una profundidad de descarga de 95% con vida útil de hasta 13 años.",
+  "Usa LED de bajo voltaje de alta eficiencia, lente óptica de policarbonato con eficiencia luminosa de hasta 95% y un reflector de diseño innovador. La carcasa es de aluminio anticorrosión. Su modo de suspensión predeterminado prolonga la autonomía y garantiza las primeras 4 horas con alto brillo; incluye control remoto para encendido, apagado, duración y brillo."
+ ],
+ "features": [
+  {
+   "img": "p1_x35",
+   "t": "Panel A+",
+   "d": "Eficiencia de conversión mayor a 21.3%."
+  },
+  {
+   "img": "p1_x38",
+   "t": "Lente óptica de PC",
+   "d": "Eficiencia luminosa de hasta 95%."
+  },
+  {
+   "img": "p1_x27",
+   "t": "Reflector innovador",
+   "d": "Alta reflexión que aumenta el brillo.",
+   "light": false
+  },
+  {
+   "img": "p1_x33",
+   "t": "Control remoto",
+   "d": "Encendido, apagado, duración y brillo."
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Modelo",
+     "SL-1 400W"
+    ],
+    [
+     "Flujo luminoso",
+     "4,800 lm"
+    ],
+    [
+     "LED",
+     "Bajo voltaje, alta eficiencia"
+    ],
+    [
+     "Lente",
+     "Policarbonato óptico, eficiencia hasta 95%"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema solar",
+   "rows": [
+    [
+     "Panel solar",
+     "41 W, grado A+, eficiencia > 21.3%"
+    ],
+    [
+     "Batería",
+     "LiFePO4 20 Ah"
+    ],
+    [
+     "Profundidad de descarga",
+     "95%"
+    ],
+    [
+     "Vida de la batería",
+     "Hasta 13 años"
+    ],
+    [
+     "Control",
+     "Automático y control remoto"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Carcasa",
+     "Aluminio anticorrosión"
+    ],
+    [
+     "Dimensiones",
+     "Ø 624 × 184.3 mm"
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Batería de larga vida",
+   "d": "LiFePO4 de hasta 13 años y 95% de descarga útil."
+  },
+  {
+   "t": "Panel de alta eficiencia",
+   "d": "Grado A+ con más de 21.3% de conversión."
+  },
+  {
+   "t": "Más luz útil",
+   "d": "Lente de PC y reflector de alta eficiencia."
+  },
+  {
+   "t": "Control a distancia",
+   "d": "Ajuste de brillo y horario con control remoto."
+  },
+  {
+   "t": "Mayor autonomía",
+   "d": "Modo de suspensión predeterminado."
+  },
+  {
+   "t": "Estética",
+   "d": "Diseño circular de aluminio para espacios públicos."
+  }
+ ],
+ "applications": [
+  "Parques",
+  "Plazas",
+  "Jardines",
+  "Andadores",
+  "Espacios públicos"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Diámetro",
+    "624 mm"
+   ],
+   [
+    "Alto",
+    "184.3 mm"
+   ]
+  ]
+ }
+}

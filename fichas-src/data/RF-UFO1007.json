@@ -1,0 +1,241 @@
+{
+ "model": "LUMINARIA UFO",
+ "kind": "Campana LED industrial con lupas",
+ "power": "100 – 200 W",
+ "variant": "AC 85–265 V",
+ "hero": "p1_x26",
+ "kpis": [
+  {
+   "v": "100",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "10,000",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "IP65",
+   "u": "",
+   "l": "Protección"
+  },
+  {
+   "v": "2",
+   "u": "años",
+   "l": "Garantía"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "100",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "50,000",
+   "u": "h",
+   "l": "Vida promedio"
+  }
+ ],
+ "description": [
+  "La Luminaria UFO es una campana de uso industrial con cubierta reflectora de lupas transparentes que magnifican el alcance de los LEDs. Su sólida construcción en aleación de aluminio se instala en techos o vigas mediante su argolla reforzada, en interiores o exteriores.",
+  "La versión de 100 W usa 120 LEDs SMD 2835 Epistar y entrega 10,000 lúmenes (100 lm/W) a 6,500 K con CRI de 80, ángulo de 120° y distribución circundante. Opera de 85 a 265 V con factor de potencia de 0.9, IP65, de -45 a 60 °C, sin mercurio, con certificaciones CE y RoHS y 2 años de garantía. También en 200 W; consulta las versiones sin pantalla."
+ ],
+ "features": [
+  {
+   "t": "Reflector de lupas",
+   "d": "Magnifica el alcance de los LEDs."
+  },
+  {
+   "t": "Argolla reforzada",
+   "d": "Instalación en techos o vigas."
+  },
+  {
+   "t": "120 LEDs Epistar",
+   "d": "SMD 2835, 10,000 lm."
+  },
+  {
+   "t": "IP65",
+   "d": "Interiores y exteriores."
+  }
+ ],
+ "warranty": [
+  {
+   "y": 2,
+   "on": "en luminaria"
+  }
+ ],
+ "certs": [
+  {
+   "c": "CE",
+   "l": "Certificación"
+  },
+  {
+   "c": "RoHS",
+   "l": "Certificación"
+  },
+  {
+   "c": "IP65",
+   "l": "Protección"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Fuente de luz",
+     "120 LEDs SMD 2835 Epistar"
+    ],
+    [
+     "Flujo luminoso",
+     "10,000 lm"
+    ],
+    [
+     "Eficacia",
+     "100 lm/W"
+    ],
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "CRI",
+     "80"
+    ],
+    [
+     "Ángulo",
+     "120°"
+    ],
+    [
+     "Distribución",
+     "Circundante"
+    ],
+    [
+     "Vida promedio",
+     "50,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Potencia",
+     "100 W (versión de 200 W)"
+    ],
+    [
+     "Voltaje",
+     "AC 85–265 V"
+    ],
+    [
+     "Frecuencia",
+     "50/60 Hz"
+    ],
+    [
+     "Factor de potencia",
+     "0.9"
+    ],
+    [
+     "Fuente de poder",
+     "Driver trasero integrado"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Material",
+     "Aleación de aluminio, plástico ABS"
+    ],
+    [
+     "Acabado",
+     "Cuerpo negro, reflector de plástico con lupas transparentes"
+    ],
+    [
+     "Medidas",
+     "Ø 300 × 130 mm"
+    ],
+    [
+     "Peso",
+     "1.52 kg"
+    ],
+    [
+     "Origen",
+     "China"
+    ]
+   ]
+  },
+  {
+   "name": "Ambiental",
+   "rows": [
+    [
+     "Temperatura de operación",
+     "-45 °C a 60 °C"
+    ],
+    [
+     "Protección",
+     "IP65"
+    ],
+    [
+     "Mercurio",
+     "0"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Mayor alcance",
+   "d": "Lupas que concentran la luz."
+  },
+  {
+   "t": "Instalación rápida",
+   "d": "Argolla para techo o viga."
+  },
+  {
+   "t": "Certificada",
+   "d": "CE y RoHS."
+  },
+  {
+   "t": "Robusta",
+   "d": "IP65, de -45 a 60 °C."
+  },
+  {
+   "t": "Ligera",
+   "d": "1.52 kg."
+  },
+  {
+   "t": "Respaldo",
+   "d": "2 años de garantía."
+  }
+ ],
+ "applications": [
+  "Talleres",
+  "Fábricas",
+  "Patios",
+  "Estacionamientos",
+  "Almacenes"
+ ],
+ "dims": {
+  "rows": [
+   [
+    "Diámetro",
+    "300 mm"
+   ],
+   [
+    "Profundidad",
+    "130 mm"
+   ],
+   [
+    "Peso",
+    "1.52 kg"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,204 @@
+{
+ "model": "FOCO DE LED",
+ "kind": "Lámpara LED de alta potencia tipo bulbo",
+ "power": "20 – 40 W",
+ "variant": "Base E26 · 100–277 V",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "20–40",
+   "u": "W",
+   "l": "Potencias"
+  },
+  {
+   "v": "3,200",
+   "u": "lm",
+   "l": "Flujo máx."
+  },
+  {
+   "v": "80",
+   "u": "%",
+   "l": "Ahorro de energía"
+  },
+  {
+   "v": "3",
+   "u": "años",
+   "l": "Garantía"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "6,500",
+   "u": "K",
+   "l": "Luz blanca fría"
+  },
+  {
+   "v": "160",
+   "u": "°",
+   "l": "Apertura"
+  }
+ ],
+ "description": [
+  "El Foco de LED es una lámpara de alta potencia y alto flujo luminoso para reemplazar directamente focos incandescentes y ahorradores, con ahorro de hasta 80% de energía a flujo similar. Su iluminación omnidireccional, con apertura de 160°, cubre el espacio de forma uniforme, y su tecnología de chip LED SMD no emite radiación UV.",
+  "Se fabrica en policarbonato con disipador de aluminio y driver electrónico integrado, multivoltaje de 100 a 277 V. Se ofrece en 20, 30 y 40 W con base E26, de 1,600 a 3,200 lúmenes a 6,500 K con IRC mayor a 80, y cuenta con 3 años de garantía en condiciones normales de operación. Para mayor potencia, consulta el Foco de LED de 70 y 100 W."
+ ],
+ "features": [
+  {
+   "img": "p1_x39",
+   "t": "Iluminación omnidireccional",
+   "d": "Apertura de 160° para cobertura uniforme."
+  },
+  {
+   "img": "p1_x24",
+   "t": "Chip LED SMD",
+   "d": "Sin radiación UV."
+  },
+  {
+   "img": "p1_x36",
+   "t": "Disipador de aluminio",
+   "d": "Cuerpo de policarbonato robusto.",
+   "mode": "drawing"
+  },
+  {
+   "img": "p1_x27",
+   "t": "Base E26",
+   "d": "Reemplazo directo, sin adaptaciones.",
+   "mode": "drawing"
+  }
+ ],
+ "warranty": [
+  {
+   "y": 3,
+   "on": "en condiciones normales de operación"
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Modelos",
+   "rows": [
+    [
+     "P507076",
+     "20 W · 1,600 lm · 80 lm/W"
+    ],
+    [
+     "P507077",
+     "30 W · 2,400 lm · 80 lm/W"
+    ],
+    [
+     "P507078",
+     "40 W · 3,200 lm · 80 lm/W"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión de operación",
+     "100–277 V"
+    ],
+    [
+     "Factor de potencia",
+     "0.6"
+    ],
+    [
+     "Driver",
+     "Electrónico integrado"
+    ],
+    [
+     "Base",
+     "E26"
+    ]
+   ]
+  },
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Temperatura de color",
+     "6,500 K"
+    ],
+    [
+     "IRC",
+     "> 80"
+    ],
+    [
+     "Ángulo de apertura",
+     "160°"
+    ],
+    [
+     "Vida útil",
+     "15,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones de operación",
+   "rows": [
+    [
+     "Material",
+     "Policarbonato con disipación de aluminio"
+    ],
+    [
+     "Temperatura de operación",
+     "-20 °C a 40 °C"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  6500
+ ],
+ "advantages": [
+  {
+   "t": "Ahorro de energía",
+   "d": "Hasta 80% frente a incandescentes."
+  },
+  {
+   "t": "Reemplazo directo",
+   "d": "Base E26 estándar."
+  },
+  {
+   "t": "Multivoltaje",
+   "d": "100–277 V."
+  },
+  {
+   "t": "Sin UV",
+   "d": "No daña mercancía ni acabados."
+  },
+  {
+   "t": "Cobertura amplia",
+   "d": "160° de apertura."
+  },
+  {
+   "t": "Respaldo",
+   "d": "3 años de garantía."
+  }
+ ],
+ "applications": [
+  "Reemplazo de lámparas incandescentes y fluorescentes",
+  "Iluminación general",
+  "Iluminación industrial",
+  "Comercios",
+  "Bodegas",
+  "Almacenes"
+ ],
+ "dims": {
+  "img": "p1_x27",
+  "rows": [
+   [
+    "20 W",
+    "145 × 80 mm · 0.095 kg"
+   ],
+   [
+    "30 W",
+    "172 × 100 mm · 0.16 kg"
+   ],
+   [
+    "40 W",
+    "210 × 120 mm · 0.21 kg"
+   ]
+  ]
+ }
+}

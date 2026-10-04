@@ -1,0 +1,139 @@
+{
+ "model": "SIGLO XXI",
+ "kind": "Farol de punta de poste estilo clásico",
+ "power": "150 – 175 W",
+ "variant": "VSAP / Aditivo metálico",
+ "hero": "p1_x24",
+ "kpis": [
+  {
+   "v": "150–175",
+   "u": "W",
+   "l": "Potencia máx."
+  },
+  {
+   "v": "150",
+   "u": "W",
+   "l": "VSAP"
+  },
+  {
+   "v": "E39",
+   "u": "",
+   "l": "Portalámpara mogul"
+  },
+  {
+   "v": "2½",
+   "u": "in",
+   "l": "Punta de poste"
+  }
+ ],
+ "description": [
+  "SIGLO XXI es un farol de punta de poste de líneas clásicas con pintura tipo poliéster aplicada electrostáticamente para mayor resistencia a la corrosión. Su refractor de acrílico LexaLite® con prismas mejora la eficiencia lumínica, y el reflector en forma de tapa se ofrece en aluminio anodizado o en acrílico LexaLite®.",
+  "Opera con lámparas de vapor de sodio de alta presión (VSAP) de 150 W o de aditivo metálico de 150 a 175 W, en 110–220 V, con portalámpara de porcelana tipo mogul E39. El recubrimiento de pintura poliéster aplicada electrostáticamente le da mayor resistencia a la corrosión en exteriores."
+ ],
+ "features": [
+  {
+   "t": "Refractor LexaLite®",
+   "d": "Acrílico prismático de alta eficiencia."
+  },
+  {
+   "t": "Reflector a elegir",
+   "d": "Aluminio anodizado o acrílico LexaLite®."
+  },
+  {
+   "t": "Remate ornamental",
+   "d": "Diseño clásico de 950 mm."
+  },
+  {
+   "t": "Portalámpara E39",
+   "d": "Tipo mogul."
+  }
+ ],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Balastro VSAP",
+     "150 W · 110–220 V"
+    ],
+    [
+     "Balastro aditivo metálico",
+     "175 W · 110–220 V / 150 W · 220 V"
+    ],
+    [
+     "Portalámpara",
+     "Tipo mogul E39"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Acabado",
+     "Pintura tipo poliéster electrostática"
+    ],
+    [
+     "Refractor",
+     "Acrílico LexaLite® prismático"
+    ],
+    [
+     "Reflector",
+     "Tapa de aluminio anodizado o acrílico LexaLite®"
+    ],
+    [
+     "Montaje",
+     "Punta de poste de 2½\""
+    ]
+   ]
+  }
+ ],
+ "advantages": [
+  {
+   "t": "Diseño clásico",
+   "d": "Estética que se integra a calles, plazas y zonas residenciales."
+  },
+  {
+   "t": "Resistente a la corrosión",
+   "d": "Aluminio con pintura poliéster electrostática."
+  },
+  {
+   "t": "Óptica LexaLite®",
+   "d": "Refractor prismático de acrílico."
+  },
+  {
+   "t": "Mejor reflectancia",
+   "d": "Reflector de aluminio anodizado."
+  },
+  {
+   "t": "Opciones de lámpara",
+   "d": "VSAP o aditivo metálico, en 110–220 V."
+  },
+  {
+   "t": "Instalación sencilla",
+   "d": "Entrada para punta de poste de 2½\"."
+  }
+ ],
+ "applications": [
+  "Calles y avenidas",
+  "Periféricos, vías rápidas y ejes viales",
+  "Carreteras y libramientos",
+  "Caminos rurales",
+  "Cotos y zonas residenciales",
+  "Estacionamientos"
+ ],
+ "dims": {
+  "img": "p1_x27",
+  "rows": [
+   [
+    "Ancho",
+    "450 mm"
+   ],
+   [
+    "Alto",
+    "950 mm"
+   ]
+  ]
+ }
+}
