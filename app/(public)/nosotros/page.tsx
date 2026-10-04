@@ -472,7 +472,7 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      <CertificationsBanner />
+      <CertificationsBanner maxWidth={1200} />
 
       {/* CTA final */}
       <section

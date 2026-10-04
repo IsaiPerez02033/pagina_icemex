@@ -265,7 +265,7 @@ export default async function ProductoPage({
           >
             {/* Columna izquierda: ficha */}
             <div>
-              <section style={{ marginBottom: 48 }}>
+              <section style={{ marginBottom: 64 }}>
                 <h2
                   style={{
                     color: "var(--text-primary)",
@@ -288,7 +288,7 @@ export default async function ProductoPage({
                 </p>
               </section>
 
-              <section style={{ marginBottom: 48 }}>
+              <section style={{ marginBottom: 64 }}>
                 <h2
                   style={{
                     color: "var(--text-primary)",
@@ -338,7 +338,7 @@ export default async function ProductoPage({
               </section>
 
               {p.features.length > 0 && (
-                <section style={{ marginBottom: 48 }}>
+                <section style={{ marginBottom: 64 }}>
                   <h2
                     style={{
                       color: "var(--text-primary)",
@@ -371,7 +371,7 @@ export default async function ProductoPage({
                 </section>
               )}
 
-              <section style={{ marginBottom: 48 }}>
+              <section style={{ marginBottom: 64 }}>
                 <h2
                   style={{
                     color: "var(--text-primary)",

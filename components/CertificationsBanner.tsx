@@ -51,7 +51,8 @@ const warranties = [
   { line: "LR Troffers USA", years: "10 años" },
 ];
 
-export default function CertificationsBanner() {
+/** maxWidth: ancho del contenido, para alinearlo con el resto de la página. */
+export default function CertificationsBanner({ maxWidth = 1400 }: { maxWidth?: number }) {
   const ref = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
@@ -105,7 +106,7 @@ export default function CertificationsBanner() {
           "linear-gradient(180deg, transparent 0%, rgba(var(--cyan-rgb), 0.03) 50%, transparent 100%)",
       }}
     >
-      <div style={{ maxWidth: 1400, margin: "0 auto" }}>
+      <div style={{ maxWidth, margin: "0 auto" }}>
         <div style={{ marginBottom: 64 }}>
           <p
             style={{

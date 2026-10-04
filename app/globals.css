@@ -2172,7 +2172,7 @@ summary {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 36px;
-  padding: 48px 0;
+  padding: clamp(48px, 6vw, 72px) 0;
   border-block: 1px solid var(--grid-lines);
 }
 .security-services svg {
@@ -2196,7 +2196,7 @@ summary {
   line-height: 1.8;
 }
 .security-process {
-  padding: 80px 0;
+  padding: clamp(72px, 9vw, 120px) 0;
 }
 .security-process h2 {
   max-width: 600px;
@@ -2211,7 +2211,7 @@ summary {
 }
 .security-faq {
   max-width: 850px;
-  padding: 32px 0 64px;
+  padding: 0 0 clamp(64px, 8vw, 112px);
 }
 .security-faq h2 {
   margin-bottom: 28px;
@@ -2227,7 +2227,8 @@ summary {
   margin-top: 16px;
 }
 .security-end {
-  padding: 48px 0;
+  padding: clamp(48px, 6vw, 72px) 0;
+  border-top: 1px solid var(--grid-lines);
   display: flex;
   gap: 24px;
   justify-content: space-between;
@@ -2812,7 +2813,7 @@ body[data-chat-open="true"] .wa-fab {
   flex: 1 1 200px;
 }
 .ficha-body section + section {
-  margin-top: 56px;
+  margin-top: clamp(48px, 5vw, 72px);
 }
 .ficha-body h2 {
   font-size: 22px;
@@ -3019,7 +3020,7 @@ body[data-chat-open="true"] .wa-fab {
   text-decoration: none;
 }
 .ficha-related {
-  margin-top: 72px;
+  margin-top: clamp(72px, 8vw, 104px);
 }
 .ficha-related h2 {
   font-size: 22px;
