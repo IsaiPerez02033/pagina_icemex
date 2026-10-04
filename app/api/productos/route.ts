@@ -1,5 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
 import { products, lineNames, tagNames } from "@/lib/products";
+import { fichas, fichaForProduct, getFicha, LEGACY_CODES } from "@/lib/fichas";
+
+// Versión ligera de cada ficha para consumidores externos (sin texto largo).
+const fichaSummary = (f: NonNullable<ReturnType<typeof getFicha>>) => ({
+  code: f.code,
+  name: f.name,
+  line: f.line,
+  pdf: `https://icemex.mx${f.pdf}`,
+  image: `https://icemex.mx${f.image.src}`,
+});
 
 // Catálogo público de ICEMEX, consumido por el asistente de WhatsApp del
 // almacén (icemex-almacen-api) para generar fichas técnicas. Mismos datos
@@ -12,20 +22,47 @@ export async function GET(req: NextRequest) {
   const code = req.nextUrl.searchParams.get("code");
 
   if (code) {
-    const producto = products.find(
-      (p) => p.code.toLowerCase() === code.toLowerCase()
-    );
-    if (!producto) {
+    // Acepta también los códigos viejos que el sitio usaba antes de alinearse
+    // al catálogo oficial (p. ej. IS-LA1005 → IS-LA1014).
+    const legacy = Object.entries(LEGACY_CODES).find(
+      ([old]) => old.toLowerCase() === code.toLowerCase()
+    )?.[1];
+    const wanted = (legacy ?? code).toLowerCase();
+    const producto = products.find((p) => p.code.toLowerCase() === wanted);
+    if (producto) {
+      const ficha = fichaForProduct(producto.code);
       return NextResponse.json(
-        { error: "Producto no encontrado" },
-        { status: 404, headers: CACHE_HEADERS }
+        { producto, ficha: ficha ? fichaSummary(ficha) : null },
+        { headers: CACHE_HEADERS }
       );
     }
-    return NextResponse.json({ producto }, { headers: CACHE_HEADERS });
+    const ficha = getFicha(wanted);
+    if (ficha) {
+      // Misma forma que Product para no romper a los consumidores actuales.
+      const fromFicha = {
+        code: ficha.code,
+        name: ficha.name,
+        line: ficha.line,
+        tags: ficha.tags,
+        tagline: ficha.summary,
+        description: ficha.blocks.filter((b) => b.t).map((b) => b.t).join(" ").slice(0, 1200),
+        applications: [],
+        specs: [],
+        features: [],
+      };
+      return NextResponse.json(
+        { producto: fromFicha, ficha: fichaSummary(ficha) },
+        { headers: CACHE_HEADERS }
+      );
+    }
+    return NextResponse.json(
+      { error: "Producto no encontrado" },
+      { status: 404, headers: CACHE_HEADERS }
+    );
   }
 
   return NextResponse.json(
-    { products, lineNames, tagNames },
+    { products, lineNames, tagNames, fichas: fichas.map(fichaSummary) },
     { headers: CACHE_HEADERS }
   );
 }

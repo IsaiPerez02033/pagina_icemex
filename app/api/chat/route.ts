@@ -2,6 +2,7 @@ import { createOpenAICompatible } from "@ai-sdk/openai-compatible";
 import { streamText } from "ai";
 import { products, lineNames, tagNames } from "@/lib/products";
 import { projects } from "@/lib/projects";
+import { standaloneFichas } from "@/lib/fichas";
 import { getClientIp, hashIp, isSameOrigin, rateLimit } from "@/lib/security";
 
 export const runtime = "nodejs";
@@ -69,7 +70,10 @@ PROYECTOS: ${compactProjects()}
 CATALOGO (codigo | nombre | linea | tagline | specs clave | aplicaciones):
 ${compactCatalog()}
 
-Cada producto tiene un CODIGO UNICO (ej. AL-LT1002, IS-LA1005, PT-RC). Si el usuario menciona un codigo especifico, busca ese producto en el catalogo de arriba y entrega TODOS sus datos: nombre, linea, tagline, descripcion, specs, aplicaciones, caracteristicas, certificaciones y garantia.
+OTRAS FICHAS DEL CATALOGO 2026 (codigo nombre [linea]); cada una tiene pagina en https://icemex.mx/producto/CODIGO con su ficha PDF descargable. Para specs detalladas de estas, manda al cliente a esa pagina o a WhatsApp:
+${standaloneFichas.map((f) => `${f.code} ${f.name} [${f.line}]`).join("; ")}
+
+Cada producto tiene un CODIGO UNICO (ej. AL-LT1002, IS-LA1014, PT-RC). Si el usuario menciona un codigo especifico, busca ese producto en el catalogo de arriba y entrega TODOS sus datos: nombre, linea, tagline, descripcion, specs, aplicaciones, caracteristicas, certificaciones y garantia.
 
 Si el usuario vio un codigo en el PDF del catalogo (Catalogo_ICEMEX2026.pdf) y te pregunta por el, dile que lo busque en la lista de arriba o en el PDF, pagina por pagina.
 

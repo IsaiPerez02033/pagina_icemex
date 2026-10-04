@@ -155,12 +155,11 @@ export default function ProjectsCollage() {
                   gridRow: `${l.rowStart} / span ${l.rowSpan}`,
                   ["--rot" as never]: `${l.rotate ?? 0}deg`,
                 }}
-                aria-label={`Ver proyecto ${p.title}`}
               >
                 <div className="collage-img-wrap">
                   <Image
                     src={p.image}
-                    alt={p.title}
+                    alt=""
                     fill
                     sizes="(max-width: 880px) 100vw, 33vw"
                     style={{ objectFit: "cover" }}
@@ -170,7 +169,7 @@ export default function ProjectsCollage() {
 
                 <div className="collage-meta">
                   <span className="collage-year">{p.year}</span>
-                  <h4 className="collage-title">{p.title}</h4>
+                  <h3 className="collage-title">{p.title}</h3>
                   <span className="collage-category">{p.category}</span>
                 </div>
               </button>

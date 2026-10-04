@@ -1,0 +1,5346 @@
+[
+ {
+  "code": "AL-LC1001",
+  "name": "Luminaria Cobra",
+  "line": "AL",
+  "tags": [
+   "vialidad",
+   "residencial"
+  ],
+  "pages": [
+   5
+  ],
+  "pdf": "/fichas/AL-LC1001.pdf",
+  "image": {
+   "src": "/fichas/img/AL-LC1001.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-LC1001-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Led SMD. 106 LM. Por Watt IP 65 50,000 horas de vida",
+  "blocks": [
+   {
+    "h": "Especificaciones"
+   },
+   {
+    "t": "Led SMD. 106 LM. Por Watt IP 65 50,000 horas de vida"
+   },
+   {
+    "h": "Aplicaciones"
+   },
+   {
+    "t": "Calles y avenidas Periféricos, vías rápidas, ejes viales Caminos rurales Cotos, zonas recidenciales"
+   }
+  ]
+ },
+ {
+  "code": "AL-CO1016",
+  "name": "Cobra 150W",
+  "line": "AL",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "residencial"
+  ],
+  "pages": [
+   6
+  ],
+  "pdf": "/fichas/AL-CO1016.pdf",
+  "image": {
+   "src": "/fichas/img/AL-CO1016.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-CO1016-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Aplicación: Público Material de la carcosa: Aluminio Terminado:",
+  "blocks": [
+   {
+    "h": "Características"
+   },
+   {
+    "t": "Modelo: COBRA-150W"
+   },
+   {
+    "t": "Aplicación: Público Material de la carcosa: Aluminio Terminado:"
+   },
+   {
+    "t": "Pantalla: Policarbonato Indice de protección [IP):"
+   },
+   {
+    "h": "Parámetros eléctricos"
+   },
+   {
+    "t": "Tensión nominal [V~]: 85 - 277 V ~"
+   },
+   {
+    "t": "Consumo de potencia [W]: 100 W"
+   },
+   {
+    "t": "Frecuencia nominal [Hz]: 50 Hz / 60 Hz"
+   },
+   {
+    "t": "Consumo de Corriente [A]: 0.76 A"
+   },
+   {
+    "t": "Factor de Potencia [f.p.]:"
+   },
+   {
+    "t": "Flujo luminoso [Im):"
+   },
+   {
+    "t": "Color de luz: 6500K"
+   },
+   {
+    "t": "Ángulo de apertura [°]: 120 °"
+   },
+   {
+    "h": "Cri: 80"
+   },
+   {
+    "t": "Temperatura de operación: -20 - 50 °C"
+   },
+   {
+    "h": "Beneficios"
+   },
+   {
+    "t": "Horas de vida [h): 50000 hrs"
+   },
+   {
+    "t": "Atenuable: NO"
+   },
+   {
+    "t": "Garantía: 3 años"
+   },
+   {
+    "t": "Certificación: NOM-030"
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Cotos, zonas residenciales Areas recreativas Universidades Andadores, patios, corredores y pasillos AL-CO1016"
+   }
+  ]
+ },
+ {
+  "code": "IS-LF1016",
+  "name": "Luminaria solar tipo Cobra",
+  "line": "IS",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "solar",
+   "residencial"
+  ],
+  "pages": [
+   7
+  ],
+  "pdf": "/fichas/IS-LF1016.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LF1016.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LF1016-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Conductor´s Caliber (0.824 mm2.18 AWG) Flujo luminoso [Im):",
+  "blocks": [
+   {
+    "h": "Características"
+   },
+   {
+    "t": "Modelo:"
+   },
+   {
+    "h": "Leafled 150w"
+   },
+   {
+    "t": "Aplicación: Material de la carcasas:"
+   },
+   {
+    "h": "Publico"
+   },
+   {
+    "t": "Terminado: Pantalla:"
+   },
+   {
+    "t": "Índice de protección [IP): Size (mm):"
+   },
+   {
+    "h": "Parámetros eléctricos"
+   },
+   {
+    "t": "Tensión nominal [V~]:"
+   },
+   {
+    "t": "Consumo de potencia [W]:"
+   },
+   {
+    "t": "Frecuencia nominal [Hz):"
+   },
+   {
+    "t": "Consumo de Corriente [mA]:"
+   },
+   {
+    "t": "Factor de Potencia [f.p.]:"
+   },
+   {
+    "t": "Conductor´s Caliber (0.824 mm2.18 AWG) Flujo luminoso [Im):"
+   },
+   {
+    "t": "Color de luz:"
+   },
+   {
+    "t": "Ángulo de apertura [°]:"
+   },
+   {
+    "h": "Cri:"
+   },
+   {
+    "t": "Temperatura de operación:"
+   },
+   {
+    "h": "Beneficios"
+   },
+   {
+    "t": "Horas de vida [h]:"
+   },
+   {
+    "t": "Atenuable: Garantía:"
+   },
+   {
+    "t": "Certificación:"
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Cotos, zonas residenciales Areas recreativas Universidades Andadores, patios, corredores y pasillos"
+   }
+  ]
+ },
+ {
+  "code": "AL-LT1002",
+  "name": "Luminaria Titan",
+  "line": "AL",
+  "tags": [
+   "vialidad",
+   "parques"
+  ],
+  "pages": [
+   8,
+   9,
+   10,
+   11
+  ],
+  "pdf": "/fichas/AL-LT1002.pdf",
+  "image": {
+   "src": "/fichas/img/AL-LT1002.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-LT1002-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Luminario para alumbrado publico excelente eficiencia lumínica con agradable diseño modernista.",
+  "blocks": [
+   {
+    "h": "Luminario"
+   },
+   {
+    "t": "Luminario para alumbrado publico excelente eficiencia lumínica con agradable diseño modernista."
+   },
+   {
+    "h": "Tecnología"
+   },
+   {
+    "t": "Tecnología Led Philips módulo Fast Flex con drivers Xitanium Led Xtreme de Philips de gran protección a la intemperie; con eficiencia óptica de 96%. Con vida útil de 100,000 horas. CUERPO Fabricado en inyección a presión de aluminio resistente a la radiación UV y corrosión, cuenta con 13 vetas para mejor disipación de calor, canaleta para desahogo de agua."
+   },
+   {
+    "h": "Conjunto óptico"
+   },
+   {
+    "t": "Cristal termo templado de 3mm de espesor con alta resistencia al impacto, cuenta con grapas de sujeción de cinta de acero inoxidable y empaques de silicón para evitar filtración de agua y polvo."
+   },
+   {
+    "h": "Acabados"
+   },
+   {
+    "t": "En pintura de gran adherencia, aplicada mediante proceso electrostático y horneada, resistente a rayos UV."
+   },
+   {
+    "h": "Aplicaciones"
+   },
+   {
+    "t": "Ideal para colocar en parques, vía pública, avenidas primarias y secundarias, estacionamientos, etc."
+   },
+   {
+    "h": "Montaje"
+   },
+   {
+    "t": "Sistema de sujeción mediante opresores allen de acero inoxidable, con montaje en brazo de 1 ½\" interior por 75mm de profundidad. CARACTERISTICAS LED Voltaje de operación: 120-277V (+/- 10%)V c.a. 12-24V c.d. Rango de frec uencia de operación (Hz): 50-60 Potencia de o peración (W): 40-100 máx. (+/- 10%) Corriente de o peración (Amp): 0.1-0.78 máx. (+/- 10%) Factor de pot encia: >0.95 Eficacia (Im/W )>105 Flujo luminos o (Im): 3,000-10,500 máx. Temperatura de color (Kelvin): 3000/4000/5700 (+/- 10%) Grados de pro tección: IP65 Proteccion co ntra descarga atmosférica hasta 10KA Peso: 6.22Kg."
+   },
+   {
+    "h": "Componentes"
+   },
+   {
+    "t": "Driver 40W y 70W para 12-24V Supresor de picos"
+   }
+  ]
+ },
+ {
+  "code": "AL-LU1003",
+  "name": "Luminaria Urban Cosmos",
+  "line": "AL",
+  "tags": [],
+  "pages": [
+   12
+  ],
+  "pdf": "/fichas/AL-LU1003.pdf",
+  "image": {
+   "src": "/fichas/img/AL-LU1003.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-LU1003-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Carcaza de aluminio puro de alta duracion, recubierta con pintura tipo poliester aplicada electrostaticamente, brindaddo mayor resistencia a la corrosion. Luminaria ligera, fuerte ",
+  "blocks": [
+   {
+    "h": "Lum- urbanmex"
+   },
+   {
+    "t": "Carcaza de aluminio puro de alta duracion, recubierta con pintura tipo poliester aplicada electrostaticamente, brindaddo mayor resistencia a la corrosion. Luminaria ligera, fuerte y confiable que brinda una alta eficiencia. Domo fabricado en aluminio embutido que da proteccion total a la luminaria. Conjunto optico IP65 sellado"
+   },
+   {
+    "t": "CARACTERISTICAS DE LA LUMINARIA CUERPO: Aluminio alta resistencia CURVA: Tipo V simetrica refractor de cristal templado. EQUIPO: Tecnologia philips cosmos white. POTENCIAS: 60W,90W,140W. VOLTAJE: 220V. IRC: 70. BULBO: T 19. BASE: PGZ12. LUMENS: 100LMXW. VIDA UTIL: 30,000HRS. MONTAJE: Poste. ACABADO: Pintura horneada electrostatica tipo poliester color grafito."
+   }
+  ]
+ },
+ {
+  "code": "AL-SL1004",
+  "name": "Street Light",
+  "line": "AL",
+  "tags": [],
+  "pages": [
+   13
+  ],
+  "pdf": "/fichas/AL-SL1004.pdf",
+  "image": {
+   "src": "/fichas/img/AL-SL1004.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-SL1004-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": []
+ },
+ {
+  "code": "AL-SL1204",
+  "name": "Street Light 1204",
+  "line": "AL",
+  "tags": [],
+  "pages": [
+   14
+  ],
+  "pdf": "/fichas/AL-SL1204.pdf",
+  "image": {
+   "src": "/fichas/img/AL-SL1204.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-SL1204-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": []
+ },
+ {
+  "code": "AL-UL1005",
+  "name": "Urban LED",
+  "line": "AL",
+  "tags": [
+   "vialidad",
+   "residencial"
+  ],
+  "pages": [
+   15
+  ],
+  "pdf": "/fichas/AL-UL1005.pdf",
+  "image": {
+   "src": "/fichas/img/AL-UL1005.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-UL1005-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Especificaciones MultiLed 80 LM. por Watt IRC > 70 50-60 hz. IP 65 50,000 horas vida",
+  "blocks": [
+   {
+    "t": "Especificaciones MultiLed 80 LM. por Watt IRC > 70 50-60 hz. IP 65 50,000 horas vida"
+   },
+   {
+    "t": "Aplicaciones Calles y avenidas Periféricos, vías rápidas, ejes viales Carreteras y libramientos Caminos rurales Cotos, zonas residenciales"
+   },
+   {
+    "t": "VERSIÓN PRODUCTO: URBAN OPTICA: II MEDIA TDC: 6,500 K POTENCIA: 40, 60, y 100 VOLTAJE: 85-265 V MARCA: ICEMEX"
+   }
+  ]
+ },
+ {
+  "code": "AL-LVI006",
+  "name": "Luminaria AD100 100W",
+  "line": "AL",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial"
+  ],
+  "pages": [
+   16
+  ],
+  "pdf": "/fichas/AL-LVI006.pdf",
+  "image": {
+   "src": "/fichas/img/AL-LVI006.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-LVI006-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Construcción Aleación de aluminio fundido a presión",
+  "blocks": [
+   {
+    "h": "Aplicaciones"
+   },
+   {
+    "t": "Temperatura de color (TCC) 6500 K"
+   },
+   {
+    "t": "Altura de instalación recomendada"
+   },
+   {
+    "t": "Área de iluminación 80 - 100 m²"
+   },
+   {
+    "t": "Construcción Aleación de aluminio fundido a presión"
+   }
+  ]
+ },
+ {
+  "code": "AL-LW1007",
+  "name": "LEDway",
+  "line": "AL",
+  "tags": [
+   "vialidad",
+   "residencial"
+  ],
+  "pages": [
+   17
+  ],
+  "pdf": "/fichas/AL-LW1007.pdf",
+  "image": {
+   "src": "/fichas/img/AL-LW1007.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-LW1007-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Especificaciones BetaLED® Technology NanoOptic® Technology IRC > 70 Hecho en USA 10 Años de Garantía",
+  "blocks": [
+   {
+    "t": "Especificaciones BetaLED® Technology NanoOptic® Technology IRC > 70 Hecho en USA 10 Años de Garantía"
+   },
+   {
+    "t": "Aplicaciones Calles y avenidas Periféricos, vías rápidas, ejes viales Carreteras y libramientos Caminos rurales Cotos, zonas residencialesi"
+   },
+   {
+    "t": "Weight 13.0 lbs. (5.9kg) 13.5 lbs. (6.1kg) 16.5 lbs. (7.5kg) 17.0 lbs. (7.7kg) 17.5 bs. (7.9kg) 22.0 lbs. (10.0kg) 22.5 lbs. (10.2kg) 22.5 lbs. (10.2kg) 27.5 Ibs. (12.5kg) 28.0 lbs. (12.7kg) 28.0 Ibs. (12.7kg)"
+   },
+   {
+    "t": "VERSIÓN PRODUCTO: LEDWAY OPTICA: Il MEDIA,III MEDIA TDC:4,000 K, 5,700 K POTENCIA: DE 20 A 120W VOLTAJE: 120- 277 V MARCA: CREE"
+   }
+  ]
+ },
+ {
+  "code": "AL-LO1008",
+  "name": "LED Omega",
+  "line": "AL",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial"
+  ],
+  "pages": [
+   18
+  ],
+  "pdf": "/fichas/AL-LO1008.pdf",
+  "image": {
+   "src": "/fichas/img/AL-LO1008.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-LO1008-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Luminario para alumbrado publico, cuerpo fabricado en aluminio resistente a radiacion UV y corrosion, de excelente eficiencia luminica con un agradable diseño modernista. Tecnologi",
+  "blocks": [
+   {
+    "t": "Luminario para alumbrado publico, cuerpo fabricado en aluminio resistente a radiacion UV y corrosion, de excelente eficiencia luminica con un agradable diseño modernista. Tecnologia led philips modulo fast flex con driver xitanium, led treme de philips de gran proteccion a la interperie, eficiencia optica de 96%. Vida util 10,000 hrs"
+   },
+   {
+    "t": "Driver 40W y 70W para 12-24V Supresor de picos"
+   },
+   {
+    "t": "Caracteristicas del LED Voltaje de operacion: 120-277V (+/- 10%)V c.a 12-24V c.d. Rango de fercuencia de operacion (Hz): 50-60 Potencia de operacion(V): 40-100 max. (+/-10%) Corriente de Operacion(Amp): 0.1-0.78 max. (+/- 10%) Factor de potencia: >0.95 Eficiencia(Im/W): >105 Flujo Luminoso(lm): 3,000 - 10,500 max. Temperatura de color(K) 3,000/4,000/5,700 (+/-10%) Grado de Proteccion: IP65 Proteccion contra descarga electrica admosferica hasta 10KV"
+   },
+   {
+    "t": "Aplicaciones: Ideal para colocar en parques, via publica, avenidas, estacionamientos, escuelas, centros comerciales"
+   }
+  ]
+ },
+ {
+  "code": "AL-LVI1009",
+  "name": "Luminario Vial ICEMEX 02V-100",
+  "line": "AL",
+  "tags": [
+   "vialidad"
+  ],
+  "pages": [
+   19
+  ],
+  "pdf": "/fichas/AL-LVI1009.pdf",
+  "image": {
+   "src": "/fichas/img/AL-LVI1009.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-LVI1009-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Características Material Terminado Pantalla Índice de protección Base (poste) Dimensiones mm Lúmenes Temperatura Ángulo Tipo de curva de distribución",
+  "blocks": [
+   {
+    "h": "Luminaria de vialidad"
+   },
+   {
+    "t": "Características Material Terminado Pantalla Índice de protección Base (poste) Dimensiones mm Lúmenes Temperatura Ángulo Tipo de curva de distribución"
+   },
+   {
+    "t": "Parámetros Eléctricos Tensión Nominal [V~] Consumo de Potencia [W] Frecuencia Nominal [Hz] Consumo de Corriente [A] Temperatura de Operación"
+   }
+  ]
+ },
+ {
+  "code": "AL-LS1010",
+  "name": "Luminaria Suburbana",
+  "line": "AL",
+  "tags": [
+   "vialidad",
+   "parques"
+  ],
+  "pages": [
+   20
+  ],
+  "pdf": "/fichas/AL-LS1010.pdf",
+  "image": {
+   "src": "/fichas/img/AL-LS1010.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-LS1010-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Especificaciones Carcaza de lámina de aluminio rechazada y moldeada en frio, con anodizado exterior e interior a alto brillo resistente a la corrosión brindando mayor reflectancia ",
+  "blocks": [
+   {
+    "h": "Suburbano"
+   },
+   {
+    "t": "Especificaciones Carcaza de lámina de aluminio rechazada y moldeada en frio, con anodizado exterior e interior a alto brillo resistente a la corrosión brindando mayor reflectancia y duración. Porta brazo y porta socket de aluminio puro inyectado a presión. Refractor de acrílico prismático de 12\" con una distribución simétrica tipo V. Porta lámpara de porcelana E39 o E26. Entrada de brazo de 1 ½\"."
+   },
+   {
+    "t": "Aplicaciones Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Andadores, patios, corredores y pasillos"
+   }
+  ]
+ },
+ {
+  "code": "AL-LVI1011",
+  "name": "Luminaria de Vialidad",
+  "line": "AL",
+  "tags": [
+   "vialidad"
+  ],
+  "pages": [
+   21
+  ],
+  "pdf": "/fichas/AL-LVI1011.pdf",
+  "image": {
+   "src": "/fichas/img/AL-LVI1011.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-LVI1011-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Material: Fe Terminado: Gris Pantalla: Pc Índice de protección: Ip65, IK09 Base (poste): 2.5 Pulgadas Dimensiones mm: 570*240*155 mm Lúmenes:14,000 Lm Temperatura: 5,500K Ángulo: 7",
+  "blocks": [
+   {
+    "h": "Luminario vial icemex 03v-100"
+   },
+   {
+    "t": "Material: Fe Terminado: Gris Pantalla: Pc Índice de protección: Ip65, IK09 Base (poste): 2.5 Pulgadas Dimensiones mm: 570*240*155 mm Lúmenes:14,000 Lm Temperatura: 5,500K Ángulo: 70 X 140° Tipo de curva de distribución: Asimetrica"
+   },
+   {
+    "t": "Tensión Nominal [V~]: 100-277V~ 15KV@ Consumo de Potencia [W]: 100W Frecuencia Nominal [Hz]: 50/60Hz Consumo de Corriente [A]: 1.18 - 0.32 A Temperatura de Operación: -10 a 45 °C"
+   }
+  ]
+ },
+ {
+  "code": "AL-LA1012",
+  "name": "Luminaria LED Epistar 30-90W",
+  "line": "AL",
+  "tags": [
+   "solar"
+  ],
+  "pages": [
+   22
+  ],
+  "pdf": "/fichas/AL-LA1012.pdf",
+  "image": {
+   "src": "/fichas/img/AL-LA1012.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-LA1012-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "(LUMINARIO PARA ALUMBRADO PUBLICO CON SISTEMA DE 100, 90, 60, 45, 30W LED)",
+  "blocks": [
+   {
+    "t": "(LUMINARIO PARA ALUMBRADO PUBLICO CON SISTEMA DE 100, 90, 60, 45, 30W LED)"
+   },
+   {
+    "t": "DESCRIPCIÓN: Cuerpo: Acero y Fundición Aluminio, acabado pintura poliéster, aplicación electrostática y horneado Potencia: LED 90, 60, 50, 45, 30W led Epistar con 110 Lúmenes/Watt driver midwell Número de LED,s: 1w por led equivalente a 100, 90, 60, 50, 45, 30 led según el caso Voltaje de Operación: 120-277v 60hz VCD Temperatura de Color: 4100'K, 6000'K Angulo de Apertura: 120° Temperatura de Funcionamiento: 60°C Aplicaciones: (Sistemas Fotovoltáicos 12/24v, alumbrado público 120/277v) Garantía: 4 años en condiciones de uso normal incluye: sistema de fotocontrol automatizado (socket fotocelda )"
+   }
+  ]
+ },
+ {
+  "code": "IS-AO1001",
+  "name": "Sistema Solar All in One",
+  "line": "IS",
+  "tags": [
+   "industrial",
+   "comercial",
+   "solar",
+   "decorativo"
+  ],
+  "pages": [
+   24,
+   25
+  ],
+  "pdf": "/fichas/IS-AO1001.pdf",
+  "image": {
+   "src": "/fichas/img/IS-AO1001.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-AO1001-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Sistema de generación y almacenamiento de energía mediante el aprovechamiento de la energía solar para encender lámparas de alumbrado público. La serie SUNLIGHT cuenta con una incr",
+  "blocks": [
+   {
+    "h": "Sistema solar"
+   },
+   {
+    "t": "Sistema de generación y almacenamiento de energía mediante el aprovechamiento de la energía solar para encender lámparas de alumbrado público. La serie SUNLIGHT cuenta con una increíble eficiencia y se ha diseñado de acuerdo a las características de radiación, temperatura y humedad promedio de México. El sistema está diseñado para operar de forma autónoma sin importar que existan fallas en la red eléctrica nacional. Además cada componente cuenta con los certificados necesarios para resistir el contacto con la intemperie, por lo que es resistente al polvo y a la lluvia. Uno de los principales beneficios es que no se requiere utilizar maquinaria pesada para realizar excavaciones para implementar el tendido eléctrico que normalmente se utiliza de una lámpara hacia otra, disminuyendo costos y tiempo en mano de obra así como en cableado eléctrico."
+   },
+   {
+    "h": "Datos de desempeño"
+   },
+   {
+    "t": "Autonomía de 1 a 3 días Encendido garantizado de 10 a 12 horas Potencias de Luminarios: 30W, 50W y 70W 10 Años de Garantía en PANELES SOLARES 5 Años de Garantía en LUMINARIOS 3 Años de Garantía en COMPONENTES"
+   },
+   {
+    "h": "Especificaciones del producto"
+   },
+   {
+    "t": "Módulo fotovoltaico. Batería Solar de 12V a 115 Ah. Controlador Gabinete con ventilación y con protección contra polvo y agua."
+   },
+   {
+    "t": "Código: L-34 80W Serie / Modelo: FORLED Led: Sistema Solal"
+   },
+   {
+    "t": "Especificaciones: Material: Aluminio / Policarbonato Montaje: Punta de poste / Brazo tipo L Acabado: Negro Fuente Luminosa: LED Optica: Asimétrica 2M Potencia: 80 Watts"
+   },
+   {
+    "t": "Eficiencia Nominal: 150 Im/w Panel Solar: Silicio Monocristalino 5V/80W Autonomía: 2 días Horas de vida: 100,000 Hrs batería: Litio 3.2V /60AH control: Sensor Híbrido / Atenuable Temp. de Operación: -30°C a 40°C"
+   }
+  ]
+ },
+ {
+  "code": "IS-SL1002",
+  "name": "Luminaria Solar SL-1",
+  "line": "IS",
+  "tags": [
+   "solar"
+  ],
+  "pages": [
+   26
+  ],
+  "pdf": "/fichas/IS-SL1002.pdf",
+  "image": {
+   "src": "/fichas/img/IS-SL1002.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-SL1002-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Panel solar A +, cada uno tiene una curva IV completa, la eficiencia de conversión es más del 21,3% Batería LiFePO4, la profundidad de descarga alcanza el 95% y la vida Útil hasta ",
+  "blocks": [
+   {
+    "h": "Ventajas y características del producto"
+   },
+   {
+    "t": "Panel solar A +, cada uno tiene una curva IV completa, la eficiencia de conversión es más del 21,3% Batería LiFePO4, la profundidad de descarga alcanza el 95% y la vida Útil hasta 13 años, con alto factor de seguridad Led de bajo voltaje con alta eficiencia de lúmenes Lente de PC óptica, eficiencia luminosa hasta el 95% Carcasa de aluminio de alta calidad, anticorrosión, duradera, artística, práctica. La alta tecnología y la artesanía fina resaltan el valor del producto • Reflector de diseño innovador, alta eficiencia de reflexión, mejora en gran medida el brillo de la iluminación"
+   },
+   {
+    "t": "Model: SL-1 400W Battery: 20AH Solar Panel: 41W Lumen: 4800lm Size: 0624*184.3"
+   }
+  ]
+ },
+ {
+  "code": "IS-LS1003",
+  "name": "Luminario de LED Solar 125W-200W",
+  "line": "IS",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "solar"
+  ],
+  "pages": [
+   27
+  ],
+  "pdf": "/fichas/IS-LS1003.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LS1003.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LS1003-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "POTENCIA:125W -200W TEMPERATURA DE COLOR:6,500K VOLTAJE:6 V DC FLUJO LUMINOSO:8,750 LM INSTALACION: PARED O POSTE ANGULO DE APERTURA: 120° ALTURA DE INSTALACION RECOMENDAD:4-5M TIE",
+  "blocks": [
+   {
+    "h": "Luminario de led solar"
+   },
+   {
+    "t": "POTENCIA:125W -200W TEMPERATURA DE COLOR:6,500K VOLTAJE:6 V DC FLUJO LUMINOSO:8,750 LM INSTALACION: PARED O POSTE ANGULO DE APERTURA: 120° ALTURA DE INSTALACION RECOMENDAD:4-5M TIEMPO DE CARGA: 4-5 HRS TIEMPO DE DESCARGA: 6-8 HRS GRADO DE PROTECCION: IP65"
+   },
+   {
+    "t": "APLICACIONES PASILLOS ESTACIONAMIENTOS ESCUELAS PATIOS JARDINES FACHADAS ESPACIOS PÚBLICOS CALLES"
+   }
+  ]
+ },
+ {
+  "code": "IS-LS1004",
+  "name": "Suburbana 200W con Panel Solar Inteligente",
+  "line": "IS",
+  "tags": [
+   "solar"
+  ],
+  "pages": [
+   28
+  ],
+  "pdf": "/fichas/IS-LS1004.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LS1004.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LS1004-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": []
+ },
+ {
+  "code": "IS-LS1005",
+  "name": "Luminario de LED Solar",
+  "line": "IS",
+  "tags": [
+   "solar"
+  ],
+  "pages": [
+   29
+  ],
+  "pdf": "/fichas/IS-LS1005.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LS1005.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LS1005-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": []
+ },
+ {
+  "code": "IS-LS1006",
+  "name": "Lámpara Solar con Sensor PIR",
+  "line": "IS",
+  "tags": [
+   "vialidad",
+   "parques",
+   "industrial",
+   "comercial",
+   "solar"
+  ],
+  "pages": [
+   30
+  ],
+  "pdf": "/fichas/IS-LS1006.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LS1006.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LS1006-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "LUMINARIA SUBURBANA DE 100W CON PANEL SOLAR Y SENSOR DE MOVIMIENTO INTELIGENTE",
+  "blocks": [
+   {
+    "t": "LUMINARIA SUBURBANA DE 100W CON PANEL SOLAR Y SENSOR DE MOVIMIENTO INTELIGENTE"
+   },
+   {
+    "t": "CARACTERISTICAS: • Lámpara con panel solar, interruptor frontal y sensor PIR de proximidad. Sólida construcción de plástico ABS, indicado para instalación en jardines, caminos rurales, citadinos, parques, avenidas, carreteras."
+   },
+   {
+    "t": "APLICACIONES: Ilumina áreas exteriores, citadinas, complejos comerciales, industriales, estadios de medio calado, carreteras y todo tipo de caminos al exterior."
+   },
+   {
+    "t": "FABRICACION: Material: Aleación de aluminio. Fuente de Poder: Panel Solar. Acabado: Cuerpo Gris, reflector de plástico transparente."
+   },
+   {
+    "t": "COMPONENTES: Fuente de Luz LED: 1 módulo de 180 LEDs 3030 SMD EPISTAR."
+   },
+   {
+    "t": "MEDIDAS: Dimensiones (m) alto 887 x ancho 420x Profundidad Peso (kg): 8."
+   },
+   {
+    "t": "EMPAQUE: Caja de cartón: Con grabado. Dimensiones (mm): alto 900 x ancho 420 x Profundidad 300 Peso (kg): 9."
+   },
+   {
+    "t": "EXPECTATIVA DE VIDA: Tiempo promedio (Horas): 50,000 Garantía (Años): 1 Año"
+   }
+  ]
+ },
+ {
+  "code": "IS-LS1007",
+  "name": "Lámpara Solar con Sensor PIR II",
+  "line": "IS",
+  "tags": [
+   "vialidad",
+   "parques",
+   "industrial",
+   "comercial",
+   "solar"
+  ],
+  "pages": [
+   31
+  ],
+  "pdf": "/fichas/IS-LS1007.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LS1007.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LS1007-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "LUMINARIA SUBURBANA DE 100W CON PANEL SOLAR Y SENSOR DE MOVIMIENTO INTELIGENTE",
+  "blocks": [
+   {
+    "t": "LUMINARIA SUBURBANA DE 100W CON PANEL SOLAR Y SENSOR DE MOVIMIENTO INTELIGENTE"
+   },
+   {
+    "t": "CARACTERISTICAS: • Lámpara con panel solar, interruptor frontal y sensor PIR de proximidad. Sólida construcción de plástico ABS, indicado para instalación en jardines, caminos rurales, citadinos, parques, avenidas, carreteras."
+   },
+   {
+    "t": "APLICACIONES: Ilumina áreas exteriores, citadinas, complejos comerciales, industriales, estadios de medio calado, carreteras y todo tipo de caminos al exterior."
+   },
+   {
+    "t": "FABRICACION: Material: Aleación de aluminio. Fuente de Poder: Panel Solar. Acabado: Cuerpo Gris, reflector de plástico transparente."
+   },
+   {
+    "t": "COMPONENTES: Fuente de Luz LED: 1 módulo de 180 LEDs 3030 SMD EPISTAR."
+   },
+   {
+    "t": "MEDIDAS: Dimensiones (m) alto 887 x ancho 420x Profundidad Peso (kg): 8."
+   },
+   {
+    "t": "EMPAQUE: Caja de cartón: Con grabado. Dimensiones (mm): alto 900 x ancho 420 x Profundidad 300 Peso (kg): 9."
+   },
+   {
+    "t": "EXPECTATIVA DE VIDA: Tiempo promedio (Horas): 50,000 Garantía (Años): 1 Año"
+   }
+  ]
+ },
+ {
+  "code": "IS-LS1008",
+  "name": "Suburbana 500W con Panel Solar y Sensor",
+  "line": "IS",
+  "tags": [
+   "solar"
+  ],
+  "pages": [
+   32
+  ],
+  "pdf": "/fichas/IS-LS1008.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LS1008.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LS1008-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "LUMINARIA SUBURBANA DE 500W CON PANEL SOLAR Y SENSOR DE MOVIMIENTO INTELIGENTE",
+  "blocks": [
+   {
+    "t": "LUMINARIA SUBURBANA DE 500W CON PANEL SOLAR Y SENSOR DE MOVIMIENTO INTELIGENTE"
+   }
+  ]
+ },
+ {
+  "code": "IS-LA1009",
+  "name": "All in One 400W",
+  "line": "IS",
+  "tags": [
+   "industrial",
+   "comercial",
+   "solar",
+   "decorativo"
+  ],
+  "pages": [
+   33,
+   34,
+   35
+  ],
+  "pdf": "/fichas/IS-LA1009.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LA1009.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LA1009-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Material: Aluminio Montaje: Punta de poste / Brazo tipo L Acabado: Plata Fuente Luminosa: LED Osram Óptica: Asimétrica 2M Potencia: 400 Watts Eficiencia Nominal: 200 Im/w Panel Sol",
+  "blocks": [
+   {
+    "t": "Luminarias Autónoma Solar \"All in One\""
+   },
+   {
+    "t": "Material: Aluminio Montaje: Punta de poste / Brazo tipo L Acabado: Plata Fuente Luminosa: LED Osram Óptica: Asimétrica 2M Potencia: 400 Watts Eficiencia Nominal: 200 Im/w Panel Solar: Silicio Monocristalino 5V/100W Autonomia: 2 días Horas de vida: 100,000 Hrs. Batería: Litio 3.2V/1420AH Control: Brillo Constante Temp. de Operación: -30°C a 65°C Simbología"
+   },
+   {
+    "t": "The 4 indicator lights display the battery capacity, and 1 indicator led represents25% power 1 indicator on:25% power Red Light 2 indicators on:25% 50% power Red Light 3 indicators on:50% 75% power Blue Light 4indicators on:75% 100% power Green light"
+   },
+   {
+    "t": "Estructura estricta a prueba de agua"
+   },
+   {
+    "t": "Caja de batería independiente y estructura de batería fija"
+   }
+  ]
+ },
+ {
+  "code": "IS-LA1010",
+  "name": "All in One 500W",
+  "line": "IS",
+  "tags": [
+   "industrial",
+   "comercial",
+   "solar",
+   "decorativo"
+  ],
+  "pages": [
+   36,
+   37,
+   38
+  ],
+  "pdf": "/fichas/IS-LA1010.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LA1010.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LA1010-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Material: Aluminio Montaje: Punta de poste / Brazo tipo L Acabado: Plata Fuente Luminosa: LED Osram Óptica: Asimétrica 2M Potencia: 500 Watts Eficiencia Nominal: 200 Im/w Panel Sol",
+  "blocks": [
+   {
+    "t": "Luminarias Autónoma Solar \"All in One\""
+   },
+   {
+    "t": "Material: Aluminio Montaje: Punta de poste / Brazo tipo L Acabado: Plata Fuente Luminosa: LED Osram Óptica: Asimétrica 2M Potencia: 500 Watts Eficiencia Nominal: 200 Im/w Panel Solar: Silicio Monocristalino 5V/100W Autonomia: 2 días Horas de vida: 100,000 Hrs. Batería: Litio 3.2V/1420AH Control: Brillo Constante Temp. de Operación: -30°C a 65°C Simbología"
+   },
+   {
+    "t": "The 4 indicator lights display the battery capacity, and 1 indicator led represents25% power 1 indicator on:25% power Red Light 2 indicators on:25% 50% power Red Light 3 indicators on:50% 75% power Blue Light 4indicators on:75% 100% power Green light"
+   },
+   {
+    "t": "Estructura estricta a prueba de agua"
+   },
+   {
+    "t": "Caja de batería independiente y estructura de batería fija"
+   }
+  ]
+ },
+ {
+  "code": "IS-LA1011",
+  "name": "All in One 500W II",
+  "line": "IS",
+  "tags": [
+   "industrial",
+   "comercial",
+   "solar",
+   "decorativo"
+  ],
+  "pages": [
+   39,
+   40
+  ],
+  "pdf": "/fichas/IS-LA1011.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LA1011.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LA1011-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Material: Aluminio Montaje: Punta de poste / Brazo tipo L Acabado: Plata Fuente Luminosa: LED Osram Óptica: Asimétrica 2M Potencia: 500 Watts Eficiencia Nominal: 200 Im/w Panel Sol",
+  "blocks": [
+   {
+    "t": "Luminarias Autónoma Solar \"All in One\""
+   },
+   {
+    "t": "Material: Aluminio Montaje: Punta de poste / Brazo tipo L Acabado: Plata Fuente Luminosa: LED Osram Óptica: Asimétrica 2M Potencia: 500 Watts Eficiencia Nominal: 200 Im/w Panel Solar: Silicio Monocristalino 5V/100W Autonomia: 2 días Horas de vida: 100,000 Hrs. Batería: Litio 3.2V/1440AH Control: Brillo Constante Temp. de Operación: -30°C a 65°C Simbología"
+   },
+   {
+    "t": "The 4 indicator lights display the battery capacity, and 1 indicator led represents25% power 1 indicator on:25% power Red Light 2 indicators on:25% 50% power Red Light 3 indicators on:50% 75% power Blue Light 4indicators on:75% 100% power Green light"
+   },
+   {
+    "t": "Estructura estricta a prueba de agua"
+   },
+   {
+    "t": "Caja de batería independiente y estructura de batería fija"
+   }
+  ]
+ },
+ {
+  "code": "IS-LA1012",
+  "name": "All in One 500W III",
+  "line": "IS",
+  "tags": [
+   "industrial",
+   "comercial",
+   "solar",
+   "decorativo"
+  ],
+  "pages": [
+   41,
+   42,
+   43
+  ],
+  "pdf": "/fichas/IS-LA1012.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LA1012.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LA1012-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Material: Aluminio Montaje: Punta de poste / Brazo tipo L Acabado: Plata Fuente Luminosa: LED Osram Óptica: Asimétrica 2M Potencia: 500 Watts Eficiencia Nominal: 200 Im/w Panel Sol",
+  "blocks": [
+   {
+    "t": "Luminarias Autónoma Solar \"FORLED\""
+   },
+   {
+    "t": "Material: Aluminio Montaje: Punta de poste / Brazo tipo L Acabado: Plata Fuente Luminosa: LED Osram Óptica: Asimétrica 2M Potencia: 500 Watts Eficiencia Nominal: 200 Im/w Panel Solar: Silicio Monocristalino 5V/100W Autonomia: 2 días Horas de vida: 100,000 Hrs. Batería: Litio 3.2V/1440AH Control: Brillo Constante Temp. de Operación: -30°C a 65°C Simbología"
+   },
+   {
+    "t": "Luminarias Autónoma Solar \"All in One\""
+   },
+   {
+    "t": "The 4 indicator lights display the battery capacity, and 1 indicator led represents25% power 1 indicator on:25% power Red Light 2 indicators on:25% 50% power Red Light 3 indicators on:50% 75% power Blue Light 4indicators on:75% 100% power Green light"
+   },
+   {
+    "t": "Estructura estricta a prueba de agua"
+   },
+   {
+    "t": "Caja de batería independiente y estructura de batería fija"
+   }
+  ]
+ },
+ {
+  "code": "IS-LA1013",
+  "name": "All in One 400W II",
+  "line": "IS",
+  "tags": [
+   "industrial",
+   "comercial",
+   "solar",
+   "decorativo"
+  ],
+  "pages": [
+   44,
+   45,
+   46
+  ],
+  "pdf": "/fichas/IS-LA1013.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LA1013.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LA1013-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Material: Aluminio Montaje: Punta de poste / Brazo tipo L Acabado: Plata Fuente Luminosa: LED Osram Óptica: Asimétrica 2M Potencia: 400 Watts Eficiencia Nominal: 200 Im/w Panel Sol",
+  "blocks": [
+   {
+    "t": "Luminarias Autónoma Solar \"FORLED\""
+   },
+   {
+    "t": "Material: Aluminio Montaje: Punta de poste / Brazo tipo L Acabado: Plata Fuente Luminosa: LED Osram Óptica: Asimétrica 2M Potencia: 400 Watts Eficiencia Nominal: 200 Im/w Panel Solar: Silicio Monocristalino 5V/100W Autonomia: 2 días Horas de vida: 100,000 Hrs. Batería: Litio 3.2V/1440AH Control: Brillo Constante Temp. de Operación: -30°C a 65°C Simbología"
+   },
+   {
+    "t": "Luminarias Autónoma Solar \"All in One\""
+   },
+   {
+    "t": "The 4 indicator lights display the battery capacity, and 1 indicator led represents25% power 1 indicator on:25% power Red Light 2 indicators on:25% 50% power Red Light 3 indicators on:50% 75% power Blue Light 4indicators on:75% 100% power Green light"
+   },
+   {
+    "t": "Estructura estricta a prueba de agua"
+   },
+   {
+    "t": "Caja de batería independiente y estructura de batería fija"
+   }
+  ]
+ },
+ {
+  "code": "IS-LA1014",
+  "name": "FORLED 100W",
+  "line": "IS",
+  "tags": [
+   "industrial",
+   "comercial",
+   "solar",
+   "decorativo"
+  ],
+  "pages": [
+   47,
+   48
+  ],
+  "pdf": "/fichas/IS-LA1014.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LA1014.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LA1014-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Material: Aluminio Montaje: Punta de poste / Brazo tipo L Acabado: Plata Fuente Luminosa: LED Osram Óptica: Asimétrica 2M Potencia: 100 Watts Eficiencia Nominal: 200 Im/w Panel Sol",
+  "blocks": [
+   {
+    "t": "Luminarias Autónoma Solar \"FORLED\""
+   },
+   {
+    "t": "Material: Aluminio Montaje: Punta de poste / Brazo tipo L Acabado: Plata Fuente Luminosa: LED Osram Óptica: Asimétrica 2M Potencia: 100 Watts Eficiencia Nominal: 200 Im/w Panel Solar: Silicio Monocristalino 5V/100W Autonomia: 2 días Horas de vida: 100,000 Hrs. Batería: Litio 3.2V/1440AH Control: Brillo Constante Temp. de Operación: -30°C a 65°C Simbología"
+   }
+  ]
+ },
+ {
+  "code": "IS-LA1015",
+  "name": "FORLED 100W II",
+  "line": "IS",
+  "tags": [
+   "industrial",
+   "comercial",
+   "solar",
+   "decorativo"
+  ],
+  "pages": [
+   49,
+   50
+  ],
+  "pdf": "/fichas/IS-LA1015.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LA1015.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LA1015-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Material: Aluminio Montaje: Punta de poste / Brazo tipo L Acabado: Plata Fuente Luminosa: LED Osram Óptica: Asimétrica 2M Potencia: 100 Watts Eficiencia Nominal: 200 Im/w Panel Sol",
+  "blocks": [
+   {
+    "t": "Luminarias Autónoma Solar \"FORLED\""
+   },
+   {
+    "t": "Material: Aluminio Montaje: Punta de poste / Brazo tipo L Acabado: Plata Fuente Luminosa: LED Osram Óptica: Asimétrica 2M Potencia: 100 Watts Eficiencia Nominal: 200 Im/w Panel Solar: Silicio Monocristalino 5V/100W Autonomia: 2 días Horas de vida: 100,000 Hrs. Batería: Litio 3.2V/1440AH Control: Brillo Constante Temp. de Operación: -30°C a 65°C Simbología"
+   }
+  ]
+ },
+ {
+  "code": "IS-AO1016",
+  "name": "URBLED 200W Solar",
+  "line": "IS",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "solar",
+   "residencial"
+  ],
+  "pages": [
+   51
+  ],
+  "pdf": "/fichas/IS-AO1016.pdf",
+  "image": {
+   "src": "/fichas/img/IS-AO1016.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-AO1016-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Cero gastos de electricidad ya que son 100% solares. - Larga vida útil y libre de mantenimiento. -Instalación en 5 minutos (sin cableado). -Diseño estético y adaptable a cualquier ",
+  "blocks": [
+   {
+    "h": "Luminaria led solar urbled-200w"
+   },
+   {
+    "t": "Sin atenuación por 12 horas continuas"
+   },
+   {
+    "t": "Cero gastos de electricidad ya que son 100% solares. - Larga vida útil y libre de mantenimiento. -Instalación en 5 minutos (sin cableado). -Diseño estético y adaptable a cualquier espacio. -No contaminan. -Sin riesgos de descargas eléctricas o incendios. -Resistencia a diversos climas."
+   },
+   {
+    "t": "Poder: 200 Watts. -Tamaño de la lámpara: 85x35x11cm -IP67: Impermeable resistente a la lluvia y polvo. -Flujo luminoso: 18000 lúmenes. -Cantidad de leds: 240. -Color de la temperatura: 6000K Blanco frio. -Material de la lámpara: Aluminio. -Certificado: CE, RoHS. -Batería: Litio 3.2V/40000mAh -Tiempo de vida: 50000 Horas. -Horas de carga: 6 A 7 Horas. -Tiempo de trabajo: 10 a 12 Horas por noche. -Altura de instalación: 6 a 8 Metros de altura. -Angulo: 120° -Entrada para el poste: 6cm -Marca: Solar Light."
+   },
+   {
+    "t": "Forma de trabajo: Enciende manera automática al anochecer y de la misma manera se apaga al amanecer. Función del control: Sirve para programar las horas de trabajo de lámpara ya sea 3 horas, 5 horas, 8 horas y en modo AUTO trabajaría toda la noche al amanecer se apagaría de manera automática. El control también sirve para activar o desactivar el sensor de movimiento."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Cotos, zonas residenciales Areas recreativas Universidades Andadores, patios, corredores y pasillos"
+   }
+  ]
+ },
+ {
+  "code": "IS-AO1017",
+  "name": "URBLED 500W Solar",
+  "line": "IS",
+  "tags": [
+   "parques",
+   "comercial",
+   "solar",
+   "residencial"
+  ],
+  "pages": [
+   52
+  ],
+  "pdf": "/fichas/IS-AO1017.pdf",
+  "image": {
+   "src": "/fichas/img/IS-AO1017.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-AO1017-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Factor de potencia: > 0.9 Distorsión armónica total (THD): < 20 %",
+  "blocks": [
+   {
+    "h": "Luminaria led solar urbled-500w"
+   },
+   {
+    "t": "Factor de potencia: > 0.9 Distorsión armónica total (THD): < 20 %"
+   },
+   {
+    "t": "Iluminación profesional en jardines, patios, fachadas y áreas exteriores residenciales o comerciales Iluminar accesos, estacionamientos, pasillos, caminos y perímetros con alta potencia lumínica Resaltar muros, entradas, portones, estructuras y áreas abiertas con luz uniforme y de gran alcance Ambientar parques, terrazas, áreas comunes y espacios exteriores sin necesidad de conexión eléctrica Proporcionar iluminación funcional con modos automáticos, temporizados o de encendido nocturno Aplicaciones de seguridad que requieren iluminación potente y constante durante la noche Proyectos sustentables que demandan alta eficiencia energética mediante energía solar integrada"
+   }
+  ]
+ },
+ {
+  "code": "IS-AO1018",
+  "name": "SUBLED 200W Solar",
+  "line": "IS",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "solar",
+   "residencial"
+  ],
+  "pages": [
+   53
+  ],
+  "pdf": "/fichas/IS-AO1018.pdf",
+  "image": {
+   "src": "/fichas/img/IS-AO1018.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-AO1018-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Cero gastos de electricidad ya que son 100% solares. - Larga vida útil y libre de mantenimiento. -Instalación en 5 minutos (sin cableado). -Diseño estético y adaptable a cualquier ",
+  "blocks": [
+   {
+    "h": "Luminaria led solar subled-200w"
+   },
+   {
+    "t": "Sin atenuación por 12 horas continuas"
+   },
+   {
+    "t": "Cero gastos de electricidad ya que son 100% solares. - Larga vida útil y libre de mantenimiento. -Instalación en 5 minutos (sin cableado). -Diseño estético y adaptable a cualquier espacio. -No contaminan. -Sin riesgos de descargas eléctricas o incendios. -Resistencia a diversos climas."
+   },
+   {
+    "t": "IP-65 Flujo Luminoso-20,000 Lm Apertura Luz-0-140° Horas de Vida-30,000 No. Leds-84 Consumo-200W PF->0.8 CRI-70 Temperatura-6500K"
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Cotos, zonas residenciales Areas recreativas Universidades Andadores, patios, corredores y pasillos"
+   }
+  ]
+ },
+ {
+  "code": "IS-AO1019",
+  "name": "All in One 500W Solar",
+  "line": "IS",
+  "tags": [
+   "solar"
+  ],
+  "pages": [
+   54
+  ],
+  "pdf": "/fichas/IS-AO1019.pdf",
+  "image": {
+   "src": "/fichas/img/IS-AO1019.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-AO1019-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": [
+   {
+    "t": "LUMINARIA LED SOLAR ALL IN ONE -500W"
+   }
+  ]
+ },
+ {
+  "code": "IS-AO1020",
+  "name": "All in One 300W Solar",
+  "line": "IS",
+  "tags": [
+   "solar"
+  ],
+  "pages": [
+   55
+  ],
+  "pdf": "/fichas/IS-AO1020.pdf",
+  "image": {
+   "src": "/fichas/img/IS-AO1020.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-AO1020-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": [
+   {
+    "t": "LUMINARIA LED SOLAR ALL IN ONE -300W"
+   }
+  ]
+ },
+ {
+  "code": "IS-LA1021",
+  "name": "Suburbana Solar 300W",
+  "line": "IS",
+  "tags": [
+   "solar"
+  ],
+  "pages": [
+   56
+  ],
+  "pdf": "/fichas/IS-LA1021.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LA1021.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LA1021-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": []
+ },
+ {
+  "code": "IS-LA1022",
+  "name": "Luminaria Solar L-9",
+  "line": "IS",
+  "tags": [
+   "solar"
+  ],
+  "pages": [
+   57
+  ],
+  "pdf": "/fichas/IS-LA1022.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LA1022.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LA1022-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": []
+ },
+ {
+  "code": "IS-LP1023",
+  "name": "Luminaria Solar con Panel 180W-240W",
+  "line": "IS",
+  "tags": [
+   "solar"
+  ],
+  "pages": [
+   58
+  ],
+  "pdf": "/fichas/IS-LP1023.pdf",
+  "image": {
+   "src": "/fichas/img/IS-LP1023.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-LP1023-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "MODELO: SOLAR POTENCIA: 180W, 240W FLUJO LUMINOSO: 14,400LM TEMPERATURA DE COLOR: 6,500K GRADO DE PROTECCION: IP66 TIEMPO PROMEDIO: 8 HRS DE CARGA",
+  "blocks": [
+   {
+    "h": "Caracteristicas"
+   },
+   {
+    "t": "MODELO: SOLAR POTENCIA: 180W, 240W FLUJO LUMINOSO: 14,400LM TEMPERATURA DE COLOR: 6,500K GRADO DE PROTECCION: IP66 TIEMPO PROMEDIO: 8 HRS DE CARGA"
+   }
+  ]
+ },
+ {
+  "code": "IS-VS1024",
+  "name": "Luminaria Viena con Sistema Fotovoltaico",
+  "line": "IS",
+  "tags": [
+   "parques",
+   "solar",
+   "decorativo"
+  ],
+  "pages": [
+   59
+  ],
+  "pdf": "/fichas/IS-VS1024.pdf",
+  "image": {
+   "src": "/fichas/img/IS-VS1024.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-VS1024-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "FABRICACIÓN: BASE DE PEDESTAL, BRAZO ORNAMENTAL TIPO LAUREL RIZO PARA RECIBIR 1 LUMINARIA , CAÑA DE POSTE EN ACERO DE 4\" DE DIAMETRO, CON LUMINARIO TIPO VIENA.",
+  "blocks": [
+   {
+    "t": "FABRICACIÓN: BASE DE PEDESTAL, BRAZO ORNAMENTAL TIPO LAUREL RIZO PARA RECIBIR 1 LUMINARIA , CAÑA DE POSTE EN ACERO DE 4\" DE DIAMETRO, CON LUMINARIO TIPO VIENA."
+   },
+   {
+    "t": "FIJACIÓN: BASE PREPARADA DE ACERO DE ⅜ x 18CM PARA ANCLAJE DE 31 CM/CENTROS."
+   },
+   {
+    "t": "ACABADOS: RECUBRIMIENTO ELECTROSTÁTICO CURADO AL HORNO."
+   },
+   {
+    "t": "APLICACIONES: PLAZAS JARDINES PARQUES EXPLANADAS"
+   },
+   {
+    "t": "MODULO SOLAR: 1 MODULO SOLAR SW160 MULTICRISTALINO 160W. BANCO DE BATERIA: 1 BATERIA 12V, 115AMP. LIBRE DE MANTENIMIENTO, VIDA UTIL DE 3 A 5 AÑOS. CONTROLADOR: 10AMP. 12/24 MICROPROCESADOR, INDICADORES LUMINOSOS A LED. LUMINARIO: 1 LUMINARIO VIENA FAST FLEX PHILIPS A 12V LUMENS: 6.000 GABINETE: PARA UNA BATERÍA, FABRICADA EN LAMINA CAL-14. ACABADO EN PINTURA ELECTROSTATICA."
+   }
+  ]
+ },
+ {
+  "code": "IS-SP1025",
+  "name": "Sistema Solar Fotovoltaico 50W Titan",
+  "line": "IS",
+  "tags": [
+   "solar"
+  ],
+  "pages": [
+   60
+  ],
+  "pdf": "/fichas/IS-SP1025.pdf",
+  "image": {
+   "src": "/fichas/img/IS-SP1025.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-SP1025-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Modulo solar: 1 Modulo solar SW150 multicristalino 150W. Banco de Bateria: 2 Baterias 12V, 115Amp. libre de mantenimiento, vida util de 3 a 5 años. Controlador: 20Amp. 12/24 microp",
+  "blocks": [
+   {
+    "h": "Sistema solar fotovoltaico de 50w"
+   },
+   {
+    "t": "Modulo solar: 1 Modulo solar SW150 multicristalino 150W. Banco de Bateria: 2 Baterias 12V, 115Amp. libre de mantenimiento, vida util de 3 a 5 años. Controlador: 20Amp. 12/24 microprocesador, indicadores luminosos a LED. Luminario: 1luminario Titan con equipo de 50W. fast flex philips a 12V Lumens: 6.000 Gabinete: para 2 baterias, fabricada en lamina cal- 14. acabado en pintura electrostatica. Poste: Conico circular de 6 metros de altura, acabado pintura electrostatica anticorrosiva. Brazo: De 1 metro de longitud, fabricado en tubo de 1 1/2\" diametro nominal, acabado pintura electrostatica anticorrosiva. Estructura para celda: Para un modulo solar, acabado en pintura anticorrosiva."
+   }
+  ]
+ },
+ {
+  "code": "IS-AO1026",
+  "name": "All in One 100W",
+  "line": "IS",
+  "tags": [
+   "industrial",
+   "comercial",
+   "solar",
+   "decorativo"
+  ],
+  "pages": [
+   61,
+   62
+  ],
+  "pdf": "/fichas/IS-AO1026.pdf",
+  "image": {
+   "src": "/fichas/img/IS-AO1026.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-AO1026-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Código Serie / Modelo Marca LZ 100W LED ICEMEX",
+  "blocks": [
+   {
+    "t": "SOLAR-LZ LUMINARIA LED ALL IN ONE"
+   },
+   {
+    "t": "Código Serie / Modelo Marca LZ 100W LED ICEMEX"
+   },
+   {
+    "t": "ALL in ONE 100W Luminarias Autónoma Solar “All in One”."
+   },
+   {
+    "t": "Luminaria autonoma solar“All in One”, diseñada para alumbrado público,"
+   },
+   {
+    "t": "urbano, comercial e industrial. La luminaria esta compuesta por LEDs de alto"
+   },
+   {
+    "t": "desempeño, batería de litio especialmente desarrollada para luminarias,"
+   },
+   {
+    "t": "panel de silicio monocristalino y regulador de carga. Configuración"
+   },
+   {
+    "t": "preestablecida para tener iluminación por 12 horas en condiciones normales"
+   },
+   {
+    "t": "de operación. Montaje tipo punta de poste o mediante brazo tipo \"L\". Altura de"
+   },
+   {
+    "t": "montaje recomendada: 9 a 10 metros. Se recomienda limpieza periódica del"
+   },
+   {
+    "t": "panel solar para evitar acumulación de residuos. Garantía de 10 años en la"
+   },
+   {
+    "t": "luminaria, 5 años en batería, y 20 años en panel solar."
+   },
+   {
+    "t": "Aluminio / Policarbonato Punta"
+   },
+   {
+    "t": "Silicio Monocristalino 18V/100W"
+   },
+   {
+    "h": "Led"
+   },
+   {
+    "t": "Tiempo Iluminación (horas)"
+   }
+  ]
+ },
+ {
+  "code": "IS-AO1027",
+  "name": "Luminaria Solar A-P9F 70W-120W",
+  "line": "IS",
+  "tags": [
+   "vialidad",
+   "comercial",
+   "solar"
+  ],
+  "pages": [
+   63,
+   64,
+   65,
+   66,
+   67
+  ],
+  "pdf": "/fichas/IS-AO1027.pdf",
+  "image": {
+   "src": "/fichas/img/IS-AO1027.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-AO1027-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "LUMINARIA LED SOLAR PARA VIALIDADES A-P9F",
+  "blocks": [
+   {
+    "t": "LUMINARIA LED SOLAR PARA VIALIDADES A-P9F"
+   },
+   {
+    "t": "Sin atenuación por 12 horas continuas"
+   },
+   {
+    "t": "LUMINARIA LED SOLAR PARA VIALIDADES A-P9F 70W - 120W / LT"
+   },
+   {
+    "h": "Patentado"
+   },
+   {
+    "t": "Monitorea y controla la carga y descarga de las"
+   },
+   {
+    "t": "camino Iluminación al 100% durante toda la noche. Gracias a su controlador"
+   },
+   {
+    "t": "celdas de forma equilibrada, optimizando"
+   },
+   {
+    "t": "patentado y batería de alta capacidad, la BI-S9B"
+   },
+   {
+    "t": "su rendimiento y prolongándola vida útil"
+   },
+   {
+    "t": "versátil Nivel de burbuja integrado"
+   },
+   {
+    "t": "Batería 3,000 ciclos de carga y descarga asegura un rendimiento de 16 años,"
+   },
+   {
+    "t": "y soporte doble ajustable para montaje en punta o"
+   },
+   {
+    "t": "brazo, con ángulos bloqueables para mayor"
+   },
+   {
+    "t": "batería seguirá funcionando al 80% de"
+   },
+   {
+    "t": "Resistencia Certificado de resistencia al viento de"
+   },
+   {
+    "t": "hasta 205 km/h (huracán categoría 5)."
+   },
+   {
+    "t": "Especificaciones técnicas"
+   },
+   {
+    "h": "Tii s"
+   },
+   {
+    "t": "MPPT PATENTADO con cubierta de aluminio"
+   },
+   {
+    "t": "Flujo luminoso del sistema"
+   },
+   {
+    "t": "Blanco neutro (BN) Blanco frío (BF)"
+   },
+   {
+    "h": "Cri"
+   },
+   {
+    "t": "Temperatura de almacenaje"
+   },
+   {
+    "t": "Carcasa de fundición a presión, pintura poliéster electrostática y anticorrosiva, tornillería de acero inoxidable grado marino A316L y lente de policarbonato con anti UV"
+   },
+   {
+    "t": "Antivandálicas Instalación fácil y rápida, ¡hágalo"
+   },
+   {
+    "t": "Energía limpia y verde: ideal para un futuro sostenible"
+   },
+   {
+    "t": "Curvas de distribución de luz"
+   },
+   {
+    "h": "Luminaria led solar"
+   },
+   {
+    "t": "PARA VIALIDADES A-P9F 70W - 120W / LT"
+   },
+   {
+    "t": "Tamaño del producto y empaque"
+   },
+   {
+    "h": "L * a * h"
+   },
+   {
+    "t": "Fijar tornillos y tuercas de sujeción"
+   },
+   {
+    "t": "*No incluye poste ni brazo"
+   },
+   {
+    "t": "Recomendaciones para su correcto funcionamiento"
+   },
+   {
+    "t": "Nuestras luminarias solares deben de tener acceso pleno a la luz solar para su correcta carga y"
+   },
+   {
+    "t": "NO deben ser colocadas debajo de árboles, edificaciones o estructuras que creen sombra a la"
+   },
+   {
+    "t": "Así como evitar la luz directa de otras luminarias por encima del panel fotovoltaico."
+   }
+  ]
+ },
+ {
+  "code": "IS-AO1028",
+  "name": "Luminaria Solar PF 50W",
+  "line": "IS",
+  "tags": [
+   "vialidad",
+   "solar"
+  ],
+  "pages": [
+   68,
+   69,
+   70,
+   71
+  ],
+  "pdf": "/fichas/IS-AO1028.pdf",
+  "image": {
+   "src": "/fichas/img/IS-AO1028.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-AO1028-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "SOLAR-PF LUMINARIA LED SOLAR PARA VIALIDADES 50W | LT",
+  "blocks": [
+   {
+    "h": "Luminario de led solar-pf"
+   },
+   {
+    "t": "SOLAR-PF LUMINARIA LED SOLAR PARA VIALIDADES 50W | LT"
+   },
+   {
+    "h": "En luminaria años en batería"
+   },
+   {
+    "t": "Toda la noche toda la luz"
+   },
+   {
+    "t": "Iluminación al 100% durante toda la noche,"
+   },
+   {
+    "h": "Patentado"
+   },
+   {
+    "t": "Monitorea y controla la carga y descarga de"
+   },
+   {
+    "t": "sin interrupciones ni pérdidas de energía."
+   },
+   {
+    "h": "Eficacia de led"
+   },
+   {
+    "t": "las celdas de forma equilibrada, optimizando su rendimiento y prolongando"
+   },
+   {
+    "t": "la vida útil de la batería."
+   },
+   {
+    "h": "Patentado"
+   },
+   {
+    "t": "Batería 3000 ciclos de carga y descarga asegura un rendimiento de 16 años, posteriormente la batería"
+   },
+   {
+    "t": "carga de la batería que optimiza su rendimiento."
+   },
+   {
+    "h": "Hermeticidad"
+   },
+   {
+    "t": "Unidad de medida Watt SOLAR - PF - XXX W - LT"
+   },
+   {
+    "t": "Modelo Potencia Código de asesor"
+   },
+   {
+    "t": "Especificaciones técnicas"
+   },
+   {
+    "h": "Tii s"
+   },
+   {
+    "t": "MPPT PATENTADO con cubierta de aluminio"
+   },
+   {
+    "t": "Flujo luminoso del sistema"
+   },
+   {
+    "t": "Blanco neutro (BN) Blanco frío (BF)"
+   },
+   {
+    "h": "Cri"
+   },
+   {
+    "t": "Temperatura de almacenaje"
+   },
+   {
+    "t": "Carcasa de fundición a presión, pintura poliéster electrostática y anticorrosiva, tornillería de acero inoxidable grado marino A316L y lente de policarbonato con anti UV"
+   },
+   {
+    "t": "Ventajas • Controlador MPPT patentado con cubierta de aluminio, mejora la disipación del calor y la estabilidad."
+   },
+   {
+    "t": "Carcasa de aluminio que ofrece una mayor resistencia al viento y a la corrosión. • Batería LiFePo4 de"
+   },
+   {
+    "t": "clase A la cual proporciona más de 3000 ciclos y una vida útil de más de 16 años."
+   },
+   {
+    "t": "Sistema de gestión de celdas que monitorea y controla de manera uniforme el proceso"
+   },
+   {
+    "t": "de carga y descarga de la batería."
+   },
+   {
+    "t": "Funcionamiento al 100% de su flujo luminoso durante 12 horas con respaldo de 2 noches"
+   },
+   {
+    "t": "Adaptación y versatilidad con la instalación del soporte horizontal o vertical con ángulo"
+   },
+   {
+    "t": "Contenedor 20 ft (unidades)Contenedor 40 ft (unidades)"
+   }
+  ]
+ },
+ {
+  "code": "IS-AO1029",
+  "name": "Luminaria Solar SFS",
+  "line": "IS",
+  "tags": [
+   "vialidad",
+   "parques",
+   "industrial",
+   "comercial",
+   "solar",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   72,
+   73
+  ],
+  "pdf": "/fichas/IS-AO1029.pdf",
+  "image": {
+   "src": "/fichas/img/IS-AO1029.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-AO1029-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "para iluminación vialidades secundarias, residenciales o industriales, estacionamientos abiertos, jardines, centros turísticos, caminos rurales y lugares donde no exista red eléctr",
+  "blocks": [
+   {
+    "h": "Luminario para vialidades"
+   },
+   {
+    "t": "Las luminarias tipo SFS están diseñadas"
+   },
+   {
+    "t": "para iluminación vialidades secundarias, residenciales o industriales, estacionamientos abiertos, jardines, centros turísticos, caminos rurales y lugares donde no exista red eléctrica. Se fabrica con cuerpo de aluminio fundido a presión ADC12 de alta resistencia y alta calidad, su carcasa es de aluminio fundido a presión con recubrimiento en polvo confiable para entornos exteriores hostiles."
+   },
+   {
+    "h": "De facil instalación"
+   },
+   {
+    "t": "Cuenta con una bateria solar de litio de alta profundidad de descarga, tiene un modulo fotovoltaico monocristalino y un controlador solar programable inteligente. Gracias a su diseño posee una facilidad de rotación e inclinación para su ajuste conforme a la latitud de la instalación."
+   },
+   {
+    "h": "Autonomía 5días"
+   },
+   {
+    "t": "Vialidades secundarias, residenciales o industriales • Centros turísticos, fábricas, paisajes • Estacionamientos • Jardines • Escuelas"
+   },
+   {
+    "t": "Temperatura de color TCC: Luz de día 5700K."
+   },
+   {
+    "t": "Para iluminación exterior."
+   },
+   {
+    "t": "Óptica disponible: Abierta Tipo II Corta (II-S)."
+   },
+   {
+    "t": "Tipo de soporte: Fijado en punta de poste o en brazo de 64 mm."
+   },
+   {
+    "t": "Índice de rendimiento de color (IRC): 70."
+   },
+   {
+    "t": "Potencias disponibles: 30W, 50W, 80W y 100W."
+   },
+   {
+    "t": "LED tipo SMD de alto rendimiento luminoso."
+   },
+   {
+    "t": "Eficiencia: 190 lm/W."
+   },
+   {
+    "t": "Driver de encendido instantáneo."
+   },
+   {
+    "t": "Voltaje de operación de entrada: 12.8 V CD o 25.6 V DC"
+   },
+   {
+    "t": "Temperatura de operación: -5°C a +50°C."
+   },
+   {
+    "t": "Grado de protección a la intemperie: IP65."
+   },
+   {
+    "t": "Vida útil promedio: 50,000 Horas."
+   },
+   {
+    "t": "Nivel de aislamiento clase I."
+   },
+   {
+    "h": "(w)"
+   },
+   {
+    "t": "La lectura de la primer dimensión de la luminaria corresponde al luminario para instalación en brazo. La lectura de la segunda dimensión de la luminaria corresponde al luminario para instalación en punta de poste."
+   },
+   {
+    "t": "Configuración de producto"
+   },
+   {
+    "t": "Curva fotométrica Temperatura de color"
+   },
+   {
+    "h": "Sen"
+   },
+   {
+    "t": "30 TII-S = Tipo II corta TII-M = Tipo II media TIII-M = Tipo III media TV = Tipo V"
+   },
+   {
+    "h": "Cre"
+   },
+   {
+    "t": "Disponible sobre pedido en los siguientes tipos de curvas: II-M, III-M y V."
+   },
+   {
+    "t": "Disponible sobre pedido en 3 000 K y 4 000 K La linea comercial es con curva tipo II corta, Luz de día 5700K sin sistema de control"
+   },
+   {
+    "t": "Información sujeta a cambios por mejoras en el producto o normativa vigente"
+   },
+   {
+    "t": "Luminario para instalación"
+   }
+  ]
+ },
+ {
+  "code": "IS-AO1030",
+  "name": "AD-50W Vialidades",
+  "line": "IS",
+  "tags": [
+   "vialidad",
+   "solar"
+  ],
+  "pages": [
+   74,
+   75,
+   76,
+   77
+  ],
+  "pdf": "/fichas/IS-AO1030.pdf",
+  "image": {
+   "src": "/fichas/img/IS-AO1030.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/IS-AO1030-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "LUMINARIA LED SOLAR PARA VIALIDADES AD-50W",
+  "blocks": [
+   {
+    "t": "LUMINARIA LED SOLAR PARA VIALIDADES AD-50W"
+   },
+   {
+    "t": "Sin atenuación por 12 horas continuas"
+   },
+   {
+    "t": "Toda la noche toda la luz"
+   },
+   {
+    "t": "Iluminación al 100% durante toda la noche,"
+   },
+   {
+    "h": "Patentado"
+   },
+   {
+    "t": "Monitorea y controla la carga y descarga de las"
+   },
+   {
+    "t": "sin interrupciones ni pérdidas de energía."
+   },
+   {
+    "t": "celdas de forma equilibrada, optimizando"
+   },
+   {
+    "t": "su rendimiento y prolongando la vida útil de"
+   },
+   {
+    "h": "Patentado"
+   },
+   {
+    "t": "Batería 3000 ciclos de carga y descarga asegura un rendimiento de 16 años,"
+   },
+   {
+    "t": "carga de la batería que optimiza su rendimiento."
+   },
+   {
+    "t": "batería seguirá funcionando al 80% de"
+   },
+   {
+    "t": "Resistencia Certificado de resistencia al viento de"
+   },
+   {
+    "t": "hasta 205 km/h (huracán categoría 5)."
+   },
+   {
+    "t": "Distintivo de calidad Primera en obtener la certificación NOM-013-ENER- 2013 asegurando desempeño comprobado y cumplimiento con los estándares nacionales"
+   },
+   {
+    "t": "Curvas de distribución de luz"
+   },
+   {
+    "t": "LUMINARIA LED SOLAR PARA VIALIDADES AD-50W Especificaciones técnicas"
+   },
+   {
+    "h": "Tii s"
+   },
+   {
+    "t": "MPPT PATENTADO con cubierta de aluminio"
+   },
+   {
+    "t": "Flujo luminoso del sistema"
+   },
+   {
+    "t": "Blanco neutro (BN) Blanco frío (BF)"
+   },
+   {
+    "h": "Cri"
+   },
+   {
+    "t": "Temperatura de almacenaje"
+   },
+   {
+    "t": "Carcasa de fundición a presión, pintura poliéster electrostática y anticorrosiva, tornillería de acero inoxidable grado marino A316L y lente de policarbonato con anti UV"
+   },
+   {
+    "t": "Antivandálicas Instalación fácil y rápida, ¡hágalo"
+   },
+   {
+    "t": "Energía limpia y verde: ideal para un futuro sostenible"
+   }
+  ]
+ },
+ {
+  "code": "PP-LU1001",
+  "name": "Urban Punta de Poste",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "decorativo"
+  ],
+  "pages": [
+   79
+  ],
+  "pdf": "/fichas/PP-LU1001.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LU1001.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LU1001-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Luminario para alumbrado público de excelente eficiencia lumínica con un agradable diseño modernista.",
+  "blocks": [
+   {
+    "h": "Luminario"
+   },
+   {
+    "t": "Luminario para alumbrado público de excelente eficiencia lumínica con un agradable diseño modernista."
+   },
+   {
+    "h": "Tecnología"
+   },
+   {
+    "t": "Tecnología Led Philips módulo Fast Flex con drivers Xitanium Led Xtreme de Philips de gran protección a la intemperie; con eficiencia óptica de 96%. Con vida útil de 100,000 horas."
+   },
+   {
+    "h": "Cuerpo"
+   },
+   {
+    "t": "Fabricado en inyección a presión de aluminio resistente a la radiación UV y corrosión, cuenta con 13 vetas para mejor disipación de calor, canaleta para desahogo de agua."
+   },
+   {
+    "h": "Acabados"
+   },
+   {
+    "t": "En pintura de gran adherencia, aplicada mediante proceso electrostático y horneada, resistente a rayos UV."
+   },
+   {
+    "h": "Aplicaciones"
+   },
+   {
+    "t": "Ideal para colocar en parques, vía pública, avenidas primarias y secundarias, estacionamientos, etc."
+   },
+   {
+    "t": "Driver 40W y 70W para 12-24V"
+   },
+   {
+    "h": "Montaje"
+   },
+   {
+    "t": "Sistema de sujeción mediante opresores allen de acero inoxidable, con montaje en brazo de 1 ½” interior por 75mm de profundidad"
+   }
+  ]
+ },
+ {
+  "code": "AL-LU1102",
+  "name": "Urban Cosmos Punta de Poste",
+  "line": "AL",
+  "tags": [
+   "vialidad",
+   "tuneles",
+   "decorativo"
+  ],
+  "pages": [
+   80
+  ],
+  "pdf": "/fichas/AL-LU1102.pdf",
+  "image": {
+   "src": "/fichas/img/AL-LU1102.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/AL-LU1102-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Carcaza de aluminio puro de alta duracion, recubierta con pintura tipo poliester aplicada electrostaticamente, brindaddo mayor resistencia a la corrosion. Luminaria ligera, fuerte ",
+  "blocks": [
+   {
+    "h": "Urbanmex punta de poste"
+   },
+   {
+    "t": "Carcaza de aluminio puro de alta duracion, recubierta con pintura tipo poliester aplicada electrostaticamente, brindaddo mayor resistencia a la corrosion. Luminaria ligera, fuerte y confiable que brinda una alta eficiencia. Domo fabricado en aluminio embutido que da proteccion total a la luminaria. Conjunto optico IP65 sellado"
+   },
+   {
+    "t": "CARACTERISTICAS DE LA LUMINARIA CUERPO: Aluminio alta resistencia CURVA: Tipo V simetrica refractor de cristal templado. EQUIPO: Tecnologia philips cosmos white. POTENCIAS: 60W,90W,140W. Características Eficacia de hasta 176 lm/W @ 350mA Corriente máxima de operación de hasta 1,500 mA1 Reproducción de color ≥70 Variedad de temperaturas de color (Desde 3,000 hasta 5,700 Kelvin) Fortimo FastFlex tiene ópticas disponibles II- III- IV, V y High-Bay Fortimo FastFlex DA es compatible con ópticas de terceros Fortimo FastFlex DP X es compatible con ópticas IP de terceros Flexibilidad en programación que optimiza eficiencia o flujo luminoso Uso en aplicaciones exteriores Aplicaciones Iluminación de vialidades Iluminación urbana Iluminación de grandes superficies Túneles"
+   }
+  ]
+ },
+ {
+  "code": "PP-UL1003",
+  "name": "Urban LED Punta de Poste",
+  "line": "LU",
+  "tags": [
+   "parques",
+   "decorativo"
+  ],
+  "pages": [
+   81
+  ],
+  "pdf": "/fichas/PP-UL1003.pdf",
+  "image": {
+   "src": "/fichas/img/PP-UL1003.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-UL1003-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Material cuerpo Material reflector Material difusor Instalación de producto",
+  "blocks": [
+   {
+    "h": "Accesorio"
+   },
+   {
+    "t": "Material cuerpo Material reflector Material difusor Instalación de producto"
+   },
+   {
+    "t": "Aluminio Inyectado Aluminio blanco de alta refixión Acrílico Opalino Punta de Poste"
+   },
+   {
+    "t": "Garantia Consumo total Flujo de salida"
+   },
+   {
+    "h": "Fuente luminosa"
+   },
+   {
+    "t": "Tecnología Vida promedio Tipo de vida IRC Temperatura de color Ángulo de apertura"
+   },
+   {
+    "h": "Sistema electrico y control"
+   },
+   {
+    "t": "Equipo Frecuencia de operación Factor de potencia Corriente de entrada Temperatura de operación Distorsiones armonícas (THD) Voltaje de entrada"
+   },
+   {
+    "t": "Luminario tipo ornamental para instalación en punta de poste, Urban City, cuerpo en inyección de aluminio, reflector de aluminio en color blanco, curva Tipo V, refractor de acrílico opalino acabado en pintura horneada micropulverizada color grafito, con tecnología Led, 80 W de consumo total, 7 900 Im, 4000K, driver electrónico multivoltaje, 127-277V 60Hz. integrado. Adecuado para iluminación de parques, ciclopistas, áreas peatonales."
+   }
+  ]
+ },
+ {
+  "code": "PP-UL1004",
+  "name": "Agata",
+  "line": "LU",
+  "tags": [
+   "decorativo"
+  ],
+  "pages": [
+   82
+  ],
+  "pdf": "/fichas/PP-UL1004.pdf",
+  "image": {
+   "src": "/fichas/img/PP-UL1004.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-UL1004-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Luminaria Diseño Clásico Cuerpo fabricado en aluminio puro inyectado a presión con excelentes acabados. Cubierta con pintura tipo poliéster aplicada electrostáticamente brindando m",
+  "blocks": [
+   {
+    "t": "Luminaria Diseño Clásico Cuerpo fabricado en aluminio puro inyectado a presión con excelentes acabados. Cubierta con pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia a la corrosión. Refractor de policarbonato con una eficiente distribución lumínica y resitente al impacto. Sistema Plus LED Circular marca CREE con óptica y curva de distribución simétrica o asimétrica. Driver programable marca Philips. Posibilidad de atenuación 0-10V. Supresor de picos de 10kV. Garantía de 10 años."
+   },
+   {
+    "h": "Fotometria"
+   },
+   {
+    "t": "Eficiencia Nominal 125 l/m/w"
+   },
+   {
+    "t": "Equipo Driver programable 120-277V"
+   },
+   {
+    "h": "Philips"
+   },
+   {
+    "t": "Horas de vida 200,000 Hrs."
+   },
+   {
+    "t": "Material Aluminio / Policarbonato"
+   },
+   {
+    "t": "Montaje Punta de Poste / Niple 2.5*"
+   },
+   {
+    "t": "Tecnología Plus LED Circular / CREE"
+   },
+   {
+    "t": "Optica Simética / Asimétrica"
+   },
+   {
+    "t": "Temp. de Operación -30°C a 40°C"
+   }
+  ]
+ },
+ {
+  "code": "PP-PL1005",
+  "name": "Punta de Poste con Fotocelda 100W",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "industrial",
+   "comercial",
+   "decorativo"
+  ],
+  "pages": [
+   83
+  ],
+  "pdf": "/fichas/PP-PL1005.pdf",
+  "image": {
+   "src": "/fichas/img/PP-PL1005.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-PL1005-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "CARACTERISTICAS PUNTA DE POSTE PARA ALUMBRADO PUBLICO SOLIDA CONSTRUCCION DE ALUMINIO, INDICADO PARA INSTALACION EN JARDINES, CAMINOS RURALES, CITADINOS, PARQUES, AVENIDAS CARRETER",
+  "blocks": [
+   {
+    "h": "Punta de poste c/fotocelda 100w"
+   },
+   {
+    "t": "CARACTERISTICAS PUNTA DE POSTE PARA ALUMBRADO PUBLICO SOLIDA CONSTRUCCION DE ALUMINIO, INDICADO PARA INSTALACION EN JARDINES, CAMINOS RURALES, CITADINOS, PARQUES, AVENIDAS CARRETERAS DISPONIBLE EN VERSIONES DE 60, 80, 100, 120 Y 150 WATTS LUZ BLANCO FRIO"
+   },
+   {
+    "t": "APLICACIONES ILUMINA AREAS EXTERIORES CITADINAS, PLAZAS, COMPLEJOS COMERCIALES, INDUSTRIALES, CARRETERAS Y TODO TIPO DE CAMINO AL EXTERIOR"
+   },
+   {
+    "t": "ELECTRICOS WATTAJE: 100W LUMENES: 100LM/W VOLTAJE: AC85-305V FRECUENCIA: 50/60Hz FACTOR DE PODER: 0.9"
+   },
+   {
+    "t": "EXPECTATIVA DE VIDA TIEMPO PROMEDIO (HORAS): 50,000 GARANTIA (AÑOS): 2"
+   },
+   {
+    "t": "DATOS ELECTRICOS FOTOCELDA WATTAJE: 1000W TUNGSTEIN VOLTAJE: 120-277VAC FRECUENCIA: 50/60Hz"
+   },
+   {
+    "t": "COMPONENTES FUENTE DE LUZ LED: LED EPISTAR"
+   },
+   {
+    "t": "DESEMPENO LUMINICO LUMENES POR WATT (Im/W): 6500*K TEMPERATURA DE COLOR (OCT): 80 INDICE DE COLOR (CRI): AMBIENTAL ANGULO BREAM: TEMPERATURA DE OPERACIÓN: -20°C- 40°C PARA USO EN: INTERIORES/EXTERIORES CONTENIDO MERCURIO (Ha): 0 (cero) INDICE DE PROTECCION: 1P65"
+   },
+   {
+    "t": "FABRICACION MATERIAL: PLASTICO ABS, ALEACION DE ALUMINIO, PC FUENTE DE PODER: A CORRIENTE ELECTRICA PLASTICO"
+   },
+   {
+    "t": "EMPAQUE CAJA DE CARTON: CON GRABADO DIMENCIONES: Al: 600 X An: 520 XPr 135 PESO (Kq): 6.87 PAIS DE ORIGEN: CHINA"
+   },
+   {
+    "t": "MEDIDAS DIMENSIOSO SKa 5.6 466*565"
+   }
+  ]
+ },
+ {
+  "code": "PP-LP1006",
+  "name": "Punta de Poste 60W",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "industrial",
+   "comercial",
+   "decorativo"
+  ],
+  "pages": [
+   84
+  ],
+  "pdf": "/fichas/PP-LP1006.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LP1006.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LP1006-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "CARACTERISTICAS PUNTA DE POSTE PARA ALUMBRADO PUBLICO SOLIDA CONSTRUCCION DE ALUMINIO, INDICADO PARA INSTALACION EN JARDINES, CAMINOS RURALES, CITADINOS, PARQUES, AVENIDAS, CARRETE",
+  "blocks": [
+   {
+    "t": "CARACTERISTICAS PUNTA DE POSTE PARA ALUMBRADO PUBLICO SOLIDA CONSTRUCCION DE ALUMINIO, INDICADO PARA INSTALACION EN JARDINES, CAMINOS RURALES, CITADINOS, PARQUES, AVENIDAS, CARRETERAS DISPONIBLE EN VERSIONES DE 60, 100, 120 Y 150 WATTS LUZ BLANCO FRIO APLICACIONES ILUMINA AREAS EXTERIORES CITADINAS, PLAZAS, COMPLEJOS COMERCIALES, INDUSTRIALES, CARRETERAS Y TODO TIPO DE CAMINO AL EXTERIOR EXPECTATIVA DE VIDA GAMAO PACAÑOSIO (HORAS: 50,000 GARANTIA (AÑOS): CERTIFICACIONES CE, RoHS COMPONENTES FUENTE DE LUZ LED: LED EPISTAR FABRICACION MATERIAL: PLASTICO ABS, ALEACION DE ALUMINIO, PC FUENTE DE PODER: A CORRIENTE ELECTRICA ACABADO: CUERPO NEGRO, REFLECTOR DE PLASTICO EMPAQUE CAJA DE CARTON: CON GRABADO DIMENCIONES: Al: 140 X An: 550 X Pr 460 PESO (Kq): 4.3 PAIS DE ORIGEN: CHINA MEDIDAS DIMENSIONES (mm): 380*380*563 PESO (Ka):"
+   }
+  ]
+ },
+ {
+  "code": "PP-EA1007",
+  "name": "Edge Area Round",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "residencial"
+  ],
+  "pages": [
+   85
+  ],
+  "pdf": "/fichas/PP-EA1007.pdf",
+  "image": {
+   "src": "/fichas/img/PP-EA1007.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-EA1007-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "BetaLED® Technology NanoOptic® Technology IRC > 70 Hecho en USA 10 Años de Garantía",
+  "blocks": [
+   {
+    "t": "BetaLED® Technology NanoOptic® Technology IRC > 70 Hecho en USA 10 Años de Garantía"
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Cotos, zonas residenciales Áreas recreativas Universidades Centros y locales comerciales"
+   }
+  ]
+ },
+ {
+  "code": "PP-TL1008",
+  "name": "Turquesa",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   86
+  ],
+  "pdf": "/fichas/PP-TL1008.pdf",
+  "image": {
+   "src": "/fichas/img/PP-TL1008.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-TL1008-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Especificaciones Carcaza de aluminio puro inyectado a presión recubierta con pintura tipo poliéster aplicada electrostáticamente dando mayor resistencia a la corrosión. Conjunto óp",
+  "blocks": [
+   {
+    "t": "Especificaciones Carcaza de aluminio puro inyectado a presión recubierta con pintura tipo poliéster aplicada electrostáticamente dando mayor resistencia a la corrosión. Conjunto óptico IP-66 completamente sellado para evitar la entrada de contaminantes. Refractor de cristal transparente plano termo templado resistente al impacto. Reflector de lámina de aluminio hidroformada y anodizado a alta brillantez. Porta lámpara de porcelana tipo mogul E39. Montaje para punta de poste de 2 1/2\" ."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Áreas recreativas"
+   },
+   {
+    "t": "Cotos, zonas residenciales Universidades"
+   }
+  ]
+ },
+ {
+  "code": "PP-ZL1009",
+  "name": "Zafiro",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   87
+  ],
+  "pdf": "/fichas/PP-ZL1009.pdf",
+  "image": {
+   "src": "/fichas/img/PP-ZL1009.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-ZL1009-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Especificaciones Cuerpo de aluminio puro inyectado a presión brindando mejores acabados y ligereza. Cuerpo cubierto con pintura tipo poliéster aplicada electrostáticamente. Refract",
+  "blocks": [
+   {
+    "t": "Especificaciones Cuerpo de aluminio puro inyectado a presión brindando mejores acabados y ligereza. Cuerpo cubierto con pintura tipo poliéster aplicada electrostáticamente. Refractor de policarbonato transparente con una excelente distribución lumínica Conjunto óptico IP 65. Reflector en forma de tapa de lámina de aluminio anodizada y louvers para elevar los niveles de reflectancia. Porta lámpara tipo mogul de porcelana E39. Entrada punta de poste de 2 ½\"."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Areas recreativas Cotos, zonas residenciales Universidades"
+   }
+  ]
+ },
+ {
+  "code": "PP-EL1010",
+  "name": "Esmeralda",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   88
+  ],
+  "pdf": "/fichas/PP-EL1010.pdf",
+  "image": {
+   "src": "/fichas/img/PP-EL1010.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-EL1010-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Cuerpo de aluminio puro inyectado a presión brindando mejores acabados y ligereza. Cuerpo cubierto con pintura tipo poliéster aplicada electrostáticamente. Refractor de policarbona",
+  "blocks": [
+   {
+    "t": "Cuerpo de aluminio puro inyectado a presión brindando mejores acabados y ligereza. Cuerpo cubierto con pintura tipo poliéster aplicada electrostáticamente. Refractor de policarbonato transparente con una excelente distribución lumínica. Conjunto óptico IP 65. Reflector en forma de tapa de lámina de aluminio anodizada y louvers para elevar los niveles de reflectancia. Porta lámpara tipo mogul de porcelana E39. Entrada punta de poste de 2 ½/\"."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Áreas recreativas Cotos, zonas residenciales"
+   }
+  ]
+ },
+ {
+  "code": "PP-LO1011",
+  "name": "Onix",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   89
+  ],
+  "pdf": "/fichas/PP-LO1011.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LO1011.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LO1011-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Carcaza y brazos de aluminio puro inyectado a presión recubierta con pintura tipo poliéster aplicada electrostáticamente dando mayor resistencia a la corrosión. Luminario ligero, f",
+  "blocks": [
+   {
+    "t": "Carcaza y brazos de aluminio puro inyectado a presión recubierta con pintura tipo poliéster aplicada electrostáticamente dando mayor resistencia a la corrosión. Luminario ligero, fuerte y conable que brinda una alta eciencia y tecnología en iluminación que soporta temperaturas de hasta 40°C. Domo fabricado de aluminio inyectado que da una protección total a la luminaria. Conjunto óptico IP-66 completamente sellado para evitar la entrada de contaminantes. Refractor de cristal transparente plano termo templado resistente al impacto. Reflector de lámina de aluminio hidroformada y anodizado a alta brillantez. Porta lámpara de porcelana tipo mogul E39. Montaje para punta de poste de 2\"."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Areas recreativas Cotos, zonas residenciales"
+   }
+  ]
+ },
+ {
+  "code": "PP-LI1012",
+  "name": "Inglesa",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   90
+  ],
+  "pdf": "/fichas/PP-LI1012.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LI1012.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LI1012-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Armadura y base fabricado con nos y elegantes acabados de aluminio puro fundido moldeado en arena recubierto con pintura tipo poliéster aplicada electrostáticamente proporcionando ",
+  "blocks": [
+   {
+    "t": "Armadura y base fabricado con nos y elegantes acabados de aluminio puro fundido moldeado en arena recubierto con pintura tipo poliéster aplicada electrostáticamente proporcionando mayor resistencia a la corrosión. Tapa de aluminio puro rechazado. Reflector interior de lámina de aluminio anodizada a alta brillantez. Refractor de acrilico claro resistente al impacto y a cambios de temperatura. Porta lámpara tipo mogul de porcelana E39. Entrada para punta de poste de 2\"."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Areas recreativas Cotos, zonas residenciales"
+   }
+  ]
+ },
+ {
+  "code": "PP-LI1013",
+  "name": "Imperial",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   91
+  ],
+  "pdf": "/fichas/PP-LI1013.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LI1013.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LI1013-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Carcaza de aluminio fundido acabado recubierto por pintura tipo poliester aplicada electrostáticamente brindando mayor resistencia la corrosión. Reflector interior de lámina de alu",
+  "blocks": [
+   {
+    "t": "Carcaza de aluminio fundido acabado recubierto por pintura tipo poliester aplicada electrostáticamente brindando mayor resistencia la corrosión. Reflector interior de lámina de aluminio anodizada a alta brillantez. Refractor de acrílico transparente, opalino o tapiz. Porta lámpara E39. Entrada punta de poste de 1 ½\"."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Áreas recreativas Cotos, zonas residenciales"
+   }
+  ]
+ },
+ {
+  "code": "PP-LA1014",
+  "name": "Alameda",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   92
+  ],
+  "pdf": "/fichas/PP-LA1014.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LA1014.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LA1014-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Cuerpo y tapa con nos acabados de aluminio puro fundido moldeado en arena recubierto por pintura tipo poliéster aplicada eletrostáticamente brindando mayor resistencia la corrosión",
+  "blocks": [
+   {
+    "t": "Cuerpo y tapa con nos acabados de aluminio puro fundido moldeado en arena recubierto por pintura tipo poliéster aplicada eletrostáticamente brindando mayor resistencia la corrosión. Refractor de cuatro cristales planos termo templados resistentes al impacto. Reflector interior de lámina de aluminio anodizada a alta brillantez. Entrada para punta de poste 2 1/2\" Porta lámpara tipo mogul de porcelana E39."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Areas recreativas Cotos, zonas residenciales"
+   }
+  ]
+ },
+ {
+  "code": "PP-LR1015",
+  "name": "Residencial",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   93
+  ],
+  "pdf": "/fichas/PP-LR1015.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LR1015.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LR1015-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Cuerpo y tapa con nos acabados de aluminio puro fundido moldeado en arena recubierto por pintura tipo poliéster aplicada eletrostáticamente brindando mayor resistencia la corrosión",
+  "blocks": [
+   {
+    "t": "Cuerpo y tapa con nos acabados de aluminio puro fundido moldeado en arena recubierto por pintura tipo poliéster aplicada eletrostáticamente brindando mayor resistencia la corrosión. Refractor de cuatro cristales planos termo templados resistentes al impacto. Reflector interior de lámina de aluminio anodizada a alta brillantez. Porta lámpara tipo mogul de porcelana E39. Entrada para punta de poste 2\""
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Cotos, zonas residenciales"
+   }
+  ]
+ },
+ {
+  "code": "PP-LC1016",
+  "name": "Chapultepec",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   94
+  ],
+  "pdf": "/fichas/PP-LC1016.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LC1016.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LC1016-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Cuerpo y tapa con finos acabados de aluminio puro fundido moldeado en arena recubierto por pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia la corros",
+  "blocks": [
+   {
+    "t": "Cuerpo y tapa con finos acabados de aluminio puro fundido moldeado en arena recubierto por pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia la corrosión. Refractor de cuatro cristales planos termo templados resistentes al impacto. Reflector interior de lámina de aluminio anodizada a alta brillantez. Cuenta con cuatro filos dorados de aluminio. Porta lámpara tipo mogul de porcelana E39. Entrada para punta de poste 2\""
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Cotos, zonas residenciales"
+   }
+  ]
+ },
+ {
+  "code": "PP-LB1017",
+  "name": "Barroco",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   95
+  ],
+  "pdf": "/fichas/PP-LB1017.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LB1017.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LB1017-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Cuerpo fabricado de aluminio puro fundido moldeado en arena y soportes de lámina de fierro recubiertos por pintura tipo poliéster aplicada electrostáticamente brindando mayor resis",
+  "blocks": [
+   {
+    "t": "Cuerpo fabricado de aluminio puro fundido moldeado en arena y soportes de lámina de fierro recubiertos por pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia la corrosión. Refractor de cristales planos termo templados resistentes al impacto (transparentes o biselados) y a los cambios de temperatura. Reflector interior de lámina de aluminio anodizada con la intención de aumentar la reflectancia. Reflector interior de lámina de aluminio anodizada con la intención de aumentar la reflectancia. Porta lámpara tipo mogul de porcelana E39. Entrada para punta de poste 2 ½\"."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Areas recreativas Cotos, zonas residenciales"
+   }
+  ]
+ },
+ {
+  "code": "PP-LF1018",
+  "name": "Futura",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   96
+  ],
+  "pdf": "/fichas/PP-LF1018.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LF1018.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LF1018-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Porta balastro y base elegante con finos acabados de aluminio puro inyectado a presión recubiertos con pintura tipo poliéster aplicada electrostáticamente brindando mayor resistenc",
+  "blocks": [
+   {
+    "t": "Porta balastro y base elegante con finos acabados de aluminio puro inyectado a presión recubiertos con pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia a la corrosión. Refractor de policarbonato con prismas interiores para mejorar la eciencia lumínica y evitar la suciedad externa. Refractor de policarbonato con prismas interiores para mejorar la eciencia luminica y evitar la suciedad externa. Reflector en forma de tapa de lámina de aluminio anodizada interiormente y pintada electrostáticamente por el exterior. Porta lámpara tipo mogul de porcelana E39. Entrada para punta de poste 2 ½\"."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Cotos, zonas residenciales"
+   }
+  ]
+ },
+ {
+  "code": "PP-LC1019",
+  "name": "Contemporánea",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   97
+  ],
+  "pdf": "/fichas/PP-LC1019.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LC1019.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LC1019-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Porta balastro y base elegante con nos acabados de aluminio puro inyectado a presión recubiertos con pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia",
+  "blocks": [
+   {
+    "t": "Porta balastro y base elegante con nos acabados de aluminio puro inyectado a presión recubiertos con pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia a la corrosión. Refractor con prismas para mejorar la eciencia lumínica. Reflector en forma de tapa de lámina de aluminio anodizada interiormente para aumentar los niveles de reflectancia y pintada electrostáticamente por el exterior. Porta lámpara tipo mogul de porcelana E39. Entrada para punta de poste 2 ½/\"."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Areas recreativas Cotos, zonas residenciales"
+   }
+  ]
+ },
+ {
+  "code": "PP-LV1020",
+  "name": "Venus",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   98
+  ],
+  "pdf": "/fichas/PP-LV1020.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LV1020.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LV1020-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Porta balastro y base elegante con nos acabados de aluminio puro inyectado a presión recubiertos con pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia",
+  "blocks": [
+   {
+    "t": "Porta balastro y base elegante con nos acabados de aluminio puro inyectado a presión recubiertos con pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia a la corrosión. Refractor de acrílico marca LexaLite® con prismas para mejorar la eciencia luminica, resistente al impacto y a las continuas variaciones de temperatura. Reflector en forma de tapa de lámina de aluminio anodizada para elevar los niveles de reflectancia y evitar la corrosión. Porta lámpara tipo mogul de porcelana E39 Montaje: Punta de poste de 2 1/2\"."
+   },
+   {
+    "t": "Calles y avenidas Periféricos, vías rápidas, ejes viales Carreteras y libramientos Caminos rurales Cotos, zonas residenciales Estacionamientos"
+   }
+  ]
+ },
+ {
+  "code": "PP-LE1021",
+  "name": "Eclipse",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   99
+  ],
+  "pdf": "/fichas/PP-LE1021.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LE1021.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LE1021-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Porta balastro y base elegante con nos acabados de aluminio puro inyectado a presión recubiertos con pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia",
+  "blocks": [
+   {
+    "t": "Porta balastro y base elegante con nos acabados de aluminio puro inyectado a presión recubiertos con pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia a la corrosión.. Refractor de acrílico prismático resistente al impacto y a los cambios de temperatura. Reflector en forma de tapa de lámina de aluminio anodizada interiormente para aumentar los niveles de reflectancia y pintada electrostáticamente por el exterior Porta lámpara tipo mogul de porcelana E39 Entrada para punta de poste 2 ½/\"."
+   },
+   {
+    "t": "Calles y avenidas Periféricos, vías rápidas, ejes viales Carreteras y libramientos Caminos rurales Cotos, zonas residenciales Estacionamientos"
+   }
+  ]
+ },
+ {
+  "code": "PP-SX1022",
+  "name": "Siglo XXI",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   100
+  ],
+  "pdf": "/fichas/PP-SX1022.pdf",
+  "image": {
+   "src": "/fichas/img/PP-SX1022.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-SX1022-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Especificaciones intura tipo poliéster aplicada electrostáticament rindando mayor resistencia a la corrosió",
+  "blocks": [
+   {
+    "t": "Especificaciones intura tipo poliéster aplicada electrostáticament rindando mayor resistencia a la corrosió"
+   },
+   {
+    "t": "Refractor de acrílico marca LexaLite® con primas para mejorar la eciencia lumínica. Reflector en forma de tapa de lámina de aluminio anodizada para elevar los niveles de reflectancia o de acrílico marca LexaLite®. Portalámpara E39. Entrada para punta de poste 2 ½/\" . Aplicaciones"
+   },
+   {
+    "t": "Calles y avenidas Periféricos, vías rápidas, ejes viales Carreteras y libramientos Caminos rurales Cotos, zonas residenciales Estacionamientos"
+   }
+  ]
+ },
+ {
+  "code": "PP-LPE1023",
+  "name": "Prisma Esfera",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   101
+  ],
+  "pdf": "/fichas/PP-LPE1023.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LPE1023.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LPE1023-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Porta balastro y base elegante con nos acabados de aluminio puro inyectado a presión recubiertos con pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia",
+  "blocks": [
+   {
+    "t": "Porta balastro y base elegante con nos acabados de aluminio puro inyectado a presión recubiertos con pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia a la corrosión. Refractor de acrílico tipo esfera opalina de una sola pieza con estabilizador ultravioleta asegurada a la base de fundición. Esfera opalina con un espesor de 6 mm causando mayor resistencia al impacto. Porta lámpara tipo mogul de porcelana E39. Entrada para punta de poste 2 ½/*. Aplicaciones"
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Cotos, zonas residenciales"
+   }
+  ]
+ },
+ {
+  "code": "PP-LCM1024",
+  "name": "Colonial Mexicano",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   102
+  ],
+  "pdf": "/fichas/PP-LCM1024.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LCM1024.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LCM1024-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Cuerpo elegante con acabados de aluminio puro inyectado a presión recubiertos con pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia a la corrosión. Re",
+  "blocks": [
+   {
+    "t": "Cuerpo elegante con acabados de aluminio puro inyectado a presión recubiertos con pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia a la corrosión. Refractor de acrílico policarbonato con prismas para mejorar la eciencia lumínica. Luminario sellado herméticamente que evita la entrada de contaminantes. Reflector de aluminio puro anodizado para aumentar la reflectancia. Porta lámpara tipo mogul de porcelana E39. Entrada para punta de poste 2 ½\". Aplicaciones"
+   },
+   {
+    "t": "Calles y avenidas Periféricos, vías rápidas, ejes viales Carreteras y libramientos Caminos rurales Cotos, zonas residenciales"
+   }
+  ]
+ },
+ {
+  "code": "PP-LCH1025",
+  "name": "Colonial Hacienda",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "decorativo",
+   "residencial"
+  ],
+  "pages": [
+   103
+  ],
+  "pdf": "/fichas/PP-LCH1025.pdf",
+  "image": {
+   "src": "/fichas/img/PP-LCH1025.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PP-LCH1025-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Porta balastro y base elegante con nos acabados de aluminio puro fundido moldeado en arena recubiertos con pintura tipo poliéster aplicada electrostáticamente brindando mayor resis",
+  "blocks": [
+   {
+    "t": "Porta balastro y base elegante con nos acabados de aluminio puro fundido moldeado en arena recubiertos con pintura tipo poliéster aplicada electrostáticamente brindando mayor resistencia a la corrosión. Tapa superior de fibra de vidrio resistente a la intemperie y a los contaminantes. Refractor de cuatro cristales planos termo templados resistentes al impacto y a los cambios de temperatura. Reflector interior de lámina de aluminio anodizada con la intención de aumentar la reectancia. Porta lámpara tipo mogul de porcelana E39. Montaje en punta de poste de 3\". Aplicaciones"
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Cotos, zonas residenciales Estacionamientos Áreas recreativas"
+   }
+  ]
+ },
+ {
+  "code": "LU-BT1001",
+  "name": "Bolardo Triangular 75W",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques"
+  ],
+  "pages": [
+   105,
+   107
+  ],
+  "pdf": "/fichas/LU-BT1001.pdf",
+  "image": {
+   "src": "/fichas/img/LU-BT1001.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LU-BT1001-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Acero con proceso de galvanizado. Una sola pieza sin soldadura aparente. Tornilleria de acero inoxidable. Grabados (logos) con proceso en corte laser.",
+  "blocks": [
+   {
+    "h": "Gabinete"
+   },
+   {
+    "t": "Acero con proceso de galvanizado. Una sola pieza sin soldadura aparente. Tornilleria de acero inoxidable. Grabados (logos) con proceso en corte laser."
+   },
+   {
+    "h": "Pintura"
+   },
+   {
+    "t": "Polvo poliester aplicación electrostatica. Color gris oxfor micro"
+   },
+   {
+    "t": "PINTURA \u0000 Polvo Poliéster aplicación Electrostática. \u0000 Microtexturizado. \u0000 Espesor 4 Micras. \u0000 Acabado horneado. \u0000 Cámara Salina 744 hrs. \u0000 Anticorrosiva."
+   },
+   {
+    "t": "SISTEMA OPTICO \u0000 Acrílico Opalino 100%. \u0000 Alta Transmitancia >90% \u0000 Flujo Luminoso de deslumbramiento Bajo (<17.9%)"
+   },
+   {
+    "t": "Características eléctricas"
+   },
+   {
+    "t": "4 TUBO DE LED DE 18 WATTS POTENCIA 75W. CCT 4000°K, 35DCM. IRC> 80. 13,200 LM PROMEDIO, (145LM/W). 50,000 hrs VIDA UTIL."
+   },
+   {
+    "h": "Producto fabricado en mexico"
+   },
+   {
+    "t": "Especificaciones: Sistema eléctrico Optica principal 3 Tubo integral led de 30 W 100 Im/w c/u Vida útil 25,000 h Color temperatura 6,500k Tapa triangular superior, logo y luz indirecta Luz RGB Voltaje 100/277 Supresor de picos 10 kv"
+   },
+   {
+    "t": "Materiales Cuerpo: Lamina de acero galvanizada cal. 18 con corte laser Logo solicitado por cliente. Optica: 3 hojas de policarbonato opalino, sujetados con pegamento especial Placa: De acero circular de 30 cm. por 3/16 de espesor con barrenos de 19 cm. entre centros para recibir anclas de 3/4\""
+   },
+   {
+    "t": "Aplicaciones:"
+   },
+   {
+    "t": "Jardines Calles Plazas Andadores Parques Avenidas Espacios urbanos No se recomienda en ambientes salinos o costas. Acabados: Pintura electrostática tipo poliéster teniendo un brillo duradero pero menos resistente a la corrosión y a los agentes químicos"
+   }
+  ]
+ },
+ {
+  "code": "LU-BT1002",
+  "name": "Bolardo 120W",
+  "line": "LU",
+  "tags": [],
+  "pages": [
+   106
+  ],
+  "pdf": "/fichas/LU-BT1002.pdf",
+  "image": {
+   "src": "/fichas/img/LU-BT1002.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LU-BT1002-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "4 tubos de ILV de 30 de 120 W y luz cálida",
+  "blocks": [
+   {
+    "t": "4 tubos de ILV de 30 de 120 W y luz cálida"
+   }
+  ]
+ },
+ {
+  "code": "LU-DO1003",
+  "name": "Poste D-P",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques"
+  ],
+  "pages": [
+   108,
+   109
+  ],
+  "pdf": "/fichas/LU-DO1003.pdf",
+  "image": {
+   "src": "/fichas/img/LU-DO1003.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LU-DO1003-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Poste de luz de estilo minimalista y estilizado, posee una gran capacidad de iluminación debido a su amplio difusor. Ideal para estacionamientos, parques y andadores.",
+  "blocks": [
+   {
+    "t": "Poste de luz de estilo minimalista y estilizado, posee una gran capacidad de iluminación debido a su amplio difusor. Ideal para estacionamientos, parques y andadores."
+   },
+   {
+    "h": "Aplicaciones"
+   },
+   {
+    "t": "Fabricado en tubo de acero caña recta circular 6\" y 8\" O Altura: 3-5 metros Protección: 1P65 TCC: 6500K 150 W de potencia Iluminación LED Pintura: Termoconvertible Opción galvanizado disponible"
+   },
+   {
+    "t": "Vialidades Parques y jardines Centros históricos Zonas urbanas peatonales"
+   },
+   {
+    "h": "Cualidades técnicas"
+   },
+   {
+    "t": "Grado IK / Grado IP……………………………………IK08 / IP65 Dimensiones……………………………………………..300 x 24 x24 cm Peso Aproximado………………………………………32 Kg Diámetro……………………………………………..……6-8\" Instalación……………………………………………..…Placa base de 24x24 cm con anclas Color.…………………………………………….………….Negro Diseño……………………………………………..……….Opción de logo con corte Laser"
+   },
+   {
+    "h": "Cualidades eléctricas"
+   },
+   {
+    "t": "Potencia ………………………………………………….150W Tensión de alimentación………………………….120-277 VAC Frecuencia@60 Hz…………………………………… @60hz Factor de potencia.………………………………….> 0.90V Dist. Armónica.………………………………….…….< 10% Temp. de operación.………………………………..-40 °C a 50°C Supresor de picos.…………………………………...10 KV 10 kA Difusor………………………………………………….…Acrílico Opalino"
+   },
+   {
+    "t": "INFORMES DE LABORATORIO Y CERTIFICADOS NOM-003-SCFI-2014 Fotometría, Características eléctricas y fotométricas, Prueba IP, Descargas atmosféricas."
+   },
+   {
+    "h": "Cualidades fotométricas"
+   },
+   {
+    "t": "Óptica Tipo......………………………………………………….V CRI /IRC....…………………………………………………………80 Vida útil .....………………………………………………………50.000 horas Temperatura de color...……………………………………6500K Flujo Luminos.......……………………………………………15,750 Im Eficiencia .....……………………………………………………105 l/W"
+   }
+  ]
+ },
+ {
+  "code": "LU-F4100",
+  "name": "Luminario LED Bolard Circular 75W",
+  "line": "LU",
+  "tags": [
+   "parques"
+  ],
+  "pages": [
+   110,
+   111
+  ],
+  "pdf": "/fichas/LU-F4100.pdf",
+  "image": {
+   "src": "/fichas/img/LU-F4100.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LU-F4100-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "BOLARDO CIRCULAR DE 3.10 MTRS DE ALTURA DE 75W, CIRCUITO ABIERTO, PANTALLA DE ACRÍLICO DE 1.20 MTRS DE LONGITUD, FABRICADO EN TUBO DE DE 7” EXTERIOR EN CALIBRE 3/16, CON PLACA BASE",
+  "blocks": [
+   {
+    "h": "Luminario led bolard"
+   },
+   {
+    "t": "BOLARDO CIRCULAR DE 3.10 MTRS DE ALTURA DE 75W, CIRCUITO ABIERTO, PANTALLA DE ACRÍLICO DE 1.20 MTRS DE LONGITUD, FABRICADO EN TUBO DE DE 7” EXTERIOR EN CALIBRE 3/16, CON PLACA BASE AL PISO DE 3/8” ESPESOR, ACABADO EN PINTURA ELECTROSTÁTICA."
+   },
+   {
+    "t": "ESPECIFICACIONES ELÉCTRICAS TÍPICAS \u0000 TENSIÓN ELÉCTRICA DE ENTRADA 120 277 V +/- 10% \u0000 TIPO DE CONTROLADOR ELECTRÓNICO \u0000 FACTOR DE POTENCIA > 0.9 \u0000 POTENCIA DE LINEA 60 Hz \u0000 POTENCIA DE LINEA 54W \u0000 CON FOTOCONTROL"
+   },
+   {
+    "t": "CARACTERÍSTICAS MECÁNICAS \u0000 TIPO DE CRISTAL DEL CONJUNTO ÓPTICO ACRÍLICO 2mm OPALINO \u0000 DIMENCIONES DIAMETRO 3.93”(10cm) \u0000 LARGO 149.6”(3.8mts) \u0000 TIPO DE MONTAJE POSTE"
+   },
+   {
+    "t": "ESPECIFICACIONES ÓPTICAS \u0000 CRI 80 MINIMO \u0000 T° DE COLOR 3 000K"
+   },
+   {
+    "t": "ESPECIFICACIONES MECÁNICAS \u0000 POSTE DE ACERO \u0000 DIFUSOR DE ACRÍLICO OPALINO \u0000 ACABADO EN PINTURA NEGRA, BLANCA Y GRIS ELECTROSTÁTICA"
+   },
+   {
+    "h": "Presentaciones \u0000 35w \u0000 50w"
+   },
+   {
+    "t": "LUMINARIO CON TECNOLOGIA LED PHILIPS PARA ALUMBRADO PÚBLICO Y EXTERIORES. \u0000 MÁXIMO RENDIMIENTO LUMÍNICO, TÉRMICO Y ELÉCTRICO. \u0000 NO UTILIZA GASES NI METALES PELIGROSOS. \u0000 50 000 HRS. DE VIDA. APLICACIONES \u0000 ALUMBRADO PÚBLICO. \u0000 PEATONAL. \u0000 PARQUES. \u0000 JARDINES. \u0000 ESTACINAMIENTOS."
+   },
+   {
+    "t": "ESPECIFICACIONES ELÉCTRICAS TÍPICAS \u0000 TENSIÓN ELÉCTRICA DE ENTRADA 120-277 V +/- 10% \u0000 TIPO DE CONTROLADOR ELECTRÓNICO \u0000 FACTOR DE POTENCIA > 0.9 \u0000 POTENCIA DE LINEA 60 HZ \u0000 POTENCIA DE LINEA 54W \u0000 CON FOTOCONTROL CARACTERÍSTICAS MECÁNICAS \u0000 TIPO DE CRISTAL DEL CONJUNTO ÓPTICO ACRÍLICO 2MM OPALINO \u0000 DIMENCIONES DIAMETRO 3.93”(10CM) \u0000 LARGO 149.6”(3.8MTS) \u0000 TIPO DE MONTAJE POSTE ESPECIFICACIONES ÓPTICAS \u0000 CRI 80 MINIMO \u0000 T° DE COLOR 3 000K, 4 000K Y 6 500K ESPECIFICACIONES MECÁNICAS \u0000 POSTE DE ACERO \u0000 DIFUSOR DE ACRÍLICO OPALINO \u0000 ACABADO EN PINTURA NEGRA, BLANCA Y GRIS ELECTROSTÁTICA PRESENTACIONES \u0000 35W \u0000 50W"
+   }
+  ]
+ },
+ {
+  "code": "LU-F4M1005",
+  "name": "Bolard AP",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "residencial"
+  ],
+  "pages": [
+   112,
+   113
+  ],
+  "pdf": "/fichas/LU-F4M1005.pdf",
+  "image": {
+   "src": "/fichas/img/LU-F4M1005.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LU-F4M1005-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Tubo en aluminio de 4 o 6\" diámetro. Placa base al piso de aluminio. Acrilico opalino o transparente de 4 o 6 \" diamtero. Acabado en pintura electrostatica.",
+  "blocks": [
+   {
+    "h": "Poste"
+   },
+   {
+    "t": "Tubo en aluminio de 4 o 6\" diámetro. Placa base al piso de aluminio. Acrilico opalino o transparente de 4 o 6 \" diamtero. Acabado en pintura electrostatica."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Cotos, zonas residenciales Areas recreativas Universidades Andadores, patios, corredores y pasillos"
+   },
+   {
+    "h": "Bolard-ap"
+   },
+   {
+    "t": "Fabricado en acero de 4”1/2 exterior cédula 30 1 mtr acabado en pintura electrostática tipo poliéster De 12 watts luz calidad 127/220"
+   }
+  ]
+ },
+ {
+  "code": "ICELUM-3W",
+  "name": "ICELUM 3W Solar",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "solar",
+   "residencial"
+  ],
+  "pages": [
+   114
+  ],
+  "pdf": "/fichas/ICELUM-3W.pdf",
+  "image": {
+   "src": "/fichas/img/ICELUM-3W.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/ICELUM-3W-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Toda la noche toda la luz Iluminación al 100% durante toda la noche, sin interrupciones ni pérdidas de energía.",
+  "blocks": [
+   {
+    "h": "Luminaria led solar icelum-3w"
+   },
+   {
+    "t": "Sin atenuación por 12 horas continuas"
+   },
+   {
+    "t": "Acabado en pintura electrostática"
+   },
+   {
+    "t": "Toda la noche toda la luz Iluminación al 100% durante toda la noche, sin interrupciones ni pérdidas de energía."
+   },
+   {
+    "t": "Sistema de gestión PATENTADO Monitorea y controla la carga y descarga de las celdas de forma equilibrada, optimizando su rendimiento y prolongando la vida útil de la batería."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Cotos, zonas residenciales Areas recreativas Universidades Andadores, patios, corredores y pasillos"
+   }
+  ]
+ },
+ {
+  "code": "LU-F4M1003",
+  "name": "Bolardo Solar 10W",
+  "line": "LU",
+  "tags": [
+   "solar"
+  ],
+  "pages": [
+   115
+  ],
+  "pdf": "/fichas/LU-F4M1003.pdf",
+  "image": {
+   "src": "/fichas/img/LU-F4M1003.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LU-F4M1003-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Con Acrílico Acabado en pintura electrostática",
+  "blocks": [
+   {
+    "h": "Bolardo solar de 10w"
+   },
+   {
+    "t": "Fabricado en lámina galvanizada cal 16"
+   },
+   {
+    "t": "Con Acrílico Acabado en pintura electrostática"
+   }
+  ]
+ },
+ {
+  "code": "LU-LM1006",
+  "name": "Bolardo Montpellier",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "residencial"
+  ],
+  "pages": [
+   116
+  ],
+  "pdf": "/fichas/LU-LM1006.pdf",
+  "image": {
+   "src": "/fichas/img/LU-LM1006.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LU-LM1006-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Tubo en aluminio de 4 o 6\" diámetro. Placa base al piso de aluminio. Acrilico opalino o transparente de 4 o 6 \" diamtero. Acabado en pintura electrostatica.",
+  "blocks": [
+   {
+    "t": "Tubo en aluminio de 4 o 6\" diámetro. Placa base al piso de aluminio. Acrilico opalino o transparente de 4 o 6 \" diamtero. Acabado en pintura electrostatica."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Cotos, zonas residenciales Areas recreativas Universidades Andadores, patios, corredores y pasillos"
+   }
+  ]
+ },
+ {
+  "code": "LU-LP1007",
+  "name": "Bolardo Urbano",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "residencial"
+  ],
+  "pages": [
+   117,
+   118
+  ],
+  "pdf": "/fichas/LU-LP1007.pdf",
+  "image": {
+   "src": "/fichas/img/LU-LP1007.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LU-LP1007-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Tapa de acero recubierto por pintura aplicada electrostáticamente proporcionando mayor resistencia a la corrosión. Louvers interiores de aluminio anodizado. Conjunto óptico formado",
+  "blocks": [
+   {
+    "t": "Tapa de acero recubierto por pintura aplicada electrostáticamente proporcionando mayor resistencia a la corrosión. Louvers interiores de aluminio anodizado. Conjunto óptico formado por un difusor transparente de policarbonato de 8\" de diámetro de alta resistencia Tornillos exteriores e interiores de aceros inoxidable. Poste de acero recubierto por pintura aplicada electrostáticamente proporcionando mayor resistencia a la corrosión."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Cotos, zonas residenciales Estacionamientos Areas recreativas Universidades Centros y locales comerciales"
+   },
+   {
+    "t": "Cuerpo de la luminaria de acero con excelentes acabados y resistencia. Dos opciones de diametro 4\" y 6\", la altura del poste y del difusor puede fabricarse segun las necesidades del cliente. Difusor de acrílico transparente. Louvers de aluminio unicamente en la versión de 6\". Terminado con pintura tipo poliéster aplicada electrostáticamente. Conjunto óptico IP65. Lámparas T8 LED. Garantía de 2 años."
+   },
+   {
+    "t": "Especificaciones Material: Acero / Acrílico Dimensiones / Peso: H: 3000/4000 mm D: 4\"/ 6\" Montaje: Piso Acabado: Negro / Gris / Blanco Indice de Protección: IP65 Tecnología: T8 LED (9 / 18 watts) Óptica: Difusa Potencia: 18 / 27 / 36 / 54 Watts Eficiencia Luminosa: 77 Im/w Temp. Color: 6500K IRC: 80 Equipo: Driver Integrado 85-264V Fact. Potencia: <0.95 Dist. Armónicas: <20 Horas de Vida: 30,000 Hrs Control: -- Accesorios:"
+   }
+  ]
+ },
+ {
+  "code": "LU-LH1008",
+  "name": "Hades",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "residencial"
+  ],
+  "pages": [
+   119
+  ],
+  "pdf": "/fichas/LU-LH1008.pdf",
+  "image": {
+   "src": "/fichas/img/LU-LH1008.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LU-LH1008-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Tapa de acero recubierto por pintura aplicada electrostáticamente proporcionando mayor resistencia a la corrosión. Louvers interiores de aluminio anodizado. Conjunto óptico formado",
+  "blocks": [
+   {
+    "t": "Tapa de acero recubierto por pintura aplicada electrostáticamente proporcionando mayor resistencia a la corrosión. Louvers interiores de aluminio anodizado. Conjunto óptico formado por un difusor transparente de policarbonato de 8\" de diámetro de alta resistencia Tornillos exteriores e interiores de aceros inoxidable. Poste de acero recubierto por pintura aplicada electrostáticamente proporcionando mayor resistencia a la corrosión."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Cotos, zonas residenciales Estacionamientos Areas recreativas Universidades Centros y locales comerciales"
+   }
+  ]
+ },
+ {
+  "code": "LU-LF1009",
+  "name": "Fornax",
+  "line": "LU",
+  "tags": [],
+  "pages": [
+   120
+  ],
+  "pdf": "/fichas/LU-LF1009.pdf",
+  "image": {
+   "src": "/fichas/img/LU-LF1009.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LU-LF1009-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Observaciones Este dispositivo no es compatible con sensores IR, sensores de proximidad ni equipos con fotocelda",
+  "blocks": [
+   {
+    "t": "Observaciones Este dispositivo no es compatible con sensores IR, sensores de proximidad ni equipos con fotocelda"
+   }
+  ]
+ },
+ {
+  "code": "LU-LAR1010",
+  "name": "Ares",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "residencial"
+  ],
+  "pages": [
+   121
+  ],
+  "pdf": "/fichas/LU-LAR1010.pdf",
+  "image": {
+   "src": "/fichas/img/LU-LAR1010.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LU-LAR1010-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Sistema óptico sellado con un cristal termo templado resistente al impacto con una cubierta de aluminio puro inyectado a presión recubierto por pintura aplicada electrostáticamente",
+  "blocks": [
+   {
+    "t": "Sistema óptico sellado con un cristal termo templado resistente al impacto con una cubierta de aluminio puro inyectado a presión recubierto por pintura aplicada electrostáticamente proporcionando mayor resistencia a la corrosión. Sistema óptico tipo IP 65 jado al poste mediante un sistema de pernos y sellado herméticamente para evitar la entrada de contaminantes. Poste de acero de 3\" de diámetro recubierto por pintura aplicada electrostáticamente. Reflector interior de la lámina de aluminio rechazada y anodizada que brinda alta reflectancia. Reflector indirecto de bra de vidrio de alta reflectancia que brinda mayor brillantez y mejor distribución lumínica. Porta lámpara de porcelana E26."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Cotos, zonas residenciales Estacionamientos Áreas recreativas Universidades Centros y locales comerciales"
+   }
+  ]
+ },
+ {
+  "code": "LU-LAT1011",
+  "name": "Atenas",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "residencial"
+  ],
+  "pages": [
+   122
+  ],
+  "pdf": "/fichas/LU-LAT1011.pdf",
+  "image": {
+   "src": "/fichas/img/LU-LAT1011.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LU-LAT1011-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Sistema óptico sellado con un cristal termo templado resistente al impacto con una cubierta de aluminio puro inyectado a presión recubierto por pintura aplicada electrostáticamente",
+  "blocks": [
+   {
+    "t": "Sistema óptico sellado con un cristal termo templado resistente al impacto con una cubierta de aluminio puro inyectado a presión recubierto por pintura aplicada electrostáticamente proporcionando mayor resistencia a la corrosión. Sistema óptico tipo IP 65 fijado al poste mediante un sistema de pernos y sellado herméticamente para evitar la entrada de contaminantes. Base del poste de acero de 3\" de diámetro con herraje a lo largo del desarrollo con recubierto por pintura aplicada electrostáticamente. Reflector interior de la lámina de aluminio rechazada y anodizada que brinda alta reflectancia. Reflector indirecto de bra de vidrio de alta reflectancia que brinda mayor brillantez y mejor distribución lumínica. Porta lámpara de porcelana E26."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Cotos, zonas residenciales Estacionamientos Áreas recreativas Universidades Centros y locales comerciales"
+   }
+  ]
+ },
+ {
+  "code": "LU-LZ1012",
+  "name": "Zeus",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "residencial"
+  ],
+  "pages": [
+   123
+  ],
+  "pdf": "/fichas/LU-LZ1012.pdf",
+  "image": {
+   "src": "/fichas/img/LU-LZ1012.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LU-LZ1012-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Sistema óptico sellado con un cristal termo templado resistente al impacto con una cubierta de aluminio puro inyectado a presión recubierto por pintura aplicada electrostáticamente",
+  "blocks": [
+   {
+    "t": "Sistema óptico sellado con un cristal termo templado resistente al impacto con una cubierta de aluminio puro inyectado a presión recubierto por pintura aplicada electrostáticamente proporcionando mayor resistencia a la corrosión. Sistema óptico tipo IP 65 fijado al poste mediante un sistema de pernos y sellado herméticamente para evitar la entrada de contaminantes. Reflector interior de la lámina de aluminio rechazada y anodizada que brinda alta reflectancia. Porta lámpara de porcelana E26."
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Cotos, zonas residenciales Estacionamientos Áreas recreativas Universidades Centros y locales comerciales"
+   }
+  ]
+ },
+ {
+  "code": "LU-LP1013",
+  "name": "Pathway",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "residencial"
+  ],
+  "pages": [
+   124
+  ],
+  "pdf": "/fichas/LU-LP1013.pdf",
+  "image": {
+   "src": "/fichas/img/LU-LP1013.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LU-LP1013-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "BetaLED® Technology NanoOptic® Technology IRC > 70 Hecho en USA 10 Años de Garantía",
+  "blocks": [
+   {
+    "t": "BetaLED® Technology NanoOptic® Technology IRC > 70 Hecho en USA 10 Años de Garantía"
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Cotos, zonas residenciales Áreas recreativas Universidades Centros y locales comerciales"
+   }
+  ]
+ },
+ {
+  "code": "BOLARD-F4A1",
+  "name": "Bolard F4 A1",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "decorativo"
+  ],
+  "pages": [
+   125
+  ],
+  "pdf": "/fichas/BOLARD-F4A1.pdf",
+  "image": {
+   "src": "/fichas/img/BOLARD-F4A1.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/BOLARD-F4A1-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Especificaciones Luz blanca led Consta de 3 tubos led: de 10w = 30w total",
+  "blocks": [
+   {
+    "t": "Especificaciones Luz blanca led Consta de 3 tubos led: de 10w = 30w total"
+   },
+   {
+    "t": "Materiales Tubo de acero ornamental, acrílico tubular de policarbonato 4\" diámetro exterior con guarda 100% en aluminio."
+   },
+   {
+    "t": "Aplicaciones Jardines Plazas Avenidas Espacios Urbanos Áreas Recreativas Parques"
+   },
+   {
+    "t": "Acabados Pintura electrostática, tipo poliéster resistente a rayos ultravioleta."
+   },
+   {
+    "h": "Colores"
+   },
+   {
+    "t": "Gris Claro Gris Obscuro Colores especicles Nu-Black"
+   },
+   {
+    "t": "Ventajas: 50 000 HORAS VIDA AHORRO DE ENERGIA DE 50% ALTA EFICIENCIA LUMINICA. GRAN AHORRO EN COSTOS DE MANTENIMIENTO. 100% ECOLOGICO"
+   }
+  ]
+ },
+ {
+  "code": "RF-SC1001",
+  "name": "Series CPY",
+  "line": "RF",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial",
+   "residencial"
+  ],
+  "pages": [
+   127
+  ],
+  "pdf": "/fichas/RF-SC1001.pdf",
+  "image": {
+   "src": "/fichas/img/RF-SC1001.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/RF-SC1001-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "BetaLED® Technology NanoOptic® Technology IRC > 70 Hecho en USA 10 Años de Garantía",
+  "blocks": [
+   {
+    "t": "BetaLED® Technology NanoOptic® Technology IRC > 70 Hecho en USA 10 Años de Garantía"
+   },
+   {
+    "t": "Calles y avenidas Parques y jardines Plazas y explanadas Estacionamientos Cotos, zonas residenciales Áreas recreativas Universidades Centros y locales comerciales"
+   }
+  ]
+ },
+ {
+  "code": "RF-LW1002",
+  "name": "Wallpack",
+  "line": "RF",
+  "tags": [
+   "parques",
+   "comercial"
+  ],
+  "pages": [
+   128
+  ],
+  "pdf": "/fichas/RF-LW1002.pdf",
+  "image": {
+   "src": "/fichas/img/RF-LW1002.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/RF-LW1002-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Equipo para uso comercial con una alta emisión lumínica, ideal para proyectos en exteriores.",
+  "blocks": [
+   {
+    "h": "Luminario"
+   },
+   {
+    "t": "Equipo para uso comercial con una alta emisión lumínica, ideal para proyectos en exteriores."
+   },
+   {
+    "h": "Cuerpo"
+   },
+   {
+    "t": "Fabricado en inyección a presión de aluminio liga 380, con empaque de silicato, para prevenir la entrada de contaminantes, grado de protección IP 65. CONJUNTO ÓPTICO Reflector de aluminio martillado hammertone, cuenta con un cristal de borosilicato resistente al impacto. 457. 4tvn(16г ACABADOS En pintura de gran adherencia, aplicado mediante un proceso electrostático y horneado, resistente a la radiación ultravioleta."
+   },
+   {
+    "h": "Aplicaciones"
+   },
+   {
+    "t": "Es ideal para ser colocado en estacionamientos, fachadas, espectaculares, construcciones, patios de maniobras, monumentos, andadores, etc."
+   },
+   {
+    "h": "Tecnología"
+   },
+   {
+    "t": "Vapor de sodio 100-400W Aditivos metálicos 100-400W City White 70-150W Cosmopolis 60-140W Leds 40-70W Fast Flex de Philips"
+   },
+   {
+    "h": "Caracteristicas led"
+   },
+   {
+    "t": "Voltaje de operación: 127-277V c.a. +/- 10% Rango de frecuencia de operación: 50-60Hz Potencia máxima: 70W max. Corriente: 0.314 A/ 0.551 A max. Factor de potencia: >0.95 Grado de protección: IP65 Flujo luminoso: hasta 7700 Im 110 Im/W Indice de producción del color: >70 Temperatura de color 5700K Proteccion contra descarga atmosférica hasta 10kA Peso: 8Kg"
+   }
+  ]
+ },
+ {
+  "code": "RF-RE1003",
+  "name": "Reflector LED Estadio 300W",
+  "line": "RF",
+  "tags": [],
+  "pages": [
+   129
+  ],
+  "pdf": "/fichas/RF-RE1003.pdf",
+  "image": {
+   "src": "/fichas/img/RF-RE1003.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/RF-RE1003-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "REFLECTOR LED ESTADIO (ALTA POTENCIA) SERIE: SMD LED MODELO: MZ-01V",
+  "blocks": [
+   {
+    "t": "REFLECTOR LED ESTADIO (ALTA POTENCIA) SERIE: SMD LED MODELO: MZ-01V"
+   }
+  ]
+ },
+ {
+  "code": "RF-RE1004",
+  "name": "Flood Plano Gris 400W",
+  "line": "RF",
+  "tags": [
+   "industrial"
+  ],
+  "pages": [
+   130
+  ],
+  "pdf": "/fichas/RF-RE1004.pdf",
+  "image": {
+   "src": "/fichas/img/RF-RE1004.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/RF-RE1004-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Funcionalidad para tu bodega, almacén o área en exteriores. Fabricado en aleación de aluminio y cubierta de vidrio. Con base ajustable que permite varios ángulos de inclinación. Pa",
+  "blocks": [
+   {
+    "t": "FLOOD PLANO GRIS 400W CW LED SMD"
+   },
+   {
+    "h": "Características"
+   },
+   {
+    "t": "Funcionalidad para tu bodega, almacén o área en exteriores. Fabricado en aleación de aluminio y cubierta de vidrio. Con base ajustable que permite varios ángulos de inclinación. Para interiores y exteriores. Reflector interior color blanco, inteligente distribución de 800 LEDs SMD 2835. Diseño elegante que favorece la disipación del calor."
+   },
+   {
+    "h": "Aplicaciones"
+   },
+   {
+    "t": "Ideal para fábricas, bodegas, almacenes, talleres o cualquier otro tipo de instalaciones similares bajo techo o en exteriores."
+   },
+   {
+    "h": "Eléctricos"
+   },
+   {
+    "t": "Tiempo promedio (Horas): 30,000"
+   },
+   {
+    "t": "Wattaje:"
+   },
+   {
+    "t": "Garantía (Años):"
+   },
+   {
+    "t": "Voltaje:"
+   },
+   {
+    "t": "Frecuencia:"
+   },
+   {
+    "h": "Certificaciones"
+   },
+   {
+    "t": "Factor de Poder:"
+   },
+   {
+    "t": "Distorsión armónica total (THD):"
+   },
+   {
+    "h": "Desempeño lumínico"
+   },
+   {
+    "t": "Fuente de luz LED: LED SMD 2835 EPISTAR"
+   },
+   {
+    "t": "Lumens:"
+   },
+   {
+    "t": "Lumens por Watt (Lm/W):"
+   },
+   {
+    "h": "Fabricación"
+   },
+   {
+    "t": "Temperatura de color (CCT): 6,500°K"
+   },
+   {
+    "t": "Material: Aleación de aluminio, vidrio"
+   },
+   {
+    "t": "Índice de Color (CRI): 80"
+   },
+   {
+    "t": "Fuente de Poder: Driver trasero unido"
+   },
+   {
+    "t": "Ángulo Beam: 120°"
+   },
+   {
+    "t": "Acabado: Gris, con carcasa de vidrio gris"
+   },
+   {
+    "t": "Distribución de la luz:"
+   },
+   {
+    "h": "Empaque"
+   },
+   {
+    "t": "Tecnología 3 pasos:"
+   },
+   {
+    "t": "Caja de cartón con: Grabado"
+   },
+   {
+    "t": "Clase energética:"
+   },
+   {
+    "t": "Dimensiones (mm): Al: 335 x An: 530 x Pr: 60"
+   },
+   {
+    "t": "Peso (kg): 5.460"
+   },
+   {
+    "h": "Ambiental"
+   },
+   {
+    "t": "Temperatura de operación:"
+   },
+   {
+    "t": "País de Origen: China"
+   },
+   {
+    "t": "Para su uso en:"
+   },
+   {
+    "h": "Medidas"
+   },
+   {
+    "t": "Contenido Mercurio (Hg):"
+   },
+   {
+    "t": "Dimensiones (mm): Al: 330 x An: 525 x Pr: 43"
+   },
+   {
+    "t": "Índice de protección:"
+   },
+   {
+    "t": "Peso (kg): 5.030"
+   },
+   {
+    "t": "*Fuertes chorros de agua, penetración limitada permitida"
+   },
+   {
+    "h": "Nota:"
+   },
+   {
+    "t": "800 LEDs SMD 2835 Epistar de alta luminosidad."
+   }
+  ]
+ },
+ {
+  "code": "RF-RE1005",
+  "name": "Reflector Plano 400W",
+  "line": "RF",
+  "tags": [
+   "parques"
+  ],
+  "pages": [
+   131
+  ],
+  "pdf": "/fichas/RF-RE1005.pdf",
+  "image": {
+   "src": "/fichas/img/RF-RE1005.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/RF-RE1005-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Eficiencia de energía: ahorre hasta un 80% en la factura de electricidad con la tecnología LED. Solución portátil para iluminar con potencia en exteriores. Base ajustable favorece ",
+  "blocks": [
+   {
+    "h": "Características"
+   },
+   {
+    "t": "Eficiencia de energía: ahorre hasta un 80% en la factura de electricidad con la tecnología LED. Solución portátil para iluminar con potencia en exteriores. Base ajustable favorece varios ángulos de iluminación. Para interiores y exteriores, amigable con la ecología Disponible en 200w, 300w, 400w, 500w y 600w, luz blanca."
+   },
+   {
+    "t": "IP65 TOTALMENTE PROTEGIDO CONTRA EL POLVO Y PUEDE SOPORTAR CHORROS DE AGUA DE BAJA POTENCIA."
+   },
+   {
+    "h": "Aplicaciones"
+   },
+   {
+    "t": "Indicado para iluminación de anuncios, puentes, estacionamientos, fachadas, jardines."
+   },
+   {
+    "h": "Componentes"
+   },
+   {
+    "t": "Fuente de luz LED: 480 pzs. LED SMD 2835"
+   },
+   {
+    "t": "Wattaje: 400W Voltaje: AC 100-265V"
+   },
+   {
+    "t": "Driver: N/A"
+   },
+   {
+    "t": "Frecuencia: 50/60 HZ"
+   },
+   {
+    "t": "Base-asa:"
+   },
+   {
+    "t": "Factor de Poder: 0.9"
+   },
+   {
+    "t": "Distorsión armónica total (THD): N/A"
+   },
+   {
+    "h": "Fabricación"
+   },
+   {
+    "t": "Material: Aleación de aluminio, plástico, vidrio"
+   },
+   {
+    "h": "Desempeño lumínico"
+   },
+   {
+    "t": "Base / Fuente de Poder: Con cable a corriente"
+   },
+   {
+    "t": "Acabado:"
+   },
+   {
+    "t": "Lumens por Watt (Lm/W): 100"
+   },
+   {
+    "t": "Negro, difusor interior seccionado aluminizado, 8 secciones."
+   },
+   {
+    "t": "Temperatura de color (CCT): 6,000K - 6,500K"
+   },
+   {
+    "t": "Índice de Color (CRI): 80"
+   },
+   {
+    "h": "Empaque"
+   },
+   {
+    "t": "Ángulo Beam: 90º"
+   },
+   {
+    "t": "Caja de cartón: Con etiqueta"
+   },
+   {
+    "t": "Distribución de la luz: N/A"
+   },
+   {
+    "t": "Dimensiones (mm): L: 540 x An: 362 x Al: 9"
+   },
+   {
+    "t": "Tecnología 3 pasos: N/A"
+   },
+   {
+    "t": "Peso (kg):"
+   },
+   {
+    "t": "Clase energética:"
+   },
+   {
+    "t": "País de Origen: China"
+   },
+   {
+    "h": "Medidas"
+   },
+   {
+    "t": "Temperatura de operación: -20°C ~ +50°C"
+   },
+   {
+    "t": "Para su uso en: interiores/exteriores"
+   },
+   {
+    "t": "Dimensiones (mm): Al: 520 x An: 350 x Pr: 9"
+   },
+   {
+    "t": "Contenido Mercurio (Hg): 0 (cero)"
+   },
+   {
+    "t": "Índice de protección: IP65*"
+   },
+   {
+    "t": "*Chorros de agua, penetración limitada permitida"
+   },
+   {
+    "h": "Expectativa de vida"
+   },
+   {
+    "t": "Tiempo promedio (Horas): 20,000"
+   },
+   {
+    "t": "Garantía (Años): 3"
+   }
+  ]
+ },
+ {
+  "code": "RF-LL1006",
+  "name": "Reflector LL-149-151",
+  "line": "RF",
+  "tags": [],
+  "pages": [
+   132
+  ],
+  "pdf": "/fichas/RF-LL1006.pdf",
+  "image": {
+   "src": "/fichas/img/RF-LL1006.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/RF-LL1006-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "El diseño de disipador de calor hueco aumenta el flujo de aire para una mejor disipación del calor. LED de alto lumen, con una vida útil de 50.000 horas. Lente Óptica importada, su",
+  "blocks": [
+   {
+    "h": "Ventajas y características del producto"
+   },
+   {
+    "t": "El diseño de disipador de calor hueco aumenta el flujo de aire para una mejor disipación del calor. LED de alto lumen, con una vida útil de 50.000 horas. Lente Óptica importada, su eficiencia luminosa es de hasta el 95 % Aleación de aluminio y magnesio de alta calidad, anticorrosión, sustancial prodera aritica marcita Ata artesanía que manifesta el valor de producccion de una marca famosa. Proceso de reflexión de cara de diamante diseñado, fuente de luz de reflexión de altísima eficiencia, mejora eficazmente el brillo de la iluminación"
+   }
+  ]
+ },
+ {
+  "code": "RF-UFO1007",
+  "name": "Luminaria Industrial UFO",
+  "line": "RF",
+  "tags": [
+   "industrial"
+  ],
+  "pages": [
+   133
+  ],
+  "pdf": "/fichas/RF-UFO1007.pdf",
+  "image": {
+   "src": "/fichas/img/RF-UFO1007.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/RF-UFO1007-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Luminaria de uso industrial con cubierta reflectora de lupas que magnifican el alcance de los LEDs Sólida construcción de aleación de aluminio indicado para su instalación en techo",
+  "blocks": [
+   {
+    "h": "Características"
+   },
+   {
+    "t": "Luminaria de uso industrial con cubierta reflectora de lupas que magnifican el alcance de los LEDs Sólida construcción de aleación de aluminio indicado para su instalación en techos o vigas por medio de su argolla rciuda Disponibles en versiones de 100 y 200 watts en Frio Pregunta al vendedor por las versiones sin pantalla"
+   },
+   {
+    "h": "Expectativa de vida"
+   },
+   {
+    "t": "Tiempo promedio (Horas): 50,000 Garantía (Afos): 2"
+   },
+   {
+    "h": "Componentes"
+   },
+   {
+    "t": "Fuente de luz LED: 120 LEDs SMD 2835 EPISTAR"
+   },
+   {
+    "h": "Eléctricos"
+   },
+   {
+    "t": "Wattaje:"
+   },
+   {
+    "t": "Voltaje: AC 85-265V Frecuencia: Factor de Poder: Distorsión armónica total (THD):"
+   },
+   {
+    "h": "Fabricación"
+   },
+   {
+    "t": "Material: Aleación de aluminio, plástico ABS. Fuente de Poder: Driver trasero unido Acabado: Cuerpo negro, reflector de plástico con lupas transparentes"
+   },
+   {
+    "h": "Desempeño lumínico"
+   },
+   {
+    "t": "Lumens: 10,000 Lumens por Watt (Lm/W): Temperatura de color (CCT): 6,500°K"
+   },
+   {
+    "t": "Índice de Color (CRI): 80 Ángulo Beam: 120° Distribución de la luz: Circundante Tecnología 3 pasos: N/A"
+   },
+   {
+    "h": "Empaque"
+   },
+   {
+    "t": "Caja de cartón: Etiqueta Dimensiones (mm): Al: 310 х Ап: 305 x Pr: 145 Peso (kg): 1.790 Pais de Origen: China"
+   },
+   {
+    "h": "Ambiental"
+   },
+   {
+    "t": "Temperatura de operación: -45°C ~ +60°C Para su uso en: interiores/exteriores Contenido Mercurio (Hg): 0 (cero) Índice de protección: IP65"
+   },
+   {
+    "h": "Medidas"
+   },
+   {
+    "t": "Dimensiones (mm): DE: 300 x PR: 130 Peso (kg):1.520"
+   },
+   {
+    "t": "APLICACIONES lumina áreas de trabajo como taleres, fábricas, patios, estacionamentos, almacenes y otro tipo de nitalaciones tanto en interiores como exteriores"
+   }
+  ]
+ },
+ {
+  "code": "FL-LT1022",
+  "name": "Foco de LED",
+  "line": "LC",
+  "tags": [
+   "industrial",
+   "comercial"
+  ],
+  "pages": [
+   135
+  ],
+  "pdf": "/fichas/FL-LT1022.pdf",
+  "image": {
+   "src": "/fichas/img/FL-LT1022.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/FL-LT1022-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Lámpara LED de alta potencia y alto flujo luminoso, diseñada para ofrecer una distribución uniforme de la luz. Eficiencia energética: Ahorra hasta un 80% en comparación con bombill",
+  "blocks": [
+   {
+    "h": "Características:"
+   },
+   {
+    "t": "Lámpara LED de alta potencia y alto flujo luminoso, diseñada para ofrecer una distribución uniforme de la luz. Eficiencia energética: Ahorra hasta un 80% en comparación con bombillas incandescentes у ahorradoras de flujo similar Iluminación omnidireccional para una cobertura uniforme. Tecnología avanzada de chip LED SMD. Diseño robusto y duradero. Libre de radiación UV."
+   },
+   {
+    "h": "Aplicaciones"
+   },
+   {
+    "t": "Reemplazo de lámparas incandescentes y fluorescentes Iluminación general Iluminación industrial Comercial Bodegas Almacenes"
+   },
+   {
+    "h": "Condiciones de operación"
+   },
+   {
+    "t": "Fabricada en policarbonato con disipación de aluminio Temperatura máxima de operación: 40° Temperatura mínima de operación: -20° Driver electrónico integrado Garantía: 3 años en condiciones normales de operación"
+   }
+  ]
+ },
+ {
+  "code": "LC-CR1001",
+  "name": "CR Troffers",
+  "line": "LC",
+  "tags": [
+   "comercial"
+  ],
+  "pages": [
+   136
+  ],
+  "pdf": "/fichas/LC-CR1001.pdf",
+  "image": {
+   "src": "/fichas/img/LC-CR1001.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-CR1001-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "TrueWhite® Technology IRC > 90 Dimeable 0-10V Hecho en USA 10 Años de Garantía",
+  "blocks": [
+   {
+    "t": "TrueWhite® Technology IRC > 90 Dimeable 0-10V Hecho en USA 10 Años de Garantía"
+   },
+   {
+    "t": "Oficinas Aeropuertos Hospitales Universidades Centros y locales comerciales"
+   }
+  ]
+ },
+ {
+  "code": "LC-GMO1002",
+  "name": "Gabinete con Mica Opalina 54W",
+  "line": "LC",
+  "tags": [
+   "comercial"
+  ],
+  "pages": [
+   137
+  ],
+  "pdf": "/fichas/LC-GMO1002.pdf",
+  "image": {
+   "src": "/fichas/img/LC-GMO1002.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-GMO1002-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "El Gabinete LED Wanergy con mica opalina está diseñado para brindar una iluminación eficiente y uniforme en espacios interiores. Con una potencia de 54W y un flujo luminoso de 5,40",
+  "blocks": [
+   {
+    "t": "El Gabinete LED Wanergy con mica opalina está diseñado para brindar una iluminación eficiente y uniforme en espacios interiores. Con una potencia de 54W y un flujo luminoso de 5,400 lúmenes, este equipo ofrece una excelente relación de rendimiento energético. Su temperatura de color de 6500K proporciona una luz blanca fría, ideal para ambientes laborales o comerciales. Fabricado en acabado blanco y con un cuerpo de 1200 mm de longitud, cuenta con un ángulo de apertura de 0° a 220°, garantizando una amplia cobertura lumínica. Su diseño incorpora protección IP20, lo que lo hace adecuado para interiores protegidos del polvo y el agua."
+   }
+  ]
+ },
+ {
+  "code": "LC-WS1003",
+  "name": "Series WS",
+  "line": "LC",
+  "tags": [
+   "parques",
+   "comercial"
+  ],
+  "pages": [
+   138
+  ],
+  "pdf": "/fichas/LC-WS1003.pdf",
+  "image": {
+   "src": "/fichas/img/LC-WS1003.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-WS1003-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Poliéster reforzado y fibra de vidrio IRC > 80 Hecho en USA 10 Años de Garantía",
+  "blocks": [
+   {
+    "t": "Poliéster reforzado y fibra de vidrio IRC > 80 Hecho en USA 10 Años de Garantía"
+   },
+   {
+    "t": "Andadores, patios, corredores y pasillos Universidades Centros y locales comerciales Oficinas"
+   }
+  ]
+ },
+ {
+  "code": "LC-AP1004",
+  "name": "Apolo",
+  "line": "LC",
+  "tags": [],
+  "pages": [
+   139
+  ],
+  "pdf": "/fichas/LC-AP1004.pdf",
+  "image": {
+   "src": "/fichas/img/LC-AP1004.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-AP1004-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "GABINETE FABRICADO EN LAMINA NEGRA ROLADA EN FRIO CALIBRE 26. PINTURA DE APLICACIÓN ELECTROSTATICA, CURADO AL HORNO CON DIFUSOR ACRILICO OPALINO, 12W LED, DIMENSIONES 84 X 36 X 10.",
+  "blocks": [
+   {
+    "t": "GABINETE FABRICADO EN LAMINA NEGRA ROLADA EN FRIO CALIBRE 26. PINTURA DE APLICACIÓN ELECTROSTATICA, CURADO AL HORNO CON DIFUSOR ACRILICO OPALINO, 12W LED, DIMENSIONES 84 X 36 X 10. 120/277V"
+   },
+   {
+    "t": "LUMINARIO DE COLGANTEAR MEDIDAS DE LONGITUD 120 CM PARA 1 Y 2 TUBOS 244 CM PARA 1 Y 2 TUBOS"
+   }
+  ]
+ },
+ {
+  "code": "LC-GC1005",
+  "name": "GC11 Comodin Bajo Peralte",
+  "line": "LC",
+  "tags": [],
+  "pages": [
+   140
+  ],
+  "pdf": "/fichas/LC-GC1005.pdf",
+  "image": {
+   "src": "/fichas/img/LC-GC1005.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-GC1005-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": []
+ },
+ {
+  "code": "LC-GE1006",
+  "name": "GSMA Marco Abatible",
+  "line": "LC",
+  "tags": [],
+  "pages": [
+   141
+  ],
+  "pdf": "/fichas/LC-GE1006.pdf",
+  "image": {
+   "src": "/fichas/img/LC-GE1006.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-GE1006-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": []
+ },
+ {
+  "code": "LC-CD1007",
+  "name": "GC Canal Doble",
+  "line": "LC",
+  "tags": [],
+  "pages": [
+   142
+  ],
+  "pdf": "/fichas/LC-CD1007.pdf",
+  "image": {
+   "src": "/fichas/img/LC-CD1007.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-CD1007-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "DESCRIPCION.- NA DE ACERO ROLADA EN FRIO, PINTURA BLANCA ROSTATICA, SECADO AL HORNO.",
+  "blocks": [
+   {
+    "t": "DESCRIPCION.- NA DE ACERO ROLADA EN FRIO, PINTURA BLANCA ROSTATICA, SECADO AL HORNO."
+   }
+  ]
+ },
+ {
+  "code": "LC-GEM1008",
+  "name": "GEMA Marco Abatible",
+  "line": "LC",
+  "tags": [],
+  "pages": [
+   143
+  ],
+  "pdf": "/fichas/LC-GEM1008.pdf",
+  "image": {
+   "src": "/fichas/img/LC-GEM1008.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-GEM1008-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": []
+ },
+ {
+  "code": "LC-GEM1009",
+  "name": "GEMA CAPCE Piramidal",
+  "line": "LC",
+  "tags": [],
+  "pages": [
+   144
+  ],
+  "pdf": "/fichas/LC-GEM1009.pdf",
+  "image": {
+   "src": "/fichas/img/LC-GEM1009.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-GEM1009-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "LUMINARIO CAPCE PIRAMIDAL MARCO ABATIBLE DESMONTABLE 6000 K GABINETE FABRICADO EN LAMINA NEGRA ROLADA EN FRIO CAL. 26, DIFUSOR DE ACRILICO TIPO K12 PLANO 2 TUBOS DE LED, 3,200 LUME",
+  "blocks": [
+   {
+    "t": "LUMINARIO CAPCE PIRAMIDAL MARCO ABATIBLE DESMONTABLE 6000 K GABINETE FABRICADO EN LAMINA NEGRA ROLADA EN FRIO CAL. 26, DIFUSOR DE ACRILICO TIPO K12 PLANO 2 TUBOS DE LED, 3,200 LUMENES TOTALES, DRIVER MULTIVOLTAJE 127/277. PINTURA DE APLICACIÓN ELECTROSTATICA Y CURADO AL HORNO. NOTA: ESTE GABINETE SE FABRICA TIPO PIRAMIDAL Y TAMBIEN EN TIPO CAJON."
+   }
+  ]
+ },
+ {
+  "code": "LC-ME1010",
+  "name": "GAME Malla Electrosoldada",
+  "line": "LC",
+  "tags": [],
+  "pages": [
+   145
+  ],
+  "pdf": "/fichas/LC-ME1010.pdf",
+  "image": {
+   "src": "/fichas/img/LC-ME1010.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-ME1010-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": [
+   {
+    "t": "GAME (Malla Electrosoldada)"
+   }
+  ]
+ },
+ {
+  "code": "LC-GIN1011",
+  "name": "GIN Industrial",
+  "line": "LC",
+  "tags": [
+   "industrial"
+  ],
+  "pages": [
+   146
+  ],
+  "pdf": "/fichas/LC-GIN1011.pdf",
+  "image": {
+   "src": "/fichas/img/LC-GIN1011.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-GIN1011-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": []
+ },
+ {
+  "code": "LC-GINH1012",
+  "name": "GINHB Industrial High Bay",
+  "line": "LC",
+  "tags": [
+   "industrial"
+  ],
+  "pages": [
+   147
+  ],
+  "pdf": "/fichas/LC-GINH1012.pdf",
+  "image": {
+   "src": "/fichas/img/LC-GINH1012.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-GINH1012-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "GINHB 3,4,6 LÁMPARAS (INDUSTRIAL HIGH BAY)",
+  "blocks": [
+   {
+    "t": "GINHB 3,4,6 LÁMPARAS (INDUSTRIAL HIGH BAY)"
+   }
+  ]
+ },
+ {
+  "code": "LC-LN1013",
+  "name": "Series LN",
+  "line": "LC",
+  "tags": [
+   "comercial"
+  ],
+  "pages": [
+   148
+  ],
+  "pdf": "/fichas/LC-LN1013.pdf",
+  "image": {
+   "src": "/fichas/img/LC-LN1013.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-LN1013-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "TrueWhite® Technology IRC > 90 Dimeable 0-10V Hecho en USA 10 Años de Garantía",
+  "blocks": [
+   {
+    "t": "TrueWhite® Technology IRC > 90 Dimeable 0-10V Hecho en USA 10 Años de Garantía"
+   },
+   {
+    "t": "Oficinas Aeropuertos Hospitales Universidades Centros y locales comerciales"
+   }
+  ]
+ },
+ {
+  "code": "FL-LT1023",
+  "name": "Foco de LED 70W",
+  "line": "LC",
+  "tags": [
+   "industrial",
+   "comercial"
+  ],
+  "pages": [
+   149
+  ],
+  "pdf": "/fichas/FL-LT1023.pdf",
+  "image": {
+   "src": "/fichas/img/FL-LT1023.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/FL-LT1023-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Este foco es una excelente solución en sistemas de iluminación LED, totalmente diseñada para el retrofit (reemplazo) de lámparas fluorescentes compactas de alta potencia. Cuenta co",
+  "blocks": [
+   {
+    "t": "Este foco es una excelente solución en sistemas de iluminación LED, totalmente diseñada para el retrofit (reemplazo) de lámparas fluorescentes compactas de alta potencia. Cuenta con una excelente óptica integrada en un difusor opalino que le permite mantener la uniformidad total en la emisión de luz. Cuenta con 5 modelos ideales para el reemplazo de 32W, 45W, 65W, 85W, 120W y 200W en lámparas fluorescentes compactas autobalastradas. Los 6 modelos están fabricados con drivers integrados, multivoltaje 100 - 277V, lo cual brinda una protección adicional en todos los modelos contra las variaciones en tensión. Su cuerpo robusto y con excelente diseño le permite mantener una excelente disipación, lo que asegura su durabilidad."
+   },
+   {
+    "h": "Aplicaciones"
+   },
+   {
+    "t": "Reemplazo de lámparas incandescentes y fluorescentes Iluminación general Iluminación industrial Comercial Bodegas Almacenes"
+   },
+   {
+    "h": "Características"
+   },
+   {
+    "t": "Hasta un 85% de ahorro de energía. Tecnología libre de mercurio. Tensión multivoltaje 100V - 277V Eficacia de hasta 95 lm/w Temperaturas de color: 6500K"
+   },
+   {
+    "h": "Condiciones de operación"
+   },
+   {
+    "t": "Fabricada en policarbonato con disipación de aluminio Temperatura máxima de operación: 40° Temperatura mínima de operación: -20° Driver electrónico integrado Garantía: 3 años en condiciones normales de operación"
+   }
+  ]
+ },
+ {
+  "code": "LC-LR1014",
+  "name": "LR Troffers",
+  "line": "LC",
+  "tags": [
+   "parques",
+   "comercial"
+  ],
+  "pages": [
+   150
+  ],
+  "pdf": "/fichas/LC-LR1014.pdf",
+  "image": {
+   "src": "/fichas/img/LC-LR1014.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-LR1014-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Poliéster reforzado y fibra de vidrio IRC > 80 Hecho en USA 10 Años de Garantía",
+  "blocks": [
+   {
+    "t": "Poliéster reforzado y fibra de vidrio IRC > 80 Hecho en USA 10 Años de Garantía"
+   },
+   {
+    "t": "Andadores, patios, corredores y pasillos Universidades Centros y locales comerciales Oficinas"
+   },
+   {
+    "t": "Producto Tdc Potenca Flujo VolTAJE Marca"
+   }
+  ]
+ },
+ {
+  "code": "LC-LRD1015",
+  "name": "LR Downlights",
+  "line": "LC",
+  "tags": [
+   "parques",
+   "comercial"
+  ],
+  "pages": [
+   151
+  ],
+  "pdf": "/fichas/LC-LRD1015.pdf",
+  "image": {
+   "src": "/fichas/img/LC-LRD1015.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-LRD1015-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Poliéster reforzado y fibra de vidrio IRC > 70 Hecho en USA 10 Años de Garantía",
+  "blocks": [
+   {
+    "t": "Poliéster reforzado y fibra de vidrio IRC > 70 Hecho en USA 10 Años de Garantía"
+   },
+   {
+    "t": "Andadores, patios, corredores y pasillos Universidades Centros y locales comerciales Oficinas"
+   }
+  ]
+ },
+ {
+  "code": "LC-ES1016",
+  "name": "Essentia",
+  "line": "LC",
+  "tags": [
+   "parques",
+   "comercial"
+  ],
+  "pages": [
+   152
+  ],
+  "pdf": "/fichas/LC-ES1016.pdf",
+  "image": {
+   "src": "/fichas/img/LC-ES1016.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LC-ES1016-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Poliéster reforzado y fibra de vidrio IRC > 80 Hecho en USA 10 Años de Garantía",
+  "blocks": [
+   {
+    "t": "Poliéster reforzado y fibra de vidrio IRC > 80 Hecho en USA 10 Años de Garantía"
+   },
+   {
+    "t": "Andadores, patios, corredores y pasillos Universidades Centros y locales comerciales Oficinas"
+   }
+  ]
+ },
+ {
+  "code": "POSTES-RC-CC",
+  "name": "Postes Recto y Cónico Circular",
+  "line": "PT",
+  "tags": [],
+  "pages": [
+   154,
+   155,
+   156,
+   157
+  ],
+  "pdf": "/fichas/POSTES-RC-CC.pdf",
+  "image": {
+   "src": "/fichas/img/POSTES-RC-CC.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/POSTES-RC-CC-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": [
+   {
+    "h": "Postes recto y conico circular"
+   },
+   {
+    "t": "Poste cónico circular 8.00 MTS"
+   }
+  ]
+ },
+ {
+  "code": "POSTES-ESPECIALES",
+  "name": "Postes Especiales (Cisne, Gaviota, Querétaro, London, Córdova, Puebla, Alameda)",
+  "line": "PT",
+  "tags": [],
+  "pages": [
+   159,
+   160,
+   161
+  ],
+  "pdf": "/fichas/POSTES-ESPECIALES.pdf",
+  "image": {
+   "src": "/fichas/img/POSTES-ESPECIALES.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/POSTES-ESPECIALES-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Cisne un brazo Cisne dos brazos Gaviota 1 brazo",
+  "blocks": [
+   {
+    "h": "Postes especiales"
+   },
+   {
+    "t": "Cisne un brazo Cisne dos brazos Gaviota 1 brazo"
+   },
+   {
+    "t": "Querétaro 1 brazo Alameda"
+   },
+   {
+    "t": "London Cordova Querétaro 1brazo"
+   },
+   {
+    "t": "Puebla 2 brazos Puebla 1 brazo Gaviota 2brazos"
+   }
+  ]
+ },
+ {
+  "code": "BRAZOS",
+  "name": "Brazos (Alerón, Percha, Canadá, Córdova, Centro Histórico, Vigilancia, Escuadra, Z, Matías Romero)",
+  "line": "AC",
+  "tags": [],
+  "pages": [
+   166,
+   167
+  ],
+  "pdf": "/fichas/BRAZOS.pdf",
+  "image": {
+   "src": "/fichas/img/BRAZOS.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/BRAZOS-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Brazo Centro Histórico I Brazo Centro Histórico II",
+  "blocks": [
+   {
+    "t": "Brazo Galvanizado para Poste de"
+   },
+   {
+    "t": "Brazo Canada Brazo Córdova"
+   },
+   {
+    "t": "Brazo Centro Histórico I Brazo Centro Histórico II"
+   },
+   {
+    "t": "Brazo Vigilancia Brazo Escuadra"
+   },
+   {
+    "t": "Brazo Z Brazo Matías Romero"
+   }
+  ]
+ },
+ {
+  "code": "ANCLAS-BRAZOS",
+  "name": "Anclas y Brazos",
+  "line": "AC",
+  "tags": [],
+  "pages": [
+   169
+  ],
+  "pdf": "/fichas/ANCLAS-BRAZOS.pdf",
+  "image": {
+   "src": "/fichas/img/ANCLAS-BRAZOS.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/ANCLAS-BRAZOS-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": []
+ },
+ {
+  "code": "BAS-0010",
+  "name": "Base de Concreto para Luminaria",
+  "line": "AC",
+  "tags": [],
+  "pages": [
+   170
+  ],
+  "pdf": "/fichas/BAS-0010.pdf",
+  "image": {
+   "src": "/fichas/img/BAS-0010.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/BAS-0010-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": [
+   {
+    "h": "En el centro"
+   },
+   {
+    "t": "concreto de 200/kgr x cm3"
+   }
+  ]
+ },
+ {
+  "code": "BAS-0011",
+  "name": "Base de Concreto para Luminaria 60x40",
+  "line": "AC",
+  "tags": [],
+  "pages": [
+   171
+  ],
+  "pdf": "/fichas/BAS-0011.pdf",
+  "image": {
+   "src": "/fichas/img/BAS-0011.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/BAS-0011-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": [
+   {
+    "t": "Base de concreto para luminaria"
+   },
+   {
+    "t": "concreto de 200/kgr x cm3"
+   }
+  ]
+ },
+ {
+  "code": "BASE-PIRAMIDAL",
+  "name": "Base de Concreto Piramidal y Rectangular",
+  "line": "AC",
+  "tags": [],
+  "pages": [
+   172
+  ],
+  "pdf": "/fichas/BASE-PIRAMIDAL.pdf",
+  "image": {
+   "src": "/fichas/img/BASE-PIRAMIDAL.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/BASE-PIRAMIDAL-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": [
+   {
+    "t": "Base de concreto piramidal"
+   },
+   {
+    "t": "Base de concreto rectangular"
+   }
+  ]
+ },
+ {
+  "code": "REJILLA-BROCAL",
+  "name": "Rejilla con Brocal Bisagra 70-50-7",
+  "line": "AC",
+  "tags": [],
+  "pages": [
+   173
+  ],
+  "pdf": "/fichas/REJILLA-BROCAL.pdf",
+  "image": {
+   "src": "/fichas/img/REJILLA-BROCAL.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/REJILLA-BROCAL-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "REJILLA CON BROCAL BISAGRA 70-50-7 CM REJILLA CON BROCAL BISAGRA 70-50-7 CM",
+  "blocks": [
+   {
+    "t": "REJILLA CON BROCAL BISAGRA 70-50-7 CM REJILLA CON BROCAL BISAGRA 70-50-7 CM"
+   }
+  ]
+ },
+ {
+  "code": "BANCAS",
+  "name": "Rizos, Ménsulas y Bancas (Española, Italiana, Francesa, Alemana)",
+  "line": "AC",
+  "tags": [],
+  "pages": [
+   174
+  ],
+  "pdf": "/fichas/BANCAS.pdf",
+  "image": {
+   "src": "/fichas/img/BANCAS.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/BANCAS-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": []
+ },
+ {
+  "code": "ACCESORIOS",
+  "name": "Accesorios (Portalámpara, Adaptadores, Fotocelda, Malla)",
+  "line": "AC",
+  "tags": [],
+  "pages": [
+   175
+  ],
+  "pdf": "/fichas/ACCESORIOS.pdf",
+  "image": {
+   "src": "/fichas/img/ACCESORIOS.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/ACCESORIOS-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "BASE PARA ESFERA BOLONIA ABRAZADERA CRUCETAS",
+  "blocks": [
+   {
+    "h": "127v/220v malla antibandálica"
+   },
+   {
+    "t": "BASE PARA ESFERA BOLONIA ABRAZADERA CRUCETAS"
+   }
+  ]
+ },
+ {
+  "code": "ESFERAS-CRISTALES",
+  "name": "Esferas, Acrílicos y Cristales",
+  "line": "AC",
+  "tags": [],
+  "pages": [
+   176
+  ],
+  "pdf": "/fichas/ESFERAS-CRISTALES.pdf",
+  "image": {
+   "src": "/fichas/img/ESFERAS-CRISTALES.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/ESFERAS-CRISTALES-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "CRISTAL PLANO CRISTAL CIRCULAR GASOLUX OV-15 16\", 17\", 22\"",
+  "blocks": [
+   {
+    "h": "Lexalite®"
+   },
+   {
+    "t": "LENS PLANO 12\", 16\", 22\" LENS CONCAVO"
+   },
+   {
+    "h": "Cristal prismático"
+   },
+   {
+    "t": "CRISTAL PLANO CRISTAL CIRCULAR GASOLUX OV-15 16\", 17\", 22\""
+   }
+  ]
+ },
+ {
+  "code": "PICOBA-P01",
+  "name": "PICOBA P-01 de Acero",
+  "line": "AC",
+  "tags": [],
+  "pages": [
+   177
+  ],
+  "pdf": "/fichas/PICOBA-P01.pdf",
+  "image": {
+   "src": "/fichas/img/PICOBA-P01.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PICOBA-P01-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": []
+ },
+ {
+  "code": "PICOBA-P02",
+  "name": "PICOBA P-02 de Acero",
+  "line": "AC",
+  "tags": [],
+  "pages": [
+   178,
+   179
+  ],
+  "pdf": "/fichas/PICOBA-P02.pdf",
+  "image": {
+   "src": "/fichas/img/PICOBA-P02.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PICOBA-P02-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Tubo de acero de 6.62\" diámetro exterior (168.3 mm) Ced.30",
+  "blocks": [
+   {
+    "h": "Picoba p-02 de acero personalizada"
+   },
+   {
+    "t": "Tubo de acero de 6.62\" diámetro exterior (168.3 mm) Ced.30"
+   }
+  ]
+ },
+ {
+  "code": "PICOBA-BSH",
+  "name": "PICOBA B-SH de Acero",
+  "line": "AC",
+  "tags": [],
+  "pages": [
+   180
+  ],
+  "pdf": "/fichas/PICOBA-BSH.pdf",
+  "image": {
+   "src": "/fichas/img/PICOBA-BSH.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/PICOBA-BSH-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "",
+  "blocks": []
+ },
+ {
+  "code": "LETREROS",
+  "name": "Letreros Imagen",
+  "line": "AC",
+  "tags": [
+   "parques"
+  ],
+  "pages": [
+   181
+  ],
+  "pdf": "/fichas/LETREROS.pdf",
+  "image": {
+   "src": "/fichas/img/LETREROS.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/LETREROS-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Señales que indican lugares de interés turístico y cultural, como monumentos históricos, museos, o rutas turísticas",
+  "blocks": [
+   {
+    "t": "Señales que indican lugares de interés turístico y cultural, como monumentos históricos, museos, o rutas turísticas"
+   },
+   {
+    "t": "Señales que indican la ubicación de lugares de interés, como edificios municipales, parques, bibliotecas, centros de salud, etc"
+   },
+   {
+    "t": "El diseño es Perzonalizado dependiendo de las necesidades del cliente y el uso de el producto. Acabado en pintura electrostática ,y reflejante grado estandarizado"
+   }
+  ]
+ },
+ {
+  "code": "SENALITICAS",
+  "name": "Señaléticas Industriales",
+  "line": "AC",
+  "tags": [
+   "industrial"
+  ],
+  "pages": [
+   182
+  ],
+  "pdf": "/fichas/SENALITICAS.pdf",
+  "image": {
+   "src": "/fichas/img/SENALITICAS.webp",
+   "width": 1000,
+   "height": 1415
+  },
+  "thumb": {
+   "src": "/fichas/img/SENALITICAS-thumb.webp",
+   "width": 360,
+   "height": 509
+  },
+  "summary": "Elaboración de Señalización Industrial Interna y Ayudas Visuales en materiales rígidos como PVC, PVC-Foam, Estireno y Acrílico, con vinil auto- adherible impreso y/o cortado por co",
+  "blocks": [
+   {
+    "h": "Señaliticas"
+   },
+   {
+    "t": "Elaboración de Señalización Industrial Interna y Ayudas Visuales en materiales rígidos como PVC, PVC-Foam, Estireno y Acrílico, con vinil auto- adherible impreso y/o cortado por computadora, o con impresión directa en Cama Plana."
+   }
+  ]
+ }
+]

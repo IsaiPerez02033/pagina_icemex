@@ -14,11 +14,13 @@ import {
   Activity,
   X,
   Menu,
+  Inbox,
 } from "lucide-react";
 import { signOut } from "next-auth/react";
 
 const links = [
   { href: "/admin/dashboard", label: "Dashboard", icon: LayoutDashboard },
+  { href: "/admin/leads", label: "Leads", icon: Inbox },
   { href: "/admin/analytics", label: "Analytics", icon: BarChart3 },
   { href: "/admin/seo", label: "SEO", icon: Search },
   { href: "/admin/behavior", label: "Comportamiento", icon: MousePointerClick },

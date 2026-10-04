@@ -86,7 +86,7 @@ export const projects: Project[] = [
     details:
       "Iluminación decorativa con difusor esférico opalino para vialidad interna de centro deportivo arbolado. Luz blanca cálida con distribución uniforme y baja contaminación lumínica para zonas verdes.",
     units: "64 bolardos",
-    productCode: "LU · LU-LM1003 Montpellier",
+    productCode: "LU · LU-LM1006 Montpellier",
   },
   {
     slug: "corredor-solar",
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     details:
       "Solución llave en mano para iluminación de comunidad rural sin acceso a red eléctrica. Poste pintado en azul institucional con panel solar inclinado, caja de batería protegida y luminaria street-light LED. Diseñado para autonomía total durante toda la noche.",
     units: "12 sistemas",
-    productCode: "IS · IS-LP1008",
+    productCode: "IS · IS-LP1023",
   },
   {
     slug: "kia",

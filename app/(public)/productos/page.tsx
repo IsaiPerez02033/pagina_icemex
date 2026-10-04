@@ -1,7 +1,29 @@
-import ProductExplorer from "@/components/ProductExplorer";
+import ProductExplorer, { type ExplorerItem } from "@/components/ProductExplorer";
 import type { Metadata } from "next";
-import Link from "next/link";
-import { products, lineNames, tagNames, type ProductLine } from "@/lib/products";
+import { products } from "@/lib/products";
+import { fichaForProduct, standaloneFichas } from "@/lib/fichas";
+
+// Productos con ficha curada primero, luego el resto del catálogo 2026.
+const items: ExplorerItem[] = [
+  ...products.map((p) => ({
+    code: p.code,
+    name: p.name,
+    line: p.line,
+    tags: p.tags,
+    tagline: p.tagline,
+    specs: p.specs.slice(0, 2),
+    thumb: fichaForProduct(p.code)?.thumb,
+  })),
+  ...standaloneFichas.map((f) => ({
+    code: f.code,
+    name: f.name,
+    line: f.line,
+    tags: f.tags,
+    tagline: f.summary.length > 110 ? `${f.summary.slice(0, 107)}…` : f.summary,
+    specs: [],
+    thumb: f.thumb,
+  })),
+];
 
 export const metadata: Metadata = {
   title: "Catálogo de productos",
@@ -20,23 +42,20 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Catálogo de productos · ICEMEX",
     description:
-      "38 productos en 7 líneas. Alumbrado público, solar, urbano, reflectores, comerciales, postes y herrajes.",
+      `${items.length} productos en 7 líneas. Alumbrado público, solar, urbano, reflectores, comerciales, postes y herrajes.`,
   },
   alternates: { canonical: "https://icemex.mx/productos" },
 };
-
-const lines: ProductLine[] = ["AL", "IS", "LU", "RF", "LC", "PT", "AC"];
 
 export default function ProductosPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    itemListElement: products.map((p, i) => ({
+    itemListElement: items.map((p, i) => ({
       "@type": "ListItem",
       position: i + 1,
       url: `https://icemex.mx/producto/${p.code}`,
       name: p.name,
-      description: p.tagline,
     })),
   };
 
@@ -71,12 +90,12 @@ export default function ProductosPage() {
               marginBottom: 64,
             }}
           >
-            {products.length} productos en 7 líneas. Haz clic en cualquier
+            {items.length} productos en 7 líneas. Haz clic en cualquier
             producto para ver su ficha técnica completa con especificaciones,
             certificaciones y opción de cotización directa por WhatsApp.
           </p>
 
-          <ProductExplorer />
+          <ProductExplorer items={items} />
         </div>
       </div>
       <style

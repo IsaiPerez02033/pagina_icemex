@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import HeroSection from "@/components/HeroSection";
 
 export const metadata: Metadata = {
-  title: "ICEMEX — Iluminación pública, postes y luminarias LED en México",
+  // absolute: el template del layout agregaría " · ICEMEX" otra vez.
+  title: { absolute: "ICEMEX — Iluminación pública, postes y luminarias LED en México" },
   description:
     "Fabricante y distribuidor de alumbrado público, postes cónicos y rectos, luminarias LED, iluminación solar, reflectores, herrajes y material eléctrico. Cotiza tu proyecto de vialidad, parque o nave industrial. +20 años en México.",
   keywords: [
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     "seguridad",
   ],
   openGraph: { title: "ICEMEX — Iluminación pública, postes y material eléctrico" },
+  alternates: { canonical: "https://icemex.mx" },
 };
 
 const AboutSection = dynamic(() => import("@/components/AboutSection"));

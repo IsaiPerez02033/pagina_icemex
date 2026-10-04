@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { buildWhatsAppUrlProyectos } from "@/lib/whatsapp";
-import { sendEvent } from "@/lib/events";
+import { saveLead, sendEvent } from "@/lib/events";
 
 type Props = {
   /** Ruta absoluta del PDF dentro de /public (ej: "/catalogo-icemex-2026.pdf"). */
@@ -75,6 +75,14 @@ export default function LeadMagnetForm({
     }
 
     sendEvent("pdf_download");
+    saveLead({
+      source: "catalogo",
+      nombre: form.nombre,
+      empresa: form.organizacion,
+      email: form.email,
+      tipo: form.tipoProyecto,
+      mensaje: `Descarga: ${resourceLabel}`,
+    });
 
     // 1) Descarga inmediata del PDF
     const a = document.createElement("a");

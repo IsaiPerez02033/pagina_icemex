@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { buildWhatsAppUrlProyectos } from "@/lib/whatsapp";
-import { sendEvent } from "@/lib/events";
+import { saveLead, sendEvent } from "@/lib/events";
 
 export default function ContactSection() {
   const ref = useRef<HTMLElement | null>(null);
@@ -126,7 +126,7 @@ export default function ContactSection() {
               alignItems: "center",
               gap: 12,
               padding: "14px 24px",
-              background: "#25D366",
+              background: "#0E7A3E",
               color: "#FFFFFF",
               fontSize: 12,
               fontWeight: 600,
@@ -218,7 +218,7 @@ export default function ContactSection() {
                 Oficina
               </p>
               <p style={{ color: "var(--text-primary)" }}>
-                Jorobas,Local 23D, Huhuetoca, México
+                Jorobas, Local 23D, Huehuetoca, México
               </p>
             </div>
           </div>
@@ -228,6 +228,14 @@ export default function ContactSection() {
           onSubmit={(e) => {
             e.preventDefault();
             sendEvent("form_submit");
+            saveLead({
+              source: "contacto",
+              nombre: form.nombre,
+              empresa: form.empresa,
+              email: form.email,
+              tipo: form.tipo,
+              mensaje: form.mensaje,
+            });
             const lines = [
               `*Nueva solicitud de cotización ICEMEX*`,
               ``,
@@ -300,7 +308,7 @@ export default function ContactSection() {
                 flex: 1,
                 minWidth: 200,
                 padding: "18px 24px",
-                background: "#25D366",
+                background: "#0E7A3E",
                 color: "#FFFFFF",
                 border: "none",
                 borderRadius: 999,
@@ -316,12 +324,12 @@ export default function ContactSection() {
               }}
               onMouseEnter={(e) => {
                 const el = e.currentTarget as HTMLButtonElement;
-                el.style.background = "#1FB955";
+                el.style.background = "#0B6533";
                 el.style.transform = "translateY(-2px)";
               }}
               onMouseLeave={(e) => {
                 const el = e.currentTarget as HTMLButtonElement;
-                el.style.background = "#25D366";
+                el.style.background = "#0E7A3E";
                 el.style.transform = "translateY(0)";
               }}
             >

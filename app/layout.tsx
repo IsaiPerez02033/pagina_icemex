@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
-import dynamic from "next/dynamic";
 
 
 const inter = Inter({
@@ -75,9 +74,6 @@ export const metadata: Metadata = {
     description:
       "Fabricación, distribución y comercialización de material eléctrico, herrajes, postería y luminarias LED.",
     images: ["/logo_icemex.png"],
-  },
-  alternates: {
-    canonical: "https://icemex.mx",
   },
   robots: {
     index: true,

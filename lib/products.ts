@@ -248,7 +248,7 @@ export const products: Product[] = [
   // === ILUMINACIÓN SOLAR ===
   {
     code: "IS-LS1003",
-    name: "Suburbana 200W con panel solar",
+    name: "Luminario LED solar 125-200 W",
     line: "IS",
     tags: ["solar", "vialidad", "parques"],
     tagline: "Luminario LED solar inteligente con panel integrado",
@@ -285,7 +285,7 @@ export const products: Product[] = [
     certifications: ["ISO 9001", "ISO 14001", "ISO 45001"],
   },
   {
-    code: "IS-LS1004",
+    code: "IS-LS1008",
     name: "Suburbana 500W c/sensor",
     line: "IS",
     tags: ["solar", "vialidad"],
@@ -309,7 +309,7 @@ export const products: Product[] = [
     ],
   },
   {
-    code: "IS-LA1005",
+    code: "IS-LA1014",
     name: "All in One — FORLED",
     line: "IS",
     tags: ["solar", "vialidad", "parques", "comercial"],
@@ -342,7 +342,7 @@ export const products: Product[] = [
     warranty: "10 años luminaria · 5 años batería · 20 años panel",
   },
   {
-    code: "IS-AD50",
+    code: "IS-AO1030",
     name: "AD-50W Vialidades",
     line: "IS",
     tags: ["solar", "vialidad"],
@@ -370,7 +370,7 @@ export const products: Product[] = [
     warranty: "10 años luminaria · 6 años batería",
   },
   {
-    code: "IS-LA1007",
+    code: "IS-LA1021",
     name: "Suburbana Solar 300W",
     line: "IS",
     tags: ["solar", "vialidad"],
@@ -386,7 +386,7 @@ export const products: Product[] = [
     warranty: "3 años",
   },
   {
-    code: "IS-LP1008",
+    code: "IS-LP1023",
     name: "Solar 180W / 240W con panel",
     line: "IS",
     tags: ["solar", "vialidad"],
@@ -406,7 +406,7 @@ export const products: Product[] = [
 
   // === LUMINARIOS URBANOS ===
   {
-    code: "LU-BT1001",
+    code: "LU-BT1002",
     name: "Bolardo 120W",
     line: "LU",
     tags: ["parques", "decorativo"],
@@ -459,7 +459,7 @@ export const products: Product[] = [
     features: ["Solar autónomo", "Acrílico difusor", "Pintura electrostática"],
   },
   {
-    code: "LU-LM1003",
+    code: "LU-LM1006",
     name: "Bolardo Montpellier",
     line: "LU",
     tags: ["parques", "decorativo"],
@@ -482,7 +482,7 @@ export const products: Product[] = [
     features: ["Placa base de aluminio", "Pintura electrostática"],
   },
   {
-    code: "LU-LF1006",
+    code: "LU-LF1009",
     name: "Fornax",
     line: "LU",
     tags: ["parques", "decorativo"],
@@ -496,7 +496,7 @@ export const products: Product[] = [
 
   // === REFLECTORES ===
   {
-    code: "RF-RE1003-300",
+    code: "RF-RE1003",
     name: "Reflector LED Estadio 300W",
     line: "RF",
     tags: ["industrial", "comercial"],
@@ -518,7 +518,7 @@ export const products: Product[] = [
     features: ["Alta intensidad lumínica", "Larga distancia"],
   },
   {
-    code: "RF-RE1003-400",
+    code: "RF-RE1005",
     name: "Reflector Plano 400W",
     line: "RF",
     tags: ["industrial", "comercial"],
@@ -669,7 +669,7 @@ export const products: Product[] = [
     features: ["Gran altura", "Configurable", "Alta intensidad"],
   },
   {
-    code: "LC-LR1013",
+    code: "LC-LR1014",
     name: "LR Troffers",
     line: "LC",
     tags: ["comercial"],

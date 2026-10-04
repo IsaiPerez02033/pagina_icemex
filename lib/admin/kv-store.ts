@@ -29,7 +29,6 @@ export const EVENT_NAMES = [
   "form_submit",
   "pdf_download",
   "chatbot_conversation",
-  "lead_saved",
 ] as const;
 export type EventName = (typeof EVENT_NAMES)[number];
 

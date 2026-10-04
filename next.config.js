@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 
+const legacyCodes = require("./lib/legacy-codes.json");
+
 // Cabeceras de seguridad para todo el sitio. La CSP se limita a directivas
 // que no rompen los scripts inline (tema, JSON-LD, Clarity): impide que otro
 // sitio meta icemex.mx en un iframe, plugins y cambios de <base>/<form>.
@@ -33,6 +35,14 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     contentDispositionType: "attachment",
     contentSecurityPolicy: "default-src 'self'; script-src 'none';",
+  },
+  async redirects() {
+    // Productos que tenían un código distinto al del catálogo oficial.
+    return Object.entries(legacyCodes).map(([from, to]) => ({
+      source: `/producto/${from}`,
+      destination: `/producto/${to}`,
+      permanent: true,
+    }));
   },
   async headers() {
     // PDFs (catálogo y fichas): cambian poco, se cachean 1 día en el

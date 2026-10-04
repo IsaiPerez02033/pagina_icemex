@@ -6,14 +6,30 @@ export type TrackedEvent =
   | "whatsapp_click"
   | "form_submit"
   | "pdf_download"
-  | "chatbot_conversation"
-  | "lead_saved";
+  | "chatbot_conversation";
 
 export function sendEvent(name: TrackedEvent) {
   fetch("/api/events", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ type: "event", name }),
+    keepalive: true,
+  }).catch(() => {});
+}
+
+/** Guarda el lead del formulario en el servidor (además de abrir WhatsApp). */
+export function saveLead(lead: {
+  source: "contacto" | "catalogo";
+  nombre?: string;
+  empresa?: string;
+  email?: string;
+  tipo?: string;
+  mensaje?: string;
+}) {
+  fetch("/api/leads", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ...lead, pagina: location.pathname }),
     keepalive: true,
   }).catch(() => {});
 }

@@ -1,30 +1,53 @@
 "use client";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { products, lineNames, tagNames } from "@/lib/products";
+import { lineNames, tagNames } from "@/lib/products";
+
+export interface ExplorerItem {
+  code: string;
+  name: string;
+  line: keyof typeof lineNames;
+  tags: string[];
+  tagline: string;
+  specs: { label: string; value: string }[];
+  thumb?: { src: string; width: number; height: number };
+}
+
 const normalize = (s: string) =>
   s
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[̀-ͯ]/g, "")
     .toLowerCase();
-export default function ProductExplorer() {
+
+export default function ProductExplorer({ items }: { items: ExplorerItem[] }) {
   const [query, setQuery] = useState("");
   const [line, setLine] = useState("");
   const [tag, setTag] = useState("");
+
+  // Filtros desde la URL (?linea=AL&aplicacion=solar&q=cobra): los usan el
+  // breadcrumb de cada producto y los chips de aplicación.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const l = params.get("linea")?.toUpperCase() ?? "";
+    const t = params.get("aplicacion") ?? "";
+    if (l in lineNames) setLine(l);
+    if (t in tagNames) setTag(t);
+    setQuery(params.get("q") ?? "");
+  }, []);
+
   const found = useMemo(
     () =>
-      products.filter(
+      items.filter(
         (p) =>
           (!line || p.line === line) &&
-          (!tag || p.tags.some((t) => t === tag)) &&
+          (!tag || p.tags.includes(tag)) &&
           normalize(
-            [p.code, p.name, p.tagline, ...p.specs.map((s) => s.value)].join(
-              " ",
-            ),
-          ).includes(normalize(query.trim())),
+            [p.code, p.name, p.tagline, ...p.specs.map((s) => s.value)].join(" ")
+          ).includes(normalize(query.trim()))
       ),
-    [query, line, tag],
+    [items, query, line, tag]
   );
+
   return (
     <div className="explorer">
       <div className="explorer-filters">
@@ -72,19 +95,33 @@ export default function ProductExplorer() {
             className="explorer-card"
             key={p.code}
           >
+            {p.thumb && (
+              // eslint-disable-next-line @next/next/no-img-element -- miniatura webp ya optimizada
+              <img
+                className="explorer-thumb"
+                src={p.thumb.src}
+                width={p.thumb.width}
+                height={p.thumb.height}
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            )}
             <span className="eyebrow">
               {p.code} · {lineNames[p.line]}
             </span>
             <h2>{p.name}</h2>
-            <p>{p.tagline}</p>
-            <dl>
-              {p.specs.slice(0, 2).map((s) => (
-                <div key={s.label}>
-                  <dt>{s.label}</dt>
-                  <dd>{s.value}</dd>
-                </div>
-              ))}
-            </dl>
+            {p.tagline && <p>{p.tagline}</p>}
+            {p.specs.length > 0 && (
+              <dl>
+                {p.specs.slice(0, 2).map((s) => (
+                  <div key={s.label}>
+                    <dt>{s.label}</dt>
+                    <dd>{s.value}</dd>
+                  </div>
+                ))}
+              </dl>
+            )}
             <span className="card-action">Ver ficha y cotizar ↗</span>
           </Link>
         ))}

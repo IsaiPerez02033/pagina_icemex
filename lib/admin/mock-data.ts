@@ -43,7 +43,7 @@ export function getTopPages(): TopPage[] {
     { page: "/catalogo", views: 720, avgTime: "3m 20s", bounceRate: "45%" },
     { page: "/servicios", views: 610, avgTime: "2m 10s", bounceRate: "40%" },
     { page: "/nosotros", views: 480, avgTime: "1m 35s", bounceRate: "52%" },
-    { page: "/producto/IS-LA1005", views: 420, avgTime: "1m 40s", bounceRate: "25%" },
+    { page: "/producto/IS-LA1014", views: 420, avgTime: "1m 40s", bounceRate: "25%" },
   ];
 }
 

@@ -119,8 +119,9 @@ export default function Footer() {
 
         {/* Columna 2 — Navegación */}
         <div>
-          <h4
+          <h3
             style={{
+              textTransform: "none",
               color: "var(--text-primary)",
               fontSize: 12,
               letterSpacing: "0.22em",
@@ -129,7 +130,7 @@ export default function Footer() {
             }}
           >
             Navegación
-          </h4>
+          </h3>
           <ul
             style={{
               listStyle: "none",
@@ -158,8 +159,9 @@ export default function Footer() {
 
         {/* Columna 3 — Productos */}
         <div>
-          <h4
+          <h3
             style={{
+              textTransform: "none",
               color: "var(--text-primary)",
               fontSize: 12,
               letterSpacing: "0.22em",
@@ -168,7 +170,7 @@ export default function Footer() {
             }}
           >
             Productos
-          </h4>
+          </h3>
           <ul
             style={{
               listStyle: "none",
@@ -187,8 +189,9 @@ export default function Footer() {
 
         {/* Columna 4 — Contacto y redes sociales */}
         <div>
-          <h4
+          <h3
             style={{
+              textTransform: "none",
               color: "var(--text-primary)",
               fontSize: 12,
               letterSpacing: "0.22em",
@@ -197,7 +200,7 @@ export default function Footer() {
             }}
           >
             Contacto
-          </h4>
+          </h3>
           <ul
             style={{
               listStyle: "none",
@@ -209,7 +212,7 @@ export default function Footer() {
               lineHeight: 1.7,
             }}
           >
-            <li>Jorobas,Local 23D,Huhuetoca,México</li>
+            <li>Jorobas, Local 23D, Huehuetoca, México</li>
             <li>icemexjorobas@gmail.com</li>
             <li>593 916 3264</li>
           </ul>

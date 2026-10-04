@@ -9,9 +9,17 @@ import {
   type ProductLine,
 } from "@/lib/products";
 import { buildWhatsAppUrlProyectos } from "@/lib/whatsapp";
+import { fichaForProduct, standaloneFichas } from "@/lib/fichas";
+import FichaPage, { FichaDownload, FichaText } from "@/components/FichaPage";
 
+const standalone = (code: string) =>
+  standaloneFichas.find((f) => f.code === code);
+
+// 38 productos con ficha curada + 94 fichas del catálogo con página propia.
 export function generateStaticParams() {
-  return getAllCodes().map((code) => ({ code }));
+  return [...getAllCodes(), ...standaloneFichas.map((f) => f.code)].map(
+    (code) => ({ code })
+  );
 }
 
 export async function generateMetadata({
@@ -21,9 +29,24 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { code } = await params;
   const p = products.find((x) => x.code === code);
-  if (!p) return { title: "Producto no encontrado" };
+  if (!p) {
+    const f = standalone(code);
+    if (!f) return { title: "Producto no encontrado" };
+    return {
+      title: `${f.name} (${f.code}) — ${lineNames[f.line]}`,
+      description: `${f.summary ? f.summary.replace(/\.?$/, ". ") : ""}Ficha técnica ${f.code} del Catálogo ICEMEX 2026: descarga el PDF y cotiza por WhatsApp.`,
+      keywords: [f.name, f.code, lineNames[f.line], ...f.tags.map((t) => tagNames[t]), "ficha técnica", "ICEMEX", "cotizar"],
+      openGraph: {
+        title: `${f.name} · ${lineNames[f.line]}`,
+        images: [{ url: f.image.src, width: f.image.width, height: f.image.height }],
+      },
+      alternates: { canonical: `https://icemex.mx/producto/${f.code}` },
+    };
+  }
+  const ficha = fichaForProduct(p.code);
 
-  const title = `${p.name} (${p.code}) — ${lineNames[p.line]} · ICEMEX`;
+  // El template del layout ya agrega " · ICEMEX".
+  const title = `${p.name} (${p.code}) — ${lineNames[p.line]}`;
   const description = `${p.tagline}. ${p.description.slice(0, 140)}. ${p.specs
     .slice(0, 3)
     .map((s) => `${s.label}: ${s.value}`)
@@ -44,6 +67,9 @@ export async function generateMetadata({
     openGraph: {
       title: `${p.name} · ${lineNames[p.line]}`,
       description: p.tagline,
+      ...(ficha && {
+        images: [{ url: ficha.image.src, width: ficha.image.width, height: ficha.image.height }],
+      }),
     },
     alternates: { canonical: `https://icemex.mx/producto/${p.code}` },
   };
@@ -56,7 +82,12 @@ export default async function ProductoPage({
 }) {
   const { code } = await params;
   const p = products.find((x) => x.code === code);
-  if (!p) notFound();
+  if (!p) {
+    const f = standalone(code);
+    if (!f) notFound();
+    return <FichaPage ficha={f} />;
+  }
+  const ficha = fichaForProduct(p.code);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -64,7 +95,9 @@ export default async function ProductoPage({
     name: p.name,
     description: p.description,
     sku: p.code,
-    image: "https://icemex.mx/logo_icemex.png",
+    image: ficha
+      ? `https://icemex.mx${ficha.image.src}`
+      : "https://icemex.mx/logo_icemex.png",
     brand: { "@type": "Brand", name: "ICEMEX" },
     category: lineNames[p.line],
     ...(p.specs.length > 0 && {
@@ -351,6 +384,8 @@ export default async function ProductoPage({
                   ))}
                 </div>
               </section>
+
+              {ficha && <FichaText ficha={ficha} />}
             </div>
 
             {/* Columna derecha: meta + CTA */}
@@ -454,6 +489,8 @@ export default async function ProductoPage({
                   </div>
                 )}
 
+                {ficha && <FichaDownload ficha={ficha} />}
+
                 <a
                   href={buildWhatsAppUrlProyectos(
                     `Hola ICEMEX, me interesa cotizar: *${p.name}* (${p.code}). ¿Me pueden dar precio y disponibilidad?`
@@ -466,7 +503,7 @@ export default async function ProductoPage({
                     justifyContent: "center",
                     gap: 10,
                     padding: "18px 28px",
-                    background: "#25D366",
+                    background: "#0E7A3E",
                     color: "#fff",
                     fontSize: 12,
                     fontWeight: 600,
