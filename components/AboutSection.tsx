@@ -68,6 +68,7 @@ export default function AboutSection({ productCount }: { productCount: number })
 
   return (
     <section
+      className="page-section"
       ref={ref}
       style={{
         position: "relative",

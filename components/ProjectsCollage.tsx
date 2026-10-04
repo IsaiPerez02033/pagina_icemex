@@ -92,6 +92,7 @@ export default function ProjectsCollage() {
 
   return (
     <section
+      className="page-section"
       id="proyectos"
       ref={sectionRef}
       style={{

@@ -64,7 +64,7 @@ export default function BrandsSection() {
   }, []);
 
   return (
-    <section ref={ref} className="brands-section">
+    <section ref={ref} className="page-section brands-section">
       <div className="brands-inner">
         <div className="brands-title-wrap">
           <p className="brands-eyebrow">Alianzas</p>

@@ -97,6 +97,7 @@ export default function CertificationsBanner() {
 
   return (
     <section
+      className="page-section"
       ref={ref}
       style={{
         position: "relative",

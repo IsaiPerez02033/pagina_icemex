@@ -43,6 +43,7 @@ export default function ContactSection() {
 
   return (
     <section
+      className="page-section"
       id="contacto"
       ref={ref}
       style={{

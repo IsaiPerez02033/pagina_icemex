@@ -67,6 +67,7 @@ export default function ProductsSection({ lines }: { lines: LineShowcase[] }) {
 
   return (
     <section
+      className="page-section"
       id="productos"
       ref={sectionRef}
       style={{

@@ -82,6 +82,7 @@ export default function ServicesTeaser() {
 
   return (
     <section
+      className="page-section"
       ref={sectionRef}
       id="servicios"
       style={{

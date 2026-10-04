@@ -1488,6 +1488,31 @@ html[data-theme="light"] .hero-static-pool {
    RESPONSIVE GLOBAL — tablet y mobile
    ============================================================ */
 
+/* Secciones del inicio (y el banner de certificaciones en /nosotros):
+   aire entre bloques y margen lateral también en escritorio. */
+.page-section {
+  padding: clamp(96px, 9vw, 136px) clamp(20px, 4vw, 48px);
+}
+.page-section.brands-section {
+  padding-top: clamp(56px, 6vw, 80px);
+  padding-bottom: clamp(56px, 6vw, 80px);
+}
+@media (max-width: 720px) {
+  .page-section {
+    padding: 72px 20px;
+  }
+  .page-section.brands-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media (max-width: 480px) {
+  .page-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 /* TABLET (≤ 1024px) */
 @media (max-width: 1024px) {
   /* reducir padding vertical de secciones del 140px al 90px */
