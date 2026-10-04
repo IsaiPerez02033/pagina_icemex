@@ -21,13 +21,13 @@ export default function IcemexLogo({ alt = "ICEMEX", className, ...rest }: Props
     <>
       <Image
         {...rest}
-        src="/logo_icemex.png"
+        src="/logo-icemex-oscuro.png"
         alt={alt}
         className={`${base} ${base}--dark${extra}`}
       />
       <Image
         {...rest}
-        src="/logo_icemex_modo_claro.png"
+        src="/logo-icemex-claro.png"
         alt={alt}
         className={`${base} ${base}--light${extra}`}
       />

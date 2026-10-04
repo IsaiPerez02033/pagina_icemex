@@ -37,9 +37,9 @@ export default function Navbar() {
       <header className="site-header">
         <Link href="/" aria-label="ICEMEX inicio" className="site-logo">
           <IcemexLogo
-            width={144}
+            width={150}
             height={54}
-            sizes="(max-width: 960px) 112px, 144px"
+            sizes="(max-width: 960px) 118px, 150px"
             priority
             style={{ objectFit: "contain" }}
           />
@@ -58,7 +58,7 @@ export default function Navbar() {
         <div className="site-controls">
           <ThemeToggle />
           <Link className="header-quote" href="/#contacto">
-            Cotizar ↗
+            Cotizar <span aria-hidden>↗</span>
           </Link>
           <button
             ref={trigger}

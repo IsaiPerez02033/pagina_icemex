@@ -1898,11 +1898,76 @@ summary {
 .site-desktop a:hover {
   color: var(--accent-cyan);
 }
+/* Botón principal del menú: los colores cálidos del logo para que destaque
+   sobre la barra (blanco sobre #c2410c–#b3121f cumple contraste AA). */
 .header-quote {
-  border: 1px solid var(--accent-cyan);
-  padding: 10px 18px;
-  border-radius: 6px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: 999px;
   white-space: nowrap;
+  overflow: hidden;
+  isolation: isolate;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: linear-gradient(120deg, #c2410c 0%, #d0261d 55%, #b3121f 100%);
+  box-shadow:
+    0 6px 20px rgba(214, 48, 24, 0.38),
+    inset 0 1px rgba(255, 255, 255, 0.25);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
+}
+.header-quote span {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+/* Destello que cruza el botón cada pocos segundos. */
+.header-quote::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    100deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 70%
+  );
+  transform: translateX(-120%);
+  animation: quote-shine 4.5s ease-in-out 2s infinite;
+}
+@keyframes quote-shine {
+  0%,
+  70% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+.header-quote:hover,
+.header-quote:focus-visible {
+  color: #fff;
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+  box-shadow:
+    0 10px 28px rgba(214, 48, 24, 0.5),
+    inset 0 1px rgba(255, 255, 255, 0.3);
+}
+.header-quote:hover span,
+.header-quote:focus-visible span {
+  transform: translate(2px, -2px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .header-quote::after {
+    animation: none;
+  }
 }
 .menu-toggle {
   display: none;
@@ -2999,5 +3064,26 @@ body[data-chat-open="true"] .wa-fab {
   }
   .ficha-aside {
     position: static;
+  }
+}
+
+/* Logo 2026: el archivo ya viene recortado (proporción 2.76:1), así que se
+   ajusta completo a la caja sin recortes ni desplazamientos. */
+.site-logo {
+  width: 150px;
+  height: 54px;
+  overflow: visible;
+  border-radius: 0;
+}
+.site-logo img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+  transform: none;
+}
+@media (max-width: 960px) {
+  .site-logo {
+    width: 118px;
+    height: 44px;
   }
 }

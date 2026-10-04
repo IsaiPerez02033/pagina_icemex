@@ -115,7 +115,7 @@ export default async function ProductoPage({
     sku: p.code,
     image: ficha
       ? `https://icemex.mx${ficha.image.src}`
-      : "https://icemex.mx/logo_icemex.png",
+      : "https://icemex.mx/logo-icemex-oscuro.png",
     brand: { "@type": "Brand", name: "ICEMEX" },
     category: lineNames[p.line],
     ...(p.specs.length > 0 && {

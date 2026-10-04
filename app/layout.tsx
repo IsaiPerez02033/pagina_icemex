@@ -73,7 +73,6 @@ export const metadata: Metadata = {
     title: "ICEMEX — Iluminando el futuro de México",
     description:
       "Fabricación, distribución y comercialización de material eléctrico, herrajes, postería y luminarias LED.",
-    images: ["/logo_icemex.png"],
   },
   robots: {
     index: true,
