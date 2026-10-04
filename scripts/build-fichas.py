@@ -14,6 +14,7 @@ Uso (requiere pillow y pdftoppm de poppler):
 Volver a correrlo cada vez que se agreguen o cambien fichas.
 """
 
+import hashlib
 import io
 import json
 import re
@@ -66,9 +67,16 @@ TAG_RULES = {
 }
 
 
+def versioned(path: Path, url: str) -> str:
+    """URL con huella del contenido: al regenerar un archivo cambia la URL y
+    ningún navegador ni CDN sigue mostrando la versión vieja en caché."""
+    digest = hashlib.md5(path.read_bytes()).hexdigest()[:8]
+    return f"{url}?v={digest}"
+
+
 def img_info(path: Path, url: str) -> dict:
     with Image.open(path) as im:
-        return {"src": url, "width": im.width, "height": im.height}
+        return {"src": versioned(path, url), "width": im.width, "height": im.height}
 
 
 def render_cover(pdf: Path, code: str) -> tuple[dict, dict]:
@@ -84,8 +92,8 @@ def render_cover(pdf: Path, code: str) -> tuple[dict, dict]:
     thumb.thumbnail((360, 10_000))
     thumb.save(IMG / f"{code}-thumb.webp", "WEBP", quality=70, method=6)
     return (
-        {"src": f"/fichas/img/{code}.webp", "width": big.width, "height": big.height},
-        {"src": f"/fichas/img/{code}-thumb.webp", "width": thumb.width, "height": thumb.height},
+        img_info(IMG / f"{code}.webp", f"/fichas/img/{code}.webp"),
+        img_info(IMG / f"{code}-thumb.webp", f"/fichas/img/{code}-thumb.webp"),
     )
 
 
@@ -135,7 +143,7 @@ def main():
             "line": line,
             "tags": tags,
             "pages": entry["paginas"],
-            "pdf": f"/fichas/{entry['archivo']}",
+            "pdf": versioned(pdf, f"/fichas/{entry['archivo']}"),
             "image": img_info(PHOTOS / f"{code}.webp", f"/productos/{code}.webp"),
             "thumb": img_info(PHOTOS / f"{code}-thumb.webp", f"/productos/{code}-thumb.webp"),
             "cover": cover,
