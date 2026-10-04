@@ -1,7 +1,6 @@
 "use client";
 
 import { Eye, Clock, ArrowDown, ExternalLink, BadgeCheck } from "lucide-react";
-import MetricCard from "@/components/dashboard/MetricCard";
 
 const clarityProjectId = "wwuskpkf16";
 
@@ -15,13 +14,6 @@ export default function BehaviorPage() {
         <p style={{ color: "var(--text-muted)", fontSize: 13 }}>
           Heatmaps, grabaciones y profundidad de scroll · Microsoft Clarity
         </p>
-      </div>
-
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16, marginBottom: 32 }}>
-        <MetricCard label="Tiempo promedio" value="4m 12s" change={5.2} icon="activity" />
-        <MetricCard label="Scroll promedio" value="68%" change={3.8} icon="trending-down" />
-        <MetricCard label="Páginas/vista" value="3.4" change={-1.5} icon="users" />
-        <MetricCard label="Tasa salida" value="32.5%" change={-4.1} icon="check-circle" />
       </div>
 
       <div

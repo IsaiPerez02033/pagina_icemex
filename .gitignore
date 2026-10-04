@@ -31,3 +31,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# material de marketing y herramientas locales (no son parte del sitio)
+/Claude outputs/
+/Redes sociales ICEMEX/
+/Triptico ICEMEX/
+/.claude/

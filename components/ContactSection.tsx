@@ -308,8 +308,8 @@ export default function ContactSection() {
                 flex: 1,
                 minWidth: 200,
                 padding: "18px 24px",
-                background: "#0E7A3E",
-                color: "#FFFFFF",
+                background: "#25D366",
+                color: "#06210e",
                 border: "none",
                 borderRadius: 999,
                 fontSize: 12,
@@ -324,12 +324,12 @@ export default function ContactSection() {
               }}
               onMouseEnter={(e) => {
                 const el = e.currentTarget as HTMLButtonElement;
-                el.style.background = "#0B6533";
+                el.style.background = "#1FB955";
                 el.style.transform = "translateY(-2px)";
               }}
               onMouseLeave={(e) => {
                 const el = e.currentTarget as HTMLButtonElement;
-                el.style.background = "#0E7A3E";
+                el.style.background = "#25D366";
                 el.style.transform = "translateY(0)";
               }}
             >

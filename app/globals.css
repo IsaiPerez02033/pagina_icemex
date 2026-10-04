@@ -343,94 +343,6 @@ html[data-theme="light"] .navbar-open .navbar-inner {
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* === ESTILOS TEMA CLARO / OSCURO PARA LIMELIGHT NAV === */
-.limelight-nav-container {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  transition: none;
-}
-
-html[data-theme="light"] .limelight-nav-container {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.limelight-pill {
-  background: #ffffff;
-  box-shadow:
-    0 0 12px rgba(255, 255, 255, 0.9),
-    0 0 22px rgba(0, 212, 255, 0.8);
-  transition:
-    background-color 0.4s ease,
-    box-shadow 0.4s ease;
-}
-
-html[data-theme="light"] .limelight-pill {
-  background: var(--accent-cyan);
-  box-shadow:
-    0 0 12px rgba(0, 127, 163, 0.8),
-    0 0 20px rgba(0, 127, 163, 0.5);
-}
-
-.limelight-cone {
-  clip-path: polygon(22% 0%, 78% 0%, 100% 100%, 0% 100%);
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.38) 0%,
-    rgba(0, 212, 255, 0.18) 50%,
-    rgba(0, 212, 255, 0) 100%
-  );
-  transition: background 0.4s ease;
-}
-
-html[data-theme="light"] .limelight-cone {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 127, 163, 0.35) 0%,
-    rgba(0, 127, 163, 0.15) 50%,
-    rgba(0, 127, 163, 0) 100%
-  );
-}
-
-.limelight-active-icon {
-  color: #ffffff;
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.9));
-  transform: scale(1.05);
-}
-
-html[data-theme="light"] .limelight-active-icon {
-  color: var(--accent-cyan);
-  filter: drop-shadow(0 0 6px rgba(0, 127, 163, 0.4));
-  transform: scale(1.05);
-}
-
-.limelight-active-label {
-  color: #ffffff;
-  font-weight: 600;
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.7));
-}
-
-html[data-theme="light"] .limelight-active-label {
-  color: var(--accent-cyan);
-  font-weight: 700;
-  filter: drop-shadow(0 0 4px rgba(0, 127, 163, 0.3));
-}
-
-.limelight-inactive-item {
-  color: var(--text-muted);
-  opacity: 0.6;
-  transition:
-    opacity 0.2s ease,
-    color 0.2s ease;
-}
-
-.limelight-inactive-item:hover {
-  color: var(--text-primary);
-  opacity: 0.95;
-}
-
 /* === HERO (estático y 3D comparten layout: .assembly-hero) === */
 .hero-scroll-container {
   position: relative;
@@ -1866,55 +1778,7 @@ html[data-theme="light"] .icemex-logo--light {
   }
 }
 
-/* === ANIMACIONES AMBIENTALES AURORA Y SHIMMER === */
-@keyframes aurora-slow {
-  0%,
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
-  50% {
-    transform: translate(60px, 40px) scale(1.15);
-  }
-}
-
-@keyframes aurora-reverse {
-  0%,
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
-  50% {
-    transform: translate(-50px, -35px) scale(1.1);
-  }
-}
-
-.animate-aurora-slow {
-  animation: aurora-slow 18s ease-in-out infinite;
-}
-
-.animate-aurora-reverse {
-  animation: aurora-reverse 22s ease-in-out infinite;
-}
-
-/* En móvil, un layer fijo + blur enorme animado repinta en cada frame de
-   scroll y traba el desplazamiento. Congelamos la animación y aligeramos el
-   blur; el efecto se conserva pero sin costo de recompositing continuo. */
-@media (max-width: 768px) {
-  .aurora-orb {
-    animation: none !important;
-    filter: blur(70px) !important;
-    transform: translateZ(0);
-  }
-  .ambient-aurora {
-    opacity: 0.28 !important;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .aurora-orb {
-    animation: none !important;
-  }
-}
-
+/* === SHIMMER === */
 /* Shimmer Light Sweep para botones CTA */
 .catalog-cta-primary,
 .project-modal-cta {
@@ -2328,10 +2192,6 @@ summary {
   .services-teaser-title > * {
     opacity: 1 !important;
     transform: none !important;
-  }
-  .animate-aurora-slow,
-  .animate-aurora-reverse {
-    animation: none !important;
   }
 }
 
