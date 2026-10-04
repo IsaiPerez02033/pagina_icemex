@@ -7,9 +7,11 @@ Genera las fichas técnicas ICEMEX con la plantilla oficial (4 páginas).
 Entrada:  fichas-src/data/<CODIGO>.json   (contenido de cada ficha)
           fichas-src/originales/<CODIGO>.pdf (fichas anteriores: fuente de fotos)
 Salida:   public/fichas/<CODIGO>.pdf
-          public/productos/<CODIGO>.webp y <CODIGO>-thumb.webp (foto para la web)
+          public/productos/<CODIGO>.webp, -md.webp y -thumb.webp (foto para la web)
 
 Requiere: pymupdf, pillow, jinja2 y Google Chrome instalado.
+Las fotos principales de baja resolución se amplían antes con IA:
+`python3 fichas-src/upscale.py` (ver ese archivo).
 Las imágenes se referencian como "p<página>_x<xref>" del PDF original
 (o "<OTRO-CODIGO>:p<página>_x<xref>" para tomarlas de otra ficha).
 """
@@ -94,7 +96,7 @@ def extract(ref: str, code: str) -> Image.Image:
     return img
 
 
-def enhance(img: Image.Image, target: int, mode: str = "photo") -> Image.Image:
+def enhance(img: Image.Image, target: int, mode: str = "photo", sharpen: bool = True) -> Image.Image:
     """Recorta márgenes vacíos, amplía (Lanczos) y da nitidez."""
     alpha = img.getchannel("A")
     bbox = alpha.point(lambda a: 255 if a > 12 else 0).getbbox()
@@ -117,11 +119,21 @@ def enhance(img: Image.Image, target: int, mode: str = "photo") -> Image.Image:
     scale = target / max(w, h)
     if scale > 1:
         img = img.resize((round(w * min(scale, 3)), round(h * min(scale, 3))), Image.LANCZOS)
-        if mode == "photo":
+        if mode == "photo" and sharpen:
             rgb = img.convert("RGB").filter(ImageFilter.UnsharpMask(radius=2, percent=70, threshold=2))
             rgb.putalpha(img.getchannel("A"))
             img = rgb
     return img
+
+
+def hero(code: str, ref: str) -> Image.Image:
+    """Foto principal: la versión ampliada con IA (upscale.py) si existe para
+    esta misma referencia; si no, la del PDF original ampliada con Lanczos."""
+    hires = SRC / "hires" / f"{code}.webp"
+    index = SRC / "hires" / "index.json"
+    if hires.exists() and index.exists() and json.loads(index.read_text()).get(code) == ref:
+        return enhance(Image.open(hires).convert("RGBA"), 1800, sharpen=False)
+    return enhance(extract(ref, code), 1800)
 
 
 def save_png(img: Image.Image, name: str) -> str:
@@ -144,7 +156,7 @@ def prepare(code: str, data: dict) -> dict:
             imgs[k] = save_png(enhance(extract(ref, code), target, mode), k)
         return imgs[k]
 
-    hero_img = enhance(extract(data["hero"], code), 1800)
+    hero_img = hero(code, data["hero"])
     f["hero"] = save_png(hero_img, f"{code}__hero")
     f["photo2"] = img(data.get("photo2"), 1400)
     feats = f.get("features", [])
@@ -196,14 +208,13 @@ def prepare(code: str, data: dict) -> dict:
     if f["compact"] and any(r[0] == "Montaje" for g in groups for r in g["rows"]):
         f["mount"] = None  # ya aparece en la tabla de especificaciones
 
-    # Foto para la web (fondo transparente → webp con alfa).
+    # Foto para la web (fondo transparente → webp con alfa) en tres tamaños:
+    # escritorio/retina, celular y miniatura (las páginas usan srcset).
     OUT_WEB.mkdir(parents=True, exist_ok=True)
-    web = hero_img.copy()
-    web.thumbnail((1000, 1000), Image.LANCZOS)
-    web.save(OUT_WEB / f"{code}.webp", "WEBP", quality=84, method=6)
-    th = hero_img.copy()
-    th.thumbnail((420, 420), Image.LANCZOS)
-    th.save(OUT_WEB / f"{code}-thumb.webp", "WEBP", quality=80, method=6)
+    for suffix, side, quality in (("", 1400, 80), ("-md", 800, 80), ("-thumb", 420, 80)):
+        web = hero_img.copy()
+        web.thumbnail((side, side), Image.LANCZOS)
+        web.save(OUT_WEB / f"{code}{suffix}.webp", "WEBP", quality=quality, method=4)
     return f
 
 

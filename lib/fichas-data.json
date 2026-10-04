@@ -10,24 +10,29 @@
   "pages": [
    5
   ],
-  "pdf": "/fichas/AL-LC1001.pdf?v=c2ca7bf0",
+  "pdf": "/fichas/AL-LC1001.pdf?v=62749f2c",
   "image": {
-   "src": "/productos/AL-LC1001.webp?v=d4791dea",
-   "width": 990,
-   "height": 459
+   "src": "/productos/AL-LC1001.webp?v=79d95476",
+   "width": 1400,
+   "height": 648
+  },
+  "mid": {
+   "src": "/productos/AL-LC1001-md.webp?v=a23e1534",
+   "width": 800,
+   "height": 370
   },
   "thumb": {
-   "src": "/productos/AL-LC1001-thumb.webp?v=40fc7ed1",
+   "src": "/productos/AL-LC1001-thumb.webp?v=2854870e",
    "width": 420,
-   "height": 195
+   "height": 194
   },
   "cover": {
-   "src": "/fichas/img/AL-LC1001.webp?v=9cd68b38",
+   "src": "/fichas/img/AL-LC1001.webp?v=971a2d23",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-LC1001-thumb.webp?v=7101450b",
+   "src": "/fichas/img/AL-LC1001-thumb.webp?v=4e49d8b3",
    "width": 360,
    "height": 510
   },
@@ -195,24 +200,29 @@
   "pages": [
    6
   ],
-  "pdf": "/fichas/AL-CO1016.pdf?v=a3931158",
+  "pdf": "/fichas/AL-CO1016.pdf?v=8935c105",
   "image": {
-   "src": "/productos/AL-CO1016.webp?v=3dcddd09",
-   "width": 258,
-   "height": 1000
+   "src": "/productos/AL-CO1016.webp?v=27b35eb1",
+   "width": 360,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/AL-CO1016-md.webp?v=964aed5e",
+   "width": 206,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/AL-CO1016-thumb.webp?v=65515d71",
-   "width": 109,
+   "src": "/productos/AL-CO1016-thumb.webp?v=80287cb3",
+   "width": 108,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/AL-CO1016.webp?v=bbc3dd7f",
+   "src": "/fichas/img/AL-CO1016.webp?v=95caaf60",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-CO1016-thumb.webp?v=7f5a502d",
+   "src": "/fichas/img/AL-CO1016-thumb.webp?v=64ce12ba",
    "width": 360,
    "height": 510
   },
@@ -426,24 +436,29 @@
   "pages": [
    7
   ],
-  "pdf": "/fichas/IS-LF1016.pdf?v=5dfe1144",
+  "pdf": "/fichas/IS-LF1016.pdf?v=2603dd60",
   "image": {
-   "src": "/productos/IS-LF1016.webp?v=5142e600",
-   "width": 740,
-   "height": 1000
+   "src": "/productos/IS-LF1016.webp?v=390f0aa1",
+   "width": 1034,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-LF1016-md.webp?v=43a3f33b",
+   "width": 591,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-LF1016-thumb.webp?v=28ba16af",
-   "width": 311,
+   "src": "/productos/IS-LF1016-thumb.webp?v=6cb86364",
+   "width": 310,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-LF1016.webp?v=3b231b8b",
+   "src": "/fichas/img/IS-LF1016.webp?v=aa756f65",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LF1016-thumb.webp?v=92980c57",
+   "src": "/fichas/img/IS-LF1016-thumb.webp?v=73cd9712",
    "width": 360,
    "height": 510
   },
@@ -678,24 +693,29 @@
    10,
    11
   ],
-  "pdf": "/fichas/AL-LT1002.pdf?v=747d559c",
+  "pdf": "/fichas/AL-LT1002.pdf?v=1bd31cd0",
   "image": {
-   "src": "/productos/AL-LT1002.webp?v=2ac26981",
-   "width": 1000,
-   "height": 583
+   "src": "/productos/AL-LT1002.webp?v=550496eb",
+   "width": 1400,
+   "height": 817
+  },
+  "mid": {
+   "src": "/productos/AL-LT1002-md.webp?v=b16a8032",
+   "width": 800,
+   "height": 467
   },
   "thumb": {
-   "src": "/productos/AL-LT1002-thumb.webp?v=20f5e6f3",
+   "src": "/productos/AL-LT1002-thumb.webp?v=be7be2b9",
    "width": 420,
    "height": 245
   },
   "cover": {
-   "src": "/fichas/img/AL-LT1002.webp?v=691bbe06",
+   "src": "/fichas/img/AL-LT1002.webp?v=90f497ab",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-LT1002-thumb.webp?v=d1014459",
+   "src": "/fichas/img/AL-LT1002-thumb.webp?v=3ed8d034",
    "width": 360,
    "height": 510
   },
@@ -935,24 +955,29 @@
   "pages": [
    12
   ],
-  "pdf": "/fichas/AL-LU1003.pdf?v=6b06c897",
+  "pdf": "/fichas/AL-LU1003.pdf?v=a911b100",
   "image": {
-   "src": "/productos/AL-LU1003.webp?v=5d6a1461",
-   "width": 1000,
-   "height": 411
+   "src": "/productos/AL-LU1003.webp?v=42bec721",
+   "width": 1400,
+   "height": 577
+  },
+  "mid": {
+   "src": "/productos/AL-LU1003-md.webp?v=07abdf4c",
+   "width": 800,
+   "height": 330
   },
   "thumb": {
-   "src": "/productos/AL-LU1003-thumb.webp?v=3c499859",
+   "src": "/productos/AL-LU1003-thumb.webp?v=7af3c153",
    "width": 420,
    "height": 173
   },
   "cover": {
-   "src": "/fichas/img/AL-LU1003.webp?v=2668f70f",
+   "src": "/fichas/img/AL-LU1003.webp?v=281e4f1c",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-LU1003-thumb.webp?v=134cbe47",
+   "src": "/fichas/img/AL-LU1003-thumb.webp?v=fca96017",
    "width": 360,
    "height": 510
   },
@@ -1155,24 +1180,29 @@
   "pages": [
    13
   ],
-  "pdf": "/fichas/AL-SL1004.pdf?v=d3db31ea",
+  "pdf": "/fichas/AL-SL1004.pdf?v=39d92779",
   "image": {
-   "src": "/productos/AL-SL1004.webp?v=405c449a",
-   "width": 837,
-   "height": 1000
+   "src": "/productos/AL-SL1004.webp?v=2e30e58e",
+   "width": 1174,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/AL-SL1004-md.webp?v=a2d3ac28",
+   "width": 671,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/AL-SL1004-thumb.webp?v=b30bd790",
-   "width": 351,
+   "src": "/productos/AL-SL1004-thumb.webp?v=4ec5b8f6",
+   "width": 352,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/AL-SL1004.webp?v=9b894ad0",
+   "src": "/fichas/img/AL-SL1004.webp?v=7391df65",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-SL1004-thumb.webp?v=20d0b955",
+   "src": "/fichas/img/AL-SL1004-thumb.webp?v=88f85515",
    "width": 360,
    "height": 510
   },
@@ -1425,24 +1455,29 @@
   "pages": [
    14
   ],
-  "pdf": "/fichas/AL-SL1204.pdf?v=6fca81b5",
+  "pdf": "/fichas/AL-SL1204.pdf?v=17b41c12",
   "image": {
-   "src": "/productos/AL-SL1204.webp?v=6c4f67f2",
-   "width": 591,
-   "height": 765
+   "src": "/productos/AL-SL1204.webp?v=dea2fa6c",
+   "width": 1083,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/AL-SL1204-md.webp?v=29d9553d",
+   "width": 619,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/AL-SL1204-thumb.webp?v=9d7097ad",
-   "width": 324,
+   "src": "/productos/AL-SL1204-thumb.webp?v=9990d340",
+   "width": 325,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/AL-SL1204.webp?v=3edb168e",
+   "src": "/fichas/img/AL-SL1204.webp?v=23ac2ac7",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-SL1204-thumb.webp?v=49e5f4af",
+   "src": "/fichas/img/AL-SL1204-thumb.webp?v=102ad1ec",
    "width": 360,
    "height": 510
   },
@@ -1650,24 +1685,29 @@
   "pages": [
    15
   ],
-  "pdf": "/fichas/AL-UL1005.pdf?v=2d86f8b1",
+  "pdf": "/fichas/AL-UL1005.pdf?v=3890cb95",
   "image": {
-   "src": "/productos/AL-UL1005.webp?v=7609a0f0",
-   "width": 1000,
-   "height": 877
+   "src": "/productos/AL-UL1005.webp?v=3114b45d",
+   "width": 1400,
+   "height": 1227
+  },
+  "mid": {
+   "src": "/productos/AL-UL1005-md.webp?v=1a082888",
+   "width": 800,
+   "height": 701
   },
   "thumb": {
-   "src": "/productos/AL-UL1005-thumb.webp?v=040ce718",
+   "src": "/productos/AL-UL1005-thumb.webp?v=ca4d9bbc",
    "width": 420,
-   "height": 369
+   "height": 368
   },
   "cover": {
-   "src": "/fichas/img/AL-UL1005.webp?v=299ad91d",
+   "src": "/fichas/img/AL-UL1005.webp?v=567d4e2d",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-UL1005-thumb.webp?v=bffc2d3a",
+   "src": "/fichas/img/AL-UL1005-thumb.webp?v=a97f0354",
    "width": 360,
    "height": 510
   },
@@ -1856,24 +1896,29 @@
   "pages": [
    16
   ],
-  "pdf": "/fichas/AL-LVI006.pdf?v=fd9de6ba",
+  "pdf": "/fichas/AL-LVI006.pdf?v=a843fa3f",
   "image": {
-   "src": "/productos/AL-LVI006.webp?v=e776c904",
-   "width": 702,
-   "height": 639
+   "src": "/productos/AL-LVI006.webp?v=8f8f3616",
+   "width": 1400,
+   "height": 1276
+  },
+  "mid": {
+   "src": "/productos/AL-LVI006-md.webp?v=7cb58d83",
+   "width": 800,
+   "height": 729
   },
   "thumb": {
-   "src": "/productos/AL-LVI006-thumb.webp?v=965938ca",
+   "src": "/productos/AL-LVI006-thumb.webp?v=80413716",
    "width": 420,
-   "height": 382
+   "height": 383
   },
   "cover": {
-   "src": "/fichas/img/AL-LVI006.webp?v=f7e5ebcd",
+   "src": "/fichas/img/AL-LVI006.webp?v=8657a61e",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-LVI006-thumb.webp?v=8742f930",
+   "src": "/fichas/img/AL-LVI006-thumb.webp?v=330e96f1",
    "width": 360,
    "height": 510
   },
@@ -2084,24 +2129,29 @@
   "pages": [
    17
   ],
-  "pdf": "/fichas/AL-LW1007.pdf?v=b0f220e1",
+  "pdf": "/fichas/AL-LW1007.pdf?v=fbe56357",
   "image": {
-   "src": "/productos/AL-LW1007.webp?v=fa6b10a3",
-   "width": 1000,
-   "height": 429
+   "src": "/productos/AL-LW1007.webp?v=cbe35c60",
+   "width": 1400,
+   "height": 602
+  },
+  "mid": {
+   "src": "/productos/AL-LW1007-md.webp?v=1d350811",
+   "width": 800,
+   "height": 344
   },
   "thumb": {
-   "src": "/productos/AL-LW1007-thumb.webp?v=bf8708ec",
+   "src": "/productos/AL-LW1007-thumb.webp?v=6c7b672a",
    "width": 420,
-   "height": 180
+   "height": 181
   },
   "cover": {
-   "src": "/fichas/img/AL-LW1007.webp?v=f082a45b",
+   "src": "/fichas/img/AL-LW1007.webp?v=ccaa126b",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-LW1007-thumb.webp?v=d8da9c4d",
+   "src": "/fichas/img/AL-LW1007-thumb.webp?v=91effb77",
    "width": 360,
    "height": 510
   },
@@ -2294,24 +2344,29 @@
   "pages": [
    18
   ],
-  "pdf": "/fichas/AL-LO1008.pdf?v=e50ca8fd",
+  "pdf": "/fichas/AL-LO1008.pdf?v=55eb0d44",
   "image": {
-   "src": "/productos/AL-LO1008.webp?v=0aa743b9",
-   "width": 1000,
-   "height": 552
+   "src": "/productos/AL-LO1008.webp?v=dbc128cb",
+   "width": 1400,
+   "height": 775
+  },
+  "mid": {
+   "src": "/productos/AL-LO1008-md.webp?v=9664e643",
+   "width": 800,
+   "height": 443
   },
   "thumb": {
-   "src": "/productos/AL-LO1008-thumb.webp?v=74c8473a",
+   "src": "/productos/AL-LO1008-thumb.webp?v=e8fa5788",
    "width": 420,
-   "height": 232
+   "height": 233
   },
   "cover": {
-   "src": "/fichas/img/AL-LO1008.webp?v=fc5fc948",
+   "src": "/fichas/img/AL-LO1008.webp?v=71059c23",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-LO1008-thumb.webp?v=73da456c",
+   "src": "/fichas/img/AL-LO1008-thumb.webp?v=a0c23155",
    "width": 360,
    "height": 510
   },
@@ -2506,24 +2561,29 @@
   "pages": [
    19
   ],
-  "pdf": "/fichas/AL-LVI1009.pdf?v=14908eae",
+  "pdf": "/fichas/AL-LVI1009.pdf?v=942687d3",
   "image": {
-   "src": "/productos/AL-LVI1009.webp?v=d71e57c4",
-   "width": 1000,
-   "height": 858
+   "src": "/productos/AL-LVI1009.webp?v=305dbee4",
+   "width": 1400,
+   "height": 1200
+  },
+  "mid": {
+   "src": "/productos/AL-LVI1009-md.webp?v=e81780b0",
+   "width": 800,
+   "height": 686
   },
   "thumb": {
-   "src": "/productos/AL-LVI1009-thumb.webp?v=555fc162",
+   "src": "/productos/AL-LVI1009-thumb.webp?v=962cc52c",
    "width": 420,
    "height": 360
   },
   "cover": {
-   "src": "/fichas/img/AL-LVI1009.webp?v=041e2b63",
+   "src": "/fichas/img/AL-LVI1009.webp?v=9ec1404f",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-LVI1009-thumb.webp?v=982798ea",
+   "src": "/fichas/img/AL-LVI1009-thumb.webp?v=a246a4ec",
    "width": 360,
    "height": 510
   },
@@ -2746,24 +2806,29 @@
   "pages": [
    20
   ],
-  "pdf": "/fichas/AL-LS1010.pdf?v=170727cf",
+  "pdf": "/fichas/AL-LS1010.pdf?v=74d4cbb0",
   "image": {
-   "src": "/productos/AL-LS1010.webp?v=52fbffe0",
-   "width": 623,
-   "height": 1000
+   "src": "/productos/AL-LS1010.webp?v=9d057386",
+   "width": 872,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/AL-LS1010-md.webp?v=0f7df88f",
+   "width": 498,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/AL-LS1010-thumb.webp?v=2e95df82",
+   "src": "/productos/AL-LS1010-thumb.webp?v=e05533d5",
    "width": 262,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/AL-LS1010.webp?v=8fa49a7c",
+   "src": "/fichas/img/AL-LS1010.webp?v=f9ba7813",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-LS1010-thumb.webp?v=0a9ba2a8",
+   "src": "/fichas/img/AL-LS1010-thumb.webp?v=5d3a0523",
    "width": 360,
    "height": 510
   },
@@ -2926,24 +2991,29 @@
   "pages": [
    21
   ],
-  "pdf": "/fichas/AL-LVI1011.pdf?v=b78678c5",
+  "pdf": "/fichas/AL-LVI1011.pdf?v=3c7b66f6",
   "image": {
-   "src": "/productos/AL-LVI1011.webp?v=3f384c90",
-   "width": 1000,
-   "height": 966
+   "src": "/productos/AL-LVI1011.webp?v=568989e6",
+   "width": 1400,
+   "height": 1352
+  },
+  "mid": {
+   "src": "/productos/AL-LVI1011-md.webp?v=758e6ab2",
+   "width": 800,
+   "height": 772
   },
   "thumb": {
-   "src": "/productos/AL-LVI1011-thumb.webp?v=3cd22174",
+   "src": "/productos/AL-LVI1011-thumb.webp?v=8e783f7c",
    "width": 420,
    "height": 406
   },
   "cover": {
-   "src": "/fichas/img/AL-LVI1011.webp?v=a9ad1b71",
+   "src": "/fichas/img/AL-LVI1011.webp?v=8eca0c11",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-LVI1011-thumb.webp?v=c5b8bd12",
+   "src": "/fichas/img/AL-LVI1011-thumb.webp?v=06cd22e5",
    "width": 360,
    "height": 510
   },
@@ -3166,24 +3236,29 @@
   "pages": [
    22
   ],
-  "pdf": "/fichas/AL-LA1012.pdf?v=d21d94d3",
+  "pdf": "/fichas/AL-LA1012.pdf?v=a7943606",
   "image": {
-   "src": "/productos/AL-LA1012.webp?v=0cbd5754",
-   "width": 1000,
-   "height": 558
+   "src": "/productos/AL-LA1012.webp?v=c347bfcd",
+   "width": 1400,
+   "height": 779
+  },
+  "mid": {
+   "src": "/productos/AL-LA1012-md.webp?v=2ac0fbae",
+   "width": 800,
+   "height": 445
   },
   "thumb": {
-   "src": "/productos/AL-LA1012-thumb.webp?v=415c2ac6",
+   "src": "/productos/AL-LA1012-thumb.webp?v=3ccaabe5",
    "width": 420,
    "height": 234
   },
   "cover": {
-   "src": "/fichas/img/AL-LA1012.webp?v=79a6dcdb",
+   "src": "/fichas/img/AL-LA1012.webp?v=dd5ecfb9",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-LA1012-thumb.webp?v=3fef76bd",
+   "src": "/fichas/img/AL-LA1012-thumb.webp?v=c81b6adf",
    "width": 360,
    "height": 510
   },
@@ -3355,24 +3430,29 @@
    24,
    25
   ],
-  "pdf": "/fichas/IS-AO1001.pdf?v=8b8217d6",
+  "pdf": "/fichas/IS-AO1001.pdf?v=bc6c387f",
   "image": {
-   "src": "/productos/IS-AO1001.webp?v=2db635ba",
-   "width": 1000,
-   "height": 1000
+   "src": "/productos/IS-AO1001.webp?v=31e181a1",
+   "width": 1400,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-AO1001-md.webp?v=5561bfe3",
+   "width": 800,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-AO1001-thumb.webp?v=56751652",
+   "src": "/productos/IS-AO1001-thumb.webp?v=034484f3",
    "width": 420,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-AO1001.webp?v=a0cd7396",
+   "src": "/fichas/img/IS-AO1001.webp?v=71715216",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-AO1001-thumb.webp?v=7386ba6e",
+   "src": "/fichas/img/IS-AO1001-thumb.webp?v=036ecfbc",
    "width": 360,
    "height": 510
   },
@@ -3570,24 +3650,29 @@
   "pages": [
    26
   ],
-  "pdf": "/fichas/IS-SL1002.pdf?v=2f0448bb",
+  "pdf": "/fichas/IS-SL1002.pdf?v=27bd08fd",
   "image": {
-   "src": "/productos/IS-SL1002.webp?v=607cd7f5",
-   "width": 1000,
-   "height": 648
+   "src": "/productos/IS-SL1002.webp?v=42e88a1e",
+   "width": 1400,
+   "height": 907
+  },
+  "mid": {
+   "src": "/productos/IS-SL1002-md.webp?v=74ccf45d",
+   "width": 800,
+   "height": 518
   },
   "thumb": {
-   "src": "/productos/IS-SL1002-thumb.webp?v=6dad9049",
+   "src": "/productos/IS-SL1002-thumb.webp?v=438b8cd6",
    "width": 420,
    "height": 272
   },
   "cover": {
-   "src": "/fichas/img/IS-SL1002.webp?v=14b03b47",
+   "src": "/fichas/img/IS-SL1002.webp?v=400d7a1f",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-SL1002-thumb.webp?v=7861773f",
+   "src": "/fichas/img/IS-SL1002-thumb.webp?v=52d0c965",
    "width": 360,
    "height": 510
   },
@@ -3772,24 +3857,29 @@
   "pages": [
    27
   ],
-  "pdf": "/fichas/IS-LS1003.pdf?v=7184a209",
+  "pdf": "/fichas/IS-LS1003.pdf?v=e5101c41",
   "image": {
-   "src": "/productos/IS-LS1003.webp?v=3e55dd33",
-   "width": 1000,
-   "height": 702
+   "src": "/productos/IS-LS1003.webp?v=f2e9b05f",
+   "width": 1400,
+   "height": 982
+  },
+  "mid": {
+   "src": "/productos/IS-LS1003-md.webp?v=981ea987",
+   "width": 800,
+   "height": 561
   },
   "thumb": {
-   "src": "/productos/IS-LS1003-thumb.webp?v=a92608bc",
+   "src": "/productos/IS-LS1003-thumb.webp?v=d5e2a2f5",
    "width": 420,
    "height": 295
   },
   "cover": {
-   "src": "/fichas/img/IS-LS1003.webp?v=2295274a",
+   "src": "/fichas/img/IS-LS1003.webp?v=80e5cc87",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LS1003-thumb.webp?v=3593e032",
+   "src": "/fichas/img/IS-LS1003-thumb.webp?v=b93187a6",
    "width": 360,
    "height": 510
   },
@@ -3970,24 +4060,29 @@
   "pages": [
    28
   ],
-  "pdf": "/fichas/IS-LS1004.pdf?v=2e678c5e",
+  "pdf": "/fichas/IS-LS1004.pdf?v=80e4dd44",
   "image": {
-   "src": "/productos/IS-LS1004.webp?v=fe3222be",
-   "width": 1000,
-   "height": 570
+   "src": "/productos/IS-LS1004.webp?v=b96eeb5b",
+   "width": 1400,
+   "height": 796
+  },
+  "mid": {
+   "src": "/productos/IS-LS1004-md.webp?v=15dc8595",
+   "width": 800,
+   "height": 455
   },
   "thumb": {
-   "src": "/productos/IS-LS1004-thumb.webp?v=266042a8",
+   "src": "/productos/IS-LS1004-thumb.webp?v=33d1e18a",
    "width": 420,
    "height": 239
   },
   "cover": {
-   "src": "/fichas/img/IS-LS1004.webp?v=70c8b65d",
+   "src": "/fichas/img/IS-LS1004.webp?v=65604dc7",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LS1004-thumb.webp?v=dd2b29b9",
+   "src": "/fichas/img/IS-LS1004-thumb.webp?v=bfa35465",
    "width": 360,
    "height": 510
   },
@@ -4218,24 +4313,29 @@
   "pages": [
    29
   ],
-  "pdf": "/fichas/IS-LS1005.pdf?v=8dfe11a7",
+  "pdf": "/fichas/IS-LS1005.pdf?v=43520ddb",
   "image": {
-   "src": "/productos/IS-LS1005.webp?v=4c072d7f",
-   "width": 1000,
-   "height": 934
+   "src": "/productos/IS-LS1005.webp?v=b6233864",
+   "width": 1400,
+   "height": 1309
+  },
+  "mid": {
+   "src": "/productos/IS-LS1005-md.webp?v=9fa3bf8d",
+   "width": 800,
+   "height": 748
   },
   "thumb": {
-   "src": "/productos/IS-LS1005-thumb.webp?v=cbe4c6af",
+   "src": "/productos/IS-LS1005-thumb.webp?v=5e36098b",
    "width": 420,
-   "height": 392
+   "height": 393
   },
   "cover": {
-   "src": "/fichas/img/IS-LS1005.webp?v=958b65af",
+   "src": "/fichas/img/IS-LS1005.webp?v=b8df30f7",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LS1005-thumb.webp?v=f8d10452",
+   "src": "/fichas/img/IS-LS1005-thumb.webp?v=0e2fdfbe",
    "width": 360,
    "height": 510
   },
@@ -4491,24 +4591,29 @@
   "pages": [
    30
   ],
-  "pdf": "/fichas/IS-LS1006.pdf?v=68b9c1c9",
+  "pdf": "/fichas/IS-LS1006.pdf?v=5eb3613e",
   "image": {
-   "src": "/productos/IS-LS1006.webp?v=2945a173",
-   "width": 815,
-   "height": 1000
+   "src": "/productos/IS-LS1006.webp?v=40e8c717",
+   "width": 1139,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-LS1006-md.webp?v=3822fd85",
+   "width": 651,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-LS1006-thumb.webp?v=39bbe2a3",
+   "src": "/productos/IS-LS1006-thumb.webp?v=a7148940",
    "width": 342,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-LS1006.webp?v=5b44cfe0",
+   "src": "/fichas/img/IS-LS1006.webp?v=fce1e1d0",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LS1006-thumb.webp?v=48f4f0b5",
+   "src": "/fichas/img/IS-LS1006-thumb.webp?v=a3e8e155",
    "width": 360,
    "height": 510
   },
@@ -4764,24 +4869,29 @@
   "pages": [
    31
   ],
-  "pdf": "/fichas/IS-LS1007.pdf?v=64508ea3",
+  "pdf": "/fichas/IS-LS1007.pdf?v=e2869b3c",
   "image": {
-   "src": "/productos/IS-LS1007.webp?v=29e757e4",
-   "width": 867,
-   "height": 1000
+   "src": "/productos/IS-LS1007.webp?v=f301cf56",
+   "width": 1210,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-LS1007-md.webp?v=b5cede88",
+   "width": 692,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-LS1007-thumb.webp?v=b7795bc1",
-   "width": 364,
+   "src": "/productos/IS-LS1007-thumb.webp?v=caf006a8",
+   "width": 363,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-LS1007.webp?v=5b726066",
+   "src": "/fichas/img/IS-LS1007.webp?v=ee72a685",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LS1007-thumb.webp?v=200ebb2b",
+   "src": "/fichas/img/IS-LS1007-thumb.webp?v=5ce5167f",
    "width": 360,
    "height": 510
   },
@@ -5037,24 +5147,29 @@
   "pages": [
    32
   ],
-  "pdf": "/fichas/IS-LS1008.pdf?v=99dd8ac9",
+  "pdf": "/fichas/IS-LS1008.pdf?v=922cf0ae",
   "image": {
-   "src": "/productos/IS-LS1008.webp?v=5e6220ba",
-   "width": 831,
-   "height": 1000
+   "src": "/productos/IS-LS1008.webp?v=ecd72eae",
+   "width": 1156,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-LS1008-md.webp?v=e35bb12b",
+   "width": 660,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-LS1008-thumb.webp?v=963c8191",
-   "width": 349,
+   "src": "/productos/IS-LS1008-thumb.webp?v=3af78259",
+   "width": 347,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-LS1008.webp?v=d82a91f7",
+   "src": "/fichas/img/IS-LS1008.webp?v=20f9ce8f",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LS1008-thumb.webp?v=67bfd023",
+   "src": "/fichas/img/IS-LS1008-thumb.webp?v=245de9b0",
    "width": 360,
    "height": 510
   },
@@ -5311,24 +5426,29 @@
    34,
    35
   ],
-  "pdf": "/fichas/IS-LA1009.pdf?v=6de69a43",
+  "pdf": "/fichas/IS-LA1009.pdf?v=f4d2f9b7",
   "image": {
-   "src": "/productos/IS-LA1009.webp?v=abafd449",
-   "width": 610,
-   "height": 1000
+   "src": "/productos/IS-LA1009.webp?v=29147686",
+   "width": 853,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-LA1009-md.webp?v=345659c4",
+   "width": 488,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-LA1009-thumb.webp?v=317bb3ca",
+   "src": "/productos/IS-LA1009-thumb.webp?v=c0438f3f",
    "width": 256,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-LA1009.webp?v=3139a291",
+   "src": "/fichas/img/IS-LA1009.webp?v=b13b4e65",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LA1009-thumb.webp?v=bfd70d57",
+   "src": "/fichas/img/IS-LA1009-thumb.webp?v=dac083eb",
    "width": 360,
    "height": 510
   },
@@ -5570,24 +5690,29 @@
    37,
    38
   ],
-  "pdf": "/fichas/IS-LA1010.pdf?v=9e974d1b",
+  "pdf": "/fichas/IS-LA1010.pdf?v=c8c07440",
   "image": {
-   "src": "/productos/IS-LA1010.webp?v=db60d2b1",
-   "width": 582,
-   "height": 1000
+   "src": "/productos/IS-LA1010.webp?v=3f1a44fb",
+   "width": 813,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-LA1010-md.webp?v=bd2d91ef",
+   "width": 464,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-LA1010-thumb.webp?v=f6586e6d",
+   "src": "/productos/IS-LA1010-thumb.webp?v=1494081a",
    "width": 244,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-LA1010.webp?v=93f12e4b",
+   "src": "/fichas/img/IS-LA1010.webp?v=14f2121a",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LA1010-thumb.webp?v=e43d59ef",
+   "src": "/fichas/img/IS-LA1010-thumb.webp?v=5eea96ed",
    "width": 360,
    "height": 510
   },
@@ -5828,24 +5953,29 @@
    39,
    40
   ],
-  "pdf": "/fichas/IS-LA1011.pdf?v=387aaf16",
+  "pdf": "/fichas/IS-LA1011.pdf?v=b08f60b4",
   "image": {
-   "src": "/productos/IS-LA1011.webp?v=471fcf90",
-   "width": 581,
-   "height": 1000
+   "src": "/productos/IS-LA1011.webp?v=cabafbb5",
+   "width": 812,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-LA1011-md.webp?v=9ab1f99d",
+   "width": 464,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-LA1011-thumb.webp?v=382385c8",
+   "src": "/productos/IS-LA1011-thumb.webp?v=43c423ca",
    "width": 244,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-LA1011.webp?v=707f56ff",
+   "src": "/fichas/img/IS-LA1011.webp?v=32f617b5",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LA1011-thumb.webp?v=4e7acfb1",
+   "src": "/fichas/img/IS-LA1011-thumb.webp?v=8639fcb9",
    "width": 360,
    "height": 510
   },
@@ -6087,24 +6217,29 @@
    42,
    43
   ],
-  "pdf": "/fichas/IS-LA1012.pdf?v=d3eb4278",
+  "pdf": "/fichas/IS-LA1012.pdf?v=754e1493",
   "image": {
-   "src": "/productos/IS-LA1012.webp?v=6539709c",
-   "width": 584,
-   "height": 1000
+   "src": "/productos/IS-LA1012.webp?v=e1db57d4",
+   "width": 817,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-LA1012-md.webp?v=803b8fb2",
+   "width": 467,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-LA1012-thumb.webp?v=b4702b5b",
+   "src": "/productos/IS-LA1012-thumb.webp?v=72d185cd",
    "width": 245,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-LA1012.webp?v=1ee774bb",
+   "src": "/fichas/img/IS-LA1012.webp?v=f75de648",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LA1012-thumb.webp?v=97e8a836",
+   "src": "/fichas/img/IS-LA1012-thumb.webp?v=81e70079",
    "width": 360,
    "height": 510
   },
@@ -6346,24 +6481,29 @@
    45,
    46
   ],
-  "pdf": "/fichas/IS-LA1013.pdf?v=69d21d9c",
+  "pdf": "/fichas/IS-LA1013.pdf?v=d02ead3b",
   "image": {
-   "src": "/productos/IS-LA1013.webp?v=8853d14b",
-   "width": 611,
-   "height": 1000
+   "src": "/productos/IS-LA1013.webp?v=76b61552",
+   "width": 859,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-LA1013-md.webp?v=6e1691e1",
+   "width": 491,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-LA1013-thumb.webp?v=c94ba4f0",
-   "width": 257,
+   "src": "/productos/IS-LA1013-thumb.webp?v=785bb163",
+   "width": 258,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-LA1013.webp?v=7a8044db",
+   "src": "/fichas/img/IS-LA1013.webp?v=fbef0612",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LA1013-thumb.webp?v=349f14f0",
+   "src": "/fichas/img/IS-LA1013-thumb.webp?v=b3567a12",
    "width": 360,
    "height": 510
   },
@@ -6604,24 +6744,29 @@
    47,
    48
   ],
-  "pdf": "/fichas/IS-LA1014.pdf?v=909fc575",
+  "pdf": "/fichas/IS-LA1014.pdf?v=a2765f51",
   "image": {
-   "src": "/productos/IS-LA1014.webp?v=f337e1a4",
-   "width": 678,
-   "height": 1000
+   "src": "/productos/IS-LA1014.webp?v=85c7a765",
+   "width": 948,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-LA1014-md.webp?v=a0391f52",
+   "width": 542,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-LA1014-thumb.webp?v=4cf30055",
-   "width": 285,
+   "src": "/productos/IS-LA1014-thumb.webp?v=eda3f643",
+   "width": 284,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-LA1014.webp?v=a46c45e4",
+   "src": "/fichas/img/IS-LA1014.webp?v=b2a0a877",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LA1014-thumb.webp?v=8b7a4bd4",
+   "src": "/fichas/img/IS-LA1014-thumb.webp?v=fdb0799e",
    "width": 360,
    "height": 510
   },
@@ -6860,24 +7005,29 @@
    49,
    50
   ],
-  "pdf": "/fichas/IS-LA1015.pdf?v=8b1051e1",
+  "pdf": "/fichas/IS-LA1015.pdf?v=58271d18",
   "image": {
-   "src": "/productos/IS-LA1015.webp?v=6b666289",
-   "width": 344,
-   "height": 1000
+   "src": "/productos/IS-LA1015.webp?v=2f2e988d",
+   "width": 484,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-LA1015-md.webp?v=8a64d7f0",
+   "width": 276,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-LA1015-thumb.webp?v=8238d6b1",
-   "width": 144,
+   "src": "/productos/IS-LA1015-thumb.webp?v=fe195e4c",
+   "width": 145,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-LA1015.webp?v=d6537528",
+   "src": "/fichas/img/IS-LA1015.webp?v=c89d55fd",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LA1015-thumb.webp?v=4a4db211",
+   "src": "/fichas/img/IS-LA1015-thumb.webp?v=db79ff82",
    "width": 360,
    "height": 510
   },
@@ -7116,24 +7266,29 @@
   "pages": [
    51
   ],
-  "pdf": "/fichas/IS-AO1016.pdf?v=a7e46365",
+  "pdf": "/fichas/IS-AO1016.pdf?v=5f1cf623",
   "image": {
-   "src": "/productos/IS-AO1016.webp?v=6ce67cd6",
-   "width": 905,
-   "height": 1000
+   "src": "/productos/IS-AO1016.webp?v=f9e67531",
+   "width": 1265,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-AO1016-md.webp?v=ad7e8ed3",
+   "width": 723,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-AO1016-thumb.webp?v=3d6f29b6",
+   "src": "/productos/IS-AO1016-thumb.webp?v=eb0f4326",
    "width": 380,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-AO1016.webp?v=2f26942d",
+   "src": "/fichas/img/IS-AO1016.webp?v=9337f916",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-AO1016-thumb.webp?v=b3ae9b04",
+   "src": "/fichas/img/IS-AO1016-thumb.webp?v=56df1f82",
    "width": 360,
    "height": 510
   },
@@ -7362,24 +7517,29 @@
   "pages": [
    52
   ],
-  "pdf": "/fichas/IS-AO1017.pdf?v=ff3f6f18",
+  "pdf": "/fichas/IS-AO1017.pdf?v=ad331980",
   "image": {
-   "src": "/productos/IS-AO1017.webp?v=eec5ec9e",
-   "width": 942,
-   "height": 1000
+   "src": "/productos/IS-AO1017.webp?v=92595b05",
+   "width": 1316,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-AO1017-md.webp?v=fd7d2889",
+   "width": 752,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-AO1017-thumb.webp?v=3628d93e",
-   "width": 396,
+   "src": "/productos/IS-AO1017-thumb.webp?v=56461c6c",
+   "width": 395,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-AO1017.webp?v=ed2161c9",
+   "src": "/fichas/img/IS-AO1017.webp?v=9f74668d",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-AO1017-thumb.webp?v=7f6b947a",
+   "src": "/fichas/img/IS-AO1017-thumb.webp?v=bce7cc30",
    "width": 360,
    "height": 510
   },
@@ -7600,24 +7760,29 @@
   "pages": [
    53
   ],
-  "pdf": "/fichas/IS-AO1018.pdf?v=8b73f235",
+  "pdf": "/fichas/IS-AO1018.pdf?v=26877624",
   "image": {
-   "src": "/productos/IS-AO1018.webp?v=bbad0f7e",
-   "width": 309,
-   "height": 1000
+   "src": "/productos/IS-AO1018.webp?v=f49876b5",
+   "width": 431,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-AO1018-md.webp?v=718ef13a",
+   "width": 246,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-AO1018-thumb.webp?v=76914b11",
-   "width": 130,
+   "src": "/productos/IS-AO1018-thumb.webp?v=dc6a38f8",
+   "width": 129,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-AO1018.webp?v=38320e4b",
+   "src": "/fichas/img/IS-AO1018.webp?v=47c3462d",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-AO1018-thumb.webp?v=2bb86e60",
+   "src": "/fichas/img/IS-AO1018-thumb.webp?v=7458ca66",
    "width": 360,
    "height": 510
   },
@@ -7800,24 +7965,29 @@
   "pages": [
    54
   ],
-  "pdf": "/fichas/IS-AO1019.pdf?v=6e4eed58",
+  "pdf": "/fichas/IS-AO1019.pdf?v=599206ad",
   "image": {
-   "src": "/productos/IS-AO1019.webp?v=fe590bd7",
-   "width": 749,
-   "height": 1000
+   "src": "/productos/IS-AO1019.webp?v=59d07f46",
+   "width": 1049,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-AO1019-md.webp?v=e905b511",
+   "width": 600,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-AO1019-thumb.webp?v=2e3ff8cb",
-   "width": 314,
+   "src": "/productos/IS-AO1019-thumb.webp?v=87356663",
+   "width": 315,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-AO1019.webp?v=ad122eab",
+   "src": "/fichas/img/IS-AO1019.webp?v=c9d34fe2",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-AO1019-thumb.webp?v=92496a78",
+   "src": "/fichas/img/IS-AO1019-thumb.webp?v=54e6e995",
    "width": 360,
    "height": 510
   },
@@ -8065,24 +8235,29 @@
   "pages": [
    55
   ],
-  "pdf": "/fichas/IS-AO1020.pdf?v=42a9c155",
+  "pdf": "/fichas/IS-AO1020.pdf?v=c265f35b",
   "image": {
-   "src": "/productos/IS-AO1020.webp?v=100f65b8",
-   "width": 879,
-   "height": 1000
+   "src": "/productos/IS-AO1020.webp?v=fabe90be",
+   "width": 1230,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-AO1020-md.webp?v=375747a4",
+   "width": 703,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-AO1020-thumb.webp?v=115e9cf0",
+   "src": "/productos/IS-AO1020-thumb.webp?v=2001bbb5",
    "width": 369,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-AO1020.webp?v=994057a0",
+   "src": "/fichas/img/IS-AO1020.webp?v=37ff76a5",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-AO1020-thumb.webp?v=2b5172a0",
+   "src": "/fichas/img/IS-AO1020-thumb.webp?v=30373701",
    "width": 360,
    "height": 510
   },
@@ -8309,24 +8484,29 @@
   "pages": [
    56
   ],
-  "pdf": "/fichas/IS-LA1021.pdf?v=a7bdacb9",
+  "pdf": "/fichas/IS-LA1021.pdf?v=8ec6bf01",
   "image": {
-   "src": "/productos/IS-LA1021.webp?v=033e57f5",
-   "width": 1000,
-   "height": 727
+   "src": "/productos/IS-LA1021.webp?v=a8af8d71",
+   "width": 1400,
+   "height": 1016
+  },
+  "mid": {
+   "src": "/productos/IS-LA1021-md.webp?v=45c8c47b",
+   "width": 800,
+   "height": 580
   },
   "thumb": {
-   "src": "/productos/IS-LA1021-thumb.webp?v=d8ada5d0",
+   "src": "/productos/IS-LA1021-thumb.webp?v=87f8c772",
    "width": 420,
    "height": 305
   },
   "cover": {
-   "src": "/fichas/img/IS-LA1021.webp?v=cab5564f",
+   "src": "/fichas/img/IS-LA1021.webp?v=1a65a2ce",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LA1021-thumb.webp?v=b2a6c259",
+   "src": "/fichas/img/IS-LA1021-thumb.webp?v=cc7f0157",
    "width": 360,
    "height": 510
   },
@@ -8580,24 +8760,29 @@
   "pages": [
    57
   ],
-  "pdf": "/fichas/IS-LA1022.pdf?v=4c6aa7c0",
+  "pdf": "/fichas/IS-LA1022.pdf?v=ef3e8f2b",
   "image": {
-   "src": "/productos/IS-LA1022.webp?v=6c6acf05",
-   "width": 846,
-   "height": 1000
+   "src": "/productos/IS-LA1022.webp?v=69d4c3fa",
+   "width": 1181,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-LA1022-md.webp?v=86b5717e",
+   "width": 675,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-LA1022-thumb.webp?v=c4351f16",
-   "width": 355,
+   "src": "/productos/IS-LA1022-thumb.webp?v=a7eb35eb",
+   "width": 354,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-LA1022.webp?v=fc116454",
+   "src": "/fichas/img/IS-LA1022.webp?v=c7ba2b15",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LA1022-thumb.webp?v=1b9db67e",
+   "src": "/fichas/img/IS-LA1022-thumb.webp?v=3a2dfff3",
    "width": 360,
    "height": 510
   },
@@ -8798,24 +8983,29 @@
   "pages": [
    58
   ],
-  "pdf": "/fichas/IS-LP1023.pdf?v=9d1eaa74",
+  "pdf": "/fichas/IS-LP1023.pdf?v=830051c7",
   "image": {
-   "src": "/productos/IS-LP1023.webp?v=8da8b386",
-   "width": 790,
-   "height": 1000
+   "src": "/productos/IS-LP1023.webp?v=45c50e47",
+   "width": 1104,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-LP1023-md.webp?v=ad3310a2",
+   "width": 631,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-LP1023-thumb.webp?v=593748c5",
-   "width": 332,
+   "src": "/productos/IS-LP1023-thumb.webp?v=8fef5911",
+   "width": 331,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-LP1023.webp?v=bcd4e93a",
+   "src": "/fichas/img/IS-LP1023.webp?v=fe98cca1",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-LP1023-thumb.webp?v=c65dfd07",
+   "src": "/fichas/img/IS-LP1023-thumb.webp?v=749d006b",
    "width": 360,
    "height": 510
   },
@@ -8979,24 +9169,29 @@
   "pages": [
    59
   ],
-  "pdf": "/fichas/IS-VS1024.pdf?v=67f73775",
+  "pdf": "/fichas/IS-VS1024.pdf?v=d2ad50d6",
   "image": {
-   "src": "/productos/IS-VS1024.webp?v=95840278",
-   "width": 311,
-   "height": 1000
+   "src": "/productos/IS-VS1024.webp?v=3f97a25e",
+   "width": 434,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-VS1024-md.webp?v=e3bbbf08",
+   "width": 248,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-VS1024-thumb.webp?v=ad6f9ac0",
+   "src": "/productos/IS-VS1024-thumb.webp?v=74dd8b42",
    "width": 130,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-VS1024.webp?v=ef63d77a",
+   "src": "/fichas/img/IS-VS1024.webp?v=5e8902b3",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-VS1024-thumb.webp?v=15590213",
+   "src": "/fichas/img/IS-VS1024-thumb.webp?v=4137fe57",
    "width": 360,
    "height": 510
   },
@@ -9163,24 +9358,29 @@
   "pages": [
    60
   ],
-  "pdf": "/fichas/IS-SP1025.pdf?v=8f13d52e",
+  "pdf": "/fichas/IS-SP1025.pdf?v=1fd753db",
   "image": {
-   "src": "/productos/IS-SP1025.webp?v=7d291b55",
-   "width": 825,
-   "height": 1000
+   "src": "/productos/IS-SP1025.webp?v=c069200e",
+   "width": 1154,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-SP1025-md.webp?v=814fae79",
+   "width": 660,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-SP1025-thumb.webp?v=698ba0e1",
+   "src": "/productos/IS-SP1025-thumb.webp?v=e8096446",
    "width": 346,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-SP1025.webp?v=13fba9f2",
+   "src": "/fichas/img/IS-SP1025.webp?v=1727b0b9",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-SP1025-thumb.webp?v=49abb9c3",
+   "src": "/fichas/img/IS-SP1025-thumb.webp?v=dd71e21e",
    "width": 360,
    "height": 510
   },
@@ -9342,24 +9542,29 @@
    61,
    62
   ],
-  "pdf": "/fichas/IS-AO1026.pdf?v=82d0353b",
+  "pdf": "/fichas/IS-AO1026.pdf?v=e1d4fedd",
   "image": {
-   "src": "/productos/IS-AO1026.webp?v=9889dd6f",
-   "width": 1000,
-   "height": 531
+   "src": "/productos/IS-AO1026.webp?v=fb689009",
+   "width": 1400,
+   "height": 742
+  },
+  "mid": {
+   "src": "/productos/IS-AO1026-md.webp?v=767d80e6",
+   "width": 800,
+   "height": 424
   },
   "thumb": {
-   "src": "/productos/IS-AO1026-thumb.webp?v=774b9920",
+   "src": "/productos/IS-AO1026-thumb.webp?v=1156f1d2",
    "width": 420,
    "height": 223
   },
   "cover": {
-   "src": "/fichas/img/IS-AO1026.webp?v=fd49d2dc",
+   "src": "/fichas/img/IS-AO1026.webp?v=23e4cf6c",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-AO1026-thumb.webp?v=100f95dc",
+   "src": "/fichas/img/IS-AO1026-thumb.webp?v=2e35eed1",
    "width": 360,
    "height": 510
   },
@@ -9595,24 +9800,29 @@
    66,
    67
   ],
-  "pdf": "/fichas/IS-AO1027.pdf?v=f3e92c8b",
+  "pdf": "/fichas/IS-AO1027.pdf?v=6b4df433",
   "image": {
-   "src": "/productos/IS-AO1027.webp?v=79525c34",
-   "width": 909,
-   "height": 1000
+   "src": "/productos/IS-AO1027.webp?v=e8087ebd",
+   "width": 1271,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-AO1027-md.webp?v=7b05771f",
+   "width": 726,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-AO1027-thumb.webp?v=f2940f8f",
-   "width": 382,
+   "src": "/productos/IS-AO1027-thumb.webp?v=d31368f8",
+   "width": 381,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-AO1027.webp?v=eb9080d2",
+   "src": "/fichas/img/IS-AO1027.webp?v=737bd989",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-AO1027-thumb.webp?v=3a5439ad",
+   "src": "/fichas/img/IS-AO1027-thumb.webp?v=cc334d49",
    "width": 360,
    "height": 510
   },
@@ -9861,24 +10071,29 @@
    70,
    71
   ],
-  "pdf": "/fichas/IS-AO1028.pdf?v=8c7cfd37",
+  "pdf": "/fichas/IS-AO1028.pdf?v=ec0d8fd0",
   "image": {
-   "src": "/productos/IS-AO1028.webp?v=a69be5ae",
-   "width": 1000,
-   "height": 917
+   "src": "/productos/IS-AO1028.webp?v=fdd20c30",
+   "width": 1400,
+   "height": 1286
+  },
+  "mid": {
+   "src": "/productos/IS-AO1028-md.webp?v=21b02336",
+   "width": 800,
+   "height": 735
   },
   "thumb": {
-   "src": "/productos/IS-AO1028-thumb.webp?v=7ac64339",
+   "src": "/productos/IS-AO1028-thumb.webp?v=d9f0b59a",
    "width": 420,
-   "height": 385
+   "height": 386
   },
   "cover": {
-   "src": "/fichas/img/IS-AO1028.webp?v=d9f90bad",
+   "src": "/fichas/img/IS-AO1028.webp?v=2a30c565",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-AO1028-thumb.webp?v=44661ea0",
+   "src": "/fichas/img/IS-AO1028-thumb.webp?v=b42a6b8d",
    "width": 360,
    "height": 510
   },
@@ -10130,24 +10345,29 @@
    72,
    73
   ],
-  "pdf": "/fichas/IS-AO1029.pdf?v=207bf1fd",
+  "pdf": "/fichas/IS-AO1029.pdf?v=219e3c78",
   "image": {
-   "src": "/productos/IS-AO1029.webp?v=a4388afb",
-   "width": 759,
-   "height": 1000
+   "src": "/productos/IS-AO1029.webp?v=593fc226",
+   "width": 1062,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IS-AO1029-md.webp?v=30a24b86",
+   "width": 607,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/IS-AO1029-thumb.webp?v=6ce30dad",
-   "width": 319,
+   "src": "/productos/IS-AO1029-thumb.webp?v=21346b11",
+   "width": 318,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/IS-AO1029.webp?v=719c0e32",
+   "src": "/fichas/img/IS-AO1029.webp?v=37c4bb0b",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-AO1029-thumb.webp?v=7b8540c6",
+   "src": "/fichas/img/IS-AO1029-thumb.webp?v=1faa6d75",
    "width": 360,
    "height": 510
   },
@@ -10397,24 +10617,29 @@
    76,
    77
   ],
-  "pdf": "/fichas/IS-AO1030.pdf?v=ca452a2e",
+  "pdf": "/fichas/IS-AO1030.pdf?v=9b227aaf",
   "image": {
-   "src": "/productos/IS-AO1030.webp?v=52b762f7",
-   "width": 1000,
-   "height": 945
+   "src": "/productos/IS-AO1030.webp?v=8abed9a7",
+   "width": 1400,
+   "height": 1322
+  },
+  "mid": {
+   "src": "/productos/IS-AO1030-md.webp?v=9a96440a",
+   "width": 800,
+   "height": 756
   },
   "thumb": {
-   "src": "/productos/IS-AO1030-thumb.webp?v=3346013d",
+   "src": "/productos/IS-AO1030-thumb.webp?v=989ba9eb",
    "width": 420,
    "height": 397
   },
   "cover": {
-   "src": "/fichas/img/IS-AO1030.webp?v=0b4f0a15",
+   "src": "/fichas/img/IS-AO1030.webp?v=62119555",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/IS-AO1030-thumb.webp?v=2cb8cf01",
+   "src": "/fichas/img/IS-AO1030-thumb.webp?v=23871135",
    "width": 360,
    "height": 510
   },
@@ -10645,24 +10870,29 @@
   "pages": [
    79
   ],
-  "pdf": "/fichas/PP-LU1001.pdf?v=881be1c9",
+  "pdf": "/fichas/PP-LU1001.pdf?v=06f30f73",
   "image": {
-   "src": "/productos/PP-LU1001.webp?v=da477021",
-   "width": 746,
-   "height": 1000
+   "src": "/productos/PP-LU1001.webp?v=fa3bf1e1",
+   "width": 1048,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LU1001-md.webp?v=6af139d6",
+   "width": 599,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LU1001-thumb.webp?v=405fbbf4",
-   "width": 313,
+   "src": "/productos/PP-LU1001-thumb.webp?v=cfc8ad1e",
+   "width": 314,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LU1001.webp?v=c14a335d",
+   "src": "/fichas/img/PP-LU1001.webp?v=8dcc2c6e",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LU1001-thumb.webp?v=e70184df",
+   "src": "/fichas/img/PP-LU1001-thumb.webp?v=ac226212",
    "width": 360,
    "height": 510
   },
@@ -10831,24 +11061,29 @@
   "pages": [
    80
   ],
-  "pdf": "/fichas/AL-LU1102.pdf?v=dd112886",
+  "pdf": "/fichas/AL-LU1102.pdf?v=ece0f968",
   "image": {
-   "src": "/productos/AL-LU1102.webp?v=7ef2392a",
-   "width": 628,
-   "height": 1000
+   "src": "/productos/AL-LU1102.webp?v=9ce08032",
+   "width": 878,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/AL-LU1102-md.webp?v=5626f7dc",
+   "width": 502,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/AL-LU1102-thumb.webp?v=a074ba36",
-   "width": 264,
+   "src": "/productos/AL-LU1102-thumb.webp?v=4fe945e1",
+   "width": 263,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/AL-LU1102.webp?v=0266c443",
+   "src": "/fichas/img/AL-LU1102.webp?v=67c45dd3",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/AL-LU1102-thumb.webp?v=198f232e",
+   "src": "/fichas/img/AL-LU1102-thumb.webp?v=0fedc8d9",
    "width": 360,
    "height": 510
   },
@@ -11033,24 +11268,29 @@
   "pages": [
    81
   ],
-  "pdf": "/fichas/PP-UL1003.pdf?v=80948ef4",
+  "pdf": "/fichas/PP-UL1003.pdf?v=6b4780ea",
   "image": {
-   "src": "/productos/PP-UL1003.webp?v=d560fee5",
-   "width": 739,
-   "height": 1000
+   "src": "/productos/PP-UL1003.webp?v=069e4037",
+   "width": 1038,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-UL1003-md.webp?v=aae719a0",
+   "width": 593,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-UL1003-thumb.webp?v=a27751cf",
-   "width": 310,
+   "src": "/productos/PP-UL1003-thumb.webp?v=762b7706",
+   "width": 311,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-UL1003.webp?v=c82eddca",
+   "src": "/fichas/img/PP-UL1003.webp?v=75dab61f",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-UL1003-thumb.webp?v=d5a946b3",
+   "src": "/fichas/img/PP-UL1003-thumb.webp?v=4a6ccdc1",
    "width": 360,
    "height": 510
   },
@@ -11281,24 +11521,29 @@
   "pages": [
    82
   ],
-  "pdf": "/fichas/PP-UL1004.pdf?v=7374bfa2",
+  "pdf": "/fichas/PP-UL1004.pdf?v=f06907dc",
   "image": {
-   "src": "/productos/PP-UL1004.webp?v=14a3ee91",
-   "width": 669,
-   "height": 1000
+   "src": "/productos/PP-UL1004.webp?v=ed38ba12",
+   "width": 936,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-UL1004-md.webp?v=ad917a80",
+   "width": 535,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-UL1004-thumb.webp?v=455097cb",
+   "src": "/productos/PP-UL1004-thumb.webp?v=13a92549",
    "width": 281,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-UL1004.webp?v=29f9112d",
+   "src": "/fichas/img/PP-UL1004.webp?v=4ae2d575",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-UL1004-thumb.webp?v=84289b4e",
+   "src": "/fichas/img/PP-UL1004-thumb.webp?v=4d16eaee",
    "width": 360,
    "height": 510
   },
@@ -11507,24 +11752,29 @@
   "pages": [
    83
   ],
-  "pdf": "/fichas/PP-PL1005.pdf?v=b7e7f705",
+  "pdf": "/fichas/PP-PL1005.pdf?v=05cde7ad",
   "image": {
-   "src": "/productos/PP-PL1005.webp?v=6a11c68f",
-   "width": 945,
-   "height": 1000
+   "src": "/productos/PP-PL1005.webp?v=22eed972",
+   "width": 1325,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-PL1005-md.webp?v=31fa4117",
+   "width": 757,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-PL1005-thumb.webp?v=016c6da4",
-   "width": 397,
+   "src": "/productos/PP-PL1005-thumb.webp?v=d270bc72",
+   "width": 398,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-PL1005.webp?v=973e5ade",
+   "src": "/fichas/img/PP-PL1005.webp?v=fb3aedd6",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-PL1005-thumb.webp?v=fb7e8729",
+   "src": "/fichas/img/PP-PL1005-thumb.webp?v=86590b70",
    "width": 360,
    "height": 510
   },
@@ -11745,24 +11995,29 @@
   "pages": [
    84
   ],
-  "pdf": "/fichas/PP-LP1006.pdf?v=40bf7c71",
+  "pdf": "/fichas/PP-LP1006.pdf?v=d4d6518b",
   "image": {
-   "src": "/productos/PP-LP1006.webp?v=dd8476ac",
-   "width": 790,
-   "height": 1000
+   "src": "/productos/PP-LP1006.webp?v=81669d5b",
+   "width": 1105,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LP1006-md.webp?v=231ae3c5",
+   "width": 632,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LP1006-thumb.webp?v=1ccd4ac5",
+   "src": "/productos/PP-LP1006-thumb.webp?v=a3054231",
    "width": 332,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LP1006.webp?v=765e7629",
+   "src": "/fichas/img/PP-LP1006.webp?v=6ef406d1",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LP1006-thumb.webp?v=33bc9921",
+   "src": "/fichas/img/PP-LP1006-thumb.webp?v=a5cebf48",
    "width": 360,
    "height": 510
   },
@@ -11984,24 +12239,29 @@
   "pages": [
    85
   ],
-  "pdf": "/fichas/PP-EA1007.pdf?v=526557b9",
+  "pdf": "/fichas/PP-EA1007.pdf?v=e2b57f43",
   "image": {
-   "src": "/productos/PP-EA1007.webp?v=216e4797",
-   "width": 866,
-   "height": 1000
+   "src": "/productos/PP-EA1007.webp?v=ccf6b9fe",
+   "width": 1209,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-EA1007-md.webp?v=a2fd9580",
+   "width": 691,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-EA1007-thumb.webp?v=b70e5b23",
-   "width": 364,
+   "src": "/productos/PP-EA1007-thumb.webp?v=e92ce39f",
+   "width": 363,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-EA1007.webp?v=fc52d195",
+   "src": "/fichas/img/PP-EA1007.webp?v=356c5362",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-EA1007-thumb.webp?v=692bc15f",
+   "src": "/fichas/img/PP-EA1007-thumb.webp?v=87173464",
    "width": 360,
    "height": 510
   },
@@ -12183,24 +12443,29 @@
   "pages": [
    86
   ],
-  "pdf": "/fichas/PP-TL1008.pdf?v=e3950dd5",
+  "pdf": "/fichas/PP-TL1008.pdf?v=629e4e0e",
   "image": {
-   "src": "/productos/PP-TL1008.webp?v=245954e3",
-   "width": 757,
-   "height": 1000
+   "src": "/productos/PP-TL1008.webp?v=7dbba6b6",
+   "width": 1056,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-TL1008-md.webp?v=6dca7959",
+   "width": 604,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-TL1008-thumb.webp?v=cd42fa3b",
-   "width": 318,
+   "src": "/productos/PP-TL1008-thumb.webp?v=84aae2b0",
+   "width": 317,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-TL1008.webp?v=e9571904",
+   "src": "/fichas/img/PP-TL1008.webp?v=d76b32a4",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-TL1008-thumb.webp?v=8748c2dd",
+   "src": "/fichas/img/PP-TL1008-thumb.webp?v=40c0f204",
    "width": 360,
    "height": 510
   },
@@ -12384,24 +12649,29 @@
   "pages": [
    87
   ],
-  "pdf": "/fichas/PP-ZL1009.pdf?v=1b6a3537",
+  "pdf": "/fichas/PP-ZL1009.pdf?v=acad4daf",
   "image": {
-   "src": "/productos/PP-ZL1009.webp?v=d170d3c7",
-   "width": 339,
-   "height": 1000
+   "src": "/productos/PP-ZL1009.webp?v=7b960363",
+   "width": 470,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-ZL1009-md.webp?v=7364d5da",
+   "width": 268,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-ZL1009-thumb.webp?v=ee70aa1c",
-   "width": 143,
+   "src": "/productos/PP-ZL1009-thumb.webp?v=1df0190e",
+   "width": 141,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-ZL1009.webp?v=50ae144d",
+   "src": "/fichas/img/PP-ZL1009.webp?v=84944871",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-ZL1009-thumb.webp?v=b38fce48",
+   "src": "/fichas/img/PP-ZL1009-thumb.webp?v=a28b1cd5",
    "width": 360,
    "height": 510
   },
@@ -12574,24 +12844,29 @@
   "pages": [
    88
   ],
-  "pdf": "/fichas/PP-EL1010.pdf?v=0a1806a6",
+  "pdf": "/fichas/PP-EL1010.pdf?v=ecac6f3b",
   "image": {
-   "src": "/productos/PP-EL1010.webp?v=2bde0f55",
-   "width": 1000,
-   "height": 887
+   "src": "/productos/PP-EL1010.webp?v=34bc7d1d",
+   "width": 1400,
+   "height": 1241
+  },
+  "mid": {
+   "src": "/productos/PP-EL1010-md.webp?v=34f5a4e5",
+   "width": 800,
+   "height": 709
   },
   "thumb": {
-   "src": "/productos/PP-EL1010-thumb.webp?v=f72bd6dc",
+   "src": "/productos/PP-EL1010-thumb.webp?v=a020d043",
    "width": 420,
    "height": 372
   },
   "cover": {
-   "src": "/fichas/img/PP-EL1010.webp?v=4e244073",
+   "src": "/fichas/img/PP-EL1010.webp?v=463a5a95",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-EL1010-thumb.webp?v=77115f3d",
+   "src": "/fichas/img/PP-EL1010-thumb.webp?v=b0839b72",
    "width": 360,
    "height": 510
   },
@@ -12763,24 +13038,29 @@
   "pages": [
    89
   ],
-  "pdf": "/fichas/PP-LO1011.pdf?v=87826f56",
+  "pdf": "/fichas/PP-LO1011.pdf?v=9e2267c5",
   "image": {
-   "src": "/productos/PP-LO1011.webp?v=03a3f897",
-   "width": 682,
-   "height": 1000
+   "src": "/productos/PP-LO1011.webp?v=218069d6",
+   "width": 953,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LO1011-md.webp?v=df1ba2a5",
+   "width": 544,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LO1011-thumb.webp?v=3bae38e6",
+   "src": "/productos/PP-LO1011-thumb.webp?v=6c1d7927",
    "width": 286,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LO1011.webp?v=810d2751",
+   "src": "/fichas/img/PP-LO1011.webp?v=8ae7ed3b",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LO1011-thumb.webp?v=883df1b6",
+   "src": "/fichas/img/PP-LO1011-thumb.webp?v=1fed47dd",
    "width": 360,
    "height": 510
   },
@@ -12956,24 +13236,29 @@
   "pages": [
    90
   ],
-  "pdf": "/fichas/PP-LI1012.pdf?v=754bba20",
+  "pdf": "/fichas/PP-LI1012.pdf?v=9bd84e48",
   "image": {
-   "src": "/productos/PP-LI1012.webp?v=f9ff9600",
-   "width": 504,
-   "height": 1000
+   "src": "/productos/PP-LI1012.webp?v=7d5a9cf5",
+   "width": 707,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LI1012-md.webp?v=4729d574",
+   "width": 404,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LI1012-thumb.webp?v=27a4c441",
+   "src": "/productos/PP-LI1012-thumb.webp?v=da5020a6",
    "width": 212,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LI1012.webp?v=3dfd704b",
+   "src": "/fichas/img/PP-LI1012.webp?v=46497727",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LI1012-thumb.webp?v=2909c720",
+   "src": "/fichas/img/PP-LI1012-thumb.webp?v=2983174a",
    "width": 360,
    "height": 510
   },
@@ -13127,24 +13412,29 @@
   "pages": [
    91
   ],
-  "pdf": "/fichas/PP-LI1013.pdf?v=b481bc0f",
+  "pdf": "/fichas/PP-LI1013.pdf?v=c8a310db",
   "image": {
-   "src": "/productos/PP-LI1013.webp?v=4a8ddd70",
-   "width": 486,
-   "height": 1000
+   "src": "/productos/PP-LI1013.webp?v=35ddcca1",
+   "width": 677,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LI1013-md.webp?v=6b7d0866",
+   "width": 387,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LI1013-thumb.webp?v=44a99abb",
-   "width": 204,
+   "src": "/productos/PP-LI1013-thumb.webp?v=3fbf5fb1",
+   "width": 203,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LI1013.webp?v=9c94953c",
+   "src": "/fichas/img/PP-LI1013.webp?v=66166599",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LI1013-thumb.webp?v=30dec026",
+   "src": "/fichas/img/PP-LI1013-thumb.webp?v=0047b4dd",
    "width": 360,
    "height": 510
   },
@@ -13294,24 +13584,29 @@
   "pages": [
    92
   ],
-  "pdf": "/fichas/PP-LA1014.pdf?v=ddcd2e9b",
+  "pdf": "/fichas/PP-LA1014.pdf?v=522f89bb",
   "image": {
-   "src": "/productos/PP-LA1014.webp?v=8b5eb252",
-   "width": 732,
-   "height": 1000
+   "src": "/productos/PP-LA1014.webp?v=a9ef4783",
+   "width": 1027,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LA1014-md.webp?v=01efdff6",
+   "width": 587,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LA1014-thumb.webp?v=37fac359",
+   "src": "/productos/PP-LA1014-thumb.webp?v=05d24a65",
    "width": 308,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LA1014.webp?v=cf44d5fd",
+   "src": "/fichas/img/PP-LA1014.webp?v=861b7815",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LA1014-thumb.webp?v=f94cc12f",
+   "src": "/fichas/img/PP-LA1014-thumb.webp?v=20fc2cb9",
    "width": 360,
    "height": 510
   },
@@ -13470,24 +13765,29 @@
   "pages": [
    93
   ],
-  "pdf": "/fichas/PP-LR1015.pdf?v=a017d2d2",
+  "pdf": "/fichas/PP-LR1015.pdf?v=a27630f9",
   "image": {
-   "src": "/productos/PP-LR1015.webp?v=165b5b64",
-   "width": 551,
-   "height": 1000
+   "src": "/productos/PP-LR1015.webp?v=8495a9b7",
+   "width": 768,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LR1015-md.webp?v=1cb578a5",
+   "width": 439,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LR1015-thumb.webp?v=840db480",
+   "src": "/productos/PP-LR1015-thumb.webp?v=9bb143ba",
    "width": 231,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LR1015.webp?v=2a0cfda5",
+   "src": "/fichas/img/PP-LR1015.webp?v=7311bbe5",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LR1015-thumb.webp?v=5343c442",
+   "src": "/fichas/img/PP-LR1015-thumb.webp?v=efefec76",
    "width": 360,
    "height": 510
   },
@@ -13645,24 +13945,29 @@
   "pages": [
    94
   ],
-  "pdf": "/fichas/PP-LC1016.pdf?v=1eb8e802",
+  "pdf": "/fichas/PP-LC1016.pdf?v=31dab5f5",
   "image": {
-   "src": "/productos/PP-LC1016.webp?v=fbffab3d",
-   "width": 571,
-   "height": 1000
+   "src": "/productos/PP-LC1016.webp?v=3784a387",
+   "width": 800,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LC1016-md.webp?v=2de66abd",
+   "width": 457,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LC1016-thumb.webp?v=a6a9f7ba",
+   "src": "/productos/PP-LC1016-thumb.webp?v=5b2e7081",
    "width": 240,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LC1016.webp?v=8a79f45c",
+   "src": "/fichas/img/PP-LC1016.webp?v=29e3cb72",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LC1016-thumb.webp?v=7752fcb3",
+   "src": "/fichas/img/PP-LC1016-thumb.webp?v=7e7b8d89",
    "width": 360,
    "height": 510
   },
@@ -13824,24 +14129,29 @@
   "pages": [
    95
   ],
-  "pdf": "/fichas/PP-LB1017.pdf?v=a4768f89",
+  "pdf": "/fichas/PP-LB1017.pdf?v=d7162e46",
   "image": {
-   "src": "/productos/PP-LB1017.webp?v=7666949b",
-   "width": 516,
-   "height": 1000
+   "src": "/productos/PP-LB1017.webp?v=2820ed68",
+   "width": 723,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LB1017-md.webp?v=dc6f0633",
+   "width": 413,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LB1017-thumb.webp?v=377afa5d",
+   "src": "/productos/PP-LB1017-thumb.webp?v=3f958eed",
    "width": 217,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LB1017.webp?v=3edad263",
+   "src": "/fichas/img/PP-LB1017.webp?v=5904e650",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LB1017-thumb.webp?v=7dc7749b",
+   "src": "/fichas/img/PP-LB1017-thumb.webp?v=5c32431a",
    "width": 360,
    "height": 510
   },
@@ -14004,24 +14314,29 @@
   "pages": [
    96
   ],
-  "pdf": "/fichas/PP-LF1018.pdf?v=5ca501e7",
+  "pdf": "/fichas/PP-LF1018.pdf?v=dd12f5bc",
   "image": {
-   "src": "/productos/PP-LF1018.webp?v=f3b3c570",
-   "width": 633,
-   "height": 1000
+   "src": "/productos/PP-LF1018.webp?v=fb85b3b1",
+   "width": 886,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LF1018-md.webp?v=ede3a2c4",
+   "width": 506,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LF1018-thumb.webp?v=54148ce1",
+   "src": "/productos/PP-LF1018-thumb.webp?v=ea696053",
    "width": 266,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LF1018.webp?v=96cd9301",
+   "src": "/fichas/img/PP-LF1018.webp?v=5d9a4b7c",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LF1018-thumb.webp?v=d51f0e50",
+   "src": "/fichas/img/PP-LF1018-thumb.webp?v=59a91441",
    "width": 360,
    "height": 510
   },
@@ -14179,24 +14494,29 @@
   "pages": [
    97
   ],
-  "pdf": "/fichas/PP-LC1019.pdf?v=f73e8a7d",
+  "pdf": "/fichas/PP-LC1019.pdf?v=58d24abb",
   "image": {
-   "src": "/productos/PP-LC1019.webp?v=6b361d01",
-   "width": 932,
-   "height": 1000
+   "src": "/productos/PP-LC1019.webp?v=ad3ac255",
+   "width": 1300,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LC1019-md.webp?v=fdb6a4af",
+   "width": 743,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LC1019-thumb.webp?v=77cdb01d",
-   "width": 391,
+   "src": "/productos/PP-LC1019-thumb.webp?v=6f57aa75",
+   "width": 390,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LC1019.webp?v=f7a21e36",
+   "src": "/fichas/img/PP-LC1019.webp?v=c085336d",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LC1019-thumb.webp?v=6db08e9b",
+   "src": "/fichas/img/PP-LC1019-thumb.webp?v=a9ebf559",
    "width": 360,
    "height": 510
   },
@@ -14358,24 +14678,29 @@
   "pages": [
    98
   ],
-  "pdf": "/fichas/PP-LV1020.pdf?v=8b343b23",
+  "pdf": "/fichas/PP-LV1020.pdf?v=d19e1148",
   "image": {
-   "src": "/productos/PP-LV1020.webp?v=40e77a24",
-   "width": 660,
-   "height": 1000
+   "src": "/productos/PP-LV1020.webp?v=f20b34d8",
+   "width": 926,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LV1020-md.webp?v=d6345264",
+   "width": 529,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LV1020-thumb.webp?v=87f88c78",
-   "width": 277,
+   "src": "/productos/PP-LV1020-thumb.webp?v=b3d3d413",
+   "width": 278,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LV1020.webp?v=5f489760",
+   "src": "/fichas/img/PP-LV1020.webp?v=f45de36e",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LV1020-thumb.webp?v=93537d78",
+   "src": "/fichas/img/PP-LV1020-thumb.webp?v=446317a7",
    "width": 360,
    "height": 510
   },
@@ -14533,24 +14858,29 @@
   "pages": [
    99
   ],
-  "pdf": "/fichas/PP-LE1021.pdf?v=d19e5031",
+  "pdf": "/fichas/PP-LE1021.pdf?v=66519566",
   "image": {
-   "src": "/productos/PP-LE1021.webp?v=eb0ba746",
-   "width": 611,
-   "height": 1000
+   "src": "/productos/PP-LE1021.webp?v=22e7c8be",
+   "width": 855,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LE1021-md.webp?v=e5e882af",
+   "width": 488,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LE1021-thumb.webp?v=fac92a3f",
+   "src": "/productos/PP-LE1021-thumb.webp?v=e184dbd8",
    "width": 256,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LE1021.webp?v=fe454631",
+   "src": "/fichas/img/PP-LE1021.webp?v=6e26849b",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LE1021-thumb.webp?v=1877f9a1",
+   "src": "/fichas/img/PP-LE1021-thumb.webp?v=78919bda",
    "width": 360,
    "height": 510
   },
@@ -14708,24 +15038,29 @@
   "pages": [
    100
   ],
-  "pdf": "/fichas/PP-SX1022.pdf?v=fda27621",
+  "pdf": "/fichas/PP-SX1022.pdf?v=5450005b",
   "image": {
-   "src": "/productos/PP-SX1022.webp?v=df5286b6",
-   "width": 417,
-   "height": 1000
+   "src": "/productos/PP-SX1022.webp?v=4632c844",
+   "width": 583,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-SX1022-md.webp?v=d4b07b0d",
+   "width": 333,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-SX1022-thumb.webp?v=a5c4df78",
+   "src": "/productos/PP-SX1022-thumb.webp?v=7d7d8aa2",
    "width": 175,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-SX1022.webp?v=8c65dc18",
+   "src": "/fichas/img/PP-SX1022.webp?v=61ff5de2",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-SX1022-thumb.webp?v=b5dc3b45",
+   "src": "/fichas/img/PP-SX1022-thumb.webp?v=8d86bad4",
    "width": 360,
    "height": 510
   },
@@ -14880,24 +15215,29 @@
   "pages": [
    101
   ],
-  "pdf": "/fichas/PP-LPE1023.pdf?v=c0e3abd4",
+  "pdf": "/fichas/PP-LPE1023.pdf?v=713a1141",
   "image": {
-   "src": "/productos/PP-LPE1023.webp?v=5f375289",
-   "width": 596,
-   "height": 1000
+   "src": "/productos/PP-LPE1023.webp?v=456718e0",
+   "width": 834,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LPE1023-md.webp?v=bdb8e5d6",
+   "width": 476,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LPE1023-thumb.webp?v=dd239f3b",
+   "src": "/productos/PP-LPE1023-thumb.webp?v=2eb7927c",
    "width": 250,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LPE1023.webp?v=a183f254",
+   "src": "/fichas/img/PP-LPE1023.webp?v=f50ca0dc",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LPE1023-thumb.webp?v=66117df3",
+   "src": "/fichas/img/PP-LPE1023-thumb.webp?v=f95f8ba3",
    "width": 360,
    "height": 510
   },
@@ -15054,24 +15394,29 @@
   "pages": [
    102
   ],
-  "pdf": "/fichas/PP-LCM1024.pdf?v=13c40ff7",
+  "pdf": "/fichas/PP-LCM1024.pdf?v=914deda4",
   "image": {
-   "src": "/productos/PP-LCM1024.webp?v=5bc6ba8a",
-   "width": 738,
-   "height": 1000
+   "src": "/productos/PP-LCM1024.webp?v=174ba32a",
+   "width": 1037,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LCM1024-md.webp?v=af425f64",
+   "width": 592,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LCM1024-thumb.webp?v=abec4a5d",
-   "width": 310,
+   "src": "/productos/PP-LCM1024-thumb.webp?v=2d933491",
+   "width": 311,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LCM1024.webp?v=b3e9f851",
+   "src": "/fichas/img/PP-LCM1024.webp?v=13147bcb",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LCM1024-thumb.webp?v=4af2d5ff",
+   "src": "/fichas/img/PP-LCM1024-thumb.webp?v=ead2c09d",
    "width": 360,
    "height": 510
   },
@@ -15233,24 +15578,29 @@
   "pages": [
    103
   ],
-  "pdf": "/fichas/PP-LCH1025.pdf?v=ce0d1a2a",
+  "pdf": "/fichas/PP-LCH1025.pdf?v=d018cd2f",
   "image": {
-   "src": "/productos/PP-LCH1025.webp?v=f9dc5b95",
-   "width": 721,
-   "height": 1000
+   "src": "/productos/PP-LCH1025.webp?v=2ab8321e",
+   "width": 1010,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PP-LCH1025-md.webp?v=94ea1d38",
+   "width": 577,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PP-LCH1025-thumb.webp?v=30821841",
+   "src": "/productos/PP-LCH1025-thumb.webp?v=1c2f19f8",
    "width": 303,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PP-LCH1025.webp?v=50473f73",
+   "src": "/fichas/img/PP-LCH1025.webp?v=0e7f972a",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PP-LCH1025-thumb.webp?v=744b2826",
+   "src": "/fichas/img/PP-LCH1025-thumb.webp?v=83fb0006",
    "width": 360,
    "height": 510
   },
@@ -15412,24 +15762,29 @@
    105,
    107
   ],
-  "pdf": "/fichas/LU-BT1001.pdf?v=79b6e95c",
+  "pdf": "/fichas/LU-BT1001.pdf?v=1b107cdf",
   "image": {
-   "src": "/productos/LU-BT1001.webp?v=d0916612",
-   "width": 132,
-   "height": 1000
+   "src": "/productos/LU-BT1001.webp?v=9839f5d2",
+   "width": 184,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-BT1001-md.webp?v=b0b954da",
+   "width": 105,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LU-BT1001-thumb.webp?v=1b2a11f7",
-   "width": 56,
+   "src": "/productos/LU-BT1001-thumb.webp?v=9bc45b32",
+   "width": 55,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LU-BT1001.webp?v=fbd5d6e7",
+   "src": "/fichas/img/LU-BT1001.webp?v=1b8f54b8",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LU-BT1001-thumb.webp?v=f3361674",
+   "src": "/fichas/img/LU-BT1001-thumb.webp?v=ea6f6e87",
    "width": 360,
    "height": 510
   },
@@ -15647,24 +16002,29 @@
   "pages": [
    106
   ],
-  "pdf": "/fichas/LU-BT1002.pdf?v=783863ed",
+  "pdf": "/fichas/LU-BT1002.pdf?v=c1e8bef7",
   "image": {
-   "src": "/productos/LU-BT1002.webp?v=04da8fb2",
-   "width": 72,
-   "height": 1000
+   "src": "/productos/LU-BT1002.webp?v=cb9c6fa9",
+   "width": 97,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-BT1002-md.webp?v=da0ab122",
+   "width": 56,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LU-BT1002-thumb.webp?v=244ea459",
-   "width": 30,
+   "src": "/productos/LU-BT1002-thumb.webp?v=96746e9e",
+   "width": 29,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LU-BT1002.webp?v=8c224115",
+   "src": "/fichas/img/LU-BT1002.webp?v=9431c549",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LU-BT1002-thumb.webp?v=a0577b51",
+   "src": "/fichas/img/LU-BT1002-thumb.webp?v=a3878d1e",
    "width": 360,
    "height": 510
   },
@@ -15792,24 +16152,29 @@
    108,
    109
   ],
-  "pdf": "/fichas/LU-DO1003.pdf?v=dbfc0811",
+  "pdf": "/fichas/LU-DO1003.pdf?v=1dfddde3",
   "image": {
-   "src": "/productos/LU-DO1003.webp?v=fed86bbe",
-   "width": 125,
-   "height": 1000
+   "src": "/productos/LU-DO1003.webp?v=7feb248a",
+   "width": 174,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-DO1003-md.webp?v=511d6159",
+   "width": 100,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LU-DO1003-thumb.webp?v=f74030b6",
+   "src": "/productos/LU-DO1003-thumb.webp?v=14812f24",
    "width": 52,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LU-DO1003.webp?v=efd6ca35",
+   "src": "/fichas/img/LU-DO1003.webp?v=8fdc147b",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LU-DO1003-thumb.webp?v=f0076cdf",
+   "src": "/fichas/img/LU-DO1003-thumb.webp?v=972c01da",
    "width": 360,
    "height": 510
   },
@@ -16059,24 +16424,29 @@
    110,
    111
   ],
-  "pdf": "/fichas/LU-F4100.pdf?v=a32808c4",
+  "pdf": "/fichas/LU-F4100.pdf?v=8e174a15",
   "image": {
-   "src": "/productos/LU-F4100.webp?v=419e4877",
-   "width": 507,
-   "height": 1000
+   "src": "/productos/LU-F4100.webp?v=f11e9959",
+   "width": 710,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-F4100-md.webp?v=b54a23b4",
+   "width": 406,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LU-F4100-thumb.webp?v=0cd3ab96",
+   "src": "/productos/LU-F4100-thumb.webp?v=597786ef",
    "width": 213,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LU-F4100.webp?v=544806e5",
+   "src": "/fichas/img/LU-F4100.webp?v=edcb1e6f",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LU-F4100-thumb.webp?v=60e58fc7",
+   "src": "/fichas/img/LU-F4100-thumb.webp?v=9748e5df",
    "width": 360,
    "height": 510
   },
@@ -16272,24 +16642,29 @@
    112,
    113
   ],
-  "pdf": "/fichas/LU-F4M1005.pdf?v=6913c2cd",
+  "pdf": "/fichas/LU-F4M1005.pdf?v=2211bae0",
   "image": {
-   "src": "/productos/LU-F4M1005.webp?v=d19d4d50",
-   "width": 301,
-   "height": 1000
+   "src": "/productos/LU-F4M1005.webp?v=df18c757",
+   "width": 422,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-F4M1005-md.webp?v=db3ebd0c",
+   "width": 241,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LU-F4M1005-thumb.webp?v=3029b6a8",
+   "src": "/productos/LU-F4M1005-thumb.webp?v=a5277b32",
    "width": 126,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LU-F4M1005.webp?v=ba802d31",
+   "src": "/fichas/img/LU-F4M1005.webp?v=28e515c3",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LU-F4M1005-thumb.webp?v=c01e577c",
+   "src": "/fichas/img/LU-F4M1005-thumb.webp?v=1808fea8",
    "width": 360,
    "height": 510
   },
@@ -16445,24 +16820,29 @@
   "pages": [
    114
   ],
-  "pdf": "/fichas/ICELUM-3W.pdf?v=bb8e910c",
+  "pdf": "/fichas/ICELUM-3W.pdf?v=fc1bcaef",
   "image": {
-   "src": "/productos/ICELUM-3W.webp?v=3f646c32",
-   "width": 247,
-   "height": 1000
+   "src": "/productos/ICELUM-3W.webp?v=5b09b485",
+   "width": 345,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/ICELUM-3W-md.webp?v=6fa8a88c",
+   "width": 197,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/ICELUM-3W-thumb.webp?v=484cb8d0",
+   "src": "/productos/ICELUM-3W-thumb.webp?v=8e033edf",
    "width": 104,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/ICELUM-3W.webp?v=e780aba2",
+   "src": "/fichas/img/ICELUM-3W.webp?v=210bb1a2",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/ICELUM-3W-thumb.webp?v=b285f025",
+   "src": "/fichas/img/ICELUM-3W-thumb.webp?v=6bd3f263",
    "width": 360,
    "height": 510
   },
@@ -16607,24 +16987,29 @@
   "pages": [
    115
   ],
-  "pdf": "/fichas/LU-F4M1003.pdf?v=6b5a6a2e",
+  "pdf": "/fichas/LU-F4M1003.pdf?v=1113a168",
   "image": {
-   "src": "/productos/LU-F4M1003.webp?v=72e6aeff",
-   "width": 361,
-   "height": 1000
+   "src": "/productos/LU-F4M1003.webp?v=9e9716e6",
+   "width": 506,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-F4M1003-md.webp?v=537ff7a9",
+   "width": 289,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LU-F4M1003-thumb.webp?v=e17eeafe",
-   "width": 151,
+   "src": "/productos/LU-F4M1003-thumb.webp?v=553635de",
+   "width": 152,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LU-F4M1003.webp?v=f61adf2d",
+   "src": "/fichas/img/LU-F4M1003.webp?v=5d9ffdff",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LU-F4M1003-thumb.webp?v=24aaeb8b",
+   "src": "/fichas/img/LU-F4M1003-thumb.webp?v=3b93cf10",
    "width": 360,
    "height": 510
   },
@@ -16764,24 +17149,29 @@
   "pages": [
    116
   ],
-  "pdf": "/fichas/LU-LM1006.pdf?v=19e1dd78",
+  "pdf": "/fichas/LU-LM1006.pdf?v=f4e4af63",
   "image": {
-   "src": "/productos/LU-LM1006.webp?v=bab170df",
-   "width": 713,
-   "height": 1000
+   "src": "/productos/LU-LM1006.webp?v=1e69be98",
+   "width": 997,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-LM1006-md.webp?v=75272595",
+   "width": 570,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LU-LM1006-thumb.webp?v=2e968fbc",
-   "width": 300,
+   "src": "/productos/LU-LM1006-thumb.webp?v=e7030943",
+   "width": 299,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LU-LM1006.webp?v=e95ef7d3",
+   "src": "/fichas/img/LU-LM1006.webp?v=dd35fe8d",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LU-LM1006-thumb.webp?v=4396607b",
+   "src": "/fichas/img/LU-LM1006-thumb.webp?v=9011803d",
    "width": 360,
    "height": 510
   },
@@ -16945,24 +17335,29 @@
    117,
    118
   ],
-  "pdf": "/fichas/LU-LP1007.pdf?v=2ae9b847",
+  "pdf": "/fichas/LU-LP1007.pdf?v=6ac87ee9",
   "image": {
-   "src": "/productos/LU-LP1007.webp?v=2e3a1f9d",
-   "width": 252,
-   "height": 1000
+   "src": "/productos/LU-LP1007.webp?v=b35055f1",
+   "width": 348,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-LP1007-md.webp?v=0284748c",
+   "width": 199,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LU-LP1007-thumb.webp?v=0c897461",
-   "width": 106,
+   "src": "/productos/LU-LP1007-thumb.webp?v=df542ddd",
+   "width": 104,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LU-LP1007.webp?v=46b36b43",
+   "src": "/fichas/img/LU-LP1007.webp?v=1dd5ce6c",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LU-LP1007-thumb.webp?v=f90c5aba",
+   "src": "/fichas/img/LU-LP1007-thumb.webp?v=acdb6aab",
    "width": 360,
    "height": 510
   },
@@ -17213,24 +17608,29 @@
   "pages": [
    119
   ],
-  "pdf": "/fichas/LU-LH1008.pdf?v=20069ce6",
+  "pdf": "/fichas/LU-LH1008.pdf?v=358d7a9c",
   "image": {
-   "src": "/productos/LU-LH1008.webp?v=0ac3fb5d",
-   "width": 101,
-   "height": 1000
+   "src": "/productos/LU-LH1008.webp?v=799d3807",
+   "width": 138,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-LH1008-md.webp?v=0e236a22",
+   "width": 79,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LU-LH1008-thumb.webp?v=c780fada",
+   "src": "/productos/LU-LH1008-thumb.webp?v=5efc7ce7",
    "width": 42,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LU-LH1008.webp?v=555c716b",
+   "src": "/fichas/img/LU-LH1008.webp?v=97424207",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LU-LH1008-thumb.webp?v=76138c4e",
+   "src": "/fichas/img/LU-LH1008-thumb.webp?v=562b8713",
    "width": 360,
    "height": 510
   },
@@ -17386,24 +17786,29 @@
   "pages": [
    120
   ],
-  "pdf": "/fichas/LU-LF1009.pdf?v=425ba19c",
+  "pdf": "/fichas/LU-LF1009.pdf?v=f9cb7fa3",
   "image": {
-   "src": "/productos/LU-LF1009.webp?v=b69d935f",
-   "width": 57,
-   "height": 1000
+   "src": "/productos/LU-LF1009.webp?v=50249f3a",
+   "width": 78,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-LF1009-md.webp?v=350be3d9",
+   "width": 44,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LU-LF1009-thumb.webp?v=08ee5c52",
-   "width": 24,
+   "src": "/productos/LU-LF1009-thumb.webp?v=dfe2e041",
+   "width": 23,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LU-LF1009.webp?v=c7c0a84f",
+   "src": "/fichas/img/LU-LF1009.webp?v=d716fe26",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LU-LF1009-thumb.webp?v=bc93e69d",
+   "src": "/fichas/img/LU-LF1009-thumb.webp?v=56b2d388",
    "width": 360,
    "height": 510
   },
@@ -17637,24 +18042,29 @@
   "pages": [
    121
   ],
-  "pdf": "/fichas/LU-LAR1010.pdf?v=fd4e4347",
+  "pdf": "/fichas/LU-LAR1010.pdf?v=b73704d9",
   "image": {
-   "src": "/productos/LU-LAR1010.webp?v=784b27a5",
-   "width": 224,
-   "height": 1000
+   "src": "/productos/LU-LAR1010.webp?v=1ada9a62",
+   "width": 309,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-LAR1010-md.webp?v=795574e5",
+   "width": 176,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LU-LAR1010-thumb.webp?v=ccdb695d",
-   "width": 94,
+   "src": "/productos/LU-LAR1010-thumb.webp?v=2aa31b19",
+   "width": 93,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LU-LAR1010.webp?v=4500f27c",
+   "src": "/fichas/img/LU-LAR1010.webp?v=c4f62038",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LU-LAR1010-thumb.webp?v=ab5e0c35",
+   "src": "/fichas/img/LU-LAR1010-thumb.webp?v=64cb4bb2",
    "width": 360,
    "height": 510
   },
@@ -17833,24 +18243,29 @@
   "pages": [
    122
   ],
-  "pdf": "/fichas/LU-LAT1011.pdf?v=cdb6d6a7",
+  "pdf": "/fichas/LU-LAT1011.pdf?v=38f61048",
   "image": {
-   "src": "/productos/LU-LAT1011.webp?v=71c609ff",
-   "width": 267,
-   "height": 1000
+   "src": "/productos/LU-LAT1011.webp?v=8d361cd2",
+   "width": 373,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-LAT1011-md.webp?v=974883de",
+   "width": 213,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LU-LAT1011-thumb.webp?v=805ce40a",
+   "src": "/productos/LU-LAT1011-thumb.webp?v=ba85bb30",
    "width": 112,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LU-LAT1011.webp?v=42b49795",
+   "src": "/fichas/img/LU-LAT1011.webp?v=11234f82",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LU-LAT1011-thumb.webp?v=d62d3439",
+   "src": "/fichas/img/LU-LAT1011-thumb.webp?v=397142bf",
    "width": 360,
    "height": 510
   },
@@ -18029,24 +18444,29 @@
   "pages": [
    123
   ],
-  "pdf": "/fichas/LU-LZ1012.pdf?v=44fe182b",
+  "pdf": "/fichas/LU-LZ1012.pdf?v=2bc66360",
   "image": {
-   "src": "/productos/LU-LZ1012.webp?v=7480ba2a",
-   "width": 192,
-   "height": 1000
+   "src": "/productos/LU-LZ1012.webp?v=846565a7",
+   "width": 265,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-LZ1012-md.webp?v=0fcac317",
+   "width": 152,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LU-LZ1012-thumb.webp?v=d3a40d35",
-   "width": 81,
+   "src": "/productos/LU-LZ1012-thumb.webp?v=0467a8db",
+   "width": 80,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LU-LZ1012.webp?v=e856d20b",
+   "src": "/fichas/img/LU-LZ1012.webp?v=7a1a5222",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LU-LZ1012-thumb.webp?v=ed7b4ef6",
+   "src": "/fichas/img/LU-LZ1012-thumb.webp?v=845f818e",
    "width": 360,
    "height": 510
   },
@@ -18220,24 +18640,29 @@
   "pages": [
    124
   ],
-  "pdf": "/fichas/LU-LP1013.pdf?v=9e9de0f9",
+  "pdf": "/fichas/LU-LP1013.pdf?v=08d57abe",
   "image": {
-   "src": "/productos/LU-LP1013.webp?v=138bda75",
-   "width": 621,
-   "height": 1000
+   "src": "/productos/LU-LP1013.webp?v=8d4ac330",
+   "width": 867,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-LP1013-md.webp?v=8ed1e12e",
+   "width": 496,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LU-LP1013-thumb.webp?v=4e730928",
-   "width": 261,
+   "src": "/productos/LU-LP1013-thumb.webp?v=519b53c1",
+   "width": 260,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LU-LP1013.webp?v=1a95fe23",
+   "src": "/fichas/img/LU-LP1013.webp?v=369a269d",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LU-LP1013-thumb.webp?v=c0df7291",
+   "src": "/fichas/img/LU-LP1013-thumb.webp?v=7b274c53",
    "width": 360,
    "height": 510
   },
@@ -18429,24 +18854,29 @@
   "pages": [
    125
   ],
-  "pdf": "/fichas/BOLARD-F4A1.pdf?v=7b7ed6e5",
+  "pdf": "/fichas/BOLARD-F4A1.pdf?v=6becd608",
   "image": {
-   "src": "/productos/BOLARD-F4A1.webp?v=de5a3062",
-   "width": 498,
-   "height": 825
+   "src": "/productos/BOLARD-F4A1.webp?v=d48bd785",
+   "width": 848,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/BOLARD-F4A1-md.webp?v=2005bfef",
+   "width": 484,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/BOLARD-F4A1-thumb.webp?v=d79a9590",
+   "src": "/productos/BOLARD-F4A1-thumb.webp?v=9b25bcb7",
    "width": 254,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/BOLARD-F4A1.webp?v=6a224fdf",
+   "src": "/fichas/img/BOLARD-F4A1.webp?v=e994ca8b",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/BOLARD-F4A1-thumb.webp?v=4d06143c",
+   "src": "/fichas/img/BOLARD-F4A1-thumb.webp?v=37b3f70b",
    "width": 360,
    "height": 510
   },
@@ -18615,24 +19045,29 @@
   "pages": [
    127
   ],
-  "pdf": "/fichas/RF-SC1001.pdf?v=e22f3154",
+  "pdf": "/fichas/RF-SC1001.pdf?v=5c1e50fe",
   "image": {
-   "src": "/productos/RF-SC1001.webp?v=22837bf3",
-   "width": 1000,
-   "height": 675
+   "src": "/productos/RF-SC1001.webp?v=3671885a",
+   "width": 1400,
+   "height": 947
+  },
+  "mid": {
+   "src": "/productos/RF-SC1001-md.webp?v=066f4adf",
+   "width": 800,
+   "height": 541
   },
   "thumb": {
-   "src": "/productos/RF-SC1001-thumb.webp?v=3321b24f",
+   "src": "/productos/RF-SC1001-thumb.webp?v=3c15a233",
    "width": 420,
-   "height": 283
+   "height": 284
   },
   "cover": {
-   "src": "/fichas/img/RF-SC1001.webp?v=97e84eb4",
+   "src": "/fichas/img/RF-SC1001.webp?v=a26ef3f6",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/RF-SC1001-thumb.webp?v=72705e85",
+   "src": "/fichas/img/RF-SC1001-thumb.webp?v=416f078e",
    "width": 360,
    "height": 510
   },
@@ -18821,24 +19256,29 @@
   "pages": [
    128
   ],
-  "pdf": "/fichas/RF-LW1002.pdf?v=05926306",
+  "pdf": "/fichas/RF-LW1002.pdf?v=f29ceb7d",
   "image": {
-   "src": "/productos/RF-LW1002.webp?v=4ddccae9",
-   "width": 695,
-   "height": 1000
+   "src": "/productos/RF-LW1002.webp?v=61a3e913",
+   "width": 970,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/RF-LW1002-md.webp?v=e1915a53",
+   "width": 554,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/RF-LW1002-thumb.webp?v=852fc2d1",
-   "width": 292,
+   "src": "/productos/RF-LW1002-thumb.webp?v=936c7239",
+   "width": 291,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/RF-LW1002.webp?v=56d1a476",
+   "src": "/fichas/img/RF-LW1002.webp?v=8e69eb8b",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/RF-LW1002-thumb.webp?v=b23144d7",
+   "src": "/fichas/img/RF-LW1002-thumb.webp?v=507d4e1a",
    "width": 360,
    "height": 510
   },
@@ -19085,24 +19525,29 @@
   "pages": [
    129
   ],
-  "pdf": "/fichas/RF-RE1003.pdf?v=e0545967",
+  "pdf": "/fichas/RF-RE1003.pdf?v=70905cd4",
   "image": {
-   "src": "/productos/RF-RE1003.webp?v=2c891ac7",
-   "width": 916,
-   "height": 1000
+   "src": "/productos/RF-RE1003.webp?v=a71d4644",
+   "width": 1279,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/RF-RE1003-md.webp?v=01b6b83b",
+   "width": 731,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/RF-RE1003-thumb.webp?v=793c1924",
-   "width": 385,
+   "src": "/productos/RF-RE1003-thumb.webp?v=a37ef31e",
+   "width": 384,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/RF-RE1003.webp?v=5dec81a2",
+   "src": "/fichas/img/RF-RE1003.webp?v=79661fae",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/RF-RE1003-thumb.webp?v=67871d18",
+   "src": "/fichas/img/RF-RE1003-thumb.webp?v=f61235c6",
    "width": 360,
    "height": 510
   },
@@ -19336,24 +19781,29 @@
   "pages": [
    130
   ],
-  "pdf": "/fichas/RF-RE1004.pdf?v=db4ddfc2",
+  "pdf": "/fichas/RF-RE1004.pdf?v=ae28a8b7",
   "image": {
-   "src": "/productos/RF-RE1004.webp?v=2e65f3dc",
-   "width": 1000,
-   "height": 705
+   "src": "/productos/RF-RE1004.webp?v=d38baaef",
+   "width": 1400,
+   "height": 988
+  },
+  "mid": {
+   "src": "/productos/RF-RE1004-md.webp?v=bb11f8e6",
+   "width": 800,
+   "height": 564
   },
   "thumb": {
-   "src": "/productos/RF-RE1004-thumb.webp?v=6dd9175b",
+   "src": "/productos/RF-RE1004-thumb.webp?v=649dae6c",
    "width": 420,
    "height": 296
   },
   "cover": {
-   "src": "/fichas/img/RF-RE1004.webp?v=94d4ac29",
+   "src": "/fichas/img/RF-RE1004.webp?v=ca1581c3",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/RF-RE1004-thumb.webp?v=f443b914",
+   "src": "/fichas/img/RF-RE1004-thumb.webp?v=0297db26",
    "width": 360,
    "height": 510
   },
@@ -19601,24 +20051,29 @@
   "pages": [
    131
   ],
-  "pdf": "/fichas/RF-RE1005.pdf?v=0d223c48",
+  "pdf": "/fichas/RF-RE1005.pdf?v=fe308783",
   "image": {
-   "src": "/productos/RF-RE1005.webp?v=2138368a",
-   "width": 1000,
-   "height": 756
+   "src": "/productos/RF-RE1005.webp?v=591f6a03",
+   "width": 1400,
+   "height": 1057
+  },
+  "mid": {
+   "src": "/productos/RF-RE1005-md.webp?v=2d8185bb",
+   "width": 800,
+   "height": 604
   },
   "thumb": {
-   "src": "/productos/RF-RE1005-thumb.webp?v=69c81c32",
+   "src": "/productos/RF-RE1005-thumb.webp?v=1045b38b",
    "width": 420,
-   "height": 318
+   "height": 317
   },
   "cover": {
-   "src": "/fichas/img/RF-RE1005.webp?v=24d873e8",
+   "src": "/fichas/img/RF-RE1005.webp?v=82b26b72",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/RF-RE1005-thumb.webp?v=e51f8b3e",
+   "src": "/fichas/img/RF-RE1005-thumb.webp?v=dbc03f36",
    "width": 360,
    "height": 510
   },
@@ -19838,24 +20293,29 @@
   "pages": [
    132
   ],
-  "pdf": "/fichas/RF-LL1006.pdf?v=47548e58",
+  "pdf": "/fichas/RF-LL1006.pdf?v=c041f5ef",
   "image": {
-   "src": "/productos/RF-LL1006.webp?v=3b261424",
-   "width": 1000,
-   "height": 656
+   "src": "/productos/RF-LL1006.webp?v=7d40a23f",
+   "width": 1400,
+   "height": 919
+  },
+  "mid": {
+   "src": "/productos/RF-LL1006-md.webp?v=aa3b976e",
+   "width": 800,
+   "height": 525
   },
   "thumb": {
-   "src": "/productos/RF-LL1006-thumb.webp?v=21ec0b61",
+   "src": "/productos/RF-LL1006-thumb.webp?v=ccca3c61",
    "width": 420,
-   "height": 275
+   "height": 276
   },
   "cover": {
-   "src": "/fichas/img/RF-LL1006.webp?v=bdb7218d",
+   "src": "/fichas/img/RF-LL1006.webp?v=3c453894",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/RF-LL1006-thumb.webp?v=b49c7ed4",
+   "src": "/fichas/img/RF-LL1006-thumb.webp?v=131511f4",
    "width": 360,
    "height": 510
   },
@@ -20024,24 +20484,29 @@
   "pages": [
    133
   ],
-  "pdf": "/fichas/RF-UFO1007.pdf?v=38bd802b",
+  "pdf": "/fichas/RF-UFO1007.pdf?v=5f6ab286",
   "image": {
-   "src": "/productos/RF-UFO1007.webp?v=be1896a1",
-   "width": 1000,
-   "height": 606
+   "src": "/productos/RF-UFO1007.webp?v=03bd1019",
+   "width": 1400,
+   "height": 845
+  },
+  "mid": {
+   "src": "/productos/RF-UFO1007-md.webp?v=b1ccca8f",
+   "width": 800,
+   "height": 483
   },
   "thumb": {
-   "src": "/productos/RF-UFO1007-thumb.webp?v=7900a6f5",
+   "src": "/productos/RF-UFO1007-thumb.webp?v=556f6946",
    "width": 420,
-   "height": 254
+   "height": 253
   },
   "cover": {
-   "src": "/fichas/img/RF-UFO1007.webp?v=41e11345",
+   "src": "/fichas/img/RF-UFO1007.webp?v=24f2a7de",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/RF-UFO1007-thumb.webp?v=c637f2d2",
+   "src": "/fichas/img/RF-UFO1007-thumb.webp?v=f0ae2b21",
    "width": 360,
    "height": 510
   },
@@ -20287,24 +20752,29 @@
   "pages": [
    135
   ],
-  "pdf": "/fichas/FL-LT1022.pdf?v=61b8bfd5",
+  "pdf": "/fichas/FL-LT1022.pdf?v=2199fbc3",
   "image": {
-   "src": "/productos/FL-LT1022.webp?v=06095d12",
-   "width": 1000,
-   "height": 818
+   "src": "/productos/FL-LT1022.webp?v=d0f73752",
+   "width": 1400,
+   "height": 1145
+  },
+  "mid": {
+   "src": "/productos/FL-LT1022-md.webp?v=11ee79ec",
+   "width": 800,
+   "height": 654
   },
   "thumb": {
-   "src": "/productos/FL-LT1022-thumb.webp?v=33f82f43",
+   "src": "/productos/FL-LT1022-thumb.webp?v=be12df87",
    "width": 420,
    "height": 343
   },
   "cover": {
-   "src": "/fichas/img/FL-LT1022.webp?v=f7047ab1",
+   "src": "/fichas/img/FL-LT1022.webp?v=04520a84",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/FL-LT1022-thumb.webp?v=7a5e2238",
+   "src": "/fichas/img/FL-LT1022-thumb.webp?v=df2d5f88",
    "width": 360,
    "height": 510
   },
@@ -20506,24 +20976,29 @@
   "pages": [
    136
   ],
-  "pdf": "/fichas/LC-CR1001.pdf?v=19c87d49",
+  "pdf": "/fichas/LC-CR1001.pdf?v=1168756a",
   "image": {
-   "src": "/productos/LC-CR1001.webp?v=2fe5f328",
-   "width": 394,
-   "height": 1000
+   "src": "/productos/LC-CR1001.webp?v=d848fb7c",
+   "width": 551,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LC-CR1001-md.webp?v=f6bcf050",
+   "width": 315,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LC-CR1001-thumb.webp?v=c8b06dc7",
+   "src": "/productos/LC-CR1001-thumb.webp?v=77c5b2ee",
    "width": 165,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LC-CR1001.webp?v=c792f2b5",
+   "src": "/fichas/img/LC-CR1001.webp?v=8fc4544c",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-CR1001-thumb.webp?v=b3c4d4d2",
+   "src": "/fichas/img/LC-CR1001-thumb.webp?v=9bcd4cc3",
    "width": 360,
    "height": 510
   },
@@ -20686,24 +21161,29 @@
   "pages": [
    137
   ],
-  "pdf": "/fichas/LC-GMO1002.pdf?v=8a5ebec7",
+  "pdf": "/fichas/LC-GMO1002.pdf?v=928ece06",
   "image": {
-   "src": "/productos/LC-GMO1002.webp?v=0e414595",
-   "width": 943,
-   "height": 1000
+   "src": "/productos/LC-GMO1002.webp?v=feaf2fcb",
+   "width": 1321,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LC-GMO1002-md.webp?v=58b5c230",
+   "width": 755,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LC-GMO1002-thumb.webp?v=e8948a07",
+   "src": "/productos/LC-GMO1002-thumb.webp?v=de814c9e",
    "width": 396,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LC-GMO1002.webp?v=1ddbf8d8",
+   "src": "/fichas/img/LC-GMO1002.webp?v=a41fb1af",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-GMO1002-thumb.webp?v=de1f4702",
+   "src": "/fichas/img/LC-GMO1002-thumb.webp?v=d787d3d9",
    "width": 360,
    "height": 510
   },
@@ -20885,24 +21365,29 @@
   "pages": [
    138
   ],
-  "pdf": "/fichas/LC-WS1003.pdf?v=8a176659",
+  "pdf": "/fichas/LC-WS1003.pdf?v=4bb8da24",
   "image": {
-   "src": "/productos/LC-WS1003.webp?v=c8102789",
-   "width": 802,
-   "height": 1000
+   "src": "/productos/LC-WS1003.webp?v=8bb9f898",
+   "width": 1123,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LC-WS1003-md.webp?v=5e6bb573",
+   "width": 642,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LC-WS1003-thumb.webp?v=4b14977e",
+   "src": "/productos/LC-WS1003-thumb.webp?v=29ac902b",
    "width": 337,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LC-WS1003.webp?v=f7c02e05",
+   "src": "/fichas/img/LC-WS1003.webp?v=cdfec464",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-WS1003-thumb.webp?v=e0ee383f",
+   "src": "/fichas/img/LC-WS1003-thumb.webp?v=13217209",
    "width": 360,
    "height": 510
   },
@@ -21062,24 +21547,29 @@
   "pages": [
    139
   ],
-  "pdf": "/fichas/LC-AP1004.pdf?v=415f9fdb",
+  "pdf": "/fichas/LC-AP1004.pdf?v=65e6f8bc",
   "image": {
-   "src": "/productos/LC-AP1004.webp?v=500252b0",
-   "width": 1000,
-   "height": 324
+   "src": "/productos/LC-AP1004.webp?v=8fcae03e",
+   "width": 1400,
+   "height": 451
+  },
+  "mid": {
+   "src": "/productos/LC-AP1004-md.webp?v=e01a1103",
+   "width": 800,
+   "height": 258
   },
   "thumb": {
-   "src": "/productos/LC-AP1004-thumb.webp?v=4973cd4d",
+   "src": "/productos/LC-AP1004-thumb.webp?v=78723476",
    "width": 420,
-   "height": 136
+   "height": 135
   },
   "cover": {
-   "src": "/fichas/img/LC-AP1004.webp?v=ddeea4a7",
+   "src": "/fichas/img/LC-AP1004.webp?v=3e7e29ee",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-AP1004-thumb.webp?v=8db396e7",
+   "src": "/fichas/img/LC-AP1004-thumb.webp?v=07fc3595",
    "width": 360,
    "height": 510
   },
@@ -21215,24 +21705,29 @@
   "pages": [
    140
   ],
-  "pdf": "/fichas/LC-GC1005.pdf?v=87cc29b8",
+  "pdf": "/fichas/LC-GC1005.pdf?v=b9f58244",
   "image": {
-   "src": "/productos/LC-GC1005.webp?v=71ac6363",
-   "width": 1000,
-   "height": 498
+   "src": "/productos/LC-GC1005.webp?v=645a004d",
+   "width": 1400,
+   "height": 700
+  },
+  "mid": {
+   "src": "/productos/LC-GC1005-md.webp?v=0a6fd976",
+   "width": 800,
+   "height": 400
   },
   "thumb": {
-   "src": "/productos/LC-GC1005-thumb.webp?v=ab137094",
+   "src": "/productos/LC-GC1005-thumb.webp?v=241df07a",
    "width": 420,
-   "height": 209
+   "height": 210
   },
   "cover": {
-   "src": "/fichas/img/LC-GC1005.webp?v=f7d03d57",
+   "src": "/fichas/img/LC-GC1005.webp?v=c848b468",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-GC1005-thumb.webp?v=afd259d5",
+   "src": "/fichas/img/LC-GC1005-thumb.webp?v=6b51f0ce",
    "width": 360,
    "height": 510
   },
@@ -21450,24 +21945,29 @@
   "pages": [
    141
   ],
-  "pdf": "/fichas/LC-GE1006.pdf?v=57396f59",
+  "pdf": "/fichas/LC-GE1006.pdf?v=07138e90",
   "image": {
-   "src": "/productos/LC-GE1006.webp?v=495fb39f",
-   "width": 1000,
-   "height": 634
+   "src": "/productos/LC-GE1006.webp?v=ecd7648f",
+   "width": 1400,
+   "height": 885
+  },
+  "mid": {
+   "src": "/productos/LC-GE1006-md.webp?v=5808981f",
+   "width": 800,
+   "height": 506
   },
   "thumb": {
-   "src": "/productos/LC-GE1006-thumb.webp?v=d3a2082d",
+   "src": "/productos/LC-GE1006-thumb.webp?v=1d628850",
    "width": 420,
    "height": 266
   },
   "cover": {
-   "src": "/fichas/img/LC-GE1006.webp?v=a480fc04",
+   "src": "/fichas/img/LC-GE1006.webp?v=cb73569e",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-GE1006-thumb.webp?v=59032a62",
+   "src": "/fichas/img/LC-GE1006-thumb.webp?v=d1dbff5a",
    "width": 360,
    "height": 510
   },
@@ -21616,24 +22116,29 @@
   "pages": [
    142
   ],
-  "pdf": "/fichas/LC-CD1007.pdf?v=f203dc83",
+  "pdf": "/fichas/LC-CD1007.pdf?v=9c43e809",
   "image": {
-   "src": "/productos/LC-CD1007.webp?v=c9ebf95d",
-   "width": 1000,
-   "height": 242
+   "src": "/productos/LC-CD1007.webp?v=e55c24af",
+   "width": 1400,
+   "height": 338
+  },
+  "mid": {
+   "src": "/productos/LC-CD1007-md.webp?v=e775b9e1",
+   "width": 800,
+   "height": 193
   },
   "thumb": {
-   "src": "/productos/LC-CD1007-thumb.webp?v=c8db4861",
+   "src": "/productos/LC-CD1007-thumb.webp?v=66b7b235",
    "width": 420,
    "height": 102
   },
   "cover": {
-   "src": "/fichas/img/LC-CD1007.webp?v=80cd0c20",
+   "src": "/fichas/img/LC-CD1007.webp?v=a8f9eeac",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-CD1007-thumb.webp?v=5b7218cb",
+   "src": "/fichas/img/LC-CD1007-thumb.webp?v=de29b68b",
    "width": 360,
    "height": 510
   },
@@ -21779,24 +22284,29 @@
   "pages": [
    143
   ],
-  "pdf": "/fichas/LC-GEM1008.pdf?v=a7ebe3fe",
+  "pdf": "/fichas/LC-GEM1008.pdf?v=88bc6db6",
   "image": {
-   "src": "/productos/LC-GEM1008.webp?v=079a7958",
-   "width": 1000,
-   "height": 421
+   "src": "/productos/LC-GEM1008.webp?v=ae53988c",
+   "width": 1400,
+   "height": 586
+  },
+  "mid": {
+   "src": "/productos/LC-GEM1008-md.webp?v=4c59323b",
+   "width": 800,
+   "height": 335
   },
   "thumb": {
-   "src": "/productos/LC-GEM1008-thumb.webp?v=ea1af50d",
+   "src": "/productos/LC-GEM1008-thumb.webp?v=dfb8316c",
    "width": 420,
-   "height": 177
+   "height": 176
   },
   "cover": {
-   "src": "/fichas/img/LC-GEM1008.webp?v=9050c184",
+   "src": "/fichas/img/LC-GEM1008.webp?v=a8fc7b43",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-GEM1008-thumb.webp?v=a6d0878e",
+   "src": "/fichas/img/LC-GEM1008-thumb.webp?v=8b54fbe7",
    "width": 360,
    "height": 510
   },
@@ -21932,24 +22442,29 @@
   "pages": [
    144
   ],
-  "pdf": "/fichas/LC-GEM1009.pdf?v=38430c53",
+  "pdf": "/fichas/LC-GEM1009.pdf?v=d9acb27c",
   "image": {
-   "src": "/productos/LC-GEM1009.webp?v=1ff0bfcd",
-   "width": 1000,
-   "height": 842
+   "src": "/productos/LC-GEM1009.webp?v=414dd59f",
+   "width": 1400,
+   "height": 1181
+  },
+  "mid": {
+   "src": "/productos/LC-GEM1009-md.webp?v=3fd226b8",
+   "width": 800,
+   "height": 675
   },
   "thumb": {
-   "src": "/productos/LC-GEM1009-thumb.webp?v=24dda020",
+   "src": "/productos/LC-GEM1009-thumb.webp?v=158c78d7",
    "width": 420,
    "height": 354
   },
   "cover": {
-   "src": "/fichas/img/LC-GEM1009.webp?v=51287321",
+   "src": "/fichas/img/LC-GEM1009.webp?v=0f98b13a",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-GEM1009-thumb.webp?v=2e63a262",
+   "src": "/fichas/img/LC-GEM1009-thumb.webp?v=7b3bd733",
    "width": 360,
    "height": 510
   },
@@ -22105,24 +22620,29 @@
   "pages": [
    145
   ],
-  "pdf": "/fichas/LC-ME1010.pdf?v=50167d7a",
+  "pdf": "/fichas/LC-ME1010.pdf?v=66d9b873",
   "image": {
-   "src": "/productos/LC-ME1010.webp?v=6f33c805",
-   "width": 1000,
-   "height": 641
+   "src": "/productos/LC-ME1010.webp?v=2261eb8b",
+   "width": 1400,
+   "height": 901
+  },
+  "mid": {
+   "src": "/productos/LC-ME1010-md.webp?v=a2206a55",
+   "width": 800,
+   "height": 515
   },
   "thumb": {
-   "src": "/productos/LC-ME1010-thumb.webp?v=68204e54",
+   "src": "/productos/LC-ME1010-thumb.webp?v=c5821523",
    "width": 420,
-   "height": 269
+   "height": 270
   },
   "cover": {
-   "src": "/fichas/img/LC-ME1010.webp?v=574483fb",
+   "src": "/fichas/img/LC-ME1010.webp?v=cadab0c8",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-ME1010-thumb.webp?v=6be948c7",
+   "src": "/fichas/img/LC-ME1010-thumb.webp?v=6a8ef3b5",
    "width": 360,
    "height": 510
   },
@@ -22275,24 +22795,29 @@
   "pages": [
    146
   ],
-  "pdf": "/fichas/LC-GIN1011.pdf?v=348e8e75",
+  "pdf": "/fichas/LC-GIN1011.pdf?v=3cc57cc1",
   "image": {
-   "src": "/productos/LC-GIN1011.webp?v=c70fb812",
-   "width": 1000,
-   "height": 169
+   "src": "/productos/LC-GIN1011.webp?v=b3c352a2",
+   "width": 1400,
+   "height": 236
+  },
+  "mid": {
+   "src": "/productos/LC-GIN1011-md.webp?v=d2216394",
+   "width": 800,
+   "height": 135
   },
   "thumb": {
-   "src": "/productos/LC-GIN1011-thumb.webp?v=f910c237",
+   "src": "/productos/LC-GIN1011-thumb.webp?v=20540421",
    "width": 420,
    "height": 71
   },
   "cover": {
-   "src": "/fichas/img/LC-GIN1011.webp?v=299a6fe6",
+   "src": "/fichas/img/LC-GIN1011.webp?v=fb02835f",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-GIN1011-thumb.webp?v=7a3a8246",
+   "src": "/fichas/img/LC-GIN1011-thumb.webp?v=cd39b53b",
    "width": 360,
    "height": 510
   },
@@ -22429,24 +22954,29 @@
   "pages": [
    147
   ],
-  "pdf": "/fichas/LC-GINH1012.pdf?v=1e1018ea",
+  "pdf": "/fichas/LC-GINH1012.pdf?v=71c3e00a",
   "image": {
-   "src": "/productos/LC-GINH1012.webp?v=325fee0c",
-   "width": 1000,
-   "height": 685
+   "src": "/productos/LC-GINH1012.webp?v=901b44fb",
+   "width": 1400,
+   "height": 961
+  },
+  "mid": {
+   "src": "/productos/LC-GINH1012-md.webp?v=699b8e80",
+   "width": 800,
+   "height": 549
   },
   "thumb": {
-   "src": "/productos/LC-GINH1012-thumb.webp?v=cb3973f7",
+   "src": "/productos/LC-GINH1012-thumb.webp?v=4c486250",
    "width": 420,
    "height": 288
   },
   "cover": {
-   "src": "/fichas/img/LC-GINH1012.webp?v=7eb27b40",
+   "src": "/fichas/img/LC-GINH1012.webp?v=9fb20a86",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-GINH1012-thumb.webp?v=59dd58bb",
+   "src": "/fichas/img/LC-GINH1012-thumb.webp?v=00147d7f",
    "width": 360,
    "height": 510
   },
@@ -22585,24 +23115,29 @@
   "pages": [
    148
   ],
-  "pdf": "/fichas/LC-LN1013.pdf?v=b3b798cb",
+  "pdf": "/fichas/LC-LN1013.pdf?v=091e656f",
   "image": {
-   "src": "/productos/LC-LN1013.webp?v=1fc554b1",
-   "width": 1000,
-   "height": 900
+   "src": "/productos/LC-LN1013.webp?v=21f9240c",
+   "width": 1400,
+   "height": 1260
+  },
+  "mid": {
+   "src": "/productos/LC-LN1013-md.webp?v=9aa49111",
+   "width": 800,
+   "height": 720
   },
   "thumb": {
-   "src": "/productos/LC-LN1013-thumb.webp?v=9627a882",
+   "src": "/productos/LC-LN1013-thumb.webp?v=32a4ec02",
    "width": 420,
    "height": 378
   },
   "cover": {
-   "src": "/fichas/img/LC-LN1013.webp?v=a7d2bc32",
+   "src": "/fichas/img/LC-LN1013.webp?v=2ca31567",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-LN1013-thumb.webp?v=0accbe46",
+   "src": "/fichas/img/LC-LN1013-thumb.webp?v=7f07b446",
    "width": 360,
    "height": 510
   },
@@ -22772,24 +23307,29 @@
   "pages": [
    149
   ],
-  "pdf": "/fichas/FL-LT1023.pdf?v=2714b35c",
+  "pdf": "/fichas/FL-LT1023.pdf?v=fb40a273",
   "image": {
-   "src": "/productos/FL-LT1023.webp?v=0472fda7",
-   "width": 1000,
-   "height": 815
+   "src": "/productos/FL-LT1023.webp?v=c0895671",
+   "width": 1400,
+   "height": 1143
+  },
+  "mid": {
+   "src": "/productos/FL-LT1023-md.webp?v=e12831fa",
+   "width": 800,
+   "height": 653
   },
   "thumb": {
-   "src": "/productos/FL-LT1023-thumb.webp?v=e556ea13",
+   "src": "/productos/FL-LT1023-thumb.webp?v=63bf6e4b",
    "width": 420,
-   "height": 342
+   "height": 343
   },
   "cover": {
-   "src": "/fichas/img/FL-LT1023.webp?v=02fbba4e",
+   "src": "/fichas/img/FL-LT1023.webp?v=27164462",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/FL-LT1023-thumb.webp?v=2d7ab521",
+   "src": "/fichas/img/FL-LT1023-thumb.webp?v=b70b3fd0",
    "width": 360,
    "height": 510
   },
@@ -22984,24 +23524,29 @@
   "pages": [
    150
   ],
-  "pdf": "/fichas/LC-LR1014.pdf?v=bf39e52e",
+  "pdf": "/fichas/LC-LR1014.pdf?v=33a0c700",
   "image": {
-   "src": "/productos/LC-LR1014.webp?v=9b0d1068",
-   "width": 1000,
-   "height": 549
+   "src": "/productos/LC-LR1014.webp?v=fcfdba15",
+   "width": 1400,
+   "height": 765
+  },
+  "mid": {
+   "src": "/productos/LC-LR1014-md.webp?v=5d77754b",
+   "width": 800,
+   "height": 437
   },
   "thumb": {
-   "src": "/productos/LC-LR1014-thumb.webp?v=06e83342",
+   "src": "/productos/LC-LR1014-thumb.webp?v=c0f0fff3",
    "width": 420,
    "height": 230
   },
   "cover": {
-   "src": "/fichas/img/LC-LR1014.webp?v=71d2df69",
+   "src": "/fichas/img/LC-LR1014.webp?v=974bbc6f",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-LR1014-thumb.webp?v=1384d5a2",
+   "src": "/fichas/img/LC-LR1014-thumb.webp?v=48c6f3ba",
    "width": 360,
    "height": 510
   },
@@ -23172,24 +23717,29 @@
   "pages": [
    151
   ],
-  "pdf": "/fichas/LC-LRD1015.pdf?v=115285ea",
+  "pdf": "/fichas/LC-LRD1015.pdf?v=865d53cd",
   "image": {
-   "src": "/productos/LC-LRD1015.webp?v=7cf1d6cd",
-   "width": 1000,
-   "height": 789
+   "src": "/productos/LC-LRD1015.webp?v=ee805179",
+   "width": 1400,
+   "height": 1107
+  },
+  "mid": {
+   "src": "/productos/LC-LRD1015-md.webp?v=7a772a07",
+   "width": 800,
+   "height": 632
   },
   "thumb": {
-   "src": "/productos/LC-LRD1015-thumb.webp?v=77c632c3",
+   "src": "/productos/LC-LRD1015-thumb.webp?v=13b1754c",
    "width": 420,
-   "height": 331
+   "height": 332
   },
   "cover": {
-   "src": "/fichas/img/LC-LRD1015.webp?v=1779b17a",
+   "src": "/fichas/img/LC-LRD1015.webp?v=aed1d5c9",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-LRD1015-thumb.webp?v=85f25496",
+   "src": "/fichas/img/LC-LRD1015-thumb.webp?v=8a2bb231",
    "width": 360,
    "height": 510
   },
@@ -23364,24 +23914,29 @@
   "pages": [
    152
   ],
-  "pdf": "/fichas/LC-ES1016.pdf?v=2ee22157",
+  "pdf": "/fichas/LC-ES1016.pdf?v=61683975",
   "image": {
-   "src": "/productos/LC-ES1016.webp?v=cdf75ee4",
-   "width": 276,
-   "height": 1000
+   "src": "/productos/LC-ES1016.webp?v=c37dd5ca",
+   "width": 387,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LC-ES1016-md.webp?v=c1da28c9",
+   "width": 221,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LC-ES1016-thumb.webp?v=b56fdf38",
+   "src": "/productos/LC-ES1016-thumb.webp?v=0faed4af",
    "width": 116,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LC-ES1016.webp?v=3470d00b",
+   "src": "/fichas/img/LC-ES1016.webp?v=4fa9c333",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LC-ES1016-thumb.webp?v=aa267bef",
+   "src": "/fichas/img/LC-ES1016-thumb.webp?v=d1033bf6",
    "width": 360,
    "height": 510
   },
@@ -23559,24 +24114,29 @@
    156,
    157
   ],
-  "pdf": "/fichas/POSTES-RC-CC.pdf?v=41d7c079",
+  "pdf": "/fichas/POSTES-RC-CC.pdf?v=47e9fd18",
   "image": {
-   "src": "/productos/POSTES-RC-CC.webp?v=eef0cbd3",
-   "width": 93,
-   "height": 1000
+   "src": "/productos/POSTES-RC-CC.webp?v=73c2bea3",
+   "width": 129,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/POSTES-RC-CC-md.webp?v=2af10ff5",
+   "width": 74,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/POSTES-RC-CC-thumb.webp?v=6d5b1a8d",
+   "src": "/productos/POSTES-RC-CC-thumb.webp?v=482567d2",
    "width": 39,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/POSTES-RC-CC.webp?v=0ce17e79",
+   "src": "/fichas/img/POSTES-RC-CC.webp?v=b7fd87a1",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/POSTES-RC-CC-thumb.webp?v=118b6649",
+   "src": "/fichas/img/POSTES-RC-CC-thumb.webp?v=2928b5bf",
    "width": 360,
    "height": 510
   },
@@ -23794,24 +24354,29 @@
    160,
    161
   ],
-  "pdf": "/fichas/POSTES-ESPECIALES.pdf?v=499e4756",
+  "pdf": "/fichas/POSTES-ESPECIALES.pdf?v=89bff8b6",
   "image": {
-   "src": "/productos/POSTES-ESPECIALES.webp?v=477f0069",
-   "width": 854,
-   "height": 1000
+   "src": "/productos/POSTES-ESPECIALES.webp?v=4b5567b0",
+   "width": 1193,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/POSTES-ESPECIALES-md.webp?v=41e97cac",
+   "width": 682,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/POSTES-ESPECIALES-thumb.webp?v=a885e2b0",
-   "width": 359,
+   "src": "/productos/POSTES-ESPECIALES-thumb.webp?v=1caef1a8",
+   "width": 358,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/POSTES-ESPECIALES.webp?v=07b69c96",
+   "src": "/fichas/img/POSTES-ESPECIALES.webp?v=c424e857",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/POSTES-ESPECIALES-thumb.webp?v=9e7e3afe",
+   "src": "/fichas/img/POSTES-ESPECIALES-thumb.webp?v=5bc6632d",
    "width": 360,
    "height": 510
   },
@@ -23978,24 +24543,29 @@
    166,
    167
   ],
-  "pdf": "/fichas/BRAZOS.pdf?v=948194e1",
+  "pdf": "/fichas/BRAZOS.pdf?v=2e75c09a",
   "image": {
-   "src": "/productos/BRAZOS.webp?v=f55f5f97",
-   "width": 1000,
-   "height": 537
+   "src": "/productos/BRAZOS.webp?v=aa29f3e8",
+   "width": 1400,
+   "height": 750
+  },
+  "mid": {
+   "src": "/productos/BRAZOS-md.webp?v=c3894bf8",
+   "width": 800,
+   "height": 428
   },
   "thumb": {
-   "src": "/productos/BRAZOS-thumb.webp?v=1e2a3e11",
+   "src": "/productos/BRAZOS-thumb.webp?v=9757fbca",
    "width": 420,
    "height": 225
   },
   "cover": {
-   "src": "/fichas/img/BRAZOS.webp?v=393a84d9",
+   "src": "/fichas/img/BRAZOS.webp?v=de5e16d9",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/BRAZOS-thumb.webp?v=d2c69850",
+   "src": "/fichas/img/BRAZOS-thumb.webp?v=1da3f5bd",
    "width": 360,
    "height": 510
   },
@@ -24131,24 +24701,29 @@
   "pages": [
    169
   ],
-  "pdf": "/fichas/ANCLAS-BRAZOS.pdf?v=ba3cb709",
+  "pdf": "/fichas/ANCLAS-BRAZOS.pdf?v=401c389a",
   "image": {
-   "src": "/productos/ANCLAS-BRAZOS.webp?v=61fad7a5",
-   "width": 453,
-   "height": 1000
+   "src": "/productos/ANCLAS-BRAZOS.webp?v=7f4a024c",
+   "width": 634,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/ANCLAS-BRAZOS-md.webp?v=a599d5a2",
+   "width": 362,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/ANCLAS-BRAZOS-thumb.webp?v=f842f085",
+   "src": "/productos/ANCLAS-BRAZOS-thumb.webp?v=3a00ab81",
    "width": 190,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/ANCLAS-BRAZOS.webp?v=7c9073c8",
+   "src": "/fichas/img/ANCLAS-BRAZOS.webp?v=9fc7230f",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/ANCLAS-BRAZOS-thumb.webp?v=15d9ba2a",
+   "src": "/fichas/img/ANCLAS-BRAZOS-thumb.webp?v=bacb45c4",
    "width": 360,
    "height": 510
   },
@@ -24272,24 +24847,29 @@
   "pages": [
    170
   ],
-  "pdf": "/fichas/BAS-0010.pdf?v=d15f1804",
+  "pdf": "/fichas/BAS-0010.pdf?v=3a48a68b",
   "image": {
-   "src": "/productos/BAS-0010.webp?v=f7234c38",
-   "width": 1000,
-   "height": 631
+   "src": "/productos/BAS-0010.webp?v=4d6b3f5a",
+   "width": 1400,
+   "height": 884
+  },
+  "mid": {
+   "src": "/productos/BAS-0010-md.webp?v=af309909",
+   "width": 800,
+   "height": 505
   },
   "thumb": {
-   "src": "/productos/BAS-0010-thumb.webp?v=681a3100",
+   "src": "/productos/BAS-0010-thumb.webp?v=17c199f5",
    "width": 420,
    "height": 265
   },
   "cover": {
-   "src": "/fichas/img/BAS-0010.webp?v=5391f77b",
+   "src": "/fichas/img/BAS-0010.webp?v=8692c4c4",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/BAS-0010-thumb.webp?v=6f3fb196",
+   "src": "/fichas/img/BAS-0010-thumb.webp?v=10047b6a",
    "width": 360,
    "height": 510
   },
@@ -24438,24 +25018,29 @@
   "pages": [
    171
   ],
-  "pdf": "/fichas/BAS-0011.pdf?v=0df29d2f",
+  "pdf": "/fichas/BAS-0011.pdf?v=e6592a21",
   "image": {
-   "src": "/productos/BAS-0011.webp?v=1be419f8",
-   "width": 638,
-   "height": 1000
+   "src": "/productos/BAS-0011.webp?v=64def6a5",
+   "width": 896,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/BAS-0011-md.webp?v=f5b5c181",
+   "width": 512,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/BAS-0011-thumb.webp?v=2add0f51",
-   "width": 268,
+   "src": "/productos/BAS-0011-thumb.webp?v=1de6664e",
+   "width": 269,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/BAS-0011.webp?v=b100f5e9",
+   "src": "/fichas/img/BAS-0011.webp?v=46862563",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/BAS-0011-thumb.webp?v=4388053b",
+   "src": "/fichas/img/BAS-0011-thumb.webp?v=5e89b4c7",
    "width": 360,
    "height": 510
   },
@@ -24600,24 +25185,29 @@
   "pages": [
    172
   ],
-  "pdf": "/fichas/BASE-PIRAMIDAL.pdf?v=b8a99813",
+  "pdf": "/fichas/BASE-PIRAMIDAL.pdf?v=51ae6678",
   "image": {
-   "src": "/productos/BASE-PIRAMIDAL.webp?v=5caf58b7",
-   "width": 728,
-   "height": 1000
+   "src": "/productos/BASE-PIRAMIDAL.webp?v=9d101bc3",
+   "width": 1020,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/BASE-PIRAMIDAL-md.webp?v=1afe25aa",
+   "width": 583,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/BASE-PIRAMIDAL-thumb.webp?v=2184fd3b",
+   "src": "/productos/BASE-PIRAMIDAL-thumb.webp?v=fbb560b0",
    "width": 306,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/BASE-PIRAMIDAL.webp?v=289449e6",
+   "src": "/fichas/img/BASE-PIRAMIDAL.webp?v=1e70a787",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/BASE-PIRAMIDAL-thumb.webp?v=800a6d4f",
+   "src": "/fichas/img/BASE-PIRAMIDAL-thumb.webp?v=79022c46",
    "width": 360,
    "height": 510
   },
@@ -24756,24 +25346,29 @@
   "pages": [
    173
   ],
-  "pdf": "/fichas/REJILLA-BROCAL.pdf?v=107815b0",
+  "pdf": "/fichas/REJILLA-BROCAL.pdf?v=31bb5217",
   "image": {
-   "src": "/productos/REJILLA-BROCAL.webp?v=224b3cb5",
-   "width": 1000,
-   "height": 750
+   "src": "/productos/REJILLA-BROCAL.webp?v=cc20c2d6",
+   "width": 1400,
+   "height": 1050
+  },
+  "mid": {
+   "src": "/productos/REJILLA-BROCAL-md.webp?v=6e6c56f6",
+   "width": 800,
+   "height": 600
   },
   "thumb": {
-   "src": "/productos/REJILLA-BROCAL-thumb.webp?v=acb9b705",
+   "src": "/productos/REJILLA-BROCAL-thumb.webp?v=5225517e",
    "width": 420,
    "height": 315
   },
   "cover": {
-   "src": "/fichas/img/REJILLA-BROCAL.webp?v=6442a116",
+   "src": "/fichas/img/REJILLA-BROCAL.webp?v=c2e41fa4",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/REJILLA-BROCAL-thumb.webp?v=57daa73d",
+   "src": "/fichas/img/REJILLA-BROCAL-thumb.webp?v=1f552fb2",
    "width": 360,
    "height": 510
   },
@@ -24917,24 +25512,29 @@
   "pages": [
    174
   ],
-  "pdf": "/fichas/BANCAS.pdf?v=a9b9d529",
+  "pdf": "/fichas/BANCAS.pdf?v=3670fa4c",
   "image": {
-   "src": "/productos/BANCAS.webp?v=e5f8f4c6",
-   "width": 761,
-   "height": 1000
+   "src": "/productos/BANCAS.webp?v=c5c19092",
+   "width": 1065,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/BANCAS-md.webp?v=5c25ea0e",
+   "width": 608,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/BANCAS-thumb.webp?v=df43baf4",
-   "width": 320,
+   "src": "/productos/BANCAS-thumb.webp?v=63a5c33f",
+   "width": 319,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/BANCAS.webp?v=225ddbb8",
+   "src": "/fichas/img/BANCAS.webp?v=e9a54c56",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/BANCAS-thumb.webp?v=2336b13c",
+   "src": "/fichas/img/BANCAS-thumb.webp?v=983706b4",
    "width": 360,
    "height": 510
   },
@@ -25067,24 +25667,29 @@
   "pages": [
    175
   ],
-  "pdf": "/fichas/ACCESORIOS.pdf?v=26e56507",
+  "pdf": "/fichas/ACCESORIOS.pdf?v=19f8b1f5",
   "image": {
-   "src": "/productos/ACCESORIOS.webp?v=4a2b18ab",
-   "width": 874,
-   "height": 1000
+   "src": "/productos/ACCESORIOS.webp?v=90c4328d",
+   "width": 1224,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/ACCESORIOS-md.webp?v=4e6ab725",
+   "width": 700,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/ACCESORIOS-thumb.webp?v=609832dd",
+   "src": "/productos/ACCESORIOS-thumb.webp?v=125921f7",
    "width": 367,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/ACCESORIOS.webp?v=e71bd594",
+   "src": "/fichas/img/ACCESORIOS.webp?v=d06ef9f5",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/ACCESORIOS-thumb.webp?v=3290136c",
+   "src": "/fichas/img/ACCESORIOS-thumb.webp?v=0e6b5ed9",
    "width": 360,
    "height": 510
   },
@@ -25233,24 +25838,29 @@
   "pages": [
    176
   ],
-  "pdf": "/fichas/ESFERAS-CRISTALES.pdf?v=12263ff4",
+  "pdf": "/fichas/ESFERAS-CRISTALES.pdf?v=0e31f98f",
   "image": {
-   "src": "/productos/ESFERAS-CRISTALES.webp?v=e3f51d39",
-   "width": 1000,
-   "height": 230
+   "src": "/productos/ESFERAS-CRISTALES.webp?v=a86c05ae",
+   "width": 1400,
+   "height": 323
+  },
+  "mid": {
+   "src": "/productos/ESFERAS-CRISTALES-md.webp?v=964cd520",
+   "width": 800,
+   "height": 184
   },
   "thumb": {
-   "src": "/productos/ESFERAS-CRISTALES-thumb.webp?v=de23dd34",
+   "src": "/productos/ESFERAS-CRISTALES-thumb.webp?v=460b326e",
    "width": 420,
    "height": 97
   },
   "cover": {
-   "src": "/fichas/img/ESFERAS-CRISTALES.webp?v=5d9346e1",
+   "src": "/fichas/img/ESFERAS-CRISTALES.webp?v=9bd4a4b1",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/ESFERAS-CRISTALES-thumb.webp?v=3519d3af",
+   "src": "/fichas/img/ESFERAS-CRISTALES-thumb.webp?v=4b6fb63c",
    "width": 360,
    "height": 510
   },
@@ -25437,24 +26047,29 @@
   "pages": [
    177
   ],
-  "pdf": "/fichas/PICOBA-P01.pdf?v=3aaa9603",
+  "pdf": "/fichas/PICOBA-P01.pdf?v=ef967ba9",
   "image": {
-   "src": "/productos/PICOBA-P01.webp?v=cedbe925",
-   "width": 440,
-   "height": 1000
+   "src": "/productos/PICOBA-P01.webp?v=092a8098",
+   "width": 614,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PICOBA-P01-md.webp?v=5a3d107c",
+   "width": 351,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PICOBA-P01-thumb.webp?v=5333c813",
-   "width": 185,
+   "src": "/productos/PICOBA-P01-thumb.webp?v=31d3cf9d",
+   "width": 184,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PICOBA-P01.webp?v=5f51384f",
+   "src": "/fichas/img/PICOBA-P01.webp?v=6c07d77c",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PICOBA-P01-thumb.webp?v=480372f6",
+   "src": "/fichas/img/PICOBA-P01-thumb.webp?v=ad5c4e40",
    "width": 360,
    "height": 510
   },
@@ -25573,24 +26188,29 @@
    178,
    179
   ],
-  "pdf": "/fichas/PICOBA-P02.pdf?v=11204eec",
+  "pdf": "/fichas/PICOBA-P02.pdf?v=e555cedb",
   "image": {
-   "src": "/productos/PICOBA-P02.webp?v=186d7d7e",
-   "width": 545,
-   "height": 1000
+   "src": "/productos/PICOBA-P02.webp?v=73e4acf2",
+   "width": 760,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PICOBA-P02-md.webp?v=c64e94cf",
+   "width": 434,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PICOBA-P02-thumb.webp?v=01aa4fa4",
-   "width": 229,
+   "src": "/productos/PICOBA-P02-thumb.webp?v=1fe033d2",
+   "width": 228,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PICOBA-P02.webp?v=fd1af5a5",
+   "src": "/fichas/img/PICOBA-P02.webp?v=a8e7fbe9",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PICOBA-P02-thumb.webp?v=c10d6b0d",
+   "src": "/fichas/img/PICOBA-P02-thumb.webp?v=68b12718",
    "width": 360,
    "height": 510
   },
@@ -25725,24 +26345,29 @@
   "pages": [
    180
   ],
-  "pdf": "/fichas/PICOBA-BSH.pdf?v=05446f02",
+  "pdf": "/fichas/PICOBA-BSH.pdf?v=298382f5",
   "image": {
-   "src": "/productos/PICOBA-BSH.webp?v=7b4c7714",
-   "width": 457,
-   "height": 1000
+   "src": "/productos/PICOBA-BSH.webp?v=0fa180a4",
+   "width": 642,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/PICOBA-BSH-md.webp?v=4b4b0317",
+   "width": 367,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/PICOBA-BSH-thumb.webp?v=f671e929",
+   "src": "/productos/PICOBA-BSH-thumb.webp?v=27468504",
    "width": 192,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/PICOBA-BSH.webp?v=5ca4bd4b",
+   "src": "/fichas/img/PICOBA-BSH.webp?v=a76fd68a",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/PICOBA-BSH-thumb.webp?v=37182535",
+   "src": "/fichas/img/PICOBA-BSH-thumb.webp?v=51bc845d",
    "width": 360,
    "height": 510
   },
@@ -25873,24 +26498,29 @@
   "pages": [
    181
   ],
-  "pdf": "/fichas/LETREROS.pdf?v=cef98e93",
+  "pdf": "/fichas/LETREROS.pdf?v=77fed940",
   "image": {
-   "src": "/productos/LETREROS.webp?v=34dc1b8e",
-   "width": 479,
-   "height": 1000
+   "src": "/productos/LETREROS.webp?v=10f76e9e",
+   "width": 670,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LETREROS-md.webp?v=21e2ab07",
+   "width": 383,
+   "height": 800
   },
   "thumb": {
-   "src": "/productos/LETREROS-thumb.webp?v=8f5972c7",
+   "src": "/productos/LETREROS-thumb.webp?v=23325472",
    "width": 201,
    "height": 420
   },
   "cover": {
-   "src": "/fichas/img/LETREROS.webp?v=cad0fe69",
+   "src": "/fichas/img/LETREROS.webp?v=d4cc520c",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/LETREROS-thumb.webp?v=aed83e24",
+   "src": "/fichas/img/LETREROS-thumb.webp?v=e8bd49cd",
    "width": 360,
    "height": 510
   },
@@ -26019,24 +26649,29 @@
   "pages": [
    182
   ],
-  "pdf": "/fichas/SENALITICAS.pdf?v=6a06aaab",
+  "pdf": "/fichas/SENALITICAS.pdf?v=11a6de46",
   "image": {
-   "src": "/productos/SENALITICAS.webp?v=bec384d7",
-   "width": 1000,
-   "height": 732
+   "src": "/productos/SENALITICAS.webp?v=b8690e82",
+   "width": 1400,
+   "height": 1027
+  },
+  "mid": {
+   "src": "/productos/SENALITICAS-md.webp?v=6c239555",
+   "width": 800,
+   "height": 587
   },
   "thumb": {
-   "src": "/productos/SENALITICAS-thumb.webp?v=85195150",
+   "src": "/productos/SENALITICAS-thumb.webp?v=8e1ef906",
    "width": 420,
-   "height": 307
+   "height": 308
   },
   "cover": {
-   "src": "/fichas/img/SENALITICAS.webp?v=d4b85c1d",
+   "src": "/fichas/img/SENALITICAS.webp?v=5c64339f",
    "width": 1000,
    "height": 1416
   },
   "coverThumb": {
-   "src": "/fichas/img/SENALITICAS-thumb.webp?v=f386d17c",
+   "src": "/fichas/img/SENALITICAS-thumb.webp?v=7505e1e5",
    "width": 360,
    "height": 510
   },

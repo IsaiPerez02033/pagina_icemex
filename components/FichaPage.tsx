@@ -108,7 +108,9 @@ export default function FichaPage({ ficha, product }: FichaPageProps) {
           <div className="ficha-stage">
             {/* eslint-disable-next-line @next/next/no-img-element -- foto webp ya optimizada por fichas-src/build.py */}
             <img
-              src={ficha.image.src}
+              src={ficha.mid.src}
+              srcSet={`${ficha.mid.src} ${ficha.mid.width}w, ${ficha.image.src} ${ficha.image.width}w`}
+              sizes="(max-width: 860px) 90vw, 560px"
               width={ficha.image.width}
               height={ficha.image.height}
               alt={`${name}, ${ficha.kind.toLowerCase()} ICEMEX`}

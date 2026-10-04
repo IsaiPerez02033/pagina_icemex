@@ -26,8 +26,9 @@ export interface Ficha {
   /** Páginas del Catálogo ICEMEX 2026 donde aparece. */
   pages: number[];
   pdf: string;
-  /** Foto del producto (fondo transparente). */
+  /** Foto del producto (fondo transparente): 1400, 800 y 420 px. */
   image: FichaImage;
+  mid: FichaImage;
   thumb: FichaImage;
   /** Portada de la ficha PDF (vista previa y redes sociales). */
   cover: FichaImage;
@@ -191,7 +192,7 @@ export function lineShowcase(): LineShowcase[] {
     return {
       line,
       count: counts.get(line) ?? 0,
-      photo: line === "PT" ? POSTES_PHOTO : f.image,
+      photo: line === "PT" ? POSTES_PHOTO : f.mid,
       thumb: line === "PT" ? POSTES_PHOTO : f.thumb,
     };
   });

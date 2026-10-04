@@ -41,3 +41,4 @@ next-env.d.ts
 # fichas: imágenes intermedias del build
 /fichas-src/build/
 /fichas-src/_*.html
+/fichas-src/models/

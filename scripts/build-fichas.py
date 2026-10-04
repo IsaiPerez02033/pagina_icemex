@@ -145,6 +145,7 @@ def main():
             "pages": entry["paginas"],
             "pdf": versioned(pdf, f"/fichas/{entry['archivo']}"),
             "image": img_info(PHOTOS / f"{code}.webp", f"/productos/{code}.webp"),
+            "mid": img_info(PHOTOS / f"{code}-md.webp", f"/productos/{code}-md.webp"),
             "thumb": img_info(PHOTOS / f"{code}-thumb.webp", f"/productos/{code}-thumb.webp"),
             "cover": cover,
             "coverThumb": cover_thumb,
