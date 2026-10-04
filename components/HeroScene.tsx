@@ -3,6 +3,7 @@
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
+import { HeroCopy } from "@/components/HeroStatic";
 
 const STEPS = ["Poste", "Brazo", "Luminaria", "Encendido"];
 const STOPS = [0.27, 0.51, 0.75, 0.98];
@@ -417,27 +418,7 @@ export default function HeroScene() {
   }
   return (
     <div ref={root} className="assembly-hero">
-      <div className="assembly-copy">
-        <p className="assembly-eyebrow">ICEMEX · Ingeniería que ilumina</p>
-        <h1>
-          Iluminación que transforma.
-          <br />
-          <span>Seguridad que protege.</span>
-        </h1>
-        <p className="assembly-description">
-          Del poste al último punto de luz. Fabricación, suministro e
-          instalación para dar vida a tu proyecto. También, venta e instalación
-          de cámaras de seguridad.
-        </p>
-        <div className="assembly-actions">
-          <a className="action-primary" href="/productos">
-            Explorar productos ↗
-          </a>
-          <a className="action-secondary" href="/#contacto">
-            Cotizar proyecto
-          </a>
-        </div>
-      </div>
+      <HeroCopy />
       <div
         className="assembly-viewport"
         role="img"

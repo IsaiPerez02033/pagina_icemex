@@ -431,45 +431,35 @@ html[data-theme="light"] .limelight-active-label {
   opacity: 0.95;
 }
 
-/* === OPTIMIZACIONES MOBILE-FIRST Y ACELERACIÓN POR HARDWARE === */
+/* === HERO (estático y 3D comparten layout: .assembly-hero) === */
 .hero-scroll-container {
   position: relative;
-  height: 300dvh;
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .hero-scroll-container {
-    height: 180dvh;
-  }
-}
-
-/* === HERO ESTÁTICO (fallback sin WebGL / gama baja) === */
+/* Mide exactamente una pantalla, igual que el stage sticky del modo 3D:
+   al subir a 3D lo extra del contenedor queda bajo el pliegue y nada visible
+   se mueve (CLS 0). */
 .hero-static {
   position: relative;
   width: 100%;
-  height: 100dvh;
+  height: 100svh;
   overflow: hidden;
-  background: radial-gradient(
-    ellipse at center,
-    var(--bg-secondary) 0%,
-    var(--bg-primary) 70%
-  );
 }
 
+/* Ilustración CSS dentro de .assembly-viewport: poste, brazo, luminaria,
+   cono y charco de luz. Se pinta una vez, sin animación. */
 .hero-static-stage {
   position: absolute;
-  inset: 0;
+  inset: 0 0 18px;
   pointer-events: none;
 }
-
-/* Rejilla de piso sutil (una sola pintada, sin animación) */
 .hero-static-grid {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 42%;
+  height: 38%;
   background-image:
     linear-gradient(to right, rgba(var(--cyan-rgb), 0.14) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(var(--cyan-rgb), 0.14) 1px, transparent 1px);
@@ -480,105 +470,68 @@ html[data-theme="light"] .limelight-active-label {
   transform-origin: bottom center;
   opacity: 0.5;
 }
-
-/* Poste metálico */
 .hero-static-pole {
   position: absolute;
-  right: 26%;
-  bottom: 30%;
-  width: 6px;
-  height: 40%;
-  border-radius: 3px;
+  left: 38%;
+  bottom: 10%;
+  width: 8px;
+  height: 72%;
+  border-radius: 4px 4px 2px 2px;
   background: linear-gradient(
     to right,
-    rgba(var(--text-rgb), 0.18),
-    rgba(var(--text-rgb), 0.5),
-    rgba(var(--text-rgb), 0.18)
+    rgba(var(--text-rgb), 0.25),
+    rgba(var(--text-rgb), 0.6),
+    rgba(var(--text-rgb), 0.25)
   );
 }
-
-/* Cono de luz cálida */
+.hero-static-arm {
+  position: absolute;
+  left: calc(38% + 4px);
+  top: 18%;
+  width: 17%;
+  height: 22px;
+  border-top: 5px solid rgba(var(--text-rgb), 0.45);
+  border-left: 5px solid rgba(var(--text-rgb), 0.45);
+  border-top-left-radius: 28px;
+}
+.hero-static-head {
+  position: absolute;
+  left: calc(55% - 6px);
+  top: calc(18% - 6px);
+  width: clamp(60px, 9%, 96px);
+  height: 16px;
+  border-radius: 8px 10px 6px 6px;
+  background: linear-gradient(to bottom, rgba(var(--text-rgb), 0.55), rgba(var(--text-rgb), 0.3));
+  box-shadow: 0 6px 24px rgba(255, 214, 140, 0.55);
+}
 .hero-static-cone {
   position: absolute;
-  right: 12%;
-  bottom: 24%;
-  width: 34vw;
-  max-width: 380px;
-  height: 46%;
+  left: calc(55% - 20%);
+  top: calc(18% + 10px);
+  width: 46%;
+  height: calc(72% - 4px);
   background: linear-gradient(
     to bottom,
-    rgba(255, 208, 128, 0.32),
-    rgba(255, 208, 128, 0)
+    rgba(255, 214, 140, 0.34),
+    rgba(255, 214, 140, 0)
   );
-  clip-path: polygon(42% 0, 58% 0, 100% 100%, 0% 100%);
-  filter: blur(2px);
+  clip-path: polygon(41% 0, 56% 0, 100% 100%, 0% 100%);
 }
-
-/* Charco de luz en el piso */
 .hero-static-pool {
   position: absolute;
-  right: 8%;
-  bottom: 22%;
-  width: 40vw;
-  max-width: 440px;
-  height: 90px;
+  left: 26%;
+  bottom: 6%;
+  width: 62%;
+  height: 70px;
   background: radial-gradient(
     ellipse at center,
-    rgba(255, 208, 128, 0.28) 0%,
-    rgba(255, 208, 128, 0) 70%
+    rgba(255, 214, 140, 0.3) 0%,
+    rgba(255, 214, 140, 0) 70%
   );
 }
-
 html[data-theme="light"] .hero-static-cone,
 html[data-theme="light"] .hero-static-pool {
-  filter: none;
   opacity: 0.85;
-}
-
-.hero-static-hud {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  padding: clamp(110px, 14vw, 140px) clamp(20px, 4vw, 48px)
-    clamp(28px, 4vw, 48px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.hero-static-copy {
-  max-width: 760px;
-}
-
-.hero-static-title {
-  font-size: clamp(32px, 4.6vw, 64px);
-  line-height: 1.06;
-  color: var(--text-primary);
-  font-weight: 300;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.hero-static-title span {
-  color: var(--accent-cyan);
-}
-
-.hero-static-sub {
-  margin-top: 24px;
-  max-width: 480px;
-  color: var(--text-muted);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.02em;
-  text-transform: none;
-  font-weight: 400;
-}
-
-.hero-static-bottom {
-  color: var(--text-muted);
-  font-size: 11px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
 }
 
 /* NOTA: no usamos `will-change` permanente aquí. Mantenerlo fijo crea capas
@@ -1639,21 +1592,6 @@ html[data-theme="light"] .hero-static-pool {
   }
 }
 
-/* === HERO HUD RESPONSIVE === */
-@media (max-width: 720px) {
-  .hero-hud-bar {
-    display: none !important;
-  }
-  .hero-hud-bottom {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-  .hero-hud-progress {
-    width: 100%;
-    justify-content: space-between;
-  }
-}
-
 /* === FORMULARIO DE CONTACTO — INPUTS REDONDEADOS === */
 .contact-form input,
 .contact-form textarea {
@@ -2146,27 +2084,6 @@ summary {
   border: 1px solid var(--text-muted);
   color: var(--text-primary);
 }
-.hero-static-title {
-  font-size: clamp(36px, 5.6vw, 76px);
-  line-height: 1.08;
-  letter-spacing: -0.035em;
-  text-transform: none;
-  font-weight: 500;
-  max-width: 850px;
-}
-.hero-static-copy {
-  max-width: 850px;
-}
-.hero-static-sub {
-  font-size: 17px;
-  line-height: 1.7;
-  max-width: 570px;
-}
-.hero-static-bottom {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
 .eyebrow {
   font-size: 12px;
   color: var(--accent-cyan);
@@ -2383,23 +2300,6 @@ summary {
   .site-header {
     padding: 10px 16px;
   }
-  .hero-static {
-    min-height: 660px;
-    height: auto;
-  }
-  .hero-static-hud {
-    padding: 56px 22px 36px;
-    position: relative;
-  }
-  .hero-static-bottom {
-    margin-top: 24px;
-  }
-  .hero-static-title {
-    font-size: 42px;
-  }
-  .hero-static-sub {
-    font-size: 16px;
-  }
   .security-services,
   .security-process ol {
     grid-template-columns: 1fr;
@@ -2435,23 +2335,7 @@ summary {
   }
 }
 
-.hero-hud h1 {
-  text-transform: none !important;
-  letter-spacing: -0.035em !important;
-  font-weight: 500 !important;
-}
-@media (max-width: 600px) {
-  .hero-hud h1 {
-    font-size: 36px !important;
-  }
-  .hero-hud {
-    padding-top: 40px !important;
-  }
-}
 
-.hero-static-bottom {
-  pointer-events: auto;
-}
 
 .site-logo {
   display: flex;
@@ -2475,14 +2359,6 @@ summary {
   }
   .site-header {
     min-height: 68px;
-  }
-}
-@media (max-width: 600px) {
-  .hero-static-hud {
-    padding: 40px 22px 32px;
-  }
-  .hero-static {
-    min-height: 620px;
   }
 }
 
@@ -2697,9 +2573,6 @@ body[data-chat-open="true"] .wa-fab {
 .assembly-steps button[aria-current] {
   color: var(--text-primary);
 }
-.hero-static-hud {
-  padding-top: 130px !important;
-}
 @media (max-width: 960px) {
   .site-header {
     width: calc(100% - 24px);
@@ -2800,9 +2673,6 @@ body[data-chat-open="true"] .wa-fab {
   }
   .assembly-steps button > span {
     font-size: 8px;
-  }
-  .hero-static-hud {
-    padding-top: 108px !important;
   }
 }
 @media (max-width: 760px) and (max-height: 740px) {

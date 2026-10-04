@@ -201,7 +201,7 @@ export default function CatalogoPage() {
             >
               <span>176 páginas</span>
               <span style={{ color: "rgba(var(--cyan-rgb), 0.4)" }}>·</span>
-              <span>PDF · 99 MB</span>
+              <span>PDF · 39 MB</span>
               <span style={{ color: "rgba(var(--cyan-rgb), 0.4)" }}>·</span>
               <span>Edición 2026</span>
             </div>
@@ -217,7 +217,7 @@ export default function CatalogoPage() {
               submitLabel="↓ Descargar catálogo"
               resourceLabel="Catálogo 2026"
               successTitle="¡Listo! El catálogo se está descargando"
-              successMessage="Por su tamaño (99 MB) la descarga puede tardar unos segundos. Si no inicia, usa el botón de abajo. Abrimos WhatsApp para que nuestro equipo pueda acompañarte con asesoría técnica."
+              successMessage="Por su tamaño (39 MB) la descarga puede tardar unos segundos. Si no inicia, usa el botón de abajo. Abrimos WhatsApp para que nuestro equipo pueda acompañarte con asesoría técnica."
             />
           </div>
         </header>

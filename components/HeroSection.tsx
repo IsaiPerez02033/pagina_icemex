@@ -24,6 +24,10 @@ function canRender3D(): boolean {
   }
 
   try {
+    // ?hero=static fuerza el fallback (para revisar el hero de gama baja).
+    if (new URLSearchParams(window.location.search).get("hero") === "static") {
+      return false;
+    }
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       return false;
     }
@@ -33,13 +37,18 @@ function canRender3D(): boolean {
       deviceMemory?: number;
     };
 
-    // Ahorro de datos o red muy lenta (2G): fallback estático.
+    // Ahorro de datos o red lenta (2G/3G): fallback estático.
     if (nav.connection?.saveData) return false;
     const eff = nav.connection?.effectiveType || "";
-    if (eff === "slow-2g" || eff === "2g") return false;
+    if (eff === "slow-2g" || eff === "2g" || eff === "3g") return false;
 
-    // Memoria del dispositivo (si el navegador la expone).
-    if (typeof nav.deviceMemory === "number" && nav.deviceMemory < 4) {
+    // Celulares: 3D solo en gama alta. Chrome redondea deviceMemory a
+    // 0.5/1/2/4/8, así que > 4 significa 8 GB o más. Un Android de gama
+    // media (4 GB) se queda con el hero estático, que es idéntico salvo la
+    // ilustración. iPhone no expone deviceMemory → se asume capaz.
+    const isPhone = window.matchMedia("(pointer: coarse) and (max-width: 900px)").matches;
+    const minMemory = isPhone ? 8 : 4;
+    if (typeof nav.deviceMemory === "number" && nav.deviceMemory < minMemory) {
       return false;
     }
 
@@ -71,13 +80,41 @@ function canRender3D(): boolean {
   return true;
 }
 
+/** Ejecuta fn cuando la página terminó de cargar y el hilo principal está libre. */
+function whenIdleAfterLoad(fn: () => void): () => void {
+  let cancelled = false;
+  let idleId = 0;
+  const w = window as Window & {
+    requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number;
+    cancelIdleCallback?: (id: number) => void;
+  };
+  const run = () => {
+    if (cancelled) return;
+    if (w.requestIdleCallback) idleId = w.requestIdleCallback(fn, { timeout: 1500 });
+    else idleId = window.setTimeout(fn, 300);
+  };
+  if (document.readyState === "complete") run();
+  else window.addEventListener("load", run, { once: true });
+  return () => {
+    cancelled = true;
+    window.removeEventListener("load", run);
+    if (w.cancelIdleCallback) w.cancelIdleCallback(idleId);
+    else clearTimeout(idleId);
+  };
+}
+
 export default function HeroSection() {
   // Arranca en estático en TODOS lados → pintado inmediato, sin Three.js.
-  // Tras montar, los equipos capaces suben a la escena 3D.
+  // Tras cargar la página, los equipos capaces suben a la escena 3D.
   const [use3D, setUse3D] = useState(false);
 
   useEffect(() => {
-    if (canRender3D()) setUse3D(true);
+    return whenIdleAfterLoad(() => {
+      // El 3D alarga el hero (scroll de ensamble). Si el visitante ya bajó,
+      // cambiarlo ahora le movería la página: se queda en estático.
+      if (window.scrollY > 40) return;
+      if (canRender3D()) setUse3D(true);
+    });
   }, []);
 
   if (use3D) {
