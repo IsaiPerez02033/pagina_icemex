@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
+import { getClientIp, hashIp, rateLimit, safeEqual } from "@/lib/security";
 
 // NextAuth v4 lee process.env.NEXTAUTH_URL internamente. Si no está configurada
 // en Vercel, la auto-detectamos desde VERCEL_URL (que Vercel siempre expone).
@@ -11,6 +12,16 @@ if (!process.env.NEXTAUTH_URL) {
 
 const isHttps = process.env.NEXTAUTH_URL.startsWith("https://");
 
+// En producción NEXTAUTH_SECRET es obligatorio: una clave por defecto en el
+// código permitiría a cualquiera firmar sesiones de admin.
+const secret =
+  process.env.NEXTAUTH_SECRET ||
+  (process.env.NODE_ENV !== "production" ? "icemex-admin-dev-only" : undefined);
+
+// 5 intentos fallidos por IP cada 15 minutos.
+const MAX_ATTEMPTS = 5;
+const WINDOW_SEC = 15 * 60;
+
 const handler = NextAuth({
   useSecureCookies: isHttps,
   providers: [
@@ -20,40 +31,45 @@ const handler = NextAuth({
         email: { label: "Email", type: "email" },
         password: { label: "Contraseña", type: "password" },
       },
-      async authorize(credentials) {
+      async authorize(credentials, req) {
         const adminEmail = process.env.ADMIN_EMAIL;
         const adminPassword = process.env.ADMIN_PASSWORD;
 
-        // Log para debugging — aparece en Functions → Logs de Vercel
-        console.log("[ICEMEX AUTH] Intento de login:", {
-          inputEmail: credentials?.email,
-          hasInputPwd: !!credentials?.password,
-          hasEnvAdminEmail: !!adminEmail,
-          hasEnvAdminPwd: !!adminPassword,
-        });
-
         if (!adminEmail || !adminPassword) {
           console.error(
-            "[ICEMEX AUTH] ERROR: ADMIN_EMAIL y ADMIN_PASSWORD no están configurados en Vercel. Ve a Settings → Environment Variables."
+            "[ICEMEX AUTH] ADMIN_EMAIL y ADMIN_PASSWORD no están configurados en Vercel."
           );
           return null;
         }
 
-        if (
-          credentials?.email === adminEmail &&
-          credentials?.password === adminPassword
-        ) {
-          console.log("[ICEMEX AUTH] Login exitoso para:", credentials.email);
-          return {
-            id: "1",
-            name: "Admin ICEMEX",
-            email: adminEmail,
-            role: "admin",
-          };
+        const headers = new Headers(
+          Object.entries(req?.headers ?? {}).flatMap(([k, v]) =>
+            typeof v === "string" ? [[k, v] as [string, string]] : []
+          )
+        );
+        const ipKey = `login:${hashIp(getClientIp(headers))}`;
+        if (!(await rateLimit(ipKey, MAX_ATTEMPTS, WINDOW_SEC))) {
+          console.warn("[ICEMEX AUTH] Demasiados intentos, IP bloqueada temporalmente");
+          return null;
         }
 
-        console.log("[ICEMEX AUTH] Credenciales inválidas");
-        return null;
+        const email = String(credentials?.email ?? "").trim().toLowerCase();
+        const password = String(credentials?.password ?? "");
+        const ok =
+          safeEqual(email, adminEmail.trim().toLowerCase()) &&
+          safeEqual(password, adminPassword);
+
+        if (!ok) {
+          console.warn("[ICEMEX AUTH] Credenciales inválidas");
+          return null;
+        }
+
+        return {
+          id: "1",
+          name: "Admin ICEMEX",
+          email: adminEmail,
+          role: "admin",
+        };
       },
     }),
   ],
@@ -79,8 +95,8 @@ const handler = NextAuth({
       return session;
     },
   },
-  secret: process.env.NEXTAUTH_SECRET || "icemex-admin-dev-fallback-key",
-  debug: process.env.NODE_ENV !== "production",
+  secret,
+  debug: false,
 });
 
 export { handler as GET, handler as POST };

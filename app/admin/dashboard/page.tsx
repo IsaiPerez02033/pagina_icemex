@@ -67,7 +67,7 @@ export default function DashboardPage() {
         if (data.devices) setDevices(data.devices);
         if (data.traffic) setTraffic(data.traffic);
         if (data.events) setEvents(data.events);
-        if (data.realtime) setRealtime(data.realtime);
+        if (typeof data.realtime === "number") setRealtime(data.realtime);
       })
       .catch(() => {})
       .finally(() => setLoading(false));

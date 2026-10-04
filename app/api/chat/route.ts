@@ -2,9 +2,14 @@ import { createOpenAICompatible } from "@ai-sdk/openai-compatible";
 import { streamText } from "ai";
 import { products, lineNames, tagNames } from "@/lib/products";
 import { projects } from "@/lib/projects";
+import { getClientIp, hashIp, isSameOrigin, rateLimit } from "@/lib/security";
 
 export const runtime = "nodejs";
 export const maxDuration = 30;
+
+// Groq retira modelos sin aviso (llama-3.3-70b-versatile dejó de existir y el
+// chat respondía vacío). GROQ_MODEL permite cambiarlo desde Vercel sin deploy.
+const CHAT_MODEL = process.env.GROQ_MODEL || "openai/gpt-oss-120b";
 
 const groq = createOpenAICompatible({
   name: "groq",
@@ -78,25 +83,70 @@ TU TRABAJO:
 5. Si pregunta de la empresa, responde con la info de arriba.
 6. Ofrece contacto por WhatsApp (Proyectos: +52 55 7514 9833, Ventas: +52 55 6544 8428).
 
-REGLAS: Solo espanol. No inventes productos. Se conversacional. No listas enormes.`;
+REGLAS: Solo espanol. No inventes productos. Se conversacional. No listas enormes.
+FORMATO: Es un chat pequeno en celular. Respuestas cortas (maximo ~120 palabras). Texto plano con **negritas** y vinetas "- " si hace falta. NUNCA uses tablas, encabezados con # ni separadores ---.`;
+
+// Límites para que nadie agote la cuota de Groq: historial corto, mensajes
+// acotados y solo roles user/assistant (el rol system lo pone el servidor).
+const MAX_HISTORY = 12;
+const MAX_CHARS = 1200;
+
+type ChatMessage = { role: "user" | "assistant"; content: string };
+
+function sanitize(raw: unknown): ChatMessage[] | null {
+  if (!Array.isArray(raw)) return null;
+  const msgs = raw
+    .filter(
+      (m): m is ChatMessage =>
+        !!m &&
+        (m.role === "user" || m.role === "assistant") &&
+        typeof m.content === "string" &&
+        m.content.trim().length > 0
+    )
+    .slice(-MAX_HISTORY)
+    .map((m) => ({ role: m.role, content: m.content.slice(0, MAX_CHARS) }));
+  if (msgs.length === 0 || msgs[msgs.length - 1].role !== "user") return null;
+  return msgs;
+}
+
+function jsonError(message: string, status: number) {
+  return new Response(JSON.stringify({ error: message }), {
+    status,
+    headers: { "Content-Type": "application/json" },
+  });
+}
 
 export async function POST(req: Request) {
+  if (!isSameOrigin(req.headers)) return jsonError("Origen no permitido", 403);
+
+  const visitor = hashIp(getClientIp(req.headers));
+  // 20 mensajes por 10 minutos por visitante.
+  if (!(await rateLimit(`chat:${visitor}`, 20, 600))) {
+    return jsonError(
+      "Has enviado muchos mensajes seguidos. Espera unos minutos o escríbenos por WhatsApp.",
+      429
+    );
+  }
+
   try {
-    const { messages } = await req.json();
+    const body = await req.json().catch(() => null);
+    const messages = sanitize(body?.messages);
+    if (!messages) return jsonError("Mensajes inválidos", 400);
 
     const result = streamText({
-      model: groq("llama-3.3-70b-versatile"),
+      model: groq(CHAT_MODEL),
       system: SYSTEM_PROMPT,
       messages,
+      maxOutputTokens: 1200,
+      // gpt-oss razona antes de contestar; "low" basta para recomendar
+      // productos y responde más rápido.
+      providerOptions: { groq: { reasoning_effort: "low" } },
+      onError: ({ error }) => console.error("[chat] stream", error),
     });
 
     return result.toTextStreamResponse();
   } catch (error: unknown) {
-    const message =
-      error instanceof Error ? error.message : "Error interno";
-    return new Response(JSON.stringify({ error: message }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
+    console.error("[chat]", error);
+    return jsonError("Error interno", 500);
   }
 }

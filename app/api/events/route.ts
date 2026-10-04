@@ -1,80 +1,57 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createClient } from "@vercel/kv";
+import { getRedis } from "@/lib/redis";
+import { getClientIp, hashIp, isSameOrigin, rateLimit } from "@/lib/security";
+import { EVENT_NAMES, recordEvent, recordPageView, type EventName } from "@/lib/admin/kv-store";
 
-function cors() {
-  return {
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "POST, OPTIONS",
-    "Access-Control-Allow-Headers": "Content-Type",
-  };
-}
-
-export async function OPTIONS() {
-  return NextResponse.json({}, { headers: cors() });
-}
+// Rutas válidas para contar páginas vistas: solo minúsculas, números, guiones
+// y diagonales (los códigos de producto se normalizan a minúsculas). Cualquier
+// otra cosa se descarta para que nadie pueda inflar Redis con claves basura.
+const PATH_RE = /^\/[a-z0-9\-/]{0,80}$/;
 
 export async function POST(req: NextRequest) {
-  const body = await req.json().catch(() => ({}));
+  if (!isSameOrigin(req.headers)) {
+    return NextResponse.json({ ok: false }, { status: 403 });
+  }
+
+  const redis = getRedis();
+  if (!redis) return NextResponse.json({ ok: false }, { status: 503 });
+
+  const ip = getClientIp(req.headers);
+  const visitor = hashIp(ip);
+  if (!(await rateLimit(`ev:${visitor}`, 60, 60))) {
+    return NextResponse.json({ ok: false }, { status: 429 });
+  }
+
+  const body = (await req.json().catch(() => null)) as {
+    type?: unknown;
+    name?: unknown;
+    path?: unknown;
+  } | null;
+  if (!body) return NextResponse.json({ ok: false }, { status: 400 });
 
   try {
-    const url = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL || "";
-    const token = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN || "";
-
-    if (!url || !token) {
-      return NextResponse.json({ ok: false, error: "UPSTASH_REDIS_REST_URL or UPSTASH_REDIS_REST_TOKEN not found" }, { headers: cors() });
-    }
-
-    const redis = createClient({ url, token });
-
     if (body.type === "event") {
-      const name = body.name;
-      await redis.incr(`icemex:event:${today()}:${name}`);
-      // Timeline para notificaciones (últimos 20 eventos)
-      await redis.lpush(`icemex:timeline`, JSON.stringify({ name, ts: Date.now() }));
-      await redis.ltrim(`icemex:timeline`, 0, 19);
-      await redis.expire(`icemex:timeline`, 30 * 24 * 3600);
-      return NextResponse.json({ ok: true }, { headers: cors() });
+      if (!EVENT_NAMES.includes(body.name as EventName)) {
+        return NextResponse.json({ ok: false }, { status: 400 });
+      }
+      await recordEvent(redis, body.name as EventName);
+      return NextResponse.json({ ok: true });
     }
 
-    const ip =
-      req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-      req.headers.get("x-real-ip") ||
-      "unknown";
-
-    const country = req.headers.get("x-vercel-ip-country") || "unknown";
-    const todayStr = today();
-    const hour = new Date().getHours();
-    const ts = Date.now();
-    const p = body.path || "/";
-    const path = p === "/" ? "/" : p;
-
-    await redis.incr(`icemex:pv:${todayStr}:${path}`);
-    await redis.expire(`icemex:pv:${todayStr}:${path}`, 30 * 24 * 3600);
-
-    if (ip && ip !== "unknown") {
-      let hash = 0;
-      for (let i = 0; i < ip.length; i++) hash = (hash << 5) - hash + ip.charCodeAt(i);
-      await redis.set(`icemex:visitor:${todayStr}:${Math.abs(hash).toString(36)}`, ts, { ex: 30 * 24 * 3600 });
+    const path = typeof body.path === "string" ? body.path.toLowerCase() : "";
+    if (!PATH_RE.test(path) || path.startsWith("/admin")) {
+      return NextResponse.json({ ok: false }, { status: 400 });
     }
 
-    if (country && country !== "unknown") {
-      await redis.incr(`icemex:country:${todayStr}:${country}`);
-    }
-
-    const ua = req.headers.get("user-agent") || "";
-    let device = "Desktop";
-    if (/iphone|ipod|android.*mobile/i.test(ua)) device = "Mobile";
-    else if (/ipad|tablet/i.test(ua)) device = "Tablet";
-    await redis.incr(`icemex:device:${todayStr}:${device}`);
-
-    await redis.set(`icemex:realtime:${hour}:${ip.substring(0, 6)}`, ts, { ex: 300 });
-
-    return NextResponse.json({ ok: true }, { headers: cors() });
-  } catch (e: any) {
-    return NextResponse.json({ ok: false, error: String(e?.message || e) }, { status: 500, headers: cors() });
+    const country = req.headers.get("x-vercel-ip-country") || undefined;
+    await recordPageView(redis, {
+      path: path.length > 1 ? path.replace(/\/+$/, "") : path,
+      visitor,
+      country: country && /^[A-Z]{2}$/.test(country) ? country : undefined,
+      userAgent: req.headers.get("user-agent") || "",
+    });
+    return NextResponse.json({ ok: true });
+  } catch {
+    return NextResponse.json({ ok: false }, { status: 500 });
   }
-}
-
-function today() {
-  return new Date().toISOString().split("T")[0];
 }

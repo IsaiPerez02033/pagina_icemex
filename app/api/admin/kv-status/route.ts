@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
-import { createClient } from "@vercel/kv";
+import { getRedis } from "@/lib/redis";
 
 export async function GET() {
   const session = await getServerSession();
@@ -16,7 +16,8 @@ export async function GET() {
     REDIS_URL: process.env.REDIS_URL ? "presente" : "ausente",
   };
 
-  if (!process.env.UPSTASH_REDIS_REST_URL || !process.env.UPSTASH_REDIS_REST_TOKEN) {
+  const client = getRedis();
+  if (!client) {
     return NextResponse.json({
       connected: false,
       message: "UPSTASH_REDIS_REST_URL y UPSTASH_REDIS_REST_TOKEN no configuradas en Vercel",
@@ -25,11 +26,6 @@ export async function GET() {
   }
 
   try {
-    const client = createClient({
-      url: process.env.UPSTASH_REDIS_REST_URL,
-      token: process.env.UPSTASH_REDIS_REST_TOKEN,
-    });
-
     const testKey = "icemex:diagnostic:test";
     await client.set(testKey, Date.now().toString(), { ex: 60 });
     const value = await client.get(testKey);

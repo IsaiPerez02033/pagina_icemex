@@ -21,12 +21,14 @@ export default function AnalyticsPage() {
     fetch("/api/admin/analytics")
       .then((r) => r.json())
       .then((data) => {
+        // Con datos reales se muestran aunque estén vacíos: nunca mezclar
+        // números reales con simulados.
         if (data?.source === "kv" && data.metrics) {
           setMetrics(data.metrics);
+          setTraffic(data.traffic ?? []);
+          setPages(data.topPages ?? []);
           setIsRealData(true);
         }
-        if (data.traffic && data.traffic.length > 0) setTraffic(data.traffic);
-        if (data.topPages && data.topPages.length > 0) setPages(data.topPages);
       })
       .catch(() => {})
       .finally(() => setLoading(false));

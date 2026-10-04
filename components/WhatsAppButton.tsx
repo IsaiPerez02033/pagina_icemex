@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { buildWhatsAppUrlVentas } from "@/lib/whatsapp";
-import { sendEvent } from "@/lib/events";
 
 // Re-export para no romper imports existentes
 export { buildWhatsAppUrlProyectos, buildWhatsAppUrlVentas, buildWhatsAppUrl } from "@/lib/whatsapp";
@@ -26,7 +25,6 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"
-      onClick={() => sendEvent("whatsapp_click")}
       className="wa-fab interactive"
       style={{
         opacity: visible ? 1 : 0,

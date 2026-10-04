@@ -121,7 +121,6 @@ export default function ContactSection() {
             target="_blank"
             rel="noopener noreferrer"
             className="interactive"
-            onClick={() => sendEvent("whatsapp_click")}
             style={{
               display: "inline-flex",
               alignItems: "center",

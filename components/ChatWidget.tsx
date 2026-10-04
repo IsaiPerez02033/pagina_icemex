@@ -130,6 +130,10 @@ export default function ChatWidget() {
       });
 
       if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        if (res.status === 429 && data?.error) {
+          throw Object.assign(new Error(data.error), { userFacing: true });
+        }
         throw new Error(`Error ${res.status}`);
       }
 
@@ -165,6 +169,10 @@ export default function ChatWidget() {
         );
       }
 
+      // Si el modelo falla a mitad del stream la respuesta llega vacía:
+      // mostrarlo como error en vez de dejar una burbuja en blanco.
+      if (!fullContent.trim()) throw new Error("Respuesta vacía");
+
       setMessages((prev) =>
         prev.map((m) =>
           m.id === assistantId ? { ...m, content: fullContent } : m
@@ -173,7 +181,9 @@ export default function ChatWidget() {
     } catch (err: unknown) {
       if (err instanceof Error && err.name === "AbortError") return;
       setError(
-        "Error al conectar con el asistente. Por favor intenta de nuevo."
+        err instanceof Error && (err as { userFacing?: boolean }).userFacing
+          ? err.message
+          : "Error al conectar con el asistente. Por favor intenta de nuevo."
       );
       // Remove empty assistant message
       setMessages((prev) => prev.filter((m) => m.content !== ""));
@@ -192,12 +202,34 @@ export default function ChatWidget() {
     sendMessage(text);
   };
 
+  // Markdown mínimo: **negritas** en línea, encabezados (#), viñetas y tablas
+  // (cada fila se muestra como "celda · celda"). Las líneas "---" se omiten.
+  const renderInline = (text: string) =>
+    text.split(/(\*\*[^*]+\*\*|\*[^*\s][^*]*\*)/g).map((part, j) => {
+      if (part.startsWith("**") && part.endsWith("**") && part.length > 4) {
+        return (
+          <strong key={j} style={{ color: "var(--text-primary)" }}>
+            {part.slice(2, -2)}
+          </strong>
+        );
+      }
+      if (part.startsWith("*") && part.endsWith("*") && part.length > 2) {
+        return <em key={j}>{part.slice(1, -1)}</em>;
+      }
+      return part;
+    });
+
   const renderContent = (content: string) => {
     if (!content) return null;
-    const blocks = content.split("\n").filter(Boolean);
-    return blocks.map((line, i) => {
-      const trimmed = line.trim();
-      if (trimmed.startsWith("**") && trimmed.endsWith("**")) {
+    const blocks = content
+      // El modelo usa guiones no separables (U+2011) en los códigos.
+      .replace(/[‐‑]/g, "-")
+      .split("\n")
+      .map((l) => l.trim())
+      .filter((l) => l && !/^-{3,}$/.test(l) && !/^\|?[\s:|-]+\|?$/.test(l));
+    return blocks.map((trimmed, i) => {
+      const heading = trimmed.match(/^#{1,6}\s+(.*)$/);
+      if (heading || (trimmed.startsWith("**") && trimmed.endsWith("**"))) {
         return (
           <strong
             key={i}
@@ -208,13 +240,30 @@ export default function ChatWidget() {
               marginBottom: 2,
             }}
           >
-            {trimmed.replace(/\*\*/g, "")}
+            {(heading ? heading[1] : trimmed).replace(/\*\*/g, "")}
           </strong>
         );
       }
+      if (trimmed.startsWith("|")) {
+        const cells = trimmed
+          .split("|")
+          .map((c) => c.trim())
+          .filter(Boolean)
+          .join(" · ");
+        return (
+          <span key={i} style={{ display: "block", marginTop: 4 }}>
+            {renderInline(cells)}
+          </span>
+        );
+      }
+      const bullet = trimmed.match(/^(?:[-*•]|\d+[.)])\s+(.*)$/);
       return (
-        <span key={i} style={{ display: "block" }}>
-          {trimmed}
+        <span
+          key={i}
+          style={{ display: "block", paddingLeft: bullet ? 12 : 0 }}
+        >
+          {bullet ? "• " : null}
+          {renderInline(bullet ? bullet[1] : trimmed)}
         </span>
       );
     });

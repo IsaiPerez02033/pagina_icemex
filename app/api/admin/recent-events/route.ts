@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
-import { createClient } from "@vercel/kv";
+import { getRedis } from "@/lib/redis";
 
 export const dynamic = "force-dynamic";
 
@@ -15,15 +15,12 @@ export async function GET() {
     return NextResponse.json({ error: "No autorizado" }, { status: 401 });
   }
 
-  const url = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL || "";
-  const token = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN || "";
-
-  if (!url || !token) {
+  const redis = getRedis();
+  if (!redis) {
     return NextResponse.json({ events: [] });
   }
 
   try {
-    const redis = createClient({ url, token });
     const raw = await redis.lrange("icemex:timeline", 0, 9);
     const events: TimelineEvent[] = raw.map((r) => {
       try {
