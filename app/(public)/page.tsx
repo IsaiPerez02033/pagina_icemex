@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import HeroSection from "@/components/HeroSection";
+import { lineShowcase } from "@/lib/fichas";
 
 export const metadata: Metadata = {
   // absolute: el template del layout agregaría " · ICEMEX" otra vez.
@@ -40,6 +41,8 @@ const CertificationsBanner = dynamic(
 const ContactSection = dynamic(() => import("@/components/ContactSection"));
 
 export default function HomePage() {
+  const lines = lineShowcase();
+  const productCount = lines.reduce((sum, l) => sum + l.count, 0);
   return (
     <>
       <HeroSection />
@@ -47,8 +50,8 @@ export default function HomePage() {
       <div style={{ position: "relative", background: "var(--bg-primary)" }}>
 
         <BrandsSection />
-        <ProductsSection />
-        <AboutSection />
+        <ProductsSection lines={lines} />
+        <AboutSection productCount={productCount} />
         <ServicesTeaser />
         <ProjectsCollage />
         <CertificationsBanner />

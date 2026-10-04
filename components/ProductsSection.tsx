@@ -4,55 +4,23 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { products, lineNames, type ProductLine } from "@/lib/products";
-import LineIllustration from "@/components/LineIllustrations";
+import { lineNames, type ProductLine } from "@/lib/products";
+import type { LineShowcase } from "@/lib/fichas";
 import SpotlightCard from "@/components/SpotlightCard";
 
-interface LineCard {
-  line: ProductLine;
-  n: string;
-  tagline: string;
-}
+// Resumen de cada línea según sus fichas técnicas 2026.
+const taglines: Record<ProductLine, string> = {
+  AL: "LED de 20 a 250 W para calles, avenidas y carreteras · Philips y CREE",
+  IS: "All in One y con panel independiente · sin cableado ni recibo de luz",
+  LU: "Bolardos, columnas luminosas y 24 modelos de punta de poste",
+  RF: "Reflectores de 120 a 600 W, campanas UFO y marquesinas CREE",
+  LC: "Paneles, gabinetes y lineales · CREE TrueWhite® con IRC > 90",
+  PT: "Rectos, cónicos y ornamentales de 3 a 15 m en acero A-36",
+  AC: "Brazos, anclas, bases de concreto, picobas y señalización",
+};
 
-const lineCards: LineCard[] = [
-  {
-    line: "AL",
-    n: "01",
-    tagline: "Vialidades, avenidas y caminos",
-  },
-  {
-    line: "IS",
-    n: "02",
-    tagline: "Autónomo · 100% solar · MPPT patentado",
-  },
-  {
-    line: "LU",
-    n: "03",
-    tagline: "Bolardos y postes decorativos",
-  },
-  {
-    line: "RF",
-    n: "04",
-    tagline: "Alta potencia · BetaLED® · NanoOptic®",
-  },
-  {
-    line: "LC",
-    n: "05",
-    tagline: "Naves, oficinas y centros comerciales",
-  },
-  {
-    line: "PT",
-    n: "06",
-    tagline: "Recto, cónico, hexagonal y especiales",
-  },
-  {
-    line: "AC",
-    n: "07",
-    tagline: "Brazos, anclas, bases y picobas",
-  },
-];
-
-export default function ProductsSection() {
+export default function ProductsSection({ lines }: { lines: LineShowcase[] }) {
+  const total = lines.reduce((sum, l) => sum + l.count, 0);
   const sectionRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
@@ -152,10 +120,10 @@ export default function ProductsSection() {
               lineHeight: 1.7,
             }}
           >
-            Siete líneas que cubren desde alumbrado público y solar autónomo
-            hasta bolardos urbanos, reflectores de alta potencia, luminarios
-            comerciales, postería y accesorios. Haz clic en una línea para ver
-            su catálogo completo.
+            {total} productos en siete líneas, desde alumbrado público y solar
+            autónomo hasta bolardos urbanos, reflectores de alta potencia,
+            luminarios comerciales, postería y accesorios. Cada uno con su
+            ficha técnica descargable. Elige una línea para explorarla.
           </p>
         </div>
 
@@ -166,28 +134,41 @@ export default function ProductsSection() {
             gap: 20,
           }}
         >
-          {lineCards.map((c) => {
+          {lines.map((c, i) => {
             return (
               <SpotlightCard key={c.line} className="p-0 border-none bg-transparent">
                 <Link
-                  href="/catalogo"
+                  href={`/productos?linea=${c.line}`}
                   className="line-card interactive group block w-full h-full"
                 >
                   <div className="line-card-illu" aria-hidden>
-                    <LineIllustration line={c.line} />
                     <div className="line-card-illu-overlay" />
+                    {/* eslint-disable-next-line @next/next/no-img-element -- foto webp ya optimizada por fichas-src/build.py */}
+                    <img
+                      src={c.thumb.src}
+                      srcSet={`${c.thumb.src} ${c.thumb.width}w, ${c.photo.src} ${c.photo.width}w`}
+                      sizes="(max-width: 700px) 80vw, 340px"
+                      width={c.photo.width}
+                      height={c.photo.height}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
 
                   <div className="line-card-body">
                     <div className="line-card-meta">
                       <span>
-                        {c.n} · Línea {c.line}
+                        {String(i + 1).padStart(2, "0")} · Línea {c.line}
                       </span>
+                      <span className="line-card-count">{c.count} productos</span>
                     </div>
 
                     <h3 className="line-card-title">{lineNames[c.line]}</h3>
 
-                    <p className="line-card-tagline">{c.tagline}</p>
+                    <p className="line-card-tagline">{taglines[c.line]}</p>
+
+                    <span className="line-card-action">Ver productos →</span>
                   </div>
                 </Link>
               </SpotlightCard>
@@ -208,14 +189,17 @@ export default function ProductsSection() {
                 en el <span>catálogo completo</span>
               </h3>
               <p className="catalog-cta-text">
-                176 páginas con fichas técnicas, especificaciones,
-                certificaciones y aplicaciones de los {products.length}{" "}
-                productos disponibles. Descárgalo o consúltalo online.
+                176 páginas con especificaciones, certificaciones y
+                aplicaciones, más la ficha técnica individual de cada uno de
+                los {total} productos. Descárgalo o consúltalo online.
               </p>
 
               <div className="catalog-cta-buttons">
                 <Link href="/catalogo" className="catalog-cta-primary interactive">
                   ↓ Ver catálogo PDF
+                </Link>
+                <Link href="/productos" className="catalog-cta-secondary interactive">
+                  Explorar los {total} productos →
                 </Link>
               </div>
             </div>
@@ -226,7 +210,7 @@ export default function ProductsSection() {
                 <span className="catalog-cta-lbl">Páginas</span>
               </div>
               <div>
-                <span className="catalog-cta-num">+50</span>
+                <span className="catalog-cta-num">{total}</span>
                 <span className="catalog-cta-lbl">Productos</span>
               </div>
               <div>
@@ -257,6 +241,8 @@ export default function ProductsSection() {
               <span>NanoOptic®</span>
               <span>·</span>
               <span>MPPT Patentado</span>
+              <span>·</span>
+              <span>CREE TrueWhite®</span>
             </div>
           </div>
         </div>

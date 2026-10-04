@@ -153,3 +153,46 @@ export const standaloneFichas = fichas.filter((f) => !covered.has(f.code));
  * correcto. Se usan para redirecciones 308 (next.config.js) y en /api/productos.
  */
 export const LEGACY_CODES: Record<string, string> = legacyCodes;
+
+// Producto que representa cada línea en la portada (foto de su ficha).
+const LINE_PHOTO: Record<ProductLine, string> = {
+  AL: "AL-LC1001",
+  IS: "IS-LS1003",
+  LU: "PP-LC1019",
+  RF: "RF-RE1003",
+  LC: "LC-GEM1009",
+  PT: "POSTES-ESPECIALES",
+  AC: "BASE-PIRAMIDAL",
+};
+
+// La foto de la ficha de postes especiales trae 5 postes en cuadrícula; en la
+// tarjeta se usa solo la fila de arriba (Cisne, Cisne doble y Gaviota).
+const POSTES_PHOTO: FichaImage = {
+  src: "/lineas/postes.webp?v=95c92abc",
+  width: 854,
+  height: 455,
+};
+
+export interface LineShowcase {
+  line: ProductLine;
+  count: number;
+  photo: FichaImage;
+  thumb: FichaImage;
+}
+
+/** Foto y número de productos de cada línea (mismo conteo que /productos). */
+export function lineShowcase(): LineShowcase[] {
+  const counts = new Map<ProductLine, number>();
+  for (const x of [...catalogProducts, ...standaloneFichas]) {
+    counts.set(x.line, (counts.get(x.line) ?? 0) + 1);
+  }
+  return (Object.keys(LINE_PHOTO) as ProductLine[]).map((line) => {
+    const f = getFicha(LINE_PHOTO[line])!;
+    return {
+      line,
+      count: counts.get(line) ?? 0,
+      photo: line === "PT" ? POSTES_PHOTO : f.image,
+      thumb: line === "PT" ? POSTES_PHOTO : f.thumb,
+    };
+  });
+}

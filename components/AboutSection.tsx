@@ -6,9 +6,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import AnimatedCounter from "@/components/AnimatedCounter";
 
-const stats = [
+const stats = (productCount: number) => [
   { val: 20, prefix: "+", suffix: "", label: "Años de experiencia" },
-  { val: 176, prefix: "", suffix: "", label: "Productos en catálogo" },
+  { val: productCount, prefix: "", suffix: "", label: "Productos en catálogo" },
   { val: 7, prefix: "0", suffix: "", label: "Líneas de producto" },
   { val: 100, prefix: "", suffix: "%", label: "Tecnología LED" },
 ];
@@ -20,7 +20,7 @@ const certifications = [
   "NOM-013-ENER",
 ];
 
-export default function AboutSection() {
+export default function AboutSection({ productCount }: { productCount: number }) {
   const ref = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
@@ -193,7 +193,7 @@ export default function AboutSection() {
             overflow: "hidden",
           }}
         >
-          {stats.map((s) => (
+          {stats(productCount).map((s) => (
             <div
               key={s.label}
               className="stat-block"
