@@ -35,6 +35,8 @@ LINE_BY_PREFIX = {
     "AL": "AL", "IS": "IS", "LU": "LU", "PP": "LU", "ICELUM": "LU",
     "BOLARD": "LU", "RF": "RF", "FL": "LC", "LC": "LC", "POSTES": "PT",
 }
+# Fichas cuyo prefijo no corresponde a su línea.
+LINE_OVERRIDE = {"IS-LF1016": "AL"}  # LEAFLED: luminaria tipo cobra de red, no solar
 
 # Nombres del índice sin acentos → nombre correcto para mostrar.
 NAME_FIXES = {
@@ -51,6 +53,8 @@ NAME_FIXES = {
     "Accesorios (Portalampara, Adaptadores, Fotocelda, Malla)":
         "Accesorios (Portalámpara, Adaptadores, Fotocelda, Malla)",
     "Esferas, Acrilicos y Cristales": "Esferas, Acrílicos y Cristales",
+    # El índice original la llama solar, pero es de red (85–265 V, sin panel).
+    "Luminaria solar tipo Cobra": "Luminaria LEAFLED tipo Cobra",
     "Senaliticas Industriales": "Señaléticas Industriales",
 }
 
@@ -123,7 +127,7 @@ def main():
         code = entry["codigo"]
         src = json.loads((DATA / f"{code}.json").read_text())
         name = NAME_FIXES.get(entry["nombre"], entry["nombre"])
-        line = LINE_BY_PREFIX.get(code.split("-")[0], "AC")
+        line = LINE_OVERRIDE.get(code) or LINE_BY_PREFIX.get(code.split("-")[0], "AC")
         pdf = FICHAS / entry["archivo"]
 
         description = src.get("description", [])

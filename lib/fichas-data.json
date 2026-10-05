@@ -424,13 +424,12 @@
  },
  {
   "code": "IS-LF1016",
-  "name": "Luminaria solar tipo Cobra",
-  "line": "IS",
+  "name": "Luminaria LEAFLED tipo Cobra",
+  "line": "AL",
   "tags": [
    "vialidad",
    "parques",
    "comercial",
-   "solar",
    "residencial"
   ],
   "pages": [

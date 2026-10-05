@@ -68,8 +68,6 @@ SECTIONS = [
      "Brazos, anclas, bases de concreto, mobiliario urbano, refacciones y señalización.",
      ["BRAZOS", "BASE-PIRAMIDAL", "ESFERAS-CRISTALES"]),
 ]
-# Fichas que en el catálogo van en otra sección que en el sitio.
-LINE_OVERRIDE = {"IS-LF1016": "AL"}  # luminaria tipo cobra de red, no solar
 
 # Portada: (código, izquierda, ancho, alto, abajo) en mm dentro del collage.
 COLLAGE = [
@@ -185,7 +183,7 @@ def main(out: Path):
     sections = []
     for i, (line, name, title, desc, pics) in enumerate(SECTIONS):
         items = sorted(
-            (f for f in fichas if LINE_OVERRIDE.get(f["code"], f["line"]) == line),
+            (f for f in fichas if f["line"] == line),
             key=lambda f: (min(f["pages"] or [999]), f["code"]))
         items = [{"code": f["code"], "model": f["model"],
                   "n": pymupdf.open(FICHAS / f"{f['code']}.pdf").page_count} for f in items]

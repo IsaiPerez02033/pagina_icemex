@@ -2,6 +2,7 @@ import Link from "next/link";
 import { lineNames, tagNames, type ProductLine, type ProductTag } from "@/lib/products";
 import { catalogPages, fichas, fichaHref, kpiValue, type Ficha } from "@/lib/fichas";
 import { buildWhatsAppUrlProyectos } from "@/lib/whatsapp";
+import { productBrand, seoFaqs, seoKeywords } from "@/lib/seo";
 
 const pagesLabel = ([first, last]: number[]) =>
   first === last ? `Página ${first}` : `Páginas ${first}–${last}`;
@@ -52,17 +53,24 @@ export default function FichaPage({ ficha, product }: FichaPageProps) {
     `Hola ICEMEX, me interesa cotizar: *${name}* (${code}). ¿Me pueden dar precio y disponibilidad?`
   );
   const subtitle = [ficha.power, ficha.variant].filter(Boolean).join(" · ");
+  const faqs = seoFaqs(ficha, name, code);
+  const url = `https://icemex.mx/producto/${code}`;
 
   const jsonLd = [
     {
       "@context": "https://schema.org",
       "@type": "Product",
       name,
+      alternateName: [ficha.model, code].filter((x) => x.toLowerCase() !== name.toLowerCase()),
       sku: code,
+      mpn: code,
+      model: ficha.model,
+      url,
       description: ficha.description.join(" ") || `Ficha técnica de ${name}`,
       image: [`https://icemex.mx${ficha.image.src}`, `https://icemex.mx${ficha.cover.src}`],
-      brand: { "@type": "Brand", name: "ICEMEX" },
-      category: lineNames[line],
+      brand: { "@type": "Brand", name: productBrand(ficha) },
+      category: `${lineNames[line]} > ${ficha.kind}`,
+      keywords: seoKeywords(ficha, name, code, line, tags.map((t) => tagNames[t])).join(", "),
       additionalProperty: ficha.kpis.map((k) => ({
         "@type": "PropertyValue",
         name: k.l,
@@ -81,8 +89,17 @@ export default function FichaPage({ ficha, product }: FichaPageProps) {
           name: lineNames[line],
           item: `https://icemex.mx/productos?linea=${line}`,
         },
-        { "@type": "ListItem", position: 4, name },
+        { "@type": "ListItem", position: 4, name, item: url },
       ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
     },
   ];
 
@@ -229,6 +246,18 @@ export default function FichaPage({ ficha, product }: FichaPageProps) {
                 {ficha.mount && <p className="ficha-paragraph">{ficha.mount}</p>}
               </section>
             )}
+
+            <section>
+              <h2>Preguntas frecuentes</h2>
+              <dl className="ficha-faq">
+                {faqs.map((f) => (
+                  <div key={f.q}>
+                    <dt>{f.q}</dt>
+                    <dd>{f.a}</dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
           </div>
 
           <aside className="ficha-aside">

@@ -11,6 +11,7 @@ import {
 import { buildWhatsAppUrlProyectos } from "@/lib/whatsapp";
 import { fichaForProduct, ownFicha, standaloneFichas, type Ficha } from "@/lib/fichas";
 import FichaPage, { FichaDownload } from "@/components/FichaPage";
+import { seoDescription, seoKeywords, seoTitle } from "@/lib/seo";
 
 const standalone = (code: string) =>
   standaloneFichas.find((f) => f.code === code);
@@ -30,15 +31,19 @@ function fichaMetadata(
   line: ProductLine,
   tags: string[]
 ): Metadata {
-  const lead = f.summary || f.kind;
+  const title = seoTitle(f, name);
+  const description = seoDescription(f, name, code);
   return {
-    title: `${name} (${code}) — ${lineNames[line]}`,
-    description: `${lead.replace(/[.…]?$/, ".")} Ficha técnica ${code} con especificaciones; cotiza por WhatsApp.`,
-    keywords: [name, code, f.kind, lineNames[line], ...tags, "ficha técnica", "ICEMEX", "cotizar"],
+    title,
+    description,
+    keywords: seoKeywords(f, name, code, line, tags),
     openGraph: {
-      title: `${name} · ${lineNames[line]}`,
-      description: f.kind,
-      images: [{ url: f.cover.src, width: f.cover.width, height: f.cover.height }],
+      title: `${title} · ICEMEX`,
+      description,
+      images: [
+        { url: f.image.src, width: f.image.width, height: f.image.height, alt: name },
+        { url: f.cover.src, width: f.cover.width, height: f.cover.height },
+      ],
     },
     alternates: { canonical: `https://icemex.mx/producto/${code}` },
   };

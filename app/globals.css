@@ -2912,6 +2912,24 @@ body[data-chat-open="true"] .wa-fab {
   padding-left: 16px;
   border-left: 3px solid var(--accent-red);
 }
+.ficha-faq > div {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--grid-lines);
+}
+.ficha-faq > div:first-child {
+  padding-top: 0;
+}
+.ficha-faq dt {
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.ficha-faq dd {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
 .ficha-apps {
   list-style: none;
   display: flex;
