@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Catálogo ICEMEX {{ year }}</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: "Inter", sans-serif; color: #1f2024; font-size: 8pt; line-height: 1.4; }
+  .page { width: 210mm; height: 297mm; position: relative; overflow: hidden; page-break-after: always; background: #fff; }
+  .page:last-child { page-break-after: auto; }
+  .display { font-family: "Archivo", sans-serif; font-style: italic; font-weight: 900; font-stretch: 125%; letter-spacing: -0.01em; text-transform: uppercase; }
+  .h { font-family: "Archivo", sans-serif; font-weight: 700; font-stretch: 112%; }
+  .sep { display: inline-block; width: 5px; height: 5px; background: #de0e20; transform: skewX(-20deg); margin: 0 3mm 2px; }
+  .stripes { position: absolute; right: -6mm; bottom: 0; width: 82mm; height: 30mm; }
+  .stripes i { position: absolute; bottom: 0; width: 28mm; height: 100%; transform: skewX(-38deg); transform-origin: bottom left; }
+  .shot { position: relative; display: flex; align-items: flex-end; justify-content: center; }
+  .shot img { position: relative; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
+  /* Sombra en una copia aparte (ver ficha.html.j2). */
+  .shot img.sh { position: absolute; left: 0; top: 0; filter: brightness(0) blur(16px); opacity: .6; transform: translateY(10px); }
+
+  /* ---------- Portada ---------- */
+  .cover { background: #000 url(assets/portada.jpg) center / cover no-repeat; color: #fff; }
+  .cover .logo { position: absolute; left: 14mm; top: 13mm; width: 68mm; }
+  .cover .tag { position: absolute; right: 14mm; top: 21mm; text-align: right; }
+  .cover .tag small { display: block; color: #b9bbc0; font-size: 8pt; letter-spacing: 0.04em; }
+  .cover .tag b { font-family: "Archivo"; font-stretch: 125%; font-weight: 800; font-size: 12pt; letter-spacing: 0.04em; }
+  .cover .collage { position: absolute; left: 10mm; right: 10mm; top: 46mm; height: 116mm;
+    background: radial-gradient(closest-side, rgba(170,28,34,.5), rgba(170,28,34,0)); }
+  .cover .collage .shot { position: absolute; bottom: 0; }
+  .cover .tblock { position: absolute; left: 14mm; right: 14mm; top: 170mm; }
+  .cover .kind { color: #d5d6da; font-size: 11pt; margin-bottom: 2mm; }
+  .cover h1 { margin-left: -1.5mm; font-size: 60pt; line-height: .95; }
+  .cover h1 em { font-style: inherit; color: #de0e20; }
+  .cover .sub { margin-top: 4mm; font-size: 13pt; font-weight: 700; }
+  .cover .sub em { font-style: normal; font-weight: 400; }
+  .cover .lines { position: absolute; left: 14mm; right: 14mm; top: 240mm; border-top: 1px solid #4d4e53; padding-top: 4mm;
+    display: flex; flex-wrap: wrap; gap: 2mm 0; font-size: 8.4pt; color: #c8c9cd; width: 150mm; }
+  .cover .lines span { white-space: nowrap; }
+  .cover .contact { position: absolute; left: 14mm; bottom: 15mm; font-size: 8.6pt; font-weight: 600; line-height: 1.7; }
+  .cover .contact small { display: block; color: #9a9ca2; font-size: 7pt; font-weight: 400; }
+
+  /* ---------- Contenido ---------- */
+  .top { height: 30mm; background: #000; color: #fff; position: relative; }
+  .top .logo { position: absolute; left: 14mm; top: 8mm; width: 40mm; }
+  .top .model { position: absolute; right: 14mm; top: 9mm; text-align: right; }
+  .top .model b { font-size: 13pt; }
+  .top .model small { display: block; color: #a6a8ae; font-size: 7.4pt; margin-top: 1.2mm; }
+  .bar { height: 1.6mm; display: flex; }
+  .bar i { flex: 1; } .bar i:nth-child(1){background:#fdd35a} .bar i:nth-child(2){background:#ee7f0b} .bar i:nth-child(3){background:#de0e20; flex: 4}
+  .content { padding: 8mm 14mm 0; }
+  .foot { position: absolute; left: 14mm; right: 14mm; bottom: 9mm; border-top: 1px solid #e3e4e7; padding-top: 3.5mm; display: flex; justify-content: space-between; font-size: 6.9pt; color: #5a5d66; }
+  .foot b { font-weight: 600; color: #1f2024; }
+  .toc-sec { display: flex; align-items: baseline; gap: 3mm; margin: 5mm 0 1.5mm; padding-bottom: 1.6mm; border-bottom: 1px solid #1f2024; }
+  .toc-sec:first-child { margin-top: 0; }
+  .toc-sec .n { font-size: 15pt; color: #de0e20; line-height: 1; }
+  .toc-sec .t { font-size: 11pt; flex: 1; }
+  .toc-sec .t small { font-family: "Inter"; font-weight: 400; font-size: 7.6pt; color: #8a8d95; margin-left: 2mm; }
+  .toc-sec .p { font-family: "Archivo"; font-stretch: 112%; font-weight: 800; font-size: 10pt; }
+  .toc-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 9mm; }
+  .toc-row { display: flex; align-items: baseline; height: {{ row_mm }}mm; border-bottom: 1px solid #eceded; font-size: 7.6pt; color: #1f2024; text-decoration: none; }
+  .toc-row b { min-width: 23mm; flex: none; padding-right: 3mm; font-weight: 600; white-space: nowrap; }
+  .toc-row span { flex: 1; color: #5a5d66; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 2mm; }
+  .toc-row i { font-style: normal; font-weight: 700; }
+
+  /* ---------- Separador de sección ---------- */
+  .section { background: #0b0b0d; color: #fff; }
+  .section::before { content: ""; position: absolute; left: -20%; right: -20%; top: 118mm; height: 200mm;
+    background: radial-gradient(closest-side, rgba(170,28,34,.55), rgba(170,28,34,0)); }
+  .section .logo { position: absolute; left: 14mm; top: 13mm; width: 44mm; }
+  .section .tag { position: absolute; right: 14mm; top: 15mm; text-align: right; color: #9a9ca2; font-size: 8pt; letter-spacing: .04em; }
+  .section .num { position: absolute; left: 12mm; top: 36mm; font-size: 110pt; line-height: 1; color: transparent; -webkit-text-stroke: 1.2px #de0e20; }
+  .section h1 { position: absolute; left: 13mm; right: 14mm; top: 82mm; font-size: 50pt; line-height: .95; }
+  .section .desc { position: absolute; left: 14mm; top: 136mm; width: 120mm; font-size: 11pt; color: #c8c9cd; line-height: 1.5; }
+  .section .count { position: absolute; left: 14mm; top: 157mm; font-size: 9pt; font-weight: 700; }
+  .section .count em { font-style: normal; font-weight: 400; color: #9a9ca2; }
+  .section .trio { position: absolute; left: 14mm; right: 14mm; top: 178mm; height: 82mm; display: flex; align-items: flex-end; justify-content: center; gap: 6mm; }
+  .section .trio .shot { flex: 1; height: 100%; }
+  .section .floor { position: absolute; left: 14mm; right: 14mm; top: 262mm; border-top: 1px solid #36373b; }
+
+  /* ---------- Contraportada ---------- */
+  .back { background: #000 url(assets/portada.jpg) center / cover no-repeat; color: #fff; }
+  .back .box { position: absolute; left: 0; right: 0; top: 108mm; text-align: center; }
+  .back .box img { width: 92mm; }
+  .back .box .co { margin-top: 4mm; color: #b4b6bb; font-size: 8pt; }
+  .back .box .data { margin-top: 12mm; font-size: 12pt; font-weight: 600; line-height: 1.9; }
+  .back .box .data b { font-family: "Archivo"; font-stretch: 125%; font-weight: 800; font-size: 16pt; letter-spacing: .02em; }
+  .back .legal { position: absolute; left: 14mm; bottom: 14mm; width: 120mm; color: #8a8d95; font-size: 7pt; }
+</style>
+</head>
+<body>
+{% set stripes %}<div class="stripes"><i style="left:0;background:#fdd35a"></i><i style="left:15mm;background:#ee7f0b"></i><i style="left:30mm;background:#de0e20"></i><i style="left:45mm;background:#aa1c22"></i></div>{% endset %}
+{% macro shot(src, style="") %}<div class="shot" style="{{ style }}"><img class="sh" src="{{ src }}" alt=""><img src="{{ src }}" alt=""></div>{% endmacro %}
+
+<!-- Portada -->
+<div class="page cover">
+  <img class="logo" src="assets/logo-blanco.png" alt="ICEMEX">
+  <div class="tag"><small>Catálogo de productos</small><b>{{ year }}</b></div>
+  <div class="collage">
+    {% for c in collage %}{{ shot(c.src, c.style) }}{% endfor %}
+  </div>
+  <div class="tblock">
+    <div class="kind">Iluminación LED, solar y urbana</div>
+    <h1 class="display">Catálogo<br><em>{{ year }}</em></h1>
+    <div class="sub">{{ total }} fichas técnicas<span class="sep"></span><em>{{ sections | length }} líneas de producto</em></div>
+  </div>
+  <div class="lines">{% for s in sections %}<span>{{ s.name }}</span>{% if not loop.last %}<span class="sep"></span>{% endif %}{% endfor %}</div>
+  <div class="contact"><small>Importaciones y Comercializaciones Eléctricas de México S.A. de C.V.</small>55 6544 8428 &nbsp;|&nbsp; icemexjorobas@gmail.com &nbsp;|&nbsp; icemex.mx</div>
+  {{ stripes }}
+</div>
+
+<!-- Contenido -->
+{% for tp in toc_pages %}
+<div class="page">
+  <div class="top">
+    <img class="logo" src="assets/logo-blanco.png" alt="ICEMEX">
+    <div class="model"><b class="display">Contenido</b><small>Catálogo de productos {{ year }}</small></div>
+  </div>
+  <div class="bar"><i></i><i></i><i></i></div>
+  <div class="content">
+    {% for blk in tp %}
+    <div class="toc-sec"><b class="n display">{{ blk.s.num }}</b><b class="t h">{{ blk.s.name }}{% if blk.cont %}<small>(continuación)</small>{% endif %}</b>{% if not blk.cont %}<a class="p" href="{{ link }}{{ blk.s.page }}" style="color:inherit;text-decoration:none">{{ blk.s.page }}</a>{% endif %}</div>
+    <div class="toc-cols">
+      {% for col in blk.cols %}<div>{% for f in col %}<a class="toc-row" href="{{ link }}{{ f.page }}"><b>{{ f.code }}</b><span>{{ f.model }}</span><i>{{ f.page }}</i></a>{% endfor %}</div>{% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+  <div class="foot"><span><b>Importaciones y Comercializaciones Eléctricas de México S.A. de C.V.</b> &nbsp;·&nbsp; Especificaciones sujetas a cambio sin previo aviso.</span><span>55 6544 8428 &nbsp;|&nbsp; icemex.mx</span></div>
+</div>
+{% endfor %}
+
+<!-- Separadores de sección -->
+{% for s in sections %}
+<div class="page section">
+  <img class="logo" src="assets/logo-blanco.png" alt="ICEMEX">
+  <div class="tag">Catálogo de productos {{ year }}</div>
+  <div class="num display">{{ s.num }}</div>
+  <h1 class="display">{{ s.title | safe }}</h1>
+  <div class="desc">{{ s.desc }}</div>
+  <div class="count">{{ s['items'] | length }} {% if s['items'] | length == 1 %}ficha técnica{% else %}fichas técnicas{% endif %}<span class="sep"></span><em>págs. {{ s.page + 1 }}–{{ s.last }}</em></div>
+  <div class="trio">{% for src in s.photos %}{{ shot(src) }}{% endfor %}</div>
+  <div class="floor"></div>
+  {{ stripes }}
+</div>
+{% endfor %}
+
+<!-- Contraportada -->
+<div class="page back">
+  <div class="box">
+    <img src="assets/logo-blanco.png" alt="ICEMEX">
+    <div class="co">Importaciones y Comercializaciones Eléctricas de México S.A. de C.V.</div>
+    <div class="data"><b>icemex.mx</b><br>55 6544 8428<br>icemexjorobas@gmail.com</div>
+  </div>
+  <div class="legal">Especificaciones sujetas a cambio sin previo aviso. Las imágenes son ilustrativas.</div>
+  {{ stripes }}
+</div>
+</body>
+</html>
