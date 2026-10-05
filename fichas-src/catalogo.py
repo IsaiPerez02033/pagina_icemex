@@ -66,7 +66,7 @@ SECTIONS = [
      ["lineas/postes", "POSTES-RC-CC"]),
     ("AC", "Brazos y herrajes", "Brazos y<br>herrajes",
      "Brazos, anclas, bases de concreto, mobiliario urbano, refacciones y señalización.",
-     ["BRAZOS", "BASE-PIRAMIDAL", "ESFERAS-CRISTALES"]),
+     ["BRAZOS", "BAS-0010", "ESFERAS-CRISTALES"]),
 ]
 
 # Portada: (código, izquierda, ancho, alto, abajo) en mm dentro del collage.

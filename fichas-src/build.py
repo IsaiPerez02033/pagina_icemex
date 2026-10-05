@@ -16,6 +16,9 @@ Las imágenes se referencian como "p<página>_x<xref>" del PDF original
 (o "<OTRO-CODIGO>:p<página>_x<xref>" para tomarlas de otra ficha).
 Retoques a mano (p. ej. quitar un logo ajeno): fichas-src/retouch/<clave>.png
 reemplaza a la imagen extraída (clave = image_key(código, ref)).
+Sufijos de una referencia: "@x0,y0,x1,y1" recorta (fracciones del tamaño) y
+"#0" o "#1,2" deja solo esas vistas (piezas separadas por transparencia,
+de la más grande a la más chica) cuando la foto trae varias encimadas.
 """
 
 import copy
@@ -67,6 +70,9 @@ def extract(ref: str, code: str) -> Image.Image:
     touched = RETOUCH / f"{image_key(code, ref)}.png"
     if touched.exists():
         return Image.open(touched).convert("RGBA")
+    if "#" in ref:
+        ref, keep = ref.split("#")
+        return keep_views(extract(ref, code), [int(i) for i in keep.split(",")])
     if "@" in ref:
         ref, box = ref.split("@")
         img = extract(ref, code)
@@ -146,6 +152,46 @@ def fingerprint(img: Image.Image) -> str:
     return hashlib.md5(img.tobytes()).hexdigest()[:12]
 
 
+def views(img: Image.Image) -> tuple[np.ndarray, list[tuple[int, int]]]:
+    """Piezas de una foto separadas por transparencia: mapa de etiquetas (a
+    escala reducida) y [(área, etiqueta)] de la más grande a la más chica."""
+    scale = min(1, 320 / max(img.size))
+    small = img.getchannel("A").resize((max(1, round(img.width * scale)), max(1, round(img.height * scale))), Image.BILINEAR)
+    solid = np.asarray(small) > 40
+    labels = np.zeros(solid.shape, np.int32)
+    h, w = solid.shape
+    areas = []
+    for y0, x0 in zip(*np.nonzero(solid)):
+        if labels[y0, x0]:
+            continue
+        n = len(areas) + 1
+        labels[y0, x0] = n
+        stack, area = [(y0, x0)], 0
+        while stack:
+            y, x = stack.pop()
+            area += 1
+            for ny, nx in ((y + 1, x), (y - 1, x), (y, x + 1), (y, x - 1)):
+                if 0 <= ny < h and 0 <= nx < w and solid[ny, nx] and not labels[ny, nx]:
+                    labels[ny, nx] = n
+                    stack.append((ny, nx))
+        areas.append((area, n))
+    return labels, sorted(areas, reverse=True)
+
+
+def keep_views(img: Image.Image, keep: list[int]) -> Image.Image:
+    """Deja solo las piezas indicadas (0 = la más grande) y recorta a ellas."""
+    labels, areas = views(img)
+    chosen = np.isin(labels, [areas[i][1] for i in keep])
+    # Engrosa la selección para no perder el borde suavizado de cada pieza.
+    mask = Image.fromarray((chosen * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(5))
+    mask = mask.resize(img.size, Image.BILINEAR)
+    out = img.copy()
+    alpha = np.asarray(img.getchannel("A"), np.float32) * (np.asarray(mask, np.float32) / 255)
+    out.putalpha(Image.fromarray(alpha.astype(np.uint8)))
+    box = out.getchannel("A").point(lambda v: 255 if v > 8 else 0).getbbox()
+    return out.crop(box) if box else out
+
+
 def image_refs(code: str, data: dict):
     """(ref, tipo) de todas las imágenes de una ficha."""
     yield data["hero"], "hero"
@@ -159,6 +205,57 @@ def image_refs(code: str, data: dict):
 
 
 _hires_index = None
+_looks = None
+
+DUP_BITS = 16  # de 256: diferencia máxima para considerar dos fotos la misma
+
+
+def base_ref(ref: str) -> str:
+    """Imagen de origen de una referencia (sin recorte ni selección de vistas)."""
+    return re.split(r"[@#]", ref)[0]
+
+
+def look(img: Image.Image) -> tuple[np.ndarray, float]:
+    """Huella visual (dHash 16×16 sobre fondo blanco) y proporción."""
+    bg = Image.new("RGBA", img.size, (255, 255, 255, 255))
+    bg.alpha_composite(img.convert("RGBA"))
+    g = np.asarray(bg.convert("L").resize((17, 16), Image.LANCZOS), np.int16)
+    return (g[:, 1:] > g[:, :-1]).flatten(), img.width / img.height
+
+
+def same_image(a, b) -> bool:
+    return int((a[0] != b[0]).sum()) <= DUP_BITS and abs(a[1] / b[1] - 1) < 0.12
+
+
+def all_looks() -> dict:
+    """{código: [huella de cada imagen de la ficha]} de todo el catálogo."""
+    global _looks
+    if _looks is None:
+        _looks = {}
+        for p in sorted((SRC / "data").glob("*.json")):
+            refs = {ref for ref, _ in image_refs(p.stem, json.loads(p.read_text()))}
+            _looks[p.stem] = [look(extract(r, p.stem)) for r in refs]
+    return _looks
+
+
+def repeated_features(code: str, data: dict, photo2) -> list[str]:
+    """Imágenes de "Tecnología" que repiten otra foto: la de portada, la
+    segunda foto, otra característica o una imagen de otra ficha."""
+    seen_refs = {base_ref(data["hero"])} | ({base_ref(photo2)} if photo2 else set())
+    seen = [look(extract(data["hero"], code))] + ([look(extract(photo2, code))] if photo2 else [])
+    others = [lk for c, lks in all_looks().items() if c != code for lk in lks]
+    out = []
+    for x in data.get("features", []):
+        ref = x.get("img")
+        if not ref:
+            continue
+        lk = look(extract(ref, code))
+        if (base_ref(ref) in seen_refs or ":" in ref
+                or any(same_image(lk, o) for o in seen) or any(same_image(lk, o) for o in others)):
+            out.append(ref)
+        seen_refs.add(base_ref(ref))
+        seen.append(lk)
+    return out
 
 
 def source(ref: str, code: str) -> tuple[Image.Image, bool]:
@@ -222,9 +319,17 @@ def prepare(code: str, data: dict) -> dict:
     hero_img = enhance(im, TARGET["hero"], sharpen=not ai)
     hero_img.thumbnail((TARGET["hero"], TARGET["hero"]), Image.LANCZOS)
     f["hero"] = save_png(hero_img, f"{code}__hero")
-    f["photo2"] = img(data.get("photo2"), TARGET["photo2"])
+    photo2 = data.get("photo2")
+    # Misma foto que la portada (o un recorte suyo); otra vista "#" sí cuenta.
+    same_src = base_ref(photo2 or "") == base_ref(data["hero"]) and "#" not in (photo2 or "")
+    if photo2 and (photo2 == data["hero"] or same_src
+                   or same_image(look(extract(photo2, code)), look(extract(data["hero"], code)))):
+        photo2 = None
+    f["photo2"] = img(photo2, TARGET["photo2"])
+    # Sin fotos repetidas en "Tecnología"; si alguna lo es, van todas sin foto.
+    repeated = repeated_features(code, data, photo2)
     feats = f.get("features", [])
-    if not all(x.get("img") for x in feats):
+    if repeated or not all(x.get("img") for x in feats):
         feats = [{k: v for k, v in x.items() if k != "img"} for x in feats]  # todas o ninguna
     f["features"] = feats
     for x in feats:

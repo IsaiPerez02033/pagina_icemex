@@ -85,6 +85,11 @@
   .kgrid > div { padding: 3.5mm 0 3mm; border-bottom: 1px solid #d9dadd; }
   .kgrid > div:nth-child(odd) { border-right: 1px solid #d9dadd; }
   .kgrid > div:nth-child(even) { padding-left: 5mm; }
+  .overview.solo { grid-template-columns: 1fr; }
+  .overview.solo .kgrid { grid-template-columns: repeat(3, 1fr); }
+  .overview.solo .kgrid > div { border-right: 1px solid #d9dadd; padding-left: 5mm; }
+  .overview.solo .kgrid > div:nth-child(3n+1) { padding-left: 0; }
+  .overview.solo .kgrid > div:nth-child(3n) { border-right: 0; }
   .kgrid .kv { font-size: 16pt; color: #1f2024; } .kgrid .kv small { color: #5a5d66; } .kgrid .kl { color: #5a5d66; }
   .photo { background: radial-gradient(closest-side, #3a3b40, #1f2024 75%, #17181b); border-radius: 3mm; position: relative; display: flex; align-items: center; justify-content: center; padding: 7mm; height: var(--photo-h, 86mm); }
   .photo img { position: relative; width: 100%; height: 100%; min-width: 0; min-height: 0; object-fit: contain; }
@@ -198,7 +203,7 @@
 <div class="page">
   {{ top() }}
   <div class="content">
-    <div class="overview">
+    <div class="overview{% if not f.photo2 %} solo{% endif %}">
       <div class="name">
         <h1 class="display">{{ f.model }}</h1>
         <p>{{ f.kind }}</p>
@@ -206,7 +211,8 @@
         {% if f.kpis2 %}<div class="kgrid">{% for k in f.kpis2[:6] %}<div><div class="kv">{{ k.v }}<small>{{ k.u }}</small></div><div class="kl">{{ k.l }}</div></div>{% endfor %}</div>
         {% else %}<div class="desc" style="margin-top:6mm">{% for p in f.description %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
       </div>
-      <div class="photo"><img class="sh" src="{{ f.photo2 or f.hero }}" alt=""><img src="{{ f.photo2 or f.hero }}" alt="">{% if f.badge %}<div class="pbadge">{{ f.badge }}</div>{% endif %}</div>
+      {# Solo una segunda foto distinta: la de portada no se repite aquí. #}
+      {% if f.photo2 %}<div class="photo"><img class="sh" src="{{ f.photo2 }}" alt=""><img src="{{ f.photo2 }}" alt="">{% if f.badge %}<div class="pbadge">{{ f.badge }}</div>{% endif %}</div>{% endif %}
     </div>
     {% if f.kpis2 %}
     <section>{{ title("Descripción") }}<div class="desc">{% for p in f.description %}<p>{{ p }}</p>{% endfor %}</div></section>

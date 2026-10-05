@@ -3,7 +3,7 @@
  "kind": "Luminaria LED para alumbrado público",
  "power": "100 W",
  "variant": "85–277 V",
- "hero": "p1_x266",
+ "hero": "p1_x266#0",
  "kpis": [
   {
    "v": "100",

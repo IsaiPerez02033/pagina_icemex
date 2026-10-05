@@ -1091,15 +1091,6 @@
   "texto": "base de concreto para luminaria bas-0011 resistencia de concreto de 200/kgr x cm3 60 cm 40cm"
  },
  {
-  "codigo": "BASE-PIRAMIDAL",
-  "nombre": "Base de Concreto Piramidal y Rectangular",
-  "archivo": "BASE-PIRAMIDAL.pdf",
-  "paginas": [
-   172
-  ],
-  "texto": "base de concreto piramidal base de concreto rectangular"
- },
- {
   "codigo": "REJILLA-BROCAL",
   "nombre": "Rejilla con Brocal Bisagra 70-50-7",
   "archivo": "REJILLA-BROCAL.pdf",

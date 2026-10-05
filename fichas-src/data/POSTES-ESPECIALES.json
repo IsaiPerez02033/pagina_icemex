@@ -4,7 +4,7 @@
  "kind": "Postes ornamentales de uno y dos brazos",
  "power": "3 – 15 m",
  "variant": "Recto, cónico circular, octagonal o cuadrado",
- "hero": "p1_x25",
+ "hero": "p1_x25#0,1,2",
  "photo2": "p2_x95",
  "kpis": [
   {

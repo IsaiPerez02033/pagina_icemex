@@ -4,7 +4,7 @@
  "kind": "Mobiliario urbano ornamental",
  "power": "4 modelos de banca",
  "variant": "Española · Italiana · Francesa · Alemana",
- "hero": "p1_x25",
+ "hero": "p1_x25#0,1,2,3",
  "kpis": [
   {
    "v": "4",

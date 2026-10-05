@@ -38,11 +38,15 @@ const nextConfig = {
   },
   async redirects() {
     // Productos que tenían un código distinto al del catálogo oficial.
-    return Object.entries(legacyCodes).map(([from, to]) => ({
-      source: `/producto/${from}`,
-      destination: `/producto/${to}`,
-      permanent: true,
-    }));
+    return [
+      ...Object.entries(legacyCodes).map(([from, to]) => ({
+        source: `/producto/${from}`,
+        destination: `/producto/${to}`,
+        permanent: true,
+      })),
+      // Ficha duplicada que se eliminó (mismo contenido que BAS-0010).
+      { source: "/fichas/BASE-PIRAMIDAL.pdf", destination: "/fichas/BAS-0010.pdf", permanent: true },
+    ];
   },
   async headers() {
     // PDFs (catálogo y fichas): cambian poco, se cachean 1 día en el

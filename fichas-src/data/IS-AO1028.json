@@ -4,8 +4,7 @@
  "power": "50 W",
  "variant": "LT",
  "badge": "Producto patentado",
- "hero": "p2_x83",
- "photo2": "p1_x16",
+ "hero": "p2_x83#0",
  "kpis": [
   {
    "v": "50",

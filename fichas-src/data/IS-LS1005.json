@@ -3,7 +3,7 @@
  "kind": "Lámpara suburbana con panel solar",
  "power": "500 W",
  "variant": "Panel 5 V / 45 W",
- "hero": "p1_x24",
+ "hero": "p1_x24#1",
  "kpis": [
   {
    "v": "500",
@@ -240,5 +240,6 @@
     "12 kg"
    ]
   ]
- }
+ },
+ "photo2": "p1_x24#0"
 }

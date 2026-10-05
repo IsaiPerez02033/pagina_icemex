@@ -84,7 +84,7 @@ const FICHA_FOR_PRODUCT: Record<string, string> = {
   "PT-ESP-QUERETARO": "POSTES-ESPECIALES",
   "PT-ESP-LONDON": "POSTES-ESPECIALES",
   "PT-ESP-CORDOVA": "POSTES-ESPECIALES",
-  "AC-BAS-0010": "BASE-PIRAMIDAL",
+  "AC-BAS-0010": "BAS-0010",
   "AC-BRAZO": "BRAZOS",
   "AC-PICOBA-P01": "PICOBA-P01",
   "AC-PICOBA-P02": "PICOBA-P02",
@@ -176,7 +176,7 @@ const LINE_PHOTO: Record<ProductLine, string> = {
   RF: "RF-RE1003",
   LC: "LC-GEM1009",
   PT: "POSTES-ESPECIALES",
-  AC: "BASE-PIRAMIDAL",
+  AC: "BAS-0010",
 };
 
 // La foto de la ficha de postes especiales trae 5 postes en cuadrícula; en la

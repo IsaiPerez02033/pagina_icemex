@@ -1,9 +1,9 @@
 {
- "model": "ALL IN ONE 500W",
+ "model": "ALL IN ONE LA 500W",
  "kind": "Luminaria solar «All in One» tipo servicio de fija",
  "power": "300 – 500 W",
  "variant": "Modelo LA",
- "hero": "p1_x43",
+ "hero": "p1_x43#1,2",
  "kpis": [
   {
    "v": "500",
@@ -240,5 +240,6 @@
     "7 kg"
    ]
   ]
- }
+ },
+ "photo2": "p1_x43#0"
 }

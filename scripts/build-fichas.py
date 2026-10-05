@@ -55,6 +55,8 @@ NAME_FIXES = {
     "Esferas, Acrilicos y Cristales": "Esferas, Acrílicos y Cristales",
     # El índice original la llama solar, pero es de red (85–265 V, sin panel).
     "Luminaria solar tipo Cobra": "Luminaria LEAFLED tipo Cobra",
+    # Mismo nombre que la Urban LED vial (AL-UL1005); su ficha la llama Urban City.
+    "Urban LED Punta de Poste": "Urban City Punta de Poste",
     "Senaliticas Industriales": "Señaléticas Industriales",
 }
 

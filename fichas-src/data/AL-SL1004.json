@@ -3,8 +3,8 @@
  "kind": "Luminaria LED para alumbrado público vial",
  "power": "60 – 150 W",
  "variant": "100–277 V c.a.",
- "hero": "p1_x21",
- "photo2": "p1_x35",
+ "hero": "p1_x21#1",
+ "photo2": "p1_x21#0",
  "kpis": [
   {
    "v": "60–150",

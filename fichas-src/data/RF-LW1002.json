@@ -3,7 +3,7 @@
  "kind": "Luminario de muro para exteriores",
  "power": "40 – 70 W LED",
  "variant": "127–277 V c.a.",
- "hero": "p1_x25",
+ "hero": "p1_x25#1",
  "kpis": [
   {
    "v": "70",
@@ -234,5 +234,6 @@
     "8 kg"
    ]
   ]
- }
+ },
+ "photo2": "p1_x25#0"
 }
