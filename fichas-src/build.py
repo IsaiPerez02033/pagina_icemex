@@ -9,14 +9,17 @@ Entrada:  fichas-src/data/<CODIGO>.json   (contenido de cada ficha)
 Salida:   public/fichas/<CODIGO>.pdf
           public/productos/<CODIGO>.webp, -md.webp y -thumb.webp (foto para la web)
 
-Requiere: pymupdf, pillow, jinja2 y Google Chrome instalado.
-Las fotos principales de baja resolución se amplían antes con IA:
+Requiere: pymupdf, pillow, numpy, jinja2 y Google Chrome instalado.
+Las imágenes de baja resolución se amplían antes con IA:
 `python3 fichas-src/upscale.py` (ver ese archivo).
 Las imágenes se referencian como "p<página>_x<xref>" del PDF original
 (o "<OTRO-CODIGO>:p<página>_x<xref>" para tomarlas de otra ficha).
+Retoques a mano (p. ej. quitar un logo ajeno): fichas-src/retouch/<clave>.png
+reemplaza a la imagen extraída (clave = image_key(código, ref)).
 """
 
 import copy
+import hashlib
 import io
 import json
 import re
@@ -25,6 +28,7 @@ import sys
 import tempfile
 from pathlib import Path
 
+import numpy as np
 import pymupdf
 from jinja2 import Environment, FileSystemLoader
 from PIL import Image, ImageFilter, ImageOps
@@ -35,6 +39,11 @@ BUILD = SRC / "build"
 OUT_PDF = ROOT / "public" / "fichas"
 OUT_WEB = ROOT / "public" / "productos"
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+HIRES = SRC / "hires"
+RETOUCH = SRC / "retouch"
+
+# Lado mayor (px) de cada tipo de imagen: ≥300 ppp en el tamaño impreso.
+TARGET = {"hero": 2400, "photo2": 1600, "feature": 900, "dims": 1200, "photometry": 900}
 
 TEMP_COLORS = {  # tono aproximado para la muestra de temperatura de color
     2700: "#ffb46b", 3000: "#ffc58a", 3500: "#ffd6a8", 4000: "#ffe4c4",
@@ -55,6 +64,9 @@ def extract(ref: str, code: str) -> Image.Image:
     """Imagen embebida del PDF original, con su transparencia (SMask).
 
     "<ref>@x0,y0,x1,y1" recorta la imagen extraída (fracciones de su tamaño)."""
+    touched = RETOUCH / f"{image_key(code, ref)}.png"
+    if touched.exists():
+        return Image.open(touched).convert("RGBA")
     if "@" in ref:
         ref, box = ref.split("@")
         img = extract(ref, code)
@@ -126,19 +138,66 @@ def enhance(img: Image.Image, target: int, mode: str = "photo", sharpen: bool = 
     return img
 
 
-def hero(code: str, ref: str) -> Image.Image:
-    """Foto principal: la versión ampliada con IA (upscale.py) si existe para
-    esta misma referencia; si no, la del PDF original ampliada con Lanczos."""
-    hires = SRC / "hires" / f"{code}.webp"
-    index = SRC / "hires" / "index.json"
-    if hires.exists() and index.exists() and json.loads(index.read_text()).get(code) == ref:
-        return enhance(Image.open(hires).convert("RGBA"), 1800, sharpen=False)
-    return enhance(extract(ref, code), 1800)
+def image_key(code: str, ref: str) -> str:
+    return re.sub(r"[^A-Za-z0-9_-]", "_", f"{code}__{ref}")
+
+
+def fingerprint(img: Image.Image) -> str:
+    return hashlib.md5(img.tobytes()).hexdigest()[:12]
+
+
+def image_refs(code: str, data: dict):
+    """(ref, tipo) de todas las imágenes de una ficha."""
+    yield data["hero"], "hero"
+    for ref, kind in ((data.get("photo2"), "photo2"), (data.get("photometry"), "photometry"),
+                      ((data.get("dims") or {}).get("img"), "dims")):
+        if ref:
+            yield ref, kind
+    for x in data.get("features", []):
+        if x.get("img"):
+            yield x["img"], "feature"
+
+
+_hires_index = None
+
+
+def source(ref: str, code: str) -> tuple[Image.Image, bool]:
+    """La imagen ampliada con IA (upscale.py) si existe para esta misma imagen
+    de origen; si no, la del PDF original. Devuelve (imagen, es_ia)."""
+    global _hires_index
+    if _hires_index is None:
+        index = HIRES / "index.json"
+        _hires_index = json.loads(index.read_text()) if index.exists() else {}
+    img = extract(ref, code)
+    key = image_key(code, ref)
+    hi = HIRES / f"{key}.webp"
+    if hi.exists() and _hires_index.get(key) == fingerprint(img):
+        return Image.open(hi).convert("RGBA"), True
+    return img, False
+
+
+def smooth_hidden(img: Image.Image) -> Image.Image:
+    """Color liso bajo las zonas transparentes. No se ve, pero la ampliación
+    con IA deja ahí texturas que triplican el peso de la imagen en el PDF."""
+    alpha = img.getchannel("A")
+    if alpha.getextrema()[0] == 255:
+        return img
+    small = (max(1, img.width // 8), max(1, img.height // 8))
+    a = np.asarray(alpha.resize(small, Image.BOX).filter(ImageFilter.GaussianBlur(3)), np.float32)[..., None] / 255
+    pre = Image.composite(img.convert("RGB"), Image.new("RGB", img.size), alpha)
+    pm = np.asarray(pre.resize(small, Image.BOX).filter(ImageFilter.GaussianBlur(3)), np.float32)
+    mean = np.asarray(pre, np.float32).reshape(-1, 3).sum(0) / max(1, np.asarray(alpha, np.float32).sum() / 255)
+    fill = np.where(a > 0.02, pm / np.maximum(a, 0.02), mean)
+    fill = Image.fromarray(np.clip(fill, 0, 255).astype(np.uint8)).resize(img.size, Image.BILINEAR)
+    hidden = alpha.point(lambda v: 255 if v < 4 else 0)
+    out = Image.composite(fill, img.convert("RGB"), hidden)
+    out.putalpha(alpha)
+    return out
 
 
 def save_png(img: Image.Image, name: str) -> str:
     path = BUILD / "img" / f"{name}.png"
-    img.save(path, optimize=True)
+    smooth_hidden(img).save(path, optimize=True)
     return f"build/img/{name}.png"
 
 
@@ -148,17 +207,22 @@ def prepare(code: str, data: dict) -> dict:
     f["code"] = code
     imgs = {}
 
-    def img(ref, target=1600, mode="photo", key=None):
+    def img(ref, target, mode="photo"):
         if not ref:
             return None
-        k = key or f"{code}__{ref.replace(':', '_')}__{mode}"
+        k = f"{image_key(code, ref)}__{mode}"
         if k not in imgs:
-            imgs[k] = save_png(enhance(extract(ref, code), target, mode), k)
+            im, ai = source(ref, code)
+            im = enhance(im, target, mode, sharpen=not ai)
+            im.thumbnail((target, target), Image.LANCZOS)  # la versión IA puede venir más grande
+            imgs[k] = save_png(im, k)
         return imgs[k]
 
-    hero_img = hero(code, data["hero"])
+    im, ai = source(data["hero"], code)
+    hero_img = enhance(im, TARGET["hero"], sharpen=not ai)
+    hero_img.thumbnail((TARGET["hero"], TARGET["hero"]), Image.LANCZOS)
     f["hero"] = save_png(hero_img, f"{code}__hero")
-    f["photo2"] = img(data.get("photo2"), 1400)
+    f["photo2"] = img(data.get("photo2"), TARGET["photo2"])
     feats = f.get("features", [])
     if not all(x.get("img") for x in feats):
         feats = [{k: v for k, v in x.items() if k != "img"} for x in feats]  # todas o ninguna
@@ -166,10 +230,10 @@ def prepare(code: str, data: dict) -> dict:
     for x in feats:
         if x.get("mode") == "drawing":
             x["light"] = True  # líneas oscuras → fondo claro
-        x["img"] = img(x.get("img"), 700, x.get("mode", "photo"))
+        x["img"] = img(x.get("img"), TARGET["feature"], x.get("mode", "photo"))
     if f.get("dims"):
-        f["dims"]["img"] = img(f["dims"].get("img"), 1400, "drawing")
-    f["photometry"] = img(data.get("photometry"), 1200, "raw")
+        f["dims"]["img"] = img(f["dims"].get("img"), TARGET["dims"], "drawing")
+    f["photometry"] = img(data.get("photometry"), TARGET["photometry"], "raw")
 
     f["is_lum"] = data.get("is_lum", True)
     f["kpis"] = data.get("kpis", [])
@@ -227,7 +291,7 @@ def render_pdf(html: Path, pdf: Path):
     )
 
 
-MAX_PX = 1700  # ~290 ppp para la foto más grande (portada de 150 mm)
+MAX_PX = 2400  # ~360 ppp para la foto más grande (portada de 168 mm)
 
 
 def fit(im: Image.Image) -> Image.Image:
@@ -265,8 +329,8 @@ def compress_pdf(pdf: Path):
                 continue
             im = fit(Image.frombytes("L", (pix.width, pix.height), pix.samples))
             buf = io.BytesIO()
-            im.save(buf, "JPEG", quality=90, optimize=True)
-            if len(buf.getvalue()) < 0.8 * len(raw):
+            im.save(buf, "JPEG", quality=92, optimize=True)
+            if len(buf.getvalue()) < len(raw):
                 d.update_stream(x, buf.getvalue(), compress=False)
                 d.xref_set_key(x, "Filter", "/DCTDecode")
                 d.xref_set_key(x, "DecodeParms", "null")
@@ -280,8 +344,8 @@ def compress_pdf(pdf: Path):
             pix = pymupdf.Pixmap(pymupdf.csRGB, pix)
         im = fit(Image.frombytes("RGB", (pix.width, pix.height), pix.samples))
         buf = io.BytesIO()
-        im.save(buf, "JPEG", quality=86, optimize=True)
-        if len(buf.getvalue()) < 0.8 * len(raw):
+        im.save(buf, "JPEG", quality=90, optimize=True)
+        if len(buf.getvalue()) < len(raw):
             d.update_stream(x, buf.getvalue(), compress=False)
             d.xref_set_key(x, "Filter", "/DCTDecode")
             d.xref_set_key(x, "ColorSpace", "/DeviceRGB")

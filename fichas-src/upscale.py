@@ -1,13 +1,15 @@
 """
-Amplía con IA (Real-ESRGAN x4) las fotos principales que en los PDF
-originales vienen en baja resolución.
+Amplía con IA (Real-ESRGAN x4) las imágenes de las fichas que en los PDF
+originales vienen en baja resolución: foto principal, foto secundaria,
+características, dibujo de dimensiones y fotometría.
 
     python3 fichas-src/upscale.py                # las que falten o cambiaron
-    python3 fichas-src/upscale.py AL-LC1001 ...  # forzar algunas
+    python3 fichas-src/upscale.py AL-LC1001 ...  # forzar las de algunas fichas
 
-Salida: fichas-src/hires/<CODIGO>.webp (con transparencia) + index.json con la
-referencia de origen de cada una. build.py usa la versión ampliada en lugar de
-la foto del PDF cuando existe y su referencia coincide con la de data/.
+Salida: fichas-src/hires/<clave>.webp (con transparencia) + index.json con la
+huella de la imagen de origen. build.py usa la versión ampliada cuando su
+huella coincide con la imagen que extrae (si cambia la ref en data/ o el
+retoque en retouch/, hay que volver a correr esto).
 
 Requiere (además de lo de build.py): torch y spandrel, y los pesos del modelo
 general de Real-ESRGAN en fichas-src/models/ (no se versionan):
@@ -27,13 +29,12 @@ from spandrel import ModelLoader
 import build
 
 SRC = Path(__file__).resolve().parent
-HIRES = SRC / "hires"
+HIRES = build.HIRES
 MODELS = SRC / "models"
 INDEX = HIRES / "index.json"
 
-MIN_SIDE = 1400  # fotos con lado mayor a esto ya se ven bien
-MAX_SIDE = 1800  # tope del resultado (el que usa la ficha)
-DENOISE = 0.4    # 0 = conserva todo el grano, 1 = lo suaviza por completo
+ENOUGH = 0.8   # si el original ya mide ≥80% del tamaño final, no hace falta IA
+DENOISE = 0.4  # 0 = conserva todo el grano, 1 = lo suaviza por completo
 TILE, PAD = 192, 16
 
 DEV = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
@@ -88,39 +89,67 @@ def fill_transparent(img: Image.Image) -> np.ndarray:
     return np.clip(filled, 0, 1)
 
 
-def upscale(model, img: Image.Image) -> Image.Image:
-    rgb = sr(model, fill_transparent(img))
-    a = np.asarray(img.getchannel("A"), np.float32) / 255
-    a4 = sr(model, np.repeat(a[..., None], 3, axis=2)).mean(axis=2)
-    out = Image.fromarray((np.dstack([rgb, a4]) * 255 + 0.5).astype(np.uint8), "RGBA")
-    out.thumbnail((MAX_SIDE, MAX_SIDE), Image.LANCZOS)
+def upscale(model, img: Image.Image, side: int) -> Image.Image:
+    """x4 con IA; si no alcanza el tamaño final, una segunda pasada partiendo
+    del resultado reducido a ¼ de ese tamaño (más nítido que estirarlo)."""
+    out = upscale_once(model, img)
+    if max(out.size) < 0.9 * side:
+        out.thumbnail((side // 4, side // 4), Image.LANCZOS)
+        out = upscale_once(model, out)
+    out.thumbnail((side, side), Image.LANCZOS)
     return out
 
 
-def source(code: str, ref: str) -> Image.Image:
-    img = build.extract(ref, code).convert("RGBA")
-    bbox = img.getchannel("A").point(lambda v: 255 if v > 12 else 0).getbbox()
-    return img.crop(bbox) if bbox else img
+def upscale_once(model, img: Image.Image) -> Image.Image:
+    alpha = img.getchannel("A")
+    if alpha.getextrema()[0] == 255:  # sin transparencia
+        rgb = sr(model, np.asarray(img.convert("RGB"), np.float32) / 255)
+        a4 = np.ones(rgb.shape[:2], np.float32)
+    else:
+        rgb = sr(model, fill_transparent(img))
+        a = np.asarray(alpha, np.float32) / 255
+        a4 = sr(model, np.repeat(a[..., None], 3, axis=2)).mean(axis=2)
+    return Image.fromarray((np.dstack([rgb, a4]) * 255 + 0.5).astype(np.uint8), "RGBA")
+
+
+def jobs() -> dict:
+    """{clave: (código, ref, lado final)} de todas las imágenes de las fichas."""
+    out = {}
+    for p in sorted((SRC / "data").glob("*.json")):
+        code = p.stem
+        for ref, kind in build.image_refs(code, json.loads(p.read_text())):
+            key = build.image_key(code, ref)
+            side = max(out[key][2] if key in out else 0, build.TARGET[kind])
+            out[key] = (code, ref, side)
+    return out
 
 
 def main(force):
     HIRES.mkdir(exist_ok=True)
     index = json.loads(INDEX.read_text()) if INDEX.exists() else {}
+    todo = jobs()
     model = None
-    for p in sorted((SRC / "data").glob("*.json")):
-        code = p.stem
-        ref = json.loads(p.read_text())["hero"]
-        if code not in force and index.get(code) == ref and (HIRES / f"{code}.webp").exists():
+    for key, (code, ref, side) in todo.items():
+        img = build.extract(ref, code)
+        fp = build.fingerprint(img)
+        if code not in force and index.get(key) == fp and (HIRES / f"{key}.webp").exists():
             continue
-        img = source(code, ref)
-        if max(img.size) >= MIN_SIDE and code not in force:
+        if max(img.size) >= ENOUGH * side:
+            index.pop(key, None)
+            (HIRES / f"{key}.webp").unlink(missing_ok=True)
             continue
         model = model or load_model()
-        up = upscale(model, img)
-        up.save(HIRES / f"{code}.webp", "WEBP", quality=88, method=6)
-        index[code] = ref
+        up = upscale(model, img, side)
+        up.save(HIRES / f"{key}.webp", "WEBP", quality=92, method=4)
+        index[key] = fp
         INDEX.write_text(json.dumps(index, indent=1, sort_keys=True) + "\n")
-        print(f"{code:22} {img.size} → {up.size}", flush=True)
+        print(f"{key:40} {img.size} → {up.size}", flush=True)
+    # Limpia las de imágenes que ya no se usan.
+    for p in HIRES.glob("*.webp"):
+        if p.stem not in todo:
+            p.unlink()
+            index.pop(p.stem, None)
+    INDEX.write_text(json.dumps({k: v for k, v in index.items() if k in todo}, indent=1, sort_keys=True) + "\n")
 
 
 if __name__ == "__main__":

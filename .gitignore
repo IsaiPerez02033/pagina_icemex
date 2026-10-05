@@ -42,3 +42,5 @@ next-env.d.ts
 /fichas-src/build/
 /fichas-src/_*.html
 /fichas-src/models/
+# Fotos ampliadas con IA (fichas-src/upscale.py, ~40 min regenerarlas)
+/fichas-src/hires/
