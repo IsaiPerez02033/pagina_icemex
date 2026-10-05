@@ -3,7 +3,7 @@
  "kind": "Bolardo LED ornamental",
  "power": "30 W",
  "variant": "127–220 V · Luz blanca",
- "hero": "p1_x29",
+ "hero": "foto:bolard-f4a1-vistas.png",
  "kpis": [
   {
    "v": "30",
@@ -32,23 +32,18 @@
  ],
  "features": [
   {
-   "img": "p1_x29",
    "t": "Tres tubos LED",
    "d": "10 W cada uno, 30 W en total."
   },
   {
-   "img": "p1_x32",
    "t": "Guarda de aluminio",
    "d": "Protege el difusor de policarbonato."
   },
   {
-   "img": "p1_x35",
    "t": "Tubo ornamental",
-   "d": "Acero con pintura poliéster UV.",
-   "mode": "drawing"
+   "d": "Acero con pintura poliéster UV."
   },
   {
-   "img": "p1_x29@0,0,1,0.3",
    "t": "Luz blanca",
    "d": "Alta eficiencia lumínica."
   }

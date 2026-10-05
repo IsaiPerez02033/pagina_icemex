@@ -14,6 +14,7 @@ Las imágenes de baja resolución se amplían antes con IA:
 `python3 fichas-src/upscale.py` (ver ese archivo).
 Las imágenes se referencian como "p<página>_x<xref>" del PDF original
 (o "<OTRO-CODIGO>:p<página>_x<xref>" para tomarlas de otra ficha).
+Fotos propias (no salen del PDF): "foto:<archivo>" lee fichas-src/fotos/<archivo>.
 Retoques a mano (p. ej. quitar un logo ajeno): fichas-src/retouch/<clave>.png
 reemplaza a la imagen extraída (clave = image_key(código, ref)).
 Sufijos de una referencia: "@x0,y0,x1,y1" recorta (fracciones del tamaño) y
@@ -70,6 +71,8 @@ def extract(ref: str, code: str) -> Image.Image:
     touched = RETOUCH / f"{image_key(code, ref)}.png"
     if touched.exists():
         return Image.open(touched).convert("RGBA")
+    if ref.startswith("foto:"):
+        return Image.open(SRC / "fotos" / ref[5:]).convert("RGBA")
     if "#" in ref:
         ref, keep = ref.split("#")
         return keep_views(extract(ref, code), [int(i) for i in keep.split(",")])
