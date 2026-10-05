@@ -3911,3 +3911,397 @@ html[data-theme="light"] .svc-cta {
     animation: none;
   }
 }
+
+/* ── Nosotros (reutiliza las clases svc-* de Servicios) ───── */
+.ab-stats strong {
+  font-size: clamp(36px, 4.5vw, 56px);
+  font-variant-numeric: tabular-nums;
+}
+.ab-mv {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.ab-mv article {
+  position: relative;
+  overflow: hidden;
+  min-height: 460px;
+  border-radius: 26px;
+  border: 1px solid rgba(var(--cyan-rgb), 0.16);
+  display: flex;
+  align-items: flex-end;
+  background: #060910;
+}
+.ab-mv article img {
+  opacity: 0.55;
+  transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1), opacity 0.4s ease;
+}
+.ab-mv article:hover img {
+  transform: scale(1.04);
+  opacity: 0.65;
+}
+.ab-mv article::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(6, 9, 16, 0.1) 0%, rgba(6, 9, 16, 0.92) 70%);
+}
+.ab-mv article > div {
+  position: relative;
+  z-index: 2;
+  padding: 36px;
+  color: #fff;
+}
+.ab-mv .svc-eyebrow {
+  color: #00d4ff;
+}
+.ab-mv h2 {
+  font-size: clamp(24px, 2.6vw, 34px);
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: #fff;
+}
+.ab-mv article p:last-child {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  line-height: 1.8;
+}
+.ab-mv-icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 22px;
+  border-radius: 16px;
+  color: #00d4ff;
+  background: rgba(0, 212, 255, 0.12);
+  border: 1px solid rgba(0, 212, 255, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.ab-logo {
+  text-align: center;
+}
+.ab-logo-mark {
+  position: relative;
+  width: min(100%, 520px);
+  aspect-ratio: 1.6;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+.ab-logo-mark svg {
+  position: absolute;
+  inset: -20% 0;
+  width: 100%;
+  height: 140%;
+  fill: none;
+  stroke: rgba(var(--cyan-rgb), 0.16);
+  stroke-dasharray: 3 9;
+  animation: ab-spin 60s linear infinite;
+}
+.ab-logo-mark svg circle:nth-child(2) {
+  stroke: rgba(var(--cyan-rgb), 0.26);
+  stroke-dasharray: 40 14;
+}
+.ab-logo-mark > div {
+  position: relative;
+  width: 80%;
+  height: 60%;
+  filter: drop-shadow(0 0 60px rgba(var(--cyan-rgb), 0.3));
+}
+.ab-logo p {
+  margin-top: 28px;
+  color: var(--accent-cyan);
+  font-size: 12px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+@keyframes ab-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ab-lines {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.ab-line {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(var(--cyan-rgb), 0.12);
+  background: rgba(var(--card-rgb), 0.5);
+  color: var(--text-primary);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.ab-line:hover {
+  border-color: rgba(var(--cyan-rgb), 0.45);
+  transform: translateY(-4px);
+}
+.ab-line img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  border-radius: 14px;
+  padding: 10px;
+  background: radial-gradient(circle at 50% 45%, rgba(var(--cyan-rgb), 0.1), transparent 70%);
+  transition: transform 0.5s ease;
+}
+.ab-line img.on-dark {
+  background: radial-gradient(circle at 50% 42%, #3a3d44 0%, #15171b 100%);
+}
+.ab-line:hover img {
+  transform: scale(1.05);
+}
+.ab-line strong {
+  font-weight: 500;
+  font-size: 15px;
+}
+.ab-line span {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+/* Línea de tiempo alternada */
+.ab-timeline {
+  list-style: none;
+  position: relative;
+}
+.ab-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: linear-gradient(180deg, var(--accent-cyan), rgba(var(--cyan-rgb), 0.12));
+}
+.ab-timeline li {
+  position: relative;
+  width: 50%;
+  padding: 0 48px 40px 0;
+}
+.ab-timeline li:nth-child(even) {
+  margin-left: 50%;
+  padding: 0 0 40px 48px;
+}
+/* Las tarjetas de cada lado se enciman a medias para no dejar huecos. */
+.ab-timeline li + li {
+  margin-top: -64px;
+}
+.ab-dot {
+  position: absolute;
+  top: 34px;
+  right: -7px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 0 5px var(--bg-primary), 0 0 18px var(--accent-cyan);
+}
+.ab-timeline li:nth-child(even) .ab-dot {
+  right: auto;
+  left: -7px;
+}
+.ab-timeline article {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 22px;
+  align-items: center;
+  padding: 22px;
+  border-radius: 22px;
+  border: 1px solid rgba(var(--cyan-rgb), 0.12);
+  background: rgba(var(--card-rgb), 0.5);
+  transition: border-color 0.25s ease;
+}
+.ab-timeline article:hover {
+  border-color: rgba(var(--cyan-rgb), 0.4);
+}
+.ab-ms-media {
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 45%, rgba(var(--cyan-rgb), 0.14), rgba(var(--cyan-rgb), 0.03) 75%);
+}
+.ab-ms-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+.ab-ms-media.is-cover img {
+  object-fit: cover;
+  padding: 0;
+}
+.ab-ms-media.is-icon {
+  color: var(--accent-cyan);
+}
+.ab-timeline b {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--accent-cyan);
+  letter-spacing: 0.06em;
+  line-height: 1;
+  margin-bottom: 8px;
+  font-variant-numeric: tabular-nums;
+}
+.ab-timeline h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+.ab-timeline p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.ab-values {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.ab-values > div {
+  position: relative;
+  overflow: hidden;
+  padding: 32px 28px;
+  border-radius: 22px;
+  border: 1px solid rgba(var(--cyan-rgb), 0.12);
+  background: rgba(var(--card-rgb), 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.ab-values > div::after {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(var(--cyan-rgb), 0.18), transparent 70%);
+  pointer-events: none;
+}
+.ab-values > div:hover {
+  border-color: rgba(var(--cyan-rgb), 0.45);
+  transform: translateY(-4px);
+}
+.ab-value-icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  color: var(--accent-cyan);
+  background: rgba(var(--cyan-rgb), 0.1);
+  margin-bottom: 8px;
+}
+.ab-values small {
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.32em;
+}
+.ab-values h3 {
+  font-size: 21px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+.ab-values p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 960px) {
+  .ab-lines,
+  .ab-values {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .ab-mv {
+    grid-template-columns: 1fr;
+  }
+  .ab-timeline::before {
+    left: 7px;
+  }
+  .ab-timeline li,
+  .ab-timeline li:nth-child(even),
+  .ab-timeline li + li {
+    width: auto;
+    margin: 0;
+    padding: 0 0 24px 36px;
+  }
+  .ab-dot,
+  .ab-timeline li:nth-child(even) .ab-dot {
+    left: 0;
+    right: auto;
+  }
+}
+@media (max-width: 600px) {
+  .ab-lines {
+    gap: 10px;
+  }
+  .ab-line {
+    padding: 12px;
+  }
+  .ab-line img {
+    height: 110px;
+  }
+  .ab-values {
+    grid-template-columns: 1fr;
+  }
+  .ab-mv article {
+    min-height: 420px;
+  }
+  .ab-mv article > div {
+    padding: 24px;
+  }
+  .ab-timeline article {
+    grid-template-columns: 76px 1fr;
+    align-items: start;
+    gap: 16px;
+    padding: 16px;
+  }
+  .ab-ms-media {
+    width: 76px;
+    height: 76px;
+  }
+  .ab-ms-media svg {
+    width: 32px;
+    height: 32px;
+  }
+  .ab-timeline b {
+    font-size: 24px;
+  }
+  .svc-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .svc-stats div {
+    padding: 24px 18px;
+    min-height: 140px;
+  }
+  .svc-stats span {
+    letter-spacing: 0.14em;
+    font-size: 11px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ab-logo-mark svg {
+    animation: none;
+  }
+}
