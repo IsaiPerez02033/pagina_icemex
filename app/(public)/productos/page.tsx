@@ -27,7 +27,7 @@ const items: ExplorerItem[] = [
 export const metadata: Metadata = {
   title: "Catálogo de productos",
   description:
-    "Explora las 7 líneas de producto ICEMEX: alumbrado público, iluminación solar, luminarios urbanos, reflectores, luminarios comerciales, postes y herrajes. Fichas técnicas con especificaciones, certificaciones y aplicaciones.",
+    "Explora las 8 líneas de producto ICEMEX: alumbrado público, iluminación solar, luminarios urbanos, reflectores, luminarios comerciales, postes, herrajes y cámaras de seguridad. Fichas técnicas con especificaciones, certificaciones y aplicaciones.",
   keywords: [
     "catálogo iluminación",
     "productos ICEMEX",
@@ -37,11 +37,12 @@ export const metadata: Metadata = {
     "reflectores industriales",
     "herrajes eléctricos",
     "cotizar luminarias",
+    "cámaras de seguridad Wi-Fi",
   ],
   openGraph: {
     title: "Catálogo de productos · ICEMEX",
     description:
-      `${items.length} productos en 7 líneas. Alumbrado público, solar, urbano, reflectores, comerciales, postes y herrajes.`,
+      `${items.length} productos en 8 líneas. Alumbrado público, solar, urbano, reflectores, comerciales, postes, herrajes y cámaras de seguridad.`,
   },
   alternates: { canonical: "https://icemex.mx/productos" },
 };

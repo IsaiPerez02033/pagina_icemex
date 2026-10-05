@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { products, lineNames } from "@/lib/products";
 import LeadMagnetForm from "@/components/LeadMagnetForm";
-import { catalog } from "@/lib/fichas";
+import { cameraCatalog, catalog } from "@/lib/fichas";
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://icemex.mx/catalogo" },
   title: "Catálogo PDF 2026",
   description:
-    `Descarga gratis el catálogo oficial ICEMEX 2026: ${catalog.pages} páginas con fichas técnicas de luminarias LED, postes, reflectores, iluminación solar, herrajes y material eléctrico. Especificaciones, certificaciones y aplicaciones.`,
+    `Descarga gratis el catálogo oficial ICEMEX 2026: ${catalog.pages} páginas con fichas técnicas de luminarias LED, postes, reflectores, iluminación solar, herrajes y material eléctrico, y el catálogo de cámaras de seguridad Wi-Fi.`,
   keywords: [
     "catálogo iluminación", "fichas técnicas LED", "catálogo postes", "catálogo ICEMEX", "descargar catálogo iluminación", "especificaciones luminarias", "PDF iluminación pública",
+    "catálogo cámaras de seguridad", "catálogo videovigilancia PDF", "fichas técnicas cámaras Wi-Fi",
   ],
   openGraph: {
     title: "Catálogo PDF 2026 · ICEMEX",
@@ -267,6 +269,114 @@ export default function CatalogoPage() {
               </span>
             </div>
           ))}
+        </section>
+
+        {/* Catálogo de videovigilancia */}
+        <section
+          id="camaras"
+          className="catalog-hero"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1.2fr 1fr",
+            gap: 56,
+            alignItems: "start",
+            marginTop: 120,
+            scrollMarginTop: 120,
+          }}
+        >
+          <div>
+            <p
+              style={{
+                color: "var(--accent-cyan)",
+                fontSize: 12,
+                letterSpacing: "0.32em",
+                textTransform: "uppercase",
+                marginBottom: 18,
+              }}
+            >
+              Catálogo de videovigilancia 2026
+            </p>
+            <h2
+              style={{
+                fontSize: "clamp(30px, 4vw, 52px)",
+                color: "var(--text-primary)",
+                fontWeight: 300,
+                letterSpacing: "0.06em",
+                lineHeight: 1.05,
+                marginBottom: 24,
+                textTransform: "uppercase",
+              }}
+            >
+              Cámaras
+              <br />
+              <span style={{ color: "var(--accent-cyan)" }}>de seguridad</span>
+            </h2>
+            <p
+              style={{
+                color: "var(--text-muted)",
+                fontSize: 15,
+                lineHeight: 1.8,
+                marginBottom: 32,
+                maxWidth: 520,
+              }}
+            >
+              {Object.keys(cameraCatalog.fichas).length} cámaras Wi-Fi con su
+              ficha técnica: duales, PTZ para exterior, de interior, foco
+              cámara y solares. Todas con vista remota desde el celular, audio
+              bidireccional y visión nocturna; las instalamos y configuramos
+              por ti.
+            </p>
+            {/* eslint-disable-next-line @next/next/no-img-element -- webp ya optimizado por fichas-src/catalogo.py */}
+            <img
+              src={cameraCatalog.cover.src}
+              width={cameraCatalog.cover.width}
+              height={cameraCatalog.cover.height}
+              alt="Portada del Catálogo de Videovigilancia ICEMEX 2026"
+              loading="lazy"
+              decoding="async"
+              style={{
+                display: "block",
+                width: "100%",
+                maxWidth: 360,
+                height: "auto",
+                borderRadius: 12,
+                border: "1px solid rgba(var(--cyan-rgb), 0.15)",
+                boxShadow: "0 30px 80px rgba(0, 0, 0, 0.35)",
+              }}
+            />
+            <div
+              style={{
+                marginTop: 24,
+                display: "flex",
+                gap: 16,
+                flexWrap: "wrap",
+                fontSize: 11,
+                color: "var(--text-muted)",
+                letterSpacing: "0.22em",
+                textTransform: "uppercase",
+              }}
+            >
+              <span>{cameraCatalog.pages} páginas</span>
+              <span style={{ color: "rgba(var(--cyan-rgb), 0.4)" }}>·</span>
+              <span>PDF · {cameraCatalog.mb} MB</span>
+              <span style={{ color: "rgba(var(--cyan-rgb), 0.4)" }}>·</span>
+              <Link href="/productos?linea=CV" style={{ color: "var(--accent-cyan)" }}>
+                Ver las cámaras →
+              </Link>
+            </div>
+          </div>
+          <div style={{ position: "sticky", top: 120 }}>
+            <LeadMagnetForm
+              pdfUrl={cameraCatalog.pdf}
+              pdfFilename="Catalogo_Videovigilancia_ICEMEX2026.pdf"
+              eyebrow="Descarga gratuita"
+              headline="Recibe el catálogo de cámaras"
+              submitLabel="↓ Descargar catálogo de cámaras"
+              resourceLabel="Catálogo de videovigilancia 2026"
+              successTitle="¡Listo! El catálogo se está descargando"
+              successMessage="Si la descarga no inicia, usa el botón de abajo. Abrimos WhatsApp para que nuestro equipo te ayude a elegir las cámaras para tu espacio."
+            />
+          </div>
         </section>
       </div>
 

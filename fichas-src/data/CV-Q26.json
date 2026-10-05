@@ -1,0 +1,167 @@
+{
+ "model": "Q26",
+ "kind": "Minicámara de seguridad Wi-Fi para interior",
+ "power": "",
+ "variant": "2 MP · Wi-Fi 2.4 GHz · Interior",
+ "badge": "Compatible con Alexa",
+ "hero": "XOLSEC:p20_x1751",
+ "kpis": [
+  {
+   "v": "2",
+   "u": "MP",
+   "l": "Resolución"
+  },
+  {
+   "v": "10",
+   "u": "m",
+   "l": "Visión nocturna"
+  },
+  {
+   "v": "2.4",
+   "u": "GHz",
+   "l": "Conexión Wi-Fi"
+  },
+  {
+   "v": "MicroSD",
+   "u": "",
+   "l": "Almacenamiento"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "15",
+   "u": "m",
+   "l": "Alcance Wi-Fi"
+  },
+  {
+   "v": "Detección",
+   "u": "",
+   "l": "De movimiento"
+  }
+ ],
+ "description": [
+  "Q26 es una minicámara de seguridad Wi-Fi para interior. Tiene resolución de 2 MP. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+  "Detecta movimiento; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa."
+ ],
+ "features": [
+  {
+   "t": "Vista remota",
+   "d": "Monitoreo en tiempo real desde el celular."
+  },
+  {
+   "t": "Audio bidireccional",
+   "d": "Escucha y habla a través de la cámara."
+  },
+  {
+   "t": "Visión nocturna",
+   "d": "A color o en blanco y negro, hasta 10 m."
+  },
+  {
+   "t": "Detección de movimiento",
+   "d": "Detecta el movimiento en su campo de visión."
+  }
+ ],
+ "warranty": [],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Video",
+   "rows": [
+    [
+     "Resolución",
+     "2 MP"
+    ],
+    [
+     "Visión nocturna",
+     "Color / blanco y negro"
+    ],
+    [
+     "Distancia de visión",
+     "10 m"
+    ],
+    [
+     "Detección de movimiento",
+     "Sí"
+    ],
+    [
+     "Seguimiento inteligente",
+     "No"
+    ]
+   ]
+  },
+  {
+   "name": "Conectividad",
+   "rows": [
+    [
+     "Conexión Wi-Fi",
+     "2.4 GHz"
+    ],
+    [
+     "Alcance de conexión",
+     "15 m"
+    ],
+    [
+     "Red cableada RJ45",
+     "No"
+    ],
+    [
+     "Vista remota",
+     "Desde el celular"
+    ],
+    [
+     "Compatible con Alexa",
+     "Sí"
+    ]
+   ]
+  },
+  {
+   "name": "Audio, grabación e instalación",
+   "rows": [
+    [
+     "Audio bidireccional",
+     "Sí"
+    ],
+    [
+     "Almacenamiento",
+     "Tarjeta MicroSD"
+    ],
+    [
+     "Uso",
+     "Interior"
+    ],
+    [
+     "Protección IP66",
+     "No"
+    ]
+   ]
+  }
+ ],
+ "temps": [],
+ "advantages": [
+  {
+   "t": "Desde tu celular",
+   "d": "Supervisión en tiempo real y control remoto desde la app."
+  },
+  {
+   "t": "Compatible con Alexa",
+   "d": "Se integra con dispositivos Alexa."
+  },
+  {
+   "t": "Grabación local",
+   "d": "Almacenamiento en tarjeta MicroSD."
+  },
+  {
+   "t": "Instalación disponible",
+   "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+  }
+ ],
+ "applications": [
+  "Hogar",
+  "Oficinas",
+  "Comercios",
+  "Consultorios",
+  "Recepciones"
+ ],
+ "is_lum": false,
+ "group": "Cámaras para interior"
+}

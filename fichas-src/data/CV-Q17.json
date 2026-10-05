@@ -1,0 +1,174 @@
+{
+ "model": "Q17",
+ "kind": "Foco con cámara de seguridad PTZ Wi-Fi",
+ "power": "",
+ "variant": "2 MP · PTZ · Wi-Fi 2.4 GHz · Interior",
+ "badge": "Compatible con Alexa",
+ "hero": "XOLSEC:p22_x1781",
+ "kpis": [
+  {
+   "v": "2",
+   "u": "MP",
+   "l": "Resolución"
+  },
+  {
+   "v": "10",
+   "u": "m",
+   "l": "Visión nocturna"
+  },
+  {
+   "v": "2.4",
+   "u": "GHz",
+   "l": "Conexión Wi-Fi"
+  },
+  {
+   "v": "MicroSD",
+   "u": "",
+   "l": "Almacenamiento"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "15",
+   "u": "m",
+   "l": "Alcance Wi-Fi"
+  },
+  {
+   "v": "Sí",
+   "u": "",
+   "l": "Seguimiento inteligente"
+  }
+ ],
+ "description": [
+  "Q17 es un foco con cámara de seguridad PTZ Wi-Fi. Tiene resolución de 2 MP y movimiento de giro e inclinación (PTZ). Se instala en un portalámparas, como un foco: seguridad disimulada y de instalación sencilla. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+  "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa."
+ ],
+ "features": [
+  {
+   "t": "Se instala como foco",
+   "d": "En un portalámparas, sin montaje adicional."
+  },
+  {
+   "t": "Vista remota",
+   "d": "Monitoreo en tiempo real desde el celular."
+  },
+  {
+   "t": "Audio bidireccional",
+   "d": "Escucha y habla a través de la cámara."
+  },
+  {
+   "t": "Visión nocturna",
+   "d": "A color o en blanco y negro, hasta 10 m."
+  }
+ ],
+ "warranty": [],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Video",
+   "rows": [
+    [
+     "Resolución",
+     "2 MP"
+    ],
+    [
+     "Movimiento",
+     "PTZ (giro e inclinación)"
+    ],
+    [
+     "Visión nocturna",
+     "Color / blanco y negro"
+    ],
+    [
+     "Distancia de visión",
+     "10 m"
+    ],
+    [
+     "Detección de movimiento",
+     "Sí"
+    ],
+    [
+     "Seguimiento inteligente",
+     "Sí"
+    ]
+   ]
+  },
+  {
+   "name": "Conectividad",
+   "rows": [
+    [
+     "Conexión Wi-Fi",
+     "2.4 GHz"
+    ],
+    [
+     "Alcance de conexión",
+     "15 m"
+    ],
+    [
+     "Red cableada RJ45",
+     "No"
+    ],
+    [
+     "Vista remota",
+     "Desde el celular"
+    ],
+    [
+     "Compatible con Alexa",
+     "Sí"
+    ]
+   ]
+  },
+  {
+   "name": "Audio, grabación e instalación",
+   "rows": [
+    [
+     "Audio bidireccional",
+     "Sí"
+    ],
+    [
+     "Almacenamiento",
+     "Tarjeta MicroSD"
+    ],
+    [
+     "Uso",
+     "Interior"
+    ],
+    [
+     "Protección IP66",
+     "No"
+    ],
+    [
+     "Instalación",
+     "En portalámparas (como foco)"
+    ]
+   ]
+  }
+ ],
+ "temps": [],
+ "advantages": [
+  {
+   "t": "Desde tu celular",
+   "d": "Supervisión en tiempo real y control remoto desde la app."
+  },
+  {
+   "t": "Compatible con Alexa",
+   "d": "Se integra con dispositivos Alexa."
+  },
+  {
+   "t": "Grabación local",
+   "d": "Almacenamiento en tarjeta MicroSD."
+  },
+  {
+   "t": "Instalación disponible",
+   "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+  }
+ ],
+ "applications": [
+  "Hogar",
+  "Pasillos y cocheras",
+  "Comercios",
+  "Bodegas"
+ ],
+ "is_lum": false,
+ "group": "Focos cámara"
+}

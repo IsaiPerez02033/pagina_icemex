@@ -39,6 +39,7 @@ const TIPOS_PROYECTO = [
   "Estacionamiento",
   "Proyecto solar autónomo",
   "Mantenimiento de parque existente",
+  "Cámaras de seguridad",
   "Otro / aún no defino",
 ];
 

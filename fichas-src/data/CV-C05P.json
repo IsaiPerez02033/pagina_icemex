@@ -1,0 +1,180 @@
+{
+ "model": "C05-P",
+ "kind": "Cámara de seguridad PTZ Wi-Fi con luces de alerta",
+ "power": "",
+ "variant": "2 MP · PTZ · Wi-Fi 2.4 GHz · Exterior",
+ "badge": "Luces de alerta",
+ "hero": "XOLSEC:p10_x1553",
+ "kpis": [
+  {
+   "v": "2",
+   "u": "MP",
+   "l": "Resolución"
+  },
+  {
+   "v": "10",
+   "u": "m",
+   "l": "Visión nocturna"
+  },
+  {
+   "v": "2.4",
+   "u": "GHz",
+   "l": "Conexión Wi-Fi"
+  },
+  {
+   "v": "IP66",
+   "u": "",
+   "l": "Uso exterior"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "15",
+   "u": "m",
+   "l": "Alcance Wi-Fi"
+  },
+  {
+   "v": "Sí",
+   "u": "",
+   "l": "Seguimiento inteligente"
+  }
+ ],
+ "description": [
+  "C05-P es una cámara de seguridad PTZ Wi-Fi con luces de alerta. Tiene resolución de 2 MP y movimiento de giro e inclinación (PTZ). Integra luces de alerta roja y azul para disuadir a intrusos. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+  "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa y su protección IP66 contra polvo y agua la hace apta para exterior."
+ ],
+ "features": [
+  {
+   "t": "Luces de alerta",
+   "d": "Luz roja y azul para disuadir."
+  },
+  {
+   "t": "Vista remota",
+   "d": "Monitoreo en tiempo real desde el celular."
+  },
+  {
+   "t": "Audio bidireccional",
+   "d": "Escucha y habla a través de la cámara."
+  },
+  {
+   "t": "Visión nocturna",
+   "d": "A color o en blanco y negro, hasta 10 m."
+  }
+ ],
+ "warranty": [],
+ "certs": [
+  {
+   "c": "IP66",
+   "l": "Polvo y agua"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Video",
+   "rows": [
+    [
+     "Resolución",
+     "2 MP"
+    ],
+    [
+     "Movimiento",
+     "PTZ (giro e inclinación)"
+    ],
+    [
+     "Visión nocturna",
+     "Color / blanco y negro"
+    ],
+    [
+     "Distancia de visión",
+     "10 m"
+    ],
+    [
+     "Detección de movimiento",
+     "Sí"
+    ],
+    [
+     "Seguimiento inteligente",
+     "Sí"
+    ]
+   ]
+  },
+  {
+   "name": "Conectividad",
+   "rows": [
+    [
+     "Conexión Wi-Fi",
+     "2.4 GHz"
+    ],
+    [
+     "Alcance de conexión",
+     "15 m"
+    ],
+    [
+     "Red cableada RJ45",
+     "No"
+    ],
+    [
+     "Vista remota",
+     "Desde el celular"
+    ],
+    [
+     "Compatible con Alexa",
+     "Sí"
+    ]
+   ]
+  },
+  {
+   "name": "Audio, grabación e instalación",
+   "rows": [
+    [
+     "Audio bidireccional",
+     "Sí"
+    ],
+    [
+     "Almacenamiento",
+     "Tarjeta MicroSD"
+    ],
+    [
+     "Uso",
+     "Exterior"
+    ],
+    [
+     "Protección IP66",
+     "Sí"
+    ]
+   ]
+  }
+ ],
+ "temps": [],
+ "advantages": [
+  {
+   "t": "Desde tu celular",
+   "d": "Supervisión en tiempo real y control remoto desde la app."
+  },
+  {
+   "t": "Compatible con Alexa",
+   "d": "Se integra con dispositivos Alexa."
+  },
+  {
+   "t": "Grabación local",
+   "d": "Almacenamiento en tarjeta MicroSD."
+  },
+  {
+   "t": "Lista para exterior",
+   "d": "Protección IP66 contra polvo y chorros de agua."
+  },
+  {
+   "t": "Instalación disponible",
+   "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+  }
+ ],
+ "applications": [
+  "Fachadas y accesos",
+  "Patios y cocheras",
+  "Comercios",
+  "Bodegas",
+  "Estacionamientos"
+ ],
+ "is_lum": false,
+ "group": "Cámaras para exterior"
+}

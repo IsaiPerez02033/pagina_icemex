@@ -16,6 +16,7 @@ const LINE_TERMS: Record<ProductLine, string[]> = {
   LC: ["luminario LED comercial", "panel LED", "gabinete LED", "lámpara LED para oficina"],
   PT: ["poste metálico", "poste para alumbrado público", "poste ornamental", "postes de luz"],
   AC: ["accesorios para alumbrado público", "herrajes para poste", "brazo para luminaria"],
+  CV: ["cámara de seguridad", "cámara de vigilancia", "cámara Wi-Fi", "cámara IP", "CCTV", "videovigilancia", "venta e instalación de cámaras"],
 };
 
 // Marcas de componentes que la gente busca junto con el producto.
@@ -56,6 +57,34 @@ export function brands(f: Ficha): string[] {
 
 const hasWatts = (s: string) => /\d\s*W\b/i.test(s);
 
+/** Valor de una fila de especificaciones: spec(f, "Resolución") → "2 MP + 2 MP". */
+const spec = (f: Ficha, label: string) =>
+  f.specs.flatMap((g) => g.rows).find(([l]) => l.toLowerCase() === label.toLowerCase())?.[1];
+
+/** Búsquedas típicas de cámaras: "cámara wifi 4MP", "foco cámara", "cámara solar"… */
+function cameraKeywords(f: Ficha): string[] {
+  const mp = [...new Set((spec(f, "Resolución") ?? "").match(/\d+(?=\s*MP)/g) ?? [])];
+  const kind = f.kind.toLowerCase();
+  const out = [
+    `cámara de seguridad ${f.model}`,
+    `cámara ${f.model}`,
+    ...mp.flatMap((n) => [`cámara ${n}MP`, `cámara wifi ${n}MP`, `cámara de seguridad ${n} megapixeles`]),
+  ];
+  if (spec(f, "Lentes")) out.push("cámara doble lente", "cámara dual", "cámara con dos lentes");
+  if (spec(f, "Movimiento")) out.push("cámara PTZ", "cámara PTZ wifi", "cámara que gira");
+  if (kind.startsWith("foco")) out.push("foco cámara", "foco con cámara", "cámara foco wifi", "cámara para socket");
+  if (kind.includes("solar")) out.push("cámara solar", "cámara solar wifi", "cámara con panel solar", "cámara sin cables");
+  if (kind.includes("batería")) out.push("cámara con batería", "cámara inalámbrica");
+  if (kind.includes("bala")) out.push("cámara tipo bala", "cámara bullet wifi");
+  if (kind.includes("mini")) out.push("mini cámara wifi", "cámara espía");
+  if (kind.includes("reflector")) out.push("cámara con reflector", "cámara con luz LED");
+  out.push(spec(f, "Uso") === "Exterior" ? "cámara para exterior" : "cámara para interior");
+  if (spec(f, "Compatible con Alexa") === "Sí") out.push("cámara compatible con Alexa");
+  if (/color/i.test(spec(f, "Visión nocturna") ?? "")) out.push("cámara visión nocturna a color");
+  out.push("cámara con audio", "cámara para ver desde el celular", "cámara con memoria microSD");
+  return out;
+}
+
 /** "Bolardo Triangular — Bolardo LED de sección triangular, 30 W". */
 export function seoTitle(f: Ficha, name: string): string {
   const power = WATTS_RX.test(f.power) && !hasWatts(name) ? `, ${f.power.replace(/\s+/g, " ")}` : "";
@@ -86,6 +115,7 @@ export function seoKeywords(f: Ficha, name: string, code: string, line: ProductL
     `${name} precio`,
     ...watts(f).flatMap((w) => [`${head} ${w} W`, `${head} ${w} watts`, `${w}W`]),
     ...brands(f).flatMap((b) => [`${head} ${b}`, `LED ${b}`]),
+    ...(line === "CV" ? cameraKeywords(f) : []),
     ...LINE_TERMS[line],
     lineNames[line],
     ...tags,
@@ -131,7 +161,8 @@ export function seoFaqs(f: Ficha, name: string, code: string): Faq[] {
         .join(", ")}.`,
     });
   }
-  const ip = findKpi(f, /^IP\d/);
+  if (f.line === "CV") faqs.push(...cameraFaqs(f, name, code));
+  const ip = f.line === "CV" ? undefined : findKpi(f, /^IP\d/);
   const life = findKpi(f, /vida/i);
   const flux = findKpi(f, /flujo|lúmenes/i);
   const facts = [
@@ -160,6 +191,42 @@ export function seoFaqs(f: Ficha, name: string, code: string): Faq[] {
   faqs.push({
     q: `¿Dónde comprar ${name} y cuál es su precio?`,
     a: `Cotiza ${name} (${code}) directamente con ICEMEX por WhatsApp: te damos precio, disponibilidad y asesoría técnica sin costo. También puedes descargar su ficha técnica en PDF desde esta página.`,
+  });
+  return faqs;
+}
+
+/** Preguntas de cámaras: resolución, uso desde el celular, exterior e instalación. */
+function cameraFaqs(f: Ficha, name: string, code: string): Faq[] {
+  const res = spec(f, "Resolución");
+  const night = spec(f, "Visión nocturna");
+  const rj45 = spec(f, "Red cableada RJ45") === "Sí";
+  const outdoor = spec(f, "Uso") === "Exterior";
+  const faqs: Faq[] = [];
+  if (res) {
+    faqs.push({
+      q: `¿Qué resolución tiene ${name}?`,
+      a: `${name} (${code}) graba en ${res}${spec(f, "Lentes") ? " con doble lente: vigila dos puntos a la vez" : ""}.${
+        night
+          ? ` Visión nocturna ${/color/i.test(night) ? "a color o en blanco y negro" : "en blanco y negro"} con alcance de ${spec(f, "Distancia de visión") ?? "10 m"}.`
+          : ""
+      }`,
+    });
+  }
+  faqs.push({
+    q: `¿Se puede ver ${name} desde el celular?`,
+    a: `Sí. Se conecta por Wi-Fi ${spec(f, "Conexión Wi-Fi") ?? ""}${rj45 ? " o por cable de red RJ45" : ""} y permite ver la cámara en tiempo real desde el celular, con audio bidireccional. ${
+      spec(f, "Compatible con Alexa") === "Sí" ? "Es compatible con Alexa y graba" : "Graba"
+    } en tarjeta MicroSD.`.replace(/\s+/g, " "),
+  });
+  faqs.push({
+    q: `¿${name} sirve para exterior?`,
+    a: outdoor
+      ? `Sí. ${name} tiene protección IP66 contra polvo y chorros de agua, para fachadas, patios, cocheras y otras zonas abiertas.`
+      : `${name} está pensada para interior (no tiene protección IP66). Para exterior te recomendamos un modelo IP66; pregúntanos por WhatsApp.`,
+  });
+  faqs.push({
+    q: `¿ICEMEX instala ${name}?`,
+    a: `Sí. Vendemos e instalamos cámaras de seguridad: montaje, conexión y configuración del acceso remoto desde tu celular. Cotiza ${name} con instalación por WhatsApp.`,
   });
   return faqs;
 }

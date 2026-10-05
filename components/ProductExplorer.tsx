@@ -98,7 +98,7 @@ export default function ProductExplorer({ items }: { items: ExplorerItem[] }) {
             {p.thumb && (
               // eslint-disable-next-line @next/next/no-img-element -- miniatura webp ya optimizada
               <img
-                className="explorer-thumb"
+                className={p.line === "CV" ? "explorer-thumb on-dark" : "explorer-thumb"}
                 src={p.thumb.src}
                 width={p.thumb.width}
                 height={p.thumb.height}

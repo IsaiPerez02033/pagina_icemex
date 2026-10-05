@@ -9,6 +9,7 @@ const pagesLabel = ([first, last]: number[]) =>
 
 /** Portada de la ficha + botón de descarga del PDF. */
 export function FichaDownload({ ficha }: { ficha: Ficha }) {
+  const inCatalog = catalogPages(ficha.code);
   return (
     <div className="ficha-download">
       <a href={ficha.pdf} target="_blank" rel="noopener" className="ficha-preview">
@@ -25,9 +26,9 @@ export function FichaDownload({ ficha }: { ficha: Ficha }) {
       <a href={ficha.pdf} download className="action-secondary ficha-pdf-btn">
         ↓ Descargar ficha técnica (PDF)
       </a>
-      {catalogPages(ficha.code) && (
+      {inCatalog && (
         <p className="ficha-pages">
-          {pagesLabel(catalogPages(ficha.code))} del Catálogo ICEMEX 2026
+          {pagesLabel(inCatalog.pages)} del {inCatalog.catalog.title}
         </p>
       )}
     </div>
@@ -122,7 +123,7 @@ export default function FichaPage({ ficha, product }: FichaPageProps) {
         </nav>
 
         <section className="ficha-hero">
-          <div className="ficha-stage">
+          <div className={line === "CV" ? "ficha-stage on-dark" : "ficha-stage"}>
             {/* eslint-disable-next-line @next/next/no-img-element -- foto webp ya optimizada por fichas-src/build.py */}
             <img
               src={ficha.mid.src}
@@ -303,7 +304,9 @@ export default function FichaPage({ ficha, product }: FichaPageProps) {
               Cotizar por WhatsApp
             </a>
             <p className="ficha-note">
-              Precio, disponibilidad y asesoría técnica (DIALux, NOM-013) sin costo.
+              {line === "CV"
+                ? "Precio, disponibilidad, instalación y configuración del acceso remoto."
+                : "Precio, disponibilidad y asesoría técnica (DIALux, NOM-013) sin costo."}
             </p>
             <Link href="/productos" className="ficha-back">
               ← Volver al catálogo
@@ -320,6 +323,7 @@ export default function FichaPage({ ficha, product }: FichaPageProps) {
                   <Link href={fichaHref(f)} prefetch={false}>
                     {/* eslint-disable-next-line @next/next/no-img-element -- miniatura webp ya optimizada */}
                     <img
+                      className={f.line === "CV" ? "on-dark" : undefined}
                       src={f.thumb.src}
                       width={f.thumb.width}
                       height={f.thumb.height}

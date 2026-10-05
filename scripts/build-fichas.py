@@ -34,6 +34,7 @@ OUT = ROOT / "lib" / "fichas-data.json"
 LINE_BY_PREFIX = {
     "AL": "AL", "IS": "IS", "LU": "LU", "PP": "LU", "ICELUM": "LU",
     "BOLARD": "LU", "RF": "RF", "FL": "LC", "LC": "LC", "POSTES": "PT",
+    "CV": "CV",  # cámaras de seguridad (fichas-src/camaras.py)
 }
 # Fichas cuyo prefijo no corresponde a su línea.
 LINE_OVERRIDE = {"IS-LF1016": "AL"}  # LEAFLED: luminaria tipo cobra de red, no solar
@@ -138,6 +139,11 @@ def main():
         tags = [tag for tag, rx in TAG_RULES.items() if re.search(rx, haystack)]
         if line == "IS" and "solar" not in tags:
             tags.append("solar")
+        if line == "CV":
+            # Cámaras: "pasillos" o "patios" no las hacen de parques y jardines.
+            tags = [t for t in tags if t in ("comercial", "industrial", "solar")]
+            if re.search(r"\b(hogar|cocheras?)\b", haystack):
+                tags.insert(0, "residencial")
 
         cover, cover_thumb = render_cover(pdf, code)
         kpis = (src.get("kpis2") or src.get("kpis", []) + src.get("kpis_extra", []))[:6]
@@ -171,6 +177,7 @@ def main():
             "dims": dims,
             "mount": src.get("mount", ""),
             "isLuminaire": src.get("is_lum", True),
+            **({"group": src["group"]} if src.get("group") else {}),
         })
         print(f"{code:18} {line}  {','.join(tags)}")
 

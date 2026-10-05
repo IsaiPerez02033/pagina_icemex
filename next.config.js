@@ -60,6 +60,7 @@ const nextConfig = {
     return [
       { source: "/:path*", headers: securityHeaders },
       { source: "/Catalogo_ICEMEX2026.pdf", headers: pdfCache },
+      { source: "/Catalogo_Videovigilancia_ICEMEX2026.pdf", headers: pdfCache },
       { source: "/fichas/:file", headers: pdfCache },
       { source: "/fichas/img/:file", headers: pdfCache },
     ];

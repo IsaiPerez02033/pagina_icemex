@@ -26624,5 +26624,3832 @@
   "dims": [],
   "mount": "",
   "isLuminaire": false
+ },
+ {
+  "code": "CV-Q24",
+  "name": "Cámara Dual Q24",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "comercial"
+  ],
+  "pages": [
+   6
+  ],
+  "pdf": "/fichas/CV-Q24.pdf?v=418116ff",
+  "image": {
+   "src": "/productos/CV-Q24.webp?v=15ddaf25",
+   "width": 921,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-Q24-md.webp?v=64423113",
+   "width": 526,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-Q24-thumb.webp?v=e04d0825",
+   "width": 276,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-Q24.webp?v=88d97e7d",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-Q24-thumb.webp?v=25be0e21",
+   "width": 360,
+   "height": 510
+  },
+  "model": "Q24",
+  "kind": "Cámara de seguridad Wi-Fi de doble lente para interior",
+  "power": "",
+  "variant": "2 + 2 MP · PTZ · Wi-Fi 2.4 GHz · Interior",
+  "summary": "Q24 es una cámara de seguridad Wi-Fi de doble lente para interior. Tiene resolución de 2 MP + 2 MP y movimiento de giro e inclinación (PTZ).",
+  "description": [
+   "Q24 es una cámara de seguridad Wi-Fi de doble lente para interior. Tiene resolución de 2 MP + 2 MP y movimiento de giro e inclinación (PTZ). Sus dos lentes vigilan dos puntos a la vez con un solo equipo. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa."
+  ],
+  "kpis": [
+   {
+    "v": "2+2",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "MicroSD",
+    "u": "",
+    "l": "Almacenamiento"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Sí",
+    "u": "",
+    "l": "Seguimiento inteligente"
+   }
+  ],
+  "features": [
+   {
+    "t": "Doble lente",
+    "d": "Dos puntos de vigilancia en un solo equipo."
+   },
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "2 MP + 2 MP"
+     ],
+     [
+      "Lentes",
+      "2 (doble lente)"
+     ],
+     [
+      "Movimiento",
+      "PTZ (giro e inclinación)"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Interior"
+     ],
+     [
+      "Protección IP66",
+      "No"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Hogar",
+   "Oficinas",
+   "Comercios",
+   "Consultorios",
+   "Recepciones"
+  ],
+  "warranty": [],
+  "certs": [],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras duales"
+ },
+ {
+  "code": "CV-Q29",
+  "name": "Cámara Dual Q29",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "industrial"
+  ],
+  "pages": [
+   7
+  ],
+  "pdf": "/fichas/CV-Q29.pdf?v=f569046f",
+  "image": {
+   "src": "/productos/CV-Q29.webp?v=ab7e0968",
+   "width": 1025,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-Q29-md.webp?v=00055c33",
+   "width": 586,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-Q29-thumb.webp?v=03ff0022",
+   "width": 307,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-Q29.webp?v=e77468aa",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-Q29-thumb.webp?v=69b46554",
+   "width": 360,
+   "height": 510
+  },
+  "model": "Q29",
+  "kind": "Cámara de seguridad Wi-Fi de doble lente, bala y domo",
+  "power": "",
+  "variant": "3 + 3 MP · PTZ · Wi-Fi 2.4 GHz · Exterior",
+  "summary": "Q29 es una cámara de seguridad Wi-Fi de doble lente, bala y domo. Tiene resolución de 3 MP + 3 MP y movimiento de giro e inclinación (PTZ).",
+  "description": [
+   "Q29 es una cámara de seguridad Wi-Fi de doble lente, bala y domo. Tiene resolución de 3 MP + 3 MP y movimiento de giro e inclinación (PTZ). Sus dos lentes vigilan dos puntos a la vez con un solo equipo. Se conecta por Wi-Fi 2.4 GHz o por cable de red RJ45 y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa y su protección IP66 contra polvo y agua la hace apta para exterior."
+  ],
+  "kpis": [
+   {
+    "v": "3+3",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "IP66",
+    "u": "",
+    "l": "Uso exterior"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Sí",
+    "u": "",
+    "l": "Seguimiento inteligente"
+   }
+  ],
+  "features": [
+   {
+    "t": "Doble lente",
+    "d": "Dos puntos de vigilancia en un solo equipo."
+   },
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Lista para exterior",
+    "d": "Protección IP66 contra polvo y chorros de agua."
+   },
+   {
+    "t": "Conexión por cable",
+    "d": "Puerto de red RJ45 además de Wi-Fi."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "3 MP + 3 MP"
+     ],
+     [
+      "Lentes",
+      "2 (doble lente)"
+     ],
+     [
+      "Movimiento",
+      "PTZ (giro e inclinación)"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "Sí"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Exterior"
+     ],
+     [
+      "Protección IP66",
+      "Sí"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Fachadas y accesos",
+   "Patios y cocheras",
+   "Comercios",
+   "Bodegas",
+   "Estacionamientos"
+  ],
+  "warranty": [],
+  "certs": [
+   {
+    "c": "IP66",
+    "l": "Polvo y agua"
+   }
+  ],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras duales"
+ },
+ {
+  "code": "CV-C05",
+  "name": "Cámara PTZ C05",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "industrial"
+  ],
+  "pages": [
+   9
+  ],
+  "pdf": "/fichas/CV-C05.pdf?v=0b147757",
+  "image": {
+   "src": "/productos/CV-C05.webp?v=211864bc",
+   "width": 1099,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-C05-md.webp?v=a42f1516",
+   "width": 628,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-C05-thumb.webp?v=673f8f69",
+   "width": 330,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-C05.webp?v=08341ee2",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-C05-thumb.webp?v=398f01fe",
+   "width": 360,
+   "height": 510
+  },
+  "model": "C05",
+  "kind": "Cámara de seguridad PTZ Wi-Fi para exterior",
+  "power": "",
+  "variant": "2 MP · PTZ · Wi-Fi 2.4 GHz · Exterior",
+  "summary": "C05 es una cámara de seguridad PTZ Wi-Fi para exterior. Tiene resolución de 2 MP y movimiento de giro e inclinación (PTZ).",
+  "description": [
+   "C05 es una cámara de seguridad PTZ Wi-Fi para exterior. Tiene resolución de 2 MP y movimiento de giro e inclinación (PTZ). Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa y su protección IP66 contra polvo y agua la hace apta para exterior."
+  ],
+  "kpis": [
+   {
+    "v": "2",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "IP66",
+    "u": "",
+    "l": "Uso exterior"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Sí",
+    "u": "",
+    "l": "Seguimiento inteligente"
+   }
+  ],
+  "features": [
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   },
+   {
+    "t": "Seguimiento inteligente",
+    "d": "Detecta el movimiento y sigue al objetivo."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Lista para exterior",
+    "d": "Protección IP66 contra polvo y chorros de agua."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "2 MP"
+     ],
+     [
+      "Movimiento",
+      "PTZ (giro e inclinación)"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Exterior"
+     ],
+     [
+      "Protección IP66",
+      "Sí"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Fachadas y accesos",
+   "Patios y cocheras",
+   "Comercios",
+   "Bodegas",
+   "Estacionamientos"
+  ],
+  "warranty": [],
+  "certs": [
+   {
+    "c": "IP66",
+    "l": "Polvo y agua"
+   }
+  ],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras para exterior"
+ },
+ {
+  "code": "CV-C05P",
+  "name": "Cámara PTZ C05-P con luces de alerta",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "industrial"
+  ],
+  "pages": [
+   10
+  ],
+  "pdf": "/fichas/CV-C05P.pdf?v=12181dde",
+  "image": {
+   "src": "/productos/CV-C05P.webp?v=aca58dc4",
+   "width": 1041,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-C05P-md.webp?v=3eac0405",
+   "width": 595,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-C05P-thumb.webp?v=0fe05966",
+   "width": 312,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-C05P.webp?v=ea33c5e6",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-C05P-thumb.webp?v=6c2237d2",
+   "width": 360,
+   "height": 510
+  },
+  "model": "C05-P",
+  "kind": "Cámara de seguridad PTZ Wi-Fi con luces de alerta",
+  "power": "",
+  "variant": "2 MP · PTZ · Wi-Fi 2.4 GHz · Exterior",
+  "summary": "C05-P es una cámara de seguridad PTZ Wi-Fi con luces de alerta. Tiene resolución de 2 MP y movimiento de giro e inclinación (PTZ). Integra luces de alerta roja y azul para disuadir a intrusos.",
+  "description": [
+   "C05-P es una cámara de seguridad PTZ Wi-Fi con luces de alerta. Tiene resolución de 2 MP y movimiento de giro e inclinación (PTZ). Integra luces de alerta roja y azul para disuadir a intrusos. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa y su protección IP66 contra polvo y agua la hace apta para exterior."
+  ],
+  "kpis": [
+   {
+    "v": "2",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "IP66",
+    "u": "",
+    "l": "Uso exterior"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Sí",
+    "u": "",
+    "l": "Seguimiento inteligente"
+   }
+  ],
+  "features": [
+   {
+    "t": "Luces de alerta",
+    "d": "Luz roja y azul para disuadir."
+   },
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Lista para exterior",
+    "d": "Protección IP66 contra polvo y chorros de agua."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "2 MP"
+     ],
+     [
+      "Movimiento",
+      "PTZ (giro e inclinación)"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Exterior"
+     ],
+     [
+      "Protección IP66",
+      "Sí"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Fachadas y accesos",
+   "Patios y cocheras",
+   "Comercios",
+   "Bodegas",
+   "Estacionamientos"
+  ],
+  "warranty": [],
+  "certs": [
+   {
+    "c": "IP66",
+    "l": "Polvo y agua"
+   }
+  ],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras para exterior"
+ },
+ {
+  "code": "CV-C07",
+  "name": "Cámara PTZ C07 de doble lente",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "industrial"
+  ],
+  "pages": [
+   11
+  ],
+  "pdf": "/fichas/CV-C07.pdf?v=5127552d",
+  "image": {
+   "src": "/productos/CV-C07.webp?v=2d7d9c41",
+   "width": 933,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-C07-md.webp?v=5c7c3b6d",
+   "width": 533,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-C07-thumb.webp?v=47c21308",
+   "width": 280,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-C07.webp?v=94d9cb2d",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-C07-thumb.webp?v=acbca3b8",
+   "width": 360,
+   "height": 510
+  },
+  "model": "C07",
+  "kind": "Cámara de seguridad PTZ Wi-Fi de doble lente",
+  "power": "",
+  "variant": "4 + 4 MP · PTZ · Wi-Fi 2.4 GHz · Exterior",
+  "summary": "C07 es una cámara de seguridad PTZ Wi-Fi de doble lente. Tiene resolución de 4 MP + 4 MP y movimiento de giro e inclinación (PTZ). Sus dos lentes vigilan dos puntos a la vez con un solo equipo.",
+  "description": [
+   "C07 es una cámara de seguridad PTZ Wi-Fi de doble lente. Tiene resolución de 4 MP + 4 MP y movimiento de giro e inclinación (PTZ). Sus dos lentes vigilan dos puntos a la vez con un solo equipo. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa y su protección IP66 contra polvo y agua la hace apta para exterior."
+  ],
+  "kpis": [
+   {
+    "v": "4+4",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "IP66",
+    "u": "",
+    "l": "Uso exterior"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Sí",
+    "u": "",
+    "l": "Seguimiento inteligente"
+   }
+  ],
+  "features": [
+   {
+    "t": "Doble lente",
+    "d": "Dos puntos de vigilancia en un solo equipo."
+   },
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Lista para exterior",
+    "d": "Protección IP66 contra polvo y chorros de agua."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "4 MP + 4 MP"
+     ],
+     [
+      "Lentes",
+      "2 (doble lente)"
+     ],
+     [
+      "Movimiento",
+      "PTZ (giro e inclinación)"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Exterior"
+     ],
+     [
+      "Protección IP66",
+      "Sí"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Fachadas y accesos",
+   "Patios y cocheras",
+   "Comercios",
+   "Bodegas",
+   "Estacionamientos"
+  ],
+  "warranty": [],
+  "certs": [
+   {
+    "c": "IP66",
+    "l": "Polvo y agua"
+   }
+  ],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras para exterior"
+ },
+ {
+  "code": "CV-C19",
+  "name": "Cámara PTZ C19 de doble lente",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "industrial"
+  ],
+  "pages": [
+   12
+  ],
+  "pdf": "/fichas/CV-C19.pdf?v=a2790be5",
+  "image": {
+   "src": "/productos/CV-C19.webp?v=2d7d9c41",
+   "width": 933,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-C19-md.webp?v=5c7c3b6d",
+   "width": 533,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-C19-thumb.webp?v=47c21308",
+   "width": 280,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-C19.webp?v=ad4bd157",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-C19-thumb.webp?v=ec4785bf",
+   "width": 360,
+   "height": 510
+  },
+  "model": "C19",
+  "kind": "Cámara de seguridad PTZ Wi-Fi de doble lente",
+  "power": "",
+  "variant": "2 + 2 MP · PTZ · Wi-Fi 2.4 GHz · Exterior",
+  "summary": "C19 es una cámara de seguridad PTZ Wi-Fi de doble lente. Tiene resolución de 2 MP + 2 MP y movimiento de giro e inclinación (PTZ). Sus dos lentes vigilan dos puntos a la vez con un solo equipo.",
+  "description": [
+   "C19 es una cámara de seguridad PTZ Wi-Fi de doble lente. Tiene resolución de 2 MP + 2 MP y movimiento de giro e inclinación (PTZ). Sus dos lentes vigilan dos puntos a la vez con un solo equipo. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa y su protección IP66 contra polvo y agua la hace apta para exterior."
+  ],
+  "kpis": [
+   {
+    "v": "2+2",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "IP66",
+    "u": "",
+    "l": "Uso exterior"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Sí",
+    "u": "",
+    "l": "Seguimiento inteligente"
+   }
+  ],
+  "features": [
+   {
+    "t": "Doble lente",
+    "d": "Dos puntos de vigilancia en un solo equipo."
+   },
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Lista para exterior",
+    "d": "Protección IP66 contra polvo y chorros de agua."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "2 MP + 2 MP"
+     ],
+     [
+      "Lentes",
+      "2 (doble lente)"
+     ],
+     [
+      "Movimiento",
+      "PTZ (giro e inclinación)"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Exterior"
+     ],
+     [
+      "Protección IP66",
+      "Sí"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Fachadas y accesos",
+   "Patios y cocheras",
+   "Comercios",
+   "Bodegas",
+   "Estacionamientos"
+  ],
+  "warranty": [],
+  "certs": [
+   {
+    "c": "IP66",
+    "l": "Polvo y agua"
+   }
+  ],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras para exterior"
+ },
+ {
+  "code": "CV-C22",
+  "name": "Cámara PTZ C22",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "industrial"
+  ],
+  "pages": [
+   13
+  ],
+  "pdf": "/fichas/CV-C22.pdf?v=4a8b1dee",
+  "image": {
+   "src": "/productos/CV-C22.webp?v=d0bf75c6",
+   "width": 1177,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-C22-md.webp?v=2f239fb4",
+   "width": 673,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-C22-thumb.webp?v=cd773d1f",
+   "width": 353,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-C22.webp?v=a2bb0906",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-C22-thumb.webp?v=e86e0f6b",
+   "width": 360,
+   "height": 510
+  },
+  "model": "C22",
+  "kind": "Cámara de seguridad PTZ Wi-Fi para exterior",
+  "power": "",
+  "variant": "4 MP · PTZ · Wi-Fi 2.4 GHz · Exterior",
+  "summary": "C22 es una cámara de seguridad PTZ Wi-Fi para exterior. Tiene resolución de 4 MP y movimiento de giro e inclinación (PTZ).",
+  "description": [
+   "C22 es una cámara de seguridad PTZ Wi-Fi para exterior. Tiene resolución de 4 MP y movimiento de giro e inclinación (PTZ). Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa y su protección IP66 contra polvo y agua la hace apta para exterior."
+  ],
+  "kpis": [
+   {
+    "v": "4",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "IP66",
+    "u": "",
+    "l": "Uso exterior"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Sí",
+    "u": "",
+    "l": "Seguimiento inteligente"
+   }
+  ],
+  "features": [
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   },
+   {
+    "t": "Seguimiento inteligente",
+    "d": "Detecta el movimiento y sigue al objetivo."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Lista para exterior",
+    "d": "Protección IP66 contra polvo y chorros de agua."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "4 MP"
+     ],
+     [
+      "Movimiento",
+      "PTZ (giro e inclinación)"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Exterior"
+     ],
+     [
+      "Protección IP66",
+      "Sí"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Fachadas y accesos",
+   "Patios y cocheras",
+   "Comercios",
+   "Bodegas",
+   "Estacionamientos"
+  ],
+  "warranty": [],
+  "certs": [
+   {
+    "c": "IP66",
+    "l": "Polvo y agua"
+   }
+  ],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras para exterior"
+ },
+ {
+  "code": "CV-Q35",
+  "name": "Cámara PTZ Q35 con reflectores LED",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "industrial"
+  ],
+  "pages": [
+   14
+  ],
+  "pdf": "/fichas/CV-Q35.pdf?v=89cd0cc5",
+  "image": {
+   "src": "/productos/CV-Q35.webp?v=b1ba259c",
+   "width": 1400,
+   "height": 1178
+  },
+  "mid": {
+   "src": "/productos/CV-Q35-md.webp?v=0322befd",
+   "width": 800,
+   "height": 673
+  },
+  "thumb": {
+   "src": "/productos/CV-Q35-thumb.webp?v=a785ba1b",
+   "width": 420,
+   "height": 354
+  },
+  "cover": {
+   "src": "/fichas/img/CV-Q35.webp?v=6a4a8874",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-Q35-thumb.webp?v=a6a97152",
+   "width": 360,
+   "height": 510
+  },
+  "model": "Q35",
+  "kind": "Cámara de seguridad PTZ con 3 reflectores LED",
+  "power": "",
+  "variant": "3 MP · PTZ · Wi-Fi 2.4 GHz · Exterior",
+  "summary": "Q35 es una cámara de seguridad PTZ con 3 reflectores LED. Tiene resolución de 3 MP y movimiento de giro e inclinación (PTZ). Integra 3 reflectores LED que iluminan el área que vigila.",
+  "description": [
+   "Q35 es una cámara de seguridad PTZ con 3 reflectores LED. Tiene resolución de 3 MP y movimiento de giro e inclinación (PTZ). Integra 3 reflectores LED que iluminan el área que vigila. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa y su protección IP66 contra polvo y agua la hace apta para exterior."
+  ],
+  "kpis": [
+   {
+    "v": "3",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "IP66",
+    "u": "",
+    "l": "Uso exterior"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Sí",
+    "u": "",
+    "l": "Seguimiento inteligente"
+   }
+  ],
+  "features": [
+   {
+    "t": "3 reflectores LED",
+    "d": "Iluminan el área vigilada."
+   },
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Lista para exterior",
+    "d": "Protección IP66 contra polvo y chorros de agua."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "3 MP"
+     ],
+     [
+      "Movimiento",
+      "PTZ (giro e inclinación)"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Exterior"
+     ],
+     [
+      "Protección IP66",
+      "Sí"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Fachadas y accesos",
+   "Patios y cocheras",
+   "Comercios",
+   "Bodegas",
+   "Estacionamientos"
+  ],
+  "warranty": [],
+  "certs": [
+   {
+    "c": "IP66",
+    "l": "Polvo y agua"
+   }
+  ],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras para exterior"
+ },
+ {
+  "code": "CV-Q32",
+  "name": "Cámara Bala Q32",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "industrial"
+  ],
+  "pages": [
+   15
+  ],
+  "pdf": "/fichas/CV-Q32.pdf?v=84f08355",
+  "image": {
+   "src": "/productos/CV-Q32.webp?v=5ee96311",
+   "width": 1400,
+   "height": 1399
+  },
+  "mid": {
+   "src": "/productos/CV-Q32-md.webp?v=9e4acc83",
+   "width": 800,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-Q32-thumb.webp?v=fe07c130",
+   "width": 420,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-Q32.webp?v=046de28d",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-Q32-thumb.webp?v=f216d100",
+   "width": 360,
+   "height": 510
+  },
+  "model": "Q32",
+  "kind": "Cámara de seguridad tipo bala Wi-Fi para exterior",
+  "power": "",
+  "variant": "4 MP · Wi-Fi 2.4 GHz · Exterior",
+  "summary": "Q32 es una cámara de seguridad tipo bala Wi-Fi para exterior. Tiene resolución de 4 MP.",
+  "description": [
+   "Q32 es una cámara de seguridad tipo bala Wi-Fi para exterior. Tiene resolución de 4 MP. Se conecta por Wi-Fi 2.4 GHz o por cable de red RJ45 y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa y su protección IP66 contra polvo y agua la hace apta para exterior."
+  ],
+  "kpis": [
+   {
+    "v": "4",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "IP66",
+    "u": "",
+    "l": "Uso exterior"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Detección",
+    "u": "",
+    "l": "De movimiento"
+   }
+  ],
+  "features": [
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   },
+   {
+    "t": "Detección de movimiento",
+    "d": "Detecta el movimiento en su campo de visión."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Lista para exterior",
+    "d": "Protección IP66 contra polvo y chorros de agua."
+   },
+   {
+    "t": "Conexión por cable",
+    "d": "Puerto de red RJ45 además de Wi-Fi."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "4 MP"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "No"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "Sí"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Exterior"
+     ],
+     [
+      "Protección IP66",
+      "Sí"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Fachadas y accesos",
+   "Patios y cocheras",
+   "Comercios",
+   "Bodegas",
+   "Estacionamientos"
+  ],
+  "warranty": [],
+  "certs": [
+   {
+    "c": "IP66",
+    "l": "Polvo y agua"
+   }
+  ],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras para exterior"
+ },
+ {
+  "code": "CV-D21",
+  "name": "Cámara Bala D21 de batería",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "industrial"
+  ],
+  "pages": [
+   16
+  ],
+  "pdf": "/fichas/CV-D21.pdf?v=e8b9c7c5",
+  "image": {
+   "src": "/productos/CV-D21.webp?v=e5379fc0",
+   "width": 1211,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-D21-md.webp?v=ea9470de",
+   "width": 692,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-D21-thumb.webp?v=3b1499df",
+   "width": 363,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-D21.webp?v=b58a3e99",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-D21-thumb.webp?v=09aec332",
+   "width": 360,
+   "height": 510
+  },
+  "model": "D21",
+  "kind": "Cámara de seguridad tipo bala con batería",
+  "power": "",
+  "variant": "5 MP · Wi-Fi 2.4 GHz y 5 GHz · Exterior",
+  "summary": "D21 es una cámara de seguridad tipo bala con batería. Tiene resolución de 5 MP. Funciona con batería, sin cables de corriente, para colocarla donde se necesite.",
+  "description": [
+   "D21 es una cámara de seguridad tipo bala con batería. Tiene resolución de 5 MP. Funciona con batería, sin cables de corriente, para colocarla donde se necesite. Se conecta por Wi-Fi 2.4 GHz y 5 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa y su protección IP66 contra polvo y agua la hace apta para exterior."
+  ],
+  "kpis": [
+   {
+    "v": "5",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4/5",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "IP66",
+    "u": "",
+    "l": "Uso exterior"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Detección",
+    "u": "",
+    "l": "De movimiento"
+   }
+  ],
+  "features": [
+   {
+    "t": "Con batería",
+    "d": "Sin cables de corriente."
+   },
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Lista para exterior",
+    "d": "Protección IP66 contra polvo y chorros de agua."
+   },
+   {
+    "t": "Wi-Fi de doble banda",
+    "d": "Se conecta a redes de 2.4 GHz y 5 GHz."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "5 MP"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "No"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz y 5 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Exterior"
+     ],
+     [
+      "Protección IP66",
+      "Sí"
+     ],
+     [
+      "Alimentación",
+      "Batería"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Fachadas y accesos",
+   "Patios y cocheras",
+   "Comercios",
+   "Bodegas",
+   "Estacionamientos"
+  ],
+  "warranty": [],
+  "certs": [
+   {
+    "c": "IP66",
+    "l": "Polvo y agua"
+   }
+  ],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras para exterior"
+ },
+ {
+  "code": "CV-TV629",
+  "name": "Cámara TV-629 para interior",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "comercial"
+  ],
+  "pages": [
+   18
+  ],
+  "pdf": "/fichas/CV-TV629.pdf?v=aecff2a9",
+  "image": {
+   "src": "/productos/CV-TV629.webp?v=77699b46",
+   "width": 958,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-TV629-md.webp?v=826d19e6",
+   "width": 548,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-TV629-thumb.webp?v=fed94f92",
+   "width": 288,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-TV629.webp?v=3178326d",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-TV629-thumb.webp?v=b9a08243",
+   "width": 360,
+   "height": 510
+  },
+  "model": "TV-629",
+  "kind": "Cámara de seguridad domo Wi-Fi para interior",
+  "power": "",
+  "variant": "3 MP · Wi-Fi 2.4 GHz · Interior",
+  "summary": "TV-629 es una cámara de seguridad domo Wi-Fi para interior. Tiene resolución de 3 MP.",
+  "description": [
+   "TV-629 es una cámara de seguridad domo Wi-Fi para interior. Tiene resolución de 3 MP. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa."
+  ],
+  "kpis": [
+   {
+    "v": "3",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "MicroSD",
+    "u": "",
+    "l": "Almacenamiento"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Sí",
+    "u": "",
+    "l": "Seguimiento inteligente"
+   }
+  ],
+  "features": [
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "En blanco y negro, hasta 10 m."
+   },
+   {
+    "t": "Seguimiento inteligente",
+    "d": "Detecta el movimiento y sigue al objetivo."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "3 MP"
+     ],
+     [
+      "Visión nocturna",
+      "Blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Interior"
+     ],
+     [
+      "Protección IP66",
+      "No"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Hogar",
+   "Oficinas",
+   "Comercios",
+   "Consultorios",
+   "Recepciones"
+  ],
+  "warranty": [],
+  "certs": [],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras para interior"
+ },
+ {
+  "code": "CV-TV628",
+  "name": "Cámara TV-628 para interior",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "comercial"
+  ],
+  "pages": [
+   19
+  ],
+  "pdf": "/fichas/CV-TV628.pdf?v=62fdd99f",
+  "image": {
+   "src": "/productos/CV-TV628.webp?v=42812072",
+   "width": 911,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-TV628-md.webp?v=c088a28e",
+   "width": 521,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-TV628-thumb.webp?v=cb8a3811",
+   "width": 273,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-TV628.webp?v=83154ee1",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-TV628-thumb.webp?v=cefa56d3",
+   "width": 360,
+   "height": 510
+  },
+  "model": "TV-628",
+  "kind": "Cámara de seguridad domo Wi-Fi para interior",
+  "power": "",
+  "variant": "3 MP · Wi-Fi 2.4 GHz y 5 GHz · Interior",
+  "summary": "TV-628 es una cámara de seguridad domo Wi-Fi para interior. Tiene resolución de 3 MP.",
+  "description": [
+   "TV-628 es una cámara de seguridad domo Wi-Fi para interior. Tiene resolución de 3 MP. Se conecta por Wi-Fi 2.4 GHz y 5 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa."
+  ],
+  "kpis": [
+   {
+    "v": "3",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4/5",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "MicroSD",
+    "u": "",
+    "l": "Almacenamiento"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Sí",
+    "u": "",
+    "l": "Seguimiento inteligente"
+   }
+  ],
+  "features": [
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "En blanco y negro, hasta 10 m."
+   },
+   {
+    "t": "Seguimiento inteligente",
+    "d": "Detecta el movimiento y sigue al objetivo."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Wi-Fi de doble banda",
+    "d": "Se conecta a redes de 2.4 GHz y 5 GHz."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "3 MP"
+     ],
+     [
+      "Visión nocturna",
+      "Blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz y 5 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Interior"
+     ],
+     [
+      "Protección IP66",
+      "No"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Hogar",
+   "Oficinas",
+   "Comercios",
+   "Consultorios",
+   "Recepciones"
+  ],
+  "warranty": [],
+  "certs": [],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras para interior"
+ },
+ {
+  "code": "CV-Q26",
+  "name": "Minicámara Q26",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "comercial"
+  ],
+  "pages": [
+   20
+  ],
+  "pdf": "/fichas/CV-Q26.pdf?v=ef466965",
+  "image": {
+   "src": "/productos/CV-Q26.webp?v=04117698",
+   "width": 1009,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-Q26-md.webp?v=f7eed323",
+   "width": 577,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-Q26-thumb.webp?v=4858b0b0",
+   "width": 303,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-Q26.webp?v=3c0516ff",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-Q26-thumb.webp?v=51fc3727",
+   "width": 360,
+   "height": 510
+  },
+  "model": "Q26",
+  "kind": "Minicámara de seguridad Wi-Fi para interior",
+  "power": "",
+  "variant": "2 MP · Wi-Fi 2.4 GHz · Interior",
+  "summary": "Q26 es una minicámara de seguridad Wi-Fi para interior. Tiene resolución de 2 MP. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y…",
+  "description": [
+   "Q26 es una minicámara de seguridad Wi-Fi para interior. Tiene resolución de 2 MP. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa."
+  ],
+  "kpis": [
+   {
+    "v": "2",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "MicroSD",
+    "u": "",
+    "l": "Almacenamiento"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Detección",
+    "u": "",
+    "l": "De movimiento"
+   }
+  ],
+  "features": [
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   },
+   {
+    "t": "Detección de movimiento",
+    "d": "Detecta el movimiento en su campo de visión."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "2 MP"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "No"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Interior"
+     ],
+     [
+      "Protección IP66",
+      "No"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Hogar",
+   "Oficinas",
+   "Comercios",
+   "Consultorios",
+   "Recepciones"
+  ],
+  "warranty": [],
+  "certs": [],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras para interior"
+ },
+ {
+  "code": "CV-Q17",
+  "name": "Foco Cámara Q17",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "industrial"
+  ],
+  "pages": [
+   22
+  ],
+  "pdf": "/fichas/CV-Q17.pdf?v=ee4b8656",
+  "image": {
+   "src": "/productos/CV-Q17.webp?v=212ba7be",
+   "width": 670,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-Q17-md.webp?v=d1bec3c2",
+   "width": 383,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-Q17-thumb.webp?v=2aa9a2e7",
+   "width": 201,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-Q17.webp?v=b7698b0c",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-Q17-thumb.webp?v=a9b17905",
+   "width": 360,
+   "height": 510
+  },
+  "model": "Q17",
+  "kind": "Foco con cámara de seguridad PTZ Wi-Fi",
+  "power": "",
+  "variant": "2 MP · PTZ · Wi-Fi 2.4 GHz · Interior",
+  "summary": "Q17 es un foco con cámara de seguridad PTZ Wi-Fi. Tiene resolución de 2 MP y movimiento de giro e inclinación (PTZ).",
+  "description": [
+   "Q17 es un foco con cámara de seguridad PTZ Wi-Fi. Tiene resolución de 2 MP y movimiento de giro e inclinación (PTZ). Se instala en un portalámparas, como un foco: seguridad disimulada y de instalación sencilla. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa."
+  ],
+  "kpis": [
+   {
+    "v": "2",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "MicroSD",
+    "u": "",
+    "l": "Almacenamiento"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Sí",
+    "u": "",
+    "l": "Seguimiento inteligente"
+   }
+  ],
+  "features": [
+   {
+    "t": "Se instala como foco",
+    "d": "En un portalámparas, sin montaje adicional."
+   },
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "2 MP"
+     ],
+     [
+      "Movimiento",
+      "PTZ (giro e inclinación)"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Interior"
+     ],
+     [
+      "Protección IP66",
+      "No"
+     ],
+     [
+      "Instalación",
+      "En portalámparas (como foco)"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Hogar",
+   "Pasillos y cocheras",
+   "Comercios",
+   "Bodegas"
+  ],
+  "warranty": [],
+  "certs": [],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Focos cámara"
+ },
+ {
+  "code": "CV-Q19",
+  "name": "Foco Cámara Q19 de doble lente",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "industrial"
+  ],
+  "pages": [
+   23
+  ],
+  "pdf": "/fichas/CV-Q19.pdf?v=f7905b61",
+  "image": {
+   "src": "/productos/CV-Q19.webp?v=4b181a60",
+   "width": 775,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-Q19-md.webp?v=7771e1b2",
+   "width": 443,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-Q19-thumb.webp?v=1b34d2fd",
+   "width": 233,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-Q19.webp?v=92eb1a88",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-Q19-thumb.webp?v=d01faa8b",
+   "width": 360,
+   "height": 510
+  },
+  "model": "Q19",
+  "kind": "Foco con cámara de seguridad PTZ de doble lente",
+  "power": "",
+  "variant": "2 + 2 MP · PTZ · Wi-Fi 2.4 GHz · Interior",
+  "summary": "Q19 es un foco con cámara de seguridad PTZ de doble lente. Tiene resolución de 2 MP + 2 MP y movimiento de giro e inclinación (PTZ).",
+  "description": [
+   "Q19 es un foco con cámara de seguridad PTZ de doble lente. Tiene resolución de 2 MP + 2 MP y movimiento de giro e inclinación (PTZ). Se instala en un portalámparas, como un foco, y sus dos lentes vigilan dos puntos a la vez. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa."
+  ],
+  "kpis": [
+   {
+    "v": "2+2",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "MicroSD",
+    "u": "",
+    "l": "Almacenamiento"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Sí",
+    "u": "",
+    "l": "Seguimiento inteligente"
+   }
+  ],
+  "features": [
+   {
+    "t": "Doble lente",
+    "d": "Dos puntos de vigilancia desde un portalámparas."
+   },
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "2 MP + 2 MP"
+     ],
+     [
+      "Lentes",
+      "2 (doble lente)"
+     ],
+     [
+      "Movimiento",
+      "PTZ (giro e inclinación)"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Interior"
+     ],
+     [
+      "Protección IP66",
+      "No"
+     ],
+     [
+      "Instalación",
+      "En portalámparas (como foco)"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Hogar",
+   "Pasillos y cocheras",
+   "Comercios",
+   "Bodegas"
+  ],
+  "warranty": [],
+  "certs": [],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Focos cámara"
+ },
+ {
+  "code": "CV-Q05",
+  "name": "Foco Cámara Q05",
+  "line": "CV",
+  "tags": [
+   "residencial",
+   "industrial"
+  ],
+  "pages": [
+   24
+  ],
+  "pdf": "/fichas/CV-Q05.pdf?v=5ec3d58a",
+  "image": {
+   "src": "/productos/CV-Q05.webp?v=2b9fd011",
+   "width": 786,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-Q05-md.webp?v=2f79ff27",
+   "width": 449,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-Q05-thumb.webp?v=f3abf270",
+   "width": 236,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-Q05.webp?v=e2353202",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-Q05-thumb.webp?v=051075d2",
+   "width": 360,
+   "height": 510
+  },
+  "model": "Q05",
+  "kind": "Foco con cámara de seguridad PTZ Wi-Fi",
+  "power": "",
+  "variant": "2 MP · PTZ · Wi-Fi 2.4 GHz · Exterior",
+  "summary": "Q05 es un foco con cámara de seguridad PTZ Wi-Fi. Tiene resolución de 2 MP y movimiento de giro e inclinación (PTZ).",
+  "description": [
+   "Q05 es un foco con cámara de seguridad PTZ Wi-Fi. Tiene resolución de 2 MP y movimiento de giro e inclinación (PTZ). Se instala en un portalámparas, como un foco: seguridad disimulada y de instalación sencilla. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa y su protección IP66 contra polvo y agua la hace apta para exterior."
+  ],
+  "kpis": [
+   {
+    "v": "2",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "IP66",
+    "u": "",
+    "l": "Uso exterior"
+   },
+   {
+    "v": "15",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Sí",
+    "u": "",
+    "l": "Seguimiento inteligente"
+   }
+  ],
+  "features": [
+   {
+    "t": "Se instala como foco",
+    "d": "En un portalámparas, sin montaje adicional."
+   },
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Lista para exterior",
+    "d": "Protección IP66 contra polvo y chorros de agua."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "2 MP"
+     ],
+     [
+      "Movimiento",
+      "PTZ (giro e inclinación)"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "15 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Exterior"
+     ],
+     [
+      "Protección IP66",
+      "Sí"
+     ],
+     [
+      "Instalación",
+      "En portalámparas (como foco)"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Hogar",
+   "Pasillos y cocheras",
+   "Comercios",
+   "Bodegas"
+  ],
+  "warranty": [],
+  "certs": [
+   {
+    "c": "IP66",
+    "l": "Polvo y agua"
+   }
+  ],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Focos cámara"
+ },
+ {
+  "code": "CV-Q25",
+  "name": "Cámara Solar Q25",
+  "line": "CV",
+  "tags": [
+   "solar"
+  ],
+  "pages": [
+   26
+  ],
+  "pdf": "/fichas/CV-Q25.pdf?v=3c432b22",
+  "image": {
+   "src": "/productos/CV-Q25.webp?v=162b84b9",
+   "width": 1073,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-Q25-md.webp?v=ec039cd1",
+   "width": 613,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-Q25-thumb.webp?v=295be944",
+   "width": 322,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-Q25.webp?v=8b324884",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-Q25-thumb.webp?v=3bb8ad6c",
+   "width": 360,
+   "height": 510
+  },
+  "model": "Q25",
+  "kind": "Cámara de seguridad solar Wi-Fi con panel",
+  "power": "",
+  "variant": "4 MP · Wi-Fi 2.4 GHz · Exterior",
+  "summary": "Q25 es una cámara de seguridad solar Wi-Fi con panel. Tiene resolución de 4 MP. Se alimenta con su panel solar y vigila 24/7 sin depender del cableado eléctrico.",
+  "description": [
+   "Q25 es una cámara de seguridad solar Wi-Fi con panel. Tiene resolución de 4 MP. Se alimenta con su panel solar y vigila 24/7 sin depender del cableado eléctrico. Se conecta por Wi-Fi 2.4 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento y sigue automáticamente al objetivo; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa y su protección IP66 contra polvo y agua la hace apta para exterior."
+  ],
+  "kpis": [
+   {
+    "v": "4",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "IP66",
+    "u": "",
+    "l": "Uso exterior"
+   },
+   {
+    "v": "30",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Sí",
+    "u": "",
+    "l": "Seguimiento inteligente"
+   }
+  ],
+  "features": [
+   {
+    "t": "Energía solar",
+    "d": "Vigilancia 24/7 sin depender del cableado."
+   },
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Lista para exterior",
+    "d": "Protección IP66 contra polvo y chorros de agua."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "4 MP"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "30 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Exterior"
+     ],
+     [
+      "Protección IP66",
+      "Sí"
+     ],
+     [
+      "Alimentación",
+      "Panel solar"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Terrenos y ranchos",
+   "Obras en construcción",
+   "Estacionamientos",
+   "Lugares sin conexión eléctrica"
+  ],
+  "warranty": [],
+  "certs": [
+   {
+    "c": "IP66",
+    "l": "Polvo y agua"
+   }
+  ],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras solares"
+ },
+ {
+  "code": "CV-D21S",
+  "name": "Cámara Solar D21",
+  "line": "CV",
+  "tags": [
+   "solar"
+  ],
+  "pages": [
+   27
+  ],
+  "pdf": "/fichas/CV-D21S.pdf?v=e3cd64ab",
+  "image": {
+   "src": "/productos/CV-D21S.webp?v=eb08f03b",
+   "width": 1258,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/CV-D21S-md.webp?v=f8905846",
+   "width": 719,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/CV-D21S-thumb.webp?v=91dfd6d0",
+   "width": 377,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/CV-D21S.webp?v=b1634b40",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/CV-D21S-thumb.webp?v=4fc7f762",
+   "width": 360,
+   "height": 510
+  },
+  "model": "D21 SOLAR",
+  "kind": "Cámara de seguridad solar tipo bala con panel",
+  "power": "",
+  "variant": "5 MP · Wi-Fi 2.4 GHz y 5 GHz · Exterior",
+  "summary": "D21 SOLAR es una cámara de seguridad solar tipo bala con panel. Tiene resolución de 5 MP. Se alimenta con su panel solar y vigila 24/7 sin depender del cableado eléctrico.",
+  "description": [
+   "D21 SOLAR es una cámara de seguridad solar tipo bala con panel. Tiene resolución de 5 MP. Se alimenta con su panel solar y vigila 24/7 sin depender del cableado eléctrico. Se conecta por Wi-Fi 2.4 GHz y 5 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+   "Detecta movimiento; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa y su protección IP66 contra polvo y agua la hace apta para exterior."
+  ],
+  "kpis": [
+   {
+    "v": "5",
+    "u": "MP",
+    "l": "Resolución"
+   },
+   {
+    "v": "10",
+    "u": "m",
+    "l": "Visión nocturna"
+   },
+   {
+    "v": "2.4/5",
+    "u": "GHz",
+    "l": "Conexión Wi-Fi"
+   },
+   {
+    "v": "IP66",
+    "u": "",
+    "l": "Uso exterior"
+   },
+   {
+    "v": "30",
+    "u": "m",
+    "l": "Alcance Wi-Fi"
+   },
+   {
+    "v": "Detección",
+    "u": "",
+    "l": "De movimiento"
+   }
+  ],
+  "features": [
+   {
+    "t": "Energía solar",
+    "d": "Vigilancia 24/7 sin depender del cableado."
+   },
+   {
+    "t": "Vista remota",
+    "d": "Monitoreo en tiempo real desde el celular."
+   },
+   {
+    "t": "Audio bidireccional",
+    "d": "Escucha y habla a través de la cámara."
+   },
+   {
+    "t": "Visión nocturna",
+    "d": "A color o en blanco y negro, hasta 10 m."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Desde tu celular",
+    "d": "Supervisión en tiempo real y control remoto desde la app."
+   },
+   {
+    "t": "Compatible con Alexa",
+    "d": "Se integra con dispositivos Alexa."
+   },
+   {
+    "t": "Grabación local",
+    "d": "Almacenamiento en tarjeta MicroSD."
+   },
+   {
+    "t": "Lista para exterior",
+    "d": "Protección IP66 contra polvo y chorros de agua."
+   },
+   {
+    "t": "Wi-Fi de doble banda",
+    "d": "Se conecta a redes de 2.4 GHz y 5 GHz."
+   },
+   {
+    "t": "Instalación disponible",
+    "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Video",
+    "rows": [
+     [
+      "Resolución",
+      "5 MP"
+     ],
+     [
+      "Visión nocturna",
+      "Color / blanco y negro"
+     ],
+     [
+      "Distancia de visión",
+      "10 m"
+     ],
+     [
+      "Detección de movimiento",
+      "Sí"
+     ],
+     [
+      "Seguimiento inteligente",
+      "No"
+     ]
+    ]
+   },
+   {
+    "name": "Conectividad",
+    "rows": [
+     [
+      "Conexión Wi-Fi",
+      "2.4 GHz y 5 GHz"
+     ],
+     [
+      "Alcance de conexión",
+      "30 m"
+     ],
+     [
+      "Red cableada RJ45",
+      "No"
+     ],
+     [
+      "Vista remota",
+      "Desde el celular"
+     ],
+     [
+      "Compatible con Alexa",
+      "Sí"
+     ]
+    ]
+   },
+   {
+    "name": "Audio, grabación e instalación",
+    "rows": [
+     [
+      "Audio bidireccional",
+      "Sí"
+     ],
+     [
+      "Almacenamiento",
+      "Tarjeta MicroSD"
+     ],
+     [
+      "Uso",
+      "Exterior"
+     ],
+     [
+      "Protección IP66",
+      "Sí"
+     ],
+     [
+      "Alimentación",
+      "Panel solar"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Terrenos y ranchos",
+   "Obras en construcción",
+   "Estacionamientos",
+   "Lugares sin conexión eléctrica"
+  ],
+  "warranty": [],
+  "certs": [
+   {
+    "c": "IP66",
+    "l": "Polvo y agua"
+   }
+  ],
+  "dims": [],
+  "mount": "",
+  "isLuminaire": false,
+  "group": "Cámaras solares"
  }
 ]

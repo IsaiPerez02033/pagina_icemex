@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { lineNames, type ProductLine } from "@/lib/products";
 import type { LineShowcase } from "@/lib/fichas";
 import SpotlightCard from "@/components/SpotlightCard";
+import catalogData from "@/lib/catalogo-paginas.json";
 
 // Resumen de cada línea según sus fichas técnicas 2026.
 const taglines: Record<ProductLine, string> = {
@@ -17,6 +18,7 @@ const taglines: Record<ProductLine, string> = {
   LC: "Paneles, gabinetes y lineales · CREE TrueWhite® con IRC > 90",
   PT: "Rectos, cónicos y ornamentales de 3 a 15 m en acero A-36",
   AC: "Brazos, anclas, bases de concreto, picobas y señalización",
+  CV: "Cámaras Wi-Fi PTZ, duales, foco cámara y solares · vista desde el celular",
 };
 
 export default function ProductsSection({ lines }: { lines: LineShowcase[] }) {
@@ -121,10 +123,11 @@ export default function ProductsSection({ lines }: { lines: LineShowcase[] }) {
               lineHeight: 1.7,
             }}
           >
-            {total} productos en siete líneas, desde alumbrado público y solar
-            autónomo hasta bolardos urbanos, reflectores de alta potencia,
-            luminarios comerciales, postería y accesorios. Cada uno con su
-            ficha técnica descargable. Elige una línea para explorarla.
+            {total} productos en {lines.length} líneas, desde alumbrado público y
+            solar autónomo hasta bolardos urbanos, reflectores de alta potencia,
+            luminarios comerciales, postería, accesorios y cámaras de seguridad.
+            Cada uno con su ficha técnica descargable. Elige una línea para
+            explorarla.
           </p>
         </div>
 
@@ -190,9 +193,10 @@ export default function ProductsSection({ lines }: { lines: LineShowcase[] }) {
                 en el <span>catálogo completo</span>
               </h3>
               <p className="catalog-cta-text">
-                176 páginas con especificaciones, certificaciones y
-                aplicaciones, más la ficha técnica individual de cada uno de
-                los {total} productos. Descárgalo o consúltalo online.
+                {catalogData.pages} páginas con especificaciones, certificaciones y
+                aplicaciones de iluminación, postería y herrajes, más un
+                catálogo aparte de cámaras de seguridad. Cada producto con su
+                ficha técnica descargable.
               </p>
 
               <div className="catalog-cta-buttons">
@@ -207,7 +211,7 @@ export default function ProductsSection({ lines }: { lines: LineShowcase[] }) {
 
             <div className="catalog-cta-stats">
               <div>
-                <span className="catalog-cta-num">176</span>
+                <span className="catalog-cta-num">{catalogData.pages}</span>
                 <span className="catalog-cta-lbl">Páginas</span>
               </div>
               <div>
@@ -215,7 +219,7 @@ export default function ProductsSection({ lines }: { lines: LineShowcase[] }) {
                 <span className="catalog-cta-lbl">Productos</span>
               </div>
               <div>
-                <span className="catalog-cta-num">07</span>
+                <span className="catalog-cta-num">{String(lines.length).padStart(2, "0")}</span>
                 <span className="catalog-cta-lbl">Líneas</span>
               </div>
               <div>

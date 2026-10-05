@@ -1,0 +1,183 @@
+{
+ "model": "D21 SOLAR",
+ "kind": "Cámara de seguridad solar tipo bala con panel",
+ "power": "",
+ "variant": "5 MP · Wi-Fi 2.4 GHz y 5 GHz · Exterior",
+ "badge": "Energía solar",
+ "hero": "XOLSEC:p27_x1874",
+ "kpis": [
+  {
+   "v": "5",
+   "u": "MP",
+   "l": "Resolución"
+  },
+  {
+   "v": "10",
+   "u": "m",
+   "l": "Visión nocturna"
+  },
+  {
+   "v": "2.4/5",
+   "u": "GHz",
+   "l": "Conexión Wi-Fi"
+  },
+  {
+   "v": "IP66",
+   "u": "",
+   "l": "Uso exterior"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "30",
+   "u": "m",
+   "l": "Alcance Wi-Fi"
+  },
+  {
+   "v": "Detección",
+   "u": "",
+   "l": "De movimiento"
+  }
+ ],
+ "description": [
+  "D21 SOLAR es una cámara de seguridad solar tipo bala con panel. Tiene resolución de 5 MP. Se alimenta con su panel solar y vigila 24/7 sin depender del cableado eléctrico. Se conecta por Wi-Fi 2.4 GHz y 5 GHz y se monitorea en tiempo real desde el celular, con audio bidireccional para escuchar y hablar a través de la cámara.",
+  "Detecta movimiento; su visión nocturna a color o en blanco y negro alcanza 10 m y graba en tarjeta MicroSD. Es compatible con Alexa y su protección IP66 contra polvo y agua la hace apta para exterior."
+ ],
+ "features": [
+  {
+   "t": "Energía solar",
+   "d": "Vigilancia 24/7 sin depender del cableado."
+  },
+  {
+   "t": "Vista remota",
+   "d": "Monitoreo en tiempo real desde el celular."
+  },
+  {
+   "t": "Audio bidireccional",
+   "d": "Escucha y habla a través de la cámara."
+  },
+  {
+   "t": "Visión nocturna",
+   "d": "A color o en blanco y negro, hasta 10 m."
+  }
+ ],
+ "warranty": [],
+ "certs": [
+  {
+   "c": "IP66",
+   "l": "Polvo y agua"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Video",
+   "rows": [
+    [
+     "Resolución",
+     "5 MP"
+    ],
+    [
+     "Visión nocturna",
+     "Color / blanco y negro"
+    ],
+    [
+     "Distancia de visión",
+     "10 m"
+    ],
+    [
+     "Detección de movimiento",
+     "Sí"
+    ],
+    [
+     "Seguimiento inteligente",
+     "No"
+    ]
+   ]
+  },
+  {
+   "name": "Conectividad",
+   "rows": [
+    [
+     "Conexión Wi-Fi",
+     "2.4 GHz y 5 GHz"
+    ],
+    [
+     "Alcance de conexión",
+     "30 m"
+    ],
+    [
+     "Red cableada RJ45",
+     "No"
+    ],
+    [
+     "Vista remota",
+     "Desde el celular"
+    ],
+    [
+     "Compatible con Alexa",
+     "Sí"
+    ]
+   ]
+  },
+  {
+   "name": "Audio, grabación e instalación",
+   "rows": [
+    [
+     "Audio bidireccional",
+     "Sí"
+    ],
+    [
+     "Almacenamiento",
+     "Tarjeta MicroSD"
+    ],
+    [
+     "Uso",
+     "Exterior"
+    ],
+    [
+     "Protección IP66",
+     "Sí"
+    ],
+    [
+     "Alimentación",
+     "Panel solar"
+    ]
+   ]
+  }
+ ],
+ "temps": [],
+ "advantages": [
+  {
+   "t": "Desde tu celular",
+   "d": "Supervisión en tiempo real y control remoto desde la app."
+  },
+  {
+   "t": "Compatible con Alexa",
+   "d": "Se integra con dispositivos Alexa."
+  },
+  {
+   "t": "Grabación local",
+   "d": "Almacenamiento en tarjeta MicroSD."
+  },
+  {
+   "t": "Lista para exterior",
+   "d": "Protección IP66 contra polvo y chorros de agua."
+  },
+  {
+   "t": "Wi-Fi de doble banda",
+   "d": "Se conecta a redes de 2.4 GHz y 5 GHz."
+  },
+  {
+   "t": "Instalación disponible",
+   "d": "Instalación y configuración profesional, con acceso remoto listo desde el día uno."
+  }
+ ],
+ "applications": [
+  "Terrenos y ranchos",
+  "Obras en construcción",
+  "Estacionamientos",
+  "Lugares sin conexión eléctrica"
+ ],
+ "is_lum": false,
+ "group": "Cámaras solares"
+}

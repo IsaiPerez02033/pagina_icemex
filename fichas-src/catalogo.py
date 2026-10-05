@@ -1,18 +1,19 @@
 """
-Catálogo completo: portada, contenido, separador por línea de producto, las
-127 fichas (public/fichas) y contraportada, en un solo PDF. También deja las
-fichas sueltas ordenadas en carpetas por sección.
+Catálogo completo: portada, contenido, separador por sección, las fichas
+(public/fichas) y contraportada, en un solo PDF. También deja las fichas
+sueltas ordenadas en carpetas por sección. Hay dos catálogos: el general de
+iluminación (secciones = líneas del sitio) y el de videovigilancia (línea CV,
+secciones = "group" de cada ficha de cámara).
 
-    python3 fichas-src/catalogo.py [CARPETA]   # default: fichas-src/build/catalogo
+    python3 fichas-src/catalogo.py [camaras] [CARPETA]   # default: fichas-src/build/catalogo[-camaras]
 
-Salida en CARPETA:
-  Catalogo_ICEMEX_2026.pdf          calidad completa (impresión)
-  Catalogo_ICEMEX_2026_ligero.pdf   fotos a ~130 ppp (para enviar)
+Salida en CARPETA (NOMBRE = Catalogo_ICEMEX_2026 o Catalogo_Videovigilancia_ICEMEX_2026):
+  NOMBRE.pdf          calidad completa (impresión)
+  NOMBRE_ligero.pdf   fotos a ~130 ppp (para enviar)
   Fichas técnicas/NN Sección/CÓDIGO MODELO.pdf
 
-y para el sitio: public/Catalogo_ICEMEX2026.pdf (la versión ligera, que se
-descarga en /catalogo), public/catalogo-portada.webp y
-lib/catalogo-paginas.json (páginas de cada ficha en el catálogo).
+y para el sitio: la versión ligera en public/ (se descarga en /catalogo), su
+portada en webp y lib/catalogo-*.json (páginas de cada ficha en el catálogo).
 
 Correr después de build.py y scripts/build-fichas.py (lee lib/fichas-data.json
 para la línea de cada ficha y su orden en el catálogo).
@@ -38,13 +39,10 @@ ROOT = SRC.parent
 FICHAS = ROOT / "public" / "fichas"
 PHOTOS = ROOT / "public" / "productos"
 YEAR = 2026
-NAME = f"Catalogo_ICEMEX_{YEAR}"
-WEB_PDF = ROOT / "public" / f"Catalogo_ICEMEX{YEAR}.pdf"
-WEB_COVER = ROOT / "public" / "catalogo-portada.webp"
-WEB_PAGES = ROOT / "lib" / "catalogo-paginas.json"
 LINK = "https://catalogo.icemex.invalid/p/"  # se convierte en salto a página
 
 # Mismas líneas que el sitio (lib/products.ts), con texto para el separador.
+# Las cámaras (CV) van en su propio catálogo.
 SECTIONS = [
     ("AL", "Alumbrado público", "Alumbrado<br>público",
      "Luminarias LED para vialidades, avenidas, autopistas y alumbrado municipal.",
@@ -77,6 +75,67 @@ COLLAGE = [
     ("RF-RE1003", 144, 46, 50, 12),
     ("AL-LT1002", 48, 96, 56, 2),
 ]
+
+# Catálogo de videovigilancia: secciones por "group" de la ficha (camaras.py).
+CAMERA_SECTIONS = [
+    ("Cámaras duales", "Cámaras duales", "Cámaras<br>duales",
+     "Dos puntos de vigilancia en un solo equipo: doble lente, doble visión.",
+     ["CV-Q24", "CV-Q29"]),
+    ("Cámaras para exterior", "Cámaras para exterior", "Cámaras para<br>exterior",
+     "Domos PTZ y cámaras tipo bala con protección IP66 para vigilar 24/7 en zonas abiertas.",
+     ["CV-C05P", "CV-Q35", "CV-Q32"]),
+    ("Cámaras para interior", "Cámaras para interior", "Cámaras para<br>interior",
+     "Monitoreo discreto en tiempo real para el interior de tu hogar o negocio.",
+     ["CV-TV629", "CV-TV628", "CV-Q26"]),
+    ("Focos cámara", "Focos cámara", "Focos<br>cámara",
+     "Seguridad disimulada: cámara PTZ integrada en un foco de instalación sencilla.",
+     ["CV-Q17", "CV-Q19", "CV-Q05"]),
+    ("Cámaras solares", "Cámaras solares", "Cámaras<br>solares",
+     "Vigilancia autónoma 24/7 con energía solar, sin depender del cableado eléctrico.",
+     ["CV-Q25", "CV-D21S"]),
+]
+
+CAMERA_COLLAGE = [
+    ("CV-Q35", 0, 58, 54, 50),
+    ("CV-Q24", 136, 46, 56, 52),
+    ("CV-Q19", 12, 36, 70, 0),
+    ("CV-D21S", 132, 56, 58, 0),
+    ("CV-C07", 54, 80, 98, 0),
+]
+
+
+def group_of(f):
+    return json.loads((SRC / "data" / f"{f['code']}.json").read_text()).get("group")
+
+
+CATALOGS = {
+    "icemex": {
+        "name": f"Catalogo_ICEMEX_{YEAR}",
+        "web_pdf": ROOT / "public" / f"Catalogo_ICEMEX{YEAR}.pdf",
+        "web_cover": ROOT / "public" / "catalogo-portada.webp",
+        "web_pages": ROOT / "lib" / "catalogo-paginas.json",
+        "out": SRC / "build" / "catalogo",
+        "sections": SECTIONS, "collage": COLLAGE,
+        "member": lambda f: f["line"], "include": lambda f: f["line"] != "CV",
+        "label": "model",
+        "doc_title": f"Catálogo ICEMEX {YEAR}", "tag": "Catálogo de productos",
+        "kind": "Iluminación LED, solar y urbana", "headline": "Catálogo", "unit": "líneas de producto",
+        "subject": "Catálogo de productos y fichas técnicas",
+    },
+    "camaras": {
+        "name": f"Catalogo_Videovigilancia_ICEMEX_{YEAR}",
+        "web_pdf": ROOT / "public" / f"Catalogo_Videovigilancia_ICEMEX{YEAR}.pdf",
+        "web_cover": ROOT / "public" / "catalogo-camaras-portada.webp",
+        "web_pages": ROOT / "lib" / "catalogo-camaras.json",
+        "out": SRC / "build" / "catalogo-camaras",
+        "sections": CAMERA_SECTIONS, "collage": CAMERA_COLLAGE,
+        "member": group_of, "include": lambda f: f["line"] == "CV",
+        "label": "name",  # el modelo (Q24) ya va en el código (CV-Q24)
+        "doc_title": f"Catálogo de Videovigilancia ICEMEX {YEAR}", "tag": "Catálogo de videovigilancia",
+        "kind": "Cámaras de seguridad y videovigilancia", "headline": "Cámaras", "unit": "categorías",
+        "subject": "Catálogo de cámaras de seguridad y fichas técnicas",
+    },
+}
 
 ROW_MM = 5.2      # fila del contenido
 SEC_MM = 13.5     # encabezado de sección en el contenido
@@ -178,14 +237,14 @@ def lighten(src: Path, dst: Path, max_px=1100, quality=68):
     d.save(dst, garbage=4, deflate=True, use_objstms=1)
 
 
-def main(out: Path):
-    fichas = json.loads((ROOT / "lib" / "fichas-data.json").read_text())
+def main(cat: dict, out: Path):
+    fichas = [f for f in json.loads((ROOT / "lib" / "fichas-data.json").read_text()) if cat["include"](f)]
     sections = []
-    for i, (line, name, title, desc, pics) in enumerate(SECTIONS):
+    for i, (line, name, title, desc, pics) in enumerate(cat["sections"]):
         items = sorted(
-            (f for f in fichas if f["line"] == line),
+            (f for f in fichas if cat["member"](f) == line),
             key=lambda f: (min(f["pages"] or [999]), f["code"]))
-        items = [{"code": f["code"], "model": f["model"],
+        items = [{"code": f["code"], "model": f[cat["label"]],
                   "n": pymupdf.open(FICHAS / f"{f['code']}.pdf").page_count} for f in items]
         sections.append({"line": line, "num": f"{i + 1:02d}", "name": name, "title": title,
                          "desc": desc, "photos": [photo(c) for c in pics], "items": items})
@@ -205,12 +264,12 @@ def main(out: Path):
     n_pages = page  # + contraportada
 
     collage = [{"src": photo(c), "style": f"left:{x}mm;width:{w}mm;height:{h}mm;bottom:{b}mm"}
-               for c, x, w, h, b in COLLAGE]
+               for c, x, w, h, b in cat["collage"]]
     env = Environment(loader=FileSystemLoader(SRC), autoescape=True)
     html = SRC / "_catalogo.html"
     html.write_text(env.get_template("catalogo.html.j2").render(
         year=YEAR, sections=sections, toc_pages=toc, total=total, collage=collage,
-        link=LINK, row_mm=ROW_MM))
+        link=LINK, row_mm=ROW_MM, **{k: cat[k] for k in ("doc_title", "tag", "kind", "headline", "unit")}))
     tmp = SRC / "build"
     tmp.mkdir(exist_ok=True)
     extra = tmp / "catalogo-extra.pdf"
@@ -252,17 +311,17 @@ def main(out: Path):
                 pg.insert_link({"kind": pymupdf.LINK_GOTO, "from": ln["from"], "page": target,
                                 "to": pymupdf.Point(0, 0)})
     doc.set_toc(outline)
-    doc.set_metadata({"title": f"Catálogo ICEMEX {YEAR}", "author": "ICEMEX",
-                      "subject": "Catálogo de productos y fichas técnicas"})
+    doc.set_metadata({"title": cat["doc_title"], "author": "ICEMEX", "subject": cat["subject"]})
 
     out.mkdir(parents=True, exist_ok=True)
-    full = out / f"{NAME}.pdf"
+    full = out / f"{cat['name']}.pdf"
     doc.save(full, garbage=4, deflate=True, use_objstms=1)
     doc.close()
-    light = out / f"{NAME}_ligero.pdf"
+    light = out / f"{cat['name']}_ligero.pdf"
     lighten(full, light)
 
     # Sitio: descarga, portada y páginas de cada ficha.
+    WEB_PDF, WEB_COVER = cat["web_pdf"], cat["web_cover"]
     shutil.copy2(light, WEB_PDF)
     pix = pymupdf.open(full)[0].get_pixmap(dpi=110)
     cover = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
@@ -270,7 +329,7 @@ def main(out: Path):
     cover.save(WEB_COVER, "WEBP", quality=86, method=6)
     pages = {f["code"]: [f["page"], f["page"] + f["n"] - 1] for s in sections for f in s["items"]}
     v = lambda p: hashlib.md5(p.read_bytes()).hexdigest()[:8]
-    WEB_PAGES.write_text(json.dumps({
+    cat["web_pages"].write_text(json.dumps({
         "pdf": f"/{WEB_PDF.name}?v={v(WEB_PDF)}", "pages": n_pages,
         "mb": round(light.stat().st_size / 1e6),
         "cover": {"src": f"/{WEB_COVER.name}?v={v(WEB_COVER)}", "width": cover.width, "height": cover.height},
@@ -295,6 +354,8 @@ def main(out: Path):
 PREVIEW = "--preview" in sys.argv  # solo las páginas propias del catálogo
 
 if __name__ == "__main__":
-    if PREVIEW:
-        sys.argv.remove("--preview")
-    main(Path(sys.argv[1]) if len(sys.argv) > 1 else SRC / "build" / "catalogo")
+    args = [a for a in sys.argv[1:] if a != "--preview"]
+    cat = CATALOGS["icemex"]
+    if args and args[0] in CATALOGS:
+        cat = CATALOGS[args.pop(0)]
+    main(cat, Path(args[0]) if args else cat["out"])

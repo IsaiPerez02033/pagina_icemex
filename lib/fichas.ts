@@ -5,6 +5,7 @@
 import raw from "./fichas-data.json";
 import legacyCodes from "./legacy-codes.json";
 import catalogData from "./catalogo-paginas.json";
+import cameraCatalogData from "./catalogo-camaras.json";
 import { products, type Product, type ProductLine, type ProductTag } from "./products";
 
 export interface FichaImage {
@@ -50,6 +51,8 @@ export interface Ficha {
   dims: [string, string][];
   mount: string;
   isLuminaire: boolean;
+  /** Sección en su catálogo (cámaras: "Cámaras duales", "Focos cámara"…). */
+  group?: string;
 }
 
 /** Valor de un KPI con su unidad: "150 W", "IP65", "4 in". */
@@ -59,17 +62,28 @@ export const fichas = raw as Ficha[];
 
 const byCode = new Map(fichas.map((f) => [f.code.toLowerCase(), f]));
 
-/** Catálogo PDF que se descarga en /catalogo (fichas-src/catalogo.py). */
-export const catalog = catalogData as {
+export interface CatalogPdf {
+  title: string;
   pdf: string;
   pages: number;
   mb: number;
   cover: FichaImage;
   fichas: Record<string, number[]>;
+}
+
+/** Catálogos PDF que se descargan en /catalogo (fichas-src/catalogo.py). */
+export const catalog: CatalogPdf = { title: "Catálogo ICEMEX 2026", ...catalogData };
+export const cameraCatalog: CatalogPdf = {
+  title: "Catálogo de Videovigilancia ICEMEX 2026",
+  ...cameraCatalogData,
 };
 
-/** Páginas [primera, última] de una ficha en el catálogo descargable. */
-export const catalogPages = (code: string) => catalog.fichas[code];
+/** Catálogo donde viene una ficha y sus páginas [primera, última]. */
+export function catalogPages(code: string): { catalog: CatalogPdf; pages: number[] } | undefined {
+  for (const c of [catalog, cameraCatalog]) {
+    if (c.fichas[code]) return { catalog: c, pages: c.fichas[code] };
+  }
+}
 
 export function getFicha(code: string): Ficha | undefined {
   return byCode.get(code.toLowerCase());
@@ -177,6 +191,7 @@ const LINE_PHOTO: Record<ProductLine, string> = {
   LC: "LC-GEM1009",
   PT: "POSTES-ESPECIALES",
   AC: "BAS-0010",
+  CV: "CV-Q24",
 };
 
 // La foto de la ficha de postes especiales trae 5 postes en cuadrícula; en la

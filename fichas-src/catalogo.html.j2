@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<title>Catálogo ICEMEX {{ year }}</title>
+<title>{{ doc_title }}</title>
 <link rel="stylesheet" href="fonts/fonts.css">
 <style>
   @page { size: A4; margin: 0; }
@@ -97,14 +97,14 @@
 <!-- Portada -->
 <div class="page cover">
   <img class="logo" src="assets/logo-blanco.png" alt="ICEMEX">
-  <div class="tag"><small>Catálogo de productos</small><b>{{ year }}</b></div>
+  <div class="tag"><small>{{ tag }}</small><b>{{ year }}</b></div>
   <div class="collage">
     {% for c in collage %}{{ shot(c.src, c.style) }}{% endfor %}
   </div>
   <div class="tblock">
-    <div class="kind">Iluminación LED, solar y urbana</div>
-    <h1 class="display">Catálogo<br><em>{{ year }}</em></h1>
-    <div class="sub">{{ total }} fichas técnicas<span class="sep"></span><em>{{ sections | length }} líneas de producto</em></div>
+    <div class="kind">{{ kind }}</div>
+    <h1 class="display">{{ headline }}<br><em>{{ year }}</em></h1>
+    <div class="sub">{{ total }} fichas técnicas<span class="sep"></span><em>{{ sections | length }} {{ unit }}</em></div>
   </div>
   <div class="lines">{% for s in sections %}<span>{{ s.name }}</span>{% if not loop.last %}<span class="sep"></span>{% endif %}{% endfor %}</div>
   <div class="contact"><small>Importaciones y Comercializaciones Eléctricas de México S.A. de C.V.</small>55 6544 8428 &nbsp;|&nbsp; icemexjorobas@gmail.com &nbsp;|&nbsp; icemex.mx</div>
@@ -116,7 +116,7 @@
 <div class="page">
   <div class="top">
     <img class="logo" src="assets/logo-blanco.png" alt="ICEMEX">
-    <div class="model"><b class="display">Contenido</b><small>Catálogo de productos {{ year }}</small></div>
+    <div class="model"><b class="display">Contenido</b><small>{{ tag }} {{ year }}</small></div>
   </div>
   <div class="bar"><i></i><i></i><i></i></div>
   <div class="content">
@@ -135,7 +135,7 @@
 {% for s in sections %}
 <div class="page section">
   <img class="logo" src="assets/logo-blanco.png" alt="ICEMEX">
-  <div class="tag">Catálogo de productos {{ year }}</div>
+  <div class="tag">{{ tag }} {{ year }}</div>
   <div class="num display">{{ s.num }}</div>
   <h1 class="display">{{ s.title | safe }}</h1>
   <div class="desc">{{ s.desc }}</div>

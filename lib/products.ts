@@ -17,7 +17,8 @@ export type ProductLine =
   | "RF" // Reflectores
   | "LC" // Luminarios comerciales
   | "PT" // Postes
-  | "AC"; // Brazos y herrajes
+  | "AC" // Brazos y herrajes
+  | "CV"; // Cámaras de seguridad (videovigilancia)
 
 export const lineNames: Record<ProductLine, string> = {
   AL: "Alumbrado público",
@@ -27,6 +28,7 @@ export const lineNames: Record<ProductLine, string> = {
   LC: "Luminarios comerciales",
   PT: "Postes y postería",
   AC: "Brazos y herrajes",
+  CV: "Cámaras de seguridad",
 };
 
 export const tagNames: Record<ProductTag, string> = {

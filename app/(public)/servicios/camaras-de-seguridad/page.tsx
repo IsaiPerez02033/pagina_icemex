@@ -2,10 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Camera, Cable, Smartphone } from "lucide-react";
 import { buildWhatsAppUrlProyectos } from "@/lib/whatsapp";
+import { cameraCatalog, fichas } from "@/lib/fichas";
+
+const cameras = fichas.filter((f) => f.line === "CV");
+// Categorías en el orden del catálogo de videovigilancia.
+const groups = [...new Set(cameras.map((f) => f.group ?? "Cámaras"))];
+
 export const metadata: Metadata = {
   title: "Venta e instalación de cámaras de seguridad",
-  description:
-    "Cámaras de seguridad CCTV e IP para casas, comercios y naves industriales. Cotiza suministro, instalación y configuración con ICEMEX.",
+  description: `Cámaras de seguridad Wi-Fi para casa, comercio y exterior: ${cameras.length} modelos duales, PTZ, foco cámara y solares con vista desde el celular. Cotiza suministro, instalación y configuración con ICEMEX.`,
+  keywords: [
+    "cámaras de seguridad", "venta de cámaras de seguridad", "instalación de cámaras", "cámaras wifi",
+    "cámara PTZ", "foco cámara", "cámara solar", "cámara doble lente", "cámaras para exterior",
+    "cámaras para casa", "CCTV", "videovigilancia",
+  ],
   alternates: { canonical: "https://icemex.mx/servicios/camaras-de-seguridad" },
 };
 const faqs = [
@@ -82,6 +92,49 @@ export default function Cameras() {
           );
         })}
       </section>
+      <section className="security-catalog" aria-labelledby="security-catalog-title">
+        <p className="eyebrow">Catálogo de videovigilancia 2026</p>
+        <h2 id="security-catalog-title">{cameras.length} cámaras para cada espacio.</h2>
+        <p className="security-catalog-lead">
+          Todas con vista remota desde el celular, audio bidireccional, visión
+          nocturna y grabación en MicroSD. Cada una con su ficha técnica.
+        </p>
+        {groups.map((g) => (
+          <div key={g} className="security-group">
+            <h3>{g}</h3>
+            <ul>
+              {cameras
+                .filter((f) => (f.group ?? "Cámaras") === g)
+                .map((f) => (
+                  <li key={f.code}>
+                    <Link href={`/producto/${f.code}`} prefetch={false}>
+                      {/* eslint-disable-next-line @next/next/no-img-element -- miniatura webp ya optimizada */}
+                      <img
+                        src={f.thumb.src}
+                        width={f.thumb.width}
+                        height={f.thumb.height}
+                        alt={`${f.name}, ${f.kind.toLowerCase()}`}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span className="eyebrow">{f.code}</span>
+                      <strong>{f.name}</strong>
+                      <span>{f.variant}</span>
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+          </div>
+        ))}
+        <div className="security-catalog-cta">
+          <Link className="action-primary" href="/catalogo#camaras">
+            ↓ Descargar catálogo de cámaras ({cameraCatalog.pages} págs.)
+          </Link>
+          <Link className="action-secondary" href="/productos?linea=CV">
+            Ver en el explorador de productos →
+          </Link>
+        </div>
+      </section>
       <section className="security-process">
         <p className="eyebrow">Cómo empezamos</p>
         <h2>Una solución según lo que necesitas proteger.</h2>
@@ -123,6 +176,20 @@ export default function Cameras() {
             "@type": "Service",
             name: "Venta e instalación de cámaras de seguridad",
             url: "https://icemex.mx/servicios/camaras-de-seguridad",
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Cámaras de seguridad",
+              itemListElement: cameras.map((f) => ({
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Product",
+                  name: f.name,
+                  sku: f.code,
+                  url: `https://icemex.mx/producto/${f.code}`,
+                  image: `https://icemex.mx${f.image.src}`,
+                },
+              })),
+            },
             provider: {
               "@type": "Organization",
               name: "ICEMEX",
