@@ -262,3 +262,110 @@ export function HiabTruck() {
     </svg>
   );
 }
+
+/** Punta de un abanico (campo de visión) desde (cx, cy) hacia `dir` grados. */
+function wedge(cx: number, cy: number, dir: number, spread: number, r: number) {
+  const pt = (a: number) => [cx + r * Math.cos((a * Math.PI) / 180), cy + r * Math.sin((a * Math.PI) / 180)].map((n) => n.toFixed(1));
+  const [x1, y1] = pt(dir - spread / 2);
+  const [x2, y2] = pt(dir + spread / 2);
+  return `M${cx} ${cy} L${x1} ${y1} A${r} ${r} 0 0 1 ${x2} ${y2} Z`;
+}
+
+/** Plano en planta de una casa con la ubicación y cobertura de cada cámara. */
+export function CoveragePlan() {
+  const cams: [number, number, number, number, number][] = [
+    // x, y, dirección, apertura, alcance
+    [358, 332, 75, 70, 130],
+    [122, 332, 105, 70, 125],
+    [122, 152, 225, 80, 105],
+    [358, 152, 315, 80, 105],
+    [292, 238, 150, 80, 160],
+  ];
+  const router = [250, 205];
+  return (
+    <svg viewBox="0 0 480 480" role="img" aria-label="Plano ilustrativo de una casa con cinco cámaras Wi-Fi y su campo de visión">
+      <defs>
+        <pattern id="cov-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+          <path d="M24 0H0V24" fill="none" stroke="rgba(0,212,255,.07)" />
+        </pattern>
+        <radialGradient id="cov-fov" cx="0" cy="0" r="1">
+          <stop offset="0" stopColor={CYAN} stopOpacity=".45" />
+          <stop offset="1" stopColor={CYAN} stopOpacity=".04" />
+        </radialGradient>
+        <clipPath id="cov-lot">
+          <rect x="30" y="90" width="420" height="360" />
+        </clipPath>
+        <clipPath id="cov-sala">
+          <rect x="120" y="230" width="180" height="100" />
+        </clipPath>
+      </defs>
+      <rect width="480" height="480" fill="#070c15" />
+      <rect width="480" height="480" fill="url(#cov-grid)" />
+
+      {/* El plano va un poco reducido para que el pie de foto no tape la calle. */}
+      <g transform="translate(24 4) scale(.9)">
+      {/* Terreno, cochera y casa */}
+      <rect x="30" y="90" width="420" height="360" fill="#0b121c" stroke="#5c6f86" strokeDasharray="6 6" />
+      <rect x="300" y="330" width="100" height="120" fill="#121a26" />
+      <line x1="300" y1="450" x2="400" y2="450" stroke="#ffd23f" strokeWidth="4" />
+      <rect x="120" y="150" width="240" height="180" fill="#0f1826" stroke="#5c6f86" strokeWidth="3" />
+      <g stroke="#5c6f86" strokeWidth="2">
+        <line x1="240" y1="150" x2="240" y2="230" />
+        <line x1="120" y1="230" x2="300" y2="230" />
+        <line x1="300" y1="230" x2="300" y2="330" />
+      </g>
+      <g fontSize="11" fill={INK} letterSpacing=".14em">
+        <text x="180" y="196" textAnchor="middle">RECÁMARA</text>
+        <text x="300" y="196" textAnchor="middle">COCINA</text>
+        <text x="210" y="300" textAnchor="middle">SALA</text>
+        <text x="350" y="420" textAnchor="middle">COCHERA</text>
+        <text x="240" y="118" textAnchor="middle">PATIO</text>
+        <text x="350" y="470" textAnchor="middle" fill="#ffd23f">ACCESO</text>
+        <text x="90" y="470" textAnchor="middle">CALLE</text>
+      </g>
+
+      {/* Campos de visión */}
+      <g clipPath="url(#cov-lot)">
+        {cams.map(([x, y, d, s, r], i) => (
+          <path
+            key={`${x}-${y}`}
+            d={wedge(x, y, d, s, r)}
+            clipPath={i === cams.length - 1 ? "url(#cov-sala)" : undefined}
+            fill="url(#cov-fov)"
+            stroke={CYAN}
+            strokeOpacity=".35"
+          />
+        ))}
+      </g>
+
+      {/* Enlace Wi-Fi de cada cámara al router */}
+      <g stroke={CYAN} strokeOpacity=".5" strokeDasharray="2 6" strokeWidth="1.5">
+        {cams.map(([x, y]) => (
+          <line key={`${x}-${y}`} x1={router[0]} y1={router[1]} x2={x} y2={y} />
+        ))}
+      </g>
+      <g transform={`translate(${router[0]} ${router[1]})`}>
+        <circle r="15" fill="#060910" stroke={CYAN} strokeWidth="2" />
+        <g fill="none" stroke={CYAN} strokeWidth="2" strokeLinecap="round">
+          <path d="M-7 -1 Q0 -8 7 -1" />
+          <path d="M-4 3 Q0 -1 4 3" />
+        </g>
+        <circle cy="6" r="1.8" fill={CYAN} />
+      </g>
+
+      {cams.map(([x, y], i) => (
+        <g key={`${x}-${y}`}>
+          <circle cx={x} cy={y} r="11" fill={CYAN} fillOpacity=".18" className="svc-pulse" />
+          <circle cx={x} cy={y} r="6" fill="#fff" stroke={CYAN} strokeWidth="3" />
+          <text x={x + 10} y={y - 10} fontSize="10" fill="#fff" fontWeight={600}>
+            {i + 1}
+          </text>
+        </g>
+      ))}
+      </g>
+
+      <text x="24" y="44" fontSize="12" fill={CYAN} letterSpacing=".28em">PLANO DE COBERTURA</text>
+      <text x="24" y="66" fontSize="12" fill={INK} letterSpacing=".16em">5 CÁMARAS WI-FI · 1 ROUTER</text>
+    </svg>
+  );
+}
