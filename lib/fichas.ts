@@ -4,6 +4,7 @@
 
 import raw from "./fichas-data.json";
 import legacyCodes from "./legacy-codes.json";
+import catalogData from "./catalogo-paginas.json";
 import { products, type Product, type ProductLine, type ProductTag } from "./products";
 
 export interface FichaImage {
@@ -23,7 +24,7 @@ export interface Ficha {
   name: string;
   line: ProductLine;
   tags: ProductTag[];
-  /** Páginas del Catálogo ICEMEX 2026 donde aparece. */
+  /** Páginas del catálogo original de donde sale la ficha (orden del catálogo). */
   pages: number[];
   pdf: string;
   /** Foto del producto (fondo transparente): 1400, 800 y 420 px. */
@@ -57,6 +58,18 @@ export const kpiValue = (k: FichaKpi) => (k.u ? `${k.v} ${k.u}` : k.v);
 export const fichas = raw as Ficha[];
 
 const byCode = new Map(fichas.map((f) => [f.code.toLowerCase(), f]));
+
+/** Catálogo PDF que se descarga en /catalogo (fichas-src/catalogo.py). */
+export const catalog = catalogData as {
+  pdf: string;
+  pages: number;
+  mb: number;
+  cover: FichaImage;
+  fichas: Record<string, number[]>;
+};
+
+/** Páginas [primera, última] de una ficha en el catálogo descargable. */
+export const catalogPages = (code: string) => catalog.fichas[code];
 
 export function getFicha(code: string): Ficha | undefined {
   return byCode.get(code.toLowerCase());

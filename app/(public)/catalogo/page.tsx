@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
 import { products, lineNames } from "@/lib/products";
 import LeadMagnetForm from "@/components/LeadMagnetForm";
+import { catalog } from "@/lib/fichas";
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://icemex.mx/catalogo" },
   title: "Catálogo PDF 2026",
   description:
-    "Descarga gratis el catálogo oficial ICEMEX 2026: 176 páginas con fichas técnicas de luminarias LED, postes, reflectores, iluminación solar, herrajes y material eléctrico. Especificaciones, certificaciones y aplicaciones.",
+    `Descarga gratis el catálogo oficial ICEMEX 2026: ${catalog.pages} páginas con fichas técnicas de luminarias LED, postes, reflectores, iluminación solar, herrajes y material eléctrico. Especificaciones, certificaciones y aplicaciones.`,
   keywords: [
     "catálogo iluminación", "fichas técnicas LED", "catálogo postes", "catálogo ICEMEX", "descargar catálogo iluminación", "especificaciones luminarias", "PDF iluminación pública",
   ],
   openGraph: {
     title: "Catálogo PDF 2026 · ICEMEX",
     description:
-      "176 páginas con fichas técnicas de alumbrado público, iluminación solar, postes, reflectores, luminarios comerciales y herrajes. Descarga gratuita.",
+      `${catalog.pages} páginas con fichas técnicas de alumbrado público, iluminación solar, postes, reflectores, luminarios comerciales y herrajes. Descarga gratuita.`,
   },
 };
 
@@ -48,7 +49,7 @@ export default function CatalogoPage() {
           padding: "60px 32px 120px",
         }}
       >
-        {/* Hero: copy + portada simulada (izquierda) + formulario gated (derecha) */}
+        {/* Hero: copy + portada (izquierda) + formulario gated (derecha) */}
         <header
           className="catalog-hero"
           style={{
@@ -82,7 +83,7 @@ export default function CatalogoPage() {
                 textTransform: "uppercase",
               }}
             >
-              176 páginas
+              {catalog.pages} páginas
               <br />
               <span style={{ color: "var(--accent-cyan)" }}>
                 de fichas técnicas
@@ -103,88 +104,24 @@ export default function CatalogoPage() {
               acompañarte con asesoría técnica sin costo.
             </p>
 
-            {/* Portada simulada del PDF */}
-            <div
+            {/* Portada del PDF */}
+            {/* eslint-disable-next-line @next/next/no-img-element -- webp ya optimizado por fichas-src/catalogo.py */}
+            <img
+              src={catalog.cover.src}
+              width={catalog.cover.width}
+              height={catalog.cover.height}
+              alt="Portada del Catálogo ICEMEX 2026"
+              decoding="async"
               style={{
-                position: "relative",
-                aspectRatio: "8.5 / 11",
+                display: "block",
+                width: "100%",
                 maxWidth: 360,
-                background:
-                  "linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 60%, var(--bg-secondary) 100%)",
+                height: "auto",
+                borderRadius: 12,
                 border: "1px solid rgba(var(--cyan-rgb), 0.15)",
-                borderRadius: 28,
-                padding: 40,
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
                 boxShadow: "0 30px 80px rgba(0, 0, 0, 0.35)",
-                overflow: "hidden",
               }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  height: 6,
-                  background: "var(--accent-cyan)",
-                }}
-              />
-              <div>
-                <p
-                  style={{
-                    fontSize: 10,
-                    color: "var(--accent-cyan)",
-                    letterSpacing: "0.32em",
-                    textTransform: "uppercase",
-                    marginBottom: 12,
-                    fontWeight: 600,
-                  }}
-                >
-                  ICEMEX · S.A. de C.V.
-                </p>
-                <h2
-                  style={{
-                    color: "var(--text-primary)",
-                    fontSize: "clamp(20px, 3vw, 32px)",
-                    fontWeight: 300,
-                    letterSpacing: "0.04em",
-                    lineHeight: 1.1,
-                  }}
-                >
-                  Catálogo
-                  <br />
-                  <span style={{ color: "var(--accent-cyan)" }}>2026</span>
-                </h2>
-              </div>
-
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 16,
-                  border: "1px solid rgba(var(--cyan-rgb), 0.06)",
-                  borderRadius: 18,
-                  pointerEvents: "none",
-                }}
-              />
-
-              <div>
-                <p
-                  style={{
-                    fontSize: 10,
-                    color: "var(--text-muted)",
-                    letterSpacing: "0.22em",
-                    textTransform: "uppercase",
-                    lineHeight: 1.8,
-                  }}
-                >
-                  Iluminamos tus sueños
-                  <br />
-                  materializamos tus ideas
-                </p>
-              </div>
-            </div>
+            />
 
             {/* Meta del archivo */}
             <div
@@ -199,9 +136,9 @@ export default function CatalogoPage() {
                 textTransform: "uppercase",
               }}
             >
-              <span>176 páginas</span>
+              <span>{catalog.pages} páginas</span>
               <span style={{ color: "rgba(var(--cyan-rgb), 0.4)" }}>·</span>
-              <span>PDF · 39 MB</span>
+              <span>PDF · {catalog.mb} MB</span>
               <span style={{ color: "rgba(var(--cyan-rgb), 0.4)" }}>·</span>
               <span>Edición 2026</span>
             </div>
@@ -210,14 +147,14 @@ export default function CatalogoPage() {
           {/* Formulario gated */}
           <div style={{ position: "sticky", top: 120 }}>
             <LeadMagnetForm
-              pdfUrl="/Catalogo_ICEMEX2026.pdf"
+              pdfUrl={catalog.pdf}
               pdfFilename="Catalogo_ICEMEX2026.pdf"
               eyebrow="Descarga gratuita"
               headline="Recibe el catálogo completo"
               submitLabel="↓ Descargar catálogo"
               resourceLabel="Catálogo 2026"
               successTitle="¡Listo! El catálogo se está descargando"
-              successMessage="Por su tamaño (39 MB) la descarga puede tardar unos segundos. Si no inicia, usa el botón de abajo. Abrimos WhatsApp para que nuestro equipo pueda acompañarte con asesoría técnica."
+              successMessage={`Por su tamaño (${catalog.mb} MB) la descarga puede tardar unos segundos. Si no inicia, usa el botón de abajo. Abrimos WhatsApp para que nuestro equipo pueda acompañarte con asesoría técnica.`}
             />
           </div>
         </header>
@@ -293,9 +230,9 @@ export default function CatalogoPage() {
           }}
         >
           {[
-            { n: "176", label: "Páginas" },
+            { n: String(catalog.pages), label: "Páginas" },
             { n: "07", label: "Líneas" },
-            { n: "+50", label: "Productos" },
+            { n: String(Object.keys(catalog.fichas).length), label: "Fichas técnicas" },
             { n: "+20", label: "Años de trayectoria" },
           ].map((s) => (
             <div

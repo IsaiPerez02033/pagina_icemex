@@ -1,12 +1,10 @@
 import Link from "next/link";
 import { lineNames, tagNames, type ProductLine, type ProductTag } from "@/lib/products";
-import { fichas, fichaHref, kpiValue, type Ficha } from "@/lib/fichas";
+import { catalogPages, fichas, fichaHref, kpiValue, type Ficha } from "@/lib/fichas";
 import { buildWhatsAppUrlProyectos } from "@/lib/whatsapp";
 
-const pagesLabel = (pages: number[]) =>
-  pages.length === 1
-    ? `Página ${pages[0]}`
-    : `Páginas ${pages[0]}–${pages[pages.length - 1]}`;
+const pagesLabel = ([first, last]: number[]) =>
+  first === last ? `Página ${first}` : `Páginas ${first}–${last}`;
 
 /** Portada de la ficha + botón de descarga del PDF. */
 export function FichaDownload({ ficha }: { ficha: Ficha }) {
@@ -26,9 +24,11 @@ export function FichaDownload({ ficha }: { ficha: Ficha }) {
       <a href={ficha.pdf} download className="action-secondary ficha-pdf-btn">
         ↓ Descargar ficha técnica (PDF)
       </a>
-      <p className="ficha-pages">
-        {pagesLabel(ficha.pages)} del Catálogo ICEMEX 2026
-      </p>
+      {catalogPages(ficha.code) && (
+        <p className="ficha-pages">
+          {pagesLabel(catalogPages(ficha.code))} del Catálogo ICEMEX 2026
+        </p>
+      )}
     </div>
   );
 }

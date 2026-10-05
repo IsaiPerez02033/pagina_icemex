@@ -10,10 +10,15 @@ Salida en CARPETA:
   Catalogo_ICEMEX_2026_ligero.pdf   fotos a ~130 ppp (para enviar)
   Fichas técnicas/NN Sección/CÓDIGO MODELO.pdf
 
+y para el sitio: public/Catalogo_ICEMEX2026.pdf (la versión ligera, que se
+descarga en /catalogo), public/catalogo-portada.webp y
+lib/catalogo-paginas.json (páginas de cada ficha en el catálogo).
+
 Correr después de build.py y scripts/build-fichas.py (lee lib/fichas-data.json
 para la línea de cada ficha y su orden en el catálogo).
 """
 
+import hashlib
 import io
 import json
 import math
@@ -34,6 +39,9 @@ FICHAS = ROOT / "public" / "fichas"
 PHOTOS = ROOT / "public" / "productos"
 YEAR = 2026
 NAME = f"Catalogo_ICEMEX_{YEAR}"
+WEB_PDF = ROOT / "public" / f"Catalogo_ICEMEX{YEAR}.pdf"
+WEB_COVER = ROOT / "public" / "catalogo-portada.webp"
+WEB_PAGES = ROOT / "lib" / "catalogo-paginas.json"
 LINK = "https://catalogo.icemex.invalid/p/"  # se convierte en salto a página
 
 # Mismas líneas que el sitio (lib/products.ts), con texto para el separador.
@@ -127,7 +135,7 @@ def number_overlay(n_pages, skip, tmp):
     return out
 
 
-def lighten(src: Path, dst: Path, max_px=1100, quality=72):
+def lighten(src: Path, dst: Path, max_px=1100, quality=68):
     """Versión ligera: imágenes a ≤ max_px (≈130 ppp a página completa) y
     re-comprimidas más fuerte."""
     d = pymupdf.open(src)
@@ -158,7 +166,7 @@ def lighten(src: Path, dst: Path, max_px=1100, quality=72):
             im = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
         im.thumbnail((max_px, max_px), Image.LANCZOS)
         buf = io.BytesIO()
-        im.save(buf, "JPEG", quality=quality + (12 if gray else 0), optimize=True)
+        im.save(buf, "JPEG", quality=quality + (10 if gray else 0), optimize=True)
         if len(buf.getvalue()) >= len(d.xref_stream_raw(x)):
             continue
         d.update_stream(x, buf.getvalue(), compress=False)
@@ -253,7 +261,22 @@ def main(out: Path):
     full = out / f"{NAME}.pdf"
     doc.save(full, garbage=4, deflate=True, use_objstms=1)
     doc.close()
-    lighten(full, out / f"{NAME}_ligero.pdf")
+    light = out / f"{NAME}_ligero.pdf"
+    lighten(full, light)
+
+    # Sitio: descarga, portada y páginas de cada ficha.
+    shutil.copy2(light, WEB_PDF)
+    pix = pymupdf.open(full)[0].get_pixmap(dpi=110)
+    cover = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+    cover.thumbnail((720, 1020), Image.LANCZOS)
+    cover.save(WEB_COVER, "WEBP", quality=86, method=6)
+    pages = {f["code"]: [f["page"], f["page"] + f["n"] - 1] for s in sections for f in s["items"]}
+    v = lambda p: hashlib.md5(p.read_bytes()).hexdigest()[:8]
+    WEB_PAGES.write_text(json.dumps({
+        "pdf": f"/{WEB_PDF.name}?v={v(WEB_PDF)}", "pages": n_pages,
+        "mb": round(light.stat().st_size / 1e6),
+        "cover": {"src": f"/{WEB_COVER.name}?v={v(WEB_COVER)}", "width": cover.width, "height": cover.height},
+        "fichas": pages}, indent=1) + "\n")
 
     # Fichas sueltas por sección.
     folder = out / "Fichas técnicas"
@@ -266,18 +289,14 @@ def main(out: Path):
             same = re.sub(r"\W", "", model).upper() == re.sub(r"\W", "", f["code"]).upper()
             shutil.copy2(FICHAS / f"{f['code']}.pdf", d / (f"{f['code']}.pdf" if same else f"{f['code']} {model}.pdf"))
 
-    for p in (full, out / f"{NAME}_ligero.pdf"):
+    for p in (full, light):
         print(f"{p.name:34} {p.stat().st_size / 1e6:6.1f} MB  {n_pages} págs")
     print(f"Fichas técnicas/: {total} PDF en {len(sections)} carpetas")
 
 
-if "--ligero" in sys.argv:  # rehacer solo la versión ligera
-    o = Path(sys.argv[-1])
-    lighten(o / f"{NAME}.pdf", o / f"{NAME}_ligero.pdf")
-    sys.exit(print(f"{(o / f'{NAME}_ligero.pdf').stat().st_size / 1e6:.1f} MB"))
 PREVIEW = "--preview" in sys.argv  # solo las páginas propias del catálogo
-if PREVIEW:
-    sys.argv.remove("--preview")
 
 if __name__ == "__main__":
+    if PREVIEW:
+        sys.argv.remove("--preview")
     main(Path(sys.argv[1]) if len(sys.argv) > 1 else SRC / "build" / "catalogo")
