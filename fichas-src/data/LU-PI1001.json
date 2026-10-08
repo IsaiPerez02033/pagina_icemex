@@ -1,0 +1,233 @@
+{
+ "model": "PIXTAR",
+ "kind": "Poste luminario de diseño con LED lateral, en dos versiones",
+ "power": "60 W",
+ "variant": "127–220 V",
+ "badge": "Fabricado en México",
+ "hero": "p1_x21",
+ "photo2": "p2_x73",
+ "kpis": [
+  {
+   "v": "60",
+   "u": "W",
+   "l": "Iluminación en luz cálida"
+  },
+  {
+   "v": "7 / 3",
+   "u": "m",
+   "l": "Altura PIXTAR / DUO"
+  },
+  {
+   "v": "127–220",
+   "u": "V",
+   "l": "Tensión de alimentación"
+  },
+  {
+   "v": "744",
+   "u": "h",
+   "l": "Prueba de cámara salina"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "1.20",
+   "u": "m",
+   "l": "Pantalla LCD (PIXTAR)"
+  },
+  {
+   "v": "2",
+   "u": "lados",
+   "l": "Con LED lateral"
+  }
+ ],
+ "description": [
+  "PIXTAR es un poste luminario de diseño fabricado en México en acero al carbón, con 60 W de iluminación en luz cálida y una línea de LED lateral en ambos lados que marca su silueta de noche. Se ofrece en dos versiones con el mismo lenguaje de diseño y el mismo acabado.",
+  "PIXTAR mide 7 m de la cabeza a la placa, con sección de 8 × 2 pulgadas y una pantalla LCD de 6 pulgadas por 1.20 m que inicia a 4 m de altura. PIXTAR-DUO mide 3 m, con sección de 6 × 3 cm y dos brazos en forma de Y. Ambos operan de 127 a 220 V."
+ ],
+ "features": [
+  {
+   "img": "p2_x53",
+   "t": "LED lateral en ambos lados",
+   "d": "Línea de luz que recorre el poste y define su silueta de noche."
+  },
+  {
+   "img": "p2_x59",
+   "t": "Placa de anclaje",
+   "d": "Placa de 250 × 250 mm con barrenos a 190 mm entre centros."
+  },
+  {
+   "img": "p2_x62",
+   "t": "PIXTAR en vialidad",
+   "d": "7 m de altura con cabeza en ángulo y pantalla LCD integrada."
+  },
+  {
+   "img": "p2_x64",
+   "t": "PIXTAR-DUO en plaza",
+   "d": "3 m de altura con dos brazos para andadores y espacios peatonales."
+  }
+ ],
+ "warranty": [],
+ "certs": [],
+ "specs": [
+  {
+   "name": "Versión PIXTAR",
+   "rows": [
+    [
+     "Altura (cabeza a placa)",
+     "7,000 mm"
+    ],
+    [
+     "Sección del poste",
+     "8 × 2 in"
+    ],
+    [
+     "Pantalla LCD",
+     "6 in × 1,200 mm"
+    ],
+    [
+     "Altura de la pantalla",
+     "Inicia a 4,000 mm"
+    ],
+    [
+     "Placa de anclaje",
+     "250 × 250 mm"
+    ],
+    [
+     "Barrenos",
+     "190 mm entre centros"
+    ]
+   ]
+  },
+  {
+   "name": "Versión PIXTAR-DUO",
+   "rows": [
+    [
+     "Altura (cabeza a placa)",
+     "3,000 mm"
+    ],
+    [
+     "Sección del poste",
+     "60 × 30 mm"
+    ],
+    [
+     "Configuración",
+     "Dos brazos en Y"
+    ]
+   ]
+  },
+  {
+   "name": "Iluminación y sistema eléctrico",
+   "rows": [
+    [
+     "Potencia",
+     "60 W"
+    ],
+    [
+     "Temperatura de color",
+     "Luz cálida"
+    ],
+    [
+     "LED lateral",
+     "En ambos lados del poste"
+    ],
+    [
+     "Tensión de alimentación",
+     "127–220 V"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción y acabado",
+   "rows": [
+    [
+     "Material",
+     "Acero al carbón"
+    ],
+    [
+     "Pintura",
+     "Polvo poliéster de aplicación electrostática"
+    ],
+    [
+     "Color",
+     "Gris Oxford microtexturizado"
+    ],
+    [
+     "Espesor",
+     "4 micras"
+    ],
+    [
+     "Acabado",
+     "Horneado, anticorrosivo"
+    ],
+    [
+     "Cámara salina",
+     "744 h"
+    ],
+    [
+     "Origen",
+     "Fabricado en México"
+    ]
+   ]
+  }
+ ],
+ "temps": [],
+ "dims": {
+  "img": "p4_x116",
+  "mode": "raw",
+  "rows": [
+   [
+    "Altura PIXTAR",
+    "7,000 mm"
+   ],
+   [
+    "Pantalla LCD (PIXTAR)",
+    "1,200 mm, desde 4,000 mm"
+   ],
+   [
+    "Altura PIXTAR-DUO",
+    "3,000 mm"
+   ],
+   [
+    "Placa de anclaje",
+    "250 × 250 mm"
+   ],
+   [
+    "Barrenos",
+    "190 mm entre centros"
+   ]
+  ]
+ },
+ "mount": "Fijación sobre base de concreto mediante placa de anclaje de 250 × 250 mm con barrenos a 190 mm entre centros.",
+ "advantages": [
+  {
+   "t": "Identidad nocturna",
+   "d": "El LED lateral en ambos lados dibuja la silueta del poste de noche."
+  },
+  {
+   "t": "Pantalla integrada",
+   "d": "PIXTAR incluye pantalla LCD de 1.20 m para mensajes e información."
+  },
+  {
+   "t": "Dos escalas",
+   "d": "7 m para vialidades y 3 m para andadores, con el mismo diseño."
+  },
+  {
+   "t": "Resistente a la corrosión",
+   "d": "Pintura horneada probada 744 h en cámara salina."
+  },
+  {
+   "t": "Hecho en México",
+   "d": "Fabricación nacional en acero al carbón."
+  },
+  {
+   "t": "Luz cálida",
+   "d": "60 W de iluminación cálida para espacios urbanos más agradables."
+  }
+ ],
+ "applications": [
+  "Vialidades",
+  "Andadores",
+  "Plazas públicas",
+  "Espacios comerciales"
+ ]
+}

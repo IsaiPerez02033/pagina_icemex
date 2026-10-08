@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import HeroSection from "@/components/HeroSection";
+import NovedadesSection from "@/components/NovedadesSection";
 import { lineShowcase } from "@/lib/fichas";
 
 export const metadata: Metadata = {
@@ -48,7 +49,7 @@ export default function HomePage() {
       <HeroSection />
 
       <div style={{ position: "relative", background: "var(--bg-primary)" }}>
-
+        <NovedadesSection />
         <BrandsSection />
         <ProductsSection lines={lines} />
         <AboutSection productCount={productCount} />

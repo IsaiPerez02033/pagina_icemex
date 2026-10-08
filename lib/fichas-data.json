@@ -16140,6 +16140,551 @@
   "isLuminaire": true
  },
  {
+  "code": "LU-PI1001",
+  "name": "Poste Pixtar 60W",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial"
+  ],
+  "pages": [],
+  "pdf": "/fichas/LU-PI1001.pdf?v=4bbe120e",
+  "image": {
+   "src": "/productos/LU-PI1001.webp?v=5b61e844",
+   "width": 490,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/LU-PI1001-md.webp?v=c894dbe1",
+   "width": 280,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/LU-PI1001-thumb.webp?v=e7b0777a",
+   "width": 147,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/LU-PI1001.webp?v=965ed563",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/LU-PI1001-thumb.webp?v=ecd0e3ec",
+   "width": 360,
+   "height": 510
+  },
+  "model": "PIXTAR",
+  "kind": "Poste luminario de diseño con LED lateral, en dos versiones",
+  "power": "60 W",
+  "variant": "127–220 V",
+  "summary": "PIXTAR es un poste luminario de diseño fabricado en México en acero al carbón, con 60 W de iluminación en luz cálida y una línea de LED lateral en ambos lados que marca su silueta de noche.",
+  "description": [
+   "PIXTAR es un poste luminario de diseño fabricado en México en acero al carbón, con 60 W de iluminación en luz cálida y una línea de LED lateral en ambos lados que marca su silueta de noche. Se ofrece en dos versiones con el mismo lenguaje de diseño y el mismo acabado.",
+   "PIXTAR mide 7 m de la cabeza a la placa, con sección de 8 × 2 pulgadas y una pantalla LCD de 6 pulgadas por 1.20 m que inicia a 4 m de altura. PIXTAR-DUO mide 3 m, con sección de 6 × 3 cm y dos brazos en forma de Y. Ambos operan de 127 a 220 V."
+  ],
+  "kpis": [
+   {
+    "v": "60",
+    "u": "W",
+    "l": "Iluminación en luz cálida"
+   },
+   {
+    "v": "7 / 3",
+    "u": "m",
+    "l": "Altura PIXTAR / DUO"
+   },
+   {
+    "v": "127–220",
+    "u": "V",
+    "l": "Tensión de alimentación"
+   },
+   {
+    "v": "744",
+    "u": "h",
+    "l": "Prueba de cámara salina"
+   },
+   {
+    "v": "1.20",
+    "u": "m",
+    "l": "Pantalla LCD (PIXTAR)"
+   },
+   {
+    "v": "2",
+    "u": "lados",
+    "l": "Con LED lateral"
+   }
+  ],
+  "features": [
+   {
+    "t": "LED lateral en ambos lados",
+    "d": "Línea de luz que recorre el poste y define su silueta de noche."
+   },
+   {
+    "t": "Placa de anclaje",
+    "d": "Placa de 250 × 250 mm con barrenos a 190 mm entre centros."
+   },
+   {
+    "t": "PIXTAR en vialidad",
+    "d": "7 m de altura con cabeza en ángulo y pantalla LCD integrada."
+   },
+   {
+    "t": "PIXTAR-DUO en plaza",
+    "d": "3 m de altura con dos brazos para andadores y espacios peatonales."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Identidad nocturna",
+    "d": "El LED lateral en ambos lados dibuja la silueta del poste de noche."
+   },
+   {
+    "t": "Pantalla integrada",
+    "d": "PIXTAR incluye pantalla LCD de 1.20 m para mensajes e información."
+   },
+   {
+    "t": "Dos escalas",
+    "d": "7 m para vialidades y 3 m para andadores, con el mismo diseño."
+   },
+   {
+    "t": "Resistente a la corrosión",
+    "d": "Pintura horneada probada 744 h en cámara salina."
+   },
+   {
+    "t": "Hecho en México",
+    "d": "Fabricación nacional en acero al carbón."
+   },
+   {
+    "t": "Luz cálida",
+    "d": "60 W de iluminación cálida para espacios urbanos más agradables."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Versión PIXTAR",
+    "rows": [
+     [
+      "Altura (cabeza a placa)",
+      "7,000 mm"
+     ],
+     [
+      "Sección del poste",
+      "8 × 2 in"
+     ],
+     [
+      "Pantalla LCD",
+      "6 in × 1,200 mm"
+     ],
+     [
+      "Altura de la pantalla",
+      "Inicia a 4,000 mm"
+     ],
+     [
+      "Placa de anclaje",
+      "250 × 250 mm"
+     ],
+     [
+      "Barrenos",
+      "190 mm entre centros"
+     ]
+    ]
+   },
+   {
+    "name": "Versión PIXTAR-DUO",
+    "rows": [
+     [
+      "Altura (cabeza a placa)",
+      "3,000 mm"
+     ],
+     [
+      "Sección del poste",
+      "60 × 30 mm"
+     ],
+     [
+      "Configuración",
+      "Dos brazos en Y"
+     ]
+    ]
+   },
+   {
+    "name": "Iluminación y sistema eléctrico",
+    "rows": [
+     [
+      "Potencia",
+      "60 W"
+     ],
+     [
+      "Temperatura de color",
+      "Luz cálida"
+     ],
+     [
+      "LED lateral",
+      "En ambos lados del poste"
+     ],
+     [
+      "Tensión de alimentación",
+      "127–220 V"
+     ]
+    ]
+   },
+   {
+    "name": "Construcción y acabado",
+    "rows": [
+     [
+      "Material",
+      "Acero al carbón"
+     ],
+     [
+      "Pintura",
+      "Polvo poliéster de aplicación electrostática"
+     ],
+     [
+      "Color",
+      "Gris Oxford microtexturizado"
+     ],
+     [
+      "Espesor",
+      "4 micras"
+     ],
+     [
+      "Acabado",
+      "Horneado, anticorrosivo"
+     ],
+     [
+      "Cámara salina",
+      "744 h"
+     ],
+     [
+      "Origen",
+      "Fabricado en México"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Vialidades",
+   "Andadores",
+   "Plazas públicas",
+   "Espacios comerciales"
+  ],
+  "warranty": [],
+  "certs": [],
+  "dims": [
+   [
+    "Altura PIXTAR",
+    "7,000 mm"
+   ],
+   [
+    "Pantalla LCD (PIXTAR)",
+    "1,200 mm, desde 4,000 mm"
+   ],
+   [
+    "Altura PIXTAR-DUO",
+    "3,000 mm"
+   ],
+   [
+    "Placa de anclaje",
+    "250 × 250 mm"
+   ],
+   [
+    "Barrenos",
+    "190 mm entre centros"
+   ]
+  ],
+  "mount": "Fijación sobre base de concreto mediante placa de anclaje de 250 × 250 mm con barrenos a 190 mm entre centros.",
+  "isLuminaire": true
+ },
+ {
+  "code": "IC-PR80",
+  "name": "Columna Prisma 80W",
+  "line": "LU",
+  "tags": [
+   "vialidad",
+   "parques",
+   "comercial"
+  ],
+  "pages": [],
+  "pdf": "/fichas/IC-PR80.pdf?v=8da15354",
+  "image": {
+   "src": "/productos/IC-PR80.webp?v=2b72a7b6",
+   "width": 212,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IC-PR80-md.webp?v=05fe5b84",
+   "width": 121,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/IC-PR80-thumb.webp?v=d51dde53",
+   "width": 64,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/IC-PR80.webp?v=1582f370",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/IC-PR80-thumb.webp?v=39bdacdf",
+   "width": 360,
+   "height": 510
+  },
+  "model": "PRISMA",
+  "kind": "Columna LED de alta potencia para exterior",
+  "power": "80 W",
+  "variant": "100–240 V",
+  "summary": "PRISMA es una columna LED de alta potencia para exterior, de sección triangular, que se instala sobrepuesta al piso.",
+  "description": [
+   "PRISMA es una columna LED de alta potencia para exterior, de sección triangular, que se instala sobrepuesta al piso. Su difusor de acrílico opalino de alta resistencia reparte la luz a su alrededor con distribución Tipo V cutoff, y entrega 12,800 lm con solo 80 W gracias a una eficacia de 160 lm/W.",
+   "El cuerpo de lámina de acero alcanza 2,850 mm de altura y se ofrece en negro, blanco o color especial. Es hermética (IP66), antivandálica (IK10) y resiste vibración según ANSI C136.31. Opera con voltaje universal de 100 a 240 V y admite luz RGB en la base y control inalámbrico W-DMX."
+  ],
+  "kpis": [
+   {
+    "v": "80",
+    "u": "W",
+    "l": "Potencia"
+   },
+   {
+    "v": "12,800",
+    "u": "lm",
+    "l": "Flujo luminoso"
+   },
+   {
+    "v": "160",
+    "u": "lm/W",
+    "l": "Eficacia"
+   },
+   {
+    "v": "150,000",
+    "u": "h",
+    "l": "Vida útil a 25 °C"
+   },
+   {
+    "v": "IP66",
+    "u": "",
+    "l": "Hermeticidad"
+   },
+   {
+    "v": "IK10",
+    "u": "",
+    "l": "Resistencia al impacto"
+   }
+  ],
+  "features": [
+   {
+    "t": "Luz a 360°",
+    "d": "Difusor opalino con distribución Tipo V cutoff, sin deslumbramiento."
+   },
+   {
+    "t": "Protección térmica",
+    "d": "LEDs y drivers con atenuación automática ante temperaturas elevadas."
+   },
+   {
+    "t": "Uso rudo",
+    "d": "IP66, IK10 y resistencia a vibración según ANSI C136.31, 3G."
+   },
+   {
+    "t": "Lista para intemperie",
+    "d": "Opción para ambiente marino y tornillería de acero inoxidable."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Alta eficiencia",
+    "d": "160 lm/W: más luz por cada watt y menor costo de energía."
+   },
+   {
+    "t": "Larga vida útil",
+    "d": "150,000 horas a 25 °C reducen reemplazos y mantenimiento."
+   },
+   {
+    "t": "Antivandálica",
+    "d": "Grado IK10 para espacios públicos con alto tránsito."
+   },
+   {
+    "t": "Cualquier red eléctrica",
+    "d": "Voltaje universal de 100 a 240 V con factor de potencia >0.95."
+   },
+   {
+    "t": "Clima extremo",
+    "d": "Opera de −40 a +55 °C y con humedad de hasta 95%."
+   },
+   {
+    "t": "Personalizable",
+    "d": "Color especial, luz RGB en la base y control inalámbrico."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Desempeño lumínico",
+    "rows": [
+     [
+      "Potencia del sistema",
+      "80 W"
+     ],
+     [
+      "Flujo luminoso",
+      "12,800 lm"
+     ],
+     [
+      "Eficacia",
+      "160 lm/W"
+     ],
+     [
+      "Distribución óptica (IES)",
+      "Tipo V cutoff"
+     ],
+     [
+      "Temperatura de color",
+      "5,000 o 6,000 K"
+     ],
+     [
+      "IRC",
+      "70 (80 opcional)"
+     ],
+     [
+      "Vida útil a 25 °C",
+      "150,000 h"
+     ]
+    ]
+   },
+   {
+    "name": "Sistema eléctrico",
+    "rows": [
+     [
+      "Tensión de entrada",
+      "100–240 V universal"
+     ],
+     [
+      "Frecuencia",
+      "50–60 Hz"
+     ],
+     [
+      "Factor de potencia",
+      ">0.95 a 220 V c.a."
+     ],
+     [
+      "Distorsión armónica (THD)",
+      "<15%"
+     ],
+     [
+      "Protección térmica",
+      "Atenuación automática en LEDs y drivers"
+     ],
+     [
+      "Control",
+      "Sin control, RGB en la base o W-DMX inalámbrico"
+     ]
+    ]
+   },
+   {
+    "name": "Construcción",
+    "rows": [
+     [
+      "Cuerpo",
+      "Lámina de acero"
+     ],
+     [
+      "Difusor",
+      "Acrílico opalino de alta resistencia"
+     ],
+     [
+      "Color",
+      "Negro, blanco o color especial"
+     ],
+     [
+      "Hermeticidad",
+      "IP66"
+     ],
+     [
+      "Resistencia al impacto",
+      "IK10"
+     ],
+     [
+      "Vibración",
+      "ANSI C136.31, 3G"
+     ],
+     [
+      "Montaje",
+      "Sobrepuesto en piso"
+     ],
+     [
+      "Peso",
+      "45 kg"
+     ]
+    ]
+   },
+   {
+    "name": "Condiciones y opciones",
+    "rows": [
+     [
+      "Temperatura ambiente",
+      "−40 a +55 °C"
+     ],
+     [
+      "Humedad relativa",
+      "10–95%"
+     ],
+     [
+      "Ambiente marino",
+      "Protección opcional"
+     ],
+     [
+      "Tornillería",
+      "Acero inoxidable (opcional)"
+     ],
+     [
+      "Garantía",
+      "3, 5 o 10 años"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Banquetas",
+   "Corredores comerciales",
+   "Vialidades urbanas",
+   "Plazas y accesos"
+  ],
+  "warranty": [],
+  "certs": [
+   {
+    "c": "IP66",
+    "l": "Hermeticidad"
+   },
+   {
+    "c": "IK10",
+    "l": "Antivandálico"
+   }
+  ],
+  "dims": [
+   [
+    "Altura total",
+    "2,850 mm"
+   ],
+   [
+    "Difusor",
+    "1,140 mm"
+   ],
+   [
+    "Sección triangular",
+    "173 mm"
+   ],
+   [
+    "Placa base",
+    "270 mm"
+   ],
+   [
+    "Peso",
+    "45 kg"
+   ]
+  ],
+  "mount": "Sobrepuesta al piso mediante placa base de 270 mm con cuatro anclajes. Tornillería de acero inoxidable opcional.",
+  "isLuminaire": true
+ },
+ {
   "code": "LU-DO1003",
   "name": "Poste D-P",
   "line": "LU",

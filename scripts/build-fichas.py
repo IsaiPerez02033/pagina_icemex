@@ -34,6 +34,7 @@ OUT = ROOT / "lib" / "fichas-data.json"
 LINE_BY_PREFIX = {
     "AL": "AL", "IS": "IS", "LU": "LU", "PP": "LU", "ICELUM": "LU",
     "BOLARD": "LU", "RF": "RF", "FL": "LC", "LC": "LC", "POSTES": "PT",
+    "IC": "LU",  # columnas LED (PRISMA)
     "CV": "CV",  # cámaras de seguridad (fichas-src/camaras.py)
 }
 # Fichas cuyo prefijo no corresponde a su línea.

@@ -4635,3 +4635,268 @@ html[data-theme="light"] .svc-cta {
     max-height: 96px;
   }
 }
+
+/* ==========================================================================
+   Novedades (inicio, debajo del hero) — productos en lib/novedades.ts
+   ========================================================================== */
+.nov-wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.nov-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+.nov-head .svc-h2 {
+  margin-bottom: 0;
+}
+.nov-lead {
+  max-width: 440px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.nov-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.nov-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(var(--cyan-rgb), 0.12);
+  border-radius: var(--radius-lg);
+  background: rgba(var(--card-rgb), 0.6);
+  overflow: hidden;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+.nov-card:hover {
+  border-color: rgba(var(--cyan-rgb), 0.35);
+  transform: translateY(-4px);
+}
+/* Escenario oscuro en ambos temas: las columnas y sus LED lucen sobre negro. */
+.nov-stage {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 420px;
+  padding: 44px 24px 28px;
+  background:
+    radial-gradient(ellipse 60% 22% at 50% 96%, rgba(0, 212, 255, 0.16), rgba(0, 212, 255, 0) 70%),
+    radial-gradient(circle at 50% 38%, #2b2f37 0%, #16191e 62%, #0c0e12 100%);
+}
+.nov-stage::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 22px;
+  width: 46%;
+  height: 14px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+.nov-stage img {
+  position: relative;
+  z-index: 1;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.45));
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.nov-card:hover .nov-stage img {
+  transform: translateY(-6px) scale(1.02);
+}
+.nov-badge,
+.nov-code {
+  position: absolute;
+  top: 16px;
+  z-index: 2;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.nov-badge {
+  left: 16px;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background: #de0e20;
+  color: #fff;
+  font-weight: 600;
+}
+.nov-code {
+  right: 18px;
+  top: 21px;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.1em;
+}
+.nov-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px 26px 26px;
+}
+.nov-kind {
+  color: var(--accent-cyan);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+@media (min-width: 861px) {
+  .nov-kind {
+    min-height: 3em; /* 2 líneas: los nombres quedan alineados entre tarjetas */
+  }
+}
+.nov-body h3 {
+  font-size: clamp(22px, 2.2vw, 28px);
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+.nov-body h3 a:hover {
+  color: var(--accent-cyan);
+}
+.nov-power {
+  margin-top: 6px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.nov-kpis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0 22px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(var(--cyan-rgb), 0.12);
+  border-bottom: 1px solid rgba(var(--cyan-rgb), 0.12);
+}
+.nov-kpis dt {
+  order: 2;
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+.nov-kpis div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.nov-kpis dd {
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.nov-kpis small {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.nov-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+.nov-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(var(--cyan-rgb), 0.25);
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.nov-btn:hover {
+  border-color: var(--accent-cyan);
+}
+.nov-btn-primary {
+  flex: 1;
+  background: var(--accent-cyan);
+  border-color: var(--accent-cyan);
+  color: var(--bg-primary);
+}
+.nov-btn-primary:hover {
+  background: rgba(var(--cyan-rgb), 0.85);
+}
+
+@media (max-width: 1100px) {
+  .nov-stage {
+    height: 360px;
+  }
+  .nov-body {
+    padding: 20px;
+  }
+  .nov-kpis dd {
+    font-size: 16px;
+  }
+}
+/* Celular y tableta: carrusel horizontal en vez de tres tarjetas apiladas. */
+@media (max-width: 860px) {
+  .nov-head {
+    margin-bottom: 32px;
+  }
+  .nov-grid {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: min(82%, 340px);
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin: 0 -20px;
+    padding: 0 20px 6px;
+    scroll-padding: 0 20px;
+    scrollbar-width: none;
+  }
+  .nov-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .nov-card {
+    scroll-snap-align: start;
+  }
+  .nov-card:hover {
+    transform: none;
+  }
+  .nov-stage {
+    height: 320px;
+  }
+  .nov-btn {
+    padding: 12px 14px;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+  }
+  .nov-kpis {
+    gap: 8px;
+  }
+  .nov-kpis dd {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .nov-grid {
+    margin: 0 -16px;
+    padding: 0 16px 6px;
+    scroll-padding: 0 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nov-card,
+  .nov-stage img {
+    transition: none;
+  }
+}

@@ -340,7 +340,8 @@ def prepare(code: str, data: dict) -> dict:
             x["light"] = True  # líneas oscuras → fondo claro
         x["img"] = img(x.get("img"), TARGET["feature"], x.get("mode", "photo"))
     if f.get("dims"):
-        f["dims"]["img"] = img(f["dims"].get("img"), TARGET["dims"], "drawing")
+        # "mode": "raw" si el dibujo ya viene en líneas oscuras (fichas hechas con el kit).
+        f["dims"]["img"] = img(f["dims"].get("img"), TARGET["dims"], f["dims"].get("mode", "drawing"))
     f["photometry"] = img(data.get("photometry"), TARGET["photometry"], "raw")
 
     f["is_lum"] = data.get("is_lum", True)

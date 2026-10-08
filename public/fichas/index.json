@@ -676,6 +676,20 @@
   "texto": "bolardo 120w lu-bt1002 4 tubos de ilv de 30 de 120 w y luz calida ptr 4 x 4"
  },
  {
+  "codigo": "LU-PI1001",
+  "nombre": "Poste Pixtar 60W",
+  "archivo": "LU-PI1001.pdf",
+  "paginas": [],
+  "texto": "pixtar poste luminario de diseño con led lateral en dos versiones 60 w 127-220 v luz cálida pixtar-duo 7 m 3 m pantalla lcd acero al carbón fabricado en méxico vialidades andadores plazas públicas espacios comerciales lu-pi1001"
+ },
+ {
+  "codigo": "IC-PR80",
+  "nombre": "Columna Prisma 80W",
+  "archivo": "IC-PR80.pdf",
+  "paginas": [],
+  "texto": "prisma columna led de alta potencia para exterior 80 w 12,800 lm 160 lm/w 150,000 h ip66 ik10 sección triangular difusor acrílico opalino tipo v cutoff rgb w-dmx banquetas corredores comerciales vialidades urbanas plazas y accesos ic-pr80"
+ },
+ {
   "codigo": "LU-DO1003",
   "nombre": "Poste D-P",
   "archivo": "LU-DO1003.pdf",

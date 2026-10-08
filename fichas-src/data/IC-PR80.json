@@ -1,0 +1,263 @@
+{
+ "model": "PRISMA",
+ "kind": "Columna LED de alta potencia para exterior",
+ "power": "80 W",
+ "variant": "100–240 V",
+ "hero": "p1_x21",
+ "kpis": [
+  {
+   "v": "80",
+   "u": "W",
+   "l": "Potencia"
+  },
+  {
+   "v": "12,800",
+   "u": "lm",
+   "l": "Flujo luminoso"
+  },
+  {
+   "v": "160",
+   "u": "lm/W",
+   "l": "Eficacia"
+  },
+  {
+   "v": "150,000",
+   "u": "h",
+   "l": "Vida útil a 25 °C"
+  }
+ ],
+ "kpis_extra": [
+  {
+   "v": "IP66",
+   "u": "",
+   "l": "Hermeticidad"
+  },
+  {
+   "v": "IK10",
+   "u": "",
+   "l": "Resistencia al impacto"
+  }
+ ],
+ "description": [
+  "PRISMA es una columna LED de alta potencia para exterior, de sección triangular, que se instala sobrepuesta al piso. Su difusor de acrílico opalino de alta resistencia reparte la luz a su alrededor con distribución Tipo V cutoff, y entrega 12,800 lm con solo 80 W gracias a una eficacia de 160 lm/W.",
+  "El cuerpo de lámina de acero alcanza 2,850 mm de altura y se ofrece en negro, blanco o color especial. Es hermética (IP66), antivandálica (IK10) y resiste vibración según ANSI C136.31. Opera con voltaje universal de 100 a 240 V y admite luz RGB en la base y control inalámbrico W-DMX."
+ ],
+ "features": [
+  {
+   "t": "Luz a 360°",
+   "d": "Difusor opalino con distribución Tipo V cutoff, sin deslumbramiento."
+  },
+  {
+   "t": "Protección térmica",
+   "d": "LEDs y drivers con atenuación automática ante temperaturas elevadas."
+  },
+  {
+   "t": "Uso rudo",
+   "d": "IP66, IK10 y resistencia a vibración según ANSI C136.31, 3G."
+  },
+  {
+   "t": "Lista para intemperie",
+   "d": "Opción para ambiente marino y tornillería de acero inoxidable."
+  }
+ ],
+ "warranty": [],
+ "certs": [
+  {
+   "c": "IP66",
+   "l": "Hermeticidad"
+  },
+  {
+   "c": "IK10",
+   "l": "Antivandálico"
+  }
+ ],
+ "specs": [
+  {
+   "name": "Desempeño lumínico",
+   "rows": [
+    [
+     "Potencia del sistema",
+     "80 W"
+    ],
+    [
+     "Flujo luminoso",
+     "12,800 lm"
+    ],
+    [
+     "Eficacia",
+     "160 lm/W"
+    ],
+    [
+     "Distribución óptica (IES)",
+     "Tipo V cutoff"
+    ],
+    [
+     "Temperatura de color",
+     "5,000 o 6,000 K"
+    ],
+    [
+     "IRC",
+     "70 (80 opcional)"
+    ],
+    [
+     "Vida útil a 25 °C",
+     "150,000 h"
+    ]
+   ]
+  },
+  {
+   "name": "Sistema eléctrico",
+   "rows": [
+    [
+     "Tensión de entrada",
+     "100–240 V universal"
+    ],
+    [
+     "Frecuencia",
+     "50–60 Hz"
+    ],
+    [
+     "Factor de potencia",
+     ">0.95 a 220 V c.a."
+    ],
+    [
+     "Distorsión armónica (THD)",
+     "<15%"
+    ],
+    [
+     "Protección térmica",
+     "Atenuación automática en LEDs y drivers"
+    ],
+    [
+     "Control",
+     "Sin control, RGB en la base o W-DMX inalámbrico"
+    ]
+   ]
+  },
+  {
+   "name": "Construcción",
+   "rows": [
+    [
+     "Cuerpo",
+     "Lámina de acero"
+    ],
+    [
+     "Difusor",
+     "Acrílico opalino de alta resistencia"
+    ],
+    [
+     "Color",
+     "Negro, blanco o color especial"
+    ],
+    [
+     "Hermeticidad",
+     "IP66"
+    ],
+    [
+     "Resistencia al impacto",
+     "IK10"
+    ],
+    [
+     "Vibración",
+     "ANSI C136.31, 3G"
+    ],
+    [
+     "Montaje",
+     "Sobrepuesto en piso"
+    ],
+    [
+     "Peso",
+     "45 kg"
+    ]
+   ]
+  },
+  {
+   "name": "Condiciones y opciones",
+   "rows": [
+    [
+     "Temperatura ambiente",
+     "−40 a +55 °C"
+    ],
+    [
+     "Humedad relativa",
+     "10–95%"
+    ],
+    [
+     "Ambiente marino",
+     "Protección opcional"
+    ],
+    [
+     "Tornillería",
+     "Acero inoxidable (opcional)"
+    ],
+    [
+     "Garantía",
+     "3, 5 o 10 años"
+    ]
+   ]
+  }
+ ],
+ "temps": [
+  5000,
+  6000
+ ],
+ "dims": {
+  "img": "p4_x120",
+  "mode": "raw",
+  "rows": [
+   [
+    "Altura total",
+    "2,850 mm"
+   ],
+   [
+    "Difusor",
+    "1,140 mm"
+   ],
+   [
+    "Sección triangular",
+    "173 mm"
+   ],
+   [
+    "Placa base",
+    "270 mm"
+   ],
+   [
+    "Peso",
+    "45 kg"
+   ]
+  ]
+ },
+ "mount": "Sobrepuesta al piso mediante placa base de 270 mm con cuatro anclajes. Tornillería de acero inoxidable opcional.",
+ "advantages": [
+  {
+   "t": "Alta eficiencia",
+   "d": "160 lm/W: más luz por cada watt y menor costo de energía."
+  },
+  {
+   "t": "Larga vida útil",
+   "d": "150,000 horas a 25 °C reducen reemplazos y mantenimiento."
+  },
+  {
+   "t": "Antivandálica",
+   "d": "Grado IK10 para espacios públicos con alto tránsito."
+  },
+  {
+   "t": "Cualquier red eléctrica",
+   "d": "Voltaje universal de 100 a 240 V con factor de potencia >0.95."
+  },
+  {
+   "t": "Clima extremo",
+   "d": "Opera de −40 a +55 °C y con humedad de hasta 95%."
+  },
+  {
+   "t": "Personalizable",
+   "d": "Color especial, luz RGB en la base y control inalámbrico."
+  }
+ ],
+ "applications": [
+  "Banquetas",
+  "Corredores comerciales",
+  "Vialidades urbanas",
+  "Plazas y accesos"
+ ]
+}
