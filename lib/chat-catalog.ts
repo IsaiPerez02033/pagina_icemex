@@ -40,8 +40,6 @@ interface Entry {
   weak: Set<string>;
 }
 
-const SITE = "https://icemex.mx";
-
 const STOPWORDS = new Set(
   (
     "que con para por una uno unos unas los las del como cual cuales cuanto cuanta cuantos " +
@@ -79,9 +77,6 @@ function words(text: string): string[] {
 
 const wordSet = (...texts: string[]) => new Set(texts.flatMap(words));
 
-const pageUrl = (f: Ficha) => `${SITE}${fichaHref(f)}`;
-const pdfUrl = (f: Ficha) => `${SITE}${f.pdf.split("?")[0]}`;
-
 function fichaDetail(f: Ficha, code: string, name: string): string {
   const out = [`[${code}] ${name} — ${lineNames[f.line]}`];
   out.push(`Tipo: ${[f.kind, f.power, f.variant].filter(Boolean).join(" · ")}`);
@@ -101,7 +96,6 @@ function fichaDetail(f: Ficha, code: string, name: string): string {
   if (f.applications.length) out.push(`Aplicaciones: ${f.applications.join(", ")}`);
   out.push(`Garantía: ${f.warranty.join(" · ") || "no indicada en la ficha"}`);
   if (f.certs.length) out.push(`Certificaciones: ${f.certs.map((c) => c.c).join(", ")}`);
-  out.push(`Página: ${pageUrl(f)} | PDF: ${pdfUrl(f)}`);
   return out.join("\n");
 }
 
@@ -113,7 +107,6 @@ function productDetail(p: Product, family?: Ficha): string {
   if (p.applications.length) out.push(`Aplicaciones: ${p.applications.join(", ")}`);
   out.push(`Garantía: ${p.warranty ?? "no indicada"}`);
   if (p.certifications?.length) out.push(`Certificaciones: ${p.certifications.join(", ")}`);
-  out.push(`Página: ${SITE}/producto/${p.code}`);
   // Postes y accesorios que comparten ficha de familia: sus medidas y
   // variantes están en esa ficha.
   if (family) {
@@ -199,6 +192,32 @@ export const CATALOG_INDEX = (Object.keys(lineNames) as ProductLine[])
   .join("\n");
 
 export const CATALOG_SIZE = ENTRIES.length;
+
+/** Enlaces de cada producto para el chat: el widget convierte los códigos que
+ *  menciona el bot en tarjetas con foto, página y ficha PDF. */
+export interface ChatLink {
+  code: string;
+  name: string;
+  kind: string;
+  href: string;
+  img?: string;
+  pdf?: string;
+}
+
+export const CHAT_LINKS: ChatLink[] = [
+  ...catalogProducts.map((p) => {
+    const f = fichaForProduct(p.code); // postes de familia: la ficha de la familia
+    return { code: p.code, name: p.name, kind: p.tagline, href: `/producto/${p.code}`, img: f?.thumb.src, pdf: f?.pdf };
+  }),
+  ...standaloneFichas.map((f) => ({
+    code: f.code,
+    name: f.name,
+    kind: f.kind,
+    href: fichaHref(f),
+    img: f.thumb.src,
+    pdf: f.pdf,
+  })),
+];
 
 const CODE_RX = /\b[A-Z]{2,}(?:-[A-Z0-9]+)+\b/gi;
 

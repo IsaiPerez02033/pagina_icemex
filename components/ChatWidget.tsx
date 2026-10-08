@@ -1,7 +1,9 @@
 "use client";
 
 import { useRef, useEffect, useState, useCallback } from "react";
+import Link from "next/link";
 import { sendEvent } from "@/lib/events";
+import type { ChatLink } from "@/lib/chat-catalog";
 
 type Role = "user" | "assistant";
 
@@ -26,6 +28,22 @@ function formatTime() {
   });
 }
 
+// Códigos de producto (IS-AO1026, LU-PI1001…) y enlaces que escribe el bot.
+const LINK_RX = /(https?:\/\/[^\s)]+|\b[A-Z]{2,}(?:-[A-Z0-9]+)+\b)/g;
+const CODE_RX = /\b[A-Z]{2,}(?:-[A-Z0-9]+)+\b/gi;
+const MAX_CARDS = 4;
+
+/** Productos del catálogo que menciona un mensaje, en orden de aparición. */
+function mentioned(text: string, links: Map<string, ChatLink> | null): ChatLink[] {
+  if (!links) return [];
+  const out: ChatLink[] = [];
+  for (const m of text.replace(/[‐‑]/g, "-").match(CODE_RX) ?? []) {
+    const l = links.get(m.toUpperCase());
+    if (l && !out.includes(l)) out.push(l);
+  }
+  return out.slice(0, MAX_CARDS);
+}
+
 let idCounter = 0;
 function genId() {
   return `msg_${++idCounter}_${Date.now()}`;
@@ -47,6 +65,7 @@ export default function ChatWidget() {
     },
   ]);
 
+  const [links, setLinks] = useState<Map<string, ChatLink> | null>(null);
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const abortRef = useRef<AbortController | null>(null);
@@ -54,7 +73,7 @@ export default function ChatWidget() {
   // Auto-scroll
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
-  }, [messages, isLoading]);
+  }, [messages, isLoading, links]);
 
   // Focus input on open
   useEffect(() => {
@@ -63,6 +82,21 @@ export default function ChatWidget() {
       return () => clearTimeout(timer);
     }
   }, [open]);
+
+  // Índice de productos para enlazar lo que recomienda el bot (una vez).
+  useEffect(() => {
+    if (!open || links) return;
+    fetch("/api/chat/productos")
+      .then((r) => (r.ok ? r.json() : []))
+      .then((list: ChatLink[]) => setLinks(new Map(list.map((l) => [l.code.toUpperCase(), l]))))
+      .catch(() => {});
+  }, [open, links]);
+
+  // En celular el chat ocupa toda la pantalla: al abrir un producto se cierra
+  // para que se vea la página (la conversación se conserva).
+  const followLink = () => {
+    if (window.matchMedia("(max-width: 480px)").matches) setOpen(false);
+  };
 
   // Restore page scroll on close, route changes and unmount.
   useEffect(() => {
@@ -202,6 +236,33 @@ export default function ChatWidget() {
     sendMessage(text);
   };
 
+  // Códigos del catálogo → enlace a su página; URLs → enlace.
+  const linkify = (text: string, key: number) =>
+    text.split(LINK_RX).map((part, k) => {
+      const l = links?.get(part.toUpperCase());
+      if (l) {
+        return (
+          <Link key={`${key}-${k}`} href={l.href} onClick={followLink} className="chat-code">
+            {part}
+          </Link>
+        );
+      }
+      if (/^https?:\/\//.test(part)) {
+        const url = part.replace(/[.,;:]+$/, "");
+        const internal = url.replace(/^https?:\/\/(www\.)?icemex\.mx/, "");
+        return internal !== url && internal.startsWith("/") && !/CODIGO/i.test(url) ? (
+          <Link key={`${key}-${k}`} href={internal} onClick={followLink} className="chat-code">
+            {part}
+          </Link>
+        ) : (
+          <a key={`${key}-${k}`} href={url} target="_blank" rel="noopener noreferrer" className="chat-code">
+            {part}
+          </a>
+        );
+      }
+      return part;
+    });
+
   // Markdown mínimo: **negritas** en línea, encabezados (#), viñetas y tablas
   // (cada fila se muestra como "celda · celda"). Las líneas "---" se omiten.
   const renderInline = (text: string) =>
@@ -209,14 +270,14 @@ export default function ChatWidget() {
       if (part.startsWith("**") && part.endsWith("**") && part.length > 4) {
         return (
           <strong key={j} style={{ color: "var(--text-primary)" }}>
-            {part.slice(2, -2)}
+            {linkify(part.slice(2, -2), j)}
           </strong>
         );
       }
       if (part.startsWith("*") && part.endsWith("*") && part.length > 2) {
         return <em key={j}>{part.slice(1, -1)}</em>;
       }
-      return part;
+      return linkify(part, j);
     });
 
   const renderContent = (content: string) => {
@@ -461,16 +522,21 @@ export default function ChatWidget() {
               gap: 12,
             }}
           >
-            {messages.map((m) => {
+            {messages.map((m, idx) => {
               const isUser = m.role === "user";
               const hasContent = m.content.length > 0;
+              // Las tarjetas aparecen cuando el bot termina de escribir.
+              const streaming = isLoading && idx === messages.length - 1;
+              const cards = isUser || streaming ? [] : mentioned(m.content, links);
 
               return (
                 <div
                   key={m.id}
                   style={{
                     display: "flex",
-                    justifyContent: isUser ? "flex-end" : "flex-start",
+                    flexDirection: "column",
+                    alignItems: isUser ? "flex-end" : "flex-start",
+                    gap: 8,
                   }}
                 >
                   <div
@@ -520,6 +586,40 @@ export default function ChatWidget() {
                       </div>
                     ) : null}
                   </div>
+                  {cards.length > 0 && (
+                    <ul className="chat-cards" aria-label="Productos mencionados">
+                      {cards.map((c) => (
+                        <li key={c.code} className="chat-card">
+                          <Link href={c.href} onClick={followLink} className="chat-card-main">
+                            {c.img ? (
+                              // eslint-disable-next-line @next/next/no-img-element -- miniatura webp ya optimizada
+                              <img src={c.img} alt="" width={44} height={44} loading="lazy" />
+                            ) : (
+                              <span className="chat-card-ph" aria-hidden />
+                            )}
+                            <span className="chat-card-text">
+                              <b>{c.name}</b>
+                              <small>
+                                {c.code} · {c.kind}
+                              </small>
+                            </span>
+                          </Link>
+                          {c.pdf && (
+                            <a
+                              href={c.pdf}
+                              target="_blank"
+                              rel="noopener"
+                              className="chat-card-pdf"
+                              aria-label={`Ficha técnica de ${c.name} en PDF`}
+                              onClick={() => sendEvent("pdf_download")}
+                            >
+                              PDF
+                            </a>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               );
             })}
@@ -757,6 +857,84 @@ export default function ChatWidget() {
             @keyframes chat-pulse {
               0%, 100% { transform: scale(1); opacity: 1; }
               50% { transform: scale(1.25); opacity: 0.5; }
+            }
+            .chat-code {
+              color: var(--accent-cyan);
+              text-decoration: underline;
+              text-decoration-color: rgba(var(--cyan-rgb), 0.4);
+              text-underline-offset: 2px;
+            }
+            .chat-cards {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              width: 88%;
+              display: flex;
+              flex-direction: column;
+              gap: 6px;
+            }
+            .chat-card {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              padding: 6px;
+              border-radius: 14px;
+              background: rgba(var(--card-rgb), 0.75);
+              border: 1px solid rgba(var(--cyan-rgb), 0.14);
+              transition: border-color 0.2s ease;
+            }
+            .chat-card:hover {
+              border-color: rgba(var(--cyan-rgb), 0.4);
+            }
+            .chat-card-main {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              flex: 1;
+              min-width: 0;
+            }
+            .chat-card img,
+            .chat-card-ph {
+              width: 44px;
+              height: 44px;
+              flex-shrink: 0;
+              border-radius: 10px;
+              object-fit: contain;
+              padding: 3px;
+              background: radial-gradient(circle at 50% 42%, #3a3d44 0%, #15171b 100%);
+            }
+            .chat-card-text {
+              display: flex;
+              flex-direction: column;
+              min-width: 0;
+            }
+            .chat-card-text b,
+            .chat-card-text small {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            .chat-card-text b {
+              color: var(--text-primary);
+              font-size: 12.5px;
+              font-weight: 600;
+            }
+            .chat-card-text small {
+              color: var(--text-muted);
+              font-size: 10.5px;
+            }
+            .chat-card-pdf {
+              flex-shrink: 0;
+              padding: 7px 11px;
+              border-radius: 999px;
+              border: 1px solid rgba(var(--cyan-rgb), 0.25);
+              color: var(--accent-cyan);
+              font-size: 10.5px;
+              font-weight: 600;
+              letter-spacing: 0.08em;
+            }
+            .chat-card-pdf:hover {
+              background: rgba(var(--cyan-rgb), 0.1);
             }
             @media (max-width: 480px) {
               .chat-panel {
