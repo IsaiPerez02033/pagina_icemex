@@ -27,6 +27,7 @@ import hashlib
 import io
 import json
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -482,6 +483,14 @@ def main(codes):
         code = p.stem
         data = json.loads(p.read_text())
         pdf = OUT_PDF / f"{code}.pdf"
+        if data.get("pdf") == "original":
+            # Ficha ya diseñada (p. ej. con páginas propias que la plantilla no
+            # tiene): se publica el PDF original y solo se generan las fotos web.
+            prepare(code, data)
+            shutil.copyfile(SRC / "originales" / f"{code}.pdf", pdf)
+            compress_pdf(pdf)
+            print(f"{code:18} {pdf.stat().st_size / 1e6:.2f} MB  original")
+            continue
         for attempt in (0, 1):
             f = prepare(code, data)
             html = SRC / f"_{code}.html"

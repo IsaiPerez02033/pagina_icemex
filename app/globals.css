@@ -4637,7 +4637,7 @@ html[data-theme="light"] .svc-cta {
 }
 
 /* ==========================================================================
-   Novedades (inicio, debajo del hero) — productos en lib/novedades.ts
+   Productos destacados (inicio, debajo del hero) — productos en lib/destacados.ts
    ========================================================================== */
 .nov-wrap {
   max-width: 1400px;
@@ -4662,8 +4662,8 @@ html[data-theme="light"] .svc-cta {
 }
 .nov-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
 }
 .nov-card {
   display: flex;
@@ -4684,8 +4684,8 @@ html[data-theme="light"] .svc-cta {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: 420px;
-  padding: 44px 24px 28px;
+  height: 380px;
+  padding: 48px 22px 28px;
   background:
     radial-gradient(ellipse 60% 22% at 50% 96%, rgba(0, 212, 255, 0.16), rgba(0, 212, 255, 0) 70%),
     radial-gradient(circle at 50% 38%, #2b2f37 0%, #16191e 62%, #0c0e12 100%);
@@ -4741,7 +4741,7 @@ html[data-theme="light"] .svc-cta {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 24px 26px 26px;
+  padding: 22px 22px 24px;
 }
 .nov-kind {
   color: var(--accent-cyan);
@@ -4793,7 +4793,7 @@ html[data-theme="light"] .svc-cta {
 }
 .nov-kpis dd {
   color: var(--text-primary);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -4835,18 +4835,19 @@ html[data-theme="light"] .svc-cta {
   background: rgba(var(--cyan-rgb), 0.85);
 }
 
-@media (max-width: 1100px) {
+/* Laptop chica y tableta horizontal: 2 × 2. */
+@media (max-width: 1240px) {
+  .nov-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .nov-stage {
     height: 360px;
   }
   .nov-body {
-    padding: 20px;
-  }
-  .nov-kpis dd {
-    font-size: 16px;
+    padding: 22px 24px 24px;
   }
 }
-/* Celular y tableta: carrusel horizontal en vez de tres tarjetas apiladas. */
+/* Celular y tableta: carrusel horizontal en vez de tarjetas apiladas. */
 @media (max-width: 860px) {
   .nov-head {
     margin-bottom: 32px;

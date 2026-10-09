@@ -16685,6 +16685,286 @@
   "isLuminaire": true
  },
  {
+  "code": "IC-21V-IC",
+  "name": "Luminaria LED Tele Gestión 100-200W",
+  "line": "AL",
+  "tags": [
+   "vialidad",
+   "parques",
+   "industrial"
+  ],
+  "pages": [],
+  "pdf": "/fichas/IC-21V-IC.pdf?v=7b495983",
+  "image": {
+   "src": "/productos/IC-21V-IC.webp?v=fe3da9d4",
+   "width": 657,
+   "height": 1400
+  },
+  "mid": {
+   "src": "/productos/IC-21V-IC-md.webp?v=5361168d",
+   "width": 375,
+   "height": 800
+  },
+  "thumb": {
+   "src": "/productos/IC-21V-IC-thumb.webp?v=2223e90f",
+   "width": 197,
+   "height": 420
+  },
+  "cover": {
+   "src": "/fichas/img/IC-21V-IC.webp?v=0a137c93",
+   "width": 1000,
+   "height": 1416
+  },
+  "coverThumb": {
+   "src": "/fichas/img/IC-21V-IC-thumb.webp?v=18331759",
+   "width": 360,
+   "height": 510
+  },
+  "model": "TELE GESTIÓN",
+  "kind": "Luminaria LED de alumbrado público con telegestión",
+  "power": "100–200 W",
+  "variant": "Control remoto 4G / 2.4G",
+  "summary": "La serie IC-21V-IC es una luminaria LED de alumbrado público en 100, 150 y 200 W con control remoto de cada punto de luz: enciende, apaga, atenúa y monitorea el consumo y las fallas desde una…",
+  "description": [
+   "La serie IC-21V-IC es una luminaria LED de alumbrado público en 100, 150 y 200 W con control remoto de cada punto de luz: enciende, apaga, atenúa y monitorea el consumo y las fallas desde una plataforma en la nube. Entrega hasta 36,000 lm con una eficacia de 180 lm/W, resiste lluvias intensas (IP65) y opera de forma estable en entornos hostiles.",
+   "El controlador va integrado en la fotocelda, sobre la base NEMA de la luminaria, y se comunica por 4G y 2.4G con atenuación 0-10 V o DALI. Se complementa con sensores de presencia vehicular, iluminancia, inundación y fuga eléctrica, controladores para gabinetes de distribución y una plataforma web con mapa georreferenciado, alertas de fallas y reportes de consumo y ahorro."
+  ],
+  "kpis": [
+   {
+    "v": "100–200",
+    "u": "W",
+    "l": "Potencia"
+   },
+   {
+    "v": "36,000",
+    "u": "lm",
+    "l": "Flujo luminoso máximo"
+   },
+   {
+    "v": "180",
+    "u": "lm/W",
+    "l": "Eficacia"
+   },
+   {
+    "v": "44,000",
+    "u": "h",
+    "l": "Vida útil"
+   },
+   {
+    "v": "IP65",
+    "u": "",
+    "l": "Protección contra polvo y agua"
+   },
+   {
+    "v": "5",
+    "u": "años",
+    "l": "Garantía"
+   }
+  ],
+  "features": [
+   {
+    "t": "Alta luminosidad vial",
+    "d": "Amplia cobertura y elevada percepción visual que garantizan la seguridad del tránsito."
+   },
+   {
+    "t": "Lente de cristal",
+    "d": "Alta transparencia que aprovecha al máximo la luz: iluminación brillante y uniforme."
+   },
+   {
+    "t": "Sensor óptico con controlador",
+    "d": "El controlador va integrado en la fotocelda, sobre la base NEMA de la luminaria."
+   },
+   {
+    "t": "Lista para telegestión",
+    "d": "Controlador NEMA con comunicación 4G y 2.4G y atenuación 0-10 V o DALI."
+   }
+  ],
+  "advantages": [
+   {
+    "t": "Control punto a punto",
+    "d": "Encendido, apagado y atenuación remota de cada luminaria."
+   },
+   {
+    "t": "Sensores vinculados",
+    "d": "Radar vehicular, iluminancia constante, fotocelda, inundación y fuga eléctrica."
+   },
+   {
+    "t": "Gabinetes conectados",
+    "d": "Interruptores 4G que reportan fallas y operan circuitos completos a distancia."
+   },
+   {
+    "t": "Plataforma en la nube",
+    "d": "Mapa georreferenciado, alertas inmediatas, bitácora y consumo contra ahorro."
+   }
+  ],
+  "specs": [
+   {
+    "name": "Versiones (100 / 150 / 200 W)",
+    "rows": [
+     [
+      "Código",
+      "IC-21V-IC-0100 / -0150 / -0200"
+     ],
+     [
+      "Potencia",
+      "100 / 150 / 200 W"
+     ],
+     [
+      "Flujo luminoso",
+      "18,000 / 27,000 / 36,000 lm"
+     ],
+     [
+      "Cantidad de LEDs",
+      "96 / 120 / 144 pzas"
+     ],
+     [
+      "Altura de instalación",
+      "7–9 / 8–10 / 10–12 m"
+     ],
+     [
+      "Peso",
+      "2.68 / 3.21 / 3.77 kg"
+     ],
+     [
+      "Medidas (L × A × H)",
+      "436 × 232 × 163 / 486 × 233 × 183 / 537 × 234 × 183 mm"
+     ],
+     [
+      "Empaque",
+      "1 pza · 3.5 / 4.1 / 4.7 kg"
+     ],
+     [
+      "Medidas de caja",
+      "490 × 280 × 135 / 535 × 290 × 135 / 595 × 290 × 135 mm"
+     ]
+    ]
+   },
+   {
+    "name": "Desempeño y sistema eléctrico",
+    "rows": [
+     [
+      "Eficacia",
+      "180 lm/W"
+     ],
+     [
+      "Tensión de entrada",
+      "100 – 277 V CA"
+     ],
+     [
+      "Ángulo de apertura",
+      "150° × 120°"
+     ],
+     [
+      "Tipo de LED",
+      "SMD 5050"
+     ],
+     [
+      "Temperatura de color",
+      "6,500 K"
+     ],
+     [
+      "Índice de reproducción cromática",
+      "Ra 70"
+     ],
+     [
+      "Supresor de picos",
+      "10 kV"
+     ],
+     [
+      "Vida útil",
+      "44,000 h"
+     ]
+    ]
+   },
+   {
+    "name": "Construcción",
+    "rows": [
+     [
+      "Lente",
+      "Cristal"
+     ],
+     [
+      "Carcasa",
+      "Aluminio"
+     ],
+     [
+      "Grado de protección",
+      "IP65"
+     ],
+     [
+      "Garantía",
+      "5 años"
+     ]
+    ]
+   },
+   {
+    "name": "Telegestión",
+    "rows": [
+     [
+      "Controlador de luminaria",
+      "NEMA (4G + 2.4G, 0-10 V, DALI) o Zhaga (4G + 2.4G, 0-10 V)"
+     ],
+     [
+      "Controladores cableados",
+      "1, 2 o 3 salidas, 0-10 V o PWM"
+     ],
+     [
+      "Sensores",
+      "Radar de ondas milimétricas, iluminancia constante, fotocelda, inundación, fuga eléctrica"
+     ],
+     [
+      "Control de circuitos",
+      "Interruptores 2P y 4P con 4G y alarma de falla"
+     ],
+     [
+      "Plataforma",
+      "Web en la nube con mapa, alertas y reportes de ahorro"
+     ]
+    ]
+   }
+  ],
+  "applications": [
+   "Municipios",
+   "Vialidades y avenidas",
+   "Zonas rurales",
+   "Parques industriales",
+   "Iluminación exterior en general"
+  ],
+  "warranty": [
+   "5 años"
+  ],
+  "certs": [
+   {
+    "c": "NOM",
+    "l": "Norma Oficial Mexicana"
+   },
+   {
+    "c": "CE",
+    "l": "Conformidad europea"
+   },
+   {
+    "c": "RoHS",
+    "l": "Libre de sustancias peligrosas"
+   }
+  ],
+  "dims": [
+   [
+    "Medidas 100 W",
+    "436 × 232 × 163 mm"
+   ],
+   [
+    "Medidas 150 W",
+    "486 × 233 × 183 mm"
+   ],
+   [
+    "Medidas 200 W",
+    "537 × 234 × 183 mm"
+   ]
+  ],
+  "mount": "Montaje en brazo o poste con base NEMA para el controlador de telegestión.",
+  "isLuminaire": true
+ },
+ {
   "code": "LU-DO1003",
   "name": "Poste D-P",
   "line": "LU",

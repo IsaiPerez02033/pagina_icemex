@@ -690,6 +690,13 @@
   "texto": "prisma columna led de alta potencia para exterior 80 w 12,800 lm 160 lm/w 150,000 h ip66 ik10 sección triangular difusor acrílico opalino tipo v cutoff rgb w-dmx banquetas corredores comerciales vialidades urbanas plazas y accesos ic-pr80"
  },
  {
+  "codigo": "IC-21V-IC",
+  "nombre": "Luminaria LED Tele Gestión 100-200W",
+  "archivo": "IC-21V-IC.pdf",
+  "paginas": [],
+  "texto": "tele gestión telegestión luminaria led alumbrado público serie ic-21v-ic 100 w 150 w 200 w 36,000 lm 180 lm/w control remoto 4g 2.4g base nema controlador zhaga dali 0-10 v fotocelda sensor radar plataforma en la nube ip65 municipios vialidades avenidas zonas rurales parques industriales ic-21v-ic-0100 ic-21v-ic-0150 ic-21v-ic-0200"
+ },
+ {
   "codigo": "LU-DO1003",
   "nombre": "Poste D-P",
   "archivo": "LU-DO1003.pdf",

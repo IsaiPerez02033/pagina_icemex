@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight, FileDown } from "lucide-react";
 import { fichaHref, getFicha, kpiValue, type Ficha } from "@/lib/fichas";
-import { NOVEDADES } from "@/lib/novedades";
+import { DESTACADOS } from "@/lib/destacados";
 
 /** Indicadores que no repiten la potencia ni el dato secundario de la tarjeta. */
 function highlights(f: Ficha) {
@@ -9,23 +9,23 @@ function highlights(f: Ficha) {
   return f.kpis.filter((k) => !shown.includes(kpiValue(k))).slice(0, 3);
 }
 
-export default function NovedadesSection() {
-  const items = NOVEDADES.map(getFicha).filter((f): f is Ficha => Boolean(f));
+export default function DestacadosSection() {
+  const items = DESTACADOS.map(getFicha).filter((f): f is Ficha => Boolean(f));
   if (!items.length) return null;
 
   return (
-    <section className="page-section nov-section" id="novedades" aria-labelledby="nov-title">
+    <section className="page-section nov-section" id="destacados" aria-labelledby="nov-title">
       <div className="nov-wrap">
         <div className="nov-head">
           <div>
-            <p className="svc-eyebrow">Nuevo en ICEMEX</p>
+            <p className="svc-eyebrow">Selección ICEMEX</p>
             <h2 id="nov-title" className="svc-h2">
-              Novedades
+              Productos destacados
             </h2>
           </div>
           <p className="nov-lead">
-            Los luminarios más recientes de nuestro catálogo. Consulta su información completa y descarga
-            su ficha técnica.
+            Los luminarios que más recomendamos para alumbrado público y espacios urbanos. Consulta su
+            información completa y descarga su ficha técnica.
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export default function NovedadesSection() {
             return (
               <article key={f.code} className="nov-card">
                 <Link href={href} className="nov-stage" aria-label={`${f.model}: ver información y ficha técnica`}>
-                  <span className="nov-badge">Nuevo</span>
+                  <span className="nov-badge">Destacado</span>
                   <span className="nov-code">{f.code}</span>
                   {/* eslint-disable-next-line @next/next/no-img-element -- foto webp ya optimizada por fichas-src/build.py */}
                   <img

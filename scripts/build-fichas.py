@@ -38,7 +38,10 @@ LINE_BY_PREFIX = {
     "CV": "CV",  # cámaras de seguridad (fichas-src/camaras.py)
 }
 # Fichas cuyo prefijo no corresponde a su línea.
-LINE_OVERRIDE = {"IS-LF1016": "AL"}  # LEAFLED: luminaria tipo cobra de red, no solar
+LINE_OVERRIDE = {
+    "IS-LF1016": "AL",  # LEAFLED: luminaria tipo cobra de red, no solar
+    "IC-21V-IC": "AL",  # luminaria vial con telegestión
+}
 
 # Nombres del índice sin acentos → nombre correcto para mostrar.
 NAME_FIXES = {
