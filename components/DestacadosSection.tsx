@@ -52,9 +52,8 @@ export default function DestacadosSection() {
                   <h3>
                     <Link href={href}>{f.model}</Link>
                   </h3>
-                  {(f.power || f.variant) && (
-                    <p className="nov-power">{[f.power, f.variant].filter(Boolean).join(" · ")}</p>
-                  )}
+                  {/* Siempre presente: cada hijo ocupa una fila del subgrid. */}
+                  <p className="nov-power">{[f.power, f.variant].filter(Boolean).join(" · ")}</p>
                   <dl className="nov-kpis">
                     {highlights(f).map((k) => (
                       <div key={k.l}>

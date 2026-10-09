@@ -12,12 +12,20 @@ const links = [
 ];
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  // En el tope de la página la barra va completa; al hacer scroll flota.
+  const [atTop, setAtTop] = useState(true);
   const path = usePathname();
   const dialog = useRef<HTMLDialogElement>(null);
   const trigger = useRef<HTMLButtonElement>(null);
   useEffect(() => {
     setOpen(false);
   }, [path]);
+  useEffect(() => {
+    const update = () => setAtTop(window.scrollY < 8);
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    return () => window.removeEventListener("scroll", update);
+  }, []);
   useEffect(() => {
     const d = dialog.current;
     if (!d) return;
@@ -34,7 +42,7 @@ export default function Navbar() {
   }, [open]);
   return (
     <>
-      <header className="site-header">
+      <header className="site-header" data-top={atTop || undefined}>
         <Link href="/" aria-label="ICEMEX inicio" className="site-logo">
           <IcemexLogo
             width={150}

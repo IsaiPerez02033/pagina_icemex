@@ -2633,6 +2633,38 @@ body[data-chat-open="true"] .wa-fab {
     backdrop-filter: none;
   }
 }
+/* Tableta y escritorio: en el tope de la página la barra ocupa todo el ancho
+   y al hacer scroll se encoge a la píldora flotante. El contenido conserva su
+   posición horizontal en ambos estados, así solo se mueve el contenedor. */
+@media (min-width: 768px) {
+  .site-header {
+    transition:
+      top 0.35s ease,
+      width 0.35s ease,
+      padding 0.35s ease,
+      border-radius 0.35s ease,
+      border-color 0.35s ease,
+      box-shadow 0.35s ease;
+  }
+  .site-header[data-top] {
+    top: 0;
+    width: 100%;
+    padding-inline: max(42px, calc((100% - 1120px) / 2 + 22px));
+    border-radius: 0;
+    border-color: transparent transparent var(--grid-lines);
+    box-shadow: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 960px) {
+  .site-header[data-top] {
+    padding-inline: 26px;
+  }
+}
+@media (min-width: 768px) and (prefers-reduced-motion: reduce) {
+  .site-header {
+    transition: none;
+  }
+}
 .assembly-copy h1 {
   text-transform: none;
 }
@@ -4663,11 +4695,16 @@ html[data-theme="light"] .svc-cta {
 .nov-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
+  gap: 20px 18px;
 }
+/* Cada tarjeta ocupa 6 filas de la cuadrícula (foto, tipo, nombre, potencia,
+   indicadores, botones) compartidas con sus vecinas: aunque un nombre ocupe
+   dos líneas, los indicadores y botones quedan alineados entre tarjetas. */
 .nov-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-row: span 6;
+  grid-template-rows: subgrid;
+  row-gap: 0;
   border: 1px solid rgba(var(--cyan-rgb), 0.12);
   border-radius: var(--radius-lg);
   background: rgba(var(--card-rgb), 0.6);
@@ -4738,9 +4775,11 @@ html[data-theme="light"] .svc-cta {
   letter-spacing: 0.1em;
 }
 .nov-body {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  display: grid;
+  grid-row: span 5;
+  grid-template-rows: subgrid;
+  row-gap: 0;
+  align-content: start;
   padding: 22px 22px 24px;
 }
 .nov-kind {
@@ -4751,13 +4790,9 @@ html[data-theme="light"] .svc-cta {
   line-height: 1.5;
   margin-bottom: 8px;
 }
-@media (min-width: 861px) {
-  .nov-kind {
-    min-height: 3em; /* 2 líneas: los nombres quedan alineados entre tarjetas */
-  }
-}
 .nov-body h3 {
-  font-size: clamp(22px, 2.2vw, 28px);
+  font-size: clamp(21px, 1.65vw, 26px);
+  text-wrap: balance;
   font-weight: 600;
   color: var(--text-primary);
   line-height: 1.1;
@@ -4804,8 +4839,8 @@ html[data-theme="light"] .svc-cta {
 }
 .nov-actions {
   display: flex;
+  align-self: end;
   gap: 10px;
-  margin-top: auto;
 }
 .nov-btn {
   display: inline-flex;
@@ -4895,8 +4930,66 @@ html[data-theme="light"] .svc-cta {
     scroll-padding: 0 16px;
   }
 }
+/* Modo claro: escenario gris perla en vez de negro, tarjeta blanca con sombra
+   suave; las fotos llevan fondo transparente y lucen igual sobre claro. */
+html[data-theme="light"] .nov-card {
+  border-color: rgba(15, 23, 42, 0.08);
+  background: #fff;
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.04),
+    0 12px 32px -12px rgba(15, 23, 42, 0.12);
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+html[data-theme="light"] .nov-card:hover {
+  border-color: rgba(var(--cyan-rgb), 0.4);
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.04),
+    0 24px 48px -16px rgba(15, 23, 42, 0.2);
+}
+html[data-theme="light"] .nov-stage {
+  margin: 8px 8px 0;
+  border-radius: calc(var(--radius-lg) - 6px);
+  background:
+    radial-gradient(ellipse 55% 18% at 50% 95%, rgba(var(--cyan-rgb), 0.14), rgba(var(--cyan-rgb), 0) 70%),
+    radial-gradient(circle at 50% 35%, #ffffff 0%, #f1f4f8 55%, #e3e8ef 100%);
+}
+html[data-theme="light"] .nov-stage::after {
+  background: radial-gradient(closest-side, rgba(15, 23, 42, 0.22), rgba(15, 23, 42, 0));
+}
+html[data-theme="light"] .nov-stage img {
+  filter: drop-shadow(0 14px 16px rgba(15, 23, 42, 0.16));
+}
+html[data-theme="light"] .nov-code {
+  color: rgba(15, 23, 42, 0.45);
+}
+html[data-theme="light"] .nov-kpis {
+  border-color: rgba(15, 23, 42, 0.08);
+}
+html[data-theme="light"] .nov-btn {
+  border-color: rgba(15, 23, 42, 0.14);
+}
+html[data-theme="light"] .nov-btn:hover {
+  border-color: var(--accent-cyan);
+}
+html[data-theme="light"] .nov-btn-primary {
+  color: #fff;
+}
+@supports not (grid-template-rows: subgrid) {
+  .nov-card,
+  .nov-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .nov-body {
+    flex: 1;
+  }
+  .nov-actions {
+    margin-top: auto;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .nov-card,
+  html[data-theme="light"] .nov-card,
   .nov-stage img {
     transition: none;
   }
